@@ -1,0 +1,41 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"fire": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shaman_workbench/fire.cubemitter.json",
+			"loop": true,
+			"transforms": {
+				"x":-0.2,
+				"y":0,
+				"z":-0.1,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"bubbles": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shaman_workbench/bubbles.cubemitter.json",
+			"loop": true,
+			"transforms": {
+				"x":-0.25,
+				"y":1.2,
+				"z":0.15,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"light": {
+			"type": "light",
+			"light": "/stonehearth/data/horde/animatedlights/fire/tiny_fire.animatedlight.json",
+			"transforms": {
+				"x":0,
+				"y":0.5,
+				"z":0
+			},
+			"shadows": false
+		}
+	}
+}

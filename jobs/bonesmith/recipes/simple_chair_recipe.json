@@ -1,0 +1,20 @@
+{
+	"type": "recipe",
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:jobs.shaman.recipes.simple_chair_recipe.recipe_name)",
+	"description": "i18n(swamp_goblins:jobs.shaman.recipes.simple_chair_recipe.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/furniture/simple_chair/simple_chair.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:furniture:simple_chair"
+		}
+	]
+}

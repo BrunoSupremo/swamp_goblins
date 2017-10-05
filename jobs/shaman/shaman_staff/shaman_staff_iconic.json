@@ -1,0 +1,23 @@
+{
+   "type": "entity",
+   "mixins": "stonehearth:mixins:item_properties",
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(shaman_staff.qb)"
+            ]
+         }
+      }
+   },
+   "entity_data": {
+      "stonehearth:catalog": {
+         "display_name": "i18n(swamp_goblins:jobs.shaman.shaman_staff.shaman_staff_iconic.display_name)",
+         "description": "i18n(swamp_goblins:jobs.shaman.shaman_staff.shaman_staff_iconic.description)",
+         "icon": "file(shaman_staff.png)",
+         "is_item": true,
+         "category": "tools",
+         "material_tags": "tool"
+      }
+   }
+}

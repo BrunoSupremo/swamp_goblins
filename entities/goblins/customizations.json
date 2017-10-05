@@ -1,0 +1,73 @@
+{
+	"type": "index",
+	"categories": {
+		"head_hair": ["head_hair"],
+		"face_hair": ["accessories","eyebrows"],
+		"skin_color": ["[none]"],
+		"hair_color": ["hair_color"]
+	},
+	"styles": {
+		"hair_color": {
+			"type": "material_map",
+			"values": {
+				"black":{
+					"file":"/swamp_goblins/data/materials/material_maps/hair_black_material_map.json"
+				},
+				"brown":{
+					"file":"/swamp_goblins/data/materials/material_maps/hair_brown_material_map.json"
+				},
+				"red":{
+					"file":"/swamp_goblins/data/materials/material_maps/hair_red_material_map.json"
+				},
+				"sandy":{
+					"file":"/swamp_goblins/data/materials/material_maps/hair_sandy_material_map.json"
+				},
+				"blonde":{
+					"file":"/swamp_goblins/data/materials/material_maps/hair_blonde_material_map.json"
+				},
+				"platinum":{
+					"file":"/swamp_goblins/data/materials/material_maps/hair_platinum_material_map.json"
+				}
+			}
+		},
+		"accessories": {
+			"type": "model",
+			"values": {
+				"[none]":{
+					"file": ""
+				},
+				"eyepatch": {
+					"file":"file(eyepatch.qb)"
+				}
+			}
+		},
+		"eyebrows": {
+			"type": "model",
+			"values": {
+				"[none]":{
+					"file": ""
+				},
+				"straight_eyebrows":{
+					"file": "file(brows.qb)"
+				}
+			}
+		},
+		"head_hair": {
+			"type": "model",
+			"values": {
+				"[none]": {
+					"file":""
+				},
+				"hair_1": {
+					"file":"file(hair_1.qb)"
+				},
+				"hair_2": {
+					"file":"file(hair_2.qb)"
+				},
+				"hair_3": {
+					"file":"file(hair_3.qb)"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"type": "encounter",
+	"mixins": "swamp_goblins:mixins:encounter:bear_raid",
+	"encounter_type": "create_mission",
+	"in_edge": "giant_bear_raid_6",
+	"out_edge": "wait_to_destroy_raiding_party",
+	"create_mission_info": {
+		"mission": {
+			"ctx_entity_registration_path": "giant_bear_raid_6",
+			"members": {
+				"bear": {
+					"from_population": {
+						"min": 1,
+						"max": 1
+					},
+					"tuning": "swamp_goblins:monster_tuning:forest:giant_bear"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"template_tabs": {
+		"firefly_clan": {
+			"display_name": "fire_fly",
+			"_display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.display_name)",
+			"required_kingdom": "swamp_goblins:kingdoms:firefly_clan",
+			"categories": {
+				"outpost": {
+					"display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.categories.outpost)",
+					"ordinal": 1,
+					"templates": {
+						"template1": "file(building_templates/template1.json)"
+					}
+				},
+				"settlement": {
+					"display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.categories.settlement)",
+					"ordinal": 2,
+					"required_city_tier": 2,
+					"templates": {
+					}
+				}
+			}
+		}
+	}
+}

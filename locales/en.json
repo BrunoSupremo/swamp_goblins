@@ -1,0 +1,145 @@
+{
+   "data": {
+      "biome": {
+         "swamp": {
+            "display_name": "Swamp",
+            "description": "Flat land, water flooded, with dense vegetation. Watch your steps.",
+            "random_location_names": {
+               "000": "Monbos Swamp"
+            }
+         }
+      },
+      "happiness": {
+         "thoughts": {
+            "water": {
+               "values": {
+                  "sticky_water": {
+                     "display_name": "Sticky Water",
+                     "tooltip": "Eww! I hate going in this muddy water."
+                  }
+               }
+            }
+         }
+      },
+      "population": {
+         "firefly_clan": {
+            "display_name": "Firefly Clan",
+            "quote": "",
+            "long_description": "⚠️ Warning!<br> ☠️ Bugged!<br> ⚡ Experimental!<br> NOT READY TO BE USED YET",
+            "post_selection_description": ", ⚠️ Warning!⚠️ ☠️ Bugged!☠️ ⚡ Experimental!⚡."
+         }
+      }
+   },
+   "entities": {
+      "furniture": {
+         "hammock": {
+            "display_name": "Hammock"
+         }
+      },
+      "gizmos": {
+         "camp_standard": {
+            "display_name": "Camp Banner",
+            "description": "How you know you've come home"
+         }
+      },
+      "plants": {
+         "cattail": {
+            "display_name": "Cattail",
+            "description": "This plant's fiber can be spun into thread. It is also edible.",
+            "unripe_description": "This plant has been harvested and has not grown back yet"
+         },
+         "fern": {
+            "display_name": "Fern",
+            "description": "This plant's fiber can be spun into thread. Or used as herbs.",
+            "unripe_description": "This plant has been harvested and has not grown back yet"
+         },
+         "giant_flower": {
+            "display_name": "Giple Flower",
+            "description": "Can be harvested for healing herbs",
+            "unripe_description": "This plant has been harvested and has not grown back yet"
+         },
+         "white_mushroom": {
+            "display_name": "White Mushroom",
+            "description": "Harvestable for a meager food supply.",
+            "unripe_description": "This plant has been harvested and has not grown back yet"
+         }
+      },
+      "resources": {
+         "cattail": {
+            "display_name": "Cattail",
+            "description": "Spinnable into thread. And edible."
+         },
+         "giant_flower": {
+            "display_name": "Giple Flower",
+            "description": "An herb commonly used for medicinal purposes"
+         },
+         "white_mushroom": {
+            "display_name": "White Mushroom",
+            "description": "Ready for eating"
+         },
+         "fern": {
+            "display_name": "Fern",
+            "description": "Spinnable into thread"
+         }
+      },
+      "trees": {
+         "bogger": {
+            "display_name": "Bogger Tree",
+            "description": "It radiates a mysterious aura"
+         },
+         "swirl": {
+            "display_name": "Swirl Tree",
+            "description": "An impressive specimen."
+         }
+      },
+      "monsters": {
+         "bear": {
+            "display_name": "Bear"
+         }
+      }
+   },
+   "jobs": {
+      "bonesmith": {
+         "bonesmith_description": {
+            "display_name": "Bonesmith",
+            "description": "Bonesmith description",
+            "requirements": "Bonesmith requirements"
+         },
+         "bonesmith_workbench": {
+            "display_name": "Bonesmith Workbench",
+            "description": "Bonesmith will use to craft their stuff"
+         }
+      },
+      "shaman": {
+         "shaman_description": {
+            "display_name": "Shaman",
+            "description": "Shaman description",
+            "requirements": "Shaman requirements"
+         },
+         "shaman_workbench": {
+            "display_name": "Shaman Workbench",
+            "description": "Shamans will use to craft their stuff"
+         }
+      }
+   },
+   "ui": {
+      "game": {
+         "menu": {
+            "crafter_menu": {
+               "items": {
+                  "bonesmith": {
+                     "display_name": "Bonesmith Craft Menu",
+                     "description": "Build furniture and decor.",
+                     "required_job_text": "Requires a bonesmith"
+                  },
+                  "shaman": {
+                     "display_name": "Shaman Craft Menu",
+                     "description": "Shaman knowledge.",
+                     "required_job_text": "Requires a shaman"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

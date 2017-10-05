@@ -1,0 +1,120 @@
+{
+	"info" : {
+		"name" : "swamp_goblins",
+		"version" : 3
+	},
+	"default_locale": "en",
+	"client_init_script" : "file(swamp_goblins_client)",
+	"server_init_script" : "file(swamp_goblins_server)",
+	"aliases":{
+		"biome:swamp": "file(data/biome/swamp.json)",
+
+		"bonesmith:saw": "file(jobs/bonesmith/bonesmith_saw)",
+		"bonesmith:talisman": "file(jobs/bonesmith/bonesmith_saw/bonesmith_saw_talisman.json)",
+		"bonesmith:workbench": "file(jobs/bonesmith/bonesmith_workbench)",
+
+		"boulder:large_1":	"file(entities/boulders/large_boulder/large_boulder_1.json)",
+		"boulder:large_2":	"file(entities/boulders/large_boulder/large_boulder_2.json)",
+		"boulder:medium_1":	"file(entities/boulders/medium_boulder/medium_boulder_1.json)",
+		"boulder:medium_2":	"file(entities/boulders/medium_boulder/medium_boulder_2.json)",
+		"boulder:medium_3":	"file(entities/boulders/medium_boulder/medium_boulder_3.json)",
+		"boulder:small":	"file(entities/boulders/small_boulder)",
+
+		"buffs:sticky_water":"file(data/buffs/sticky_water)",
+
+		"consumables:blue_potion":	"file(entities/consumables/blue_potion)",
+		"consumables:green_potion":	"file(entities/consumables/green_potion)",
+		"consumables:purple_potion":"file(entities/consumables/purple_potion)",
+		"consumables:white_potion":	"file(entities/consumables/white_potion)",
+
+		"camp_standard":	"file(entities/gizmos/camp_standard)",
+		"camp_standard_2":	"file(entities/gizmos/camp_standard_2)",
+
+		"color_map:goblin":"file(data/materials/color_maps/hair_color_map.json)",
+
+		"critters:firefly": "file(entities/critters/firefly.json)",
+
+		"data:sound_constants": "file(data/sounds/sound_constants.json)",
+
+		"effects:firefly_effect":"file(data/effects/firefly_effect)",
+		"effects:shaman_workbench_effect": "file(data/effects/shaman_workbench_effect)",
+
+		"food:plate_of_ferns": "file(entities/food/plate_of_ferns)",
+		"food:plate_of_mushrooms": "file(entities/food/plate_of_mushrooms)",
+
+		"furniture:hammock": "file(entities/furniture/hammock)",
+		"furniture:simple_chair": "file(entities/furniture/simple_chair)",
+		"furniture:simple_table": "file(entities/furniture/simple_table)",
+
+		"goblins:goblin":"file(entities/goblins/goblin.json)",
+		"goblins:goblin:customizations":"file(entities/goblins/customizations.json)",
+
+		"jobs:index": "file(jobs/index.json)",
+		"jobs:bonesmith":	"file(jobs/bonesmith/bonesmith_description.json)",
+		"jobs:shaman":		"file(jobs/shaman/shaman_description.json)",
+
+		"kingdoms:firefly_clan": "file(data/firefly_clan_population.json)",
+
+		"mixins:base_goblin":"file(mixins/base_goblin)",
+		"mixins:encounter:bear_raid":"file(mixins/encounter/mixin_bear_raid.json)",
+
+		"monsters:bear":"file(entities/monsters/bear)",
+		"monsters:forest:bear:teeth_weapon":	"file(entities/monsters/bear/bear_teeth.json)",
+		"monsters:forest:bear:weak_teeth_weapon":"file(entities/monsters/bear/weak_bear_teeth.json)",
+
+		"monster_tuning:forest:easy_bear":	"file(data/monster_tuning/forest/easy_bear.json)",
+		"monster_tuning:forest:medium_bear":"file(data/monster_tuning/forest/medium_bear.json)",
+		"monster_tuning:forest:giant_bear":	"file(data/monster_tuning/forest/giant_bear.json)",
+		"monster_tuning:forest:insane_bear":"file(data/monster_tuning/forest/insane_bear.json)",
+
+		"plants:cattail":		"file(entities/plants/cattail)",
+		"plants:fern":			"file(entities/plants/fern)",
+		"plants:giant_flower":	"file(entities/plants/giant_flower)",
+		"plants:white_mushroom":"file(entities/plants/white_mushroom)",
+
+		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
+		"resources:cattail":		"file(entities/resources/cattail)",
+		"resources:fern":			"file(entities/resources/fern)",
+		"resources:giant_flower":	"file(entities/resources/giant_flower)",
+		"resources:white_mushroom":	"file(entities/resources/white_mushroom)",
+
+		"shaman:staff": "file(jobs/shaman/shaman_staff)",
+		"shaman:talisman": "file(jobs/shaman/shaman_staff/shaman_staff_talisman.json)",
+		"shaman:workbench": "file(jobs/shaman/shaman_workbench)",
+		
+		"trees:bogger:small":	"file(entities/trees/bogger)",
+		"trees:swirl:small":	"file(entities/trees/swirl)",
+		"trees:swirl:medium":	"file(entities/trees/swirl/swirl_medium.json)",
+		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)"
+	},
+	"mixintos" :  {
+		"archipelago_biome/jobs/fisher/fisher_outfit/fisher_outfit.json":"file(jobs/fisher/fisher_outfit)",
+
+		"stonehearth:biome:index": "file(data/biome/index.json)",
+		
+		"stonehearth:building_templates:index": "file(data/saved_objects/building_templates_index.json)",
+
+		"stonehearth:data:sound_constants": "swamp_goblins:data:sound_constants",
+
+		"stonehearth:data:thoughts": "file(data/happiness/thoughts.json)",
+
+		"stonehearth:gm:campaigns:arcs:ambient_threats": "file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json)",
+
+		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
+		
+		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)"
+	},
+	"controllers": {
+		"class:bonesmith": "file(jobs/bonesmith/bonesmith.lua)",
+		"class:shaman": "file(jobs/shaman/shaman.lua)"
+	},
+	"ui":{
+		"less": [
+			"file(jobs/bonesmith/skin/workshop.less)",
+			"file(jobs/shaman/skin/workshop.less)"
+		]
+	}
+}

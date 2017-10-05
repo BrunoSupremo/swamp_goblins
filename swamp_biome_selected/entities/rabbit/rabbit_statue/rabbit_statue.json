@@ -1,0 +1,22 @@
+{
+	"components": {
+		"stonehearth:resource_node": {
+			"resource_loot_table": {
+				"entries": {
+					"extra_statue_items": {
+						"items": {
+							"none": {
+								"uri": "",
+								"weight": 1
+							},
+							"clay": {
+								"uri": "stonehearth:resources:clay:clay_mound",
+								"weight": 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

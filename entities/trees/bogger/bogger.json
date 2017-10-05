@@ -1,0 +1,53 @@
+{
+	"mixins": "stonehearth:mixins:tree",
+	"type": "entity",
+	"components": {
+		"mob": {
+			"model_origin": {"x": -0.5, "y": 0, "z": 0.5 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(bogger.qb)",
+							"file(bogger2.qb)"
+						]
+					}
+				]
+			}
+		},
+		"stonehearth:resource_node": {
+			"resource": "stonehearth:resources:wood:oak_log",
+			"durability": 10
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": -2, "y": 0, "z": -2 },
+					"max": {"x": 3, "y": 7, "z": 3 }
+				},
+				{
+					"min": {"x": -2, "y": 7, "z": -7 },
+					"max": {"x": 3, "y": 14, "z": 8 }
+				},
+				{
+					"min": {"x": 3, "y": 7, "z": -2 },
+					"max": {"x": 8, "y": 13, "z": 3 }
+				},
+				{
+					"min": {"x": -7, "y": 7, "z": -2 },
+					"max": {"x": -2, "y": 13, "z": 3 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.trees.bogger.display_name)",
+			"description": "i18n(swamp_goblins:entities.trees.bogger.description)"
+		}
+	}
+}

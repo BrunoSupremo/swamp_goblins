@@ -1,0 +1,22 @@
+{
+	"type": "monster_tuning",
+	"estimated_difficulty": 5,
+	"unit_info": {
+		"description": "i18n(swamp_goblins:data.monster_tuning.forest.insane_bear.description)"
+	},
+	"scale": 0.25,
+	"attributes": {
+		"max_health": 1500,
+		"muscle": 100,
+		"menace": 40,
+		"courage": 60,
+		"speed": 60,
+		"additive_armor_modifier": 5,
+		"exp_reward": 90
+	},
+	"equipment": {
+		"weapon": [
+			"swamp_goblins:monsters:forest:bear:teeth_weapon"
+		]
+	}
+}

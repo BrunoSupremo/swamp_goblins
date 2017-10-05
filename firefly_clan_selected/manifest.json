@@ -1,0 +1,20 @@
+{
+	"info" : {
+		"name" : "goblins_selected",
+		"deferred_load": true,
+		"version" : 3
+	},
+	"aliases" : {},
+	"mixintos" :  {
+		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
+		
+		"stonehearth:traits_index": "file(data/traits/traits_index.json)"
+	},
+	"overrides" : {
+		"stonehearth/entities/gizmos/camp_standard/camp_standard_ghost.json" : "swamp_goblins/entities/gizmos/camp_standard/camp_standard_ghost.json",
+
+		"stonehearth/ui/game/create_camp/images/banner.png" : "file(ui/game/create_camp/images/goblin_banner.png)"
+	},
+	"ui": {
+	}
+}

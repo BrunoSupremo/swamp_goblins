@@ -1,0 +1,54 @@
+{
+	"mixins": "stonehearth:mixins:food_decay",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(cattail.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food"
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 12
+			},
+			"default": {
+				"satisfaction": 10
+			},
+			"quality": 1
+		},
+		"stonehearth:food_decay": {
+			"initial_decay": {
+				"min": 500,
+				"max": 500
+			}
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 1,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.resources.cattail.display_name)",
+			"description": "i18n(swamp_goblins:entities.resources.cattail.description)",
+			"icon": "file(cattail.png)",
+			"is_item": true,
+			"category": "resources",
+			"material_tags": "fiber resource plant stockpile_plant stockpile_cooking_ingredient food vegetable vegetarian raw cooking_ingredient raw_food"
+		}
+	}
+}

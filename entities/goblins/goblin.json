@@ -1,0 +1,77 @@
+{
+	"type" : "entity",
+	"mixins": "swamp_goblins:mixins:base_goblin", 
+	"components": {
+		"render_info" : {
+			"animation_table": "/stonehearth/data/rigs/entities/monster/goblins/goblin/goblin.json"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(goblin.qb)"
+				]
+			}
+		}
+	},
+	"entity_data" : {
+		"stonehearth:customization_variants" : {
+			"customization_options": "swamp_goblins:goblins:goblin:customizations",
+			"root": {
+				"hair_and_skin_color": {
+					"weights": {
+						"hair_and_skin_color": 1
+					}
+				},
+				"age": {
+					"weights": {
+						"young": 1
+					}
+				}
+			},
+			"packages": {
+				"hair_and_skin_color": {
+					"hair_color": {
+						"weights": {
+							"black": 1,
+							"brown": 2,
+							"red": 1,
+							"sandy": 2,
+							"blonde": 2,
+							"platinum": 1.5
+						}
+					}
+				},
+				"young": {
+					"accessories": {
+						"weights": {
+							"[none]": 6,
+							"eyepatch": 1
+						}
+					},
+					"eyebrows": {
+						"weights": {
+							"[none]": 2,
+							"straight_eyebrows": 1
+						}
+					},
+					"head_hair": {
+						"weights": {
+							"[none]": 1,
+							"hair_1": 1,
+							"hair_2": 1,
+							"hair_3": 1
+						}
+					}
+				}
+			}
+		},
+		"stonehearth:idle_effects": {
+			"effects": [
+				{
+					"name": "emote_pickear_fail",
+					"weight": 0.5
+				}
+			]
+		}
+	}
+}

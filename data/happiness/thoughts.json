@@ -1,0 +1,17 @@
+{
+	"type": "index",
+	"thoughts": {
+		"water":{
+			"mutually_exclusive": false,
+			"values":{
+				"sticky_water": {
+					"display_name": "i18n(swamp_goblins:data.happiness.thoughts.water.values.sticky_water.display_name)",
+					"tooltip": "i18n(swamp_goblins:data.happiness.thoughts.water.values.sticky_water.tooltip)",
+					"happiness_delta": -1,
+					"duration": "3h",
+					"stackable": false
+				}
+			}
+		}
+	}
+}

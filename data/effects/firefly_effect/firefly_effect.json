@@ -1,0 +1,28 @@
+{
+   "type" : "effect",
+   "tracks": {
+      "cubemitter": {
+         "type": "cubemitter",
+         "cubemitter": "/swamp_goblins/data/horde/particles/firefly/firefly.cubemitter.json",
+         "loop": true,
+         "transforms": {
+            "x":0,
+            "y":3.5,
+            "z":0,
+            "rx":90,
+            "ry":0,
+            "rz":0
+         }
+      },
+      "light": {
+         "type": "light",
+         "light": "/swamp_goblins/data/horde/animatedlights/firefly/firefly.animatedlight.json",
+         "transforms": {
+            "x":0,
+            "y":3.5,
+            "z":0
+         },
+         "shadows": false
+      }
+   }
+}

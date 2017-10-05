@@ -1,0 +1,19 @@
+{
+	"alias": "swamp_goblins:biome:swamp",
+	"display_name": "i18n(swamp_goblins:data.biome.swamp.display_name)",
+	"description": "i18n(swamp_goblins:data.biome.swamp.description)",
+	"random_location_names": [
+		"i18n(swamp_goblins:data.biome.swamp.random_location_names.000)"
+	],
+	"image": "file(images/swamp_400x300.jpg)",
+	"story_board_image": "file(images/swamp_story_board.jpg)",
+	"game_mode_images": {
+		"stonehearth:game_mode:normal": "/stonehearth/data/biome/images/temperate_story_normal.png",
+		"stonehearth:game_mode:hard": "/stonehearth/data/biome/images/temperate_story_normal.png"
+	},
+	"applied_manifests": {
+		"swamp": "swamp_goblins/swamp_biome_selected/manifest.json"
+	},
+	"generation_file": "file(swamp_generation.json)",
+	"mining_loot_table": "file(swamp_mining_loot_table.json)"
+}
