@@ -72,6 +72,8 @@
 		"plants:giant_flower":	"file(entities/plants/giant_flower)",
 		"plants:white_mushroom":"file(entities/plants/white_mushroom)",
 
+		"portals:wooden_door": "file(entities/construction/wooden_door)",
+
 		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
 		"resources:cattail":		"file(entities/resources/cattail)",
 		"resources:fern":			"file(entities/resources/fern)",
@@ -85,7 +87,10 @@
 		"trees:bogger:small":	"file(entities/trees/bogger)",
 		"trees:swirl:small":	"file(entities/trees/swirl)",
 		"trees:swirl:medium":	"file(entities/trees/swirl/swirl_medium.json)",
-		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)"
+		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)",
+		"trees:cypress:small":	"file(entities/trees/cypress)",
+		"trees:cypress:medium":	"file(entities/trees/cypress/cypress_medium.json)",
+		"trees:cypress:large":	"file(entities/trees/cypress/cypress_large.json)"
 	},
 	"mixintos" :  {
 		"archipelago_biome/jobs/fisher/fisher_outfit/fisher_outfit.json":"file(jobs/fisher/fisher_outfit)",

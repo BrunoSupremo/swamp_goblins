@@ -1,0 +1,40 @@
+{
+	"mixins": "stonehearth:mixins:tree",
+	"type": "entity",
+	"components": {
+		"mob": {
+			"model_origin": {"x": -0.5, "y": 0, "z": 0.5 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(small.qb)"
+						]
+					}
+				]
+			}
+		},
+		"stonehearth:resource_node": {
+			"resource": "stonehearth:resources:wood:oak_log",
+			"durability": 5
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 12, "z": 1 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.trees.cypress.display_name)",
+			"description": "i18n(swamp_goblins:entities.trees.cypress.description)"
+		}
+	}
+}

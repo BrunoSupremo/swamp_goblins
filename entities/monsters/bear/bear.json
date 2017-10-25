@@ -9,7 +9,13 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(bear.qb)"
+					{
+						"type": "one_of",
+						"items": [
+							"file(bear.qb)",
+							"file(black_bear.qb)"
+						]
+					}
 				]
 			}
 		},
