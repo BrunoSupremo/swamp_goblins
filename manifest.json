@@ -32,12 +32,17 @@
 
 		"color_map:goblin":"file(data/materials/color_maps/hair_color_map.json)",
 
-		"critters:firefly": "file(entities/critters/firefly.json)",
-
 		"data:sound_constants": "file(data/sounds/sound_constants.json)",
 
-		"effects:firefly_effect":"file(data/effects/firefly_effect)",
-		"effects:shaman_workbench_effect": "file(data/effects/shaman_workbench_effect)",
+		"decoration:large_candle":	"file(entities/decoration/large_candle)",
+		"decoration:small_candle":	"file(entities/decoration/small_candle)",
+		"decoration:wall_candle":	"file(entities/decoration/wall_candle)",
+
+		"effects:small_candle_effect":		"file(data/effects/candle_effect/small_candle_effect.json)",
+		"effects:large_candle_effect":		"file(data/effects/candle_effect/large_candle_effect.json)",
+		"effects:firefly_effect":			"file(data/effects/firefly_effect)",
+		"effects:fog_effect":				"file(data/effects/fog_effect)",
+		"effects:shaman_workbench_effect":	"file(data/effects/shaman_workbench_effect)",
 
 		"food:plate_of_ferns": "file(entities/food/plate_of_ferns)",
 		"food:plate_of_mushrooms": "file(entities/food/plate_of_mushrooms)",
@@ -72,7 +77,8 @@
 		"plants:giant_flower":	"file(entities/plants/giant_flower)",
 		"plants:white_mushroom":"file(entities/plants/white_mushroom)",
 
-		"portals:wooden_door": "file(entities/construction/wooden_door)",
+		"portals:wooden_door":			"file(entities/construction/wooden_door)",
+		"portals:wooden_window_frame":	"file(entities/construction/wooden_window_frame)",
 
 		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
 		"resources:cattail":		"file(entities/resources/cattail)",

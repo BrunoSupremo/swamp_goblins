@@ -1,0 +1,26 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(wall_candle.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"allow_vertical_adjacent": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.wall_candle.wall_candle_ghost.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.wall_candle.wall_candle_ghost.description)",
+			"icon": "file(wall_candle.png)",
+			"category": "decoration",
+			"material_tags": "light_source decoration stockpile_decoration"
+		}
+	}
+}
