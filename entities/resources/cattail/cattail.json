@@ -1,5 +1,5 @@
 {
-	"mixins": "stonehearth:mixins:food_decay",
+	"mixins": "stonehearth:mixins:item_properties",
 	"type": "entity",
 	"components": {
 		"model_variants": {
@@ -14,24 +14,6 @@
 		}
 	},
 	"entity_data": {
-		"stonehearth:item": {
-			"category": "food"
-		},
-		"stonehearth:food": {
-			"stonehearth:sitting_on_chair": {
-				"satisfaction": 12
-			},
-			"default": {
-				"satisfaction": 10
-			},
-			"quality": 1
-		},
-		"stonehearth:food_decay": {
-			"initial_decay": {
-				"min": 500,
-				"max": 500
-			}
-		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 1,
 			"rarity": "common",
@@ -48,7 +30,7 @@
 			"icon": "file(cattail.png)",
 			"is_item": true,
 			"category": "resources",
-			"material_tags": "fiber resource plant stockpile_plant stockpile_cooking_ingredient food vegetable vegetarian raw cooking_ingredient raw_food"
+			"material_tags": "fiber resource plant stockpile_plant"
 		}
 	}
 }

@@ -2,8 +2,9 @@
 	"mixins": "stonehearth:mixins:tree",
 	"type": "entity",
 	"components": {
-		"stonehearth:lamp" : {
-			"light_effect" : "swamp_goblins:effects:firefly_effect"
+		"swamp_goblins:firefly" : {
+			"chance_to_run" : 50,
+			"random_location" : true
 		},
 		"effect_list": {
 			"default": "swamp_goblins:effects:fog_effect"

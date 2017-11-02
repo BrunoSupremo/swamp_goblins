@@ -44,8 +44,10 @@
 		"effects:fog_effect":				"file(data/effects/fog_effect)",
 		"effects:shaman_workbench_effect":	"file(data/effects/shaman_workbench_effect)",
 
-		"food:plate_of_ferns": "file(entities/food/plate_of_ferns)",
-		"food:plate_of_mushrooms": "file(entities/food/plate_of_mushrooms)",
+		"food:fern":			"file(entities/food/fern)",
+		"food:white_mushroom":	"file(entities/food/white_mushroom)",
+		"food:plate_of_ferns":		"file(entities/food/plate_of_ferns)",
+		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 
 		"furniture:hammock": "file(entities/furniture/hammock)",
 		"furniture:simple_chair": "file(entities/furniture/simple_chair)",
@@ -82,9 +84,7 @@
 
 		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
 		"resources:cattail":		"file(entities/resources/cattail)",
-		"resources:fern":			"file(entities/resources/fern)",
 		"resources:giant_flower":	"file(entities/resources/giant_flower)",
-		"resources:white_mushroom":	"file(entities/resources/white_mushroom)",
 
 		"shaman:staff": "file(jobs/shaman/shaman_staff)",
 		"shaman:talisman": "file(jobs/shaman/shaman_staff/shaman_staff_talisman.json)",
@@ -109,6 +109,8 @@
 
 		"stonehearth:data:thoughts": "file(data/happiness/thoughts.json)",
 
+		"stonehearth:decoration:firepit": "file(entities/decoration/firepit)",
+
 		"stonehearth:gm:campaigns:arcs:ambient_threats": "file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json)",
@@ -117,6 +119,9 @@
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
 		
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)"
+	},
+	"components": {
+		"firefly":"file(components/firefly/firefly_component.lua)"
 	},
 	"controllers": {
 		"class:bonesmith": "file(jobs/bonesmith/bonesmith.lua)",
