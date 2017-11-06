@@ -184,6 +184,14 @@
 					"exclusion_radius": 1
 				}
 			},
+			"swamp_goblins:plants:log": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.13,
+					"exclusion_radius": 1
+				}
+			},
 			"swamp_goblins:plants:white_mushroom": {
 				"placement_type": "dense",
 				"parameters": {
@@ -409,6 +417,7 @@
 				"water_1":{
 					"none":1,
 					"swamp_goblins:plants:cattail":8,
+					"swamp_goblins:plants:log":1,
 					"swamp_goblins:plants:giant_flower":1,
 					"swamp_goblins:trees:swirl:small":2,
 					"swamp_goblins:trees:cypress:small":1,

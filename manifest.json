@@ -77,12 +77,14 @@
 		"plants:cattail":		"file(entities/plants/cattail)",
 		"plants:fern":			"file(entities/plants/fern)",
 		"plants:giant_flower":	"file(entities/plants/giant_flower)",
+		"plants:log":			"file(entities/plants/log)",
 		"plants:white_mushroom":"file(entities/plants/white_mushroom)",
 
 		"portals:wooden_door":			"file(entities/construction/wooden_door)",
 		"portals:wooden_window_frame":	"file(entities/construction/wooden_window_frame)",
 
 		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
+		"resources:bone":			"file(entities/resources/bone)",
 		"resources:cattail":		"file(entities/resources/cattail)",
 		"resources:giant_flower":	"file(entities/resources/giant_flower)",
 
@@ -102,8 +104,12 @@
 		"archipelago_biome/jobs/fisher/fisher_outfit/fisher_outfit.json":"file(jobs/fisher/fisher_outfit)",
 
 		"stonehearth:biome:index": "file(data/biome/index.json)",
-		
+
+		"stonehearth:build:brushes" : "file(data/build/building_brushes.json)",
+
 		"stonehearth:building_templates:index": "file(data/saved_objects/building_templates_index.json)",
+
+		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
 
 		"stonehearth:data:sound_constants": "swamp_goblins:data:sound_constants",
 
@@ -117,7 +123,9 @@
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json)",
 
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
-		
+
+		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
+
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)"
 	},
 	"components": {
