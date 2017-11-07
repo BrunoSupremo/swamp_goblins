@@ -11,6 +11,10 @@
 		"stonehearth:traits_index": "file(data/traits/traits_index.json)"
 	},
 	"overrides" : {
+		"stonehearth/entities/decoration/firepit/firepit.png" : "file(entities/decoration/firepit/firepit.png)",
+		"stonehearth/entities/decoration/firepit/firepit.qb" : "file(entities/decoration/firepit/firepit.qb)",
+		"stonehearth/entities/decoration/firepit/firepit_iconic.qb" : "file(entities/decoration/firepit/firepit_iconic.qb)",
+
 		"stonehearth/entities/gizmos/camp_standard/camp_standard_ghost.json" : "swamp_goblins/entities/gizmos/camp_standard/camp_standard_ghost.json",
 
 		"stonehearth/ui/game/create_camp/images/banner.png" : "file(ui/game/create_camp/images/goblin_banner.png)"
