@@ -20,5 +20,11 @@
 		"stonehearth/ui/game/create_camp/images/banner.png" : "file(ui/game/create_camp/images/goblin_banner.png)"
 	},
 	"ui": {
+	   "js": [],
+	   "html": [],
+	   "less": [
+	      "file(ui/root/css/variables.less)",
+	      "file(ui/game/promotion_tree/promotion_tree.less)"
+	   ]
 	}
 }
