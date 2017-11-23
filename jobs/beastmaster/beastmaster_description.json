@@ -1,0 +1,62 @@
+{
+	"type": "job",
+	"enabled": true,
+	"job_id": "beastmaster",
+	"display_order": 4,
+	"alias": "swamp_goblins:jobs:beastmaster",
+	"display_name": "i18n(swamp_goblins:jobs.beastmaster.beastmaster_description.display_name)",
+	"controller": "swamp_goblins:class:beastmaster",
+	"description": "i18n(swamp_goblins:jobs.beastmaster.beastmaster_description.description)",
+	"requirements": "i18n(swamp_goblins:jobs.beastmaster.beastmaster_description.requirements)",
+	"abilities": "file(beastmaster_abilities)",
+	"equipment": {
+		"torso": "file(beastmaster_outfit)",
+		"mainhand": "swamp_goblins:beastmaster:staff"
+	},
+	"roles": "beastmaster_job crafter",
+	"talisman_uri": "swamp_goblins:beastmaster:talisman",
+	"default_stance": "passive",
+	"icon": "file(images/icon.png)",
+	"promotion_activity_name": "promote_beastmaster",
+	"task_groups": [
+		"stonehearth:task_group:common_tasks",
+		"stonehearth:task_group:crafting",
+		"stonehearth:task_group:restock",
+		"stonehearth:task_group:placement",
+		"stonehearth:task_group:healing",
+		"stonehearth:task_group:harvest",
+		"stonehearth:task_group:rescue",
+		"stonehearth:task_group:town_alert"
+	],
+	"crafter": {
+		"work_effect": "fiddle",
+		"recipe_list": "file(recipes)"
+	},
+	"workshop": {
+		"name": "i18n(swamp_goblins:jobs.beastmaster.beastmaster_description.workshop.name)",
+		"description": "i18n(swamp_goblins:jobs.beastmaster.beastmaster_description.workshop.description)",
+		"long_description": "i18n(swamp_goblins:jobs.beastmaster.beastmaster_description.workshop.long_description)",
+		"portrait": "file(/jobs/beastmaster/beastmaster_workbench/beastmaster_workbench.png)",
+		"workbench_type": "swamp_goblins:beastmaster:workbench",
+		"skin_class": "beastmaster",
+		"open_sound": "stonehearth:sounds:ui:carpenter_menu:menu_open",
+		"close_sound": "stonehearth:sounds:ui:carpenter_menu:menu_closed"
+	},
+	"parent_job": "swamp_goblins:jobs:peon",
+	"parent_level_requirement": 0,
+	"xp_rewards": {
+		"craft_level_0": 8,
+		"craft_level_1": 10,
+		"craft_level_2": 12,
+		"craft_level_3": 14,
+		"craft_level_4": 16,
+		"craft_level_5": 19,
+		"craft_level_6": 22
+	},
+	"max_level": 6,
+	"level_data": {
+		"6": {
+			"title": "i18n(swamp_goblins:jobs.beastmaster.beastmaster_description.level_6_data.title)"
+		}
+	}
+}

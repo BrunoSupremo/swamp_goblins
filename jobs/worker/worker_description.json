@@ -1,8 +1,15 @@
 {
 	"mixins": "stonehearth:jobs:worker",
+	"display_name": "i18n(swamp_goblins:jobs.rabble.rabble_description.display_name)",
+	"description": "i18n(swamp_goblins:jobs.rabble.rabble_description.description)",
 	"equipment": {
 		"mixintypes":{
 			"torso": "remove"
+		}
+	},
+	"level_data": {
+		"0": {
+			"title": "i18n(swamp_goblins:jobs.rabble.rabble_description.level_0_data.title)"
 		}
 	}
 }

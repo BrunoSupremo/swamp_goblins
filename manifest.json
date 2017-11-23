@@ -9,9 +9,9 @@
 	"aliases":{
 		"biome:swamp": "file(data/biome/swamp.json)",
 
-		"bonesmith:saw": "file(jobs/bonesmith/bonesmith_saw)",
-		"bonesmith:talisman": "file(jobs/bonesmith/bonesmith_saw/bonesmith_saw_talisman.json)",
-		"bonesmith:workbench": "file(jobs/bonesmith/bonesmith_workbench)",
+		"bonemaster:saw": "file(jobs/bonemaster/bonemaster_saw)",
+		"bonemaster:talisman": "file(jobs/bonemaster/bonemaster_saw/bonemaster_saw_talisman.json)",
+		"bonemaster:workbench": "file(jobs/bonemaster/bonemaster_workbench)",
 
 		"boulder:large_1":	"file(entities/boulders/large_boulder/large_boulder_1.json)",
 		"boulder:large_2":	"file(entities/boulders/large_boulder/large_boulder_2.json)",
@@ -44,8 +44,8 @@
 		"effects:fog_effect":				"file(data/effects/fog_effect)",
 		"effects:shaman_workbench_effect":	"file(data/effects/shaman_workbench_effect)",
 
-		"food:fern":			"file(entities/food/fern)",
-		"food:white_mushroom":	"file(entities/food/white_mushroom)",
+		"food:fern":	"file(entities/food/fern)",
+		"food:mushroom":"file(entities/food/mushroom)",
 		"food:plate_of_ferns":		"file(entities/food/plate_of_ferns)",
 		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 
@@ -57,8 +57,17 @@
 		"goblins:goblin:customizations":"file(entities/goblins/customizations.json)",
 
 		"jobs:index": "file(jobs/index.json)",
-		"jobs:bonesmith":	"file(jobs/bonesmith/bonesmith_description.json)",
-		"jobs:shaman":		"file(jobs/shaman/shaman_description.json)",
+		"jobs:spirit_walker":	"file(jobs/spirit_walker/spirit_walker_description.json)",
+		"jobs:shadow_walker":	"file(jobs/shadow_walker/shadow_walker_description.json)",
+		"jobs:warrior":			"file(jobs/warrior/warrior_description.json)",
+		"jobs:chief":			"file(jobs/chief/chief_description.json)",
+		"jobs:shaman":			"file(jobs/shaman/shaman_description.json)",
+		"jobs:firemaster":		"file(jobs/firemaster/firemaster_description.json)",
+		"jobs:peon":			"file(jobs/peon/peon_description.json)",
+		"jobs:muckscrabbler":	"file(jobs/muckscrabbler/muckscrabbler_description.json)",
+		"jobs:earthmaster":		"file(jobs/earthmaster/earthmaster_description.json)",
+		"jobs:bonemaster":		"file(jobs/bonemaster/bonemaster_description.json)",
+		"jobs:beastmaster":		"file(jobs/beastmaster/beastmaster_description.json)",
 
 		"kingdoms:firefly_clan": "file(data/firefly_clan_population.json)",
 
@@ -78,7 +87,9 @@
 		"plants:fern":			"file(entities/plants/fern)",
 		"plants:giant_flower":	"file(entities/plants/giant_flower)",
 		"plants:log":			"file(entities/plants/log)",
-		"plants:white_mushroom":"file(entities/plants/white_mushroom)",
+		"plants:mushroom":			"file(entities/plants/mushroom)",
+		"plants:mushroom_medium":	"file(entities/plants/mushroom_medium)",
+		"plants:mushroom_small":	"file(entities/plants/mushroom_small)",
 
 		"portals:wooden_door":			"file(entities/construction/wooden_door)",
 		"portals:wooden_window_frame":	"file(entities/construction/wooden_window_frame)",
@@ -130,12 +141,20 @@
 		"firefly":"file(components/firefly/firefly_component.lua)"
 	},
 	"controllers": {
-		"class:bonesmith": "file(jobs/bonesmith/bonesmith.lua)",
-		"class:shaman": "file(jobs/shaman/shaman.lua)"
+		"class:spirit_walker":	"file(jobs/spirit_walker/spirit_walker.lua)",
+		"class:shadow_walker":	"file(jobs/shadow_walker/shadow_walker.lua)",
+		"class:warrior":		"file(jobs/warrior/warrior.lua)",
+		"class:chief":			"file(jobs/chief/chief.lua)",
+		"class:shaman":			"file(jobs/shaman/shaman.lua)",
+		"class:firemaster":		"file(jobs/firemaster/firemaster.lua)",
+		"class:peon":			"file(jobs/peon/peon.lua)",
+		"class:muckscrabbler":	"file(jobs/muckscrabbler/muckscrabbler.lua)",
+		"class:earthmaster":	"file(jobs/earthmaster/earthmaster.lua)",
+		"class:bonemaster":		"file(jobs/bonemaster/bonemaster.lua)",
+		"class:beastmaster":	"file(jobs/beastmaster/beastmaster.lua)"
 	},
 	"ui":{
 		"less": [
-			"file(jobs/bonesmith/skin/workshop.less)",
 			"file(jobs/shaman/skin/workshop.less)"
 		]
 	}

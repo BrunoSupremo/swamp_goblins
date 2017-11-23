@@ -192,8 +192,8 @@
 					"exclusion_radius": 1
 				}
 			},
-			"swamp_goblins:plants:white_mushroom": {
-				"placement_type": "dense",
+			"swamp_goblins:plants:mushroom": {
+				"placement_type": "swamp_mushroom",
 				"parameters": {
 					"grid_multiple": 4,
 					"item_density": 0.25,
@@ -329,7 +329,7 @@
 
 							"swamp_goblins:plants:fern": 3,
 							"swamp_goblins:plants:giant_flower": 2,
-							"swamp_goblins:plants:white_mushroom":3
+							"swamp_goblins:plants:mushroom":4
 						}
 					},
 					"foothills": {
@@ -341,13 +341,13 @@
 							"swamp_goblins:trees:cypress:large":3,
 
 							"swamp_goblins:plants:fern": 4,
-							"swamp_goblins:plants:white_mushroom": 2
+							"swamp_goblins:plants:mushroom": 3
 						}
 					},
 					"mountains": {
 						"1": {
 							"swamp_goblins:plants:fern": 2,
-							"swamp_goblins:plants:white_mushroom": 1
+							"swamp_goblins:plants:mushroom": 1
 						}
 					}
 				},

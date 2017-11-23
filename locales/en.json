@@ -115,13 +115,14 @@
 				"description": "Can be harvested for healing herbs",
 				"unripe_description": "This plant has been harvested and has not grown back yet"
 			},
-			"white_mushroom": {
-				"display_name": "White Mushroom",
+			"mushroom": {
+				"display_name": "Mushroom",
 				"description": "Harvestable for a meager food supply.",
 				"unripe_description": "This plant has been harvested and has not grown back yet"
 			},
 			"log": {
-				"display_name": "Log"
+				"display_name": "Log",
+				"description": "A floating piece of log"
 			}
 		},
 		"resources": {
@@ -133,8 +134,8 @@
 				"display_name": "Giple Flower",
 				"description": "An herb commonly used for medicinal purposes"
 			},
-			"white_mushroom": {
-				"display_name": "White Mushroom",
+			"mushroom": {
+				"display_name": "Mushroom",
 				"description": "Ready for eating"
 			},
 			"fern": {
@@ -171,15 +172,12 @@
 		}
 	},
 	"jobs": {
-		"bonesmith": {
-			"bonesmith_description": {
-				"display_name": "Bonesmith",
-				"description": "Bonesmith description",
-				"requirements": "Bonesmith requirements"
-			},
-			"bonesmith_workbench": {
-				"display_name": "Bonesmith Workbench",
-				"description": "Bonesmith will use to craft their stuff"
+		"rabble": {
+			"rabble_description": {
+				"display_name": "Rabble",
+				"level_0_data":{
+					"title":"Rabble"
+				}
 			}
 		},
 		"shaman": {
@@ -191,6 +189,56 @@
 			"shaman_workbench": {
 				"display_name": "Shaman Workbench",
 				"description": "Shamans will use to craft their stuff"
+			}
+		},
+		"spirit_walker": {
+			"spirit_walker_description": {
+				"display_name": "Spirit Walker"
+			}
+		},
+		"shadow_walker": {
+			"shadow_walker_description": {
+				"display_name": "Shadow Walker"
+			}
+		},
+		"warrior": {
+			"warrior_description": {
+				"display_name": "Warrior"
+			}
+		},
+		"chief": {
+			"chief_description": {
+				"display_name": "Chief"
+			}
+		},
+		"firemaster": {
+			"firemaster_description": {
+				"display_name": "Firemaster"
+			}
+		},
+		"peon": {
+			"peon_description": {
+				"display_name": "Peon"
+			}
+		},
+		"muckscrabbler": {
+			"muckscrabbler_description": {
+				"display_name": "Muckscrabbler"
+			}
+		},
+		"earthmaster": {
+			"earthmaster_description": {
+				"display_name": "Earthmaster"
+			}
+		},
+		"bonemaster": {
+			"bonemaster_description": {
+				"display_name": "Bonemaster"
+			}
+		},
+		"beastmaster": {
+			"beastmaster_description": {
+				"display_name": "Beastmaster"
 			}
 		}
 	},
