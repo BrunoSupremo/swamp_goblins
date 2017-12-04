@@ -1,6 +1,7 @@
 {
 	"name": "sickly_green_fog",
-	"duration": 100,
+	"duration": 20000,
+	"loops": true,
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
@@ -19,7 +20,7 @@
 		"lifetime": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values": [10, 15]
+				"values": [10000, 15000]
 			}
 		},
 		"speed": {

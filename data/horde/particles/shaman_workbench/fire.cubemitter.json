@@ -1,11 +1,11 @@
 {
 	"name": "firefly",
-	"duration": 20,
+	"duration": 20000,
 	"particle": {
 		"lifetime": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values":  [0.5, 1]
+				"values":  [500, 1000]
 			}
 		},
 		"speed": {

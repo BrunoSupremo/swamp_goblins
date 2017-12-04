@@ -2,9 +2,7 @@
 	"type": "mixin",
 	"mixins": "stonehearth:mixins:mob",
 	"components": {
-		"stonehearth:ai": {
-			"ai_tree": "stonehearth:data:player_task_groups"
-		},
+		"stonehearth:ai": {},
 		"render_info": {
 			"model_variant": "goblin",
 			"color_map": "swamp_goblins:color_map:goblin",
@@ -37,7 +35,7 @@
 			"starting_level_title": "i18n(stonehearth:stonehearth_mixins.base_human.job.starting_level_title)",
 			"default_level_title": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_level_title)",
 			"default_level_announcement": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_level_announcement)",
-			"xp_equation_for_next_level": "next_level ^ 1.1 * 100",
+			"xp_equation_for_next_level": "curr_level * 115 + 135",
 			"levels_between_attribute_increase": 10,
 			"level_up_data": {
 				"level_up_perk_description": "i18n(stonehearth:stonehearth_mixins.base_human.job.level_up_perk_description)",
@@ -362,13 +360,15 @@
 		"stonehearth:consumption" : {},
 		"stonehearth:starvation" : {},
 		"stonehearth:interactions": {},
-		"stonehearth:customization": {}
+		"stonehearth:customization": {},
+		"stonehearth:appeal": {}
 	},
 	"entity_data": {
 		"stonehearth:entity_radius": 0.75,
 		"stonehearth:entity_reach": 1.0,
 		"stonehearth:ai_packs": {
 			"packs": [
+				"stonehearth:ai_pack:human",
 				"stonehearth:ai_pack:harvesting",
 				"stonehearth:ai_pack:sitting",
 				"stonehearth:ai_pack:sleeping",
