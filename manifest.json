@@ -103,6 +103,8 @@
 		"shaman:talisman": "file(jobs/shaman/shaman_staff/shaman_staff_talisman.json)",
 		"shaman:workbench": "file(jobs/shaman/shaman_workbench)",
 		
+		"terrain:mountain_grass":"file(entities/terrain/mountain_grass)",
+
 		"trees:bogger:small":	"file(entities/trees/bogger)",
 		"trees:swirl:small":	"file(entities/trees/swirl)",
 		"trees:swirl:medium":	"file(entities/trees/swirl/swirl_medium.json)",
@@ -138,7 +140,8 @@
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)"
 	},
 	"components": {
-		"firefly":"file(components/firefly/firefly_component.lua)"
+		"firefly":"file(components/firefly/firefly_component.lua)",
+		"mountain_grass":"file(components/mountain_grass/mountain_grass_component.lua)"
 	},
 	"controllers": {
 		"class:spirit_walker":	"file(jobs/spirit_walker/spirit_walker.lua)",

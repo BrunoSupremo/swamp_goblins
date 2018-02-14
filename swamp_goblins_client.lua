@@ -6,7 +6,7 @@ local player_service_trace = nil
 local function check_override_ui(players, player_id)
    -- Load ui mod
    if not player_id then
-      player_id = 'player_1' -- TODO(Yshan) client should know what player id it is
+      player_id = _radiant.client.get_player_id()
    end
    
    local client_player = players[player_id]
@@ -31,7 +31,9 @@ local function trace_player_service()
 end
 
 radiant.events.listen(swamp_goblins, 'radiant:init', function()
-      trace_player_service()
+   radiant.events.listen(radiant, 'radiant:client:server_ready', function()
+         trace_player_service()
+      end)
    end)
 
 return swamp_goblins

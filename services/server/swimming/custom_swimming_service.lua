@@ -10,10 +10,10 @@ function CustomSwimmingService:_is_swimming(entity)
 	if self[fn] ~= nil then
 		--found a function for the biome being used, named:
 		-- self:_is_swimming_<biome_name>(args,...)
-		self[fn](self, entity)
+		return self[fn](self, entity)
 	else
 		--there is no function for this specific biome, so call a copy of the original from stonehearth
-		self:_is_swimming_original(entity)
+		return self:_is_swimming_original(entity)
 	end
 end
 

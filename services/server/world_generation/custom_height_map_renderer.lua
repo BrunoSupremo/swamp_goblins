@@ -107,7 +107,7 @@ function CustomHeightMapRenderer:_add_mountains_to_region_swamp_goblins(region3,
 
 	block_min = 0
 
-	local max_foothills_height = 35
+	local max_foothills_height = 33 --hardcoded value
 
 	for i=1, num_rock_layers do
 		if (i == num_rock_layers) or (height <= rock_layers[i].max_height) then
@@ -117,7 +117,7 @@ function CustomHeightMapRenderer:_add_mountains_to_region_swamp_goblins(region3,
 			block_max = rock_layers[i].max_height
 		end
 
-		local has_grass = stop and block_max > max_foothills_height and block_max <60
+		local has_grass = stop and block_max > max_foothills_height and block_max <58 --hardcoded value
 		local rock_top = has_grass and block_max-1 or block_max
 
 		if has_grass then

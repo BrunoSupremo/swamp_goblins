@@ -1,57 +1,57 @@
 {
-	"name": "firefly",
-	"duration": 20000,
-	"particle": {
-		"lifetime": {
-			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values":  [500, 1000]
-			}
-		},
-		"speed": {
-			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [0.2, 0.9]
-			}
-		},
-
-		"color": {
-			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [
-					[0.8, 0.1, 0.1, 0.8],
-					[1.0, 0.5, 0.0, 1]
-				]
-			},
-			"over_lifetime_a": {
-				"kind": "CURVE",
-				"values": [
-					[0.0, 1], [0.8, 0.2], [1.0, 0.0]
-				]
-			}
-		},
-		"scale": {
-			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [0.01, 0.15]
-			}
-		},
-		"velocity": {
-		}
-	},
-	"emission": {
-		"rate": {
-			"kind": "CONSTANT",
-			"values": [100]
-		},
-		"origin": {
-			"surface": "RECTANGLE",
-			"values": [1, 1.5]
-		},
-		"angle": {
-			"kind": "CONSTANT",
-			"values": [30]
-		}
-	},
-	"material": "materials/cubemitter_bloom.material.json"
+   "name": "firefly",
+   "duration": 20000,
+   "material": "materials/cubemitter_bloom.material.json",
+   "loops": true,
+   "emission": {
+      "rate": {
+         "kind": "CONSTANT",
+         "values": [100]
+      },
+      "angle": {
+         "kind": "CONSTANT",
+         "values": [30]
+      },
+      "origin": {
+         "surface": "RECTANGLE",
+         "values": [1, 1.5, 0, 0]
+      }
+   },
+   "particle": {
+      "lifetime": {
+         "start": {
+            "kind": "RANDOM_BETWEEN",
+            "values": [500, 1000]
+         }
+      },
+      "speed": {
+         "start": {
+            "kind": "RANDOM_BETWEEN",
+            "values": [0.2, 0.9]
+         }
+      },
+      "velocity": {},
+      "scale": {
+         "start": {
+            "kind": "RANDOM_BETWEEN",
+            "values": [0.01, 0.15]
+         }
+      },
+      "color": {
+         "start": {
+            "kind": "RANDOM_BETWEEN",
+            "values": [
+               [0.8, 0.1, 0.1, 0.8],
+               [1, 0.5, 0, 1]
+            ]
+         },
+         "over_lifetime_a": {
+            "kind": "CURVE",
+            "values": [
+               [0, 1],
+               [1, 0]
+            ]
+         }
+      }
+   }
 }

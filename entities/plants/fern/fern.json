@@ -2,6 +2,10 @@
 	"type": "entity",
 	"mixins": "file(fern_ghost.json)",
 	"components": {
+		"swamp_goblins:mountain_grass": {
+			"radius": 8,
+			"block_type": "grass_hills_edge_2"
+		},
 		"model_variants": {
 			"depleted": {
 				"models": [
