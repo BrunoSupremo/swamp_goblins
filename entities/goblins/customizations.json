@@ -30,6 +30,41 @@
 				}
 			}
 		},
+		"eye_color": {
+			"type": "material_map",
+			"values": {
+				"aqua": {
+					"file": "/stonehearth/data/materials/material_maps/eye_aqua_material_map.json"
+				},
+				"black": {
+					"file": "/stonehearth/data/materials/material_maps/eye_black_material_map.json"
+				},
+				"blue": {
+					"file": "/stonehearth/data/materials/material_maps/eye_blue_material_map.json"
+				},
+				"blurple": {
+					"file": "/stonehearth/data/materials/material_maps/eye_blurple_material_map.json"
+				},
+				"brown": {
+					"file": "/stonehearth/data/materials/material_maps/eye_brown_material_map.json"
+				},
+				"green": {
+					"file": "/stonehearth/data/materials/material_maps/eye_green_material_map.json"
+				},
+				"hazel": {
+					"file": "/stonehearth/data/materials/material_maps/eye_hazel_material_map.json"
+				},
+				"magenta": {
+					"file": "/stonehearth/data/materials/material_maps/eye_magenta_material_map.json"
+				},
+				"red": {
+					"file": "/stonehearth/data/materials/material_maps/eye_red_material_map.json"
+				},
+				"yellow": {
+					"file": "/stonehearth/data/materials/material_maps/eye_yellow_material_map.json"
+				}
+			}
+		},
 		"accessories": {
 			"type": "model",
 			"values": {
@@ -46,9 +81,6 @@
 			"values": {
 				"[none]":{
 					"file": ""
-				},
-				"straight_eyebrows":{
-					"file": "file(brows.qb)"
 				}
 			}
 		},

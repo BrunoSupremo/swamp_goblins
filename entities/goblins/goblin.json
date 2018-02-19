@@ -3,7 +3,9 @@
 	"mixins": "swamp_goblins:mixins:base_goblin", 
 	"components": {
 		"render_info" : {
-			"animation_table": "/stonehearth/data/rigs/entities/monster/goblins/goblin/goblin.json"
+			"animation_table": "stonehearth:skeletons:humanoid:female",
+			"model_variant": "female",
+			"scale":0.09
 		},
 		"model_variants": {
 			"default": {
@@ -39,6 +41,20 @@
 							"blonde": 2,
 							"platinum": 1.5
 						}
+					},
+					"eye_color": {
+						"weights": {
+							"aqua": 1,
+							"black": 1,
+							"blue": 1,
+							"blurple": 1,
+							"brown": 1,
+							"green": 1,
+							"hazel": 1,
+							"magenta": 1,
+							"red": 1,
+							"yellow": 1
+						}
 					}
 				},
 				"young": {
@@ -50,8 +66,7 @@
 					},
 					"eyebrows": {
 						"weights": {
-							"[none]": 2,
-							"straight_eyebrows": 1
+							"[none]": 2
 						}
 					},
 					"head_hair": {
@@ -64,14 +79,6 @@
 					}
 				}
 			}
-		},
-		"stonehearth:idle_effects": {
-			"effects": [
-				{
-					"name": "emote_pickear_fail",
-					"weight": 0.5
-				}
-			]
 		}
 	}
 }
