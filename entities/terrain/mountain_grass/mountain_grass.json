@@ -3,6 +3,7 @@
 	"mixins": "stonehearth:mixins:placed_object",
 	"components": {
 		"swamp_goblins:mountain_grass": {
+			"auto_destroy":true,
 			"radius": 16,
 			"block_type": "grass_hills_edge_1",
 			"priority":1

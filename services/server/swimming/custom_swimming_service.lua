@@ -23,9 +23,13 @@ function CustomSwimmingService:_is_swimming_original(entity)
 	end
 
 	local location = radiant.entities.get_world_grid_location(entity)
+	if not location then
+		return false
+	end
 	local mob_collision_type = entity:add_component('mob'):get_mob_collision_type()
 	local entity_height = self._mob_heights[mob_collision_type]
 	if not entity_height then
+		log:warning('unsupported mob_collision_type for swimming')
 		return false
 	end
 

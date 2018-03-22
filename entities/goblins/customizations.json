@@ -1,10 +1,11 @@
 {
 	"type": "index",
 	"categories": {
-		"head_hair": ["head_hair"],
-		"face_hair": ["accessories","eyebrows"],
+		"head_hair": ["hair"],
+		"face_hair": ["accessories"],
 		"skin_color": ["[none]"],
-		"hair_color": ["hair_color"]
+		"hair_color": ["hair_color"],
+		"tattoos": ["tattoos"]
 	},
 	"styles": {
 		"hair_color": {
@@ -76,15 +77,7 @@
 				}
 			}
 		},
-		"eyebrows": {
-			"type": "model",
-			"values": {
-				"[none]":{
-					"file": ""
-				}
-			}
-		},
-		"head_hair": {
+		"hair": {
 			"type": "model",
 			"values": {
 				"[none]": {
@@ -98,6 +91,47 @@
 				},
 				"hair_3": {
 					"file":"file(hair_3.qb)"
+				},
+				"hair_4": {
+					"file":"file(hair_4.qb)"
+				},
+				"hair_5": {
+					"file":"file(hair_5.qb)"
+				},
+				"hair_6": {
+					"file":"file(hair_6.qb)"
+				}
+			}
+		},
+		"tattoos": {
+			"type": "model",
+			"values": {
+				"[none]": {
+					"file": ""
+				},
+				"tattoos_1": {
+					"file": "file(tattoos_1.qb)"
+				},
+				"tattoos_2": {
+					"file": "file(tattoos_2.qb)"
+				},
+				"tattoos_3": {
+					"file": "file(tattoos_3.qb)"
+				},
+				"tattoos_4": {
+					"file": "file(tattoos_4.qb)"
+				},
+				"tattoos_5": {
+					"file": "file(tattoos_5.qb)"
+				},
+				"tattoos_6": {
+					"file": "file(tattoos_6.qb)"
+				},
+				"tattoos_7": {
+					"file": "file(tattoos_7.qb)"
+				},
+				"tattoos_8": {
+					"file": "file(tattoos_8.qb)"
 				}
 			}
 		}

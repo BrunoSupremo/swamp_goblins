@@ -10,6 +10,7 @@ end
 
 function MountainGrass:_on_world_generation_complete()
 	local json = radiant.entities.get_json(self)
+	self.auto_destroy = json.auto_destroy
 	self.radius = json.radius or 8
 	self.block_type = json.block_type or "grass"
 	self.priority = json.priority or 2 --1 = higher priority, 2 = lower priority
@@ -34,7 +35,11 @@ function MountainGrass:swap_blocks()
 			radiant.terrain.add_cube(Cube3(cube.min,cube.max,block_type))
 		end
 	end
-	self._entity:remove_component('swamp_goblins:mountain_grass')
+	if self.auto_destroy then
+		radiant.entities.destroy_entity(self._entity)
+	else
+		self._entity:remove_component('swamp_goblins:mountain_grass')
+	end
 end
 
 return MountainGrass
