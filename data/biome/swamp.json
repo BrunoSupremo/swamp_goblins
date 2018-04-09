@@ -15,5 +15,27 @@
 		"swamp": "swamp_goblins/swamp_biome_selected/manifest.json"
 	},
 	"generation_file": "file(swamp_generation.json)",
-	"mining_loot_table": "file(swamp_mining_loot_table.json)"
+	"mining_loot_table": "file(swamp_mining_loot_table.json)",
+	"weather": [
+		{
+			"uri": "swamp_goblins:weather:foggy",
+			"weight": 10
+		},
+		{
+			"uri": "stonehearth:weather:rain",
+			"weight": 5
+		},
+		{
+			"uri": "stonehearth:weather:sunny",
+			"weight": 1
+		},
+		{
+			"uri": "stonehearth:weather:thunderstorm",
+			"weight": 1
+		},
+		{
+			"uri": "stonehearth:weather:lucky",
+			"weight": 0.1
+		}
+	]
 }

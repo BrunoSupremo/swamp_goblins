@@ -1,4 +1,8 @@
-swamp_goblins = {}
+swamp_goblins = {
+version = 24
+}
+local log = radiant.log.create_logger('version')
+log:error("Swamp Goblins mod for alpha %d", swamp_goblins.version)
 
 function swamp_goblins:_on_required_loaded()
 	local custom_overview_map = require('services.server.world_generation.custom_overview_map')

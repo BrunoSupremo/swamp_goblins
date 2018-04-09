@@ -7,6 +7,9 @@
 	"client_init_script" : "file(swamp_goblins_client)",
 	"server_init_script" : "file(swamp_goblins_server)",
 	"aliases":{
+		"armor:chieftan_base_armor": "file(entities/armor/chieftan_base_armor)",
+		"armor:chieftan_base_helmet": "file(entities/armor/chieftan_base_armor/chieftan_base_helmet.json)",
+
 		"biome:swamp": "file(data/biome/swamp.json)",
 
 		"bonemaster:saw": "file(jobs/bonemaster/bonemaster_saw)",
@@ -41,7 +44,6 @@
 		"effects:small_candle_effect":		"file(data/effects/candle_effect/small_candle_effect.json)",
 		"effects:large_candle_effect":		"file(data/effects/candle_effect/large_candle_effect.json)",
 		"effects:firefly_effect":			"file(data/effects/firefly_effect)",
-		"effects:fog_effect":				"file(data/effects/fog_effect)",
 		"effects:shaman_workbench_effect":	"file(data/effects/shaman_workbench_effect)",
 
 		"food:fern":	"file(entities/food/fern)",
@@ -111,7 +113,9 @@
 		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)",
 		"trees:cypress:small":	"file(entities/trees/cypress)",
 		"trees:cypress:medium":	"file(entities/trees/cypress/cypress_medium.json)",
-		"trees:cypress:large":	"file(entities/trees/cypress/cypress_large.json)"
+		"trees:cypress:large":	"file(entities/trees/cypress/cypress_large.json)",
+
+		"weather:foggy": "file(data/weather/foggy)"
 	},
 	"mixintos" :  {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
