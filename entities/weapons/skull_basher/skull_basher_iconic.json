@@ -1,0 +1,22 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(skull_basher.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.weapons.skull_basher.display_name)",
+			"description": "i18n(swamp_goblins:entities.weapons.skull_basher.description)",
+			"icon": "file(skull_basher.png)",
+			"is_item": true,
+			"category": "weapons"
+		}
+	}
+}

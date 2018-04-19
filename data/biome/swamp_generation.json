@@ -1,4 +1,5 @@
 {
+	"type": "biome_generation_data",
 	"ring_tesselation": {
 		"dirt": [
 			{
@@ -313,6 +314,7 @@
 		},
 		"berries": {
 			"placement": {
+				"uri": "stonehearth:plants:berry_bush",
 				"function": "gaussian",
 				"mean": -100,
 				"std_dev": 0,
