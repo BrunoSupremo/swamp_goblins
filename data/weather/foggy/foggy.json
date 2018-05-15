@@ -2,7 +2,7 @@
    "display_name": "i18n(stonehearth:data.weather.foggy.display_name)",
    "description": "i18n(swamp_goblins:data.weather.foggy.description)",
    "icon": "/stonehearth/data/weather/foggy/foggy.png",
-   "sky_settings": "file(foggy_sky_settings.json)",
+   "sky_settings": "stonehearth:sky_settings:foggy",
    "ambient_sound_key": "foggy",
    "thoughts": [
       "stonehearth:thoughts:weather:foggy_negative",

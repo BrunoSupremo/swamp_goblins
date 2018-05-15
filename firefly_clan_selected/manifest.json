@@ -2,6 +2,7 @@
 	"info" : {
 		"name" : "goblins_selected",
 		"deferred_load": true,
+		"client_only": true,
 		"version" : 3
 	},
 	"aliases" : {},
@@ -21,11 +22,11 @@
 		"stonehearth/ui/game/start_menu/images/citizens.png": "file(ui/game/start_menu/images/citizens.png)"
 	},
 	"ui": {
-	   "js": [],
-	   "html": [],
-	   "less": [
-	      "file(ui/root/css/variables.less)",
-	      "file(ui/game/promotion_tree/promotion_tree.less)"
-	   ]
+		"js": [],
+		"html": [],
+		"less": [
+			"file(ui/root/css/variables.less)",
+			"file(ui/game/promotion_tree/promotion_tree.less)"
+		]
 	}
 }

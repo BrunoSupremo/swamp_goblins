@@ -1,12 +1,12 @@
 {
 	"components" : {
 		"movement_modifier_shape": {
-			"modifier": 0,
-			"nav_preference_modifier": -0.1,
+			"modifier": -0.6,
+			"nav_preference_modifier": -0.5,
 			"region": [
 				{
-					"min": { "x": -300, "y": 0, "z": -300 },
-					"max": { "x": 300, "y": 1, "z": 300 }
+					"min": { "x": -100, "y": 0, "z": -100 },
+					"max": { "x": 100, "y": 1, "z": 100 }
 				}
 			]
 		}

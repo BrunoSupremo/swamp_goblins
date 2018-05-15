@@ -153,7 +153,7 @@
 			},
 			"swamp_goblins:trees:swirl:small" : {
 				"placement_type" : "dense",
-				"parameters" : { "grid_multiple" : 2, "item_density" : 0.6, "exclusion_radius" : 2 }
+				"parameters" : { "grid_multiple" : 2, "item_density" : 0.3, "exclusion_radius" : 2 }
 			},
 			"swamp_goblins:trees:swirl:medium" : {
 				"placement_type" : "single",
@@ -170,25 +170,17 @@
 			"swamp_goblins:plants:cattail": {
 				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 3,
-					"item_density": 0.15,
+					"grid_multiple": 2,
+					"item_density": 0.2,
 					"exclusion_radius": 1
 				}
 			},
 			"swamp_goblins:plants:fern": {
 				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 4,
+					"grid_multiple": 3,
 					"item_density": 0.18,
 					"exclusion_radius": 1
-				},
-				"mountains": {
-					"placement_type": "dense",
-					"parameters": {
-						"grid_multiple": 3,
-						"item_density": 0.18,
-						"exclusion_radius": 1
-					}
 				}
 			},
 			"swamp_goblins:plants:giant_flower": {
@@ -202,15 +194,15 @@
 			"swamp_goblins:plants:log": {
 				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 4,
-					"item_density": 0.13,
+					"grid_multiple": 2,
+					"item_density": 0.25,
 					"exclusion_radius": 1
 				}
 			},
 			"swamp_goblins:plants:mushroom": {
-				"placement_type": "swamp_mushroom",
+				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 4,
+					"grid_multiple": 2,
 					"item_density": 0.25,
 					"exclusion_radius": 1
 				}
@@ -240,56 +232,17 @@
 				"parameters" : { "ground_radius" : 2, "exclusion_radius" : 3 }
 			}
 		},
-		"trees": {
-			"sizes": {
-				"swamp_goblins:trees:swirl": {
-					"small" : 0,
-					"medium" : 5,
-					"large" : 14
-				},
-				"swamp_goblins:trees:cypress": {
-					"small" : 0,
-					"medium" : 5,
-					"large" : 14
-				},
-				"swamp_goblins:trees:bogger": {
-					"small" : 0
-				}
-			},
-			"weights": {
-				"plains": {
-					"1": {
-						"swamp_goblins:trees:bogger": 1,
-						"swamp_goblins:trees:cypress": 1,
-						"swamp_goblins:trees:swirl": 1
-					}
-				},
-				"foothills": {
-					"1": {
-						"swamp_goblins:trees:bogger": 1,
-						"swamp_goblins:trees:cypress": 1,
-						"swamp_goblins:trees:swirl": 1
-					}
-				},
-				"mountains": {
-					"1": {
-						"swamp_goblins:trees:cypress": 1
-					}
-				}
-			},
-			"noise_map_parameters": {
+		"trees":{
+			"sizes":{},
+			"weights":{},
+			"noise_map_parameters":{
 				"mean_offset": {
 					"boundary": 0,
 					"water": 0
 				},
-				"terrain_based": {
+				"terrain_based":{
 					"plains": {
 						"1": {
-							"density": 0,
-							"mean": 0,
-							"std_dev": 0
-						},
-						"2": {
 							"density": 0,
 							"mean": 0,
 							"std_dev": 0
@@ -304,9 +257,9 @@
 					},
 					"mountains": {
 						"1": {
+							"density": 0,
 							"mean": 0,
-							"std_dev": 0,
-							"density": 0
+							"std_dev": 0
 						}
 					}
 				}
@@ -314,7 +267,6 @@
 		},
 		"berries": {
 			"placement": {
-				"uri": "stonehearth:plants:berry_bush",
 				"function": "gaussian",
 				"mean": -100,
 				"std_dev": 0,
@@ -338,17 +290,17 @@
 							"swamp_goblins:trees:bogger:small":20,
 							"swamp_goblins:trees:swirl:small":2,
 							"swamp_goblins:trees:cypress:small":6,
-							"swamp_goblins:trees:cypress:medium":6,
-							"swamp_goblins:trees:cypress:large":3,
+							"swamp_goblins:trees:cypress:medium":5,
+							"swamp_goblins:trees:cypress:large":2,
 
 							"swamp_goblins:plants:fern": 3,
-							"swamp_goblins:plants:giant_flower": 2,
-							"swamp_goblins:plants:mushroom":4
+							"swamp_goblins:plants:giant_flower": 1.75,
+							"swamp_goblins:plants:mushroom":5
 						}
 					},
 					"foothills": {
 						"1": {
-							"swamp_goblins:trees:bogger:small":20,
+							"swamp_goblins:trees:bogger:small":15,
 							"swamp_goblins:trees:swirl:small":2,
 							"swamp_goblins:trees:cypress:small":6,
 							"swamp_goblins:trees:cypress:medium":6,
@@ -376,13 +328,13 @@
 						"plains": {
 							"1": {
 								"probability": 0.7,
-								"density": 0.7
+								"density": 0.65
 							}
 						},
 						"foothills": {
 							"1": {
 								"probability": 0.7,
-								"density": 0.7
+								"density": 0.65
 							}
 						},
 						"mountains": {
@@ -416,8 +368,8 @@
 						},
 						"mountains": {
 							"1": {
-								"probability": 0.2,
-								"density": 0.1
+								"probability": 0.25,
+								"density": 0.15
 							}
 						}
 					}
@@ -431,10 +383,10 @@
 		"water": {
 			"spawn_objects":{
 				"water_1":{
-					"none":1,
-					"swamp_goblins:plants:cattail":7.5,
+					"none":2,
+					"swamp_goblins:plants:cattail":6,
 					"swamp_goblins:plants:log":1.5,
-					"swamp_goblins:plants:giant_flower":1,
+					"swamp_goblins:plants:giant_flower":1.25,
 					"swamp_goblins:trees:swirl:small":2,
 					"swamp_goblins:trees:cypress:small":1,
 					"swamp_goblins:trees:cypress:medium":1,
