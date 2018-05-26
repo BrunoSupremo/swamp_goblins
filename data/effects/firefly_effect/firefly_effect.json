@@ -10,6 +10,16 @@
 				"ry":0,
 				"rz":0
 			}
+		},
+		"firefly_dust": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/firefly/firefly_dust.cubemitter.json",
+			"loop": true,
+			"transforms": {"x":0, "y":3.5, "z":0,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
 		}
 	}
 }
