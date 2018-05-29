@@ -7,14 +7,29 @@
 	"client_init_script" : "file(swamp_goblins_client)",
 	"server_init_script" : "file(swamp_goblins_server)",
 	"aliases":{
+		"armor:bear_armor":		"file(entities/armor/bear_armor)",
+		"armor:bear_helmet":	"file(entities/armor/bear_helmet)",
+		"armor:bone_armor":		"file(entities/armor/bone_armor)",
+		"armor:bone_helmet":	"file(entities/armor/bone_helmet)",
+		"armor:fern_helmet":	"file(entities/armor/fern_helmet)",
+		"armor:flower_helmet":	"file(entities/armor/flower_helmet)",
+		"armor:leather_armor":	"file(entities/armor/leather_armor)",
+		"armor:leather_helmet":	"file(entities/armor/leather_helmet)",
+		"armor:log_armor":		"file(entities/armor/log_armor)",
+		"armor:log_helmet":		"file(entities/armor/log_helmet)",
+		"armor:mushroom_armor":	"file(entities/armor/mushroom_armor)",
+		"armor:mushroom_helmet":"file(entities/armor/mushroom_helmet)",
+		"armor:varanus_armor":	"file(entities/armor/varanus_armor)",
+		"armor:varanus_helmet":	"file(entities/armor/varanus_helmet)",
+
 		"armor:chieftan_base_armor": "file(entities/armor/chieftan_base_armor)",
 		"armor:chieftan_base_helmet": "file(entities/armor/chieftan_base_armor/chieftan_base_helmet.json)",
 
 		"biome:swamp": "file(data/biome/swamp.json)",
 
-		"bonemaster:saw": "file(jobs/bonemaster/bonemaster_saw)",
-		"bonemaster:talisman": "file(jobs/bonemaster/bonemaster_saw/bonemaster_saw_talisman.json)",
-		"bonemaster:workbench": "file(jobs/bonemaster/bonemaster_workbench)",
+		"bonesmith:saw": "file(jobs/bonesmith/bonesmith_saw)",
+		"bonesmith:talisman": "file(jobs/bonesmith/bonesmith_saw/bonesmith_saw_talisman.json)",
+		"bonesmith:workbench": "file(jobs/bonesmith/bonesmith_workbench)",
 
 		"boulder:large_1":	"file(entities/boulders/large_boulder/large_boulder_1.json)",
 		"boulder:large_2":	"file(entities/boulders/large_boulder/large_boulder_2.json)",
@@ -25,15 +40,17 @@
 
 		"buffs:sticky_water":"file(data/buffs/sticky_water)",
 
+		"camp_standard":	"file(entities/gizmos/camp_standard)",
+		"camp_standard_2":	"file(entities/gizmos/camp_standard_2)",
+
 		"consumables:blue_potion":	"file(entities/consumables/blue_potion)",
 		"consumables:green_potion":	"file(entities/consumables/green_potion)",
 		"consumables:purple_potion":"file(entities/consumables/purple_potion)",
 		"consumables:white_potion":	"file(entities/consumables/white_potion)",
 
-		"camp_standard":	"file(entities/gizmos/camp_standard)",
-		"camp_standard_2":	"file(entities/gizmos/camp_standard_2)",
-
 		"color_map:goblin":"file(data/materials/color_maps/goblin_color_map.json)",
+
+		"critters:frog":"file(entities/critters/frog)",
 
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
@@ -70,7 +87,7 @@
 		"jobs:peon":			"file(jobs/peon/peon_description.json)",
 		"jobs:muckscrabbler":	"file(jobs/muckscrabbler/muckscrabbler_description.json)",
 		"jobs:earthmaster":		"file(jobs/earthmaster/earthmaster_description.json)",
-		"jobs:bonemaster":		"file(jobs/bonemaster/bonemaster_description.json)",
+		"jobs:bonesmith":		"file(jobs/bonesmith/bonesmith_description.json)",
 		"jobs:beastmaster":		"file(jobs/beastmaster/beastmaster_description.json)",
 
 		"kingdoms:firefly_clan": "file(data/firefly_clan_population.json)",
@@ -110,12 +127,20 @@
 		"terrain:mountain_grass":"file(entities/terrain/mountain_grass)",
 
 		"trees:bogger:small":	"file(entities/trees/bogger)",
+		"trees:bogger:bud":		"file(entities/trees/bogger/bud/bogger_plant_bud.json)",
+		"trees:bogger:seed":	"file(entities/trees/bogger/seed/bogger_seed.json)",
+		"trees:bogger:sprout":	"file(entities/trees/bogger/sprout/bogger_sprout.json)",
+		"trees:bogger:stem":	"file(entities/trees/bogger/stem/bogger_plant_stem.json)",
 		"trees:swirl:small":	"file(entities/trees/swirl)",
 		"trees:swirl:medium":	"file(entities/trees/swirl/swirl_medium.json)",
 		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)",
 		"trees:cypress:small":	"file(entities/trees/cypress)",
 		"trees:cypress:medium":	"file(entities/trees/cypress/cypress_medium.json)",
 		"trees:cypress:large":	"file(entities/trees/cypress/cypress_large.json)",
+		"trees:cypress:bud":	"file(entities/trees/cypress/bud/cypress_plant_bud.json)",
+		"trees:cypress:seed":	"file(entities/trees/cypress/seed/cypress_seed.json)",
+		"trees:cypress:sprout":	"file(entities/trees/cypress/sprout/cypress_sprout.json)",
+		"trees:cypress:stem":	"file(entities/trees/cypress/stem/cypress_plant_stem.json)",
 
 		"weapons:skull_basher": "file(entities/weapons/skull_basher)",
 
@@ -152,16 +177,16 @@
 		"mountain_grass":"file(components/mountain_grass/mountain_grass_component.lua)"
 	},
 	"controllers": {
+		"class:worker":			"file(jobs/worker/worker.lua)",
 		"class:spirit_walker":	"file(jobs/spirit_walker/spirit_walker.lua)",
 		"class:shadow_walker":	"file(jobs/shadow_walker/shadow_walker.lua)",
 		"class:warrior":		"file(jobs/warrior/warrior.lua)",
 		"class:chief":			"file(jobs/chief/chief.lua)",
 		"class:shaman":			"file(jobs/shaman/shaman.lua)",
 		"class:firemaster":		"file(jobs/firemaster/firemaster.lua)",
-		"class:peon":			"file(jobs/peon/peon.lua)",
 		"class:muckscrabbler":	"file(jobs/muckscrabbler/muckscrabbler.lua)",
 		"class:earthmaster":	"file(jobs/earthmaster/earthmaster.lua)",
-		"class:bonemaster":		"file(jobs/bonemaster/bonemaster.lua)",
+		"class:bonesmith":		"file(jobs/bonesmith/bonesmith.lua)",
 		"class:beastmaster":	"file(jobs/beastmaster/beastmaster.lua)"
 	},
 	"ui":{

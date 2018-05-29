@@ -23,6 +23,7 @@
       },
       "population": {
          "firefly_clan": {
+            "initial_town_name": "Small Goblin Clan",
             "display_name": "Firefly Clan",
             "quote": "",
             "long_description": "WIP wip WIP wip long_description",
@@ -76,10 +77,10 @@
             }
          }
       },
-      "weather":{
-      	"foggy":{
-      		"description": "A cover of fog crawls across the landscape, hiding untold mysteries.<ul><li>Vision radius is greatly reduced.</li></ul>"
-      	}
+      "weather": {
+         "foggy": {
+            "description": "A cover of fog crawls across the landscape, hiding untold mysteries.<ul><li>Vision radius is greatly reduced.</li></ul>"
+         }
       }
    },
    "entities": {
@@ -159,7 +160,19 @@
       "trees": {
          "bogger": {
             "display_name": "Bogger Tree",
-            "description": "It radiates a mysterious aura"
+            "description": "It radiates a mysterious aura",
+            "bud": {
+               "display_name": "Bogger bud"
+            },
+            "seed": {
+               "display_name": "Bogger seed"
+            },
+            "sprout": {
+               "display_name": "Bogger sprout"
+            },
+            "stem": {
+               "display_name": "Bogger stem"
+            }
          },
          "swirl": {
             "display_name": "Swirl Tree",
@@ -167,13 +180,119 @@
          },
          "cypress": {
             "display_name": "Swamp Cypress",
-            "description": "Deep roots into the soil"
+            "description": "Deep roots into the soil",
+            "bud": {
+               "display_name": "Cypress bud"
+            },
+            "seed": {
+               "display_name": "Cypress seed"
+            },
+            "sprout": {
+               "display_name": "Cypress sprout"
+            },
+            "stem": {
+               "display_name": "Cypress stem"
+            }
          }
       },
       "monsters": {
          "bear": {
             "display_name": "Swamp Bear",
             "description": "Big and fast, a little muddy, yet fluffy"
+         }
+      },
+      "armor": {
+         "bear_armor": {
+            "display_name": "Bear Armor"
+         },
+         "bear_helmet": {
+            "display_name": "Bear Helmet"
+         },
+         "bone_armor": {
+            "display_name": "Bone Armor"
+         },
+         "bone_helmet": {
+            "display_name": "Bone Helmet"
+         },
+         "fern_helmet": {
+            "display_name": "Fern Hat"
+         },
+         "flower_helmet": {
+            "display_name": "Flower Hat"
+         },
+         "leather_armor": {
+            "display_name": "Leather Armor"
+         },
+         "leather_helmet": {
+            "display_name": "Leather Helmet"
+         },
+         "log_armor": {
+            "display_name": "Log Armor"
+         },
+         "log_helmet": {
+            "display_name": "Log Helmet"
+         },
+         "mushroom_armor": {
+            "display_name": "Mushroom Armor"
+         },
+         "mushroom_helmet": {
+            "display_name": "Mushroom Helmet"
+         },
+         "varanus_armor": {
+            "display_name": "Varanus Armor"
+         },
+         "varanus_helmet": {
+            "display_name": "Varanus Helmet"
+         }
+      },
+      "consumables": {
+         "blue_potion": {
+            "display_name": "Blue Potion"
+         },
+         "green_potion": {
+            "display_name": "Green Potion"
+         },
+         "purple_potion": {
+            "display_name": "Purple Potion"
+         },
+         "white_potion": {
+            "display_name": "White Potion"
+         }
+      },
+      "critters": {
+         "frog": {
+            "species": "frog",
+            "display_name": "Frog"
+         }
+      },
+      "decoration": {
+         "large_candle": {
+            "large_candle_ghost": {
+               "display_name": "Large Candle"
+            }
+         },
+         "small_candle": {
+            "small_candle_ghost": {
+               "display_name": "Small Candle"
+            }
+         },
+         "wall_candle": {
+            "wall_candle_ghost": {
+               "display_name": "Wall Candle"
+            }
+         }
+      },
+      "food": {
+         "plate_of_ferns": {
+            "display_name": "Plate of Ferns"
+         },
+         "plate_of_mushrooms": {
+            "display_name": "Plate of Mushrooms"
+         }
+      },
+      "weapons": {
+         "skull_basher": {
+            "display_name": "Skull Basher"
          }
       }
    },
@@ -195,6 +314,12 @@
          "shaman_workbench": {
             "display_name": "Shaman Workbench",
             "description": "Shamans will use to craft their stuff"
+         },
+         "shaman_staff": {
+            "display_name": "Shaman Staff",
+            "shaman_staff_talisman": {
+               "display_name": "Shaman Staff"
+            }
          }
       },
       "spirit_walker": {
@@ -237,9 +362,18 @@
             "display_name": "Earthmaster"
          }
       },
-      "bonemaster": {
-         "bonemaster_description": {
-            "display_name": "Bonemaster"
+      "bonesmith": {
+         "bonesmith_description": {
+            "display_name": "Bonesmith"
+         },
+         "bonesmith_saw": {
+            "display_name": "Bonesmith Saw",
+            "bonesmith_saw_talisman": {
+               "display_name": "Bonesmith Saw"
+            }
+         },
+         "bonesmith_workbench": {
+            "display_name": "Bonesmith Workbench"
          }
       },
       "beastmaster": {

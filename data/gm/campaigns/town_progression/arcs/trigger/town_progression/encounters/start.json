@@ -1,0 +1,21 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_requirements_met",
+	"in_edge": "start",
+	"out_edge": "shaman_explains_his_dream",
+	"wait_for_requirements_met_info": {
+		"requirements": {
+			"days_elapsed_requirement": {
+				"item": "days_elapsed",
+				"type": "deny_if_less_than",
+				"value": 1
+			},
+			"highest_job_level": {
+				"item": "highest_job_level",
+				"job_alias": "swamp_goblins:jobs:shaman",
+				"type": "deny_if_less_than",
+				"value": 1
+			}
+		}
+	}
+}

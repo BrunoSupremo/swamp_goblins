@@ -1,9 +1,14 @@
 {
 	"static" : {
 		"scenarios" : [
+			"file(static/frog_nest)",
 		],
 		"categories" : {
-			"wildlife" : {
+			"swamp_life" : {
+				"density" : 20,
+				"priority" : 0,
+				"location_type" : "surface",
+				"activation_type" : "revealed"
 			}
 		}
 	}

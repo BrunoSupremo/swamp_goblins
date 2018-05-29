@@ -1,0 +1,24 @@
+{
+	"type": "recipe",
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.shaman.recipes.shaman_workbench_recipe.recipe_name)",
+	"description": "i18n(swamp_goblins:jobs.shaman.recipes.shaman_workbench_recipe.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/jobs/shaman/shaman_workbench/shaman_workbench.png",
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:shaman:workbench"
+		}
+	]
+}

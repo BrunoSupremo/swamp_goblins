@@ -7,7 +7,11 @@
 	"mixintos":{
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json": "file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json)",
 
-		"stonehearth:terrain:water": "file(entities/terrain/water)"
+		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
+
+		"stonehearth:terrain:water": "file(entities/terrain/water)",
+
+		"stonehearth:trapper:trapping_grounds": "file(data/swamp_trapping_grounds.json)"
 	},
 	"overrides": {
 		"stonehearth/entities/rabbit/rabbit_statue/rabbit_statue_01.qb":"file(entities/rabbit/rabbit_statue/rabbit_statue_01.qb)"

@@ -1,0 +1,21 @@
+{
+	"components": {
+		"stonehearth:trapping_grounds": {
+			"max_traps": 5,
+			"min_distance_between_traps": 11,
+			"trappable_animal_weights": {
+				"swamp_goblins:critters:frog": 100,
+				"stonehearth:rabbit": 25,
+				"stonehearth:racoon": 25,
+				"stonehearth:red_fox_wolf": 25,
+				"stonehearth:squirrel": 25
+			},
+			"terrain_spawn_intervals": {
+				"rock": {
+					"spawn_interval_min": "200m",
+					"spawn_interval_max": "300m"
+				}
+			}
+		}
+	}
+}
