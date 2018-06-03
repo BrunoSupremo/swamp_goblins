@@ -4,8 +4,8 @@
 			"ordinal": 1,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.workbenches_name)",
 			"recipes": {
-				"shaman_workbench": {
-					"recipe": "file(shaman_workbench_recipe.json)"
+				"bonesmith_workbench": {
+					"recipe": "file(bonesmith_workbench_recipe.json)"
 				}
 			}
 		},
@@ -13,53 +13,59 @@
 			"ordinal": 2,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.tools_name)",
 			"recipes": {
-				"cleric_tome": {
-					"recipe": "file(cleric_tome_recipe.json)"
-				}
-			}
-		},
-		"potions": {
-			"ordinal": 3,
-			"name": "i18n(swamp_goblins:jobs.shaman.recipes.potions)",
-			"recipes": {
-				"blue_potion": {
-					"recipe": "file(blue_potion_recipe.json)"
-				},
-				"green_potion": {
-					"recipe": "file(green_potion_recipe.json)"
-				},
-				"purple_potion": {
-					"recipe": "file(purple_potion_recipe.json)"
-				},
-				"white_potion": {
-					"recipe": "file(white_potion_recipe.json)"
-				}
-			}
-		},
-		"food": {
-			"ordinal": 4,
-			"name": "i18n(stonehearth:jobs.cook.recipes.food_name)",
-			"recipes": {
-				"plate_of_ferns": {
-					"recipe": "file(plate_of_ferns_recipe.json)"
-				},
-				"plate_of_mushrooms": {
-					"recipe": "file(plate_of_mushrooms_recipe.json)"
-				}
 			}
 		},
 		"decorations": {
 			"ordinal": 5,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.decorations_name)",
 			"recipes": {
-				"hammock": {
-					"recipe": "file(hammock_recipe.json)"
-				},
 				"simple_chair": {
 					"recipe": "file(simple_chair_recipe.json)"
 				},
 				"simple_table": {
 					"recipe": "file(simple_table_recipe.json)"
+				}
+			}
+		},
+		"clothing_armor": {
+			"ordinal": 50,
+			"name": "i18n(stonehearth:jobs.weaver.recipes.clothing_armor_name)",
+			"recipes": {
+				"bear_armor": {
+					"recipe": "file(bear_armor_recipe.json)"
+				},
+				"bear_helmet": {
+					"recipe": "file(bear_helmet_recipe.json)"
+				},
+				"bone_armor": {
+					"recipe": "file(bone_armor_recipe.json)"
+				},
+				"bone_helmet": {
+					"recipe": "file(bone_helmet_recipe.json)"
+				},
+				"leather_armor": {
+					"recipe": "file(leather_armor_recipe.json)"
+				},
+				"leather_helmet": {
+					"recipe": "file(leather_helmet_recipe.json)"
+				},
+				"log_armor": {
+					"recipe": "file(log_armor_recipe.json)"
+				},
+				"log_helmet": {
+					"recipe": "file(log_helmet_recipe.json)"
+				},
+				"mushroom_armor": {
+					"recipe": "file(mushroom_armor_recipe.json)"
+				},
+				"mushroom_helmet": {
+					"recipe": "file(mushroom_helmet_recipe.json)"
+				},
+				"varanus_armor": {
+					"recipe": "file(varanus_armor_recipe.json)"
+				},
+				"varanus_helmet": {
+					"recipe": "file(varanus_helmet_recipe.json)"
 				}
 			}
 		}

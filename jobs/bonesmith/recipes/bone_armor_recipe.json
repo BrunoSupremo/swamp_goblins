@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.armor.bone_armor.display_name)",
+	"description": "i18n(swamp_goblins:entities.armor.bone_armor.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/armor/bone_armor/bone_armor.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "leather resource",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:armor:bone_armor"
+		}
+	]
+}

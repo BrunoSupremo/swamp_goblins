@@ -89,14 +89,10 @@
             "display_name": "Hammock"
          },
          "simple_chair": {
-            "simple_chair_ghost": {
                "display_name": "Simple Chair"
-            }
          },
          "simple_table": {
-            "simple_table_ghost": {
                "display_name": "Simple Table"
-            }
          }
       },
       "gizmos": {
@@ -267,19 +263,13 @@
       },
       "decoration": {
          "large_candle": {
-            "large_candle_ghost": {
                "display_name": "Large Candle"
-            }
          },
          "small_candle": {
-            "small_candle_ghost": {
                "display_name": "Small Candle"
-            }
          },
          "wall_candle": {
-            "wall_candle_ghost": {
                "display_name": "Wall Candle"
-            }
          }
       },
       "food": {
@@ -320,6 +310,9 @@
             "shaman_staff_talisman": {
                "display_name": "Shaman Staff"
             }
+         },
+         "recipes":{
+         	"potions":"Potions"
          }
       },
       "spirit_walker": {

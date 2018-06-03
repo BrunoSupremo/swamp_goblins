@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.armor.flower_helmet.display_name)",
+	"description": "i18n(swamp_goblins:entities.armor.flower_helmet.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/armor/flower_helmet/flower_helmet.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "leather resource",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:armor:flower_helmet"
+		}
+	]
+}

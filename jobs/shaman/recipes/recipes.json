@@ -13,8 +13,8 @@
 			"ordinal": 2,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.tools_name)",
 			"recipes": {
-				"cleric_tome": {
-					"recipe": "file(cleric_tome_recipe.json)"
+				"bonesmith_talisman": {
+					"recipe": "file(bonesmith_talisman_recipe.json)"
 				}
 			}
 		},
@@ -55,11 +55,26 @@
 				"hammock": {
 					"recipe": "file(hammock_recipe.json)"
 				},
-				"simple_chair": {
-					"recipe": "file(simple_chair_recipe.json)"
+				"small_candle": {
+					"recipe": "file(small_candle_recipe.json)"
 				},
-				"simple_table": {
-					"recipe": "file(simple_table_recipe.json)"
+				"large_candle": {
+					"recipe": "file(large_candle_recipe.json)"
+				},
+				"wall_candle": {
+					"recipe": "file(wall_candle_recipe.json)"
+				}
+			}
+		},
+		"clothing_armor": {
+			"ordinal": 50,
+			"name": "i18n(stonehearth:jobs.weaver.recipes.clothing_armor_name)",
+			"recipes": {
+				"fern_helmet": {
+					"recipe": "file(fern_helmet_recipe.json)"
+				},
+				"flower_helmet": {
+					"recipe": "file(flower_helmet_recipe.json)"
 				}
 			}
 		}

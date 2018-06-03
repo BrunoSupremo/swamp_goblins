@@ -1,11 +1,11 @@
 {
 	"type": "recipe",
 	"work_units": 3,
-	"recipe_name": "i18n(swamp_goblins:jobs.shaman.recipes.simple_table_recipe.recipe_name)",
-	"description": "i18n(swamp_goblins:jobs.shaman.recipes.simple_table_recipe.description)",
+	"recipe_name": "i18n(swamp_goblins:entities.furniture.simple_table.display_name)",
+	"description": "i18n(swamp_goblins:entities.furniture.simple_table.description)",
 	"flavor": "",
 	"portrait": "/swamp_goblins/entities/furniture/simple_table/simple_table.png",
-	"workshop": "swamp_goblins:shaman:workbench",
+	"workshop": "swamp_goblins:bonesmith:workbench",
 	"ingredients": [
 		{
 			"material": "stone resource",

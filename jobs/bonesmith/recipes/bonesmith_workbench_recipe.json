@@ -1,0 +1,24 @@
+{
+	"type": "recipe",
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_workbench.display_name)",
+	"description": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_workbench.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/jobs/bonesmith/bonesmith_workbench/bonesmith_workbench.png",
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:bonesmith:workbench"
+		}
+	]
+}
