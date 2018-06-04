@@ -1,7 +1,38 @@
-// Overrides
-#promotionTree #scroll #citizenName {
-	font-family: @cupAndTalonFont;
-	font-size: 3em;
-	padding: 10px 0px;
-	margin: 0px !important;
+#promotionTree {
+	#scroll {
+		#citizenName {
+			font-family: @cupAndTalonFont;
+			font-size: 3.5em;
+			padding: 10px 0px;
+			margin: 0px !important;
+		}
+		#deniedStamp {
+			height: 200px;
+			background: url(images/approved_stamp.png);
+			background-repeat: no-repeat;
+			background-position: top;
+			background-size: initial;
+			color: #382237;
+		}
+
+		#approveStamp {
+			visibility: hidden;
+		}
+
+		#approvedStamp {
+			background: url(images/approved_stamp.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 180px;
+			color: #5f1d6f;
+			line-height: 10em;
+		}
+
+		#approveStamper {
+			background: url(images/approve_stamper.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 180px;
+		}
+	}
 }

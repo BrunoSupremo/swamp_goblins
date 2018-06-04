@@ -176,6 +176,9 @@
 		"firefly":"file(components/firefly/firefly_component.lua)",
 		"mountain_grass":"file(components/mountain_grass/mountain_grass_component.lua)"
 	},
+	"overrides": {
+		"stonehearth/data/rigs/entities/humans/effects/bonesmith_saw.json":	"file(data/rigs/entities/humans/effects/bonesmith_saw.json)"
+	},
 	"controllers": {
 		"class:worker":			"file(jobs/worker/worker.lua)",
 		"class:spirit_walker":	"file(jobs/spirit_walker/spirit_walker.lua)",
