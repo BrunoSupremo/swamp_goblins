@@ -26,8 +26,8 @@
             "initial_town_name": "Small Goblin Clan",
             "display_name": "Firefly Clan",
             "quote": "",
-            "long_description": "WIP wip WIP wip long_description",
-            "post_selection_description": ", WIP wip WIP wip."
+            "long_description": "Living in the swamp as a shamanistic tribe setup. This way of living has given them a perception on life, that are a bit different than their greenskinned cousins.",
+            "post_selection_description": ", a rowdy gang of goblins."
          }
       },
       "build": {
@@ -46,7 +46,6 @@
                "#A6C780": "Light Fiber (Swamp)",
                "#7B9067": "Fiber (Swamp)",
                "#5C6E4C": "Dark Fiber (Swamp)",
-               "#918154": "Sleeping Fiber (Swamp)",
                "#9C9F69": "Fresh Leaf (Swamp)",
                "#8B8E57": "Old leaf (Swamp)",
                "#7C7F48": "Light Leaf (Swamp)",
@@ -312,7 +311,7 @@
             }
          },
          "recipes":{
-         	"potions":"Potions"
+            "potions":"Potions"
          }
       },
       "spirit_walker": {
@@ -377,6 +376,12 @@
    },
    "ui": {
       "game": {
+         "build_mode2":{
+            "tooltips":{
+               "fiber_resource":"Fiber",
+               "bone_resource":"Bone"
+            }
+         },
          "menu": {
             "crafter_menu": {
                "items": {

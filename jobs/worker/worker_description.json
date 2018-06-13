@@ -4,7 +4,7 @@
 	"description": "i18n(swamp_goblins:jobs.rabble.rabble_description.description)",
 	"abilities": "file(worker_abilities.json)",
 	"default_stance": "aggressive",
-	"roles": "worker_job melee_combat combat",
+	"roles": "goblin_worker_job melee_combat combat",
 	"controller": "swamp_goblins:class:worker",
 	"equipment": {
 		"mixintypes":{

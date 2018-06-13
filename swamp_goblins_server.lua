@@ -4,11 +4,16 @@ version = 24
 local log = radiant.log.create_logger('version')
 log:error("Swamp Goblins mod for alpha %d", swamp_goblins.version)
 
-function swamp_goblins:_on_required_loaded()
+function swamp_goblins:_on_services_init()
+	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then
+		return
+	end
 	local custom_swimming_service = require('services.server.swimming.custom_swimming_service')
 	local swimming_service = radiant.mods.require('stonehearth.services.server.swimming.swimming_service')
 	radiant.mixin(swimming_service, custom_swimming_service)
+end
 
+function swamp_goblins:_on_required_loaded()
 	local custom_biome = require('services.server.world_generation.custom_biome')
 	local biome = radiant.mods.require('stonehearth.services.server.world_generation.biome')
 	radiant.mixin(biome, custom_biome)
@@ -35,6 +40,7 @@ function swamp_goblins:_on_biome_set(e)
 	radiant.mixin(landscaper, custom_landscaper)
 end
 
+radiant.events.listen_once(radiant, 'radiant:services:init', swamp_goblins, swamp_goblins._on_services_init)
 radiant.events.listen_once(radiant, 'radiant:required_loaded', swamp_goblins, swamp_goblins._on_required_loaded)
 radiant.events.listen_once(radiant, 'stonehearth:biome_set', swamp_goblins, swamp_goblins._on_biome_set)
 
