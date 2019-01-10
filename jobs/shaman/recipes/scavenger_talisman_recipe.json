@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.scavenger.scavenger_backpack.scavenger_backpack_talisman.display_name)",
+	"description": "i18n(swamp_goblins:jobs.scavenger.scavenger_backpack.scavenger_backpack_talisman.description)",
+	"flavor": "i18n(swamp_goblins:jobs.scavenger.scavenger_backpack.scavenger_backpack_talisman.flavor)",
+	"portrait": "/swamp_goblins/jobs/scavenger/scavenger_backpack/scavenger_backpack.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"work_effect": "fiddle",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:scavenger:talisman"
+		}
+	]
+}

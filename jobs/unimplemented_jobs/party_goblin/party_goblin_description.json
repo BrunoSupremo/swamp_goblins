@@ -1,0 +1,51 @@
+{
+	"type": "job",
+	"enabled": false,
+	"job_id": "party_goblin",
+	"display_order": 5,
+	"alias": "swamp_goblins:jobs:party_goblin",
+	"display_name": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.display_name)",
+	"controller": "swamp_goblins:class:party_goblin",
+	"description": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.description)",
+	"requirements": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.requirements)",
+	"abilities": "file(party_goblin_abilities)",
+	"equipment": {
+		"helmet": "swamp_goblins:party_goblin:hat"
+	},
+	"roles":["goblin_party_goblin_job", "combat"],
+	"talisman_uri": "swamp_goblins:party_goblin:talisman",
+	"default_stance": "aggressive",
+	"icon": "file(images/icon.png)",
+	"promotion_activity_name": "promote_party_goblin",
+	"task_groups": [
+		"stonehearth:task_groups:common_tasks",
+		"stonehearth:task_groups:restock",
+		"stonehearth:task_groups:rescue"
+	],
+	"parent_job": "stonehearth:jobs:worker",
+	"parent_level_requirement": 0,
+	"xp_rewards": {
+		"town_protection": 1
+	},
+	"max_level": 6,
+	"level_data": {
+		"1": {
+			"title": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.display_name)"
+		},
+		"2": {
+			"title": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.display_name)"
+		},
+		"3": {
+			"title": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.display_name)"
+		},
+		"4": {
+			"title": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.display_name)"
+		},
+		"5": {
+			"title": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.display_name)"
+		},
+		"6": {
+			"title": "i18n(swamp_goblins:jobs.party_goblin.party_goblin_description.display_name)"
+		}
+	}
+}

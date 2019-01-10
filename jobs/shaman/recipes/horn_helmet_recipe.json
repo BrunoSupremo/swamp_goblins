@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.armor.horn_helmet.display_name)",
+	"description": "i18n(swamp_goblins:entities.armor.horn_helmet.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/armor/horn_helmet/horn_helmet.png",
+	"workshop": "swamp_goblins:shaman:weaving_table",
+	"level_requirement": 6,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "bone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:armor:horn_helmet"
+		}
+	]
+}

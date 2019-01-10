@@ -1,0 +1,14 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"display_name": "i18n(swamp_goblins:data.buffs.self_aid.display_name)",
+	"description": "i18n(swamp_goblins:data.buffs.self_aid.description)",
+	"icon": "/swamp_goblins/jobs/warrior/images/self_aid.png",
+	"script": "stonehearth:buff_scripts:periodic_health_modification",
+	"script_info": {
+		"health_change": 1,
+		"pulse": "7m",
+		"pulse_immediately": false,
+		"pulse_on_destroy": false
+	}
+}

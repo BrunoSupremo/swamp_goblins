@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.armor.log_helmet.display_name)",
+	"description": "i18n(swamp_goblins:entities.armor.log_helmet.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/armor/log_helmet/log_helmet.png",
+	"workshop": "swamp_goblins:shaman:weaving_table",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:armor:log_helmet"
+		}
+	]
+}

@@ -1,8 +1,6 @@
-swamp_goblins = {
-version = 24
-}
+swamp_goblins = {}
 local log = radiant.log.create_logger('version')
-log:error("Swamp Goblins mod for alpha %d", swamp_goblins.version)
+log:error("Swamp Goblins Mod last updated at Stonehearth 1.1.0.947")
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then
@@ -14,9 +12,13 @@ function swamp_goblins:_on_services_init()
 end
 
 function swamp_goblins:_on_required_loaded()
-	local custom_biome = require('services.server.world_generation.custom_biome')
-	local biome = radiant.mods.require('stonehearth.services.server.world_generation.biome')
-	radiant.mixin(biome, custom_biome)
+	local custom_combat_service = require('services.server.combat.custom_combat_service')
+	local combat_service = radiant.mods.require('stonehearth.services.server.combat.combat_service')
+	radiant.mixin(combat_service, custom_combat_service)
+
+	local custom_population_faction = require('services.server.population.custom_population_faction')
+	local population_faction = radiant.mods.require('stonehearth.services.server.population.population_faction')
+	radiant.mixin(population_faction, custom_population_faction)
 end
 
 function swamp_goblins:_on_biome_set(e)
@@ -27,10 +29,6 @@ function swamp_goblins:_on_biome_set(e)
 	local overview_map = radiant.mods.require('stonehearth.services.server.world_generation.overview_map')
 	radiant.mixin(overview_map, custom_overview_map)
 
-	local custom_world_generation_service = require('services.server.world_generation.custom_world_generation_service')
-	local world_generation_service = radiant.mods.require('stonehearth.services.server.world_generation.world_generation_service')
-	radiant.mixin(world_generation_service, custom_world_generation_service)
-
 	local custom_height_map_renderer = require('services.server.world_generation.custom_height_map_renderer')
 	local height_map_renderer = radiant.mods.require('stonehearth.services.server.world_generation.height_map_renderer')
 	radiant.mixin(height_map_renderer, custom_height_map_renderer)
@@ -38,6 +36,10 @@ function swamp_goblins:_on_biome_set(e)
 	local custom_landscaper = require('services.server.world_generation.custom_landscaper')
 	local landscaper = radiant.mods.require('stonehearth.services.server.world_generation.landscaper')
 	radiant.mixin(landscaper, custom_landscaper)
+
+	local custom_micro_map_generator = require('services.server.world_generation.custom_micro_map_generator')
+	local micro_map_generator = radiant.mods.require('stonehearth.services.server.world_generation.micro_map_generator')
+	radiant.mixin(micro_map_generator, custom_micro_map_generator)
 end
 
 radiant.events.listen_once(radiant, 'radiant:services:init', swamp_goblins, swamp_goblins._on_services_init)

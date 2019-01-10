@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 45,
+	"work_units": 8,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.tower_brazier_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.tower_brazier_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.mason.recipes.tower_brazier_recipe.flavor)",
+	"portrait": "/stonehearth/entities/decoration/tower_brazier/tower_brazier.png",
+	"workshop": "stonehearth:mason:pedestal",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:decoration:tower_brazier"
+		}
+	]
+}

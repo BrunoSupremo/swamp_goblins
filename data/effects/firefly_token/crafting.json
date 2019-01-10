@@ -1,0 +1,16 @@
+{
+	"type" : "effect",
+	"mixins": "file(jewel.json)",
+	"tracks": {
+		"firefly": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/firefly_token/crafting.json",
+			"loop": true,
+			"transforms": {"x":0, "y":3, "z":0,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		}
+	}
+}

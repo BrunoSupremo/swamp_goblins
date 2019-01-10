@@ -24,7 +24,27 @@
 		},
 		"stonehearth:resource_node": {
 			"resource": "stonehearth:resources:wood:oak_log",
-			"durability": 5
+			"durability": 5,
+			"resource_loot_table": {
+				"entries": {
+					"optional": {
+						"num_rolls": {
+							"min": 1,
+							"max": 1
+						},
+						"items": {
+							"none": {
+								"uri": "",
+								"weight": 6
+							},
+							"pelt": {
+								"uri": "swamp_goblins:trees:cypress:seed",
+								"weight": 1
+							}
+						}
+					}
+				}
+			}
 		},
 		"region_collision_shape": {
 			"region": [

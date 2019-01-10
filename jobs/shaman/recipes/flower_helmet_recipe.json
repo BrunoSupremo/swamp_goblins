@@ -5,16 +5,15 @@
 	"description": "i18n(swamp_goblins:entities.armor.flower_helmet.description)",
 	"flavor": "",
 	"portrait": "/swamp_goblins/entities/armor/flower_helmet/flower_helmet.png",
-	"workshop": "swamp_goblins:shaman:workbench",
-	"level_requirement": 2,
+	"workshop": "swamp_goblins:shaman:weaving_table",
 	"ingredients": [
 		{
-			"material": "leather resource",
+			"uri": "swamp_goblins:resources:firefly_essense",
 			"count": 1
 		},
 		{
-			"material": "herb resource",
-			"count": 1
+			"uri": "swamp_goblins:resources:giant_flower",
+			"count": 3
 		}
 	],
 	"produces": [

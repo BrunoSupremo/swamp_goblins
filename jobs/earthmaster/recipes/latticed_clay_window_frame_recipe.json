@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 1,
+	"recipe_name": "i18n(stonehearth:jobs.potter.recipes.latticed_clay_window_frame_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.potter.recipes.latticed_clay_window_frame_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.latticed_clay_window_frame_recipe.flavor)",
+	"portrait": "/stonehearth/entities/construction/latticed_clay_window_frame/latticed_clay_window_frame.png",
+	"workshop": "stonehearth:potter:kiln",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:construction:latticed_clay_window_frame"
+		}
+	]
+}

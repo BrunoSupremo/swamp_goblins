@@ -1,0 +1,62 @@
+{
+	"type": "job",
+	"enabled": false,
+	"job_id": "chief",
+	"display_order": 2,
+	"alias": "swamp_goblins:jobs:chief",
+	"display_name": "i18n(swamp_goblins:jobs.chief.chief_description.display_name)",
+	"controller": "swamp_goblins:class:chief",
+	"description": "i18n(swamp_goblins:jobs.chief.chief_description.description)",
+	"requirements": "i18n(swamp_goblins:jobs.chief.chief_description.requirements)",
+	"abilities": "file(chief_abilities)",
+	"equipment": {
+		"torso": "file(chief_outfit)",
+		"mainhand": "swamp_goblins:chief:staff"
+	},
+	"roles":["goblin_chief_job", "crafter"],
+	"talisman_uri": "swamp_goblins:chief:talisman",
+	"default_stance": "passive",
+	"icon": "file(images/icon.png)",
+	"promotion_activity_name": "promote_chief",
+	"task_groups": [
+		"stonehearth:task_groups:common_tasks",
+		"stonehearth:task_groups:crafting",
+		"stonehearth:task_groups:restock",
+		"stonehearth:task_groups:placement",
+		"stonehearth:task_groups:healing",
+		"stonehearth:task_groups:harvest",
+		"stonehearth:task_groups:rescue",
+		"stonehearth:task_groups:town_alert"
+	],
+	"crafter": {
+		"work_effect": "fiddle",
+		"recipe_list": "file(recipes)"
+	},
+	"workshop": {
+		"name": "i18n(swamp_goblins:jobs.chief.chief_description.workshop.name)",
+		"description": "i18n(swamp_goblins:jobs.chief.chief_description.workshop.description)",
+		"long_description": "i18n(swamp_goblins:jobs.chief.chief_description.workshop.long_description)",
+		"portrait": "file(/jobs/chief/chief_workbench/chief_workbench.png)",
+		"workbench_type": "swamp_goblins:chief:workbench",
+		"skin_class": "chief",
+		"open_sound": "stonehearth:sounds:ui:carpenter_menu:menu_open",
+		"close_sound": "stonehearth:sounds:ui:carpenter_menu:menu_closed"
+	},
+	"parent_job": "swamp_goblins:jobs:warrior",
+	"parent_level_requirement": 0,
+	"xp_rewards": {
+		"craft_level_0": 8,
+		"craft_level_1": 10,
+		"craft_level_2": 12,
+		"craft_level_3": 14,
+		"craft_level_4": 16,
+		"craft_level_5": 19,
+		"craft_level_6": 22
+	},
+	"max_level": 6,
+	"level_data": {
+		"6": {
+			"title": "i18n(swamp_goblins:jobs.chief.chief_description.level_6_data.title)"
+		}
+	}
+}

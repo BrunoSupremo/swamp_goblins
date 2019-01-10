@@ -1,80 +1,161 @@
 {
 	"craftable_recipes": {
-		"workbenches": {
+		"goblin_workbenches": {
 			"ordinal": 1,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.workbenches_name)",
 			"recipes": {
 				"shaman_workbench": {
 					"recipe": "file(shaman_workbench_recipe.json)"
+				},
+				"firefly_token": {
+					"recipe": "file(firefly_token_recipe.json)"
+				},
+				"weaving_table": {
+					"recipe": "file(weaving_table_recipe.json)"
+				},
+				"egg_pedestal": {
+					"recipe": "file(egg_pedestal_recipe.json)"
 				}
 			}
 		},
-		"tools": {
+		"goblin_tools": {
 			"ordinal": 2,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.tools_name)",
 			"recipes": {
 				"bonesmith_talisman": {
 					"recipe": "file(bonesmith_talisman_recipe.json)"
+				},
+				"scavenger_talisman": {
+					"recipe": "file(scavenger_talisman_recipe.json)"
+				},
+				"warrior_talisman": {
+					"recipe": "file(warrior_talisman_recipe.json)"
+				},
+				"earthmaster_talisman": {
+					"recipe": "file(earthmaster_talisman_recipe.json)"
+				},
+				"beast_tamer_talisman": {
+					"recipe": "file(beast_tamer_talisman_recipe.json)"
+				},
+				"spirit_walker_talisman": {
+					"recipe": "file(spirit_walker_talisman_recipe.json)"
+				},
+				"shaman_talisman": {
+					"recipe": "file(shaman_talisman_recipe.json)"
 				}
 			}
 		},
-		"potions": {
+		"goblin_potions": {
 			"ordinal": 3,
 			"name": "i18n(swamp_goblins:jobs.shaman.recipes.potions)",
 			"recipes": {
-				"blue_potion": {
-					"recipe": "file(blue_potion_recipe.json)"
-				},
-				"green_potion": {
-					"recipe": "file(green_potion_recipe.json)"
-				},
-				"purple_potion": {
-					"recipe": "file(purple_potion_recipe.json)"
-				},
-				"white_potion": {
-					"recipe": "file(white_potion_recipe.json)"
+				"firefly_essense": {
+					"recipe": "file(firefly_essense_recipe.json)"
 				}
 			}
 		},
-		"food": {
+		"goblin_food": {
 			"ordinal": 4,
 			"name": "i18n(stonehearth:jobs.cook.recipes.food_name)",
 			"recipes": {
-				"plate_of_ferns": {
-					"recipe": "file(plate_of_ferns_recipe.json)"
-				},
 				"plate_of_mushrooms": {
 					"recipe": "file(plate_of_mushrooms_recipe.json)"
+				},
+				"meat_stew": {
+					"recipe": "file(meat_stew_recipe.json)"
+				},
+				"bug_meat_stew": {
+					"recipe": "file(bug_meat_stew_recipe.json)"
+				},
+				"bug_meat_kabob": {
+					"recipe": "file(bug_meat_kabob_recipe.json)"
+				},
+				"bacon_and_eggs": {
+					"recipe": "file(bacon_and_eggs_recipe.json)"
+				},
+				"omelette": {
+					"recipe": "file(omelette_recipe.json)"
+				},
+				"fried_eggs_large": {
+					"recipe": "file(fried_eggs_large_recipe.json)"
+				},
+				"fried_eggs": {
+					"recipe": "file(fried_eggs_recipe.json)"
+				},
+				"sausage": {
+					"recipe": "file(sausage_recipe.json)"
+				},
+				"roast_sausage": {
+					"recipe": "file(roast_sausage_recipe.json)"
 				}
 			}
 		},
-		"decorations": {
-			"ordinal": 5,
-			"name": "i18n(stonehearth:jobs.herbalist.recipes.decorations_name)",
-			"recipes": {
-				"hammock": {
-					"recipe": "file(hammock_recipe.json)"
-				},
-				"small_candle": {
-					"recipe": "file(small_candle_recipe.json)"
-				},
-				"large_candle": {
-					"recipe": "file(large_candle_recipe.json)"
-				},
-				"wall_candle": {
-					"recipe": "file(wall_candle_recipe.json)"
-				}
-			}
-		},
-		"clothing_armor": {
+		"goblin_clothing_armor": {
 			"ordinal": 50,
 			"name": "i18n(stonehearth:jobs.weaver.recipes.clothing_armor_name)",
 			"recipes": {
-				"fern_helmet": {
-					"recipe": "file(fern_helmet_recipe.json)"
-				},
 				"flower_helmet": {
 					"recipe": "file(flower_helmet_recipe.json)"
+				},
+				"log_armor": {
+					"recipe": "file(log_armor_recipe.json)"
+				},
+				"log_helmet": {
+					"recipe": "file(log_helmet_recipe.json)"
+				},
+				"leather_armor": {
+					"recipe": "file(leather_armor_recipe.json)"
+				},
+				"leather_helmet": {
+					"recipe": "file(leather_helmet_recipe.json)"
+				},
+				"full_leather_helmet": {
+					"recipe": "file(full_leather_helmet_recipe.json)"
+				},
+				"varanus_armor": {
+					"recipe": "file(varanus_armor_recipe.json)"
+				},
+				"varanus_helmet": {
+					"recipe": "file(varanus_helmet_recipe.json)"
+				},
+				"horn_helmet": {
+					"recipe": "file(horn_helmet_recipe.json)"
+				}
+			}
+		},
+		"goblin_storage": {
+			"ordinal": 60,
+			"name": "i18n(stonehearth:jobs.carpenter.recipes.storage_name)",
+			"recipes":{
+				"input_bin_woven_red": {
+					"recipe": "file(input_bin_woven_red_recipe.json)"
+				},
+				"input_bin_woven_green": {
+					"recipe": "file(input_bin_woven_green_recipe.json)"
+				},
+				"input_bin_woven_blue": {
+					"recipe": "file(input_bin_woven_blue_recipe.json)"
+				}
+			}
+		},
+		"goblin_decorations": {
+			"ordinal": 70,
+			"name": "i18n(stonehearth:jobs.herbalist.recipes.decorations_name)",
+			"recipes": {
+				"fur_rug": {
+					"recipe": "file(fur_rug_recipe.json)"
+				},
+				"curtains": {
+					"recipe": "file(curtains_recipe.json)"
+				},
+				"banner_wall_small": {
+					"recipe": "file(banner_wall_small_recipe.json)"
+				},
+				"banner_wall_big": {
+					"recipe": "file(banner_wall_big_recipe.json)"
+				},
+				"amberstone_mat": {
+					"recipe": "file(amberstone_mat_recipe.json)"
 				}
 			}
 		}

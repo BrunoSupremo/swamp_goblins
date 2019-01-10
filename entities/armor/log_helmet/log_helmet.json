@@ -27,15 +27,15 @@
 		"stonehearth:equipment_piece": {
 			"render_type": "merge_with_model",
 			"slot": "helmet",
-			"ilevel": 3,
-			"required_job_level": 1,
-			"roles": "goblin_worker_job",
+			"ilevel": 2,
+			"required_job_level": 2,
+			"roles":["goblin_warrior_job"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
 	},
 	"entity_data": {
 		"stonehearth:combat:armor_data": {
-			"base_damage_reduction": 3
+			"base_damage_reduction": 2
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 34,
@@ -52,7 +52,7 @@
 			"description": "i18n(swamp_goblins:entities.armor.log_helmet.description)",
 			"icon": "file(log_helmet.png)",
 			"category": "armor",
-			"material_tags": "log armor heavy_armor stockpile_equipment"
+			"material_tags":["log", "helmet", "armor", "heavy_armor", "stockpile_equipment"]
 		}
 	}
 }

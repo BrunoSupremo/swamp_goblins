@@ -1,0 +1,11 @@
+{
+	"can_start": {
+		"firefly_clan_test": {
+			"kingdom_check": {
+				"type": "deny_if_not",
+				"item": "kingdom",
+				"value": "swamp_goblins:kingdoms:firefly_clan"
+			}
+		}
+	}
+}

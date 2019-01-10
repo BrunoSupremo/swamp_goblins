@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_chisel.earthmaster_chisel_talisman.display_name)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_chisel.earthmaster_chisel_talisman.description)",
+	"flavor": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_chisel.earthmaster_chisel_talisman.flavor)",
+	"portrait": "/swamp_goblins/jobs/earthmaster/earthmaster_chisel/earthmaster_chisel.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"work_effect": "fiddle",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 2
+		},
+		{
+			"material": "clay resource",
+			"count": 1
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:earthmaster:talisman"
+		}
+	]
+}

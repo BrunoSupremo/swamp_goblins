@@ -1,0 +1,50 @@
+{
+	"type": "entity",
+	"mixins": "file(windchime_ghost.json)",
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(windchime_iconic.json)",
+			"ghost_form": "file(windchime_ghost.json)",
+			"placeable_on_ground": true
+		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": -2, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -2, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 4, "z": 1 }
+				}
+			]
+		},
+		"effect_list": {
+			"default": "stonehearth/data/rigs/entities/gizmos/mountains_windchime/effects/idle.json"
+		}
+	},
+	"entity_data": {
+		"navgrid": {
+			"visible_to_sensors": true
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 10,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 20
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

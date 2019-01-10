@@ -1,0 +1,122 @@
+{
+	"name": "firefly_token",
+	"duration": 6000,
+	"material": "materials/cubemitter_bloom.material.json",
+	"loops": true,
+	"emission": {
+		"rate": {
+			"kind": "CURVE",
+			"values": [
+				[0, 30],
+				[0.21, 30],
+				[0.22, 0],
+				[1, 0]
+			]
+		},
+		"angle": {
+			"kind": "RANDOM_BETWEEN",
+			"values": [0,135]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": {
+				"surface": "POINT"
+			}
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [5100]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [1,1.5]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 3],
+					[0.25, 0],
+					[0.7, 0],
+					[0.75, 1],
+					[1, -10]
+				]
+			}
+		},
+		"rotation": {
+			"over_lifetime_y": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.25, 0],
+					[0.35, 360],
+					[1, 0]
+				]
+			}
+		},
+		"velocity": {
+			"over_lifetime_y": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.75, 0],
+					[1, -5]
+				]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.1]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 5],
+					[0.2, 5],
+					[0.25, 1],
+					[0.8, 1],
+					[1, 0]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [
+					[0, 0.6, 0.1, 1],
+					[0, 0.7, 0.5, 1]
+				]
+			},
+			"over_lifetime": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0, 0.6, 0.1],
+						[0.5, 0, 0.6, 0.1],
+						[1, 1, 1, 1]
+					],
+					[
+						[0, 0, 0.7, 0.5],
+						[0.5, 0, 0.7, 0.5],
+						[1, 1, 1, 1]
+					]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.2, 0],
+					[0.3, 1],
+					[0.9, 1],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

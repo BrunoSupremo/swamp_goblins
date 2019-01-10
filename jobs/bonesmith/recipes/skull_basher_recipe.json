@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.weapons.skull_basher.display_name)",
+	"description": "i18n(swamp_goblins:entities.weapons.skull_basher.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/weapons/skull_basher/skull_basher.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:weapons:skull_basher"
+		}
+	]
+}

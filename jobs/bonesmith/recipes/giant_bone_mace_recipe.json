@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.weapons.giant_bone_mace.display_name)",
+	"description": "i18n(stonehearth:entities.weapons.giant_bone_mace.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/weapons/giant_bone_mace/giant_bone_mace.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"level_requirement": 5,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 2
+		},
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:weapons:giant_bone_mace"
+		}
+	]
+}

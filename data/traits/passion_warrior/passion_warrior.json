@@ -1,0 +1,16 @@
+{
+	"type": "trait",
+	"mixins": "stonehearth:mixins:traits:passion_job",
+	"icon": "file(passion_warrior.png)",
+	"data": {
+		"job_uri": "swamp_goblins:jobs:warrior"
+	},
+	"subject_overrides": [
+		{
+			"subject": "swamp_goblins:warrior:talisman",
+			"sentiment": 1,
+			"permanent": true,
+			"unvarying": true
+		}
+	]
+}

@@ -1,403 +1,780 @@
 {
-   "data": {
-      "biome": {
-         "swamp": {
-            "display_name": "Swamp",
-            "description": "Flat land, water flooded, with dense vegetation. Watch your steps.",
-            "random_location_names": {
-               "000": "Monbos Swamp"
-            }
-         }
-      },
-      "happiness": {
-         "thoughts": {
-            "water": {
-               "values": {
-                  "sticky_water": {
-                     "display_name": "Sticky Water",
-                     "tooltip": "Eww! I hate going in this muddy water."
-                  }
-               }
-            }
-         }
-      },
-      "population": {
-         "firefly_clan": {
-            "initial_town_name": "Small Goblin Clan",
-            "display_name": "Firefly Clan",
-            "quote": "",
-            "long_description": "Living in the swamp as a shamanistic tribe setup. This way of living has given them a perception on life, that are a bit different than their greenskinned cousins.",
-            "post_selection_description": ", a rowdy gang of goblins."
-         }
-      },
-      "build": {
-         "building_brushes": {
-            "colors": {
-               "#7AA2A3": "Light Flesh (Swamp)",
-               "#608A8B": "Flesh (Swamp)",
-               "#577F80": "Dark Flesh (Swamp)",
-               "#416162": "Sunburned (Swamp)",
-               "#8C8573": "Light Bogger (Swamp)",
-               "#807965": "Bogger (Swamp)",
-               "#706956": "Dark Bogger (Swamp)",
-               "#534D40": "Light Root (Swamp)",
-               "#484338": "Root (Swamp)",
-               "#3D392E": "Dark Root (Swamp)",
-               "#A6C780": "Light Fiber (Swamp)",
-               "#7B9067": "Fiber (Swamp)",
-               "#5C6E4C": "Dark Fiber (Swamp)",
-               "#9C9F69": "Fresh Leaf (Swamp)",
-               "#8B8E57": "Old leaf (Swamp)",
-               "#7C7F48": "Light Leaf (Swamp)",
-               "#6D7037": "Leaf (Swamp)",
-               "#5D602D": "Dark Leaf (Swamp)",
-               "#5D5035": "Nut (Swamp)",
-               "#6F634C": "Light Swirl (Swamp)",
-               "#564C35": "Dark Swirl (Swamp)",
-               "#8A5F35": "Light Nectar (Swamp)",
-               "#6F4B29": "Dark Nectar (Swamp)",
-               "#5B583D": "Light Lagu (Swamp)",
-               "#565439": "Lagu (Swamp)",
-               "#535137": "Dark Lagu (Swamp)",
-               "#4B4A32": "Sleeping Lagu (Swamp)",
-               "#CFCCC2": "Pale Bone (Swamp)",
-               "#B4AD95": "Bone (Swamp)",
-               "#A19878": "Old Bone (Swamp)",
-               "#695087": "Light Giple (Swamp)",
-               "#5C4578": "Giple (Swamp)",
-               "#4A3662": "Dark Giple (Swamp)",
-               "#444444": "Light Charcoal (Swamp)",
-               "#333333": "Charcoal (Swamp)",
-               "#222222": "Dark Charcoal (Swamp)",
-               "#999999": "Light Spirit (Swamp)",
-               "#888888": "Spirit (Swamp)",
-               "#777777": "Dark Spirit (Swamp)",
-               "#666666": "Sleeping Spirit (Swamp)"
-            }
-         }
-      },
-      "weather": {
-         "foggy": {
-            "description": "A cover of fog crawls across the landscape, hiding untold mysteries.<ul><li>Vision radius is greatly reduced.</li></ul>"
-         }
-      }
-   },
-   "entities": {
-      "furniture": {
-         "hammock": {
-            "display_name": "Hammock"
-         },
-         "simple_chair": {
-               "display_name": "Simple Chair"
-         },
-         "simple_table": {
-               "display_name": "Simple Table"
-         }
-      },
-      "gizmos": {
-         "camp_standard": {
-            "display_name": "Camp Banner",
-            "description": "How you know you've come home"
-         }
-      },
-      "plants": {
-         "cattail": {
-            "display_name": "Cattail",
-            "description": "This plant's fiber can be spun into thread.",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
-         },
-         "fern": {
-            "display_name": "Fern",
-            "description": "Harvestable for a meager food supply.",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
-         },
-         "giant_flower": {
-            "display_name": "Giple Flower",
-            "description": "Can be harvested for healing herbs",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
-         },
-         "mushroom": {
-            "display_name": "Mushroom",
-            "description": "Harvestable for a meager food supply.",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
-         },
-         "log": {
-            "display_name": "Log",
-            "description": "A floating piece of log"
-         }
-      },
-      "resources": {
-         "cattail": {
-            "display_name": "Cattail",
-            "description": "Spinnable into thread."
-         },
-         "giant_flower": {
-            "display_name": "Giple Flower",
-            "description": "An herb commonly used for medicinal purposes"
-         },
-         "mushroom": {
-            "display_name": "Mushroom",
-            "description": "Ready for eating"
-         },
-         "fern": {
-            "display_name": "Fern",
-            "description": "Ready for eating"
-         },
-         "pelt": {
-            "bear_pelt": {
-               "display_name": "Bear Pelt"
-            }
-         },
-         "bone": {
-            "display_name": "Bone"
-         }
-      },
-      "trees": {
-         "bogger": {
-            "display_name": "Bogger Tree",
-            "description": "It radiates a mysterious aura",
-            "bud": {
-               "display_name": "Bogger bud"
-            },
-            "seed": {
-               "display_name": "Bogger seed"
-            },
-            "sprout": {
-               "display_name": "Bogger sprout"
-            },
-            "stem": {
-               "display_name": "Bogger stem"
-            }
-         },
-         "swirl": {
-            "display_name": "Swirl Tree",
-            "description": "An impressive specimen."
-         },
-         "cypress": {
-            "display_name": "Swamp Cypress",
-            "description": "Deep roots into the soil",
-            "bud": {
-               "display_name": "Cypress bud"
-            },
-            "seed": {
-               "display_name": "Cypress seed"
-            },
-            "sprout": {
-               "display_name": "Cypress sprout"
-            },
-            "stem": {
-               "display_name": "Cypress stem"
-            }
-         }
-      },
-      "monsters": {
-         "bear": {
-            "display_name": "Swamp Bear",
-            "description": "Big and fast, a little muddy, yet fluffy"
-         }
-      },
-      "armor": {
-         "bear_armor": {
-            "display_name": "Bear Armor"
-         },
-         "bear_helmet": {
-            "display_name": "Bear Helmet"
-         },
-         "bone_armor": {
-            "display_name": "Bone Armor"
-         },
-         "bone_helmet": {
-            "display_name": "Bone Helmet"
-         },
-         "fern_helmet": {
-            "display_name": "Fern Hat"
-         },
-         "flower_helmet": {
-            "display_name": "Flower Hat"
-         },
-         "leather_armor": {
-            "display_name": "Leather Armor"
-         },
-         "leather_helmet": {
-            "display_name": "Leather Helmet"
-         },
-         "log_armor": {
-            "display_name": "Log Armor"
-         },
-         "log_helmet": {
-            "display_name": "Log Helmet"
-         },
-         "mushroom_armor": {
-            "display_name": "Mushroom Armor"
-         },
-         "mushroom_helmet": {
-            "display_name": "Mushroom Helmet"
-         },
-         "varanus_armor": {
-            "display_name": "Varanus Armor"
-         },
-         "varanus_helmet": {
-            "display_name": "Varanus Helmet"
-         }
-      },
-      "consumables": {
-         "blue_potion": {
-            "display_name": "Blue Potion"
-         },
-         "green_potion": {
-            "display_name": "Green Potion"
-         },
-         "purple_potion": {
-            "display_name": "Purple Potion"
-         },
-         "white_potion": {
-            "display_name": "White Potion"
-         }
-      },
-      "critters": {
-         "frog": {
-            "species": "frog",
-            "display_name": "Frog"
-         }
-      },
-      "decoration": {
-         "large_candle": {
-               "display_name": "Large Candle"
-         },
-         "small_candle": {
-               "display_name": "Small Candle"
-         },
-         "wall_candle": {
-               "display_name": "Wall Candle"
-         }
-      },
-      "food": {
-         "plate_of_ferns": {
-            "display_name": "Plate of Ferns"
-         },
-         "plate_of_mushrooms": {
-            "display_name": "Plate of Mushrooms"
-         }
-      },
-      "weapons": {
-         "skull_basher": {
-            "display_name": "Skull Basher"
-         }
-      }
-   },
-   "jobs": {
-      "rabble": {
-         "rabble_description": {
-            "display_name": "Rabble",
-            "level_1_data": {
-               "title": "Rabble"
-            }
-         }
-      },
-      "shaman": {
-         "shaman_description": {
-            "display_name": "Shaman",
-            "description": "Shaman description",
-            "requirements": "Shaman requirements"
-         },
-         "shaman_workbench": {
-            "display_name": "Shaman Workbench",
-            "description": "Shamans will use to craft their stuff"
-         },
-         "shaman_staff": {
-            "display_name": "Shaman Staff",
-            "shaman_staff_talisman": {
-               "display_name": "Shaman Staff"
-            }
-         },
-         "recipes":{
-            "potions":"Potions"
-         }
-      },
-      "spirit_walker": {
-         "spirit_walker_description": {
-            "display_name": "Spirit Walker"
-         }
-      },
-      "shadow_walker": {
-         "shadow_walker_description": {
-            "display_name": "Shadow Walker"
-         }
-      },
-      "warrior": {
-         "warrior_description": {
-            "display_name": "Warrior"
-         }
-      },
-      "chief": {
-         "chief_description": {
-            "display_name": "Chief"
-         }
-      },
-      "firemaster": {
-         "firemaster_description": {
-            "display_name": "Firemaster"
-         }
-      },
-      "peon": {
-         "peon_description": {
-            "display_name": "Peon"
-         }
-      },
-      "muckscrabbler": {
-         "muckscrabbler_description": {
-            "display_name": "Muckscrabbler"
-         }
-      },
-      "earthmaster": {
-         "earthmaster_description": {
-            "display_name": "Earthmaster"
-         }
-      },
-      "bonesmith": {
-         "bonesmith_description": {
-            "display_name": "Bonesmith"
-         },
-         "bonesmith_saw": {
-            "display_name": "Bonesmith Saw",
-            "bonesmith_saw_talisman": {
-               "display_name": "Bonesmith Saw"
-            }
-         },
-         "bonesmith_workbench": {
-            "display_name": "Bonesmith Workbench"
-         }
-      },
-      "beastmaster": {
-         "beastmaster_description": {
-            "display_name": "Beastmaster"
-         }
-      }
-   },
-   "ui": {
-      "game": {
-         "build_mode2":{
-            "tooltips":{
-               "fiber_resource":"Fiber",
-               "bone_resource":"Bone"
-            }
-         },
-         "menu": {
-            "crafter_menu": {
-               "items": {
-                  "bonesmith": {
-                     "display_name": "Bonesmith Craft Menu",
-                     "description": "Build furniture and decor.",
-                     "required_job_text": "Requires a bonesmith"
-                  },
-                  "shaman": {
-                     "display_name": "Shaman Craft Menu",
-                     "description": "Shaman knowledge.",
-                     "required_job_text": "Requires a shaman"
-                  }
-               }
-            }
-         }
-      }
-   }
+	"ai": {
+		"actions": {
+			"status_text": {
+				"summoning": "Summoning",
+				"lay_egg": "Laying an egg"
+			}
+		}
+	},
+	"data": {
+		"biome": {
+			"swamp": {
+				"display_name": "Swamp",
+				"description": "Flat land, water flooded, with dense vegetation. Watch your steps.",
+				"random_location_names": {
+					"000": "Monbos Swamp"
+				},
+				"seasons": {
+					"dry": {
+						"display_name": "Dry Season",
+						"description": "Dry season in the Swamp lasts six months. There is almost no rain at all. It is warm during the day, but cool at night."
+					},
+					"wet": {
+						"display_name": "Wet Season",
+						"description": "Wet season in the Swamp lasts six months. This is the warm period. Afternoon showers are common, and the bush is lush."
+					}
+				}
+			}
+		},
+		"build": {
+			"building_brushes": {
+				"colors": {
+					"#7C7F48": "Grassland Edge (Swamp)",
+					"#6D7037": "Grassland Fade (Swamp)",
+					"#5D602D": "Grassland (Swamp)",
+					"#CFCCC2": "Pale Bone (Swamp)",
+					"#B4AD95": "Bone (Swamp)",
+					"#A19878": "Old Bone (Swamp)",
+					"#695087": "Light Giple (Swamp)",
+					"#5C4578": "Giple (Swamp)",
+					"#4A3662": "Dark Giple (Swamp)"
+				}
+			}
+		},
+		"commands":{
+			"enable_egg_spot":{
+				"display_name":"Lay Egg",
+				"description":"Calls a goblin to lay an egg",
+				"disabled_description":"Already in use",
+			}
+		},
+		"loadouts": {
+			"toys": {
+				"display_name": "Goblin Toys",
+				"description": "This is what happens when goblins are asked to bring their own stuff",
+				"tooltip": "Hands full of weapons, belly full of food, and pockets full of money."
+			},
+			"nature": {
+				"display_name": "Nature Synergy",
+				"description": "Balancing yourself with nature can be hard sometimes, this should help.",
+				"tooltip": "Basic materials from the start, should you need them all."
+			}
+		},
+		"happiness": {
+			"thoughts": {
+				"water": {
+					"values": {
+						"sticky_water": {
+							"display_name": "Sticky Water",
+							"tooltip": "Eww! I hate going in this muddy water."
+						}
+					}
+				}
+			}
+		},
+		"population": {
+			"firefly_clan": {
+				"initial_town_name": "Small Goblin Clan",
+				"display_name": "Firefly Clan",
+				"quote": "",
+				"long_description": "Living in the swamp as a shamanistic tribe setup. This way of living has given them a perception on life, that are a bit different than their greenskinned cousins.",
+				"post_selection_description": ", a magical gang of goblins."
+			}
+		},
+		"saved_objects": {
+			"building_templates": {
+				"barrack": "Barrack",
+				"house1": "House 1",
+				"house2": "House 2",
+				"house3": "House 3",
+				"hut": "Hut",
+				"temple": "Temple",
+				"tent": "Tent",
+				"trading": "Trading"
+			}
+		},
+		"traits": {
+			"party_goblin": {
+				"display_name": "Party Goblin"
+			}
+		},
+		"weather": {
+			"foggy": {
+				"description": "A cover of fog crawls across the landscape, hiding untold mysteries.<ul><li>Vision radius is greatly reduced.</li></ul>"
+			}
+		},
+		"buffs": {
+			"body_up": {
+				"display_name": "Body Up",
+				"description": "+1 Body attribute"
+			},
+			"firefly_confusion": {
+				"display_name": "Firefly Cloud",
+				"description": "A firefly cloud blinds and confuses the enemy"
+			},
+			"poison": {
+				"display_name": "Poison",
+				"description": "Poisoned, stats are going down"
+			},
+			"rage_over_time": {
+				"display_name": "Rage over Time",
+				"description": "Stats going up over time"
+			},
+			"self_aid": {
+				"display_name": "Self Aid",
+				"description": "Faster health recovery"
+			},
+			"trapped": {
+				"display_name": "Trapped",
+				"description": "Trapped by the Beast Tamer"
+			}
+		}
+	},
+	"entities": {
+		"armor": {
+			"fern_helmet": {
+				"display_name": "(Firefly) Fern Hat",
+				"description": "Avoids heating your head under the sun"
+			},
+			"flower_helmet": {
+				"display_name": "(Firefly) Flower Hat",
+				"description": "More about fashion than protection"
+			},
+			"goblin_aura": {
+				"display_name": "Goblin Aura",
+				"description": "Protection granted by the Spirit Walker"
+			},
+			"horn_helmet": {
+				"display_name": "(Firefly) Horn Helmet",
+				"description": "Impressive balance"
+			},
+			"leather_armor": {
+				"display_name": "(Firefly) Leather Armor"
+			},
+			"leather_helmet": {
+				"display_name": "(Firefly) Leather Helmet"
+			},
+			"full_leather_helmet": {
+				"display_name": "(Firefly) Full Leather Helmet",
+				"description": "More protection than other leather helmet"
+			},
+			"log_armor": {
+				"display_name": "(Firefly) Log Armor",
+				"description": "Strong enough"
+			},
+			"log_helmet": {
+				"display_name": "(Firefly) Log Helmet",
+				"description": "Heavy, but protects your head"
+			},
+			"party_goblin_hat": {
+				"display_name": "Party Goblin Hat",
+				"description": "To standout in any party"
+			},
+			"varanus_armor": {
+				"display_name": "(Firefly) Varanus Armor",
+				"description": "Scaly armor, high protection"
+			},
+			"varanus_helmet": {
+				"display_name": "(Firefly) Varanus Helmet",
+				"description": "Scary and smelly"
+			}
+		},
+		"construction": {
+			"wooden_door": {
+				"display_name": "Wooden Door",
+				"description": "To go in and out"
+			},
+			"wooden_window_frame": {
+				"display_name": "Wooden Window Frame",
+				"description": "Let the light come in"
+			}
+		},
+		"consumables": {
+			"blue_potion": {
+				"display_name": "Blue Potion"
+			},
+			"green_potion": {
+				"display_name": "Green Potion"
+			},
+			"purple_potion": {
+				"display_name": "Purple Potion"
+			},
+			"white_potion": {
+				"display_name": "White Potion"
+			}
+		},
+		"containers":{
+			"chest":{
+				"display_name": "Woven Chest",
+				"description": "Stores up to 24 items"
+			}
+		},
+		"critters": {
+			"frog": {
+				"species": "frog",
+				"display_name": "Frog",
+				"description": "Jumpy amphibian"
+			}
+		},
+		"decoration": {
+			"large_candle": {
+				"display_name": "Large Candle",
+				"description": "Big tall candle"
+			},
+			"small_candle": {
+				"display_name": "Small Candle",
+				"description": "Smaller candle, same light"
+			},
+			"wall_candle": {
+				"display_name": "Wall Candle",
+				"description": "Small candle hangable in walls"
+			},
+			"goblin_market_stall": {
+				"display_name": "Firefly Market Stall"
+			},
+			"sign": {
+				"goblin": {
+					"display_name": "Goblin Sign",
+					"description": "A sign with a goblin face"
+				},
+				"hammer": {
+					"display_name": "Hammer Sign",
+					"description": "A sign with a hammer"
+				},
+				"mug": {
+					"display_name": "Mug Sign",
+					"description": "A sign with a mug"
+				},
+				"mushroom": {
+					"display_name": "Mushroom Sign",
+					"description": "A sign with a mushroom"
+				},
+				"pot": {
+					"display_name": "Pot Sign",
+					"description": "A sign with a pot"
+				},
+				"poyo": {
+					"display_name": "Poyo Sign",
+					"description": "A sign with a poyo"
+				},
+				"saw": {
+					"display_name": "Saw Sign",
+					"description": "A sign with a saw"
+				},
+				"tree": {
+					"display_name": "Tree Sign",
+					"description": "A sign with a tree"
+				},
+				"varanus": {
+					"display_name": "Varanus Sign",
+					"description": "A sign with a varanus face"
+				}
+			},
+			"windchime": {
+				"display_name": "Windchime",
+				"description": "Soothing happy notes",
+				"flavor": "A different melody plays as the wind changes"
+			}
+		},
+		"food": {
+			"plate_of_ferns": {
+				"display_name": "Plate of Ferns",
+				"description": "Just smashed ferns",
+				"flavor": "Uses ingredients found in the Swamp Biome"
+			},
+			"plate_of_mushrooms": {
+				"display_name": "Plate of Mushrooms",
+				"description": "Chopped mushroom",
+				"flavor": "Uses ingredients found in the Swamp Biome"
+			}
+		},
+		"furniture": {
+			"hammock": {
+				"display_name": "Hammock",
+				"description": "To sleep far from the ground"
+			},
+			"simple_chair": {
+				"display_name": "Simple Chair",
+				"description": "You can sit on it"
+			},
+			"simple_table": {
+				"display_name": "Simple Table",
+				"description": "A table, for table things"
+			}
+		},
+		"goblins": {
+			"egg": {
+				"display_name": "Goblin Egg",
+				"description": "Keep it safe"
+			},
+			"baby": {
+				"display_name": "Baby Goblin",
+				"description": "Will grow into a fully goblin soon"
+			}
+		},
+		"gizmos": {
+			"camp_standard": {
+				"display_name": "Camp Banner",
+				"description": "How you know you've come home"
+			}
+		},
+		"monsters": {
+			"bear": {
+				"display_name": "Swamp Bear",
+				"description": "Big and fast, a little muddy, yet fluffy"
+			},
+			"varanus_nest": {
+				"display_name": "Varanus Nest",
+				"description": "Spawns more varanus over time"
+			}
+		},
+		"peoples": {
+			"goblin": {
+				"species": "goblin"
+			}
+		},
+		"plants": {
+			"cattail": {
+				"display_name": "Cattail",
+				"description": "This plant's fiber can be spun into thread.",
+				"unripe_description": "This plant has been harvested and has not grown back yet"
+			},
+			"fern": {
+				"display_name": "Fern",
+				"description": "Harvestable for a meager food supply.",
+				"unripe_description": "This plant has been harvested and has not grown back yet"
+			},
+			"giant_flower": {
+				"display_name": "Giple Flower",
+				"description": "Can be harvested for healing herbs",
+				"unripe_description": "This plant has been harvested and has not grown back yet"
+			},
+			"mushroom": {
+				"display_name": "Mushroom",
+				"description": "Harvestable for a meager food supply.",
+				"unripe_description": "This plant has been harvested and has not grown back yet"
+			},
+			"log": {
+				"display_name": "Log",
+				"description": "A floating piece of log"
+			},
+			"lilypad": {
+				"display_name": "Lilypad",
+				"description": "Floats and can hold up a lot of weight"
+			}
+		},
+		"resources": {
+			"cattail": {
+				"display_name": "Cattail",
+				"description": "Spinnable into thread."
+			},
+			"giant_flower": {
+				"display_name": "Giple Flower",
+				"description": "An herb commonly used for medicinal purposes"
+			},
+			"mushroom": {
+				"display_name": "Mushroom",
+				"description": "Ready for eating"
+			},
+			"fern": {
+				"display_name": "Fern",
+				"description": "Ready for eating"
+			},
+			"pelt": {
+				"bear_pelt": {
+					"display_name": "Bear Pelt",
+					"description": "Pelt from a beear"
+				}
+			},
+			"bone": {
+				"display_name": "Bone",
+				"description": "Hard material"
+			},
+			"firefly_essense": {
+				"display_name": "Firefly Essense",
+				"description": "Has magical properties"
+			}
+		},
+		"summons": {
+			"big_g": {
+				"display_name": "Big G",
+				"description": "Beloved and playful, helped his generation through tough times"
+			},
+			"goblin_spirit": {
+				"display_name": "Goblin Spirit",
+				"description": "An old ancestor summoned back"
+			},
+			"trap": {
+				"display_name": "Trap",
+				"description": "Trapping something inside"
+			}
+		},
+		"trees": {
+			"bogger": {
+				"display_name": "Bogger Tree",
+				"description": "It radiates a mysterious aura",
+				"bud": {
+					"display_name": "Bogger bud",
+					"description": "Growing"
+				},
+				"seed": {
+					"display_name": "Bogger seed",
+					"description": "Plantable to grow a bogger tree"
+				},
+				"sprout": {
+					"display_name": "Bogger sprout",
+					"description": "Growing"
+				},
+				"stem": {
+					"display_name": "Bogger stem",
+					"description": "Growing"
+				}
+			},
+			"swirl": {
+				"display_name": "Swirl Tree",
+				"description": "An impressive specimen."
+			},
+			"cypress": {
+				"display_name": "Swamp Cypress",
+				"description": "Deep roots into the soil",
+				"bud": {
+					"display_name": "Cypress bud",
+					"description": "Growing"
+				},
+				"seed": {
+					"display_name": "Cypress seed",
+					"description": "Plantable to grow a cypress tree"
+				},
+				"sprout": {
+					"display_name": "Cypress sprout",
+					"description": "Growing"
+				},
+				"stem": {
+					"display_name": "Cypress stem",
+					"description": "Growing"
+				}
+			}
+		},
+		"weapons": {
+			"crude_axe": {
+				"display_name": "(Firefly) Crude Axe"
+			},
+			"dart_tube": {
+				"display_name": "Dart Tube",
+				"description": "To spit poison darts"
+			},
+			"giant_bone_axe": {
+				"display_name": "(Firefly) Giant Bone Axe"
+			},
+			"giant_bone_mace": {
+				"display_name": "(Firefly) Giant Bone Mace"
+			},
+			"poison_dart": {
+				"display_name": "Poison Dart",
+				"description": "Can poison enemies"
+			},
+			"skull_basher": {
+				"display_name": "(Firefly) Skull Basher",
+				"description": "Try to aim it at enemies head"
+			},
+			"spear": {
+				"display_name": "(Firefly) Spear",
+				"description": "Basic short spear"
+			},
+			"stick": {
+				"display_name": "Stick",
+				"description": "Just a random wooden stick"
+			},
+			"stone_maul": {
+				"display_name": "(Firefly) Stone Maul"
+			}
+		}
+	},
+	"jobs": {
+		"shaman": {
+			"shaman_description": {
+				"display_name": "Shaman",
+				"description": "Takes care of the clan well-being, crafting them armors, potions and food",
+				"requirements": "Crafted by another Shaman"
+			},
+			"shaman_workbench": {
+				"display_name": "Shaman Workbench",
+				"description": "Shamans will use to craft their stuff"
+			},
+			"shaman_firefly_token": {
+				"display_name": "Shaman Firefly Token",
+				"description": "Shamans will use to extract firefly essense"
+			},
+			"dreamcatcher": {
+				"display_name": "Shaman Dreamcatcher",
+				"dreamcatcher_talisman": {
+					"display_name": "Shaman Dreamcatcher",
+					"description": "Helps with magic. Don't let your dreams be dreams.",
+					"flavor": "Promotes a goblin to Shaman"
+				},
+				"description": "Helps with magic"
+			},
+			"egg_pedestal": {
+				"display_name": "Egg Pedestal",
+				"description": "Used to lay eggs and take care of it"
+			},
+			"recipes": {
+				"potions": "Potions"
+			},
+			"weaving_table": {
+				"display_name": "Weaving Table",
+				"description": "A place to weave armors, even the hard solid ones"
+			}
+		},
+		"spirit_walker": {
+			"spirit_walker_description": {
+				"display_name": "Spirit Walker",
+				"description": "Healer, summons spirits to help in fights",
+				"requirements": "Crafted by Shaman",
+				"level_1_data": {
+					"perk_000_name": "Healing",
+					"perk_000_description": "Can heal in small amounts the health of allies"
+				},
+				"level_2_data": {
+					"perk_000_name": "Goblin Spirit",
+					"perk_000_description": "Summons a goblin spirit that will help in fights"
+				},
+				"level_3_data": {
+					"perk_000_name": "Multiple Spirits",
+					"perk_000_description": "Summons multiple goblin spirits, the amount based on the summoner spirit stat"
+				},
+				"level_4_data": {
+					"perk_000_name": "Big G",
+					"perk_000_description": "Summons the beloved and playful goblin Big G. He helped his generation through tough times ages ago."
+				},
+				"level_5_data": {
+					"perk_000_name": "Warrior Aura Armor",
+					"perk_000_description": "All your Warriors will now be shielded by a defensive aura"
+				},
+				"level_6_data": {
+					"perk_000_name": "Dragon Aura",
+					"perk_000_description": "With the combined power of a (max level) Beast Tamer, they summon an ancient Dragon Spirit into battle"
+				}
+			},
+			"spirit_walker_staff": {
+				"display_name": "Spirit Walker Staff",
+				"spirit_walker_staff_talisman": {
+					"display_name": "Spirit Walker Staff",
+					"description": "Scary mace weapon",
+					"flavor": "Promotes a goblin to Spirit Walker"
+				},
+				"description": "Scary mace weapon"
+			}
+		},
+		"shadow_walker": {
+			"shadow_walker_description": {
+				"display_name": "Shadow Walker"
+			}
+		},
+		"warrior": {
+			"warrior_description": {
+				"display_name": "Warrior",
+				"requirements": "Crafted by Shaman",
+				"description": "Pride in fighting. Warriors are the ones to use heavy weapons and wear armor.",
+				"level_1_data": {
+					"perk_000_name": "The Basics",
+					"perk_000_description": "The basics are learned, gaining courage and increasing stamina"
+				},
+				"level_2_data": {
+					"perk_000_name": "Multiple Targets",
+					"perk_000_description": "Performs a Spin Attack that hits everyone around."
+				},
+				"level_3_data": {
+					"perk_000_name": "Poison Darts",
+					"perk_000_description": "Hits enemies far away with darts, poisoning them."
+				},
+				"level_4_data": {
+					"perk_000_name": "Self Aid",
+					"perk_000_description": "Tougher skin for a faster health regeneration."
+				},
+				"level_5_data": {
+					"perk_000_name": "Body Up",
+					"perk_000_description": "Strenght aquired from past fights grants +1 Body stat"
+				},
+				"level_6_data": {
+					"perk_000_name": "Rage over Time",
+					"perk_000_description": "Stats gets higher the longer a fight lasts."
+				}
+			},
+			"warrior_horn": {
+				"display_name": "Warrior War Horn",
+				"warrior_horn_talisman": {
+					"display_name": "Warrior War Horn",
+					"description": "Useful communication tool in battles",
+					"flavor": "Promotes a goblin to Warrior"
+				}
+			}
+		},
+		"chief": {
+			"chief_description": {
+				"display_name": "Chief"
+			}
+		},
+		"firemaster": {
+			"firemaster_description": {
+				"display_name": "Firemaster"
+			}
+		},
+		"peon": {
+			"peon_description": {
+				"display_name": "Peon"
+			}
+		},
+		"scavenger": {
+			"scavenger_description": {
+				"display_name": "Scavenger",
+				"description": "More than just a trapper, can find and gather random items in the world",
+				"requirements": "Crafted by Shaman"
+			},
+			"scavenger_backpack": {
+				"display_name": "Scavenger Backpack",
+				"scavenger_backpack_talisman": {
+					"display_name": "Scavenger Backpack",
+					"description": "Hold the scavenged loot",
+					"flavor": "Promotes a goblin to Scavenger"
+				}
+			}
+		},
+		"earthmaster": {
+			"earthmaster_description": {
+				"display_name": "Earthmaster",
+				"description": "Craft advance items and decorations using hard materials like stone and clay",
+				"requirements": "Crafted by Shaman"
+			},
+			"earthmaster_chisel": {
+				"display_name": "Earthmaster Chisel",
+				"earthmaster_chisel_talisman": {
+					"display_name": "Earthmaster Chisel",
+					"description": "To sculpt hard materials",
+					"flavor": "Promotes a goblin to Earthmaster"
+				},
+				"description": "To sculpt hard materials"
+			},
+			"earthmaster_workbench": {
+				"display_name": "Earthmaster Workbench"
+			}
+		},
+		"bonesmith": {
+			"bonesmith_description": {
+				"display_name": "Bonesmith",
+				"description": "Crafts basic items with materials like wood and fiber",
+				"requirements": "Crafted by Shaman"
+			},
+			"bonesmith_saw": {
+				"display_name": "Bonesmith Saw",
+				"bonesmith_saw_talisman": {
+					"display_name": "Bonesmith Saw",
+					"description": "Basic saw for basic tasks",
+					"flavor": "Promotes a goblin to Bonesmith"
+				},
+				"description": "Basic saw for basic tasks"
+			},
+			"bonesmith_workbench": {
+				"display_name": "Bonesmith Workbench",
+				"description": "Only simple tasks should be done here"
+			},
+			"recipes": {
+				"signs": "Signs"
+			}
+		},
+		"beast_tamer": {
+			"beast_tamer_description": {
+				"display_name": "Beast Tamer",
+				"description": "Summon and order animals into fight",
+				"requirements": "Crafted by Shaman",
+				"level_1_data": {
+					"perk_000_name": "Four Feathers",
+					"perk_000_description": "A group of elite Poyos called the Four Feathers will join and help in the fight"
+				},
+				"level_2_data": {
+					"perk_000_name": "Wild Life",
+					"perk_000_description": "Summons local fauna wildlife to help in the battle"
+				},
+				"level_3_data": {
+					"perk_000_name": "Traps",
+					"perk_000_description": "Traps enemies, immobilizing them for some time"
+				},
+				"level_4_data": {
+					"perk_000_name": "Varanus",
+					"perk_000_description": "Summons a pair of varanus into the fight"
+				},
+				"level_5_data": {
+					"perk_000_name": "Firefly Cloud",
+					"perk_000_description": "Casts a cloud of fireflies into enemies, confusing and blinding them"
+				},
+				"level_6_data": {
+					"perk_000_name": "Dragon Aura",
+					"perk_000_description": "With the combined power of a (max level) Spirit Walker, they summon an ancient Dragon Spirit into battle"
+				}
+			},
+			"beast_tamer_flute": {
+				"display_name": "Beast Tamer Flute",
+				"beast_tamer_flute_talisman": {
+					"display_name": "Beast Tamer Flute",
+					"description": "Communicates with animals",
+					"flavor": "Promotes a goblin to Beast Tamer"
+				}
+			},
+			"beast_tamer_claw": {
+				"display_name": "Claw",
+				"description": "Short range sharp weapon"
+			}
+		},
+		"party_goblin": {
+			"party_goblin_description": {
+				"display_name": "Party Goblin"
+			},
+			"party_goblin_flute": {
+				"display_name": "Party Goblin Flute",
+				"party_goblin_flute_talisman": {
+					"display_name": "Party Goblin Flute"
+				}
+			}
+		},
+		"worker": {
+			"worker_description": {
+				"description": "Workers perform basic tasks like harvesting resources, hauling stuff around, and constructing buildings.<br><br>⚔️ Goblin workers though, can also fight and be in a combat party."
+			}
+		}
+	},
+	"kingdoms": {
+		"firefly_clan": "Firefly Clan"
+	},
+	"ui": {
+		"game": {
+			"build_mode2": {
+				"tooltips": {
+					"fiber_resource": "Fiber",
+					"bone_resource": "Bone"
+				}
+			},
+			"menu": {
+				"crafter_menu": {
+					"items": {
+						"bonesmith": {
+							"display_name": "Bonesmith Craft Menu",
+							"description": "Build simple furniture and decor.",
+							"required_job_text": "Requires a Bonesmith"
+						},
+						"earthmaster": {
+							"display_name": "Earthmaster Craft Menu",
+							"description": "Stone and clay crafting.",
+							"required_job_text": "Requires a Earthmaster"
+						},
+						"shaman": {
+							"display_name": "Shaman Craft Menu",
+							"description": "Craft well-being improving items.",
+							"required_job_text": "Requires a Shaman"
+						}
+					}
+				}
+			}
+		}
+	}
 }

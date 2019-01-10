@@ -1,0 +1,107 @@
+{
+	"type": "index",
+	"loadouts": {
+		"swamp_goblins_toys": {
+			"ordinal": 1,
+			"alias": "swamp_goblins:data:loadouts:toys",
+			"display_name": "i18n(swamp_goblins:data.loadouts.toys.display_name)",
+			"description": "i18n(swamp_goblins:data.loadouts.toys.description)",
+			"tooltip": "i18n(swamp_goblins:data.loadouts.toys.tooltip)",
+			"splash": "file(images/toys_splash.png)",
+			"seal": "file(images/toys_seal.png)",
+			"content": {
+				"horn": {
+					"ordinal": 1,
+					"display_name": "i18n(swamp_goblins:jobs.warrior.warrior_horn.display_name)",
+					"type": "entity",
+					"uri": "swamp_goblins:warrior:talisman",
+					"icon": "/swamp_goblins/jobs/warrior/warrior_horn/warrior_horn.png",
+					"amount": 1
+				},
+				"helmet": {
+					"ordinal": 10,
+					"display_name": "i18n(swamp_goblins:entities.armor.horn_helmet.display_name)",
+					"type": "entity",
+					"uri": "swamp_goblins:armor:horn_helmet",
+					"icon": "/swamp_goblins/entities/armor/horn_helmet/horn_helmet.png",
+					"amount": 1
+				},
+				"axe": {
+					"ordinal": 20,
+					"display_name": "i18n(swamp_goblins:entities.weapons.giant_bone_axe.display_name)",
+					"type": "entity",
+					"uri": "swamp_goblins:weapons:giant_bone_axe",
+					"icon": "/swamp_goblins/entities/weapons/giant_bone_axe/giant_bone_axe.png",
+					"amount": 1
+				},
+				"jerky": {
+					"ordinal": 30,
+					"display_name": "i18n(stonehearth:data.loadouts.items.jerky)",
+					"type": "entity",
+					"uri": "stonehearth:rabbit_jerky",
+					"icon": "/stonehearth/data/loadouts/images/items/jerky.png",
+					"amount": 20
+				},
+				"gold": {
+					"ordinal": 40,
+					"display_name": "i18n(stonehearth:data.loadouts.items.gold)",
+					"type": "gold",
+					"icon": "/stonehearth/data/loadouts/images/items/gold.png",
+					"uri": "stonehearth:loot:gold",
+					"amount": 100
+				}
+			}
+		},
+		"swamp_goblins_nature": {
+			"ordinal": 2,
+			"alias": "swamp_goblins:data:loadouts:nature",
+			"display_name": "i18n(swamp_goblins:data.loadouts.nature.display_name)",
+			"description": "i18n(swamp_goblins:data.loadouts.nature.description)",
+			"tooltip": "i18n(swamp_goblins:data.loadouts.nature.tooltip)",
+			"splash": "file(images/nature_splash.png)",
+			"seal": "file(images/nature_seal.png)",
+			"content": {
+				"flute": {
+					"ordinal": 1,
+					"display_name": "i18n(swamp_goblins:jobs.beast_tamer.beast_tamer_flute.display_name)",
+					"type": "entity",
+					"uri": "swamp_goblins:beast_tamer:talisman",
+					"icon": "/swamp_goblins/jobs/beast_tamer/beast_tamer_flute/beast_tamer_flute.png",
+					"amount": 1
+				},
+				"herb": {
+					"ordinal": 2,
+					"display_name": "i18n(swamp_goblins:entities.resources.giant_flower.display_name)",
+					"type": "entity",
+					"uri": "swamp_goblins:resources:giant_flower",
+					"icon": "/swamp_goblins/entities/resources/giant_flower/giant_flower.png",
+					"amount": 10
+				},
+				"fiber": {
+					"ordinal": 3,
+					"display_name": "i18n(swamp_goblins:entities.resources.cattail.display_name)",
+					"type": "entity",
+					"uri": "swamp_goblins:resources:cattail",
+					"icon": "/swamp_goblins/entities/resources/cattail/cattail.png",
+					"amount": 10
+				},
+				"wood": {
+					"ordinal": 4,
+					"display_name": "i18n(stonehearth:entities.containers.log_pile.log_pile_ghost.display_name)",
+					"type": "entity",
+					"uri": "stonehearth:containers:log_pile",
+					"icon": "/stonehearth/entities/containers/log_pile/log_pile.png",
+					"amount": 1
+				},
+				"stone": {
+					"ordinal": 5,
+					"display_name": "i18n(stonehearth:entities.containers.stone_pile.stone_pile.display_name)",
+					"type": "entity",
+					"uri": "stonehearth:containers:stone_pile",
+					"icon": "/stonehearth/entities/containers/stone_pile/stone_pile.png",
+					"amount": 2
+				}
+			}
+		}
+	}
+}

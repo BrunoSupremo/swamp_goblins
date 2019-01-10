@@ -1,0 +1,46 @@
+{
+	"mixins": "stonehearth:jobs:trapper",
+	"display_order": 3,
+	"controller": "swamp_goblins:class:scavenger",
+	"requirements": "i18n(swamp_goblins:jobs.scavenger.scavenger_description.requirements)",
+	"mixintypes": {
+		"equipment": "override",
+		"roles": "override"
+	},
+	"equipment": {
+		"helmet": "file(scavenger_helmet)",
+		"torso": "file(scavenger_outfit)",
+		"mainhand": "stonehearth:trapper:knife"
+	},
+	"roles":[
+		"goblin_scavenger_job",
+		"hunter"
+	],
+	"talisman_uri": "swamp_goblins:scavenger:talisman",
+	"icon": "file(images/icon.png)",
+	"parent_job": "swamp_goblins:jobs:worker",
+	"xp_rewards": {
+		"unsuccessful_trap": 10,
+		"successful_trap": 15
+	},
+	"level_data": {
+		"1": {
+			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
+		},
+		"2": {
+			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
+		},
+		"3": {
+			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
+		},
+		"4": {
+			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
+		},
+		"5": {
+			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
+		},
+		"6": {
+			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
+		}
+	}
+}

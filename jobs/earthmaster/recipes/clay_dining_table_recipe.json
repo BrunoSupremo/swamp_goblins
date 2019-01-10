@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 2,
+	"recipe_name": "i18n(stonehearth:jobs.potter.recipes.clay_dining_table_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.potter.recipes.clay_dining_table_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.clay_dining_table_recipe.flavor)",
+	"portrait": "/stonehearth/entities/furniture/clay_dining_table/clay_dining_table.png",
+	"workshop": "stonehearth:potter:kiln",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:furniture:clay_dining_table"
+		}
+	]
+}

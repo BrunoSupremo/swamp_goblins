@@ -1,6 +1,6 @@
 local CraftingJob = require 'stonehearth.jobs.crafting_job'
 
-local ShamanClass = class()
-radiant.mixin(ShamanClass, CraftingJob)
+local EarthmasterClass = class()
+radiant.mixin(EarthmasterClass, CraftingJob)
 
-return ShamanClass
+return EarthmasterClass

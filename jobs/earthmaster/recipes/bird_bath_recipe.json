@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 25,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.bird_bath_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.bird_bath_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.mason.recipes.bird_bath_recipe.flavor)",
+	"portrait": "/stonehearth/entities/decoration/bird_bath/bird_bath.png",
+	"workshop": "stonehearth:mason:workbench",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:decoration:bird_bath"
+		}
+	]
+}

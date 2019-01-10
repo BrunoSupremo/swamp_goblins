@@ -38,11 +38,11 @@
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
-			"display_name": "i18n(stonehearth:entities.construction.wooden_door.wooden_door_ghost.display_name)",
-			"description": "i18n(stonehearth:entities.construction.wooden_door.wooden_door_ghost.description)",
+			"display_name": "i18n(swamp_goblins:entities.construction.wooden_door.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.wooden_door.description)",
 			"icon": "file(wooden_door.png)",
 			"category": "door",
-			"material_tags": "wood portal crafted door stockpile_portal"
+			"material_tags":["wood", "portal", "crafted", "door", "stockpile_portal"]
 		}
 	}
 }

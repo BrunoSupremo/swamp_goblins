@@ -12,12 +12,10 @@
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
-			"display_name": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_saw.bonesmith_saw_iconic.display_name)",
-			"description": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_saw.bonesmith_saw_iconic.description)",
 			"icon": "file(bonesmith_saw.png)",
 			"is_item": true,
 			"category": "tools",
-			"material_tags": "tool"
+			"material_tags":["tool"]
 		}
 	}
 }

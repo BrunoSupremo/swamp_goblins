@@ -1,0 +1,42 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"swamp_goblins:monster_spawner" : {
+			"monster":"stonehearth:monsters:forest:alligator"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(nest.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {"x": 0, "y": 0, "z": 0 },
+			"region_origin": {"x": 0, "y": 0, "z": 0 }
+		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.monsters.varanus_nest.display_name)",
+			"description": "i18n(swamp_goblins:entities.monsters.varanus_nest.description)"
+		}
+	}
+}

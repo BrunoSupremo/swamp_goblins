@@ -1,37 +1,29 @@
 {
+	"base_job":"swamp_goblins:jobs:worker",
 	"jobs": {
-		"stonehearth:jobs:worker": {
-			"description": "file(worker/worker_description.json)"
+		"swamp_goblins:jobs:worker": {
+			"description": "swamp_goblins:jobs:worker"
 		},
-		"swamp_goblins:jobs:spirit_walker": {
-			"description": "swamp_goblins:jobs:spirit_walker"
-		},
-		"swamp_goblins:jobs:shadow_walker": {
-			"description": "swamp_goblins:jobs:shadow_walker"
-		},
-		"swamp_goblins:jobs:warrior": {
-			"description": "swamp_goblins:jobs:warrior"
-		},
-		"swamp_goblins:jobs:chief": {
-			"description": "swamp_goblins:jobs:chief"
-		},
-		"swamp_goblins:jobs:shaman": {
-			"description": "swamp_goblins:jobs:shaman"
-		},
-		"swamp_goblins:jobs:firemaster": {
-			"description": "swamp_goblins:jobs:firemaster"
-		},
-		"swamp_goblins:jobs:muckscrabbler": {
-			"description": "swamp_goblins:jobs:muckscrabbler"
-		},
-		"swamp_goblins:jobs:earthmaster": {
-			"description": "swamp_goblins:jobs:earthmaster"
+		"swamp_goblins:jobs:beast_tamer": {
+			"description": "swamp_goblins:jobs:beast_tamer"
 		},
 		"swamp_goblins:jobs:bonesmith": {
 			"description": "swamp_goblins:jobs:bonesmith"
 		},
-		"swamp_goblins:jobs:beastmaster": {
-			"description": "swamp_goblins:jobs:beastmaster"
+		"swamp_goblins:jobs:earthmaster": {
+			"description": "swamp_goblins:jobs:earthmaster"
+		},
+		"stonehearth:jobs:trapper": {
+			"description": "swamp_goblins:jobs:scavenger"
+		},
+		"swamp_goblins:jobs:shaman": {
+			"description": "swamp_goblins:jobs:shaman"
+		},
+		"swamp_goblins:jobs:spirit_walker": {
+			"description": "swamp_goblins:jobs:spirit_walker"
+		},
+		"swamp_goblins:jobs:warrior": {
+			"description": "swamp_goblins:jobs:warrior"
 		}
 	}
 }

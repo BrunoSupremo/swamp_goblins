@@ -1,0 +1,24 @@
+{
+	"type" : "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(trap.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:food_decay": {
+			"initial_decay": {
+				"min": 2,
+				"max": 2
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.summons.trap.display_name)",
+			"description": "i18n(swamp_goblins:entities.summons.trap.description)"
+		}
+	}
+}

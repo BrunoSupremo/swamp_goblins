@@ -1,0 +1,33 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"display_name": "i18n(swamp_goblins:data.buffs.rage_over_time.display_name)",
+	"description": "i18n(swamp_goblins:data.buffs.rage_over_time.description)",
+	"icon": "/swamp_goblins/jobs/warrior/images/rage_over_time.png",
+	"repeat_add_action": "stack_and_refresh",
+	"duration": "15m",
+	"max_stacks": 20,
+	"modifiers": {
+		"muscle": {
+			"add": 1
+		},
+		"speed": {
+			"add": 1.5
+		},
+		"courage": {
+			"add": 5
+		},
+		"willpower": {
+			"add": 5
+		},
+		"menace": {
+			"add": 2.5
+		},
+		"additive_dmg_modifier": {
+			"add": 0.5
+		},
+		"multiplicative_target_armor_modifier": {
+			"add": -0.01
+		}
+	}
+}

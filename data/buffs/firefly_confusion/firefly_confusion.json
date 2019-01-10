@@ -1,0 +1,42 @@
+{
+	"type": "buff",
+	"axis": "debuff",
+	"display_name": "i18n(swamp_goblins:data.buffs.firefly_confusion.display_name)",
+	"description": "i18n(swamp_goblins:data.buffs.firefly_confusion.description)",
+	"effect": "swamp_goblins:effects:buff:firefly_confusion",
+	"icon": "/swamp_goblins/jobs/beast_tamer/images/summon_firefly.png",
+	"duration": "1h",
+	"persistent": false,
+	"modifiers": {
+		"muscle": {
+			"multiply": 0.25
+		},
+		"speed": {
+			"multiply": 0.5
+		},
+		"stamina": {
+			"multiply": 0.25
+		},
+		"courage": {
+			"multiply": 0.25
+		},
+		"willpower": {
+			"multiply": 0.25
+		},
+		"menace": {
+			"multiply": 0.25
+		},
+		"additive_dmg_modifier": {
+			"multiply": 0.5
+		},
+		"multiplicative_dmg_modifier": {
+			"multiply": 0.5
+		},
+		"additive_armor_modifier": {
+			"multiply": 0.5
+		},
+		"multiplicative_armor_modifier": {
+			"multiply": 0.5
+		}
+	}
+}

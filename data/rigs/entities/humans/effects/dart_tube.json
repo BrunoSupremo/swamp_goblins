@@ -1,0 +1,25 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"animation": {
+			"type": "animation_effect",
+			"start_time": 0,
+			"animation": "emote_shout.json",
+			"loop": false,
+			"response_frame": 30
+		},
+		"hide_carrying" : {
+			"type": "hide_bone",
+			"start_time": 0,
+			"end_time": 0,
+			"bone": "mainHand"
+		},
+		"grab_hoe" : {
+			"type": "attach_item_effect",
+			"start_time": 0,
+			"end_time": 0,
+			"item": "swamp_goblins:weapons:dart_tube",
+			"bone": "rightHand"
+		}
+	}
+}

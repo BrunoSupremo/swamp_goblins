@@ -1,0 +1,60 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(crude_axe_equipped.qb)"
+				]
+			}
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(crude_axe_iconic.json)"
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "mainhand",
+			"render_type": "attach_to_bone",
+			"postures": [
+				"stonehearth:combat",
+				"stonehearth:patrol"
+			],
+			"ilevel": 14,
+			"roles": ["goblin_warrior_job"],
+			"required_job_level": 2,
+			"equip_effect": "stonehearth:effects:weapon_level_up"
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:weapon_data": {
+			"base_damage": 14,
+			"reach": 2.2
+		},
+		"stonehearth:combat:melee_attacks": [
+			{
+				"name": "combat_1h_forehand",
+				"effect": "combat_1h_forehand",
+				"active_frame": 21,
+				"cooldown": 0,
+				"priority": 2
+			}
+		],
+		"stonehearth:net_worth": {
+			"value_in_gold": 14,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 2,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.weapons.crude_axe.display_name)",
+			"description": "i18n(stonehearth:entities.weapons.crude_metal_axe.description)",
+			"icon": "file(crude_axe.png)",
+			"category": "weapons",
+			"material_tags": ["melee_weapon","crafted","stockpile_weapon"]
+		}
+	}
+}

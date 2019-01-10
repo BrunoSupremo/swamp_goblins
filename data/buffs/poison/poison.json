@@ -1,0 +1,8 @@
+{
+	"type": "buff",
+	"axis": "debuff",
+	"invisible_to_player": true,
+	"repeat_add_action": "renew_duration",
+	"duration": "1h",
+	"script": "swamp_goblins:buff_scripts:poison"
+}

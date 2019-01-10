@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 35,
+	"work_units": 2,
+	"recipe_name": "i18n(stonehearth:jobs.weaver.recipes.input_bin_woven_green_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.weaver.recipes.input_bin_woven_green_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.input_bin_woven_green_recipe.flavor)",
+	"portrait": "/stonehearth/entities/containers/input_bin_woven_green/input_bin_woven_green.png",
+	"workshop": "swamp_goblins:shaman:weaving_table",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "cloth resource",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:containers:input_bin:woven_green"
+		}
+	]
+}

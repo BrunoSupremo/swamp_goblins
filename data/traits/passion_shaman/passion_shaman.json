@@ -1,0 +1,16 @@
+{
+	"type": "trait",
+	"mixins": "stonehearth:mixins:traits:passion_job",
+	"icon": "file(passion_shaman.png)",
+	"data": {
+		"job_uri": "swamp_goblins:jobs:shaman"
+	},
+	"subject_overrides": [
+		{
+			"subject": "swamp_goblins:shaman:talisman",
+			"sentiment": 1,
+			"permanent": true,
+			"unvarying": true
+		}
+	]
+}

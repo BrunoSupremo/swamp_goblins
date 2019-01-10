@@ -1,0 +1,16 @@
+{
+	"type": "trait",
+	"mixins": "stonehearth:mixins:traits:passion_job",
+	"icon": "file(passion_earthmaster.png)",
+	"data": {
+		"job_uri": "swamp_goblins:jobs:earthmaster"
+	},
+	"subject_overrides": [
+		{
+			"subject": "swamp_goblins:earthmaster:talisman",
+			"sentiment": 1,
+			"permanent": true,
+			"unvarying": true
+		}
+	]
+}

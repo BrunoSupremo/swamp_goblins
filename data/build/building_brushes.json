@@ -1,101 +1,5 @@
 { 
 	"always_available" : {
-		"wood resource" : {
-			"colors": {
-				"#444444" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#444444)",
-					"ordinal" : 10001
-				},
-				"#333333" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#333333)",
-					"ordinal" : 10002
-				},
-				"#222222" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#222222)",
-					"ordinal" : 10003
-				},
-				"#8C8573" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#8C8573)",
-					"ordinal" : 10004
-				},
-				"#807965" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#807965)",
-					"ordinal" : 10005
-				},
-				"#706956" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#706956)",
-					"ordinal" : 10006
-				},
-				"#534D40" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#534D40)",
-					"ordinal" : 10007
-				},
-				"#484338" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#484338)",
-					"ordinal" : 10008
-				},
-				"#3D392E" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#3D392E)",
-					"ordinal" : 10009
-				},
-				"#5D5035" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#5D5035)",
-					"ordinal" : 10010
-				},
-				"#6F634C" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#6F634C)",
-					"ordinal" : 10011
-				},
-				"#564C35" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#564C35)",
-					"ordinal" : 10012
-				},
-				"#8A5F35" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#8A5F35)",
-					"ordinal" : 10013
-				},
-				"#6F4B29" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#6F4B29)",
-					"ordinal" : 10014
-				}
-			}
-		},
-		"clay_brick resource" : {
-			"colors": {
-				"#5B583D" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#5B583D)",
-					"ordinal" : 10001
-				},
-				"#565439" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#565439)",
-					"ordinal" : 10002
-				},
-				"#535137" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#535137)",
-					"ordinal" : 10003
-				},
-				"#4B4A32" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#4B4A32)",
-					"ordinal" : 10004
-				}	
-			}
-		},
-		"bone resource" : {
-			"colors": {
-				"#CFCCC2" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#CFCCC2)",
-					"ordinal" : 10001
-				},
-				"#B4AD95" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#B4AD95)",
-					"ordinal" : 10003
-				},
-				"#A19878" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#A19878)",
-					"ordinal" : 10004
-				}
-			}
-		},
 		"fiber resource" : {
 			"colors": {
 				"#695087" : {
@@ -110,82 +14,35 @@
 					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#4A3662)",
 					"ordinal" : 10003
 				},
-				"#A6C780" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#A6C780)",
+				"#CFCCC2" : {
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#CFCCC2)",
 					"ordinal" : 10004
 				},
-				"#7B9067" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#7B9067)",
+				"#B4AD95" : {
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#B4AD95)",
 					"ordinal" : 10005
 				},
-				"#5C6E4C" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#5C6E4C)",
+				"#A19878" : {
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#A19878)",
 					"ordinal" : 10006
-				},
-				"#9C9F69" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#9C9F69)",
-					"ordinal" : 10008
-				},
-				"#8B8E57" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#8B8E57)",
-					"ordinal" : 10009
 				},
 				"#7C7F48" : {
 					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#7C7F48)",
-					"ordinal" : 10010
+					"ordinal" : 10007
 				},
 				"#6D7037" : {
 					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#6D7037)",
-					"ordinal" : 10011
+					"ordinal" : 10008
 				},
 				"#5D602D" : {
 					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#5D602D)",
-					"ordinal" : 10012
-				}
-			}
-		},
-		"stone resource" : {
-			"colors": {
-				"#7AA2A3" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#7AA2A3)",
-					"ordinal" : 10001
-				},
-				"#608A8B" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#608A8B)",
-					"ordinal" : 10002
-				},
-				"#577F80" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#577F80)",
-					"ordinal" : 10003
-				},
-				"#416162" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#416162)",
-					"ordinal" : 10004
-				},
-				"#999999" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#999999)",
-					"ordinal" : 10005
-				},
-				"#888888" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#888888)",
-					"ordinal" : 10006
-				},
-				"#777777" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#777777)",
-					"ordinal" : 10007
-				},
-				"#666666" : {
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.colors.#666666)",
-					"ordinal" : 10008
+					"ordinal" : 10009
 				}
 			}
 		}
 	},
 	"voxel": {
 		"fiber resource": {
-			"colors": {}
-		},
-		"bone resource": {
 			"colors": {}
 		}
 	},
@@ -194,21 +51,12 @@
 			"patterns": {},
 			"colors": {},
 			"default_color": "#695087"
-		},
-		"bone resource": {
-			"patterns": {},
-			"colors": {},
-			"default_color": "#CFCCC2"
 		}
 	},
 	"column": {
 		"fiber resource": {
 			"colors": {},
 			"default_color": "#695087"
-		},
-		"bone resource": {
-			"colors": {},
-			"default_color": "#CFCCC2"
 		}
 	}
 }

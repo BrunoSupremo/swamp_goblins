@@ -1,0 +1,72 @@
+{
+	"type" : "entity",
+	"mixins": "swamp_goblins:mixins:base_goblin", 
+	"components": {
+		"render_info" : {
+			"animation_table": "swamp_goblins:skeletons:humanoid:baby",
+			"model_variant": "firefly_goblin",
+			"scale":0.09
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(baby.qb)"
+				]
+			}
+		},
+		"stonehearth:commands": {
+			"mixintypes": {
+				"commands": "remove"
+			}
+		},
+		"stonehearth:attributes": {
+			"speed": {
+				"type": "basic",
+				"value": 30
+			},
+			"social_loss_amount": {
+				"type": "derived",
+				"equation": "3.6"
+			},
+			"min_sleepiness": {
+				"type": "basic",
+				"value": 20
+			}
+		},
+		"stonehearth:evolve": {}
+	},
+	"entity_data": {
+		"stonehearth:evolve_data": {
+			"current_stage": "baby",
+			"next_stage": "swamp_goblins:goblins:goblin",
+			"evolve_time": "1d+1h",
+			"evolve_effect": "stonehearth:effects:fursplosion_effect"
+		},
+		"stonehearth:catalog": {
+			"mixintypes": {
+				"material_tags": "override"
+			},
+			"material_tags":[
+				"meat",
+				"baby",
+				"goblin"
+			],
+			"display_name": "i18n(swamp_goblins:entities.goblins.baby.display_name)",
+			"description": "i18n(swamp_goblins:entities.goblins.baby.description)"
+		},
+		"stonehearth:calories": {
+			"hourly_calorie_loss": 10
+		},
+		"stonehearth:portrait": {
+			"portrait_types": {
+				"headshot": {
+					"camera": {
+						"pos": [17, 1, -27 ],
+						"look_at": [0, 1, 0 ],
+						"fov": 45
+					}
+				}
+			}
+		}
+	}
+}

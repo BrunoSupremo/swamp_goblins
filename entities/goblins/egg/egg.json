@@ -1,0 +1,38 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"render_info" : {
+			"scale":0.08
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(egg.qb)"
+				]
+			}
+		},
+		"mob": {
+			"ignore_gravity": true,
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"stonehearth:evolve": {},
+		"effect_list": {
+			"default": "stonehearth:effects:talisman_glow"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.goblins.egg.display_name)",
+			"description": "i18n(swamp_goblins:entities.goblins.egg.description)",
+			"icon": "file(egg.png)"
+		},
+		"stonehearth:evolve_data": {
+			"current_stage": "egg",
+			"next_stage": "swamp_goblins:goblins:baby",
+			"evolve_time": "1d+1h",
+			"evolve_effect": "stonehearth:effects:fursplosion_effect"
+		}
+	}
+}

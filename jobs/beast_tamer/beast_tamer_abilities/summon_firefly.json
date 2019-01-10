@@ -1,0 +1,17 @@
+{
+	"type": "entity",
+	"components": {
+		"stonehearth:equipment_piece": {}
+	},
+	"entity_data": {
+		"stonehearth:combat:ranged_attacks": [
+			{
+				"name": "summon_firefly",
+				"effect": "emote_roar",
+				"active_frame": 60,
+				"cooldown": 50000,
+				"priority": 2
+			}
+		]
+	}
+}

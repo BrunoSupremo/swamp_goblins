@@ -3,17 +3,17 @@
 	"work_units": 5,
 	"recipe_name": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_saw.bonesmith_saw_talisman.display_name)",
 	"description": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_saw.bonesmith_saw_talisman.description)",
-	"flavor": "",
+	"flavor": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_saw.bonesmith_saw_talisman.flavor)",
 	"portrait": "/swamp_goblins/jobs/bonesmith/bonesmith_saw/bonesmith_saw.png",
 	"workshop": "swamp_goblins:shaman:workbench",
-	"work_effect": "work",
+	"work_effect": "fiddle",
 	"ingredients": [
 		{
-			"material": "wood resource",
+			"uri": "swamp_goblins:resources:firefly_essense",
 			"count": 1
 		},
 		{
-			"material": "stone resource",
+			"material": "wood resource",
 			"count": 1
 		}
 	],

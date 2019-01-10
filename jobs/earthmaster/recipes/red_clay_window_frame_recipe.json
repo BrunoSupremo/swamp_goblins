@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 1,
+	"recipe_name": "i18n(stonehearth:jobs.potter.recipes.red_clay_window_frame_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.potter.recipes.red_clay_window_frame_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.red_clay_window_frame_recipe.flavor)",
+	"portrait": "/stonehearth/entities/construction/red_clay_window_frame/red_clay_window_frame.png",
+	"workshop": "stonehearth:potter:kiln",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:construction:red_clay_window_frame"
+		}
+	]
+}

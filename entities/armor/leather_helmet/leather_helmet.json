@@ -5,15 +5,9 @@
 		"model_variants": {
 			"default": {
 				"layer": "hat",
-				"transparent": "false",
+				"transparent": "true",
 				"models": [
-					{
-						"type": "one_of",
-						"items": [
-							"file(leather_helmet_1.qb)",
-							"file(leather_helmet_2.qb)"
-						]
-					}
+					"file(leather_helmet.qb)"
 				]
 			}
 		},
@@ -24,8 +18,8 @@
 			"render_type": "merge_with_model",
 			"slot": "helmet",
 			"ilevel": 3,
-			"required_job_level": 1,
-			"roles": "goblin_worker_job",
+			"required_job_level": 3,
+			"roles":["goblin_warrior_job"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
 	},
@@ -45,10 +39,10 @@
 		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(swamp_goblins:entities.armor.leather_helmet.display_name)",
-			"description": "i18n(swamp_goblins:entities.armor.leather_helmet.description)",
+			"description": "i18n(stonehearth:entities.armor.studded_leather_helmet.description)",
 			"icon": "file(leather_helmet.png)",
 			"category": "armor",
-			"material_tags": "leather armor heavy_armor stockpile_equipment"
+			"material_tags":["leather", "helmet", "armor", "heavy_armor", "stockpile_equipment"]
 		}
 	}
 }

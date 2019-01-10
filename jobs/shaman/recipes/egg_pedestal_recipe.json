@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.shaman.egg_pedestal.display_name)",
+	"description": "i18n(swamp_goblins:jobs.shaman.egg_pedestal.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/jobs/shaman/egg_pedestal/egg_pedestal.png",
+	"work_effect": "work",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:shaman:egg_pedestal"
+		}
+	]
+}

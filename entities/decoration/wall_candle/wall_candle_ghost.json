@@ -20,7 +20,7 @@
 			"description": "i18n(swamp_goblins:entities.decoration.wall_candle.description)",
 			"icon": "file(wall_candle.png)",
 			"category": "decoration",
-			"material_tags": "light_source decoration stockpile_decoration"
+			"material_tags":["light_source", "decoration", "stockpile_decoration"]
 		}
 	}
 }

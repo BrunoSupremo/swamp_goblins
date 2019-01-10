@@ -1,0 +1,78 @@
+{
+	"type": "index",
+	"groups": {
+		"food_preference": {
+			"stonehearth:traits:carnivore": {},
+			"stonehearth:traits:herbivore": {},
+			"stonehearth:traits:gourmand": {},
+			"stonehearth:traits:goat": {}
+		},
+		"temperament": {
+			"stonehearth:traits:excitable": {},
+			"stonehearth:traits:stoic": {
+				"excludes": {
+					"stonehearth:traits:hothead": true
+				}
+			}
+		},
+		"outlook": {
+			"stonehearth:traits:optimistic": {},
+			"stonehearth:traits:pessimistic": {}
+		},
+		"passion_jobs": {
+			"swamp_goblins:traits:passion_beast_tamer":{},
+			"swamp_goblins:traits:passion_bonesmith":{},
+			"swamp_goblins:traits:passion_earthmaster":{},
+			"swamp_goblins:traits:scavenger":{},
+			"swamp_goblins:traits:passion_shaman":{},
+			"swamp_goblins:traits:passion_spirit_walker":{},
+			"swamp_goblins:traits:passion_warrior":{},
+			"swamp_goblins:traits:party_goblin": {},
+			"stonehearth:traits:passion_worker":{}
+		},
+		"build": {
+			"stonehearth:traits:featherweight": {},
+			"stonehearth:traits:pack_mule": {}
+		},
+		"talkative": {
+			"stonehearth:traits:gregarious": {},
+			"stonehearth:traits:loner": {}
+		}
+	},
+	"traits": {
+		"stonehearth:traits:courageous": {},
+		"stonehearth:traits:callous": {
+			"excludes": {
+				"stonehearth:traits:empathetic": true,
+				"swamp_goblins:traits:party_goblin": true
+			}
+		},
+		"stonehearth:traits:heart_of_a_crafter": {
+			"excludes": {
+				"swamp_goblins:traits:passion_beast_tamer":true,
+				"swamp_goblins:traits:scavenger":true,
+				"swamp_goblins:traits:passion_spirit_walker":true,
+				"swamp_goblins:traits:passion_warrior":true,
+				"swamp_goblins:traits:party_goblin": true
+			}
+		},
+		"stonehearth:traits:hothead": {
+			"excludes": {
+				"stonehearth:traits:stoic": true,
+				"swamp_goblins:traits:party_goblin": true
+			}
+		},
+		"stonehearth:traits:night_owl": {},
+		"stonehearth:traits:glutton": {},
+		"stonehearth:traits:charismatic": {},
+		"stonehearth:traits:professor": {},
+		"stonehearth:traits:empathetic": {
+			"excludes": {
+				"stonehearth:traits:callous": true
+			}
+		},
+		"stonehearth:traits:opinionated": {},
+		"stonehearth:traits:pluviophile": {},
+		"stonehearth:traits:storm_chaser": {}
+	}
+}

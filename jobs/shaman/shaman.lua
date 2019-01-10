@@ -1,4 +1,4 @@
-local CraftingJob = require 'stonehearth.jobs.crafting_job'
+local CraftingJob = require 'stonehearth.jobs.herbalist.herbalist'
 
 local ShamanClass = class()
 radiant.mixin(ShamanClass, CraftingJob)

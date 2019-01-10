@@ -1,10 +1,31 @@
 {
+	"zone_menu": {
+		"items": {
+			"mixintypes": {
+				"create_farm": "remove",
+				"create_pasture": "remove"
+			}
+		}
+	},
 	"crafter_menu": {
 		"mixintypes": {
 			"items": "override"
 		},
 		"items": {
+			"shaman": {
+				"ordinal": 1,
+				"name": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.display_name)",
+				"description": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.description)",
+				"class": "button",
+				"required_job": "swamp_goblins:jobs:shaman",
+				"required_job_text": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.required_job_text)",
+				"icon": "/swamp_goblins/jobs/shaman/images/shaman_menu_icon.png",
+				"sticky": true,
+				"menu_action": "show_crafter_ui",
+				"hotkey_action": "craft:shaman"
+			},
 			"bonesmith": {
+				"ordinal": 2,
 				"name": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.bonesmith.display_name)",
 				"description": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.bonesmith.description)",
 				"class": "button",
@@ -15,16 +36,17 @@
 				"menu_action": "show_crafter_ui",
 				"hotkey_action": "craft:bonesmith"
 			},
-			"shaman": {
-				"name": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.display_name)",
-				"description": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.description)",
+			"earthmaster": {
+				"ordinal": 3,
+				"name": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.earthmaster.display_name)",
+				"description": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.earthmaster.description)",
 				"class": "button",
-				"required_job": "swamp_goblins:jobs:shaman",
-				"required_job_text": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.required_job_text)",
-				"icon": "/swamp_goblins/jobs/shaman/images/shaman_menu_icon.png",
+				"required_job": "swamp_goblins:jobs:earthmaster",
+				"required_job_text": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.earthmaster.required_job_text)",
+				"icon": "/swamp_goblins/jobs/earthmaster/images/earthmaster_menu_icon.png",
 				"sticky": true,
 				"menu_action": "show_crafter_ui",
-				"hotkey_action": "craft:shaman"
+				"hotkey_action": "craft:earthmaster"
 			}
 		}
 	}

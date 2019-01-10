@@ -1,0 +1,39 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(firefly_essense.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 }
+		},
+		"effect_list": {
+			"default": "swamp_goblins:effects:firefly_essense_effect"
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 1,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.resources.firefly_essense.display_name)",
+			"description": "i18n(swamp_goblins:entities.resources.firefly_essense.description)",
+			"icon": "file(firefly_essense.png)",
+			"is_item": true,
+			"category": "resources",
+			"material_tags":["firefly", "resource", "stockpile_animal_part"]
+		}
+	}
+}

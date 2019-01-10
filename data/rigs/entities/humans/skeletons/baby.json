@@ -1,0 +1,9 @@
+{
+	"mixins": "stonehearth:skeletons:humanoid:female",
+	"postures" : "file(../baby_postures.json)",
+	"collision_shape" : {
+		"type" : "cylinder_collision_shape",
+		"radius" : 5,
+		"height" : 15
+	}
+}

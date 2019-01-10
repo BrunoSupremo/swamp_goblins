@@ -1,0 +1,16 @@
+{
+	"type": "trait",
+	"mixins": "stonehearth:mixins:traits:passion_job",
+	"icon": "file(passion_bonesmith.png)",
+	"data": {
+		"job_uri": "swamp_goblins:jobs:bonesmith"
+	},
+	"subject_overrides": [
+		{
+			"subject": "swamp_goblins:bonesmith:talisman",
+			"sentiment": 1,
+			"permanent": true,
+			"unvarying": true
+		}
+	]
+}

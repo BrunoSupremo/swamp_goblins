@@ -28,48 +28,83 @@
 			}
 		]
 	},
-	"season": "spring",
+	"season": "wet",
 	"palettes": {
-		"spring": {
-			"null": "#ff00ff",
-			"unknown": "#25221a",
-			"bedrock": "#514e45",
+		"minimap":{
+			"water":"#4B4A32",
+			"trees":"#1D2D21"
+		},
+		"dry": {
+			"null": "#FF00FF",
+			"unknown": "#25221A",
+			"bedrock": "#514E45",
 			"rock_layer_1": "#534F48",
 			"rock_layer_2": "#555555",
-			"rock_layer_3": "#555555",
-			"rock_layer_4": "#555555",
-			"rock_layer_5": "#555555",
-			"rock_layer_6": "#555555",
-			"rock_layer_7": "#555555",
+			"rock_layer_3": "#5E5E5E",
+			"rock_layer_4": "#666666",
+			"rock_layer_5": "#6F6F6F",
+			"rock_layer_6": "#777777",
+			"rock_layer_7": "#808080",
 			"rock_layer_8": "#504A3C",
 			"soil_light": "#564C35",
 			"soil_dark": "#4E442F",
-			"dirt": "#B3A16E",
-			"dirt_edge_1": "#A29161",
+			"dirt": "#6D6143",
+			"dirt_edge_1": "#695D40",
+			"grass": "#838646",
+			"grass_edge_1": "#676A2E",
+			"grass_edge_2": "#767837",
+			"grass_hills": "#838646",
+			"grass_hills_edge_1": "#676A2E",
+			"grass_hills_edge_2": "#767837",
+			"copper_ore": "#C87533",
+			"tin_ore": "#B0A080",
+			"iron_ore": "#90B0D0",
+			"silver_ore": "#CCCCCC",
+			"gold_ore": "#FFD700",
+			"coal": "#021C24",
+			"marble" : "#DEDEDE",
+			"clay" : "#492A16"
+		},
+		"wet": {
+			"null": "#FF00FF",
+			"unknown": "#25221A",
+			"bedrock": "#514E45",
+			"rock_layer_1": "#534F48",
+			"rock_layer_2": "#555555",
+			"rock_layer_3": "#5E5E5E",
+			"rock_layer_4": "#666666",
+			"rock_layer_5": "#6F6F6F",
+			"rock_layer_6": "#777777",
+			"rock_layer_7": "#808080",
+			"rock_layer_8": "#504A3C",
+			"soil_light": "#564C35",
+			"soil_dark": "#4E442F",
+			"dirt": "#6D6143",
+			"dirt_edge_1": "#695D40",
 			"grass": "#7C7F48",
 			"grass_edge_1": "#5D602D",
 			"grass_edge_2": "#6D7037",
 			"grass_hills": "#7C7F48",
 			"grass_hills_edge_1": "#5D602D",
 			"grass_hills_edge_2": "#6D7037",
-			"copper_ore": "#c87533",
-			"tin_ore": "#b0a080",
-			"iron_ore": "#90b0d0",
-			"silver_ore": "#cccccc",
-			"gold_ore": "#ffd700",
-			"coal": "#021c24",
+			"copper_ore": "#C87533",
+			"tin_ore": "#B0A080",
+			"iron_ore": "#90B0D0",
+			"silver_ore": "#CCCCCC",
+			"gold_ore": "#FFD700",
+			"coal": "#021C24",
 			"marble" : "#DEDEDE",
 			"clay" : "#492A16"
 		}
 	},
 	"terrain": {
 		"noise_map_settings": {
-			"octaves": 1,
-			"persistence_ratio": 0.5,
-			"bandlimit": 4,
+			"octaves": 4,
+			"persistence_ratio": 0.015,
+			"bandlimit": 1,
 			"aspect_ratio": 1
 		},
-		"plains_percentage": 90,
+		"plains_percentage": 40,
 		"height_base": 28,
 		"plains": {
 			"step_size": 1,
@@ -81,8 +116,8 @@
 			"step_count": 1
 		},
 		"mountains": {
-			"step_size": 25,
-			"step_count": 4
+			"step_size": 20,
+			"step_count": 3
 		}
 	},
 	"terrain_detailer": {
@@ -135,6 +170,18 @@
 	"landscape": {
 		"has_grass": true,
 		"placement_table" : {
+			"swamp_goblins:trees:dead:small": {
+				"placement_type": "single",
+				"parameters": {"ground_radius": 2, "exclusion_radius": 3 }
+			},
+			"swamp_goblins:trees:dead:medium": {
+				"placement_type": "single",
+				"parameters": {"ground_radius": 2, "exclusion_radius": 4 }
+			},
+			"swamp_goblins:trees:dead:large": {
+				"placement_type": "single",
+				"parameters": {"ground_radius": 3, "exclusion_radius": 5 }
+			},
 			"swamp_goblins:terrain:mountain_grass" : {
 				"placement_type" : "single",
 				"parameters" : { "ground_radius" : 1, "exclusion_radius" : 6 }
@@ -151,35 +198,23 @@
 				"placement_type" : "single",
 				"parameters" : { "ground_radius" : 2, "exclusion_radius" : 3 }
 			},
-			"swamp_goblins:trees:swirl:small" : {
-				"placement_type" : "dense",
-				"parameters" : { "grid_multiple" : 2, "item_density" : 0.3, "exclusion_radius" : 2 }
-			},
-			"swamp_goblins:trees:swirl:medium" : {
-				"placement_type" : "single",
-				"parameters" : { "ground_radius" : 2, "exclusion_radius" : 3 }
-			},
-			"swamp_goblins:trees:swirl:large" : {
-				"placement_type" : "single",
-				"parameters" : { "ground_radius" : 2, "exclusion_radius" : 3 }
-			},
 			"swamp_goblins:trees:bogger:small" : {
 				"placement_type" : "single",
 				"parameters" : { "ground_radius" : 2, "exclusion_radius" : 3 }
 			},
-			"swamp_goblins:plants:cattail": {
+			"swamp_goblins:plants:lilypad": {
 				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 2,
-					"item_density": 0.2,
+					"grid_multiple": 5,
+					"item_density": 0.175,
 					"exclusion_radius": 1
 				}
 			},
-			"swamp_goblins:plants:fern": {
+			"swamp_goblins:plants:cattail": {
 				"placement_type": "dense",
 				"parameters": {
 					"grid_multiple": 3,
-					"item_density": 0.18,
+					"item_density": 0.2,
 					"exclusion_radius": 1
 				}
 			},
@@ -187,7 +222,7 @@
 				"placement_type": "dense",
 				"parameters": {
 					"grid_multiple": 4,
-					"item_density": 0.13,
+					"item_density": 0.15,
 					"exclusion_radius": 1
 				}
 			},
@@ -287,26 +322,30 @@
 				"weights": {
 					"plains": {
 						"1": {
-							"swamp_goblins:trees:bogger:small":20,
-							"swamp_goblins:trees:swirl:small":2,
+							"swamp_goblins:trees:bogger:small":19,
 							"swamp_goblins:trees:cypress:small":6,
 							"swamp_goblins:trees:cypress:medium":5,
 							"swamp_goblins:trees:cypress:large":2,
+							"swamp_goblins:trees:dead:small":1,
+							"swamp_goblins:trees:dead:medium":1,
+							"swamp_goblins:trees:dead:large":0.1,
 
-							"swamp_goblins:plants:fern": 3,
-							"swamp_goblins:plants:giant_flower": 1.75,
+							"swamp_goblins:plants:giant_flower": 2,
+							"swamp_goblins:plants:cattail": 2,
 							"swamp_goblins:plants:mushroom":5
 						}
 					},
 					"foothills": {
 						"1": {
 							"swamp_goblins:trees:bogger:small":15,
-							"swamp_goblins:trees:swirl:small":2,
 							"swamp_goblins:trees:cypress:small":6,
 							"swamp_goblins:trees:cypress:medium":6,
 							"swamp_goblins:trees:cypress:large":3,
+							"swamp_goblins:trees:dead:small":2,
+							"swamp_goblins:trees:dead:medium":2,
+							"swamp_goblins:trees:dead:large":0.1,
 
-							"swamp_goblins:plants:fern": 4,
+							"swamp_goblins:plants:giant_flower": 0.2,
 							"swamp_goblins:plants:mushroom": 3
 						}
 					},
@@ -314,7 +353,7 @@
 						"1": {
 							"swamp_goblins:terrain:mountain_grass": 2,
 							"swamp_goblins:trees:cypress:small":1,
-							"swamp_goblins:plants:fern": 1,
+							"swamp_goblins:trees:dead:small":0.2,
 							"swamp_goblins:plants:mushroom": 1
 						}
 					}
@@ -368,7 +407,7 @@
 						},
 						"mountains": {
 							"1": {
-								"probability": 0.25,
+								"probability": 0.5,
 								"density": 0.15
 							}
 						}
@@ -384,12 +423,14 @@
 			"spawn_objects":{
 				"water_1":{
 					"none":2,
-					"swamp_goblins:plants:cattail":6,
+					"swamp_goblins:plants:lilypad":3,
+					"swamp_goblins:plants:cattail":7,
 					"swamp_goblins:plants:log":1.5,
 					"swamp_goblins:plants:giant_flower":1.25,
-					"swamp_goblins:trees:swirl:small":2,
 					"swamp_goblins:trees:cypress:small":1,
 					"swamp_goblins:trees:cypress:medium":1,
+					"swamp_goblins:trees:dead:small":0.5,
+					"swamp_goblins:trees:dead:medium":0.5,
 					"swamp_goblins:boulder:small":0.5,
 					"swamp_goblins:boulder:medium_1":1,
 					"swamp_goblins:boulder:medium_2":1,
@@ -402,6 +443,8 @@
 					"swamp_goblins:trees:bogger:small":1,
 					"swamp_goblins:trees:cypress:medium":1,
 					"swamp_goblins:trees:cypress:large":1,
+					"swamp_goblins:trees:dead:medium":0.5,
+					"swamp_goblins:trees:dead:large":0.1,
 					"swamp_goblins:boulder:medium_1":1.5,
 					"swamp_goblins:boulder:medium_3":1.5,
 					"swamp_goblins:boulder:large_1":1.5,
@@ -409,16 +452,15 @@
 				}
 			},
 			"color": "#4B4A32E0",
-			"minimap_color": "#4B4A32",
 			"depth": {
 				"shallow": 1,
 				"deep": 2
 			},
 			"water_height_delta": 0.3,
 			"noise_map_settings": {
-				"persistence_ratio": 0.9,
+				"persistence_ratio": 0.01,
 				"bandlimit": 1,
-				"octaves": 1,
+				"octaves": 2,
 				"range": 100,
 				"aspect_ratio": 1,
 				"mean": {

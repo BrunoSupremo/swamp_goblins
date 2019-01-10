@@ -36,7 +36,7 @@ function CustomHeightMapRenderer:_add_mountains_to_region(region3, rect, height)
 			block_max = rock_layers[i].max_height
 		end
 
-		local has_grass = stop and block_max > max_foothills_height and block_max <60 --hardcoded value
+		local has_grass = stop and block_max > max_foothills_height and block_max <55 --hardcoded value
 		local rock_top = has_grass and block_max-1 or block_max
 		local terrain_tag = has_grass and rock_layers[8].terrain_tag or rock_layers[i].terrain_tag
 

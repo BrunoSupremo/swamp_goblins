@@ -1,0 +1,60 @@
+{
+	"mixins": [
+		"stonehearth:mixins:tree"
+	],
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_winter.qb",
+							"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_winter_2.qb",
+							"stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree_winter_3.qb"
+						]
+					}
+				]
+			}
+		},
+		"stonehearth:resource_node": {
+			"durability": 10,
+			"resource": "stonehearth:resources:wood:oak_log"
+		},
+		"mob": {
+			"model_origin": { "x": -0.5, "y": 0, "z": 0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"align_to_grid": [
+				"x",
+				"z"
+			]
+		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": -2, "y": 0, "z": -2 },
+					"max": { "x": 3, "y": 1, "z": 3 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -2, "y": 0, "z": -2 },
+					"max": { "x": 3, "y": 12, "z": 3 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:entities.trees.oak_tree.medium_oak_tree.display_name)",
+			"description": "i18n(stonehearth:entities.trees.oak_tree.medium_oak_tree.description)",
+			"subject_override": "stonehearth:trees:oak:large"
+		},
+		"stonehearth:appeal": {
+			"appeal": 2
+		}
+	}
+}

@@ -17,15 +17,15 @@
 		"stonehearth:equipment_piece": {
 			"render_type": "merge_with_model",
 			"slot": "helmet",
-			"ilevel": 3,
-			"required_job_level": 1,
-			"roles": "goblin_worker_job",
+			"ilevel": 5,
+			"required_job_level": 5,
+			"roles":["goblin_warrior_job"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
 	},
 	"entity_data": {
 		"stonehearth:combat:armor_data": {
-			"base_damage_reduction": 3
+			"base_damage_reduction": 5
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 34,
@@ -42,7 +42,7 @@
 			"description": "i18n(swamp_goblins:entities.armor.varanus_helmet.description)",
 			"icon": "file(varanus_helmet.png)",
 			"category": "armor",
-			"material_tags": "varanus armor heavy_armor stockpile_equipment"
+			"material_tags":["varanus", "helmet", "armor", "heavy_armor", "stockpile_equipment"]
 		}
 	}
 }

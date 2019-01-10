@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 15,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.goblin_market_stall.display_name)",
+	"description": "i18n(stonehearth:entities.furniture.blue_market_stall.blue_market_stall_ghost.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/goblin_market_stall/goblin_market_stall.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 10
+		},
+		{
+			"material": "fiber resource",
+			"count": 5
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:goblin_market_stall"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"type": "trait",
+	"mixins": "stonehearth:mixins:traits:passion_job",
+	"icon": "file(passion_scavenger.png)",
+	"data": {
+		"job_uri": "stonehearth:jobs:trapper"
+	},
+	"subject_overrides": [
+		{
+			"subject": "swamp_goblins:scavenger:talisman",
+			"sentiment": 1,
+			"permanent": true,
+			"unvarying": true
+		}
+	]
+}

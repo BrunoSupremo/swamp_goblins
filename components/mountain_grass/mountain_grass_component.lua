@@ -10,6 +10,9 @@ end
 
 function MountainGrass:_on_world_generation_complete()
 	local json = radiant.entities.get_json(self)
+	if not json then
+		return
+	end
 	self.auto_destroy = json.auto_destroy
 	self.radius = json.radius or 8
 	self.block_type = json.block_type or "grass"

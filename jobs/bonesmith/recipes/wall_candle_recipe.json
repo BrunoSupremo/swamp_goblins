@@ -1,0 +1,24 @@
+{
+	"type": "recipe",
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wall_candle.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wall_candle.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/wall_candle/wall_candle.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:wall_candle"
+		}
+	]
+}

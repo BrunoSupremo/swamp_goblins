@@ -11,17 +11,17 @@
 		},
 		"effect_list": {
 			"default": "stonehearth:effects:talisman_glow"
-		},
-		"stonehearth:promotion_talisman": {
-			"job": "stonehearth:jobs:bonesmith"
 		}
 	},
 	"entity_data": {
+		"stonehearth:thought_bubble_icon": {
+			"image": "file(../images/icon.png)"
+		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 10,
 			"rarity": "common",
 			"shop_info": {
-				"buyable": true,
+				"buyable": false,
 				"sellable": true,
 				"shopkeeper_level": 1,
 				"shopkeeper_type": "caravan"
@@ -33,7 +33,7 @@
 			"icon": "file(bonesmith_saw.png)",
 			"is_item": true,
 			"category": "tools",
-			"material_tags": "stockpile_tool"
+			"material_tags":["stockpile_tool"]
 		}
 	}
 }

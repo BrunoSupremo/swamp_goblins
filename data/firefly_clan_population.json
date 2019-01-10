@@ -7,12 +7,21 @@
 	"post_selection_description": "i18n(swamp_goblins:data.population.firefly_clan.post_selection_description)",
 	"image": "/swamp_goblins/data/images/firefly_400x300.png",
 	"story_board_image": "/swamp_goblins/data/images/story_board_image.png",
+	"loadouts": "/swamp_goblins/data/loadouts/loadouts.json",
 	"starting_talisman": "swamp_goblins:shaman:talisman",
 	"starting_resource": "stonehearth:resources:stone:hunk_of_stone",
-	"initial_town_name": "i18n(swamp_goblins:data.population.initial_town_name)",
+	"initial_town_name": "i18n(swamp_goblins:data.population.firefly_clan.initial_town_name)",
 	"camp_standard": "swamp_goblins:camp_standard",
+	"camp_hearth": "swamp_goblins:camp_hearth",
 	"job_index": "swamp_goblins:jobs:index",
+	"traits_index": "swamp_goblins:traits_index",
 	"inventory_capacity_equation": "math.max(num_citizens * 150, 1200)",
+	"trappable_animals": "swamp_goblins:data:trapping:all_trappable_animals",
+	"default_material": "fiber resource",
+	"amenity_to": {
+		"animals": "hostile"
+	},
+	"ordinal": 3.01,
 	"roles": {
 		"default": {
 			"male": {
@@ -78,14 +87,7 @@
 					"Gom",
 					"Morun",
 					"Ky",
-					"Ragnash"
-				]
-			},
-			"female": {
-				"uri": [
-					"swamp_goblins:goblins:goblin"
-				],
-				"given_names": [
+					"Ragnash",
 					"Sahra",
 					"Hainya",
 					"Uuen",
@@ -235,6 +237,9 @@
 	},
 	"town_pieces": {
 		"optional_prefix": [
+			"Rocking",
+			"Great",
+			"Old",
 			"Ist",
 			"Nhar",
 			"Wol",
@@ -244,6 +249,12 @@
 			"Elder",
 			"Farlo",
 			"Ben",
+			"Asma",
+			"Kas",
+			"Hont",
+			"Svar",
+			"Ther",
+			"Klaasn",
 			"Ay"
 		],
 		"town_name": [
@@ -302,8 +313,17 @@
 			"vo",
 			"bry",
 			"cha",
+			"zel",
 			"",
-			"yu"
+			"yu",
+			"el",
+			"os",
+			"ver",
+			"sled",
+			"leif",
+			"ada",
+			"or",
+			"wig"
 		]
 	}
 }

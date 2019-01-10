@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.beast_tamer.beast_tamer_flute.beast_tamer_flute_talisman.display_name)",
+	"description": "i18n(swamp_goblins:jobs.beast_tamer.beast_tamer_flute.beast_tamer_flute_talisman.description)",
+	"flavor": "i18n(swamp_goblins:jobs.beast_tamer.beast_tamer_flute.beast_tamer_flute_talisman.flavor)",
+	"portrait": "/swamp_goblins/jobs/beast_tamer/beast_tamer_flute/beast_tamer_flute.png",
+	"workshop": "stonehearth:carpenter:workbench",
+	"level_requirement": 5,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"uri": "stonehearth:refined:gold_flakes",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:beast_tamer:talisman"
+		}
+	]
+}

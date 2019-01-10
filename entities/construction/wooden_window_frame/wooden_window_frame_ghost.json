@@ -38,11 +38,11 @@
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
-			"display_name": "i18n(stonehearth:entities.construction.wooden_window_frame.wooden_window_frame_ghost.display_name)",
-			"description": "i18n(stonehearth:entities.construction.wooden_window_frame.wooden_window_frame_ghost.description)",
+			"display_name": "i18n(swamp_goblins:entities.construction.wooden_window_frame.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.wooden_window_frame.description)",
 			"icon": "file(wooden_window_frame.png)",
 			"category": "window",
-			"material_tags": "wood portal crafted window stockpile_portal"
+			"material_tags":["wood", "portal", "crafted", "window", "stockpile_portal"]
 		}
 	}
 }

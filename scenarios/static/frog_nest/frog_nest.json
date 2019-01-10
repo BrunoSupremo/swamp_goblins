@@ -1,0 +1,22 @@
+{
+	"name" : "frog_nest",
+	"category" : "wildlife",
+	"habitat_types" : ["water","plains"],
+	"biomes": ["swamp_goblins:biome:swamp"],
+	"size" : {
+		"width" : 16,
+		"length" : 16
+	},
+	"weight" : 20,
+	"unique" : false,
+	"script" : "stonehearth/scenarios/static/critter_nest/critter_nest.lua",
+
+	"data" : {
+		"critter_length" : 1,
+		"num_critters" : {
+			"min" : 3,
+			"max" : 5
+		},
+		"critter_type" : [ "swamp_goblins:critters:frog" ]
+	}
+}

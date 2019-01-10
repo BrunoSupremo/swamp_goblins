@@ -1,0 +1,29 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"layer": "hat",
+				"transparent": "false",
+				"models": [
+					"file(party_goblin_hat.qb)"
+				]
+			}
+		},
+		"stonehearth:equipment_piece": {
+			"render_type": "merge_with_model",
+			"slot": "helmet",
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:armor_data": {
+			"base_damage_reduction": 1
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.armor.party_goblin_hat.display_name)",
+			"description": "i18n(swamp_goblins:entities.armor.party_goblin_hat.description)",
+			"icon": "file(party_goblin_hat.png)"
+		}
+	}
+}

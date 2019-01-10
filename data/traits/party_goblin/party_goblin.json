@@ -1,0 +1,21 @@
+{
+	"type": "trait",
+	"display_name": "i18n(swamp_goblins:data.traits.party_goblin.display_name)",
+	"description": "i18n(stonehearth:data.traits.jokester.jokester_trait.description)",
+	"icon": "/stonehearth/data/traits/jokester/jokester_trait.png",
+	"script_controller": "swamp_goblins:trait_scripts:party_goblin",
+	"data": {
+		"gives_thought": {
+			"thought": "stonehearth:thoughts:social:great_joke",
+			"result": "agreement"
+		},
+		"receives_thought": {
+			"thought": "stonehearth:thoughts:social:tough_crowd",
+			"result": "disagreement"
+		},
+		"gives_animation": {
+			"animation": "emote_laugh",
+			"result": "agreement"
+		}
+	}
+}

@@ -1,0 +1,92 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:monsters:forest:alligator",
+	"components": {
+		"stonehearth:combat_state": {
+			"stance": "aggressive"
+		},
+		"stonehearth:attributes": {
+			"muscle": {
+				"type": "basic",
+				"value": 1
+			},
+			"menace": {
+				"type": "basic",
+				"value": 1
+			},
+			"courage": {
+				"type": "basic",
+				"value": 1
+			},
+			"exp_reward": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_dmg_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"multiplicative_dmg_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"additive_armor_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"multiplicative_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"multiplicative_target_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_target_armor_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"additive_weapon_range_modifier": {
+				"type": "basic",
+				"value": 0
+			}
+		},
+		"stonehearth:expendable_resources": {
+			"resources": {
+				"mixintypes": {
+					"social_satisfaction": "override"
+				},
+				"social_satisfaction": {
+					"min": {
+						"value": 0
+					},
+					"max": {
+						"value": 72
+					},
+					"initial_value": 0
+				}
+			}
+		},
+		"sensor_list": {
+			"sensors": {
+				"sight": {
+					"type": "sensor",
+					"radius": 64
+				}
+			}
+		},
+		"stonehearth:social": {},
+		"stonehearth:conversation": {},
+		"stonehearth:subject_matter": {}
+	},
+	"entity_data": {
+		"mixintypes": {
+			"stonehearth:observers:avoid_threatening_entities": "remove"
+		},
+		"stonehearth:healable": {
+			"healable_by_anyone": false,
+			"target_type": "beast_tamer_summon"
+		},
+		"stonehearth:entity_reach": 1.0
+	}
+}

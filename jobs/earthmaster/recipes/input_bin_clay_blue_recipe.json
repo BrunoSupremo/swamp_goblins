@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 2,
+	"recipe_name": "i18n(stonehearth:jobs.potter.recipes.input_bin_clay_blue_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.potter.recipes.input_bin_clay_blue_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.input_bin_clay_blue_recipe.flavor)",
+	"portrait": "/stonehearth/entities/containers/input_bin_clay_blue/input_bin_clay_blue.png",
+	"workshop": "stonehearth:potter:workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:containers:input_bin:clay_blue"
+		}
+	]
+}

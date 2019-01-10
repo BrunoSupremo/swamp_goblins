@@ -9,7 +9,7 @@
 			}
 		},
 		"mob": {
-			"model_origin": { "x": -0.1, "y": 0, "z": 0 },
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
 			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
 		}
 	},
@@ -19,7 +19,7 @@
 			"description": "i18n(swamp_goblins:entities.furniture.simple_chair.description)",
 			"icon": "file(simple_chair.png)",
 			"category": "furniture",
-			"material_tags": "furniture crafted chair stockpile_furniture"
+			"material_tags":["furniture", "crafted", "chair", "stockpile_furniture"]
 		}
 	}
 }

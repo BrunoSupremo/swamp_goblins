@@ -18,8 +18,8 @@
 			"slot": "torso",
 			"render_type": "merge_with_model",
 			"ilevel": 5,
-			"required_job_level": 1,
-			"roles": "goblin_worker_job",
+			"required_job_level": 5,
+			"roles":["goblin_warrior_job"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
 	},
@@ -42,7 +42,7 @@
 			"description": "i18n(swamp_goblins:entities.armor.varanus_armor.description)",
 			"icon": "file(varanus_armor.png)",
 			"category": "armor",
-			"material_tags": "varanus armor heavy_armor stockpile_equipment"
+			"material_tags":["varanus", "armor", "heavy_armor", "stockpile_equipment"]
 		}
 	}
 }

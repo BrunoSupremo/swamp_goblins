@@ -1,0 +1,41 @@
+{
+	"type": "entity",
+	"components": {
+		"effect_list": {
+			"default": "swamp_goblins:effects:spirit_walker"
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "bodyPosition",
+			"render_type": "attach_to_bone",
+			"postures": [
+				"stonehearth:combat",
+				"stonehearth:patrol"
+			],
+			"injected_ai": {
+				"ai_packs": [
+					"swamp_goblins:ai_pack:summon",
+					"stonehearth:ai_pack:patrolling",
+					"stonehearth:ai_pack:wimpy",
+					"stonehearth:ai_pack:panic:flee",
+					"stonehearth:ai_pack:combat_control",
+					"stonehearth:ai_pack:healing_combat"
+				]
+			},
+			"injected_buffs": [
+				"stonehearth:buffs:archer:range_up_1"
+			],
+			"military_score": 10
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:healing_spells": [
+			{
+				"name": "combat_heal",
+				"effect": "combat_1h_heal",
+				"active_frame": 67,
+				"cooldown": 0,
+				"priority": 0
+			}
+		]
+	}
+}

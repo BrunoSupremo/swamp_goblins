@@ -11,52 +11,115 @@
 	"abilities": "file(spirit_walker_abilities)",
 	"equipment": {
 		"torso": "file(spirit_walker_outfit)",
+		"helmet": "file(spirit_walker_helmet)",
 		"mainhand": "swamp_goblins:spirit_walker:staff"
 	},
-	"roles": "goblin_spirit_walker_job crafter",
+	"roles":["goblin_spirit_walker_job", "combat"],
 	"talisman_uri": "swamp_goblins:spirit_walker:talisman",
-	"default_stance": "passive",
+	"default_stance": "aggressive",
 	"icon": "file(images/icon.png)",
 	"promotion_activity_name": "promote_spirit_walker",
 	"task_groups": [
 		"stonehearth:task_groups:common_tasks",
-		"stonehearth:task_groups:crafting",
 		"stonehearth:task_groups:restock",
-		"stonehearth:task_groups:placement",
-		"stonehearth:task_groups:healing",
-		"stonehearth:task_groups:harvest",
-		"stonehearth:task_groups:rescue",
-		"stonehearth:task_groups:town_alert"
+		"stonehearth:task_groups:rescue"
 	],
-	"crafter": {
-		"work_effect": "fiddle",
-		"recipe_list": "file(recipes)"
-	},
-	"workshop": {
-		"name": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.workshop.name)",
-		"description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.workshop.description)",
-		"long_description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.workshop.long_description)",
-		"portrait": "file(/jobs/spirit_walker/spirit_walker_workbench/spirit_walker_workbench.png)",
-		"workbench_type": "swamp_goblins:spirit_walker:workbench",
-		"skin_class": "spirit_walker",
-		"open_sound": "stonehearth:sounds:ui:carpenter_menu:menu_open",
-		"close_sound": "stonehearth:sounds:ui:carpenter_menu:menu_closed"
-	},
-	"parent_job": "stonehearth:jobs:worker",
-	"parent_level_requirement": 0,
+	"parent_job": "swamp_goblins:jobs:shaman",
+	"parent_level_requirement": 6,
+	"initial_num_attended_hearthlings": 4,
 	"xp_rewards": {
-		"craft_level_0": 8,
-		"craft_level_1": 10,
-		"craft_level_2": 12,
-		"craft_level_3": 14,
-		"craft_level_4": 16,
-		"craft_level_5": 19,
-		"craft_level_6": 22
+		"heal_entity": 2,
+		"heal_entity_in_combat": 1,
+		"town_protection": 1
 	},
 	"max_level": 6,
 	"level_data": {
+		"1": {
+			"title": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.display_name)",
+			"perks": [
+				{
+					"name": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_1_data.perk_000_name)",
+					"id": "heal",
+					"icon": "file(images/heal.png)",
+					"description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_1_data.perk_000_description)",
+					"level": 1
+				}
+			]
+		},
+		"2": {
+			"title": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.display_name)",
+			"perks": [
+				{
+					"type": "add_combat_action",
+					"name": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_2_data.perk_000_name)",
+					"id": "summon_spirit",
+					"icon": "file(images/summon_spirit.png)",
+					"equipment": "swamp_goblins:spirit_walker:abilities:summon_spirit",
+					"action_type": "stonehearth:combat:ranged_attacks",
+					"description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_2_data.perk_000_description)",
+					"level": 2,
+					"demote_fn": "remove_combat_action"
+				}
+			]
+		},
+		"3": {
+			"title": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.display_name)",
+			"perks": [
+				{
+					"type": "add_chained_combat_action",
+					"name": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_3_data.perk_000_name)",
+					"id": "summon_spirits",
+					"icon": "file(images/summon_spirits.png)",
+					"last_equipment": "swamp_goblins:spirit_walker:abilities:summon_spirit",
+					"equipment": "swamp_goblins:spirit_walker:abilities:summon_spirits",
+					"action_type": "stonehearth:combat:ranged_attacks",
+					"description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_3_data.perk_000_description)",
+					"level": 3,
+					"demote_fn": "remove_combat_action"
+				}
+			]
+		},
+		"4": {
+			"title": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.display_name)",
+			"perks": [
+				{
+					"type": "add_combat_action",
+					"name": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_4_data.perk_000_name)",
+					"id": "summon_big_g",
+					"icon": "file(images/summon_big_g.png)",
+					"equipment": "swamp_goblins:spirit_walker:abilities:summon_big_g",
+					"action_type": "stonehearth:combat:ranged_attacks",
+					"description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_4_data.perk_000_description)",
+					"level": 4,
+					"demote_fn": "remove_combat_action"
+				}
+			]
+		},
+		"5": {
+			"title": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.display_name)",
+			"perks": [
+				{
+					"type": "warrior_aura",
+					"name": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_5_data.perk_000_name)",
+					"id": "warrior_aura",
+					"icon": "file(images/warrior_aura.png)",
+					"description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_5_data.perk_000_description)",
+					"level": 5
+				}
+			]
+		},
 		"6": {
-			"title": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_6_data.title)"
+			"title": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.display_name)",
+			"perks": [
+				{
+					"type": "dragon_aura",
+					"name": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_6_data.perk_000_name)",
+					"id": "summon_dragon_aura",
+					"icon": "file(images/summon_dragon_aura.png)",
+					"description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_description.level_6_data.perk_000_description)",
+					"level": 6
+				}
+			]
 		}
 	}
 }

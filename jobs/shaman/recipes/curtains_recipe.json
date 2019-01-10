@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.weaver.recipes.curtains_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.weaver.recipes.curtains_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.curtains_recipe.flavor)",
+	"portrait": "/stonehearth/entities/decoration/curtains/curtains.png",
+	"workshop": "swamp_goblins:shaman:weaving_table",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"material": "cloth resource",
+			"count": 1
+		},
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:decoration:curtains"
+		}
+	]
+}

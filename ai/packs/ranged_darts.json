@@ -1,0 +1,15 @@
+{
+	"type" : "ai_pack",
+	"actions" : [
+		"swamp_goblins:actions:combat:darts:from_current_location",
+			"swamp_goblins:actions:combat:darts:check_entity_targetable",
+		"swamp_goblins:actions:combat:darts:move_to_targetable_location",
+			"swamp_goblins:actions:combat:darts:move_to_targetable_location2",
+		"swamp_goblins:actions:combat:darts:path_to_target",
+			"swamp_goblins:actions:combat:darts:chase_entity_until_targetable",
+		"swamp_goblins:actions:combat:darts"
+	],
+	"ai_packs": [
+		"stonehearth:ai_pack:combat"
+	]
+}

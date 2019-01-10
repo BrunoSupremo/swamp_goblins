@@ -1,0 +1,17 @@
+{
+	"type": "entity",
+	"components": {
+		"stonehearth:equipment_piece": {}
+	},
+	"entity_data": {
+		"stonehearth:combat:ranged_attacks": [
+			{
+				"name": "summon_spirit",
+				"effect": "emote_roar",
+				"active_frame": 60,
+				"cooldown": 70000,
+				"priority": 5
+			}
+		]
+	}
+}

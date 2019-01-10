@@ -1,0 +1,24 @@
+{
+	"type": "buff",
+	"axis": "debuff",
+	"display_name": "i18n(swamp_goblins:data.buffs.poison.display_name)",
+	"description": "i18n(swamp_goblins:data.buffs.poison.description)",
+	"icon": "/stonehearth/data/buffs/undead_infection/undead_infection.png",
+	"repeat_add_action": "stack_and_refresh",
+	"duration": "1h",
+	"max_stacks": 15,
+	"modifiers": {
+		"speed": {
+			"multiply": 0.99
+		},
+		"courage": {
+			"multiply": 0.99
+		},
+		"willpower": {
+			"multiply": 0.99
+		},
+		"menace": {
+			"multiply": 0.99
+		}
+	}
+}

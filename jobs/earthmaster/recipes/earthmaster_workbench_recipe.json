@@ -1,0 +1,24 @@
+{
+	"type": "recipe",
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_workbench.display_name)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_workbench.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/jobs/earthmaster/earthmaster_workbench/earthmaster_workbench.png",
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:earthmaster:workbench"
+		}
+	]
+}

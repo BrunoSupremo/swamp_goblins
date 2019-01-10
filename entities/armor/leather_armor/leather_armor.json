@@ -17,15 +17,15 @@
 		"stonehearth:equipment_piece": {
 			"slot": "torso",
 			"render_type": "merge_with_model",
-			"ilevel": 5,
-			"required_job_level": 1,
-			"roles": "goblin_worker_job",
+			"ilevel": 3,
+			"required_job_level": 3,
+			"roles":["goblin_warrior_job"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
 	},
 	"entity_data": {
 		"stonehearth:combat:armor_data": {
-			"base_damage_reduction": 5
+			"base_damage_reduction": 3
 		},
 		"stonehearth:net_worth": {
 			"value_in_gold": 50,
@@ -39,10 +39,10 @@
 		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(swamp_goblins:entities.armor.leather_armor.display_name)",
-			"description": "i18n(swamp_goblins:entities.armor.leather_armor.description)",
+			"description": "i18n(stonehearth:entities.armor.leather_vest.description)",
 			"icon": "file(leather_armor.png)",
 			"category": "armor",
-			"material_tags": "leather armor heavy_armor stockpile_equipment"
+			"material_tags":["leather", "armor", "heavy_armor", "stockpile_equipment"]
 		}
 	}
 }

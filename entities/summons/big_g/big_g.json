@@ -1,0 +1,44 @@
+{
+	"type" : "entity",
+	"mixins": "swamp_goblins:summons:goblin_spirit",
+	"components": {
+		"stonehearth:equipment": {
+			"items": [
+				"stonehearth:abilities:ogre_attack_abilities"
+			]
+		},
+		"render_info" : {
+			"scale":0.18,
+		},
+		"stonehearth:attributes": {
+			"additive_dmg_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"multiplicative_dmg_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_target_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_weapon_range_modifier": {
+				"type": "basic",
+				"value": 1
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:entity_radius": 1,
+		"stonehearth:entity_reach": 2,
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.summons.big_g.display_name)",
+			"description": "i18n(swamp_goblins:entities.summons.big_g.description)"
+		}
+	}
+}

@@ -6,15 +6,31 @@
 	},
 	"default_locale": "en",
 	"mixintos":{
+		"stonehearth/data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/spawn_friendly_entities.json":"file(data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/spawn_friendly_entities.json)",
+
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json": "file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json)",
 
-		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_lake.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_bad_omen.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_lucky_strike.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_ore_small_strike.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_pattern_lucky_snake.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_pattern_ugly_duckling.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/64x_cave_sanctuary.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_giant_sleeping.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_1.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_2.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
+		"stonehearth/scenarios/static/landmarks/128x_stone_collection_3.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
 
 		"stonehearth:terrain:water": "file(entities/terrain/water)",
 
 		"stonehearth:trapper:trapping_grounds": "file(data/swamp_trapping_grounds.json)"
 	},
 	"overrides": {
+		"stonehearth/entities/critters/poyo/poyo.qb": "/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_tan.qb",
+		"stonehearth/entities/critters/poyo/poyo_red.qb": "/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_red.qb",
+		"stonehearth/entities/critters/poyo/poyo_brown.qb": "/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_blue.qb",
+
 		"stonehearth/entities/rabbit/rabbit_statue/rabbit_statue_01.qb":"file(entities/rabbit/rabbit_statue/rabbit_statue_01.qb)"
 	}
 }

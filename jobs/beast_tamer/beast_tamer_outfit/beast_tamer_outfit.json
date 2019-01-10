@@ -1,0 +1,43 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"layer": "armor",
+				"transparent": "true",
+				"models": [
+					"file(beast_tamer_outfit_hearthling.qb)"
+				]
+			},
+			"female": {
+				"layer": "armor",
+				"transparent": "true",
+				"models": [
+					"file(beast_tamer_outfit_hearthling_female.qb)"
+				]
+			},
+			"firefly_goblin": {
+				"layer": "armor",
+				"transparent": "true",
+				"models": [
+					"file(beast_tamer_outfit.qb)"
+				]
+			}
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "torso",
+			"render_type": "merge_with_model"
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:armor_data": {
+			"base_damage_reduction": 1
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.armor.beast_tamer_outfit.display_name)",
+			"description": "i18n(swamp_goblins:entities.armor.beast_tamer_outfit.description)",
+			"icon": "file(beast_tamer_outfit.png)"
+		}
+	}
+}

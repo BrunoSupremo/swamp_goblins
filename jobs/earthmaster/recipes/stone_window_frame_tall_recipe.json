@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.stone_window_frame_tall_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.stone_window_frame_tall_recipe.description)",
+	"flavor": "",
+	"portrait": "/stonehearth/entities/construction/stone_window_frame_tall/stone_window_frame_tall.png",
+	"workshop": "stonehearth:mason:workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:portals:stone_window_frame_tall"
+		}
+	]
+}

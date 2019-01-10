@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 45,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:jobs.weaver.recipes.fur_rug_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.weaver.recipes.fur_rug_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.fur_rug_recipe.flavor)",
+	"portrait": "/stonehearth/entities/decoration/fur_rug/fur_rug.png",
+	"workshop": "swamp_goblins:shaman:weaving_table",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "pelt resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:decoration:fur_rug"
+		}
+	]
+}

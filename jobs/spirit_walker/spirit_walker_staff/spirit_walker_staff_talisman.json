@@ -1,0 +1,39 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:item_properties",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(spirit_walker_staff.qb)"
+				]
+			}
+		},
+		"effect_list": {
+			"default": "stonehearth:effects:talisman_glow"
+		}
+	},
+	"entity_data": {
+		"stonehearth:thought_bubble_icon": {
+			"image": "file(../images/icon.png)"
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 10,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_staff.spirit_walker_staff_talisman.display_name)",
+			"description": "i18n(swamp_goblins:jobs.spirit_walker.spirit_walker_staff.spirit_walker_staff_talisman.description)",
+			"icon": "file(spirit_walker_staff.png)",
+			"is_item": true,
+			"category": "tools",
+			"material_tags":["stockpile_tool"]
+		}
+	}
+}

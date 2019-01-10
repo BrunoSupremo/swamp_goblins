@@ -1,0 +1,43 @@
+{
+	"type": "entity",
+	"components": {
+		"stonehearth:equipment_piece": {
+			"slot": "mainhand",
+			"render_type": "none"
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:weapon_data": {
+			"base_damage": 1,
+			"reach": 7
+		},
+		"stonehearth:combat:melee_attacks": [
+			{
+				"name": "combat_1h_backhand",
+				"effect": "combat_1h_backhand",
+				"active_frame": 30,
+				"cooldown": 0,
+				"priority": 0
+			},
+			{
+				"name": "combat_1h_forehand",
+				"effect": "combat_1h_forehand",
+				"active_frame": 30,
+				"cooldown": 10000,
+				"priority": 1,
+				"aoe_effect": {
+					"damage_multiplier": 1,
+					"minimum_damage": 1,
+					"aggro_addition": 1,
+					"aoe_target_limit": 10,
+					"inflictable_debuffs": {
+						"infection": {
+							"uri": "stonehearth:buffs:archer:fire_arrow",
+							"chance": 0.75
+						}
+					}
+				}
+			}
+		]
+	}
+}

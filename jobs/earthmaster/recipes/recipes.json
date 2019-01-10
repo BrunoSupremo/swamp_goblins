@@ -1,0 +1,139 @@
+{
+	"craftable_recipes": {
+		"workbenches": {
+			"ordinal": 1,
+			"name": "i18n(stonehearth:jobs.herbalist.recipes.workbenches_name)",
+			"recipes": {
+				"mason_workbench": {
+					"recipe": "stonehearth/jobs/mason/recipes/mason_workbench_recipe.json"
+				},
+				"mason_pedestal": {
+					"recipe": "stonehearth/jobs/mason/recipes/mason_pedestal_recipe.json"
+				},
+				"potter_workbench": {
+					"recipe": "stonehearth/jobs/potter/recipes/potter_workbench_recipe.json"
+				},
+				"potter_kiln": {
+					"recipe": "stonehearth/jobs/potter/recipes/potter_kiln_recipe.json"
+				}
+			}
+		},
+		"goblin_storage": {
+			"ordinal": 10,
+			"name": "i18n(stonehearth:jobs.carpenter.recipes.storage_name)",
+			"recipes":{
+				"stone_pile": {
+					"recipe": "file(stone_pile_recipe.json)"
+				},
+				"clay_pile": {
+					"recipe": "file(clay_pile_recipe.json)"
+				},
+				"small_urn": {
+					"recipe": "file(small_urn_recipe.json)"
+				},
+				"large_urn": {
+					"recipe": "file(large_urn_recipe.json)"
+				},
+				"input_bin_clay_red": {
+					"recipe": "file(input_bin_clay_red_recipe.json)"
+				},
+				"input_bin_clay_green": {
+					"recipe": "file(input_bin_clay_green_recipe.json)"
+				},
+				"input_bin_clay_blue": {
+					"recipe": "file(input_bin_clay_blue_recipe.json)"
+				},
+				"output_box_stone": {
+					"recipe": "file(output_box_stone_recipe.json)"
+				},
+				"input_table_ground_stone": {
+					"recipe": "file(input_table_ground_stone_recipe.json)"
+				}
+			}
+		},
+		"goblin_construction": {
+			"ordinal": 30,
+			"name": "i18n(stonehearth:jobs.carpenter.recipes.building_parts_name)",
+			"recipes":{
+				"clay_bricks": {
+					"recipe": "file(clay_bricks_recipe.json)"
+				},
+				"stone_window_frame_wide": {
+					"recipe": "file(stone_window_frame_wide_recipe.json)"
+				},
+				"stone_window_frame_tall": {
+					"recipe": "file(stone_window_frame_tall_recipe.json)"
+				},
+				"stone_window_frame": {
+					"recipe": "file(stone_window_frame_recipe.json)"
+				},
+				"red_clay_window_frame": {
+					"recipe": "file(red_clay_window_frame_recipe.json)"
+				},
+				"green_clay_window_frame": {
+					"recipe": "file(green_clay_window_frame_recipe.json)"
+				},
+				"latticed_clay_window_frame": {
+					"recipe": "file(latticed_clay_window_frame_recipe.json)"
+				},
+				"green_latticed_window": {
+					"recipe": "file(green_latticed_window_recipe.json)"
+				}
+			}
+		},
+		"goblin_furnitures": {
+			"ordinal": 40,
+			"name": "i18n(stonehearth:jobs.carpenter.recipes.furniture_name)",
+			"recipes":{
+				"stone_bench": {
+					"recipe": "file(stone_bench_recipe.json)"
+				},
+				"clay_dining_table": {
+					"recipe": "file(clay_dining_table_recipe.json)"
+				},
+				"simple_clay_chair": {
+					"recipe": "file(simple_clay_chair_recipe.json)"
+				}
+			}
+		},
+		"goblin_decorations": {
+			"ordinal": 50,
+			"name": "i18n(stonehearth:jobs.herbalist.recipes.decorations_name)",
+			"recipes": {
+				"unfired_clay_vase": {
+					"recipe": "file(unfired_clay_vase_recipe.json)"
+				},
+				"tower_brazier": {
+					"recipe": "file(tower_brazier_recipe.json)"
+				},
+				"tile_wall_mosaic": {
+					"recipe": "file(tile_wall_mosaic_recipe.json)"
+				},
+				"tile_floor_mosaic": {
+					"recipe": "file(tile_floor_mosaic_recipe.json)"
+				},
+				"stone_brazier": {
+					"recipe": "file(stone_brazier_recipe.json)"
+				},
+				"firepit": {
+					"recipe": "file(firepit_recipe.json)"
+				},
+				"decorative_vase": {
+					"recipe": "file(decorative_vase_recipe.json)"
+				},
+				"decorative_tray": {
+					"recipe": "file(decorative_tray_recipe.json)"
+				},
+				"clay_wall_lamp": {
+					"recipe": "file(clay_wall_lamp_recipe.json)"
+				},
+				"bird_bath": {
+					"recipe": "file(bird_bath_recipe.json)"
+				},
+				"clay_market_stall": {
+					"recipe": "file(clay_market_stall_recipe.json)"
+				}
+			}
+		}
+	}
+}

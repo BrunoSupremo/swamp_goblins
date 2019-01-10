@@ -16,26 +16,86 @@
 	},
 	"generation_file": "file(swamp_generation.json)",
 	"mining_loot_table": "file(swamp_mining_loot_table.json)",
-	"weather": [
-		{
-			"uri": "swamp_goblins:weather:foggy",
-			"weight": 10
+	"decay_multiplier": 2,
+	"default_starting_season": "wet",
+	"seasons": {
+		"dry": {
+			"display_name": "i18n(swamp_goblins:data.biome.swamp.seasons.dry.display_name)",
+			"description": "i18n(swamp_goblins:data.biome.swamp.seasons.dry.description)",
+			"start_day": 0,
+			"weather": [
+				{
+					"uri": "swamp_goblins:weather:foggy",
+					"weight": 10
+				},
+				{
+					"uri": "stonehearth:weather:rain:sunny",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:rain",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:sunny",
+					"weight": 10
+				},
+				{
+					"uri": "stonehearth:weather:thunderstorm",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:cloudy",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:windy",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:lucky",
+					"weight": 0.1
+				}
+			]
 		},
-		{
-			"uri": "stonehearth:weather:rain",
-			"weight": 5
-		},
-		{
-			"uri": "stonehearth:weather:sunny",
-			"weight": 1
-		},
-		{
-			"uri": "stonehearth:weather:thunderstorm",
-			"weight": 1
-		},
-		{
-			"uri": "stonehearth:weather:lucky",
-			"weight": 0.1
+		"wet": {
+			"display_name": "i18n(swamp_goblins:data.biome.swamp.seasons.wet.display_name)",
+			"description": "i18n(swamp_goblins:data.biome.swamp.seasons.wet.description)",
+			"start_day": 42,
+			"weather": [
+				{
+					"uri": "swamp_goblins:weather:foggy",
+					"weight": 10
+				},
+				{
+					"uri": "stonehearth:weather:rain:sunny",
+					"weight": 4
+				},
+				{
+					"uri": "stonehearth:weather:rain",
+					"weight": 6
+				},
+				{
+					"uri": "stonehearth:weather:sunny",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:thunderstorm",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:cloudy",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:windy",
+					"weight": 1
+				},
+				{
+					"uri": "stonehearth:weather:lucky",
+					"weight": 0.1
+				}
+			]
 		}
-	]
+	}
 }

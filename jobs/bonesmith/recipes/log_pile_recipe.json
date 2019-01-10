@@ -1,0 +1,21 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:jobs.carpenter.recipes.log_pile_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.carpenter.recipes.log_pile_recipe.description)",
+	"flavor": "",
+	"portrait": "/stonehearth/entities/containers/log_pile/log_pile.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 18
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:containers:log_pile"
+		}
+	]
+}
