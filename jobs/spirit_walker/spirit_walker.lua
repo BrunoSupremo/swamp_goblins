@@ -28,6 +28,9 @@ end
 
 function SpiritWalkerClass:summon_spirit(delay, amount)
 	local spirit_amount = amount or 1
+	if not radiant.util.is_number(spirit_amount) then
+		spirit_amount = 1
+	end
 	for i=1, spirit_amount do
 		local offset = (0.1*i+1) - (0.1*spirit_amount)/2
 		local summoning_delay = (delay * 33.3 * offset)

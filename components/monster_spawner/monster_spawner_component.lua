@@ -2,6 +2,9 @@ local SwampGoblins_Monster_Spawner = class()
 -- local log = radiant.log.create_logger('SwampGoblins_Monster_Spawner')
 
 function SwampGoblins_Monster_Spawner:activate()
+	if stonehearth.game_creation:get_game_mode() == "stonehearth:game_mode:peaceful" then
+		return
+	end
 	local json = radiant.entities.get_json(self)
 	self.monster = json.monster or "stonehearth:loot:gold"
 	self.player_id = json.player_id or "forest"

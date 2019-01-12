@@ -51,7 +51,16 @@
 	"max_level": 6,
 	"level_data": {
 		"1": {
-			"title": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_description.display_name)"
+			"title": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_description.display_name)",
+			"perks": [
+				{
+					"name": "i18n(swamp_goblins:wip)",
+					"id": "wip",
+					"icon": "/stonehearth/jobs/unknown/images/icon.png",
+					"description": "i18n(swamp_goblins:wip)",
+					"level": 1
+				}
+			]
 		},
 		"2": {
 			"title": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_description.display_name)"

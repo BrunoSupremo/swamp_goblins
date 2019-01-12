@@ -6,9 +6,7 @@
 		"version" : 3
 	},
 	"aliases" : {},
-	"mixintos" :  {
-		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)"
-	},
+	"mixintos" : {},
 	"overrides" : {
 		"stonehearth/entities/gizmos/camp_standard/camp_standard_ghost.json" : "swamp_goblins/entities/gizmos/camp_standard/camp_standard_ghost.json",
 
@@ -32,7 +30,8 @@
 		"html": [],
 		"less": [
 			"file(ui/root/css/variables.less)",
-			"file(ui/game/promotion_tree/promotion_tree.less)"
+			"file(ui/game/promotion_tree/promotion_tree.less)",
+			"file(ui/game/start_menu/start_menu.less)"
 		]
 	}
 }

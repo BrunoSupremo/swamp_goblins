@@ -1,22 +1,11 @@
 {
-	"zone_menu": {
-		"items": {
-			"mixintypes": {
-				"create_farm": "remove",
-				"create_pasture": "remove"
-			}
-		}
-	},
 	"crafter_menu": {
-		"mixintypes": {
-			"items": "override"
-		},
 		"items": {
 			"shaman": {
-				"ordinal": 1,
+				"ordinal": 1.1,
 				"name": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.display_name)",
 				"description": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.description)",
-				"class": "button",
+				"class": "swamp_goblins_button",
 				"required_job": "swamp_goblins:jobs:shaman",
 				"required_job_text": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.shaman.required_job_text)",
 				"icon": "/swamp_goblins/jobs/shaman/images/shaman_menu_icon.png",
@@ -25,10 +14,10 @@
 				"hotkey_action": "craft:shaman"
 			},
 			"bonesmith": {
-				"ordinal": 2,
+				"ordinal": 1.2,
 				"name": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.bonesmith.display_name)",
 				"description": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.bonesmith.description)",
-				"class": "button",
+				"class": "swamp_goblins_button",
 				"required_job": "swamp_goblins:jobs:bonesmith",
 				"required_job_text": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.bonesmith.required_job_text)",
 				"icon": "/swamp_goblins/jobs/bonesmith/images/bonesmith_menu_icon.png",
@@ -37,10 +26,10 @@
 				"hotkey_action": "craft:bonesmith"
 			},
 			"earthmaster": {
-				"ordinal": 3,
+				"ordinal": 1.3,
 				"name": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.earthmaster.display_name)",
 				"description": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.earthmaster.description)",
-				"class": "button",
+				"class": "swamp_goblins_button",
 				"required_job": "swamp_goblins:jobs:earthmaster",
 				"required_job_text": "i18n(swamp_goblins:ui.game.menu.crafter_menu.items.earthmaster.required_job_text)",
 				"icon": "/swamp_goblins/jobs/earthmaster/images/earthmaster_menu_icon.png",

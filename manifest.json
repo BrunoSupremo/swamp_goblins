@@ -1,7 +1,9 @@
 {
 	"info" : {
-		"name" : "swamp_goblins",
-		"version" : 3
+		"name" : "Swamp Biome + Firefly Clan + Beast Tamer",
+		"namespace" : "swamp_goblins",
+		"version" : 3,
+		"steam_file_id" : "1620908839"
 	},
 	"default_locale": "en",
 	"client_init_script" : "file(swamp_goblins_client)",
@@ -291,15 +293,19 @@
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json)",
 		"stonehearth/data/gm/campaigns/trader/trader_campaign.json":	"file(data/gm/campaigns/trader/trader_campaign.json)",
 
-		"stonehearth/data/gm/campaigns/game_events/arcs/trigger/game_events/encounters/generate_daily_report.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
-		"stonehearth/data/gm/campaigns/goblin_war/goblin_war_campaign.json":										"file(data/gm/campaigns/remove_firefly_clan.json)",
-		"stonehearth/data/gm/campaigns/orc_war/orc_war_campaign.json":												"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_raider_camp.json":"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_thief_camp.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth/data/gm/campaigns/game_events/arcs/trigger/game_events/encounters/generate_daily_report.json":		"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth/data/gm/campaigns/goblin_war/goblin_war_campaign.json":											"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth/data/gm/campaigns/orc_war/orc_war_campaign.json":													"file(data/gm/campaigns/remove_firefly_clan.json)",
 
 		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
 
 		"stonehearth:data:sound_constants": "swamp_goblins:data:sound_constants",
 
 		"stonehearth:data:thoughts": "file(data/happiness/thoughts.json)",
+
+		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
 
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
 
@@ -382,6 +388,7 @@
 			"file(jobs/bonesmith/skin/workshop.less)",
 			"file(jobs/earthmaster/skin/workshop.less)",
 
+			"file(ui/game/start_menu/start_menu.less)",
 			"file(ui/shell/select_roster/select_roster.less)",
 			"file(ui/shell/loadout_screen/loadout_screen.less)",
 			"file(ui/shell/select_settlement/select_settlement.less)"

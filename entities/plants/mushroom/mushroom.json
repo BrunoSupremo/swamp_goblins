@@ -18,6 +18,19 @@
 			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect",
 			"unripe_description": "i18n(swamp_goblins:entities.plants.mushroom.unripe_description)",
 			"resource": "swamp_goblins:food:mushroom",
+			"resource_loot_table": {
+				"entries": {
+					"extra_mush": {
+						"num_rolls": 1,
+						"items": {
+							"herb": {
+								"uri": "swamp_goblins:food:mushroom",
+								"weight": 1
+							}
+						}
+					}
+				}
+			},
 			"renewal_time": "22h+2h"
 		},
 		"stonehearth:entity_forms": {
