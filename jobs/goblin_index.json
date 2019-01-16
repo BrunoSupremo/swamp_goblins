@@ -1,5 +1,13 @@
 {
+	"mixins": "stonehearth:jobs:index",
+	"base_job":"swamp_goblins:jobs:worker",
 	"jobs": {
+		"stonehearth:jobs:worker": {
+			"description": "file(go_away_worker.json)"
+		},
+		"stonehearth:jobs:shepherd": {
+			"description": "file(go_away_shepherd.json)"
+		},
 		"swamp_goblins:jobs:worker": {
 			"description": "swamp_goblins:jobs:worker"
 		},
@@ -11,6 +19,9 @@
 		},
 		"swamp_goblins:jobs:earthmaster": {
 			"description": "swamp_goblins:jobs:earthmaster"
+		},
+		"stonehearth:jobs:trapper": {
+			"description": "swamp_goblins:jobs:scavenger"
 		},
 		"swamp_goblins:jobs:shaman": {
 			"description": "swamp_goblins:jobs:shaman"

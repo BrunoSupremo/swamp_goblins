@@ -19,7 +19,11 @@
 	"trappable_animals": "swamp_goblins:data:trapping:all_trappable_animals",
 	"default_material": "fiber resource",
 	"amenity_to": {
-		"animals": "hostile"
+		"goblins": "neutral",
+		"orcs": "neutral",
+		"human_npcs": "neutral",
+		"orc_npcs": "neutral",
+		"rabbit_biped_npcs": "neutral"
 	},
 	"ordinal": 3.01,
 	"roles": {

@@ -147,7 +147,7 @@
 		"goblins:goblin":	"file(entities/goblins/goblin.json)",
 		"goblins:goblin:customizations":"file(entities/goblins/customizations.json)",
 
-		"jobs:index": "file(jobs/index.json)",
+		"jobs:index": "file(jobs/goblin_index.json)",
 		"jobs:beast_tamer":		"file(jobs/beast_tamer/beast_tamer_description.json)",
 		"jobs:bonesmith":		"file(jobs/bonesmith/bonesmith_description.json)",
 		"jobs:earthmaster":		"file(jobs/earthmaster/earthmaster_description.json)",
@@ -309,7 +309,7 @@
 
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
 
-		"stonehearth:jobs:index": "file(jobs/index_to_merge.json)",
+		"stonehearth:jobs:index": "file(jobs/index.json)",
 		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
 
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",

@@ -18,9 +18,9 @@ end
 
 function SwampGoblins_Monster_Spawner:activate_the_spawner()
 	local delayed_function = function ()
-		if not self._sv.spawn_timer then
+		if not self._sv._spawn_timer then
 			self:try_to_spawn_monster()
-			self._sv.spawn_timer = stonehearth.calendar:set_persistent_interval("SwampGoblins_Monster_Spawner spawn_timer", self.interval, radiant.bind(self, 'try_to_spawn_monster'), self.interval)
+			self._sv._spawn_timer = stonehearth.calendar:set_persistent_interval("SwampGoblins_Monster_Spawner spawn_timer", self.interval, radiant.bind(self, 'try_to_spawn_monster'), self.interval)
 			self.__saved_variables:mark_changed()
 		end
 		self.stupid_delay:destroy()
@@ -48,9 +48,9 @@ function SwampGoblins_Monster_Spawner:spawn_monster(location)
 end
 
 function SwampGoblins_Monster_Spawner:destroy_spawn_timer()
-	if self._sv.spawn_timer then
-		self._sv.spawn_timer:destroy()
-		self._sv.spawn_timer = nil
+	if self._sv._spawn_timer then
+		self._sv._spawn_timer:destroy()
+		self._sv._spawn_timer = nil
 		self.__saved_variables:mark_changed()
 	end
 end
