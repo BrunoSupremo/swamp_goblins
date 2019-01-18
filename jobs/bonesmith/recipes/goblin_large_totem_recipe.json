@@ -1,11 +1,11 @@
 {
 	"type": "recipe",
-	"effort": 30,
+	"effort": 40,
 	"work_units": 5,
-	"recipe_name": "i18n(stonehearth:entities.monsters.goblins.goblin_large_totem.display_name)",
-	"description": "i18n(stonehearth:jobs.carpenter.recipes.input_bin_wood_recipe.description)",
-	"flavor": "i18n(stonehearth:jobs.carpenter.recipes.input_bin_wood_recipe.flavor)",
-	"portrait": "/stonehearth/entities/monsters/goblins/goblin_large_totem/goblin_large_totem.png",
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.goblin_large_totem.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.goblin_large_totem.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.goblin_large_totem.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/goblin_large_totem/goblin_large_totem.png",
 	"workshop": "swamp_goblins:bonesmith:workbench",
 	"level_requirement": 2,
 	"ingredients": [
@@ -16,7 +16,7 @@
 	],
 	"produces": [
 		{
-			"item": "stonehearth:monsters:goblins:goblin_large_totem"
+			"item": "swamp_goblins:decoration:goblin_large_totem"
 		}
 	]
 }

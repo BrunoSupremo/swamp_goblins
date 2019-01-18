@@ -74,6 +74,13 @@
 				}
 			}
 		},
+		"monster_tuning":{
+			"forest":{
+				"insane_bear":{
+					"description":"Beware the Bear"
+				}
+			}
+		},
 		"population": {
 			"firefly_clan": {
 				"initial_town_name": "Small Goblin Clan",
@@ -219,6 +226,11 @@
 			}
 		},
 		"decoration": {
+			"big_firefly_essense": {
+				"display_name": "Big Firefly Essense",
+				"description": "Has the equivalent of 8 small firefly essense bottles. Glow in the dark",
+				"flavor": "Can be harvested back to 8 bottles later"
+			},
 			"large_candle": {
 				"display_name": "Large Candle",
 				"description": "Big tall candle"
@@ -230,6 +242,16 @@
 			"wall_candle": {
 				"display_name": "Wall Candle",
 				"description": "Small candle hangable in walls"
+			},
+			"goblin_large_totem": {
+				"display_name": "Firefly Large Totem",
+				"description": "Commemorative totem, resembling someone from the clan",
+				"flavor": "Don't worry, it is not made from real skulls, just white paint"
+			},
+			"goblin_small_totem": {
+				"display_name": "Firefly Small Totem",
+				"description": "Commemorative totem, resembling someone from the clan",
+				"flavor": "Don't worry, it is not made from real skulls, just white paint"
 			},
 			"goblin_market_stall": {
 				"display_name": "Firefly Market Stall"

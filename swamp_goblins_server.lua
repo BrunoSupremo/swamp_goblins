@@ -1,6 +1,6 @@
 swamp_goblins = {}
 local log = radiant.log.create_logger('version')
-log:error("Swamp Goblins Mod version 19.1.12")
+log:error("Swamp Goblins Mod version 19.1.16")
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then

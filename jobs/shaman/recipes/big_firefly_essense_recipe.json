@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort":15,
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.big_firefly_essense.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.big_firefly_essense.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.big_firefly_essense.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/big_firefly_essense/big_firefly_essense.png",
+	"workshop": "swamp_goblins:shaman:firefly_token",
+	"work_effect": "loopable_idle_warm_hands",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 8
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:big_firefly_essense"
+		}
+	]
+}
