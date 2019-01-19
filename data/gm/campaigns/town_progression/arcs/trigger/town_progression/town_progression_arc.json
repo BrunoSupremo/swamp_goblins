@@ -2,9 +2,11 @@
 	"type": "arc",
 	"rarity": "common",
 	"encounters": {
-		"start": "file(encounters/start.json)",
-		"shaman_explains_his_dream": "file(encounters/shaman_explains_his_dream.json)",
-		"upgrade_banner": "file(encounters/upgrade_banner.json)",
-		"upgrade_banner_1": "file(encounters/upgrade_banner_1.json)",
+		"start":					"file(encounters/start.json)",
+		"shaman_explains_his_dream":"file(encounters/shaman_explains_his_dream.json)",
+		"upgrade_banner":			"file(encounters/upgrade_banner.json)",
+		"upgrade_banner_1":			"file(encounters/upgrade_banner_1.json)",
+		"wait_before_egg":			"file(encounters/wait_before_egg.json)",
+		"explain_egg":				"file(encounters/explain_egg.json)"
 	}
 }

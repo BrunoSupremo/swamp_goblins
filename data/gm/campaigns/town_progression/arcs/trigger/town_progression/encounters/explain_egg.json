@@ -1,0 +1,23 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "explain_egg",
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "(WIP) Daily Report",
+					"dialog_title": "(WIP) Daily Report",
+					"message": "If you are wondering how to get more goblins, check the pedestal in the shaman recipes!",
+					"choices": {
+						"ok": {
+							"out_edge": ""
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -184,9 +184,11 @@
 		"monster_tuning:forest:giant_bear":	"file(data/monster_tuning/forest/giant_bear.json)",
 		"monster_tuning:forest:insane_bear":"file(data/monster_tuning/forest/insane_bear.json)",
 
-		"plants:cattail":		"file(entities/plants/cattail)",
-		"plants:fern":			"file(entities/plants/fern)",
-		"plants:giant_flower":	"file(entities/plants/giant_flower)",
+		"plants:cattail":	"file(entities/plants/cattail)",
+		"plants:fern":		"file(entities/plants/fern)",
+		"plants:giant_flower":			"file(entities/plants/giant_flower)",
+		"plants:giant_flower:seed":		"file(entities/plants/giant_flower/seed)",
+		"plants:giant_flower:sprout":	"file(entities/plants/giant_flower/sprout)",
 		"plants:lilypad":		"file(entities/plants/lilypad)",
 		"plants:lilypad:small":	"file(entities/plants/lilypad/small_lilypad.json)",
 		"plants:lilypad:medium":"file(entities/plants/lilypad/medium_lilypad.json)",
@@ -353,7 +355,9 @@
 		"stonehearth/scenarios/static/landmarks/128x_stone_collection_2.json":"file(scenarios/static/add_to_swamp_too.json)",
 		"stonehearth/scenarios/static/landmarks/128x_stone_collection_3.json":"file(scenarios/static/add_to_swamp_too.json)",
 
-		"stonehearth:traits_index":"file(data/traits/traits_index_to_merge.json)"
+		"stonehearth:traits_index":"file(data/traits/traits_index_to_merge.json)",
+
+		"stonehearth:worker:outfit": "file(jobs/worker/worker_outfit.json)"
 	},
 	"functions": {
 		"change_weather": {
@@ -366,10 +370,11 @@
 		}
 	},
 	"components": {
-		"firefly":"file(components/firefly/firefly_component.lua)",
-		"lay_egg_spot":"file(components/lay_egg_spot/lay_egg_spot.lua)",
-		"monster_spawner":"file(components/monster_spawner/monster_spawner_component.lua)",
-		"mountain_grass":"file(components/mountain_grass/mountain_grass_component.lua)",
+		"firefly_worker":			"file(components/hacks/firefly_worker.lua)",
+		"firefly":					"file(components/firefly/firefly_component.lua)",
+		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",
+		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
+		"mountain_grass":			"file(components/mountain_grass/mountain_grass_component.lua)",
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)"
 	},
 	"overrides": {

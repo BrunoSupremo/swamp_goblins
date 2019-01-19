@@ -361,7 +361,15 @@
 			"cattail": {
 				"display_name": "Cattail",
 				"description": "This plant's fiber can be spun into thread.",
-				"unripe_description": "This plant has been harvested and has not grown back yet"
+				"unripe_description": "This plant has been harvested and has not grown back yet",
+				"seed":{
+					"display_name": "Cattail Seeds",
+					"description": "The small seeds of a big plant"
+				},
+				"sprout":{
+					"display_name": "Cattail Sprout",
+					"description": "Just needs some time and care."
+				}
 			},
 			"fern": {
 				"display_name": "Fern",
@@ -371,12 +379,28 @@
 			"giant_flower": {
 				"display_name": "Giple Flower",
 				"description": "Can be harvested for healing herbs",
-				"unripe_description": "This plant has been harvested and has not grown back yet"
+				"unripe_description": "This plant has been harvested and has not grown back yet",
+				"seed":{
+					"display_name": "Giple Flower Seeds",
+					"description": "The small seeds of a giant flower"
+				},
+				"sprout":{
+					"display_name": "Giple Flower Sprout",
+					"description": "Just needs some time and care."
+				}
 			},
 			"mushroom": {
 				"display_name": "Mushroom",
 				"description": "Harvestable for a meager food supply.",
-				"unripe_description": "This plant has been harvested and has not grown back yet"
+				"unripe_description": "This plant has been harvested and has not grown back yet",
+				"seed":{
+					"display_name": "Mushroom Seeds",
+					"description": "Little pieces from a bigger mushroom"
+				},
+				"sprout":{
+					"display_name": "Mushroom Sprout",
+					"description": "Just needs some time and care."
+				}
 			},
 			"log": {
 				"display_name": "Log",

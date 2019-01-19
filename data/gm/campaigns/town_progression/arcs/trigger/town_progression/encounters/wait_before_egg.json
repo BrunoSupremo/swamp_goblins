@@ -1,0 +1,9 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_time_of_day",
+	"in_edge"  : "wait_before_egg",
+	"out_edge" : "explain_egg",
+	"wait_for_time_of_day_info": {
+		"time": "8:00"
+	}
+}
