@@ -205,8 +205,8 @@
 			"swamp_goblins:plants:lilypad": {
 				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 5,
-					"item_density": 0.175,
+					"grid_multiple": 4,
+					"item_density": 0.2,
 					"exclusion_radius": 1
 				}
 			},
@@ -214,7 +214,7 @@
 				"placement_type": "dense",
 				"parameters": {
 					"grid_multiple": 3,
-					"item_density": 0.2,
+					"item_density": 0.14,
 					"exclusion_radius": 1
 				}
 			},
@@ -244,7 +244,7 @@
 			},
 			"swamp_goblins:boulder:small" : {
 				"placement_type" : "dense",
-				"parameters" : { "grid_multiple" : 4, "item_density" : 0.2, "exclusion_radius" : 1 }
+				"parameters" : { "grid_multiple" : 4, "item_density" : 0.19, "exclusion_radius" : 1 }
 			},
 			"swamp_goblins:boulder:medium_1" : {
 				"placement_type" : "single",
@@ -331,7 +331,7 @@
 							"swamp_goblins:trees:dead:large":0.1,
 
 							"swamp_goblins:plants:giant_flower": 2,
-							"swamp_goblins:plants:cattail": 2,
+							"swamp_goblins:plants:cattail": 3,
 							"swamp_goblins:plants:mushroom":5
 						}
 					},
@@ -366,14 +366,14 @@
 					"terrain_based": {
 						"plains": {
 							"1": {
-								"probability": 0.7,
-								"density": 0.65
+								"probability": 0.6,
+								"density": 0.6
 							}
 						},
 						"foothills": {
 							"1": {
-								"probability": 0.7,
-								"density": 0.65
+								"probability": 0.6,
+								"density": 0.6
 							}
 						},
 						"mountains": {
@@ -391,18 +391,18 @@
 					"terrain_based": {
 						"plains": {
 							"1": {
-								"probability": 0.8,
-								"density": 0.8
+								"probability": 0.75,
+								"density": 0.75
 							},
 							"2": {
-								"probability": 0.8,
-								"density": 0.8
+								"probability": 0.75,
+								"density": 0.75
 							}
 						},
 						"foothills": {
 							"1": {
-								"probability": 0.8,
-								"density": 0.8
+								"probability": 0.7,
+								"density": 0.7
 							}
 						},
 						"mountains": {
@@ -414,7 +414,7 @@
 					}
 				},
 				"cutoffs": {
-					"small": 0.1,
+					"small": 0.075,
 					"medium": 0.4
 				}
 			}
@@ -423,8 +423,8 @@
 			"spawn_objects":{
 				"water_1":{
 					"none":2,
-					"swamp_goblins:plants:lilypad":3,
-					"swamp_goblins:plants:cattail":7,
+					"swamp_goblins:plants:lilypad":2.4,
+					"swamp_goblins:plants:cattail":5,
 					"swamp_goblins:plants:log":1.5,
 					"swamp_goblins:plants:giant_flower":1.25,
 					"swamp_goblins:trees:cypress:small":1,
@@ -432,9 +432,9 @@
 					"swamp_goblins:trees:dead:small":0.5,
 					"swamp_goblins:trees:dead:medium":0.5,
 					"swamp_goblins:boulder:small":0.5,
-					"swamp_goblins:boulder:medium_1":1,
+					"swamp_goblins:boulder:medium_1":0.9,
 					"swamp_goblins:boulder:medium_2":1,
-					"swamp_goblins:boulder:medium_3":1,
+					"swamp_goblins:boulder:medium_3":0.9,
 					"swamp_goblins:boulder:large_1":0.5,
 					"swamp_goblins:boulder:large_2":0.5
 				},
@@ -445,8 +445,8 @@
 					"swamp_goblins:trees:cypress:large":1,
 					"swamp_goblins:trees:dead:medium":0.5,
 					"swamp_goblins:trees:dead:large":0.1,
-					"swamp_goblins:boulder:medium_1":1.5,
-					"swamp_goblins:boulder:medium_3":1.5,
+					"swamp_goblins:boulder:medium_1":1.4,
+					"swamp_goblins:boulder:medium_3":1.4,
 					"swamp_goblins:boulder:large_1":1.5,
 					"swamp_goblins:boulder:large_2":1.5
 				}

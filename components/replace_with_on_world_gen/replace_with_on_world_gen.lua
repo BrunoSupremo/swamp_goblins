@@ -16,6 +16,7 @@ function ReplaceWithOnWorldGen:_on_world_generation_complete()
 		local uri = weighted_set:choose_random()
 		local lily = radiant.entities.create_entity(uri)
 		local location = radiant.entities.get_world_grid_location(self._entity)
+		radiant.entities.turn_to(lily, rng:get_int(0,3)*90)
 		radiant.terrain.place_entity_at_exact_location(lily, location)
 	end
 

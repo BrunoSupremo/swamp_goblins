@@ -2,10 +2,10 @@
 	"type": "recipe",
 	"effort": 10,
 	"work_units": 1,
-	"recipe_name": "i18n(stonehearth:entities.monsters.goblins.goblin_barricade_single.goblin_barricade_single_ghost.display_name)",
-	"description": "i18n(stonehearth:jobs.carpenter.recipes.picket_fence_combo_recipe.description)",
-	"flavor": "i18n(stonehearth:jobs.carpenter.recipes.picket_fence_combo_recipe.flavor)",
-	"portrait": "/stonehearth/entities/monsters/goblins/goblin_barricade_single/goblin_barricade_single.png",
+	"recipe_name": "i18n(swamp_goblins:entities.construction.goblin_barricade_single.display_name)",
+	"description": "i18n(swamp_goblins:entities.construction.goblin_barricade_single.description)",
+	"flavor": "i18n(swamp_goblins:entities.construction.goblin_barricade_single.flavor)",
+	"portrait": "/swamp_goblins/entities/construction/goblin_barricade_single/goblin_barricade_single.png",
 	"workshop": "swamp_goblins:bonesmith:workbench",
 	"level_requirement": 1,
 	"ingredients": [
@@ -16,7 +16,7 @@
 	],
 	"produces": [
 		{
-			"item": "stonehearth:monsters:goblins:goblin_barricade_single"
+			"item": "swamp_goblins:construction:goblin_barricade_single"
 		}
 	]
 }

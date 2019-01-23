@@ -1,0 +1,32 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(goblin_barricade_single_1.qb)",
+							"file(goblin_barricade_single_2.qb)",
+							"file(goblin_barricade_single_3.qb)"
+						]
+					}
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.construction.goblin_barricade_single.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.goblin_barricade_single.description)",
+			"icon": "file(goblin_barricade_single.png)",
+			"category": "construction",
+			"material_tags": ["wood", "defense", "fence", "stockpile_defense"]
+		}
+	}
+}

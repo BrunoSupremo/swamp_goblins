@@ -1,6 +1,6 @@
 swamp_goblins = {}
 local log = radiant.log.create_logger('version')
-log:error("Swamp Goblins Mod version 19.1.18")
+log:error("Swamp Goblins Mod version 19.1.23")
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then
@@ -19,6 +19,10 @@ function swamp_goblins:_on_required_loaded()
 	local custom_population_faction = require('services.server.population.custom_population_faction')
 	local population_faction = radiant.mods.require('stonehearth.services.server.population.population_faction')
 	radiant.mixin(population_faction, custom_population_faction)
+
+	local custom_job_component = require('components.job.custom_job_component')
+	local job_component = radiant.mods.require('stonehearth.components.job.job_component')
+	radiant.mixin(job_component, custom_job_component)
 end
 
 function swamp_goblins:_on_biome_set(e)

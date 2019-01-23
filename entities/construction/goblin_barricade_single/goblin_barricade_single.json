@@ -1,0 +1,43 @@
+{
+	"type": "entity",
+	"mixins": [
+		"stonehearth:mixins:destructable_object",
+		"file(goblin_barricade_single_ghost.json)"
+	],
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(goblin_barricade_single_iconic.json)",
+			"ghost_form": "file(goblin_barricade_single_ghost.json)",
+			"placeable_on_ground": true
+		},
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 200
+			}
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 3, "z": 1 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 2,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 3
+		}
+	}
+}

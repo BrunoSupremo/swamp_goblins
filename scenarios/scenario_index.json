@@ -4,8 +4,11 @@
 			"file(static/frog_nest)",
 
 			"file(static/landmarks/32x_firefly_nest.json)",
+			"file(static/landmarks/32x_mushroom.json)",
 			"file(static/landmarks/32x_mushroom_spiral.json)",
-			"file(static/landmarks/32x_varanus_nest.json)"
+			"file(static/landmarks/32x_varanus_nest.json)",
+			"file(static/landmarks/64x_king_stone.json)",
+			"file(static/landmarks/64x_waterfall.json)"
 		],
 		"categories" : {
 			"swamp_landmark" : {
@@ -13,7 +16,11 @@
 				"priority" : 0,
 				"location_type" : "surface",
 				"activation_type" : "immediate",
-				"prevents_categories_in_same_tile": ["swamp_landmark"]
+				"prevents_categories_in_same_tile": [
+					"swamp_landmark",
+					"terrain_feature_common",
+					"terrain_feature_rare"
+				]
 			}
 		}
 	}

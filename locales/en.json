@@ -50,6 +50,19 @@
 				"disabled_description":"Already in use",
 			}
 		},
+		"gm":{
+			"campaigns":{
+				"town_progression":{
+					"trigger":{
+						"before_chosing_banner":{
+							"title":"It is time",
+							"dialog_title":"It is time",
+							"message":"No need to wait any longer, the shaman is ready, and we are all set.<br>Let's pick our banner."
+						}
+					}
+				}
+			}
+		},
 		"loadouts": {
 			"toys": {
 				"display_name": "Goblin Toys",
@@ -189,6 +202,16 @@
 			}
 		},
 		"construction": {
+			"goblin_barricade": {
+				"display_name": "Double Barricade",
+				"description": "Blocks the way even more",
+				"flavor":"Rudimentary double fence"
+			},
+			"goblin_barricade_single": {
+				"display_name": "Barricade",
+				"description": "Blocks the way",
+				"flavor":"Rudimentary fence"
+			},
 			"wooden_door": {
 				"display_name": "Wooden Door",
 				"description": "To go in and out"
@@ -227,8 +250,8 @@
 		},
 		"decoration": {
 			"big_firefly_essense": {
-				"display_name": "Big Firefly Essense",
-				"description": "Has the equivalent of 8 small firefly essense bottles. Glow in the dark",
+				"display_name": "Big Firefly Essence",
+				"description": "Has the equivalent of 8 small firefly essence bottles. Glow in the dark",
 				"flavor": "Can be harvested back to 8 bottles later"
 			},
 			"large_candle": {
@@ -340,6 +363,16 @@
 			"camp_standard": {
 				"display_name": "Camp Banner",
 				"description": "How you know you've come home"
+			},
+			"goblin_camp_standard": {
+				"display_name": "Banner of Goblins",
+				"description": "How you know you've come home",
+				"town_bonus_description": "<i>This settlement will grow strong through our muscles and spirits.</i><ul><li>Mining gives 50% more Ore, Stone, and Clay</li><li>Goblins no longer mind cramped spaces</li></ul>"
+			},
+			"varanus_camp_standard": {
+				"display_name": "Banner of Nature",
+				"description": "How you know you've come home",
+				"town_bonus_description": "<i>This settlement shall be at one with the environment.</i><ul><li>Trees produce 25% more Wood</li><li>Plants and Crops both grow 25% faster</li><li>Plants have 2x their normal Appeal</li></ul>"
 			}
 		},
 		"monsters": {
@@ -439,7 +472,7 @@
 				"description": "Hard material"
 			},
 			"firefly_essense": {
-				"display_name": "Firefly Essense",
+				"display_name": "Firefly Essence",
 				"description": "Has magical properties"
 			}
 		},
@@ -551,7 +584,7 @@
 			},
 			"shaman_firefly_token": {
 				"display_name": "Shaman Firefly Token",
-				"description": "Shamans will use to extract firefly essense"
+				"description": "Shamans will use this to extract firefly essences"
 			},
 			"dreamcatcher": {
 				"display_name": "Shaman Dreamcatcher",
@@ -734,7 +767,8 @@
 			"beast_tamer_description": {
 				"display_name": "Beast Tamer",
 				"description": "Summon and order animals into fight",
-				"requirements": "Crafted by Shaman",
+				"requirements": "Crafted by Carpenter",
+				"goblin_requirements": "Crafted by Shaman",
 				"level_1_data": {
 					"perk_000_name": "Four Feathers",
 					"perk_000_description": "A group of elite Poyos called the Four Feathers will join and help in the fight"

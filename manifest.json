@@ -82,10 +82,14 @@
 
 		"camp_hearth":	"file(entities/decoration/firepit_skulls)",
 		"camp_standard":	"file(entities/gizmos/camp_standard)",
-		"camp_standard_2":	"file(entities/gizmos/camp_standard_2)",
+		"goblin_camp_standard":	"file(entities/gizmos/goblin_camp_standard)",
+		"varanus_camp_standard":"file(entities/gizmos/varanus_camp_standard)",
 
 		"commands:change_weather":"file(data/commands/change_weather)",
 		"commands:enable_egg_spot":"file(data/commands/enable_egg_spot)",
+
+		"construction:goblin_barricade":"file(entities/construction/goblin_barricade)",
+		"construction:goblin_barricade_single":"file(entities/construction/goblin_barricade_single)",
 
 		"consumables:blue_potion":	"file(entities/consumables/blue_potion)",
 		"consumables:green_potion":	"file(entities/consumables/green_potion)",
@@ -156,6 +160,7 @@
 		"goblins:goblin:customizations":"file(entities/goblins/customizations.json)",
 
 		"jobs:index": "file(jobs/goblin_index.json)",
+		"jobs:goblin_beast_tamer":	"file(jobs/beast_tamer/goblin_beast_tamer_description.json)",
 		"jobs:beast_tamer":		"file(jobs/beast_tamer/beast_tamer_description.json)",
 		"jobs:bonesmith":		"file(jobs/bonesmith/bonesmith_description.json)",
 		"jobs:earthmaster":		"file(jobs/earthmaster/earthmaster_description.json)",
@@ -287,6 +292,9 @@
 
 		"weather:foggy": "file(data/weather/foggy)"
 	},
+	"deprecated_aliases":{
+		"camp_standard_2":"file(entities/gizmos/camp_standard)"
+	},
 	"mixintos" :  {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 
@@ -370,7 +378,6 @@
 		}
 	},
 	"components": {
-		"firefly_worker":			"file(components/hacks/firefly_worker.lua)",
 		"firefly":					"file(components/firefly/firefly_component.lua)",
 		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",

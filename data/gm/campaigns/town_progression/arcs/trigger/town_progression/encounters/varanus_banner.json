@@ -1,18 +1,18 @@
 {
 	"type": "encounter",
 	"encounter_type": "town_upgrade",
-	"in_edge": "upgrade_banner_1",
+	"in_edge": "varanus_banner",
 	"out_edge": "wait_before_egg",
 	"town_upgrade_info": {
 		"tier_achieved": 1,
 		"old_facility_uri": "swamp_goblins:camp_standard",
-		"new_facility_uri": "swamp_goblins:camp_standard_2",
+		"new_facility_uri": "swamp_goblins:varanus_camp_standard",
 		"town_bonus": "stonehearth:town_bonus:vitality",
 		"facility_upgrade_effect": "stonehearth:effects:level_up:banner",
 		"conversation_subjects": [
 			"stonehearth:subjects:town_status",
 			"stonehearth:food:cake",
-			"stonehearth:banner:vitality"
+			"swamp_goblins:varanus_camp_standard"
 		],
 		"thought": "stonehearth:thoughts:town:progression:outpost",
 		"celebration_duration": "1h15m+5m",
@@ -26,19 +26,19 @@
 				{
 					"id": "vitality_bonus_1",
 					"name": "i18n(stonehearth:data.gm.campaigns.town_progression.arcs.trigger.town_progression.encounters.banner_upgrade_vitality.achievements.000)",
-					"icon": "stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_1.png",
+					"icon": "/stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_1.png",
 					"track": "stonehearth:sounds:ui:immigration_menu:immigration_pass"
 				},
 				{
 					"id": "vitality_bonus_2",
 					"name": "i18n(stonehearth:data.gm.campaigns.town_progression.arcs.trigger.town_progression.encounters.banner_upgrade_vitality.achievements.001)",
-					"icon": "stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_1.png",
+					"icon": "/stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_1.png",
 					"track": "stonehearth:sounds:ui:immigration_menu:immigration_pass"
 				},
 				{
 					"id": "vitality_bonus_3",
 					"name": "i18n(stonehearth:data.gm.campaigns.town_progression.arcs.trigger.town_progression.encounters.banner_upgrade_vitality.achievements.002)",
-					"icon": "stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_1.png",
+					"icon": "/stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_1.png",
 					"track": "stonehearth:sounds:ui:immigration_menu:immigration_pass"
 				}
 			]
