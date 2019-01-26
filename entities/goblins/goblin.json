@@ -2,6 +2,7 @@
 	"type" : "entity",
 	"mixins": "swamp_goblins:mixins:base_goblin", 
 	"components": {
+		"swamp_goblins:firefly_goblin" : {},
 		"render_info" : {
 			"animation_table": "stonehearth:skeletons:humanoid:female",
 			"model_variant": "firefly_goblin",

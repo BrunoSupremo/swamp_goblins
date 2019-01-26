@@ -4,15 +4,29 @@ local SwampGoblinsJobComponent = class()
 
 SwampGoblinsJobComponent._goblin_promote_to = JobComponent.promote_to
 function SwampGoblinsJobComponent:promote_to(job_uri, options)
-	local player_id = radiant.entities.get_player_id(self._entity)
-	local kingdom = stonehearth.player:get_kingdom(player_id)
-	if kingdom == "swamp_goblins:kingdoms:firefly_clan" then
-		if job_uri == "stonehearth:jobs:worker" then
-			job_uri = "swamp_goblins:jobs:worker"
+	if not self:get_allowed_jobs() then
+		local player_id = radiant.entities.get_player_id(self._entity)
+		local job_index = stonehearth.player:get_jobs(player_id)
+		local firefly_job_list = {}
+		local hearthling_job_list = {}
+		for alias,data in pairs(job_index) do
+			if not data.firefly_job then
+				hearthling_job_list[alias] = true
+			else
+				if data.firefly_job == "exclusive" then
+					firefly_job_list[alias] = true
+				else
+					firefly_job_list[alias] = true
+					hearthling_job_list[alias] = true
+				end
+			end
 		end
-	else
-		if job_uri == "swamp_goblins:jobs:worker" then
-			job_uri = "stonehearth:jobs:worker"
+		local render_info = self._entity:add_component('render_info')
+		local model = render_info:get_model_variant()
+		if model == "firefly_goblin" then
+			self:set_allowed_jobs(firefly_job_list)
+		else
+			self:set_allowed_jobs(hearthling_job_list)
 		end
 	end
 	self:_goblin_promote_to(job_uri, options)

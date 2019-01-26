@@ -84,6 +84,7 @@
 		"camp_standard":	"file(entities/gizmos/camp_standard)",
 		"goblin_camp_standard":	"file(entities/gizmos/goblin_camp_standard)",
 		"varanus_camp_standard":"file(entities/gizmos/varanus_camp_standard)",
+		"goblinpedia":"file(entities/gizmos/goblinpedia)",
 
 		"commands:change_weather":"file(data/commands/change_weather)",
 		"commands:enable_egg_spot":"file(data/commands/enable_egg_spot)",
@@ -151,6 +152,8 @@
 		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 
 		"furniture:hammock": "file(entities/furniture/hammock)",
+		"furniture:mush_chair": "file(entities/furniture/mush_chair)",
+		"furniture:mush_table": "file(entities/furniture/mush_table)",
 		"furniture:simple_chair": "file(entities/furniture/simple_chair)",
 		"furniture:simple_table": "file(entities/furniture/simple_table)",
 
@@ -378,6 +381,7 @@
 		}
 	},
 	"components": {
+		"firefly_goblin":			"file(components/firefly_goblin/firefly_goblin.lua)",
 		"firefly":					"file(components/firefly/firefly_component.lua)",
 		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",

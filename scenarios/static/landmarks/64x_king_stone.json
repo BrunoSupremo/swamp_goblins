@@ -3,14 +3,13 @@
 	"biomes": ["swamp_goblins:biome:swamp"],
 	"name": "king_stone",
 	"category": "swamp_landmark",
-	"unique" : true,
 	"size": {
-		"width": 64,
-		"length": 64
+		"width": 32,
+		"length": 32
 	},
 	"overwrite_occupied_size": 6,
-	"habitat_types": ["plains","foothills","mountains"],
-	"weight": 5,
+	"habitat_types": ["plains","foothills"],
+	"weight": 0.5,
 	"data": {
 		"brush" : "/swamp_goblins/data/models/landmark/64x_king_stone.qb",
 		"landmark_block_types": "swamp_goblins:landmark_blocks"

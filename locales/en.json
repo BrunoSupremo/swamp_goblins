@@ -340,6 +340,14 @@
 				"display_name": "Hammock",
 				"description": "To sleep far from the ground"
 			},
+			"mush_chair": {
+				"display_name": "Mushroom Chair",
+				"description": "You can sit on it. Very soft."
+			},
+			"mush_table": {
+				"display_name": "Mushroom Table",
+				"description": "A table, for table things. A little wobbly."
+			},
 			"simple_chair": {
 				"display_name": "Simple Chair",
 				"description": "You can sit on it"
@@ -373,6 +381,11 @@
 				"display_name": "Banner of Nature",
 				"description": "How you know you've come home",
 				"town_bonus_description": "<i>This settlement shall be at one with the environment.</i><ul><li>Trees produce 25% more Wood</li><li>Plants and Crops both grow 25% faster</li><li>Plants have 2x their normal Appeal</li></ul>"
+			},
+			"goblinpedia": {
+				"display_name": "Goblinpedia",
+				"description": "About goblins and swamps",
+				"flavor":"Use this item to open an actual encyclopedia with all the necessary information about the <b>Firefly Clan</b> and the <b>Swamp Biome</b>. After your learning session you can simple use it as a nice decoration"
 			}
 		},
 		"monsters": {
@@ -708,16 +721,14 @@
 		},
 		"scavenger": {
 			"scavenger_description": {
-				"display_name": "Scavenger",
-				"description": "More than just a trapper, can find and gather random items in the world",
 				"requirements": "Crafted by Shaman"
 			},
 			"scavenger_backpack": {
-				"display_name": "Scavenger Backpack",
+				"display_name": "Trapper Backpack",
 				"scavenger_backpack_talisman": {
-					"display_name": "Scavenger Backpack",
+					"display_name": "Trapper Backpack",
 					"description": "Hold the scavenged loot",
-					"flavor": "Promotes a goblin to Scavenger"
+					"flavor": "Promotes a goblin to Trapper"
 				}
 			}
 		},

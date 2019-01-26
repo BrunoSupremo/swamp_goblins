@@ -1,25 +1,34 @@
 {
 	"jobs": {
-		"swamp_goblins:jobs:worker": {
-			"description": "file(go_away_goblin_worker.json)"
+		"stonehearth:jobs:worker": {
+			"firefly_job":"shared"
+		},
+		"stonehearth:jobs:trapper": {
+			"firefly_job":"shared"
 		},
 		"swamp_goblins:jobs:beast_tamer": {
-			"description": "swamp_goblins:jobs:beast_tamer"
+			"description": "swamp_goblins:jobs:beast_tamer",
+			"firefly_job":"shared"
 		},
 		"swamp_goblins:jobs:bonesmith": {
-			"description": "swamp_goblins:jobs:bonesmith"
+			"description": "swamp_goblins:jobs:bonesmith",
+			"firefly_job":"exclusive"
 		},
 		"swamp_goblins:jobs:earthmaster": {
-			"description": "swamp_goblins:jobs:earthmaster"
+			"description": "swamp_goblins:jobs:earthmaster",
+			"firefly_job":"exclusive"
 		},
 		"swamp_goblins:jobs:shaman": {
-			"description": "swamp_goblins:jobs:shaman"
+			"description": "swamp_goblins:jobs:shaman",
+			"firefly_job":"exclusive"
 		},
 		"swamp_goblins:jobs:spirit_walker": {
-			"description": "swamp_goblins:jobs:spirit_walker"
+			"description": "swamp_goblins:jobs:spirit_walker",
+			"firefly_job":"exclusive"
 		},
 		"swamp_goblins:jobs:warrior": {
-			"description": "swamp_goblins:jobs:warrior"
+			"description": "swamp_goblins:jobs:warrior",
+			"firefly_job":"exclusive"
 		}
 	}
 }

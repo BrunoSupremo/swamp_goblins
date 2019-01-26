@@ -1,5 +1,6 @@
 local LayEgg_spot = class()
 local Point3 = _radiant.csg.Point3
+local rng = _radiant.math.get_default_rng()
 
 function LayEgg_spot:initialize()
 	self._sv._use_state = "off" --off, waiting, has_egg
@@ -27,7 +28,7 @@ function LayEgg_spot:post_activate()
 			local pop = stonehearth.population:get_population(self.player_id)
 			pop:create_new_goblin_citizen_from_role_data(e.evolved_form)
 			local job_component = e.evolved_form:add_component('stonehearth:job')
-			job_component:promote_to("swamp_goblins:jobs:worker", { skip_visual_effects = true })
+			job_component:promote_to("stonehearth:jobs:worker", { skip_visual_effects = true })
 			self._sv._current_baby = nil
 			self._baby_listener = nil
 			end)
@@ -53,6 +54,7 @@ function LayEgg_spot:create_egg()
 	self._sv._use_state = "has_egg"
 	local egg = radiant.entities.create_entity("swamp_goblins:goblins:egg", {owner = self.player_id})
 	local location = radiant.entities.get_world_grid_location(self._entity)
+	radiant.entities.turn_to(egg, rng:get_int(0,3)*90)
 	radiant.terrain.place_entity_at_exact_location(egg, location +Point3.unit_y)
 	radiant.effects.run_effect(egg, "stonehearth:effects:buff_tonic_energy_added")
 	radiant.effects.run_effect(egg, "stonehearth:effects:fursplosion_effect")
@@ -77,7 +79,7 @@ function LayEgg_spot:egg_hatched(baby)
 		local pop = stonehearth.population:get_population(self.player_id)
 		pop:create_new_goblin_citizen_from_role_data(e.evolved_form)
 		local job_component = e.evolved_form:add_component('stonehearth:job')
-		job_component:promote_to("swamp_goblins:jobs:worker", { skip_visual_effects = true })
+		job_component:promote_to("stonehearth:jobs:worker", { skip_visual_effects = true })
 		self._sv._current_baby = nil
 		self._baby_listener = nil
 		end)
