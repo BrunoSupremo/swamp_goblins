@@ -524,10 +524,6 @@
 					"description": "Growing"
 				}
 			},
-			"swirl": {
-				"display_name": "Swirl Tree",
-				"description": "An impressive specimen."
-			},
 			"cypress": {
 				"display_name": "Swamp Cypress",
 				"description": "Deep roots into the soil",
@@ -547,6 +543,14 @@
 					"display_name": "Cypress stem",
 					"description": "Growing"
 				}
+			},
+			"stump": {
+				"display_name": "Tree Stump",
+				"description": "The remains of a tree."
+			},
+			"swirl": {
+				"display_name": "Swirl Tree",
+				"description": "An impressive specimen."
 			}
 		},
 		"weapons": {
@@ -810,7 +814,7 @@
 				"beast_tamer_flute_talisman": {
 					"display_name": "Beast Tamer Flute",
 					"description": "Communicates with animals",
-					"flavor": "Promotes a goblin to Beast Tamer"
+					"flavor": "Promotes to Beast Tamer"
 				}
 			},
 			"beast_tamer_claw": {

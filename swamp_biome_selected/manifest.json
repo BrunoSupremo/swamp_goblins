@@ -27,9 +27,10 @@
 		"stonehearth:trapper:trapping_grounds": "file(data/swamp_trapping_grounds.json)"
 	},
 	"overrides": {
-		"stonehearth/entities/critters/poyo/poyo.qb": "/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_tan.qb",
-		"stonehearth/entities/critters/poyo/poyo_red.qb": "/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_red.qb",
-		"stonehearth/entities/critters/poyo/poyo_brown.qb": "/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_blue.qb",
+		"/archipelago_biome/entities/critters/crab/crab.qb": "file(entities/critters/crab/crab.qb)",
+		"stonehearth/entities/critters/poyo/poyo.qb":		"/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_tan.qb",
+		"stonehearth/entities/critters/poyo/poyo_red.qb":	"/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_red.qb",
+		"stonehearth/entities/critters/poyo/poyo_brown.qb":	"/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_blue.qb",
 
 		"stonehearth/entities/rabbit/rabbit_statue/rabbit_statue_01.qb":"file(entities/rabbit/rabbit_statue/rabbit_statue_01.qb)"
 	}
