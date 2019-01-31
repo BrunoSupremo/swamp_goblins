@@ -58,6 +58,7 @@
 		"bonesmith:saw": "file(jobs/bonesmith/bonesmith_saw)",
 		"bonesmith:talisman": "file(jobs/bonesmith/bonesmith_saw/bonesmith_saw_talisman.json)",
 		"bonesmith:workbench": "file(jobs/bonesmith/bonesmith_workbench)",
+		"bonesmith:weaving_table": "file(jobs/bonesmith/weaving_table)",
 
 		"boulder:large_1":	"file(entities/boulders/large_boulder/large_boulder_1.json)",
 		"boulder:large_2":	"file(entities/boulders/large_boulder/large_boulder_2.json)",
@@ -205,6 +206,7 @@
 		"plants:mushroom":		"file(entities/plants/mushroom)",
 
 		"portals:wooden_door":			"file(entities/construction/wooden_door)",
+		"portals:curtains_door":		"file(entities/construction/curtains_door)",
 		"portals:wooden_window_frame":	"file(entities/construction/wooden_window_frame)",
 
 		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
@@ -219,7 +221,6 @@
 		"shaman:talisman": "file(jobs/shaman/dreamcatcher/dreamcatcher_talisman.json)",
 		"shaman:workbench": "file(jobs/shaman/shaman_workbench)",
 		"shaman:firefly_token": "file(jobs/shaman/shaman_firefly_token)",
-		"shaman:weaving_table": "file(jobs/shaman/weaving_table)",
 		"shaman:egg_pedestal":	"file(jobs/shaman/egg_pedestal)",
 
 		"skeletons:humanoid:baby":"file(data/rigs/entities/humans/skeletons/baby.json)",
@@ -302,7 +303,8 @@
 		"weather:foggy": "file(data/weather/foggy)"
 	},
 	"deprecated_aliases":{
-		"camp_standard_2":"file(entities/gizmos/camp_standard)"
+		"camp_standard_2":"file(entities/gizmos/camp_standard)",
+		"shaman:weaving_table": "file(jobs/bonesmith/weaving_table)"
 	},
 	"mixintos" :  {
 		"stonehearth:biome:index": "file(data/biome/index.json)",

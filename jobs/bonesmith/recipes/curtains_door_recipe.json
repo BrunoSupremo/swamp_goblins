@@ -1,0 +1,24 @@
+{
+	"type": "recipe",
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.construction.curtains_door.display_name)",
+	"description": "i18n(swamp_goblins:entities.construction.curtains_door.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/construction/curtains_door/curtains_door.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:portals:curtains_door"
+		}
+	]
+}

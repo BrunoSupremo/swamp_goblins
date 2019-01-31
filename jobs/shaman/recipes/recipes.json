@@ -10,9 +10,6 @@
 				"firefly_token": {
 					"recipe": "file(firefly_token_recipe.json)"
 				},
-				"weaving_table": {
-					"recipe": "file(weaving_table_recipe.json)"
-				},
 				"egg_pedestal": {
 					"recipe": "file(egg_pedestal_recipe.json)"
 				}
@@ -93,39 +90,6 @@
 				}
 			}
 		},
-		"goblin_clothing_armor": {
-			"ordinal": 50,
-			"name": "i18n(stonehearth:jobs.weaver.recipes.clothing_armor_name)",
-			"recipes": {
-				"flower_helmet": {
-					"recipe": "file(flower_helmet_recipe.json)"
-				},
-				"log_armor": {
-					"recipe": "file(log_armor_recipe.json)"
-				},
-				"log_helmet": {
-					"recipe": "file(log_helmet_recipe.json)"
-				},
-				"leather_armor": {
-					"recipe": "file(leather_armor_recipe.json)"
-				},
-				"leather_helmet": {
-					"recipe": "file(leather_helmet_recipe.json)"
-				},
-				"full_leather_helmet": {
-					"recipe": "file(full_leather_helmet_recipe.json)"
-				},
-				"varanus_armor": {
-					"recipe": "file(varanus_armor_recipe.json)"
-				},
-				"varanus_helmet": {
-					"recipe": "file(varanus_helmet_recipe.json)"
-				},
-				"horn_helmet": {
-					"recipe": "file(horn_helmet_recipe.json)"
-				}
-			}
-		},
 		"goblin_storage": {
 			"ordinal": 60,
 			"name": "i18n(stonehearth:jobs.carpenter.recipes.storage_name)",
@@ -147,21 +111,6 @@
 			"recipes": {
 				"big_firefly_essense": {
 					"recipe": "file(big_firefly_essense_recipe.json)"
-				},
-				"fur_rug": {
-					"recipe": "file(fur_rug_recipe.json)"
-				},
-				"curtains": {
-					"recipe": "file(curtains_recipe.json)"
-				},
-				"banner_wall_small": {
-					"recipe": "file(banner_wall_small_recipe.json)"
-				},
-				"banner_wall_big": {
-					"recipe": "file(banner_wall_big_recipe.json)"
-				},
-				"amberstone_mat": {
-					"recipe": "file(amberstone_mat_recipe.json)"
 				}
 			}
 		}

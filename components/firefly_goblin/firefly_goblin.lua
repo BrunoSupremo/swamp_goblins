@@ -17,7 +17,7 @@ end
 function FireflyGoblin:initialize()
 end
 
-function FireflyGoblin:activate()
+function FireflyGoblin:post_activate()
 	self:update_job_list()
 end
 

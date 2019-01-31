@@ -212,6 +212,10 @@
 				"description": "Blocks the way",
 				"flavor":"Rudimentary fence"
 			},
+			"curtains_door": {
+				"display_name": "Curtains Door",
+				"description": "A larger door. It makes quite an impression."
+			},
 			"wooden_door": {
 				"display_name": "Wooden Door",
 				"description": "To go in and out"
@@ -618,10 +622,6 @@
 			},
 			"recipes": {
 				"potions": "Potions"
-			},
-			"weaving_table": {
-				"display_name": "Weaving Table",
-				"description": "A place to weave armors, even the hard solid ones"
 			}
 		},
 		"spirit_walker": {
@@ -776,6 +776,10 @@
 			},
 			"recipes": {
 				"signs": "Signs"
+			},
+			"weaving_table": {
+				"display_name": "Weaving Table",
+				"description": "A place to weave armors, even the hard solid ones"
 			}
 		},
 		"beast_tamer": {
