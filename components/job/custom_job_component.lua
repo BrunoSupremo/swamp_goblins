@@ -4,7 +4,13 @@ local SwampGoblinsJobComponent = class()
 
 SwampGoblinsJobComponent._goblin_promote_to = JobComponent.promote_to
 function SwampGoblinsJobComponent:promote_to(job_uri, options)
-	if not self:get_allowed_jobs() then
+	local is_npc = false
+	for _, sub_string in ipairs(radiant.util.split_string(job_uri, ":")) do
+		if sub_string == "npc" then
+			is_npc=true
+		end
+	end
+	if not self:get_allowed_jobs() and not is_npc then
 		local player_id = radiant.entities.get_player_id(self._entity)
 		local job_index = stonehearth.player:get_jobs(player_id)
 		local firefly_job_list = {}

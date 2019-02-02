@@ -46,12 +46,13 @@
 
 		"beast_tamer:claw": "file(jobs/beast_tamer/beast_tamer_claw)",
 		"beast_tamer:talisman": "file(jobs/beast_tamer/beast_tamer_flute)",
-		"beast_tamer:abilities:summon_poyos":	"file(jobs/beast_tamer/beast_tamer_abilities/summon_poyos.json)",
-		"beast_tamer:abilities:summon_wildlife":"file(jobs/beast_tamer/beast_tamer_abilities/summon_wildlife.json)",
-		"beast_tamer:abilities:summon_traps":	"file(jobs/beast_tamer/beast_tamer_abilities/summon_traps.json)",
-		"beast_tamer:abilities:summon_varanus":	"file(jobs/beast_tamer/beast_tamer_abilities/summon_varanus.json)",
-		"beast_tamer:abilities:summon_firefly":	"file(jobs/beast_tamer/beast_tamer_abilities/summon_firefly.json)",
-		"beast_tamer:abilities:summon_dragon_aura":"file(jobs/beast_tamer/beast_tamer_abilities/summon_dragon_aura.json)",
+		"beast_tamer:abilities:summon_poyos":		"file(jobs/beast_tamer/beast_tamer_abilities/summon_poyos.json)",
+		"beast_tamer:abilities:summon_wildlife":	"file(jobs/beast_tamer/beast_tamer_abilities/summon_wildlife.json)",
+		"beast_tamer:abilities:summon_traps":		"file(jobs/beast_tamer/beast_tamer_abilities/summon_traps.json)",
+		"beast_tamer:abilities:summon_varanus":		"file(jobs/beast_tamer/beast_tamer_abilities/summon_varanus.json)",
+		"beast_tamer:abilities:summon_firefly":		"file(jobs/beast_tamer/beast_tamer_abilities/summon_firefly.json)",
+		"beast_tamer:abilities:summon_dragon_aura":	"file(jobs/beast_tamer/beast_tamer_abilities/summon_dragon_aura.json)",
+		"beast_tamer:abilities:summon_big_wolf":	"file(jobs/beast_tamer/beast_tamer_abilities/summon_big_wolf.json)",
 
 		"biome:swamp": "file(data/biome/swamp.json)",
 
@@ -244,6 +245,7 @@
 		"summons:squirrel":		"file(entities/summons/critters/squirrel.json)",
 		"summons:varanus":		"file(entities/summons/varanus)",
 		"summons:dragon_aura":	"file(entities/summons/dragon_aura)",
+		"summons:big_wolf":		"file(entities/summons/big_wolf)",
 		"summons:trap":			"file(entities/summons/trap)",
 
 		"terrain:mountain_grass":"file(entities/terrain/mountain_grass)",
@@ -343,6 +345,8 @@
 
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
 
+		"stonehearth:personal_logs:dreams": "file(data/personality/dreams.json)",
+
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
 
 		"stonehearth:resources:fiber:coarse_fiber_bundle":	"file(entities/resources/fiber/more_fiber.json)",
@@ -377,8 +381,9 @@
 		"stonehearth:traits_index":"file(data/traits/traits_index_to_merge.json)",
 
 		"stonehearth:trapper:outfit": "file(jobs/trapper/trapper_outfit)",
-
-		"stonehearth:worker:outfit": "file(jobs/worker/worker_outfit.json)"
+		"stonehearth:worker:outfit":		"file(jobs/worker/worker_outfit)",
+		"rayyas_children:worker:outfit":	"file(jobs/worker/worker_outfit)",
+		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)"
 	},
 	"functions": {
 		"change_weather": {
@@ -399,6 +404,7 @@
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)"
 	},
 	"overrides": {
+		"stonehearth/data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json":"file(data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json)",
 		"stonehearth/data/rigs/entities/humans/effects/dart_tube.json":"file(data/rigs/entities/humans/effects/dart_tube.json)",
 		"stonehearth/data/rigs/entities/humans/effects/bonesmith_saw.json":"file(data/rigs/entities/humans/effects/bonesmith_saw.json)",
 		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",

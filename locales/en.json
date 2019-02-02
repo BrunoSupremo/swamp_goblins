@@ -47,7 +47,7 @@
 			"enable_egg_spot":{
 				"display_name":"Lay Egg",
 				"description":"Calls a goblin to lay an egg",
-				"disabled_description":"Already in use",
+				"disabled_description":"Already in use"
 			}
 		},
 		"gm":{
@@ -498,6 +498,10 @@
 				"display_name": "Big G",
 				"description": "Beloved and playful, helped his generation through tough times"
 			},
+			"big_wolf": {
+				"display_name": "Big Wolf",
+				"description": "Playful with allies, a beast for the enemies."
+			},
 			"goblin_spirit": {
 				"display_name": "Goblin Spirit",
 				"description": "An old ancestor summoned back"
@@ -810,7 +814,9 @@
 				},
 				"level_6_data": {
 					"perk_000_name": "Dragon Aura",
-					"perk_000_description": "With the combined power of a (max level) Spirit Walker, they summon an ancient Dragon Spirit into battle"
+					"perk_000_description": "(Goblins only)<br>With the combined power of a (max level) Spirit Walker, they summon an ancient Dragon Spirit into battle",
+					"perk_001_name": "Big Wolf",
+					"perk_001_description": "(Hearthlings only)<br>Summons a big wolf, one that inspires your allies and scares the enemies."
 				}
 			},
 			"beast_tamer_flute": {

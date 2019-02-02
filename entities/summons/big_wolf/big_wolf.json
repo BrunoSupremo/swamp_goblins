@@ -1,24 +1,25 @@
 {
-	"type" : "entity",
-	"mixins": "stonehearth:pets:dragon_whelp_fire",
+	"type": "entity",
+	"mixins": "stonehearth:mixins:monster",
 	"mixintypes": {
 		"player_id": "remove"
 	},
 	"components": {
-		"render_info":{
-			"scale":0.4
+		"render_info": {
+			"animation_table": "/stonehearth/data/rigs/entities/critters/wolf/wolf.json",
+			"scale": 0.3
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(big_wolf.qb)"
+				]
+			}
 		},
 		"stonehearth:equipment": {
 			"items": [
 				"file(weapon.json)"
 			]
-		},
-		"sensor_list": {
-			"sensors": {
-				"sight": {
-					"radius": 64
-				}
-			}
 		},
 		"stonehearth:combat_state": {
 			"stance": "aggressive"
@@ -93,6 +94,14 @@
 				}
 			}
 		},
+		"sensor_list": {
+			"sensors": {
+				"sight": {
+					"type": "sensor",
+					"radius": 64
+				}
+			}
+		},
 		"stonehearth:posture": {
 			"priorities": {
 				"stonehearth:climb_ladder_up": 1100,
@@ -108,11 +117,19 @@
 				"stonehearth:have_shield": 10
 			}
 		},
+		"stonehearth:animal_social": {},
 		"stonehearth:social": {},
 		"stonehearth:conversation": {},
 		"stonehearth:subject_matter": {}
 	},
 	"entity_data": {
+		"stonehearth:conversation_type": "animal",
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.summons.big_wolf.display_name)",
+			"description": "i18n(swamp_goblins:entities.summons.big_wolf.description)",
+			"icon": "file(big_wolf.png)",
+			"category": "pets"
+		},
 		"mixintypes": {
 			"stonehearth:observers:avoid_threatening_entities": "remove"
 		},

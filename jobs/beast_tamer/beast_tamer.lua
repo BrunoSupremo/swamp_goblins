@@ -6,12 +6,30 @@ local Region3 = _radiant.csg.Region3
 local rng = _radiant.math.get_default_rng()
 
 function BeastTamerClass:dragon_aura_equip()
+	local render_info = self._sv._entity:add_component('render_info')
+	local model = render_info:get_model_variant()
+	if model ~= "firefly_goblin" then
+		return
+	end
 	local player_id = radiant.entities.get_player_id(self._sv._entity)
 	local job = stonehearth.job:get_job_info(player_id, "swamp_goblins:jobs:spirit_walker")
 	if job:get_highest_level() >=6 then
 		self:spirit_walker_dragon_aura()
 	else
 		self.spirit_listener = radiant.events.listen_once(stonehearth.job, 'swamp_goblins:spirit_walker_dragon_aura', self, self.spirit_walker_dragon_aura)
+	end
+end
+
+function BeastTamerClass:big_wolf_equip()
+	local render_info = self._sv._entity:add_component('render_info')
+	local model = render_info:get_model_variant()
+	if model == "firefly_goblin" then
+		return
+	end
+	local equipment_component = self._sv._entity:get_component("stonehearth:equipment")
+	if not equipment_component:has_item_type("swamp_goblins:beast_tamer:abilities:summon_big_wolf") then
+		local equipment = radiant.entities.create_entity("swamp_goblins:beast_tamer:abilities:summon_big_wolf")
+		radiant.entities.equip_item(self._sv._entity, equipment)
 	end
 end
 
@@ -39,6 +57,11 @@ end
 function BeastTamerClass:_remove_listeners()
 	CombatJob._remove_listeners(self)
 	self:_remove_spirit_listener()
+end
+
+function BeastTamerClass:summon_big_wolf(delay)
+	local uris = {"swamp_goblins:summons:big_wolf"}
+	self:summon_animals(delay, uris, 1, true)
 end
 
 function BeastTamerClass:summon_dragon_aura(delay)
