@@ -1,0 +1,12 @@
+{
+	"type": "command",
+	"name": "goblinpedia",
+	"display_name": "i18n(swamp_goblins:data.commands.goblinpedia.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.goblinpedia.description)",
+	"icon": "file(goblinpedia.png)",
+	"ordinal": 9,
+	"action": "fire_event",
+	"event_name": "swamp_goblins:goblinpedia",
+	"event_data": {},
+	"visible_to_all_players": true
+}

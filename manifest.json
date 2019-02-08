@@ -88,8 +88,9 @@
 		"varanus_camp_standard":"file(entities/gizmos/varanus_camp_standard)",
 		"goblinpedia":"file(entities/gizmos/goblinpedia)",
 
-		"commands:change_weather":"file(data/commands/change_weather)",
-		"commands:enable_egg_spot":"file(data/commands/enable_egg_spot)",
+		"commands:change_weather":	"file(data/commands/change_weather)",
+		"commands:enable_egg_spot":	"file(data/commands/enable_egg_spot)",
+		"commands:goblinpedia":		"file(data/commands/goblinpedia)",
 
 		"construction:goblin_barricade":"file(entities/construction/goblin_barricade)",
 		"construction:goblin_barricade_single":"file(entities/construction/goblin_barricade_single)",
@@ -99,8 +100,11 @@
 		"consumables:purple_potion":"file(entities/consumables/purple_potion)",
 		"consumables:white_potion":	"file(entities/consumables/white_potion)",
 
-		"containers:chest":"file(entities/containers/chest/chest.json)",
-		"containers:input_bin:wood":"/stonehearth/entities/containers/input_bin_wood/input_bin_wood.json",
+		"containers:chest":						"file(entities/containers/chest)",
+		"containers:input_bin:wood":			"file(entities/containers/input_bin_wood)",
+		"containers:input_shelf:ground:wood":	"file(entities/containers/input_shelf_ground_wood)",
+		"containers:input_shelf:wall:wood":		"file(entities/containers/input_shelf_wall_wood)",
+		"containers:output_box:wood":			"file(entities/containers/output_box_wood)",
 
 		"color_map:goblin":"file(data/materials/color_maps/goblin_color_map.json)",
 
@@ -114,12 +118,14 @@
 		"data:trapping:all_trappable_animals":"file(data/trapping/all_trappable_animals.json)",
 
 		"decoration:big_firefly_essense":	"file(entities/decoration/big_firefly_essense)",
+		"decoration:fiber_rug":				"file(entities/decoration/fiber_rug)",
 		"decoration:goblin_market_stall":	"file(entities/decoration/goblin_market_stall)",
 		"decoration:goblin_large_totem":	"file(entities/decoration/goblin_large_totem)",
 		"decoration:goblin_small_totem":	"file(entities/decoration/goblin_small_totem)",
 		"decoration:large_candle":			"file(entities/decoration/large_candle)",
 		"decoration:small_candle":			"file(entities/decoration/small_candle)",
 		"decoration:wall_candle":			"file(entities/decoration/wall_candle)",
+		"decoration:pole_banner":			"file(entities/decoration/pole_banner)",
 		"decoration:sign:goblin":			"file(entities/decoration/sign/goblin)",
 		"decoration:sign:hammer":			"file(entities/decoration/sign/hammer)",
 		"decoration:sign:mug":				"file(entities/decoration/sign/mug)",
@@ -130,6 +136,7 @@
 		"decoration:sign:tree":				"file(entities/decoration/sign/tree)",
 		"decoration:sign:varanus":			"file(entities/decoration/sign/varanus)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
+		"decoration:window_box:wood":		"file(entities/decoration/window_box_wood)",
 
 		"effects:small_candle_effect":	"file(data/effects/candle_effect/small_candle_effect.json)",
 		"effects:large_candle_effect":	"file(data/effects/candle_effect/large_candle_effect.json)",
@@ -423,11 +430,18 @@
 		"trait_scripts:party_goblin":"file(data/traits/party_goblin/party_goblin_script.lua)"
 	},
 	"ui":{
+		"html":[
+			"file(ui/game/goblinpedia/goblinpedia.html)",
+		],
+		"js":[
+			"file(ui/game/goblinpedia/goblinpedia.js)",
+		],
 		"less": [
 			"file(jobs/shaman/skin/workshop.less)",
 			"file(jobs/bonesmith/skin/workshop.less)",
 			"file(jobs/earthmaster/skin/workshop.less)",
 
+			"file(ui/game/goblinpedia/goblinpedia.less)",
 			"file(ui/game/start_menu/start_menu.less)",
 			"file(ui/shell/select_roster/select_roster.less)",
 			"file(ui/shell/loadout_screen/loadout_screen.less)",

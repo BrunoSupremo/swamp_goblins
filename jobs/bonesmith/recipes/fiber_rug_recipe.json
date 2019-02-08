@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 15,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.fiber_rug.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.fiber_rug.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.fiber_rug.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/fiber_rug/fiber_rug.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:fiber_rug"
+		}
+	]
+}

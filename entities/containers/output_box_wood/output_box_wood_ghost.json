@@ -1,0 +1,29 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(output_box_wood.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": -0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"render_info": {
+			"scale": 0.1,
+			"animation_table": "/stonehearth/data/rigs/entities/containers/output_box/output_box.json"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:entities.containers.output_box_wood.output_box_wood_ghost.display_name)",
+			"description": "i18n(stonehearth:entities.containers.output_box_wood.output_box_wood_ghost.description)",
+			"icon": "file(output_box_wood.png)",
+			"category": "storage",
+			"material_tags": ["wood", "containers", "crafted", "furniture", "stockpile_furniture"]
+		}
+	}
+}

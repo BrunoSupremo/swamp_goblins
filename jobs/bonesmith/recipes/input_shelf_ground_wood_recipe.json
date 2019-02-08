@@ -1,11 +1,10 @@
 {
 	"type": "recipe",
-	"effort": 30,
+	"effort": 10,
 	"work_units": 5,
 	"recipe_name": "i18n(stonehearth:jobs.carpenter.recipes.input_shelf_ground_wood_recipe.recipe_name)",
 	"description": "i18n(stonehearth:jobs.carpenter.recipes.input_shelf_ground_wood_recipe.description)",
-	"flavor": "i18n(stonehearth:jobs.carpenter.recipes.input_shelf_ground_wood_recipe.flavor)",
-	"portrait": "/stonehearth/entities/containers/input_shelf_ground_wood/input_shelf_ground_wood.png",
+	"portrait": "/swamp_goblins/entities/containers/input_shelf_ground_wood/input_shelf_ground_wood.png",
 	"workshop": "swamp_goblins:bonesmith:workbench",
 	"level_requirement": 2,
 	"ingredients": [
@@ -16,7 +15,7 @@
 	],
 	"produces": [
 		{
-			"item": "stonehearth:containers:input_shelf:ground:wood"
+			"item": "swamp_goblins:containers:input_shelf:ground:wood"
 		}
 	]
 }

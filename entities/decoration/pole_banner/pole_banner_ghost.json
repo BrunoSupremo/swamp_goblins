@@ -1,0 +1,30 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(pole_banner.qb)"
+						]
+					}
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0.05 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.pole_banner.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.pole_banner.description)",
+			"icon": "file(pole_banner.png)",
+			"category": "decoration",
+			"material_tags": ["wood", "fiber", "decoration", "stockpile_decoration"]
+		}
+	}
+}

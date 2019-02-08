@@ -3,7 +3,7 @@
 	"type": "entity",
 	"components": {
 		"swamp_goblins:monster_spawner" : {
-			"monster":"stonehearth:monsters:forest:alligator"
+			"monster":"file(varanus.json)"
 		},
 		"model_variants": {
 			"default": {

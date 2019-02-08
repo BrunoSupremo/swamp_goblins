@@ -15,7 +15,7 @@
 			"region": [
 				{
 					"min": { "x": -1, "y": 0, "z": -1 },
-					"max": { "x": 1, "y": 2, "z": 1 }
+					"max": { "x": 1, "y": 1, "z": 1 }
 				}
 			],
 			"adjacency_flags": [
@@ -28,24 +28,24 @@
 			"region": [
 				{
 					"min": { "x": -1, "y": 0, "z": -1 },
-					"max": { "x": 1, "y": 2, "z": 1 }
+					"max": { "x": 1, "y": 1, "z": 1 }
 				}
 			]
 		}
 	},
 	"entity_data": {
 		"stonehearth:net_worth": {
-			"value_in_gold": 10,
+			"value_in_gold": 3,
 			"rarity": "common",
 			"shop_info": {
-				"buyable": false,
+				"buyable": true,
 				"sellable": true,
 				"shopkeeper_level": 2,
 				"shopkeeper_type": "caravan"
 			}
 		},
 		"stonehearth:appeal": {
-			"appeal": 16
+			"appeal": 6
 		},
 		"stonehearth:item_quality": {
 			"variable_quality": true

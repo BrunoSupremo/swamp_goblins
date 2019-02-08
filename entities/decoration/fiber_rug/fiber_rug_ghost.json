@@ -1,0 +1,24 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(fiber_rug.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": -0.5, "y": 0, "z": -0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:floor_decor": {},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.fiber_rug.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.fiber_rug.description)",
+			"icon": "file(fiber_rug.png)"
+		}
+	}
+}

@@ -8,7 +8,7 @@ function SwampGoblins_Monster_Spawner:activate()
 	local json = radiant.entities.get_json(self)
 	self.monster = json.monster or "stonehearth:loot:gold"
 	self.player_id = json.player_id or "forest"
-	self.interval = json.interval or "8h"
+	self.interval = json.interval or "1d"
 
 	if not self._on_removed_from_world_listener then
 		self._on_removed_from_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_removed_from_world', self, self.spawner_removed)

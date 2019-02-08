@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.pole_banner.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.pole_banner.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.pole_banner.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/pole_banner/pole_banner.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 2
+		},
+		{
+			"material": "fiber resource",
+			"count": 5
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:pole_banner"
+		}
+	]
+}

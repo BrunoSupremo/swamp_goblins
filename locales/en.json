@@ -48,6 +48,10 @@
 				"display_name":"Lay Egg",
 				"description":"Calls a goblin to lay an egg",
 				"disabled_description":"Already in use"
+			},
+			"goblinpedia":{
+				"display_name":"Open the Goblinpedia",
+				"description":"Click to read it"
 			}
 		},
 		"gm":{
@@ -241,7 +245,7 @@
 		},
 		"containers":{
 			"chest":{
-				"display_name": "Woven Chest",
+				"display_name": "Wooden Chest",
 				"description": "Stores up to 24 items"
 			}
 		},
@@ -257,6 +261,11 @@
 				"display_name": "Big Firefly Essence",
 				"description": "Has the equivalent of 8 small firefly essence bottles. Glow in the dark",
 				"flavor": "Can be harvested back to 8 bottles later"
+			},
+			"fiber_rug": {
+				"display_name": "Fiber Rug",
+				"description": "A blend of fibers are woven tightly by hand, for whatever foot traffic comes its way.",
+				"flavor": "Easy to clean later."
 			},
 			"large_candle": {
 				"display_name": "Large Candle",
@@ -282,6 +291,11 @@
 			},
 			"goblin_market_stall": {
 				"display_name": "Firefly Market Stall"
+			},
+			"pole_banner": {
+				"display_name": "Pole Banner",
+				"description": "A banner with the clan colors, raised high so everyone can see it",
+				"flavor": "Military units will consider this on their patrol path"
 			},
 			"sign": {
 				"goblin": {
@@ -325,6 +339,10 @@
 				"display_name": "Windchime",
 				"description": "Soothing happy notes",
 				"flavor": "A different melody plays as the wind changes"
+			},
+			"window_box_wood": {
+				"display_name": "Window Box",
+				"description": "A tidy home for the plant."
 			}
 		},
 		"food": {
@@ -858,6 +876,95 @@
 				"tooltips": {
 					"fiber_resource": "Fiber",
 					"bone_resource": "Bone"
+				}
+			},
+			"goblinpedia":{
+				"title":"Goblinpedia",
+				"menu":{
+					"display_name":"Menu",
+					"goblin_button":"Firefly Clan",
+					"goblin":{
+						"growth":{
+							"display_name":"Town Growth",
+							"pedestal":"Pedestal",
+							"egg":"Egg",
+							"baby":"Baby",
+							"goblin":"Goblin",
+						},
+						"jobs":{
+							"display_name":"Jobs",
+							"beast_tamer":"Beast Tamer"
+						}
+					},
+					"swamp_button":"Swamp Biome",
+					"swamp":{
+						"fauna":{
+							"display_name":"Fauna"
+						}
+					}
+				},
+				"page":{
+					"cover":{
+						"title":"About goblins and swamps",
+						"text":"Pick the desired topic to read from the side menu"
+					},
+					"growth":{
+						"pedestal":{
+							"title":"Egg Pedestal",
+							"description1":"A nice cerimonial table for an important ocasion",
+							"category1":"Crafting:",
+							"text1":"The egg pedestal is crafted by the shaman of your clan",
+							"category2":"How to use:",
+							"text2":"After placing it, click on it. In the bottom left you will see its buttons. Click on the egg icon.",
+							"text3":"One of your goblins (worker only) will come to this pedestal and lay an egg."
+						},
+						"egg":{
+							"title":"Goblin Egg",
+							"description1":"Who came first, the egg or the goblin?",
+							"description2":"Many goblins wondered about it for as long as they remember, but no one knows for sure.",
+							"description3":"The goblins current most acceptable hypotesys is that it was neither. It was a tie.",
+							"category1":"How to get:",
+							"text1":"An egg pedestal is needed first, for a goblin to lay his egg.",
+							"category2":"Hatching:",
+							"text2":"After a day, the egg will hatch into a baby goblin.",
+							"category3":"Protecting:",
+							"text3":"Watch out, the egg may attract wild animals."
+						},
+						"baby":{
+							"title":"Baby Goblin",
+							"description1":"Little devils",
+							"category1":"Behaviour:",
+							"text1":"Eat, sleep, ask for attention, repeat.",
+							"category2":"Raising:",
+							"text2":"Just feed it, a lot. Babies eat 5 times more than adults, so watch your stocks!",
+							"category3":"Grow:",
+							"text3":"One more day and they grow into adult goblins."
+						},
+						"goblin":{
+							"title":"Goblin",
+							"description1":"Firefly Goblin",
+							"category1":"Firefly Clan:",
+							"text1":"Now a fully member of society.",
+							"category2":"Jobs:",
+							"text2":"Can be promoted to Warrior, Shaman, Spirit Walker, Trapper, Beast Tamer, Bonesmith and Earthmaster.",
+							"text3":"(With mods, some other jobs may be possible too)",
+							"category3":"The good guys:",
+							"text4":"Different from the green goblins, often associated with trouble, these ones are way more behaved and rooted."
+						}
+					},
+					"jobs":{
+						"beast_tamer":{
+							"title":"Beast Tamer",
+							"description1":"Synergy with the animals",
+							"category1":"Description:",
+							"text1":"Fighter class, promoted from a Trapper. Can summon animals to fight, from little poyos to giant dragons.",
+							"category2":"What it does:",
+							"text2":"Aside from summoning animals, they can trap enemies and cast a firefly cloud, blinding and confusing them.",
+							"text3":"With the help of a Spirit Walker, they join forces and can summon an ancient dragon spirit.",
+							"category3":"Hearthling variation:",
+							"text4":"Hearthlings can be promoted to it too. Though the Spirit Walker teamwork to summon a dragon is now a solo effort to summon a Big Wolf."
+						}
+					}
 				}
 			},
 			"menu": {

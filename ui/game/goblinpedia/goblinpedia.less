@@ -1,0 +1,39 @@
+#goblinpedia.gui {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	.window{
+		width: 800px;
+		height: 700px;
+	}
+	nav{
+		width: 200px;
+		float: left;
+		button{
+			width: 100%;
+		}
+		button + div{display: none; }
+		div{padding-left: 1em; }
+		a{color: #DDD; }
+		a:hover{color: #FFF; }
+	}
+	h1{
+		text-align: center;
+	}
+	img{
+		object-fit: contain;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	p{
+		margin-top: 0;
+	}
+	.page{
+		display: flex;
+		flex-direction: column;
+		padding-left: 20px;
+	}
+	.page:not(.current_page){
+		display: none;
+	}
+}
