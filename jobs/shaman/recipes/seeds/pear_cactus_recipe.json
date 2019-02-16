@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 22,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.pear_cactus_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.pear_cactus_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.pear_cactus_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/pear_cactus/seed/pear_cactus_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"uri": "stonehearth:food:prickly_pear:prickly_pear_basket",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:pear_cactus:seed"
+		},
+		{
+			"item": "stonehearth:plants:pear_cactus:seed"
+		},
+		{
+			"item": "stonehearth:plants:pear_cactus:seed"
+		}
+	]
+}

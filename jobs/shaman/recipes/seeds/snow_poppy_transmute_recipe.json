@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.snow_poppy_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.snow_poppy_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.snow_poppy_transmute_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/snow_poppy_plant/seed/snow_poppy_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"uri": "stonehearth:resources:herb:snow_poppy",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:snow_poppy:seed"
+		},
+		{
+			"item": "stonehearth:plants:snow_poppy:seed"
+		},
+		{
+			"item": "stonehearth:plants:snow_poppy:seed"
+		}
+	]
+}

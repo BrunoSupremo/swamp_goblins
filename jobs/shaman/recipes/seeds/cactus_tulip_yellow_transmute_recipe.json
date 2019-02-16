@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 26,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.cactus_tulip_yellow_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.cactus_tulip_yellow_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.cactus_tulip_yellow_transmute_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/cactus_tulip_plant/yellow/seed/cactus_tulip_yellow_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"uri": "stonehearth:resources:herb:cactus:tulip:yellow",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:cactus:tulip:yellow:seed"
+		},
+		{
+			"item": "stonehearth:plants:cactus:tulip:yellow:seed"
+		},
+		{
+			"item": "stonehearth:plants:cactus:tulip:yellow:seed"
+		}
+	]
+}

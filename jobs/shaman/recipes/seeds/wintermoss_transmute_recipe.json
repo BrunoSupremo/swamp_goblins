@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 22,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.wintermoss_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.wintermoss_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.wintermoss_transmute_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/wintermoss/seed/wintermoss_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"uri": "stonehearth:resources:fiber:wintermoss_bundle",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:wintermoss:seed"
+		},
+		{
+			"item": "stonehearth:plants:wintermoss:seed"
+		},
+		{
+			"item": "stonehearth:plants:wintermoss:seed"
+		}
+	]
+}

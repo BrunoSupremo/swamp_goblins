@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.foxlily_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.foxlily_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.foxlily_transmute_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/foxlily_plant/seed/foxlily_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 6,
+	"ingredients": [
+		{
+			"uri": "stonehearth:plants:foxlily",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:foxlily:seed"
+		},
+		{
+			"item": "stonehearth:plants:foxlily:seed"
+		},
+		{
+			"item": "stonehearth:plants:foxlily:seed"
+		}
+	]
+}

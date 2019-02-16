@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 24,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.wax_plant_purple_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.wax_plant_purple_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.wax_plant_purple_transmute_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/wax_plant_purple/seed/wax_plant_purple_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"uri": "stonehearth:plants:wax_plant:purple",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:wax_plant:purple:seed"
+		},
+		{
+			"item": "stonehearth:plants:wax_plant:purple:seed"
+		},
+		{
+			"item": "stonehearth:plants:wax_plant:purple:seed"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 26,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.cactus_tulip_red_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.cactus_tulip_red_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.cactus_tulip_red_transmute_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/cactus_tulip_plant/red/seed/cactus_tulip_red_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"uri": "stonehearth:resources:herb:cactus:tulip:red",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:cactus:tulip:red:seed"
+		},
+		{
+			"item": "stonehearth:plants:cactus:tulip:red:seed"
+		},
+		{
+			"item": "stonehearth:plants:cactus:tulip:red:seed"
+		}
+	]
+}

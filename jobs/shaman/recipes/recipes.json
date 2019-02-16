@@ -5,106 +5,154 @@
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.workbenches_name)",
 			"recipes": {
 				"shaman_workbench": {
-					"recipe": "file(shaman_workbench_recipe.json)"
+					"recipe": "file(workbenches/shaman_workbench_recipe.json)"
 				},
 				"firefly_token": {
-					"recipe": "file(firefly_token_recipe.json)"
+					"recipe": "file(workbenches/firefly_token_recipe.json)"
 				},
 				"egg_pedestal": {
-					"recipe": "file(egg_pedestal_recipe.json)"
+					"recipe": "file(workbenches/egg_pedestal_recipe.json)"
 				},
 				"goblinpedia": {
-					"recipe": "file(goblinpedia_recipe.json)"
+					"recipe": "file(workbenches/goblinpedia_recipe.json)"
 				}
 			}
 		},
 		"goblin_tools": {
-			"ordinal": 2,
+			"ordinal": 20,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.tools_name)",
 			"recipes": {
 				"bonesmith_talisman": {
-					"recipe": "file(bonesmith_talisman_recipe.json)"
+					"recipe": "file(tools/bonesmith_talisman_recipe.json)"
 				},
 				"scavenger_talisman": {
-					"recipe": "file(scavenger_talisman_recipe.json)"
+					"recipe": "file(tools/scavenger_talisman_recipe.json)"
 				},
 				"warrior_talisman": {
-					"recipe": "file(warrior_talisman_recipe.json)"
+					"recipe": "file(tools/warrior_talisman_recipe.json)"
 				},
 				"earthmaster_talisman": {
-					"recipe": "file(earthmaster_talisman_recipe.json)"
+					"recipe": "file(tools/earthmaster_talisman_recipe.json)"
 				},
 				"beast_tamer_talisman": {
-					"recipe": "file(beast_tamer_talisman_recipe.json)"
+					"recipe": "file(tools/beast_tamer_talisman_recipe.json)"
 				},
 				"spirit_walker_talisman": {
-					"recipe": "file(spirit_walker_talisman_recipe.json)"
+					"recipe": "file(tools/spirit_walker_talisman_recipe.json)"
 				},
 				"shaman_talisman": {
-					"recipe": "file(shaman_talisman_recipe.json)"
+					"recipe": "file(tools/shaman_talisman_recipe.json)"
 				}
 			}
 		},
 		"goblin_potions": {
-			"ordinal": 3,
+			"ordinal": 30,
 			"name": "i18n(swamp_goblins:jobs.shaman.recipes.potions)",
 			"recipes": {
 				"firefly_essense": {
-					"recipe": "file(firefly_essense_recipe.json)"
+					"recipe": "file(potions/firefly_essense_recipe.json)"
 				},
 				"small_herbal_tonic": {
-					"recipe": "file(small_healing_tonic_recipe.json)"
+					"recipe": "file(potions/small_healing_tonic_recipe.json)"
 				}
 			}
 		},
 		"goblin_food": {
-			"ordinal": 4,
+			"ordinal": 40,
 			"name": "i18n(stonehearth:jobs.cook.recipes.food_name)",
 			"recipes": {
 				"plate_of_mushrooms": {
-					"recipe": "file(plate_of_mushrooms_recipe.json)"
+					"recipe": "file(food/plate_of_mushrooms_recipe.json)"
 				},
 				"meat_stew": {
-					"recipe": "file(meat_stew_recipe.json)"
+					"recipe": "file(food/meat_stew_recipe.json)"
 				},
 				"bug_meat_stew": {
-					"recipe": "file(bug_meat_stew_recipe.json)"
+					"recipe": "file(food/bug_meat_stew_recipe.json)"
 				},
 				"bug_meat_kabob": {
-					"recipe": "file(bug_meat_kabob_recipe.json)"
+					"recipe": "file(food/bug_meat_kabob_recipe.json)"
 				},
 				"bacon_and_eggs": {
-					"recipe": "file(bacon_and_eggs_recipe.json)"
+					"recipe": "file(food/bacon_and_eggs_recipe.json)"
 				},
 				"omelette": {
-					"recipe": "file(omelette_recipe.json)"
+					"recipe": "file(food/omelette_recipe.json)"
 				},
 				"fried_eggs_large": {
-					"recipe": "file(fried_eggs_large_recipe.json)"
+					"recipe": "file(food/fried_eggs_large_recipe.json)"
 				},
 				"fried_eggs": {
-					"recipe": "file(fried_eggs_recipe.json)"
+					"recipe": "file(food/fried_eggs_recipe.json)"
 				},
 				"sausage": {
-					"recipe": "file(sausage_recipe.json)"
+					"recipe": "file(food/sausage_recipe.json)"
 				},
 				"roast_sausage": {
-					"recipe": "file(roast_sausage_recipe.json)"
+					"recipe": "file(food/roast_sausage_recipe.json)"
 				}
 			}
 		},
-		"goblin_storage": {
-			"ordinal": 60,
-			"name": "i18n(stonehearth:jobs.carpenter.recipes.storage_name)",
-			"recipes":{
-				"input_bin_woven_red": {
-					"recipe": "file(input_bin_woven_red_recipe.json)"
+		"goblin_seeds": {
+			"ordinal": 50,
+			"name": "i18n(stonehearth:jobs.herbalist.recipes.refined_name)",
+			"recipes": {
+				"brightbell_herbalist": {
+					"recipe": "file(seeds/brightbell_transmute_recipe.json)"
 				},
-				"input_bin_woven_green": {
-					"recipe": "file(input_bin_woven_green_recipe.json)"
+				"frostsnap_herbalist": {
+					"recipe": "file(seeds/frostsnap_transmute_recipe.json)"
 				},
-				"input_bin_woven_blue": {
-					"recipe": "file(input_bin_woven_blue_recipe.json)"
+				"cactus_herbalist": {
+					"recipe": "file(seeds/cactus_transmute_recipe.json)"
+				},
+				"berry_bush_transmute": {
+					"recipe": "file(seeds/berry_bush_transmute_recipe.json)"
+				},
+				"cactus_tulip_blue_transmute": {
+					"recipe": "file(seeds/cactus_tulip_blue_transmute_recipe.json)"
+				},
+				"cactus_tulip_red_transmute": {
+					"recipe": "file(seeds/cactus_tulip_red_transmute_recipe.json)"
+				},
+				"cactus_tulip_yellow_transmute": {
+					"recipe": "file(seeds/cactus_tulip_yellow_transmute_recipe.json)"
+				},
+				"wax_plant_green_transmute": {
+					"recipe": "file(seeds/wax_plant_green_transmute_recipe.json)"
+				},
+				"wax_plant_purple_transmute": {
+					"recipe": "file(seeds/wax_plant_purple_transmute_recipe.json)"
+				},
+				"sunflower_transmute": {
+					"recipe": "file(seeds/sunflower_transmute_recipe.json)"
+				},
+				"foxlily_transmute": {
+					"recipe": "file(seeds/foxlily_transmute_recipe.json)"
+				},
+				"pear_cactus": {
+					"recipe": "file(seeds/pear_cactus_recipe.json)"
+				},
+				"snow_poppy_transmute": {
+					"recipe": "file(seeds/snow_poppy_transmute_recipe.json)"
+				},
+				"wintermoss_transmute": {
+					"recipe": "file(seeds/wintermoss_transmute_recipe.json)"
+				},
+				"tumbleweed_transmute": {
+					"recipe": "file(seeds/tumbleweed_transmute_recipe.json)"
+				},
+				"sweet_potato_transmute": {
+					"recipe": "file(seeds/sweet_potato_transmute_recipe.json)"
+				},
+				"violet_transmute": {
+					"recipe": "file(seeds/violet_transmute_recipe.json)"
+				},
+				"cattail": {
+					"recipe": "file(seeds/cattail_recipe.json)"
+				},
+				"giple": {
+					"recipe": "file(seeds/giple_recipe.json)"
 				}
 			}
 		},
@@ -113,7 +161,16 @@
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.decorations_name)",
 			"recipes": {
 				"big_firefly_essense": {
-					"recipe": "file(big_firefly_essense_recipe.json)"
+					"recipe": "file(decorations/big_firefly_essense_recipe.json)"
+				},
+				"certificate": {
+					"recipe": "file(decorations/certificate_recipe.json)"
+				},
+				"potted_cattail": {
+					"recipe": "file(decorations/potted_cattail_recipe.json)"
+				},
+				"potted_giple": {
+					"recipe": "file(decorations/potted_giple_recipe.json)"
 				}
 			}
 		}

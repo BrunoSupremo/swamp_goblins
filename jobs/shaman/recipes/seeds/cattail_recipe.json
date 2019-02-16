@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 22,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.plants.cattail.display_name)",
+	"description": "i18n(swamp_goblins:entities.plants.cattail.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.tumbleweed_transmute_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/plants/cattail/seed/seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:cattail",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:plants:cattail:seed"
+		},
+		{
+			"item": "swamp_goblins:plants:cattail:seed"
+		},
+		{
+			"item": "swamp_goblins:plants:cattail:seed"
+		}
+	]
+}

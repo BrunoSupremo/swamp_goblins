@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 28,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.sunflower_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.sunflower_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.sunflower_transmute_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/sunflower_plant/seed/sunflower_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 5,
+	"ingredients": [
+		{
+			"uri": "stonehearth:plants:sunflower",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:sunflower:seed"
+		},
+		{
+			"item": "stonehearth:plants:sunflower:seed"
+		},
+		{
+			"item": "stonehearth:plants:sunflower:seed"
+		}
+	]
+}

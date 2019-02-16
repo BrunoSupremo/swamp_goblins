@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.herbalist.recipes.frostsnap_transmute_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.herbalist.recipes.frostsnap_transmute_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.frostsnap_transmute_recipe.flavor)",
+	"portrait": "/stonehearth/entities/plants/frostsnap_plant/seed/frostsnap_plant_seed.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"uri": "stonehearth:resources:herb:frostsnap",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:plants:frostsnap:seed"
+		},
+		{
+			"item": "stonehearth:plants:frostsnap:seed"
+		},
+		{
+			"item": "stonehearth:plants:frostsnap:seed"
+		}
+	]
+}
