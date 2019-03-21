@@ -17,13 +17,24 @@ function CustomOverviewMap:derive_overview_map(full_elevation_map, full_feature_
       for i=1, overview_width do
          a, b = _overview_map_to_feature_map_coords(i, j)
 
-         macro_block_info = {
-            terrain_code = self:_get_terrain_code(a, b, full_elevation_map, full_feature_map),
-            forest_density = self:_get_forest_density(a, b, full_feature_map),
-            wildlife_density = self:_get_wildlife_density(a, b, full_elevation_map),
-            vegetation_density = self:_get_vegetation_density(a, b, full_feature_map),
-            mineral_density = self:_get_mineral_density(a, b, full_elevation_map)
-         }
+         if self._is_sky then --extra_map_options mod compatibility
+            macro_block_info = {
+               terrain_code = self:_get_terrain_code(a, b, full_elevation_map, full_feature_map),
+               is_sky = self:_is_sky(a, b, full_feature_map),
+               forest_density = self:_get_forest_density(a, b, full_feature_map),
+               wildlife_density = self:_get_wildlife_density(a, b, full_elevation_map),
+               vegetation_density = self:_get_vegetation_density(a, b, full_feature_map),
+               mineral_density = self:_get_mineral_density(a, b, full_elevation_map)
+            }
+         else
+            macro_block_info = {
+               terrain_code = self:_get_terrain_code(a, b, full_elevation_map, full_feature_map),
+               forest_density = self:_get_forest_density(a, b, full_feature_map),
+               wildlife_density = self:_get_wildlife_density(a, b, full_elevation_map),
+               vegetation_density = self:_get_vegetation_density(a, b, full_feature_map),
+               mineral_density = self:_get_mineral_density(a, b, full_elevation_map)
+            }
+         end
 
          overview_map:set(i, j, macro_block_info)
       end
