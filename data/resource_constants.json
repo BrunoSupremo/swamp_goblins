@@ -16,6 +16,81 @@
 			"builder_icon_hover": "/swamp_goblins/entities/resources/bone/builder_bone.png",
 			"builder_sound_uri": "stonehearth:sounds:building_wall_wood",
 			"tooltip": "swamp_goblins:ui.game.build_mode2.tooltips.bone_resource"
+		},
+		"wood stockpile_decoration": {
+			"name": "i18n(swamp_goblins:ui.data.constants.wood_decoration)",
+			"default_resource": "stonehearth:decoration:wooden_sign",
+			"icon": "/stonehearth/entities/decoration/wooden_sign/wooden_sign.png"
+		},
+		"wood stockpile_defense": {
+			"name": "i18n(swamp_goblins:ui.data.constants.wood_fence)",
+			"default_resource": "stonehearth:construction:picket_fence:combo",
+			"icon": "/stonehearth/entities/construction/picket_fence_combo/picket_fence_combo.png"
+		},
+		"wood stockpile_furniture": {
+			"name": "i18n(swamp_goblins:ui.data.constants.wood_furniture)",
+			"default_resource": "stonehearth:furniture:wooden_chair",
+			"icon": "/stonehearth/entities/furniture/wooden_chair/wooden_chair.png"
+		},
+		"wood stockpile_portal door": {
+			"name": "i18n(swamp_goblins:ui.data.constants.wood_portal_door)",
+			"default_resource": "stonehearth:portals:wooden_door",
+			"icon": "/stonehearth/entities/construction/wooden_door/wooden_door.png"
+		},
+		"wood stockpile_portal window": {
+			"name": "i18n(swamp_goblins:ui.data.constants.wood_portal_window)",
+			"default_resource": "stonehearth:portals:wooden_window_frame",
+			"icon": "/stonehearth/entities/construction/wooden_window_frame/wooden_window_frame.png"
+		},
+		"stone stockpile_decoration": {
+			"name": "i18n(swamp_goblins:ui.data.constants.stone_decoration)",
+			"default_resource": "stonehearth:decoration:stone_brazier",
+			"icon": "/stonehearth/entities/decoration/stone_brazier/stone_brazier.png"
+		},
+		"stone stockpile_defense": {
+			"name": "i18n(swamp_goblins:ui.data.constants.stone_fence)",
+			"default_resource": "stonehearth:construction:cobblestone_fence:combo",
+			"icon": "/stonehearth/entities/construction/cobblestone_fence_combo/cobblestone_fence_combo.png"
+		},
+		"stone stockpile_furniture": {
+			"name": "i18n(swamp_goblins:ui.data.constants.stone_furniture)",
+			"default_resource": "stonehearth:furniture:stone_chair",
+			"icon": "/stonehearth/entities/furniture/stone_chair/stone_chair.png"
+		},
+		"stone stockpile_portal door": {
+			"name": "i18n(swamp_goblins:ui.data.constants.stone_portal_door)",
+			"default_resource": "stonehearth:portals:stone_door",
+			"icon": "/stonehearth/entities/construction/stone_door/stone_door.png"
+		},
+		"stone stockpile_portal window": {
+			"name": "i18n(swamp_goblins:ui.data.constants.stone_portal_window)",
+			"default_resource": "stonehearth:portals:stone_window_frame",
+			"icon": "/stonehearth/entities/construction/stone_window_frame/stone_window_frame.png"
+		},
+		"clay stockpile_decoration": {
+			"name": "i18n(swamp_goblins:ui.data.constants.clay_decoration)",
+			"default_resource": "stonehearth:decoration:decorative_teapot",
+			"icon": "/stonehearth/entities/decoration/decorative_teapot/decorative_teapot.png"
+		},
+		"clay stockpile_defense": {
+			"name": "i18n(swamp_goblins:ui.data.constants.clay_fence)",
+			"default_resource": "stonehearth:construction:clay_fence:combo",
+			"icon": "/stonehearth/entities/construction/clay_fence_combo/clay_fence_combo.png"
+		},
+		"clay stockpile_furniture": {
+			"name": "i18n(swamp_goblins:ui.data.constants.clay_furniture)",
+			"default_resource": "stonehearth:furniture:simple_clay_chair",
+			"icon": "/stonehearth/entities/furniture/simple_clay_chair/simple_clay_chair.png"
+		},
+		"clay stockpile_portal door": {
+			"name": "i18n(swamp_goblins:ui.data.constants.clay_portal_door)",
+			"default_resource": "stonehearth:construction:red_clay_door",
+			"icon": "/stonehearth/entities/construction/red_clay_door/red_clay_door.png"
+		},
+		"clay stockpile_portal window": {
+			"name": "i18n(swamp_goblins:ui.data.constants.clay_portal_window)",
+			"default_resource": "stonehearth:construction:red_clay_window_frame",
+			"icon": "/stonehearth/entities/construction/red_clay_window_frame/red_clay_window_frame.png"
 		}
 	}
 }

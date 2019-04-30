@@ -69,13 +69,31 @@
 			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)"
 		},
 		"3": {
-			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)"
+			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",
+			"perks": [
+				{
+					"name": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_3_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_3",
+					"icon": "stonehearth/jobs/common/images/unlock_quality_fine.png)",
+					"description": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_3_data.perk_000_description)",
+					"level": 3
+				}
+			]
 		},
 		"4": {
 			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)"
 		},
 		"5": {
-			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)"
+			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",
+			"perks": [
+				{
+					"name": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_5_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_5",
+					"icon": "stonehearth/jobs/common/images/unlock_quality_excellent.png)",
+					"description": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_5_data.perk_000_description)",
+					"level": 5
+				}
+			]
 		},
 		"6": {
 			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)"

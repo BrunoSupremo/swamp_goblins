@@ -1,0 +1,89 @@
+{
+	"type": "encounter",
+	"encounter_type": "create_camp",
+	"rarity": "common",
+	"in_edge": "create_camp",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"wait_for_boss_death",
+			"first_contact"
+		]
+	},
+	"create_camp_info": {
+		"npc_player_id": "firefly_human_encounter",
+		"keep_grass": true,
+		"ctx_entity_registration_path": "firefly_human_encounter",
+		"searcher_delay": "1d+12h",
+		"on_searcher_failure": {
+			"retry": true
+		},
+		"radius": 15,
+		"spawn_range": {
+			"min": 150,
+			"max": 250
+		},
+		"boss": {
+			"from_population": {
+				"role":"nina",
+				"gender":"female",
+				"location": { "x": 4, "y": 4 }
+			},
+			"combat_leash_range": 30,
+			"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:nina"
+		},
+		"citizens": {
+			"workers": {
+				"from_population": {
+					"min": 2,
+					"max": 2,
+					"location": { "x": 4, "z": 4 },
+					"range": 3
+				},
+				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:worker"
+			},
+			"farmer": {
+				"from_population": {
+					"min": 1,
+					"max": 1,
+					"location": { "x": 4, "z": 4 },
+					"range": 3
+				},
+				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:farmer"
+			},
+			"knight": {
+				"from_population": {
+					"min": 1,
+					"max": 1,
+					"location": { "x": 4, "z": 4 },
+					"range": 3
+				},
+				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:knight"
+			}
+		},
+		"pieces": {
+			"campfire": {
+				"info": "file(create_camp/campfire.json)",
+				"position": { "x": 0, "y": 0 }
+			},
+			"banner": {
+				"info": "file(create_camp/banner.json)",
+				"position": { "x": 2, "y": 6 }
+			},
+			"stockpile": {
+				"position": { "x": 6, "y": 8 },
+				"info": "file(create_camp/stockpile.json)"
+			}
+		},
+		"landmark_data": {
+			"brush": "/swamp_goblins/data/models/landmark/32x_firefly_human_encounter.qb",
+			"brush_mask": "/swamp_goblins/data/models/landmark/32x_firefly_human_encounter_mask.qb",
+			"landmark_block_types": "stonehearth:landmark_blocks",
+			"translation":{
+				"x":1,
+				"y":0,
+				"z":1
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(potted_cattail.qb)"
+						]
+					}
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.potted_cattail.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.potted_cattail.description)",
+			"icon": "file(clay_potted_cattail.png)",
+			"category": "decoration",
+			"material_tags": ["clay", "decoration", "stockpile_decoration"]
+		}
+	}
+}

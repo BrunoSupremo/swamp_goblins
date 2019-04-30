@@ -1,6 +1,9 @@
 {
 	"type": "entity",
-	"mixins": "stonehearth:mixins:placed_object",
+	"mixins": [
+		"stonehearth:mixins:placed_object",
+		"stonehearth:mixins:destructable_object"
+	],
 	"components": {
 		"render_info" : {
 			"scale":0.08
@@ -20,6 +23,24 @@
 		"stonehearth:evolve": {},
 		"effect_list": {
 			"default": "stonehearth:effects:talisman_glow"
+		},
+		"stonehearth:attributes": {
+			"menace": {
+				"type": "basic",
+				"value": 100
+			},
+			"max_health": {
+				"type": "basic",
+				"value": 1
+			}
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			]
 		}
 	},
 	"entity_data": {

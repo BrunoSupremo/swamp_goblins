@@ -1,10 +1,10 @@
 {
 	"type": "recipe",
 	"work_units": 3,
-	"recipe_name": "i18n(swamp_goblins:entities.decoration.sign.varanus.display_name)",
-	"description": "i18n(swamp_goblins:entities.decoration.sign.varanus.description)",
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wood_sign.varanus.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wood_sign.varanus.description)",
 	"flavor": "",
-	"portrait": "/swamp_goblins/entities/decoration/sign/varanus/varanus.png",
+	"portrait": "/swamp_goblins/entities/decoration/wood_sign/varanus/varanus.png",
 	"workshop": "swamp_goblins:bonesmith:workbench",
 	"ingredients": [
 		{
@@ -18,7 +18,7 @@
 	],
 	"produces": [
 		{
-			"item": "swamp_goblins:decoration:sign:varanus"
+			"item": "swamp_goblins:decoration:wood_sign:varanus"
 		}
 	]
 }

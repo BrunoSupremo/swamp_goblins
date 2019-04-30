@@ -1,0 +1,10 @@
+{
+	"type" : "camp_piece",
+	"script" : "stonehearth:game_master:camp_piece:stockpile",
+	"script_info" : {
+		"npc_player_id" : "firefly_human_encounter",
+		"stockpile_size" : { "w" : 5, "h" : 5 }, 
+		"ctx_entity_registration_path" : "firefly_human_encounter",
+		"entity_name" : "stockpile"
+	}
+}

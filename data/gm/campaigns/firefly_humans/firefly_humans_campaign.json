@@ -1,0 +1,18 @@
+{
+	"type": "campaign",
+	"rarity": "common",
+	"can_start": {
+		"test_1": {
+			"game_mode_check": {
+				"type": "deny_if",
+				"item": "game_mode",
+				"value": "stonehearth:game_mode:peaceful"
+			}
+		}
+	},
+	"arcs": {
+		"trigger": {
+			"human_camp": "file(arcs/trigger/encounter_list.json)"
+		}
+	}
+}

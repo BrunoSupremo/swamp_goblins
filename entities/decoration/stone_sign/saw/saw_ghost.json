@@ -1,0 +1,19 @@
+{
+	"mixins": "swamp_goblins:mixins:sign:stone_ghost",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(saw.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.wood_sign.saw.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.wood_sign.saw.description)",
+			"icon": "file(saw.png)"
+		}
+	}
+}

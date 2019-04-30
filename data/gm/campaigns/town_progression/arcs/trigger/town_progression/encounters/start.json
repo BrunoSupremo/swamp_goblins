@@ -2,7 +2,13 @@
 	"type": "encounter",
 	"encounter_type": "wait_for_requirements_met",
 	"in_edge": "start",
-	"out_edge": "before_chosing_banner",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"before_chosing_banner",
+			"wait_travel"
+		]
+	},
 	"wait_for_requirements_met_info": {
 		"requirements": {
 			"days_elapsed_requirement": {

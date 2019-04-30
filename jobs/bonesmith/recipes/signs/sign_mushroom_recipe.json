@@ -1,10 +1,10 @@
 {
 	"type": "recipe",
 	"work_units": 3,
-	"recipe_name": "i18n(swamp_goblins:entities.decoration.sign.mushroom.display_name)",
-	"description": "i18n(swamp_goblins:entities.decoration.sign.mushroom.description)",
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wood_sign.mushroom.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wood_sign.mushroom.description)",
 	"flavor": "",
-	"portrait": "/swamp_goblins/entities/decoration/sign/mushroom/mushroom.png",
+	"portrait": "/swamp_goblins/entities/decoration/wood_sign/mushroom/mushroom.png",
 	"workshop": "swamp_goblins:bonesmith:workbench",
 	"ingredients": [
 		{
@@ -18,7 +18,7 @@
 	],
 	"produces": [
 		{
-			"item": "swamp_goblins:decoration:sign:mushroom"
+			"item": "swamp_goblins:decoration:wood_sign:mushroom"
 		}
 	]
 }

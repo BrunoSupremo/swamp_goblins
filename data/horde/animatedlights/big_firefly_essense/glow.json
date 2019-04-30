@@ -1,0 +1,37 @@
+{
+	"name": "essenseGlow",
+	"duration": 2000,
+	"loops": true,
+	"intensity": {
+		"over_lifetime": {
+			"kind": "RANDOM_BETWEEN_CURVES",
+			"values": [
+				[
+					[0, 0.1],
+					[0.5, 0],
+					[1, 0.1]
+				],
+				[
+					[0, 0.1],
+					[0.5, 0.7],
+					[1, 0.1]
+				]
+			]
+		}
+	},
+	"radius": {
+		"start": {
+			"kind": "CONSTANT",
+			"values": [7]
+		}
+	},
+	"color": {
+		"start": {
+			"kind": "RANDOM_BETWEEN",
+			"values": [
+				[0, 0.6, 0.1, 1],
+				[0, 0.7, 0.5, 1]
+			]
+		}
+	}
+}

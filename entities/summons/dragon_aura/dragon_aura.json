@@ -6,11 +6,13 @@
 	},
 	"components": {
 		"render_info":{
-			"scale":0.4
+			"scale":0.4,
+			"material": "materials/transparent_with_depth_bloom.material.json"
 		},
 		"stonehearth:equipment": {
 			"items": [
-				"file(weapon.json)"
+				"file(weapon.json)",
+				"file(effect.json)"
 			]
 		},
 		"sensor_list": {

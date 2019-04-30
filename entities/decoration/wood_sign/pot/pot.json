@@ -1,0 +1,13 @@
+{
+	"type": "entity",
+	"mixins": [
+		"file(pot_ghost.json)",
+		"swamp_goblins:mixins:sign:wood"
+	],
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(pot_iconic.json)",
+			"ghost_form": "file(pot_ghost.json)"
+		}
+	}
+}

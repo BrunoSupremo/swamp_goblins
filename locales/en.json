@@ -52,9 +52,14 @@
 			"goblinpedia":{
 				"display_name":"Open the Goblinpedia",
 				"description":"Click to read it"
+			},
+			"travel":{
+				"display_name":"Travel",
+				"description":"Chose which goblins will reembark"
 			}
 		},
 		"gm":{
+			"nina":"Nina",
 			"campaigns":{
 				"town_progression":{
 					"trigger":{
@@ -62,6 +67,11 @@
 							"title":"It is time",
 							"dialog_title":"It is time",
 							"message":"No need to wait any longer, the shaman is ready, and we are all set.<br>Let's pick our banner."
+						},
+						"explain_egg":{
+							"title":"Daily Report?",
+							"dialog_title":"Daily Report?",
+							"message":"What is a 'Daily Report'? A way to get new citizens? We don't have such a thing. <br> Use the Goblinpedia, crafted by the Shaman, to learn how it is done."
 						}
 					}
 				}
@@ -116,7 +126,8 @@
 				"hut": "Hut",
 				"temple": "Temple",
 				"tent": "Tent",
-				"trading": "Trading"
+				"trading": "Trading",
+				"garden": "Garden"
 			}
 		},
 		"traits": {
@@ -317,7 +328,25 @@
 				"description": "Natural from the swamp biome, now for your home",
 				"flavor": "Hey, can you water my plants while I'm away?"
 			},
-			"sign": {
+			"potted_sapling": {
+				"display_name": "Potted Sapling",
+				"description": "Natural from the swamp biome, now for your home",
+				"flavor": "Hey, can you water my plants while I'm away?"
+			},
+			"travel_stall": {
+				"display_name": "Firefly Travel Stall",
+				"description": "Send goblins into reembarkations"
+			},
+			"windchime": {
+				"display_name": "Windchime",
+				"description": "Soothing happy notes",
+				"flavor": "A different melody plays as the wind changes"
+			},
+			"window_box_wood": {
+				"display_name": "Window Box",
+				"description": "A tidy home for the plant."
+			},
+			"wood_sign": {
 				"goblin": {
 					"display_name": "Goblin Sign",
 					"description": "A sign with a goblin face"
@@ -354,15 +383,6 @@
 					"display_name": "Varanus Sign",
 					"description": "A sign with a varanus face"
 				}
-			},
-			"windchime": {
-				"display_name": "Windchime",
-				"description": "Soothing happy notes",
-				"flavor": "A different melody plays as the wind changes"
-			},
-			"window_box_wood": {
-				"display_name": "Window Box",
-				"description": "A tidy home for the plant."
 			}
 		},
 		"food": {
@@ -434,6 +454,9 @@
 			"bear": {
 				"display_name": "Swamp Bear",
 				"description": "Big and fast, a little muddy, yet fluffy"
+			},
+			"doodles_egg_raider": {
+				"description": "Sensed a nutritious goblin egg"
 			},
 			"varanus_nest": {
 				"display_name": "Varanus Nest",
@@ -638,8 +661,16 @@
 		"shaman": {
 			"shaman_description": {
 				"display_name": "Shaman",
-				"description": "Takes care of the clan well-being, crafting them armors, potions and food",
-				"requirements": "Crafted by another Shaman"
+				"description": "Takes care of the clan well-being and growth",
+				"requirements": "Crafted by another Shaman",
+				"level_3_data": {
+					"perk_000_name": "Journeyman's Knowledge",
+					"perk_000_description": "When inspiration strikes, the Shaman may now craft an especially Fine quality of item."
+				},
+				"level_5_data": {
+					"perk_000_name": "Master's Insight",
+					"perk_000_description": "The Shaman can now create items of Excellent quality, and will make Fine quality items more often."
+				}
 			},
 			"shaman_workbench": {
 				"display_name": "Shaman Workbench",
@@ -782,7 +813,15 @@
 			"earthmaster_description": {
 				"display_name": "Earthmaster",
 				"description": "Craft advance items and decorations using hard materials like stone and clay",
-				"requirements": "Crafted by Shaman"
+				"requirements": "Crafted by Shaman",
+				"level_3_data": {
+					"perk_000_name": "Journeyman's Knowledge",
+					"perk_000_description": "When inspiration strikes, the Earthmaster may now craft an especially Fine quality of item."
+				},
+				"level_5_data": {
+					"perk_000_name": "Master's Insight",
+					"perk_000_description": "The Earthmaster can now create items of Excellent quality, and will make Fine quality items more often."
+				}
 			},
 			"earthmaster_chisel": {
 				"display_name": "Earthmaster Chisel",
@@ -793,15 +832,75 @@
 				},
 				"description": "To sculpt hard materials"
 			},
-			"earthmaster_workbench": {
-				"display_name": "Earthmaster Workbench"
+			"magmasmith_workbench": {
+				"display_name": "Magma Workbench",
+				"description": "Lava flows from within"
+			},
+			"mason_pedestal": {
+				"display_name": "Masonry Pedestal",
+				"description": "Craft in a well-lit space."
+			},
+			"potter_kiln": {
+				"display_name": "Pottery Kiln",
+				"description": "Hardens basic clay objects."
+			},
+			"potter_workbench": {
+				"display_name": "Pottery Wheel",
+				"description": "For making symmetrical clay goods"
+			},
+			"recipes":{
+				"reclaim":"Reclaim",
+				"burn":{
+					"description":"Burn the object into coal",
+					"flavor":"Not much can be saved",
+					"decoration":"Burn Wood Decoration",
+					"fence":"Burn Wood Defense",
+					"furniture":"Burn Wood Furniture",
+					"portal":"Burn Wood Door",
+					"window":"Burn Wood Window"
+				},
+				"wood":{
+					"description":"Break the object back into a wood piece",
+					"flavor":"Not much can be saved",
+					"decoration":"Break Wood Decoration",
+					"fence":"Break Wood Defense",
+					"furniture":"Break Wood Furniture",
+					"portal":"Break Wood Door",
+					"window":"Break Wood Window"
+				},
+				"stone":{
+					"description":"Break the object back into a stone piece",
+					"flavor":"Not much can be saved",
+					"decoration":"Break Stone Decoration",
+					"fence":"Break Stone Defense",
+					"furniture":"Break Stone Furniture",
+					"portal":"Break Stone Door",
+					"window":"Break Stone Window"
+				},
+				"clay":{
+					"description":"Break the object back into a clay piece",
+					"flavor":"Not much can be saved",
+					"decoration":"Break Clay Decoration",
+					"fence":	"Break Clay Defense",
+					"furniture":"Break Clay Furniture",
+					"portal":	"Break Clay Door",
+					"window":	"Break Clay Window"
+				}
 			}
 		},
 		"bonesmith": {
 			"bonesmith_description": {
 				"display_name": "Bonesmith",
 				"description": "Crafts basic items with materials like wood and fiber",
-				"requirements": "Crafted by Shaman"
+				"requirements": "Crafted by Shaman",
+				"level_3_data": {
+					"perk_000_name": "Journeyman's Knowledge",
+					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item."
+				},
+				"level_5_data": {
+					"perk_000_name": "Master's Insight",
+					"perk_000_description": "The Bonesmith can now create items of Excellent quality, and will make Fine quality items more often."
+				}
 			},
 			"bonesmith_saw": {
 				"display_name": "Bonesmith Saw",
@@ -891,6 +990,28 @@
 		"firefly_clan": "Firefly Clan"
 	},
 	"ui": {
+		"data":{
+			"constants":{
+				"clay_decoration":"Any Clay Decoration",
+				"clay_fence":"Any Clay Fence",
+				"clay_furniture":"Any Clay Furniture",
+				"clay_portal_door":"Any Clay Door",
+				"clay_portal_window":"Any Clay Window",
+
+				"stone_decoration":"Any Stone Decoration",
+				"stone_fence":"Any Stone Fence",
+				"stone_furniture":"Any Stone Furniture",
+				"stone_portal_door":"Any Stone Door",
+				"stone_portal_window":"Any Stone Window",
+
+				"wood_decoration":"Any Wood Decoration",
+				"wood_fence":"Any Wood Fence",
+				"wood_furniture":"Any Wood Furniture",
+				"wood_portal_door":"Any Wood Door",
+				"wood_portal_window":"Any Wood Window"
+			},
+			"raid_egg":"Watch out! Some bug is after our egg!"
+		},
 		"game": {
 			"build_mode2": {
 				"tooltips": {
@@ -902,10 +1023,10 @@
 				"title":"Goblinpedia",
 				"menu":{
 					"display_name":"Menu",
-					"goblin_button":"Firefly Clan",
-					"goblin":{
+					"goblins":{
+						"display_name":"Firefly Clan",
 						"growth":{
-							"display_name":"Town Growth",
+							"display_name":"Clan Growth",
 							"pedestal":"Pedestal",
 							"egg":"Egg",
 							"baby":"Baby",
@@ -913,17 +1034,19 @@
 						},
 						"jobs":{
 							"display_name":"Jobs",
-							"beast_tamer":"Beast Tamer"
+							"beast_tamer":"Beast Tamer",
+							"shaman":"Shaman"
 						}
 					},
-					"swamp_button":"Swamp Biome",
 					"swamp":{
+						"display_name":"Swamp Biome",
 						"fauna":{
-							"display_name":"Fauna"
+							"display_name":"Fauna",
+							"firefly":"Firefly"
 						}
 					}
 				},
-				"page":{
+				"pages":{
 					"cover":{
 						"title":"About goblins and swamps",
 						"text":"Pick the desired topic to read from the side menu"
@@ -932,57 +1055,120 @@
 						"pedestal":{
 							"title":"Egg Pedestal",
 							"description1":"A nice cerimonial table for an important ocasion",
-							"category1":"Crafting:",
-							"text1":"The egg pedestal is crafted by the shaman of your clan",
-							"category2":"How to use:",
-							"text2":"After placing it, click on it. In the bottom left you will see its buttons. Click on the egg icon.",
-							"text3":"One of your goblins (worker only) will come to this pedestal and lay an egg."
+							"topic1":{
+								"title":"Crafting:",
+								"desc1":"The egg pedestal is crafted by the shaman of your clan"
+							},
+							"topic2":{
+								"title":"How to use:",
+								"desc1":"After placing it, click on it. In the bottom left you will see its buttons. Click on the egg icon.",
+								"desc2":"One of your goblins (worker only) will come to this pedestal and lay an egg."
+							}
 						},
 						"egg":{
 							"title":"Goblin Egg",
 							"description1":"Who came first, the egg or the goblin?",
 							"description2":"Many goblins wondered about it for as long as they remember, but no one knows for sure.",
 							"description3":"The goblins current most acceptable hypotesys is that it was neither. It was a tie.",
-							"category1":"How to get:",
-							"text1":"An egg pedestal is needed first, for a goblin to lay his egg.",
-							"category2":"Hatching:",
-							"text2":"After a day, the egg will hatch into a baby goblin.",
-							"category3":"Protecting:",
-							"text3":"Watch out, the egg may attract wild animals."
+							"topic1":{
+								"title":"How to get:",
+								"desc1":"An egg pedestal is needed first, for a goblin to lay his egg."
+							},
+							"topic2":{
+								"title":"Hatching:",
+								"desc1":"After a day, the egg will hatch into a baby goblin."
+							},
+							"topic3":{
+								"title":"Protecting:",
+								"desc1":"Watch out, the egg attracts wild animals."
+							}
 						},
 						"baby":{
 							"title":"Baby Goblin",
 							"description1":"Little devils",
-							"category1":"Behaviour:",
-							"text1":"Eat, sleep, ask for attention, repeat.",
-							"category2":"Raising:",
-							"text2":"Just feed it, a lot. Babies eat 5 times more than adults, so watch your stocks!",
-							"category3":"Grow:",
-							"text3":"One more day and they grow into adult goblins."
+							"topic1":{
+								"title":"Behaviour:",
+								"desc1":"Eat, sleep, ask for attention, repeat."
+							},
+							"topic2":{
+								"title":"Raising:",
+								"desc1":"Just feed it, a lot. Babies eat 5 times more than adults, so watch your stocks!"
+							},
+							"topic3":{
+								"title":"Grow:",
+								"desc1":"One more day and they grow into adult goblins."
+							}
 						},
 						"goblin":{
 							"title":"Goblin",
 							"description1":"Firefly Goblin",
-							"category1":"Firefly Clan:",
-							"text1":"Now a fully member of society.",
-							"category2":"Jobs:",
-							"text2":"Can be promoted to Warrior, Shaman, Spirit Walker, Trapper, Beast Tamer, Bonesmith and Earthmaster.",
-							"text3":"(With mods, some other jobs may be possible too)",
-							"category3":"The good guys:",
-							"text4":"Different from the green goblins, often associated with trouble, these ones are way more behaved and rooted."
+							"topic1":{
+								"title":"Firefly Clan:",
+								"desc1":"Now a fully member of society."
+							},
+							"topic2":{
+								"title":"Jobs:",
+								"desc1":"Can be promoted to Warrior, Shaman, Spirit Walker, Trapper, Beast Tamer, Bonesmith and Earthmaster.",
+								"desc2":"(With mods, some other jobs may be possible too)"
+							},
+							"topic3":{
+								"title":"The good guys:",
+								"desc1":"Different from the green goblins, often associated with trouble, these ones are way more behaved and rooted."
+							}
 						}
 					},
 					"jobs":{
 						"beast_tamer":{
 							"title":"Beast Tamer",
 							"description1":"Synergy with the animals",
-							"category1":"Description:",
-							"text1":"Fighter class, promoted from a Trapper. Can summon animals to fight, from little poyos to giant dragons.",
-							"category2":"What it does:",
-							"text2":"Aside from summoning animals, they can trap enemies and cast a firefly cloud, blinding and confusing them.",
-							"text3":"With the help of a Spirit Walker, they join forces and can summon an ancient dragon spirit.",
-							"category3":"Hearthling variation:",
-							"text4":"Hearthlings can be promoted to it too. Though the Spirit Walker teamwork to summon a dragon is now a solo effort to summon a Big Wolf."
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Fighter class, promoted from a Trapper. Can summon animals to fight, from little poyos to giant dragons."
+							},
+							"topic2":{
+								"title":"What it does:",
+								"desc1":"Aside from summoning animals, they can trap enemies and cast a firefly cloud, blinding and confusing them.",
+								"desc2":"With the help of a Spirit Walker, they join forces and can summon an ancient dragon spirit."
+							},
+							"topic3":{
+								"title":"Hearthling variation:",
+								"desc1":"Hearthlings can be promoted to it too. Though the Spirit Walker teamwork to summon a dragon is now a solo effort to summon a Big Wolf."
+							}
+						},
+						"shaman":{
+							"title":"Shaman",
+							"description1":"The clan starter class",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Starter crafter class. Central figure for the clan well-being and growth."
+							},
+							"topic2":{
+								"title":"What it does:",
+								"desc1":"Harvest firefly essense used to imbue items in magic, some cooking and herbalism.",
+								"desc2":"Crafts all the clan talismans. Can also craft the egg pedestal, an important item for the clan growth."
+							},
+							"topic3":{
+								"title":"Promotion:",
+								"desc1":"Shamans can later be promoted into Spirit Walkers, a summoner/healer class."
+							}
+						}
+					},
+					"fauna":{
+						"firefly":{
+							"title":"Firefly",
+							"description1":"Lights in the night",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Flying insects that glows at night. Loved by the goblins."
+							},
+							"topic2":{
+								"title":"Behaviour:",
+								"desc1":"Usually group in big clouds glowing at night under the trees"
+							},
+							"topic3":{
+								"title":"Interaction:",
+								"desc1":"Can't be interacted directly, but shamans can extract magic powers from them, hence their clan name."
+							}
 						}
 					}
 				}

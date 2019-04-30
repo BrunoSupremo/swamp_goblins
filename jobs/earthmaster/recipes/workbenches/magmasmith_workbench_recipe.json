@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.magmasmith_workbench.display_name)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.magmasmith_workbench.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/jobs/earthmaster/magmasmith_workbench/magmasmith_workbench.png",
+	"work_effect": "work",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		},
+		{
+			"uri": "stonehearth:resources:coal:lump_of_coal",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:earthmaster:magmasmith_workbench"
+		}
+	]
+}

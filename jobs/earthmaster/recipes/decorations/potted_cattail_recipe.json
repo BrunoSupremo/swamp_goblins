@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"effort": 25,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.potted_cattail.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.potted_cattail.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.potted_cattail.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/clay_potted_cattail/clay_potted_cattail.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		},
+		{
+			"uri": "swamp_goblins:plants:cattail",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:clay_potted_cattail"
+		}
+	]
+}

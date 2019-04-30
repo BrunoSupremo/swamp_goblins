@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 15,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.travel_stall.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.travel_stall.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/travel_stall/travel_stall.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 3
+		},
+		{
+			"material": "fiber resource",
+			"count": 2
+		},
+		{
+			"uri": "swamp_goblins:decoration:wood_sign:goblin",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:travel_stall"
+		}
+	]
+}

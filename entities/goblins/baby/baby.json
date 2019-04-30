@@ -31,7 +31,14 @@
 			"min_sleepiness": {
 				"type": "basic",
 				"value": 20
+			},
+			"max_health": {
+				"type": "basic",
+				"value": 50
 			}
+		},
+		"stonehearth:combat_state": {
+			"stance": "passive"
 		},
 		"stonehearth:evolve": {}
 	},

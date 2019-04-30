@@ -1,0 +1,10 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_event",
+	"in_edge": "wait_travel",
+	"out_edge": "travel",
+	"wait_for_event_info": {
+		"event": "swamp_goblins:travel",
+		"repeatable": true
+	}
+}

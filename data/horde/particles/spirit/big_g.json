@@ -1,0 +1,103 @@
+{
+	"name": "fire",
+	"duration": 150,
+	"material": "materials/cubemitter.material.json",
+	"loops": true,
+	"mesh": {
+		"file": "",
+		"matrix": "",
+		"offset": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"emission": {
+		"rate": {
+			"kind": "BURST",
+			"values": [
+				[0, 2]
+			]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [90]
+		},
+		"origin": {
+			"surface": "RECTANGLE",
+			"values": [0.15, 0.5, 0, 0]
+		},
+		"translation_y": {
+			"kind": "CONSTANT",
+			"values": [-0.2]
+		},
+		"translation_z": {
+			"kind": "CONSTANT",
+			"values": [-0.1]
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [1500]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.4]
+			}
+		},
+		"acceleration": {},
+		"velocity": {
+			"over_lifetime_y": {
+				"kind": "CONSTANT",
+				"values": [-0.01]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [1.5]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0.5],
+					[1, 1.5]
+				]
+			},
+			"over_lifetime_y": {
+				"kind": "CURVE",
+				"values": [
+					[0, 1],
+					[1, 0]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.4, 0.8, 1, 1]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0.957, 0.97, 0.735],
+					[1, 0.955, 0.956, 0.914]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.085, 0.044918722750620886],
+					[0.3355804443359375, 0.03981251885706018],
+					[0.685, 0.024618812615439398],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

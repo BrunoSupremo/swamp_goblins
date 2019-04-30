@@ -1,0 +1,13 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:item_properties",
+	"components": {
+		"effect_list": {
+			"default": "swamp_goblins:effects:spirit:dragon_aura"
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "bodyPosition",
+			"render_type": "attach_to_bone"
+		}
+	}
+}

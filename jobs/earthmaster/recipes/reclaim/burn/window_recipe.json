@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.recipes.burn.window)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.recipes.burn.description)",
+	"flavor": "i18n(swamp_goblins:jobs.earthmaster.recipes.burn.flavor)",
+	"portrait": "/stonehearth/entities/resources/coal/lump_of_coal/lump_of_coal.png",
+	"workshop": "swamp_goblins:earthmaster:magmasmith_workbench",
+	"work_effect": "loopable_idle_warm_hands",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"material": "wood stockpile_portal window",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:resources:coal:lump_of_coal"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"type": "monster_tuning",
+	"estimated_difficulty": 1,
+	"job": "stonehearth:jobs:knight",
+	"attributes": {
+		"max_health": 160,
+		"muscle": 40,
+		"menace": 90,
+		"courage": 220,
+		"speed": 70,
+		"additive_armor_modifier": 5,
+		"exp_reward": 40
+	},
+	"equipment": {
+		"torso": "stonehearth:knight:outfit",
+		"offhand": "stonehearth:armor:knights_shield",
+		"mainhand": "stonehearth:weapons:bronze_sword",
+		"helmet": "stonehearth/jobs/knight/knight_helm/knight_helm.json"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"type": "encounter",
+	"encounter_type": "reembarkation",
+	"in_edge": "travel",
+	"out_edge": "destroy_travel",
+	"unique": true,
+	"reembarkation_info": {
+		"reject_out_edge": "destroy_travel"
+	}
+}

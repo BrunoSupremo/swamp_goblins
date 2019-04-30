@@ -4,7 +4,9 @@
 	"components": {
 		"stonehearth:equipment": {
 			"items": [
-				"stonehearth:abilities:ogre_attack_abilities"
+				"stonehearth:abilities:ogre_attack_abilities",
+				"file(weapon.json)",
+				"file(effect.json)"
 			]
 		},
 		"render_info" : {

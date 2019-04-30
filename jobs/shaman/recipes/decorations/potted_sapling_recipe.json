@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"effort": 25,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.potted_sapling.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.potted_sapling.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.potted_sapling.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/potted_sapling/potted_sapling.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:potted_sapling"
+		}
+	]
+}

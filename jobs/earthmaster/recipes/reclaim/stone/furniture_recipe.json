@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.recipes.stone.furniture)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.recipes.stone.description)",
+	"flavor": "i18n(swamp_goblins:jobs.earthmaster.recipes.stone.flavor)",
+	"portrait": "/stonehearth/entities/resources/stone/stone.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"work_effect": "work",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "stone stockpile_furniture",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:resources:stone:hunk_of_stone"
+		}
+	]
+}

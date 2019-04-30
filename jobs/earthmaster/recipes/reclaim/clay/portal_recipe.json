@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.recipes.clay.portal)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.recipes.clay.description)",
+	"flavor": "i18n(swamp_goblins:jobs.earthmaster.recipes.clay.flavor)",
+	"portrait": "/stonehearth/entities/resources/clay/clay.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"work_effect": "work",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "clay stockpile_portal door",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:resources:clay:clay_mound"
+		}
+	]
+}

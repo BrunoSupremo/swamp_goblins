@@ -1,0 +1,13 @@
+{
+	"type": "entity",
+	"mixins": [
+		"file(varanus_ghost.json)",
+		"swamp_goblins:mixins:sign:stone"
+	],
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(varanus_iconic.json)",
+			"ghost_form": "file(varanus_ghost.json)"
+		}
+	}
+}

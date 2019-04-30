@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 1,
+	"recipe_name": "i18n(stonehearth:jobs.potter.recipes.clay_pile_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.potter.recipes.clay_pile_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.clay_pile_recipe.flavor)",
+	"portrait": "/stonehearth/entities/containers/clay_pile/clay_pile.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 18
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:containers:clay_pile"
+		}
+	]
+}

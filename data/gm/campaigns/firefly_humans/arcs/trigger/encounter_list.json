@@ -1,0 +1,13 @@
+{
+	"type": "arc",
+	"rarity": "common",
+	"encounters": {
+		"start": "file(encounters/start.json)",
+		"create_camp": "file(encounters/create_camp.json)",
+		"wait_for_boss_death": "file(encounters/wait_for_boss_death.json)",
+		"boss_death_dialog": "file(encounters/boss_death_dialog.json)",
+
+		"first_contact": "file(encounters/first_contact.json)",
+		
+	}
+}

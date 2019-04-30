@@ -1,10 +1,10 @@
 {
 	"type": "recipe",
 	"work_units": 3,
-	"recipe_name": "i18n(swamp_goblins:entities.decoration.sign.goblin.display_name)",
-	"description": "i18n(swamp_goblins:entities.decoration.sign.goblin.description)",
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wood_sign.goblin.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wood_sign.goblin.description)",
 	"flavor": "",
-	"portrait": "/swamp_goblins/entities/decoration/sign/goblin/goblin.png",
+	"portrait": "/swamp_goblins/entities/decoration/wood_sign/goblin/goblin.png",
 	"workshop": "swamp_goblins:bonesmith:workbench",
 	"ingredients": [
 		{
@@ -18,7 +18,7 @@
 	],
 	"produces": [
 		{
-			"item": "swamp_goblins:decoration:sign:goblin"
+			"item": "swamp_goblins:decoration:wood_sign:goblin"
 		}
 	]
 }

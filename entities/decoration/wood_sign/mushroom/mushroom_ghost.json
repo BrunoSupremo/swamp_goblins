@@ -1,0 +1,19 @@
+{
+	"mixins": "swamp_goblins:mixins:sign:wood_ghost",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(mushroom.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.wood_sign.mushroom.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.wood_sign.mushroom.description)",
+			"icon": "file(mushroom.png)"
+		}
+	}
+}

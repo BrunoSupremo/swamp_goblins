@@ -1,0 +1,23 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:monster",
+	"components": {
+		"render_info": {
+			"animation_table": "stonehearth/data/rigs/entities/humans/skeletons/female.json"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(nina.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.humans.nina.display_name)",
+			"description": "i18n(swamp_goblins:entities.humans.nina.description)",
+			"icon": "file(nina.png)"
+		}
+	}
+}

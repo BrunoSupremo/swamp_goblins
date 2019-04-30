@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 60,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.hourglass.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.hourglass.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/hourglass/hourglass.png",
+	"workshop": "swamp_goblins:earthmaster:potter_kiln",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:hourglass"
+		}
+	]
+}

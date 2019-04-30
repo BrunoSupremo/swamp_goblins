@@ -4,93 +4,42 @@
 			<div class="title">{{i18n swamp_goblins:ui.game.goblinpedia.title}} <div class="closeButton"></div></div>
 			<nav>
 				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.menu.display_name}}</h1>
+				{{#each menu_section in view.menu}}
 				<section class="section">
-					<button id="goblin_button" {{action "goblin_button" target=view}}>{{i18n swamp_goblins:ui.game.goblinpedia.menu.goblin_button}}</button>
+					<button {{bind-attr id=menu_section.id}} {{action "menu_button" menu_section.id target=view}}>{{i18n_key menu_section.display_name}}</button>
 					<div>
-						<h2>{{i18n swamp_goblins:ui.game.goblinpedia.menu.goblin.growth.display_name}}</h2>
+						{{#each section_div in menu_section.items}}
+						<h2>{{i18n_key section_div.display_name}}</h2>
 						<div>
-							<a href="#" {{action "open_page" "growth_pedestal" target=view}}>{{i18n swamp_goblins:ui.game.goblinpedia.menu.goblin.growth.pedestal}}</a><br>
-							<a href="#" {{action "open_page" "growth_egg" target=view}}>{{i18n swamp_goblins:ui.game.goblinpedia.menu.goblin.growth.egg}}</a><br>
-							<a href="#" {{action "open_page" "growth_baby" target=view}}>{{i18n swamp_goblins:ui.game.goblinpedia.menu.goblin.growth.baby}}</a><br>
-							<a href="#" {{action "open_page" "growth_goblin" target=view}}>{{i18n swamp_goblins:ui.game.goblinpedia.menu.goblin.growth.goblin}}</a>
+							{{#each div_link in section_div.items}}
+							<a href="#" {{action "open_page" div_link.open_page_id target=view}}>{{i18n_key div_link.display_name}}</a><br>
+							{{/each}}
 						</div>
-						<h2>{{i18n swamp_goblins:ui.game.goblinpedia.menu.goblin.jobs.display_name}}</h2>
-						<div>
-							<a href="#" {{action "open_page" "jobs_beast_tamer" target=view}}>{{i18n swamp_goblins:ui.game.goblinpedia.menu.goblin.jobs.beast_tamer}}</a><br>
-							🚧{{i18n swamp_goblins:wip}}
-						</div>
+						{{/each}}
 					</div>
 				</section>
-				<section class="section">
-					<button id="swamp_button" {{action "swamp_button" target=view}}>{{i18n swamp_goblins:ui.game.goblinpedia.menu.swamp_button}}</button>
-					<div>
-						<h2>{{i18n swamp_goblins:ui.game.goblinpedia.menu.swamp.fauna.display_name}}</h2>
-						🚧{{i18n swamp_goblins:wip}}
-					</div>
-				</section>
+				{{/each}}
 			</nav>
 			<div id="cover" class="page current_page">
-				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.page.cover.title}}</h1>
+				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.pages.cover.title}}</h1>
 				<img src="/swamp_goblins/ui/game/goblinpedia/images/cover.jpg">
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.cover.text}}</p>
+				<p>{{i18n swamp_goblins:ui.game.goblinpedia.pages.cover.text}}</p>
 			</div>
-			<div id="growth_pedestal" class="page">
-				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.pedestal.title}}</h1>
-				<img src="/swamp_goblins/jobs/shaman/egg_pedestal/egg_pedestal.png">
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.pedestal.description1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.pedestal.category1}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.pedestal.text1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.pedestal.category2}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.pedestal.text2}}</p>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.pedestal.text3}}</p>
+			{{#each pages_div in view.pages}}
+			<div {{bind-attr id=pages_div.page_id}} class="page">
+				<h1>{{i18n_key pages_div.title}}</h1>
+				<img {{bind-attr src=pages_div.image}}>
+				{{#each descriptions in pages_div.descriptions}}
+				<p>{{i18n_key descriptions}}</p>
+				{{/each}}
+				{{#each topics in pages_div.topics}}
+				<h2>{{i18n_key topics.title}}</h2>
+				{{#each descriptions in topics.descriptions}}
+				<p>{{i18n_key descriptions}}</p>
+				{{/each}}
+				{{/each}}
 			</div>
-			<div id="growth_egg" class="page">
-				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.title}}</h1>
-				<img src="/swamp_goblins/entities/goblins/egg/egg.png">
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.description1}}</p>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.description2}}</p>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.description3}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.category1}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.text1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.category2}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.text2}}</p>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.egg.text3}}</p>
-			</div>
-			<div id="growth_baby" class="page">
-				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.baby.title}}</h1>
-				<img src="/swamp_goblins/entities/goblins/baby/baby.png">
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.baby.description1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.baby.category1}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.baby.text1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.baby.category2}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.baby.text2}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.baby.category3}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.baby.text3}}</p>
-			</div>
-			<div id="growth_goblin" class="page">
-				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.title}}</h1>
-				<img src="/swamp_goblins/entities/goblins/goblin.png">
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.description1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.category1}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.text1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.category2}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.text2}}</p>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.text3}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.category3}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.growth.goblin.text4}}</p>
-			</div>
-			<div id="jobs_beast_tamer" class="page">
-				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.title}}</h1>
-				<img src="/swamp_goblins/jobs/beast_tamer/images/icon.png">
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.description1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.category1}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.text1}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.category2}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.text2}}</p>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.text3}}</p>
-				<h2>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.category3}}</h2>
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.page.jobs.beast_tamer.text4}}</p>
-			</div>
+			{{/each}}
 		</div>
 	</div>
 </script>

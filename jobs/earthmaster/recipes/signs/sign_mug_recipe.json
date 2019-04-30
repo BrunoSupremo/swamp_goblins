@@ -1,0 +1,21 @@
+{
+	"type": "recipe",
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wood_sign.mug.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wood_sign.mug.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/stone_sign/mug/mug.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:stone_sign:mug"
+		}
+	]
+}

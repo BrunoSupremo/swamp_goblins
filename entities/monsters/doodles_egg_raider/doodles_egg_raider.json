@@ -1,0 +1,30 @@
+{
+	"type" : "entity",
+	"mixins": "swamp_goblins:summons:doodles",
+	"components": {
+		"mixintypes": {
+			"stonehearth:loot_drops": "remove"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"description": "i18n(swamp_goblins:entities.monsters.doodles_egg_raider.description)"
+		},
+		"mixintypes": {
+			"stonehearth:ai_packs": "override"
+		},
+		"stonehearth:ai_packs": {
+			"packs": [
+				"stonehearth:ai_pack:critter",
+				"stonehearth:ai_pack:death",
+				"stonehearth:ai_pack:patrolling",
+				"stonehearth:ai_pack:combat_control",
+				"stonehearth:ai_pack:human",
+				"stonehearth:ai_pack:combat",
+				"stonehearth:ai_pack:idle",
+				"stonehearth:ai_pack:idle:bored:idle_effects",
+				"stonehearth:ai_pack:idle:bored:wander"
+			]
+		}
+	}
+}
