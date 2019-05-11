@@ -1,6 +1,5 @@
 local WeightedSet = require 'stonehearth.lib.algorithms.weighted_set'
 local CustomLandscaper = class()
-local log = radiant.log.create_logger('meu_log')
 
 function CustomLandscaper:place_features(tile_map, feature_map, place_item)
 	local water_1_table

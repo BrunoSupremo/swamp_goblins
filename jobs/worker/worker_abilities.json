@@ -4,11 +4,9 @@
 		"stonehearth:equipment_piece" : {
 			"injected_ai" : {
 				"actions" : [
-					"swamp_goblins:actions:lay_egg",
 					"stonehearth:actions:light_firepit"
 				],
 				"ai_packs" : [
-					"swamp_goblins:ai_pack:lay_egg",
 					"stonehearth:ai_pack:mining",
 					"stonehearth:ai_pack:place_item",
 					"stonehearth:ai_pack:construction",
@@ -17,28 +15,12 @@
 					"stonehearth:ai_pack:wimpy",
 					"stonehearth:ai_pack:panic",
 					"stonehearth:ai_pack:panic:flee",
-					"stonehearth:ai_pack:panic:cower",
-					"stonehearth:ai_pack:combat_control"
-				],
-				"task_groups": [
-					"swamp_goblins:task_groups:lay_egg",
-					"stonehearth:task_groups:solo:patrolling"
+					"stonehearth:ai_pack:panic:cower"
 				]
 			}
 		}
 	},
 	"entity_data" : {
-		"stonehearth:panic_threshold" : 0.75,
-		"stonehearth:combat:melee_defenses": [
-			{
-				"name": "combat_1h_dodge",
-				"effect": "combat_1h_dodge",
-				"active_frame": 8,
-				"cooldown": 12000,
-				"priority": 1,
-				"chance_of_success": 0.25,
-				"defense_attribute": "dodge_chance"
-			}
-		]
+		"stonehearth:panic_threshold" : 0.75
 	}
 }

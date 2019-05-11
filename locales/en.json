@@ -417,6 +417,11 @@
 			"simple_table": {
 				"display_name": "Simple Table",
 				"description": "A table, for table things"
+			},
+			"swing": {
+				"display_name": "Swing",
+				"description": "You can sit on it",
+				"flavor": "Is this broken? Why the swing does not move?"
 			}
 		},
 		"goblins": {
@@ -544,10 +549,6 @@
 					"display_name": "Bear Pelt",
 					"description": "Pelt from a beear"
 				}
-			},
-			"bone": {
-				"display_name": "Bone",
-				"description": "Hard material"
 			},
 			"firefly_essense": {
 				"display_name": "Firefly Essence",
@@ -1015,8 +1016,7 @@
 		"game": {
 			"build_mode2": {
 				"tooltips": {
-					"fiber_resource": "Fiber",
-					"bone_resource": "Bone"
+					"fiber_resource": "Fiber"
 				}
 			},
 			"goblinpedia":{

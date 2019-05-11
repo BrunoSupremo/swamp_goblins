@@ -9,12 +9,7 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					{
-						"type": "one_of",
-						"items": [
-							"file(medium.qb)"
-						]
-					}
+					"file(medium.qb)"
 				]
 			}
 		},

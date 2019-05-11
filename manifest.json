@@ -185,11 +185,12 @@
 		"food:plate_of_ferns":		"file(entities/food/plate_of_ferns)",
 		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 
-		"furniture:hammock": "file(entities/furniture/hammock)",
-		"furniture:mush_chair": "file(entities/furniture/mush_chair)",
-		"furniture:mush_table": "file(entities/furniture/mush_table)",
-		"furniture:simple_chair": "file(entities/furniture/simple_chair)",
-		"furniture:simple_table": "file(entities/furniture/simple_table)",
+		"furniture:hammock":		"file(entities/furniture/hammock)",
+		"furniture:mush_chair":		"file(entities/furniture/mush_chair)",
+		"furniture:mush_table":		"file(entities/furniture/mush_table)",
+		"furniture:simple_chair":	"file(entities/furniture/simple_chair)",
+		"furniture:simple_table":	"file(entities/furniture/simple_table)",
+		"furniture:swing":			"file(entities/furniture/swing)",
 
 		"goblins:egg":		"file(entities/goblins/egg)",
 		"goblins:baby":		"file(entities/goblins/baby)",
@@ -350,7 +351,9 @@
 
 		"weather_stone":"file(entities/gizmos/weather_stone)",
 
-		"weather:foggy": "file(data/weather/foggy)"
+		"weather:foggy": "file(data/weather/foggy)",
+
+		"worker:abilities:goblin":"file(jobs/worker/goblin_worker_abilities.json)"
 	},
 	"deprecated_aliases":{
 		"consumables:blue_potion":	"file(entities/consumables/blue_potion)",

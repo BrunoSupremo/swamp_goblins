@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.4.29")
+print("Swamp Goblins Mod version 19.5.10")
 
 -- todo
 -- templates

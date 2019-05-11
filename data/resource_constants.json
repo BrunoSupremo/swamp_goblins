@@ -7,16 +7,7 @@
 			"builder_sound_uri": "stonehearth:sounds:building_wall_wood",
 			"tooltip": "swamp_goblins:ui.game.build_mode2.tooltips.fiber_resource"
 		},
-		"bone resource": {
-			"name": "i18n(swamp_goblins:ui.data.constants.bone_resource_name)",
-			"icon": "/swamp_goblins/entities/resources/bone/bone.png",
-			"default_resource": "swamp_goblins:resources:bone",
-			"stacks": 60,
-			"builder_icon": "/swamp_goblins/entities/resources/bone/builder_bone.png",
-			"builder_icon_hover": "/swamp_goblins/entities/resources/bone/builder_bone.png",
-			"builder_sound_uri": "stonehearth:sounds:building_wall_wood",
-			"tooltip": "swamp_goblins:ui.game.build_mode2.tooltips.bone_resource"
-		},
+
 		"wood stockpile_decoration": {
 			"name": "i18n(swamp_goblins:ui.data.constants.wood_decoration)",
 			"default_resource": "stonehearth:decoration:wooden_sign",
@@ -42,6 +33,7 @@
 			"default_resource": "stonehearth:portals:wooden_window_frame",
 			"icon": "/stonehearth/entities/construction/wooden_window_frame/wooden_window_frame.png"
 		},
+
 		"stone stockpile_decoration": {
 			"name": "i18n(swamp_goblins:ui.data.constants.stone_decoration)",
 			"default_resource": "stonehearth:decoration:stone_brazier",
@@ -67,6 +59,7 @@
 			"default_resource": "stonehearth:portals:stone_window_frame",
 			"icon": "/stonehearth/entities/construction/stone_window_frame/stone_window_frame.png"
 		},
+		
 		"clay stockpile_decoration": {
 			"name": "i18n(swamp_goblins:ui.data.constants.clay_decoration)",
 			"default_resource": "stonehearth:decoration:decorative_teapot",

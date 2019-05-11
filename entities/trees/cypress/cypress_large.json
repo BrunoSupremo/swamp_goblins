@@ -13,12 +13,7 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					{
-						"type": "one_of",
-						"items": [
-							"file(large.qb)"
-						]
-					}
+					"file(large.qb)"
 				]
 			}
 		},
