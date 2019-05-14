@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 24,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.stone_door_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.stone_door_recipe.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/construction/stone_door/stone_door.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:portals:stone_door"
+		}
+	]
+}

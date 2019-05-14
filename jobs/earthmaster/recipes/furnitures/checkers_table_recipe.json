@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.furniture.checkers_table.display_name)",
+	"description": "i18n(swamp_goblins:entities.furniture.checkers_table.description)",
+	"flavor": "i18n(swamp_goblins:entities.furniture.checkers_table.flavor)",
+	"portrait": "/swamp_goblins/entities/furniture/checkers_table/checkers_table.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:furniture:checkers_table"
+		}
+	]
+}

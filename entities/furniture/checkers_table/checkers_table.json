@@ -1,34 +1,37 @@
 {
 	"type": "entity",
-	"mixins": "file(potted_giple_ghost.json)",
+	"mixins": "file(checkers_table_ghost.json)",
 	"components": {
 		"stonehearth:entity_forms": {
-			"iconic_form": "file(potted_giple_iconic.json)",
-			"ghost_form": "file(potted_giple_ghost.json)",
+			"iconic_form": "file(checkers_table_iconic.json)",
+			"ghost_form": "file(checkers_table_ghost.json)",
 			"placeable_on_ground": true
 		},
 		"region_collision_shape": {
 			"region": [
 				{
-					"min": { "x": -1, "y": 0, "z": -1 },
-					"max": { "x": 1, "y": 2, "z": 1 }
+					"min": { "x": -0.5, "y": 0, "z": -0.5 },
+					"max": { "x": 1.5, "y": 1.2, "z": 1.5 }
 				}
 			]
 		}
 	},
 	"entity_data": {
 		"stonehearth:net_worth": {
-			"value_in_gold": 7,
+			"value_in_gold": 5,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": true,
 				"sellable": true,
-				"shopkeeper_level": 1,
+				"shopkeeper_level": 3,
 				"shopkeeper_type": "caravan"
 			}
 		},
 		"stonehearth:appeal": {
-			"appeal": 12
+			"appeal": 8
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
 		}
 	}
 }

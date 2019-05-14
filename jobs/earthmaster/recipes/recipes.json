@@ -36,6 +36,18 @@
 			"recipes":{
 				"clay_bricks": {
 					"recipe": "file(construction/clay_bricks_recipe.json)"
+				},
+				"stone_door": {
+					"recipe": "file(construction/stone_door_recipe.json)"
+				},
+				"stone_window": {
+					"recipe": "file(construction/stone_window_recipe.json)"
+				},
+				"brick_fence": {
+					"recipe": "file(construction/brick_fence_recipe.json)"
+				},
+				"brick_fence_end": {
+					"recipe": "file(construction/brick_fence_end_recipe.json)"
 				}
 			}
 		},
@@ -43,6 +55,12 @@
 			"ordinal": 40,
 			"name": "i18n(stonehearth:jobs.carpenter.recipes.furniture_name)",
 			"recipes":{
+				"checkers_table": {
+					"recipe": "file(furnitures/checkers_table_recipe.json)"
+				},
+				"stone_chair": {
+					"recipe": "file(furnitures/stone_chair_recipe.json)"
+				}
 			}
 		},
 		"goblin_decorations": {

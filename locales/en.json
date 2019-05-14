@@ -217,6 +217,16 @@
 			}
 		},
 		"construction": {
+			"brick_fence": {
+				"display_name": "Brick Fence",
+				"description": "Blocks the way",
+				"flavor":"one piece at a time"
+			},
+			"brick_fence_end": {
+				"display_name": "Brick Fence End",
+				"description": "Blocks the way",
+				"flavor":"one piece at a time"
+			},
 			"goblin_barricade": {
 				"display_name": "Double Barricade",
 				"description": "Blocks the way even more",
@@ -398,6 +408,11 @@
 			}
 		},
 		"furniture": {
+			"checkers_table": {
+				"display_name": "Checkers Table",
+				"description": "A table with a checkerboard",
+				"flavor": "No, you already played with the green pieces last time, it is my turn now"
+			},
 			"hammock": {
 				"display_name": "Hammock",
 				"description": "To sleep far from the ground"

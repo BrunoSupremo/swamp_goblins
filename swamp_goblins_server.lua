@@ -1,11 +1,10 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.5.10")
+print("Swamp Goblins Mod version 19.5.14")
 
 -- todo
 -- templates
 -- engineer -> earthmaster
 -- goblinpedia
--- doodles giple
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then

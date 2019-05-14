@@ -94,8 +94,10 @@
 		"commands:goblinpedia":		"file(data/commands/goblinpedia)",
 		"commands:travel":			"file(data/commands/travel)",
 
-		"construction:goblin_barricade":"file(entities/construction/goblin_barricade)",
-		"construction:goblin_barricade_single":"file(entities/construction/goblin_barricade_single)",
+		"construction:brick_fence":		"file(entities/construction/brick_fence)",
+		"construction:brick_fence_end":	"file(entities/construction/brick_fence_end)",
+		"construction:goblin_barricade":		"file(entities/construction/goblin_barricade)",
+		"construction:goblin_barricade_single":	"file(entities/construction/goblin_barricade_single)",
 
 		"consumables:small_healing":"file(entities/consumables/small_healing)",
 
@@ -185,11 +187,13 @@
 		"food:plate_of_ferns":		"file(entities/food/plate_of_ferns)",
 		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 
+		"furniture:checkers_table":	"file(entities/furniture/checkers_table)",
 		"furniture:hammock":		"file(entities/furniture/hammock)",
 		"furniture:mush_chair":		"file(entities/furniture/mush_chair)",
 		"furniture:mush_table":		"file(entities/furniture/mush_table)",
 		"furniture:simple_chair":	"file(entities/furniture/simple_chair)",
 		"furniture:simple_table":	"file(entities/furniture/simple_table)",
+		"furniture:stone_chair":	"file(entities/furniture/stone_chair)",
 		"furniture:swing":			"file(entities/furniture/swing)",
 
 		"goblins:egg":		"file(entities/goblins/egg)",
@@ -255,6 +259,8 @@
 		"plants:log":			"file(entities/plants/log)",
 		"plants:mushroom":		"file(entities/plants/mushroom)",
 
+		"portals:stone_door":			"file(entities/construction/stone_door)",
+		"portals:stone_window":			"file(entities/construction/stone_window)",
 		"portals:wooden_door":			"file(entities/construction/wooden_door)",
 		"portals:curtains_door":		"file(entities/construction/curtains_door)",
 		"portals:wooden_window_frame":	"file(entities/construction/wooden_window_frame)",

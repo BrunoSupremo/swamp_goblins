@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 12,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.stone_window_frame_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.stone_window_frame_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.mason.recipes.stone_window_frame_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/construction/stone_window/stone_window.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:portals:stone_window"
+		}
+	]
+}
