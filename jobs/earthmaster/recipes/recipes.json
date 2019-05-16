@@ -27,6 +27,9 @@
 				},
 				"clay_pile": {
 					"recipe": "file(storage/clay_pile_recipe.json)"
+				},
+				"input_bin_clay": {
+					"recipe": "file(storage/input_bin_clay_recipe.json)"
 				}
 			}
 		},
@@ -55,11 +58,14 @@
 			"ordinal": 40,
 			"name": "i18n(stonehearth:jobs.carpenter.recipes.furniture_name)",
 			"recipes":{
+				"stone_chair": {
+					"recipe": "file(furnitures/stone_chair_recipe.json)"
+				},
 				"checkers_table": {
 					"recipe": "file(furnitures/checkers_table_recipe.json)"
 				},
-				"stone_chair": {
-					"recipe": "file(furnitures/stone_chair_recipe.json)"
+				"clay_bed": {
+					"recipe": "file(furnitures/clay_bed_recipe.json)"
 				}
 			}
 		},

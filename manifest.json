@@ -102,6 +102,7 @@
 		"consumables:small_healing":"file(entities/consumables/small_healing)",
 
 		"containers:chest":						"file(entities/containers/chest)",
+		"containers:input_bin:clay":			"file(entities/containers/input_bin_clay)",
 		"containers:input_bin:wood":			"file(entities/containers/input_bin_wood)",
 		"containers:input_shelf:ground:wood":	"file(entities/containers/input_shelf_ground_wood)",
 		"containers:input_shelf:wall:wood":		"file(entities/containers/input_shelf_wall_wood)",
@@ -167,7 +168,8 @@
 		"effects:firefly_token:crafting":	"file(data/effects/firefly_token/crafting.json)",
 		"effects:firefly_token:jewel":		"file(data/effects/firefly_token/jewel.json)",
 		"effects:buff:firefly_confusion":	"file(data/effects/firefly_effect/firefly_confusion.json)",
-		"effects:hourglass":"file(data/effects/hourglass)",
+		"effects:hourglass":	"file(data/effects/hourglass)",
+		"effects:goblin_aura":	"file(data/effects/goblin_aura)",
 		"effects:shaman_workbench_effect":"file(data/effects/shaman_workbench_effect)",
 		"effects:spirit_walker":"file(data/effects/spirit_walker)",
 		"effects:spirit:goblin_spirit":	"file(data/effects/spirit/goblin_spirit.json)",
@@ -188,6 +190,7 @@
 		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 
 		"furniture:checkers_table":	"file(entities/furniture/checkers_table)",
+		"furniture:clay_bed":		"file(entities/furniture/clay_bed)",
 		"furniture:hammock":		"file(entities/furniture/hammock)",
 		"furniture:mush_chair":		"file(entities/furniture/mush_chair)",
 		"furniture:mush_table":		"file(entities/furniture/mush_table)",
