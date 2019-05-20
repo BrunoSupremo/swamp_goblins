@@ -268,6 +268,10 @@
 			"chest":{
 				"display_name": "Wooden Chest",
 				"description": "Stores up to 24 items"
+			},
+			"clay_chest":{
+				"display_name": "Clay Chest",
+				"description": "Stores up to 48 items"
 			}
 		},
 		"critters": {
@@ -322,6 +326,11 @@
 			},
 			"goblin_market_stall": {
 				"display_name": "Firefly Market Stall"
+			},
+			"mini_fountain": {
+				"display_name": "Mini Fountain",
+				"description": "Water starts at the top and flow down going through all pieces",
+				"flavor": "4 of these can be placed together to create a larger fountain"
 			},
 			"pole_banner": {
 				"display_name": "Pole Banner",

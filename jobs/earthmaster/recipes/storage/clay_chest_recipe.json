@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.containers.clay_chest.display_name)",
+	"description": "i18n(swamp_goblins:entities.containers.clay_chest.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.amberstone_chest_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/containers/clay_chest/clay_chest.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:containers:clay_chest"
+		}
+	]
+}

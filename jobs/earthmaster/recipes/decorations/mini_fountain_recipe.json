@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.mini_fountain.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.mini_fountain.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.mini_fountain.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/mini_fountain/mini_fountain.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:mini_fountain"
+		}
+	]
+}
