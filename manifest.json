@@ -83,6 +83,11 @@
 		"buff_scripts:rage_over_time":	"file(data/buffs/rage_over_time/rage_over_time.lua)",
 		"buff_scripts:poison":			"file(data/buffs/poison/poison.lua)",
 
+		"build:brushes:pattern:fiber_diagonal":	"file(data/build/brushes/pattern/fiber_diagonal.qb)",
+		"build:brushes:pattern:fiber_checker":	"file(data/build/brushes/pattern/fiber_checker.qb)",
+		"build:brushes:wall:white_stripes":		"file(data/build/brushes/wall/white_stripes.qb)",
+		"build:brushes:roof:purple_stripes":	"file(data/build/brushes/roof/purple_stripes.qb)",
+
 		"camp_hearth":	"file(entities/decoration/firepit_skulls)",
 		"camp_standard":	"file(entities/gizmos/camp_standard)",
 		"goblin_camp_standard":	"file(entities/gizmos/goblin_camp_standard)",
@@ -167,6 +172,7 @@
 		"effects:firefly_effect":			"file(data/effects/firefly_effect)",
 		"effects:firefly_essense_effect":	"file(data/effects/firefly_effect/firefly_essense_effect.json)",
 		"effects:big_firefly_essense":		"file(data/effects/firefly_effect/big_firefly_essense.json)",
+		"effects:firefly_shield":"file(data/effects/firefly_shield)",
 		"effects:firefly_token:crafting":	"file(data/effects/firefly_token/crafting.json)",
 		"effects:firefly_token:jewel":		"file(data/effects/firefly_token/jewel.json)",
 		"effects:buff:firefly_confusion":	"file(data/effects/firefly_effect/firefly_confusion.json)",
@@ -200,6 +206,8 @@
 		"furniture:simple_table":	"file(entities/furniture/simple_table)",
 		"furniture:stone_chair":	"file(entities/furniture/stone_chair)",
 		"furniture:swing":			"file(entities/furniture/swing)",
+
+		"gizmos:firefly_shield":"file(entities/gizmos/firefly_shield)",
 
 		"goblins:egg":		"file(entities/goblins/egg)",
 		"goblins:baby":		"file(entities/goblins/baby)",
@@ -469,6 +477,7 @@
 		}
 	},
 	"components": {
+		"enemy_barrier":			"file(components/enemy_barrier/enemy_barrier.lua)",
 		"firefly_goblin":			"file(components/firefly_goblin/firefly_goblin.lua)",
 		"firefly":					"file(components/firefly/firefly_component.lua)",
 		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",

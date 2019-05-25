@@ -46,17 +46,47 @@
 			"colors": {}
 		}
 	},
+	"pattern": {
+		"fiber resource": {
+			"patterns": {
+				"swamp_goblins:build:brushes:pattern:fiber_diagonal": {
+					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/fiber_diagonal.png",
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.fiber_diagonal)"
+				},
+				"swamp_goblins:build:brushes:pattern:fiber_checker": {
+					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/fiber_checker.png",
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.fiber_checker)"
+				}
+			}
+		}
+	},
 	"wall": {
 		"fiber resource": {
-			"patterns": {},
+			"patterns": {
+				"swamp_goblins:build:brushes:wall:white_stripes": {
+					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/white_stripes.png",
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.white_stripes)"
+				}
+			},
 			"colors": {},
-			"default_color": "#695087"
+			"default_color": "#B4AD95"
 		}
 	},
 	"column": {
 		"fiber resource": {
 			"colors": {},
-			"default_color": "#695087"
+			"default_color": "#A19878"
+		}
+	},
+	"roof": {
+		"fiber resource": {
+			"patterns": {
+				"swamp_goblins:build:brushes:roof:purple_stripes": {
+					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/purple_stripes.png",
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.purple_stripes)",
+					"type": "peaked"
+				}
+			}
 		}
 	}
 }

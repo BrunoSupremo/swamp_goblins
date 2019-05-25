@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 55,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.gizmos.firefly_shield.display_name)",
+	"description": "i18n(swamp_goblins:entities.gizmos.firefly_shield.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/gizmos/firefly_shield/firefly_shield.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 5
+		},
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 5
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:gizmos:firefly_shield"
+		}
+	]
+}

@@ -40,6 +40,12 @@
 					"#695087": "Light Giple (Swamp)",
 					"#5C4578": "Giple (Swamp)",
 					"#4A3662": "Dark Giple (Swamp)"
+				},
+				"patterns":{
+					"fiber_checker":"Green Fiber Checkerboard",
+					"fiber_diagonal":"Green Fiber Diagonal Stripes",
+					"purple_stripes":"Purple Fiber Stripes",
+					"white_stripes":"White Fiber Stripes",
 				}
 			}
 		},
@@ -463,6 +469,10 @@
 				"display_name": "Camp Banner",
 				"description": "How you know you've come home"
 			},
+			"firefly_shield": {
+				"display_name": "Firefly force shield",
+				"description": "Enemies can't go through it"
+			},
 			"goblin_camp_standard": {
 				"display_name": "Banner of Goblins",
 				"description": "How you know you've come home",
@@ -660,6 +670,11 @@
 			},
 			"giant_bone_mace": {
 				"display_name": "(Firefly) Giant Bone Mace"
+			},
+			"magma_sword": {
+				"display_name": "Magma Sword",
+				"description": "Made from melting metals",
+				"flavor": "Must be skilled enough to make such a weapon. And skilled enough to use it."
 			},
 			"poison_dart": {
 				"display_name": "Poison Dart",
@@ -874,6 +889,7 @@
 				"description": "For making symmetrical clay goods"
 			},
 			"recipes":{
+				"gizmos":"Gizmos",
 				"reclaim":"Reclaim",
 				"burn":{
 					"description":"Burn the object into coal",
@@ -1059,6 +1075,7 @@
 						"jobs":{
 							"display_name":"Jobs",
 							"beast_tamer":"Beast Tamer",
+							"bonesmith":"Bonesmith",
 							"shaman":"Shaman"
 						}
 					},
@@ -1157,6 +1174,23 @@
 							"topic3":{
 								"title":"Hearthling variation:",
 								"desc1":"Hearthlings can be promoted to it too. Though the Spirit Walker teamwork to summon a dragon is now a solo effort to summon a Big Wolf."
+							}
+						},
+						"bonesmith":{
+							"title":"Bonesmith",
+							"description1":"Low level, basic materials crafter",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Basic crafter class. From equipments to furniture and decorations."
+							},
+							"topic2":{
+								"title":"What it does:",
+								"desc1":"Uses low level materials like wood and fibers to craft simple items.",
+								"desc2":"Starter houses uses mostly furniture and decoration from this class. Can also equip warriors with most of their weapons and armors."
+							},
+							"topic3":{
+								"title":"Promotion:",
+								"desc1":"Bonesmith can later be promoted into Earthmaster, an advanced highlevel crafter class."
 							}
 						},
 						"shaman":{

@@ -18,6 +18,24 @@
 				}
 			}
 		},
+		"goblin_equipments": {
+			"ordinal": 5,
+			"name": "i18n(stonehearth:ui.game.citizen_character_sheet.equipment)",
+			"recipes": {
+				"magma_sword": {
+					"recipe": "file(equipments/magma_sword_recipe.json)"
+				}
+			}
+		},
+		"goblin_gizmos": {
+			"ordinal": 7,
+			"name": "i18n(swamp_goblins:jobs.earthmaster.recipes.gizmos)",
+			"recipes": {
+				"firefly_shield": {
+					"recipe": "file(gizmos/firefly_shield_recipe.json)"
+				}
+			}
+		},
 		"goblin_storage": {
 			"ordinal": 10,
 			"name": "i18n(stonehearth:jobs.carpenter.recipes.storage_name)",

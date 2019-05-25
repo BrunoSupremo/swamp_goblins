@@ -1,0 +1,33 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(firefly_shield.qb)"
+				]
+			}
+		},
+		"render_info":{
+			"scale": 0.125,
+			"color_map": "stonehearth:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/magic_material_map.json"
+			]
+		},
+		"swamp_goblins:enemy_barrier": {}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.gizmos.firefly_shield.display_name)",
+			"description": "i18n(swamp_goblins:entities.gizmos.firefly_shield.description)",
+			"icon": "file(firefly_shield.png)",
+			"category": "defense",
+			"material_tags":["stone", "crafted", "defense", "stockpile_defense"]
+		}
+	}
+}

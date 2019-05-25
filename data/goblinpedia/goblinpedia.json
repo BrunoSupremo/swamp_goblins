@@ -32,6 +32,10 @@
 							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.beast_tamer)",
 							"open_page_id":"jobs_beast_tamer"
 						},
+						"bonesmith":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.bonesmith)",
+							"open_page_id":"jobs_bonesmith"
+						},
 						"shaman":{
 							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.shaman)",
 							"open_page_id":"jobs_shaman"
@@ -192,6 +196,35 @@
 					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.beast_tamer.topic3.title)",
 					"descriptions":{
 						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.beast_tamer.topic3.desc1)"
+					}
+				}
+			}
+		},
+		"jobs_bonesmith":{
+			"page_id":"jobs_bonesmith",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.title)",
+			"image":"/swamp_goblins/jobs/bonesmith/images/icon.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.topic2.desc1)",
+						"desc2":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.topic2.desc2)"
+					}
+				},
+				"topic3":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.topic3.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.bonesmith.topic3.desc1)"
 					}
 				}
 			}
