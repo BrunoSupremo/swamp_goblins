@@ -1,0 +1,16 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["swamp_goblins:biome:swamp"],
+	"name": "16x_mountain_grass_mushroom",
+	"category": "swamp_mountain_landmark",
+	"size": {
+		"width": 8,
+		"length": 8
+	},
+	"habitat_types": ["mountains"],
+	"weight": 5,
+	"data": {
+		"brush" : "/swamp_goblins/data/models/landmark/16x_mountain_grass_mushroom.qb",
+		"landmark_block_types": "swamp_goblins:landmark_blocks"
+	}
+}

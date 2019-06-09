@@ -3,10 +3,15 @@
 		"scenarios" : [
 			"file(static/frog_nest)",
 
+			"file(static/landmarks/16x_mountain_grass_cypress.json)",
+			"file(static/landmarks/16x_mountain_grass_mushroom.json)",
+			"file(static/landmarks/32x_mountain_grass.json)",
+
 			"file(static/landmarks/32x_firefly_nest.json)",
 			"file(static/landmarks/32x_mushroom.json)",
 			"file(static/landmarks/32x_mushroom_spiral.json)",
 			"file(static/landmarks/32x_varanus_nest.json)",
+
 			"file(static/landmarks/64x_king_stone.json)",
 			"file(static/landmarks/64x_minerals.json)",
 			"file(static/landmarks/64x_waterfall.json)"
@@ -22,6 +27,12 @@
 					"terrain_feature_common",
 					"terrain_feature_rare"
 				]
+			},
+			"swamp_mountain_landmark" : {
+				"density" : 15,
+				"priority" : 0,
+				"location_type" : "surface",
+				"activation_type" : "immediate"
 			}
 		}
 	}

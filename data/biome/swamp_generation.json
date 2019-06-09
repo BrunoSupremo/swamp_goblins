@@ -182,10 +182,6 @@
 				"placement_type": "single",
 				"parameters": {"ground_radius": 3, "exclusion_radius": 5 }
 			},
-			"swamp_goblins:terrain:mountain_grass" : {
-				"placement_type": "single",
-				"parameters": { "ground_radius": 1, "exclusion_radius": 6 }
-			},
 			"swamp_goblins:trees:cypress:small" : {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
@@ -351,10 +347,7 @@
 					},
 					"mountains": {
 						"1": {
-							"swamp_goblins:terrain:mountain_grass": 2,
-							"swamp_goblins:trees:cypress:small":1,
 							"swamp_goblins:trees:dead:small":0.2,
-							"swamp_goblins:plants:mushroom": 1
 						}
 					}
 				},

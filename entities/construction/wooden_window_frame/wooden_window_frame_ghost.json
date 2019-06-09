@@ -2,6 +2,9 @@
 	"mixins": "stonehearth:mixins:placed_object",
 	"type": "entity",
 	"components": {
+		"render_info": {
+			"scale": 0.099
+		},
 		"mob": {
 			"align_to_grid": [
 				"x"

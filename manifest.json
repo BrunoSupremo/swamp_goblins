@@ -316,8 +316,6 @@
 		"summons:big_wolf":		"file(entities/summons/big_wolf)",
 		"summons:trap":			"file(entities/summons/trap)",
 
-		"terrain:mountain_grass":"file(entities/terrain/mountain_grass)",
-
 		"traits_index": "file(data/traits/traits_index.json)",
 		"traits:animal_companion":	"file(data/traits/animal_companion)",
 		"traits:party_goblin":		"file(data/traits/party_goblin)",
@@ -482,8 +480,8 @@
 		"firefly":					"file(components/firefly/firefly_component.lua)",
 		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
-		"mountain_grass":			"file(components/mountain_grass/mountain_grass_component.lua)",
-		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)"
+		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)",
+		"water":					"file(components/water/water.lua)"
 	},
 	"overrides": {
 		"stonehearth/data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json":"file(data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json)",

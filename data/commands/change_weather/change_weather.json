@@ -3,8 +3,8 @@
 	"name": "change_weather",
 	"display_name": "i18n(swamp_goblins:data.commands.change_weather.display_name)",
 	"description": "i18n(swamp_goblins:data.commands.change_weather.description)",
-	"icon": "file(change_weather.png)",
-	"ordinal": 1,
+	"icon": "/stonehearth/data/weather/rain/rain_sunny_subject.png",
+	"ordinal": 10,
 	"action": "call",
 	"function": "swamp_goblins:change_weather",
 	"args": []
