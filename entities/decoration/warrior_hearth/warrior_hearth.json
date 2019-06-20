@@ -1,0 +1,51 @@
+{
+	"type": "entity",
+	"mixins": "file(warrior_hearth_ghost.json)",
+	"components": {
+		"stonehearth:commands": {
+			"commands": [
+				"swamp_goblins:commands:battle_royal"
+			]
+		},
+		"render_info": {},
+		"stonehearth:firepit": {},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -2, "y": 0, "z": -2 },
+					"max": { "x": 3, "y": 2, "z": 3 }
+				}
+			]
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(warrior_hearth_iconic.json)",
+			"ghost_form": "file(warrior_hearth_ghost.json)",
+			"placeable_on_ground": true,
+			"hide_undeploy_ui": true
+		},
+		"effect_list": {
+			"default": "stonehearth:effects:hearth:bunny"
+		},
+		"stonehearth:traveler_attraction": {}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"clearable": false
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 160,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": false,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 120
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

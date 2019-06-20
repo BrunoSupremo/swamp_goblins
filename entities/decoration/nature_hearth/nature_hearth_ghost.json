@@ -1,0 +1,26 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(nature_hearth.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"allow_vertical_adjacent": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.nature_hearth.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.nature_hearth.description)",
+			"icon": "file(nature_hearth.png)",
+			"category": "decoration",
+			"material_tags": ["light_source", "stone", "crafted", "stockpile_decoration"]
+		}
+	}
+}

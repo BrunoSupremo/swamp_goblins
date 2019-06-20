@@ -98,6 +98,7 @@
 		"commands:enable_egg_spot":	"file(data/commands/enable_egg_spot)",
 		"commands:goblinpedia":		"file(data/commands/goblinpedia)",
 		"commands:travel":			"file(data/commands/travel)",
+		"commands:battle_royal":	"file(data/commands/battle_royal)",
 
 		"construction:brick_fence":		"file(entities/construction/brick_fence)",
 		"construction:brick_fence_end":	"file(entities/construction/brick_fence_end)",
@@ -134,6 +135,8 @@
 		"decoration:goblin_large_totem":	"file(entities/decoration/goblin_large_totem)",
 		"decoration:goblin_small_totem":	"file(entities/decoration/goblin_small_totem)",
 		"decoration:hourglass":				"file(entities/decoration/hourglass)",
+		"decoration:hearth:nature":			"file(entities/decoration/nature_hearth)",
+		"decoration:hearth:warrior":		"file(entities/decoration/warrior_hearth)",
 		"decoration:large_candle":			"file(entities/decoration/large_candle)",
 		"decoration:mini_fountain":			"file(entities/decoration/mini_fountain)",
 		"decoration:small_candle":			"file(entities/decoration/small_candle)",
@@ -231,6 +234,8 @@
 
 		"kingdoms:firefly_clan": "file(data/firefly_clan_population.json)",
 		"kingdoms:firefly_human_encounter": "file(services/server/population/data/firefly_human_encounter.json)",
+		"kingdoms:battle_royal_team_1": "file(services/server/population/data/battle_royal_team_1.json)",
+		"kingdoms:battle_royal_team_2": "file(services/server/population/data/battle_royal_team_2.json)",
 
 		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
 
@@ -471,6 +476,10 @@
 		},
 		"travel": {
 			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
+		},
+		"start_madness": {
+			"controller": "file(call_handlers/battle_royal.lua)",
 			"endpoint": "server"
 		}
 	},

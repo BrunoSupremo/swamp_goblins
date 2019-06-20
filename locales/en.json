@@ -132,6 +132,10 @@
 				"hut": "Hut",
 				"temple": "Temple",
 				"tent": "Tent",
+				"nursery": "Nursery",
+				"bonesmith_workshop": "Bonesmith Workshop",
+				"shaman_center": "Shaman Center",
+				"treasure_storage": "Treasure Storage",
 				"trading": "Trading",
 				"garden": "Garden"
 			}
@@ -307,6 +311,14 @@
 				"display_name": "Giant Hourglass",
 				"description": "A funny shaped glass with sand inside, draining from one end to the other",
 				"flavor": "It is not my turn to flip it!"
+			},
+			"nature_hearth": {
+				"display_name": "Nature Hearth",
+				"description": "Provides warmth, light, comfort, and random daily buffs"
+			},
+			"warrior_hearth": {
+				"display_name": "Warrior Hearth",
+				"description": "Provides warmth, light, comfort, and combat training sessions"
 			},
 			"large_candle": {
 				"display_name": "Large Candle",
@@ -486,7 +498,7 @@
 			"goblinpedia": {
 				"display_name": "Goblinpedia",
 				"description": "About goblins and swamps",
-				"flavor":"Use this item to open an actual encyclopedia with all the necessary information about the <b>Firefly Clan</b> and the <b>Swamp Biome</b>. After your learning session you can simple use it as a nice decoration"
+				"flavor":"Use this item to open an actual encyclopedia with all the necessary information about the Firefly Clan and the Swamp Biome. Can also be used as just a nice decoration"
 			}
 		},
 		"monsters": {

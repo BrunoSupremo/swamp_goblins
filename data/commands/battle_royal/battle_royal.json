@@ -1,0 +1,11 @@
+{
+	"type": "command",
+	"name": "battle_royal",
+	"display_name": "i18n(swamp_goblins:data.commands.battle_royal.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.battle_royal.description)",
+	"icon": "/stonehearth/data/weather/rain/rain_sunny_subject.png",
+	"ordinal": 10,
+	"action": "call",
+	"function": "swamp_goblins:start_madness",
+	"args": []
+}

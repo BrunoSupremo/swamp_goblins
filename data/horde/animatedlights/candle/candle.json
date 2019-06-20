@@ -1,0 +1,38 @@
+{
+	"name": "tiny_fire",
+	"duration": 8000,
+	"loops": true,
+	"intensity": {
+		"over_lifetime": {
+			"kind": "RANDOM_BETWEEN_CURVES",
+			"values": [
+				[
+					[0, 0.3],
+					[0.25, 0.3],
+					[0.5, 0.3],
+					[0.65, 0.3],
+					[1, 0.3]
+				],
+				[
+					[0, 0.6],
+					[0.25, 0.6],
+					[0.5, 0.6],
+					[0.65, 0.6],
+					[1, 0.6]
+				]
+			]
+		}
+	},
+	"radius": {
+		"start": {
+			"kind": "CONSTANT",
+			"values": [10]
+		}
+	},
+	"color": {
+		"start": {
+			"kind": "CONSTANT",
+			"values": [0.83, 1, 0.5]
+		}
+	}
+}

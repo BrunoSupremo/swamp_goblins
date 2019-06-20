@@ -1,8 +1,12 @@
 local JobComponent = require 'stonehearth.components.job.job_component'
+local ACEJobComponent = require 'stonehearth_ace.monkey_patches.ace_job_component'
 
 local SwampGoblinsJobComponent = class()
 
 SwampGoblinsJobComponent._goblin_promote_to = JobComponent.promote_to
+if ACEJobComponent then
+	SwampGoblinsJobComponent._goblin_ace_promote_to = ACEJobComponent.promote_to
+end
 function SwampGoblinsJobComponent:promote_to(job_uri, options)
 	local is_npc = stonehearth.player:is_npc(self._entity)
 	if not is_npc then
@@ -37,7 +41,11 @@ function SwampGoblinsJobComponent:promote_to(job_uri, options)
 			self:set_allowed_jobs(hearthling_job_list)
 		end
 	end
-	self:_goblin_promote_to(job_uri, options)
+	if ACEJobComponent then
+		self:_goblin_ace_promote_to(job_uri, options)
+	else
+		self:_goblin_promote_to(job_uri, options)
+	end
 end
 
 return SwampGoblinsJobComponent

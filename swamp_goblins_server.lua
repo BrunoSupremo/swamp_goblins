@@ -1,10 +1,13 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.6.7")
+print("Swamp Goblins Mod version 19.6.16")
 
 -- todo
--- templates
+-- templates, inn, dinning hall, tavern, profession workshops
 -- engineer -> earthmaster
 -- goblinpedia
+-- weather stone
+-- warrior hearth = battle royal
+-- nature hearth = random buffs
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then
@@ -37,8 +40,8 @@ function swamp_goblins:_on_required_loaded()
 		end
 	end
 	if ace_is_here then
-		local job_component = radiant.mods.require('stonehearth_ace.monkey_patches.ace_job_component')
-		radiant.mixin(job_component, custom_job_component)
+		local ace_job_component = radiant.mods.require('stonehearth_ace.monkey_patches.ace_job_component')
+		radiant.mixin(ace_job_component, custom_job_component)
 	end
 end
 
