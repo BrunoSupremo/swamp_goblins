@@ -6,7 +6,6 @@ function LayEgg_spot:initialize()
 	self._sv._use_state = "off" --off, waiting, has_egg
 	self._sv._current_egg = nil
 	self._sv._current_baby = nil
-	self._sv._searcher = nil
 end
 
 function LayEgg_spot:post_activate()
@@ -116,34 +115,28 @@ function LayEgg_spot:trigger_raid_toward_the_egg(egg)
 		return
 	end
 
+	self._searcher = radiant.create_controller('stonehearth:game_master:util:choose_location_outside_town',
+		16, 100,
+		function(op, location)
+			return self:_find_location_callback(op, location)
+		end)
+
 	self.timer = stonehearth.calendar:set_timer('preparing egg raid', "30m+1h", function()
-		self._sv._searcher = radiant.create_controller('stonehearth:game_master:util:choose_location_outside_town',
-			16, 100,
-			function(op, location)
-				return self:_find_location_callback(op, location)
-			end)
+		self:_spawn(self.doodle_spawn_location)
 		self.timer = nil
 	end)
 	self.timer2 = stonehearth.calendar:set_timer('preparing egg raid', "8h+1h", function()
-		self._sv._searcher = radiant.create_controller('stonehearth:game_master:util:choose_location_outside_town',
-			16, 100,
-			function(op, location)
-				return self:_find_location_callback(op, location)
-			end)
+		self:_spawn(self.doodle_spawn_location)
 		self.timer2 = nil
 	end)
 	self.timer3 = stonehearth.calendar:set_timer('preparing egg raid', "16h+1h", function()
-		self._sv._searcher = radiant.create_controller('stonehearth:game_master:util:choose_location_outside_town',
-			16, 100,
-			function(op, location)
-				return self:_find_location_callback(op, location)
-			end)
+		self:_spawn(self.doodle_spawn_location)
 		self.timer3 = nil
 	end)
 end
 
 function LayEgg_spot:_spawn(location)
-	if not self._sv._current_egg then
+	if not self._sv._current_egg or not location then
 		return
 	end
 	local enemy
@@ -158,7 +151,7 @@ function LayEgg_spot:_spawn(location)
 		:create_task('stonehearth:goto_location_ignoring_threats', {
 			location = radiant.entities.get_world_grid_location(self._entity),
 			reason = "go direct to the egg first, then attack it and/or around it"
-		})
+			})
 		:once()
 		:start()
 	end
@@ -169,27 +162,27 @@ function LayEgg_spot:_spawn(location)
 		zoom_to_entity = enemy,
 		title = "i18n(swamp_goblins:ui.data.raid_egg)"
 	})
-
-	if self._sv._searcher then
-		self._sv._searcher:destroy()
-		self._sv._searcher = nil
-	end
 end
 
 function LayEgg_spot:_find_location_callback(op, location)
 	if op == 'check_location' then
 		return true
 	elseif op == 'set_location' then
-		self:_spawn(location)
+		self.doodle_spawn_location = location
+
+		if self._searcher then
+			self._searcher:destroy()
+			self._searcher = nil
+		end
 	else
 		radiant.error('op "%s" in LayEgg_spot _find_location_callback', op)
 	end
 end
 
 function LayEgg_spot:destroy()
-	if self._sv._searcher then
-		self._sv._searcher:destroy()
-		self._sv._searcher = nil
+	if self._searcher then
+		self._searcher:destroy()
+		self._searcher = nil
 	end
 end
 

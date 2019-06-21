@@ -1,0 +1,40 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(market_shelf_clay.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0
+			},
+			"region_origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			}
+		},
+		"render_info": {
+			"scale": 0.1,
+			"animation_table": "/stonehearth/data/rigs/entities/containers/shelf_tall/shelf_tall.json"
+		},
+		"effect_list": {
+			"default": "/stonehearth/data/rigs/entities/containers/shelf_tall/effects/idle.json"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:entities.containers.market_shelf_tall_ground_clay.market_shelf_tall_ground_clay_ghost.display_name)",
+			"description": "i18n(stonehearth:entities.containers.market_shelf_tall_ground_clay.market_shelf_tall_ground_clay_ghost.description)",
+			"icon": "file(market_shelf_tall_ground_clay.png)",
+			"category": "storage",
+			"material_tags": ["clay", "containers", "crafted", "furniture", "stockpile_furniture"]
+		}
+	}
+}

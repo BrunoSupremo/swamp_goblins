@@ -26,9 +26,19 @@
 						"trading":	"file(building_templates/trading.json)",
 						"nursery":	"file(building_templates/nursery.json)",
 						"bonesmith_workshop":	"file(building_templates/bonesmith_workshop.json)",
+						"earthmaster_workshop":	"file(building_templates/earthmaster_workshop.json)",
 						"treasure_storage":	"file(building_templates/treasure_storage.json)",
 						"shaman_center":	"file(building_templates/shaman_center.json)",
-						"garden":	"file(building_templates/garden.json)"
+						"garden":	"file(building_templates/garden.json)",
+
+
+						"fisher_hut": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "archipelago_biome:jobs:fisher"
+							},
+							"file": "file(building_templates/fisher_hut.json)"
+						}
 					}
 				}
 			}

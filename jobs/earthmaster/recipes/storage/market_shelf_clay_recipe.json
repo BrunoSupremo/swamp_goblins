@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 80,
+	"work_units": 15,
+	"recipe_name": "i18n(stonehearth:jobs.potter.recipes.market_shelf_tall_ground_clay.recipe_name)",
+	"description": "i18n(stonehearth:jobs.potter.recipes.market_shelf_tall_ground_clay.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.market_shelf_tall_ground_clay.flavor)",
+	"portrait": "/swamp_goblins/entities/containers/market_shelf_clay/market_shelf_clay.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 4
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:containers:market_shelf:clay"
+		}
+	]
+}
