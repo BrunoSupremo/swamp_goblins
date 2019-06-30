@@ -1,0 +1,14 @@
+{
+	"mixintos": {
+		"swamp_goblins:trees:bogger:small":		"tower_defense/mixins/tree/tree.json",
+		"swamp_goblins:trees:dead:small":		"tower_defense/mixins/tree/tree.json",
+		"swamp_goblins:trees:dead:medium":		"tower_defense/mixins/tree/tree.json",
+		"swamp_goblins:trees:dead:large":		"tower_defense/mixins/tree/tree.json",
+		"swamp_goblins:trees:cypress:small":	"tower_defense/mixins/tree/tree.json",
+		"swamp_goblins:trees:cypress:medium":	"tower_defense/mixins/tree/tree.json",
+		"swamp_goblins:trees:cypress:large":	"tower_defense/mixins/tree/tree.json"
+	},
+	"overrides":{
+		"swamp_goblins/data/biome/images/swamp_400x300.jpg":"swamp_goblins/data/biome/images/tower_defense.png"
+	}
+}

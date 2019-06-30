@@ -464,7 +464,10 @@
 		"stonehearth:trapper:outfit": "file(jobs/trapper/trapper_outfit)",
 		"stonehearth:worker:outfit":		"file(jobs/worker/worker_outfit)",
 		"rayyas_children:worker:outfit":	"file(jobs/worker/worker_outfit)",
-		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)"
+		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)",
+
+		"tower_defense/data/compatible_mods.json": "file(data/compatible_mods.json)",
+		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)"
 	},
 	"functions": {
 		"change_weather": {

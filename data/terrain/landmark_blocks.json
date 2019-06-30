@@ -34,5 +34,27 @@
 		"loot_bag": "swamp_goblins:food:mushroom",
 		"drop_chance": 0.1,
 		"force_iconic": true
+	},
+
+	"#666468": {
+		"loot_bag": "tower_defense:obstacles:abundant_ore",
+		"facing": "random",
+		"force_iconic": false,
+		"placement_chance": 1
+	},
+	"#837E5C": {
+		"loot_bag": "tower_defense:obstacles:fertile_dirt",
+		"facing": "random",
+		"force_iconic": false,
+		"placement_chance": 1
+	},
+	"#761B76": {
+		"loot_bag": "tower_defense:end_portal:firepit_titan",
+		"facing": 0,
+		"force_iconic": false,
+		"placement_chance": 1
+	},
+	"#838646": {
+		"terrain_tag": "grass"
 	}
 }
