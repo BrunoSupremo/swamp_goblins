@@ -67,6 +67,30 @@
 		"gm":{
 			"nina":"Nina",
 			"campaigns":{
+				"trader": {
+					"arcs": {
+						"encounters": {
+							"tier_1_shops": {
+								"firefly_shop_1": {
+									"name": "Firefly Simple Items Shop",
+									"title": "A firefly goblin has arrived with items from his hometown"
+								}
+							},
+							"tier_2_shops": {
+								"firefly_shop_2": {
+									"name": "Firefly Items Shop",
+									"title": "A small firefly goblin group has arrived with items from their hometown"
+								}
+							},
+							"tier_3_shops": {
+								"firefly_shop_3": {
+									"name": "Firefly Complete Items Shop",
+									"title": "A very organized firefly goblin caravan has arrived with items from their hometown"
+								}
+							}
+						}
+					}
+				},
 				"town_progression":{
 					"trigger":{
 						"before_chosing_banner":{
@@ -181,10 +205,6 @@
 	},
 	"entities": {
 		"armor": {
-			"fern_helmet": {
-				"display_name": "(Firefly) Fern Hat",
-				"description": "Avoids heating your head under the sun"
-			},
 			"flower_helmet": {
 				"display_name": "(Firefly) Flower Hat",
 				"description": "More about fashion than protection"
@@ -425,11 +445,6 @@
 			}
 		},
 		"food": {
-			"plate_of_ferns": {
-				"display_name": "Plate of Ferns",
-				"description": "Just smashed ferns",
-				"flavor": "Uses ingredients found in the Swamp Biome"
-			},
 			"plate_of_mushrooms": {
 				"display_name": "Plate of Mushrooms",
 				"description": "Chopped mushroom",
@@ -535,11 +550,6 @@
 					"description": "Just needs some time and care."
 				}
 			},
-			"fern": {
-				"display_name": "Fern",
-				"description": "Harvestable for a meager food supply.",
-				"unripe_description": "This plant has been harvested and has not grown back yet"
-			},
 			"giant_flower": {
 				"display_name": "Giple Flower",
 				"description": "Can be harvested for healing herbs",
@@ -586,10 +596,6 @@
 			},
 			"mushroom": {
 				"display_name": "Mushroom",
-				"description": "Ready for eating"
-			},
-			"fern": {
-				"display_name": "Fern",
 				"description": "Ready for eating"
 			},
 			"pelt": {

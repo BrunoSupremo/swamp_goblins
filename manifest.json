@@ -32,7 +32,6 @@
 
 		"task_groups:lay_egg": "file(ai/task_groups/lay_egg.lua)",
 
-		"armor:fern_helmet":	"file(entities/armor/fern_helmet)",
 		"armor:flower_helmet":	"file(entities/armor/flower_helmet)",
 		"armor:full_leather_helmet":"file(entities/armor/full_leather_helmet)",
 		"armor:goblin_aura":"file(entities/armor/goblin_aura)",
@@ -196,9 +195,7 @@
 		"earthmaster:potter_workbench": "file(jobs/earthmaster/potter_workbench)",
 		"earthmaster:potter_kiln": "file(jobs/earthmaster/potter_kiln)",
 
-		"food:fern":	"file(entities/food/fern)",
 		"food:mushroom":"file(entities/food/mushroom)",
-		"food:plate_of_ferns":		"file(entities/food/plate_of_ferns)",
 		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 
 		"furniture:checkers_table":	"file(entities/furniture/checkers_table)",
@@ -267,7 +264,6 @@
 		"plants:cattail":		"file(entities/plants/cattail)",
 		"plants:cattail:seed":	"file(entities/plants/cattail/seed)",
 		"plants:cattail:sprout":"file(entities/plants/cattail/sprout)",
-		"plants:fern":		"file(entities/plants/fern)",
 		"plants:giant_flower":			"file(entities/plants/giant_flower)",
 		"plants:giant_flower:seed":		"file(entities/plants/giant_flower/seed)",
 		"plants:giant_flower:sprout":	"file(entities/plants/giant_flower/sprout)",
@@ -285,7 +281,6 @@
 		"portals:wooden_window_frame":	"file(entities/construction/wooden_window_frame)",
 
 		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
-		"resources:bone":			"file(entities/resources/bone)",
 		"resources:cattail":		"file(entities/resources/cattail)",
 		"resources:firefly_essense":"file(entities/resources/firefly_essense)",
 		"resources:giant_flower":	"file(entities/resources/giant_flower)",
@@ -379,14 +374,7 @@
 
 		"worker:abilities:goblin":"file(jobs/worker/goblin_worker_abilities.json)"
 	},
-	"deprecated_aliases":{
-		"consumables:blue_potion":	"file(entities/consumables/blue_potion)",
-		"consumables:green_potion":	"file(entities/consumables/green_potion)",
-		"consumables:purple_potion":"file(entities/consumables/purple_potion)",
-		"consumables:white_potion":	"file(entities/consumables/white_potion)",
-		"camp_standard_2":"file(entities/gizmos/camp_standard)",
-		"shaman:weaving_table": "file(jobs/bonesmith/weaving_table)"
-	},
+	"deprecated_aliases":{},
 	"mixintos" :  {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 
@@ -401,7 +389,16 @@
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json)",
+
 		"stonehearth/data/gm/campaigns/trader/trader_campaign.json":	"file(data/gm/campaigns/trader/trader_campaign.json)",
+		"stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json":	"file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/tier_1_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_1_shops)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/tier_2_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_3_shops/tier_3_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_3_shops)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/caravan_shops_arc.json":	"file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/tier_1_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_1_shops)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/tier_2_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_3_shops/tier_3_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_3_shops)",
 
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_raider_camp.json":"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_thief_camp.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",

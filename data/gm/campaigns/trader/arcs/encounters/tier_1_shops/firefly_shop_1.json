@@ -1,0 +1,29 @@
+{
+	"type": "encounter",
+	"encounter_type": "shop",
+	"in_edge": "firefly_shop_1",
+	"shop_info": {
+		"name": "i18n(swamp_goblins:data.gm.campaigns.trader.arcs.encounters.tier_1_shops.firefly_shop_1.name)",
+		"title": "i18n(swamp_goblins:data.gm.campaigns.trader.arcs.encounters.tier_1_shops.firefly_shop_1.title)",
+		"inventory": {
+			"shopkeeper_level": 1,
+			"shopkeeper_gold": 150,
+			"overall_price_multiplier": 2,
+			"entries": [
+				{
+					"items_matching": {
+						"anything_with": {
+							"material": [
+								"firefly_made"
+							]
+						}
+					},
+					"quantity": {
+						"min": 0,
+						"max": 1
+					}
+				}
+			]
+		}
+	}
+}

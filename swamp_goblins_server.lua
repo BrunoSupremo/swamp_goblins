@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.6.29")
+print("Swamp Goblins Mod version 19.7.1")
 
 -- todo
 -- templates, inn, dinning hall, tavern, profession workshops
@@ -8,7 +8,6 @@ print("Swamp Goblins Mod version 19.6.29")
 -- weather stone
 -- warrior hearth = battle royal
 -- nature hearth = random buffs
--- fireflly only merchant
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then
