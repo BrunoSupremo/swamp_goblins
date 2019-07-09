@@ -9,12 +9,44 @@
 			"msg1": {
 				"bulletin": {
 					"title": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.title)",
-					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
 					"portrait": "file(images/nina.png)",
 					"message": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.message)",
 					"choices": {
-						"ok": {
-							"out_edge": ""
+						"swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.what": {
+							"next_node": "message_2"
+						}
+					}
+				}
+			},
+			"message_2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.message_2)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.wait": {
+							"next_node": "message_3"
+						}
+					}
+				}
+			},
+			"message_3": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.message_3)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.listen": {
+							"out_edge": {
+								"type": "trigger_many",
+								"out_edges": [
+									"first_contact_alert",
+									"first_attack"
+								]
+							}
 						}
 					}
 				}

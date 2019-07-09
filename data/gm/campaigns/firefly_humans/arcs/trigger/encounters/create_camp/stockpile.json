@@ -3,7 +3,8 @@
 	"script" : "stonehearth:game_master:camp_piece:stockpile",
 	"script_info" : {
 		"npc_player_id" : "firefly_human_encounter",
-		"stockpile_size" : { "w" : 5, "h" : 5 }, 
+		"stockpile_contents" : "stonehearth:resources:wood:oak_log",
+		"stockpile_size" : { "w" : 4, "h" : 4 }, 
 		"ctx_entity_registration_path" : "firefly_human_encounter",
 		"entity_name" : "stockpile"
 	}

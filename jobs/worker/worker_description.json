@@ -9,7 +9,7 @@
 	"description": "i18n(swamp_goblins:jobs.worker.worker_description.description)",
 	"requirements": "i18n(stonehearth:jobs.worker.worker_description.requirements)",
 	"default_stance": "aggressive",
-	"abilities": "file(worker_abilities.json)",
+	"abilities": "/stonehearth/jobs/worker/worker_abilities/worker_abilities.json",
 	"equipment": {
 		"torso": "file(worker_outfit/goblin_worker_outfit.json)",
 		"mainhand": [

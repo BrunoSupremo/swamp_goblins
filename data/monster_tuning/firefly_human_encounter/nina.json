@@ -11,7 +11,11 @@
 		"additive_armor_modifier": 5,
 		"exp_reward": 40
 	},
+	"unit_info": {
+		"display_name":"i18n(swamp_goblins:entities.humans.nina.display_name)"
+	},
 	"equipment": {
-		"mainhand": "stonehearth:weapons:wooden_sword"
+		"mainhand": "stonehearth:trapper:knife",
+		"multi_target_attack":"stonehearth:footman:manual_of_cleave"
 	}
 }

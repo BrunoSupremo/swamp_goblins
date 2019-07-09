@@ -65,6 +65,7 @@
 			}
 		},
 		"gm":{
+			"human":"Unknown human",
 			"nina":"Nina",
 			"campaigns":{
 				"trader": {
@@ -102,6 +103,24 @@
 							"title":"Daily Report?",
 							"dialog_title":"Daily Report?",
 							"message":"What is a 'Daily Report'? A way to get new citizens? We don't have such a thing. <br> Use the Goblinpedia, crafted by the Shaman, to learn how it is done."
+						}
+					}
+				},
+				"firefly_humans":{
+					"trigger":{
+						"first_contact":{
+							"title":"First Impression",
+							"message":"No, that's not possible...<br>You guys are here too?",
+							"what":"What you mean?",
+							"message_2":"Good try, but it will not work.<br>We know your tactics.<br>This time, we will take the initiative first!",
+							"wait":"Wait, what?",
+							"message_3":"Foward!",
+							"listen":"You are not listening!"
+						},
+						"first_contact_alert":"They are sending an attack!",
+						"raid":{
+							"title":"Incoming attack",
+							"message":"Some footman, watch out!"
 						}
 					}
 				}

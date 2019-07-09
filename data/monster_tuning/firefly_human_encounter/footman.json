@@ -1,9 +1,9 @@
 {
 	"type": "monster_tuning",
 	"estimated_difficulty": 1,
-	"job": "stonehearth:jobs:knight",
+	"job": "stonehearth:jobs:footman",
 	"attributes": {
-		"max_health": 160,
+		"max_health": 100,
 		"muscle": 40,
 		"menace": 90,
 		"courage": 220,
@@ -12,9 +12,9 @@
 		"exp_reward": 40
 	},
 	"equipment": {
-		"torso": "stonehearth:knight:outfit",
-		"offhand": "stonehearth:armor:knights_shield",
+		"torso": "stonehearth:footman:outfit",
+		"offhand": "stonehearth:armor:wooden_shield",
 		"mainhand": "stonehearth:weapons:short_sword",
-		"helmet": "stonehearth/jobs/knight/knight_helm/knight_helm.json"
+		"helmet": "stonehearth:armor:cloth_padded_helmet"
 	}
 }

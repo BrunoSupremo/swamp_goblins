@@ -1,0 +1,12 @@
+{
+	"type" : "encounter",
+	"encounter_type" : "generator",
+
+	"in_edge"  : "first_attack",
+
+	"generator_info" :  {
+		"delay" : "12h+12h",
+		"source_entity" : "firefly_human_encounter.boss",
+		"spawn_edge" : "footman_attacks"
+	}
+}

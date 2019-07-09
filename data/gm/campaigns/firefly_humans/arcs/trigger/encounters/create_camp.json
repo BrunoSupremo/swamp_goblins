@@ -20,7 +20,7 @@
 		},
 		"radius": 15,
 		"spawn_range": {
-			"min": 150,
+			"min": 100,
 			"max": 250
 		},
 		"boss": {
@@ -42,14 +42,14 @@
 				},
 				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:worker"
 			},
-			"farmer": {
+			"trapper": {
 				"from_population": {
 					"min": 1,
 					"max": 1,
 					"location": { "x": 4, "z": 4 },
 					"range": 3
 				},
-				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:farmer"
+				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:trapper"
 			},
 			"knight": {
 				"from_population": {
@@ -68,7 +68,11 @@
 			},
 			"banner": {
 				"info": "file(create_camp/banner.json)",
-				"position": { "x": 2, "y": 6 }
+				"position": { "x": 0, "y": 0 }
+			},
+			"furniture": {
+				"info": "file(create_camp/furniture.json)",
+				"position": { "x": 0, "y": 0 }
 			},
 			"stockpile": {
 				"position": { "x": 6, "y": 8 },
