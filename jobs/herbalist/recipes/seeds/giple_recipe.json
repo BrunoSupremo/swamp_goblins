@@ -1,0 +1,28 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.plants.giant_flower.display_name)",
+	"description": "i18n(swamp_goblins:entities.plants.giant_flower.description)",
+	"flavor": "i18n(stonehearth:jobs.herbalist.recipes.brightbell_transmute_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/plants/giant_flower/seed/seed.png",
+	"workshop": "stonehearth:herbalist:workbench",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:giant_flower",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:plants:giant_flower:seed"
+		},
+		{
+			"item": "swamp_goblins:plants:giant_flower:seed"
+		},
+		{
+			"item": "swamp_goblins:plants:giant_flower:seed"
+		}
+	]
+}

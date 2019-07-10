@@ -418,10 +418,13 @@
 
 		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
 
+		"stonehearth:farmer:initial_crops": "file(services/server/farming/data/initial_crops.json)",
+
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
 		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
+		"stonehearth/jobs/herbalist/recipes/recipes.json":	"file(jobs/herbalist/recipes)",
 
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
 

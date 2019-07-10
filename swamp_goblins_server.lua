@@ -9,9 +9,6 @@ print("Swamp Goblins Mod version 19.7.9")
 -- warrior hearth = battle royal
 -- nature hearth = random buffs
 -- dart traps, smoke traps
--- herb seeds recipes
--- farm types to firefly
--- bucket talisman in shaman recipe list
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then
