@@ -509,7 +509,7 @@
 			},
 			"baby": {
 				"display_name": "Baby Goblin",
-				"description": "Will grow into a fully goblin soon"
+				"description": "It will turn into a grown up soon"
 			}
 		},
 		"gizmos": {
@@ -791,7 +791,7 @@
 				},
 				"level_3_data": {
 					"perk_000_name": "Multiple Spirits",
-					"perk_000_description": "Summons multiple goblin spirits, the amount based on the summoner spirit stat"
+					"perk_000_description": "Summons multiple goblin spirits, the amount based on this goblin spirit stat"
 				},
 				"level_4_data": {
 					"perk_000_name": "Big G",
@@ -1019,7 +1019,7 @@
 				},
 				"level_3_data": {
 					"perk_000_name": "Traps",
-					"perk_000_description": "Traps enemies, immobilizing them for some time"
+					"perk_000_description": "Immobilize enemies using traps, the amount based on this goblin mind stat"
 				},
 				"level_4_data": {
 					"perk_000_name": "Varanus",
@@ -1090,7 +1090,8 @@
 				"wood_portal_door":"Any Wood Door",
 				"wood_portal_window":"Any Wood Window"
 			},
-			"raid_egg":"Watch out! Some bugs are after our eggs!"
+			"raid_egg":"Watch out! Some bugs are after our eggs!",
+			"new_goblin_citizen":"A baby no more. Welcome [str(i18n_data.adult_name)]"
 		},
 		"game": {
 			"build_mode2": {

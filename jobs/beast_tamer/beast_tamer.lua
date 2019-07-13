@@ -100,17 +100,22 @@ function BeastTamerClass:summon_traps(delay, target)
 	region:add_point(location)
 	region = region:inflated(Point3(10,10,10))
 	local entities = radiant.terrain.get_entities_in_region(region)
+	local limit = radiant.entities.get_attribute(self._sv._entity, "mind")
 	for _, entity in pairs(entities) do
 		local is_hostile = stonehearth.player:are_entities_hostile(entity, self._sv._entity)
 		if is_hostile and radiant.entities.has_free_will(entity) then
 			radiant.entities.add_buff(entity, "swamp_goblins:buffs:trapped")
+			limit = limit -1
+			if limit <1 then
+				break
+			end
 		end
 	end
 end
 
 function BeastTamerClass:summon_wildlife(delay)
 	local uris = {
-		"swamp_goblins:summons:frog",--
+		"swamp_goblins:summons:frog",
 		"swamp_goblins:summons:beetle",
 		"swamp_goblins:summons:bitsy_ant",
 		"swamp_goblins:summons:doodles",
@@ -134,7 +139,7 @@ function BeastTamerClass:summon_animals(delay, uris, amount, has_attributes)
 		local summoning_delay = (delay * 33.3 * offset)
 		stonehearth.combat:set_timer("BeastTamerClass summoning_delay: "..i, summoning_delay, function()
 			self:create_animal(uri, has_attributes)
-			end)
+		end)
 	end
 end
 

@@ -2,15 +2,24 @@
 	"type": "entity",
 	"mixins": [
 		"file(curtains_door_ghost.json)",
-		"stonehearth:mixins:basic_destructable_door"
+		"stonehearth:mixins:portals:double_door",
+		"stonehearth:mixins:destructable_double_door"
 	],
 	"components": {
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 1
+			},
+			"menace": {
+				"type": "basic",
+				"value": 1
+			}
+		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(curtains_door_iconic.json)",
 			"ghost_form": "file(curtains_door_ghost.json)",
-			"placeable_on_walls": true,
-			"placeable_on_ground": true,
-			"hide_placement_ui": true
+			"hide_placement_ui": false
 		}
 	},
 	"entity_data": {
@@ -23,6 +32,12 @@
 				"shopkeeper_level": 1,
 				"shopkeeper_type": "caravan"
 			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 6
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
 		}
 	}
 }

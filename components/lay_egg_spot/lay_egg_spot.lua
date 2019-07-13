@@ -30,12 +30,7 @@ function LayEgg_spot:post_activate()
 	end
 	if self._sv._current_baby then
 		self._baby_listener = radiant.events.listen_once(self._sv._current_baby, 'stonehearth:on_evolved', function(e)
-			local pop = stonehearth.population:get_population(self.player_id)
-			pop:create_new_goblin_citizen_from_role_data(e.evolved_form)
-			local job_component = e.evolved_form:add_component('stonehearth:job')
-			job_component:promote_to("stonehearth:jobs:worker", { skip_visual_effects = true })
-			self._sv._current_baby = nil
-			self._baby_listener = nil
+			self:grow_into_adult(e.evolved_form)
 		end)
 	end
 end
@@ -88,15 +83,25 @@ function LayEgg_spot:egg_hatched(baby)
 
 	self._sv._current_baby = baby
 	self._baby_listener = radiant.events.listen_once(baby, 'stonehearth:on_evolved', function(e)
-		local pop = stonehearth.population:get_population(self.player_id)
-		pop:create_new_goblin_citizen_from_role_data(e.evolved_form)
-		local job_component = e.evolved_form:add_component('stonehearth:job')
-		job_component:promote_to("stonehearth:jobs:worker", { skip_visual_effects = true })
-		self._sv._current_baby = nil
-		self._baby_listener = nil
+		self:grow_into_adult(e.evolved_form)
 	end)
 
 	stonehearth.ai:reconsider_entity(self._entity)
+end
+
+function LayEgg_spot:grow_into_adult(adult)
+	local pop = stonehearth.population:get_population(self.player_id)
+	pop:create_new_goblin_citizen_from_role_data(adult)
+	local job_component = adult:add_component('stonehearth:job')
+	job_component:promote_to("stonehearth:jobs:worker", { skip_visual_effects = true })
+	self._sv._current_baby = nil
+	self._baby_listener = nil
+	stonehearth.bulletin_board:post_bulletin(self.player_id)
+	:set_data({
+		zoom_to_entity = adult,
+		title = "i18n(swamp_goblins:ui.data.new_goblin_citizen)"
+	})
+	:add_i18n_data('adult_name', radiant.entities.get_custom_name(adult))
 end
 
 function LayEgg_spot:egg_killed()

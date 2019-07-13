@@ -1,0 +1,39 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"render_info": {
+			"scale": 0.133,
+			"animation_table": "/stonehearth_ace/data/rigs/entities/construction/water_well/water_well.json"
+		},
+		"effect_list": {
+			"default": "/stonehearth_ace/data/rigs/entities/construction/water_well/effects/idle.json"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(clay_water_well.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth_ace:entities.construction.clay_water_well_roofed.display_name)",
+			"description": "i18n(stonehearth_ace:entities.construction.clay_water_well_roofed.description)",
+			"icon": "file(clay_water_well.png)",
+			"category": "construction",
+			"material_tags": [
+				"drink_container",
+				"wood",
+				"water_well",
+				"crafted",
+				"construction",
+				"stockpile_construction"
+			]
+		}
+	}
+}
