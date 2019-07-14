@@ -86,6 +86,12 @@ function LayEgg_spot:egg_hatched(baby)
 		self:grow_into_adult(e.evolved_form)
 	end)
 
+	stonehearth.bulletin_board:post_bulletin(self.player_id)
+	:set_data({
+		zoom_to_entity = baby,
+		title = "i18n(swamp_goblins:ui.data.new_goblin_baby)"
+	})
+
 	stonehearth.ai:reconsider_entity(self._entity)
 end
 
