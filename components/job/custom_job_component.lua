@@ -16,6 +16,8 @@ function SwampGoblinsJobComponent:promote_to(job_uri, options)
 			end
 		end
 	end
+	local render_info = self._entity:add_component('render_info')
+	local model = render_info:get_model_variant()
 	if not self:get_allowed_jobs() and not is_npc then
 		local player_id = radiant.entities.get_player_id(self._entity)
 		local job_index = stonehearth.player:get_jobs(player_id)
@@ -33,8 +35,6 @@ function SwampGoblinsJobComponent:promote_to(job_uri, options)
 				end
 			end
 		end
-		local render_info = self._entity:add_component('render_info')
-		local model = render_info:get_model_variant()
 		if model == "firefly_goblin" then
 			self:set_allowed_jobs(firefly_job_list)
 		else
@@ -45,6 +45,16 @@ function SwampGoblinsJobComponent:promote_to(job_uri, options)
 		self:_goblin_ace_promote_to(job_uri, options)
 	else
 		self:_goblin_promote_to(job_uri, options)
+	end
+
+	if model == "firefly_goblin" then
+		if self:get_job_uri() == "stonehearth:jobs:worker" then
+			local equipment_component = self._entity:get_component("stonehearth:equipment")
+			if not equipment_component:has_item_type("swamp_goblins:worker:abilities:goblin") then
+				local equipment = radiant.entities.create_entity("swamp_goblins:worker:abilities:goblin")
+				radiant.entities.equip_item(self._entity, equipment)
+			end
+		end
 	end
 end
 
