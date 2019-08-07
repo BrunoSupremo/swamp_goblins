@@ -27,6 +27,10 @@
 		"stonehearth:traveler_attraction": {}
 	},
 	"entity_data": {
+		"stonehearth:town_patrol": {
+			"auto_patrol": true,
+			"patrol_pattern": "perimeter"
+		},
 		"stonehearth:safety_point": true,
 		"stonehearth:territory": {
 			"marks_territory": true

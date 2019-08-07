@@ -1,5 +1,6 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.7.15")
+print("Swamp Goblins Mod version 7.8.15")
+--last steam update: 14.7.15
 
 -- todo
 -- templates, inn, dinning hall, tavern, profession workshops
@@ -11,9 +12,6 @@ print("Swamp Goblins Mod version 19.7.15")
 -- mushroom garden
 -- swamp fish colors, eels, blowfish
 -- fountain effects, hourglass effects
--- goblin candle less yellow flames
--- swamp plants appeal
--- flag, hearth patrollable
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then
