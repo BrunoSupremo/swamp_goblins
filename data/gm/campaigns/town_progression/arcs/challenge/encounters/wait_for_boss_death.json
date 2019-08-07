@@ -2,12 +2,7 @@
 	"type": "encounter",
 	"encounter_type": "wait_for_event",
 	"in_edge": "wait_for_boss_death",
-	"out_edge": {
-		"type": "trigger_many",
-		"out_edges": [
-			"boss_death_dialog"
-		]
-	},
+	"out_edge": "boss_death_dialog",
 	"wait_for_event_info": {
 		"source": "firefly_human_encounter.boss",
 		"event": "stonehearth:kill_event"

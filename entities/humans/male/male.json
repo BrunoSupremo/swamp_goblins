@@ -3,5 +3,20 @@
 	"mixins": [
 		"stonehearth:male_npc_1",
 		"stonehearth:mixins:monster"
-	]
+	],
+	"components": {
+		"sensor_list": {
+			"sensors": {
+				"sight": {
+					"radius": 64
+				}
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"subjects": [ "hearthlings"],
+			"subject_override": "stonehearth:decoration:firepit"
+		}
+	}
 }

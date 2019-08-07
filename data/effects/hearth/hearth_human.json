@@ -1,0 +1,50 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"upward_particles": {
+			"type": "cubemitter",
+			"cubemitter": "/stonehearth/data/horde/particles/level_up/level_up.cubemitter.json",
+			"loop": true,      
+			"transforms": {
+				"x":0,
+				"y":0,
+				"z":0,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"glow": {
+			"type": "cubemitter",
+			"cubemitter": "/stonehearth/data/horde/particles/level_up/level_up_glow.cubemitter.json",
+			"loop": true,       
+			"transforms": {
+				"x":0,
+				"y":0,
+				"z":0,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},      
+		"spiral": {
+			"type": "cubemitter",
+			"cubemitter": "/stonehearth/data/horde/particles/level_up/level_up_spiral.cubemitter.json",
+			"loop": true,        
+			"transforms": {
+				"x":0,
+				"y":-3,
+				"z":0,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"light": {
+			"type": "light",
+			"light": "/stonehearth/data/horde/animatedlights/fire/fire.animatedlight.json",
+			"transforms": { "x": 0, "y": 1, "z": 0 },
+			"shadows": false
+		}
+	}
+}

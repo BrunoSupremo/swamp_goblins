@@ -1,0 +1,37 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "peaceful_introduction",
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.peaceful_introduction.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.peaceful_introduction.message)",
+					"choices": {
+						"stonehearth:ui.game.common.next": {
+							"next_node": "msg2"
+						}
+					}
+				}
+			},
+			"msg2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.peaceful_introduction.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.peaceful_introduction.message2)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.challenge.peaceful_introduction.thanks": {
+							"out_edge": "receive_food"
+						}
+					}
+				}
+			}
+		}
+	}
+}

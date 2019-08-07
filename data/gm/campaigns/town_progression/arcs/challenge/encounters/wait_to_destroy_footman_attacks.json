@@ -2,8 +2,8 @@
 	"type": "encounter",
 	"encounter_type": "wait",
 	"in_edge": "wait_to_destroy_footman_attacks",
-	"out_edge": "destroy_footman_attacks",
+	"out_edge": "unreachable_attack",
 	"wait_info": {
-		"duration": "2d+12h"
+		"duration": "1d+1d"
 	}
 }

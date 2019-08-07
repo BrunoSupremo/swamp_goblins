@@ -2,7 +2,9 @@
 	"type": "arc",
 	"rarity": "common",
 	"encounters": {
-		"start":				"file(encounters/start.json)",
+		"start":"file(encounters/start.json)",
+		"compatibility_run":"file(encounters/compatibility_run.json)",
+
 		"before_chosing_banner":"file(encounters/before_chosing_banner.json)",
 		"chose_banner":			"file(encounters/chose_banner.json)",
 		"goblin_banner":		"file(encounters/goblin_banner.json)",

@@ -1,0 +1,40 @@
+{
+	"type": "encounter",
+	"encounter_type": "delivery_quest",
+	"in_edge": "hearth_quest_warrior",
+	"out_edge": "hearth_upgrade_warrior",
+	"delivery_quest_info": {
+		"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.hearth_quest_warrior.title)",
+		"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.hearth_quest_warrior.dialog_title)",
+		"requirements": [
+			{
+				"type": "give_item",
+				"uri": "swamp_goblins:consumables:small_healing",
+				"count": 5,
+				"keep_items": true
+			},
+			{
+				"type": "give_item",
+				"uri": "swamp_goblins:resources:firefly_essense",
+				"count": 10,
+				"keep_items": true
+			},
+			{
+				"type": "job_level",
+				"uri": "swamp_goblins:jobs:warrior",
+				"level": 3
+			},
+			{
+				"type": "job_level",
+				"uri": "swamp_goblins:jobs:beast_tamer",
+				"level": 2
+			},
+			{
+				"type": "job_level",
+				"uri": "swamp_goblins:jobs:spirit_walker",
+				"level": 2
+			}
+		],
+		"abandon_out_edge": "hearth_abandon"
+	}
+}

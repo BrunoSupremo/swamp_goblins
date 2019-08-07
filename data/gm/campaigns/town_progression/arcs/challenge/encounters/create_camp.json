@@ -3,6 +3,15 @@
 	"encounter_type": "create_camp",
 	"rarity": "common",
 	"in_edge": "create_camp",
+	"can_start": {
+		"test_1": {
+			"game_mode_check": {
+				"type": "deny_if",
+				"item": "game_mode",
+				"value": "stonehearth:game_mode:peaceful"
+			}
+		}
+	},
 	"out_edge": {
 		"type": "trigger_many",
 		"out_edges": [
@@ -23,6 +32,7 @@
 			"min": 100,
 			"max": 250
 		},
+		"script": "file(boss_location_saved.lua)",
 		"boss": {
 			"from_population": {
 				"role":"nina",

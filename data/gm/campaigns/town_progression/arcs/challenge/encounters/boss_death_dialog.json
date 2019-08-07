@@ -1,0 +1,51 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "boss_death_dialog",
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"script": "file(boss_death_script.lua)",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.boss_death_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.boss_death_dialog.message)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.challenge.boss_death_dialog.answer": {
+							"next_node": "msg2"
+						}
+					}
+				}
+			},
+			"msg2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.boss_death_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.boss_death_dialog.message2)",
+					"choices": {
+						"stonehearth:ui.game.common.no": {
+							"next_node": "msg3"
+						}
+					}
+				}
+			},
+			"msg3": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.boss_death_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.boss_death_dialog.message3)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.challenge.boss_death_dialog.answer3": {
+							"out_edge": "nina_introduction"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"type": "encounter",
+	"encounter_type": "create_camp",
+	"rarity": "common",
+	"in_edge": "create_camp_peaceful",
+	"can_start": {
+		"test_1": {
+			"game_mode_check": {
+				"type": "deny_if_not",
+				"item": "game_mode",
+				"value": "stonehearth:game_mode:peaceful"
+			}
+		}
+	},
+	"out_edge": "peaceful_introduction",
+	"create_camp_info": {
+		"npc_player_id": "firefly_human_encounter",
+		"keep_grass": true,
+		"ctx_entity_registration_path": "firefly_human_encounter",
+		"searcher_delay": "1d+12h",
+		"on_searcher_failure": {
+			"retry": true
+		},
+		"radius": 15,
+		"spawn_range": {
+			"min": 100,
+			"max": 250
+		},
+		"script": "file(boss_death_script.lua)",
+		"boss": {
+			"from_population": {
+				"role":"nina",
+				"gender":"female",
+				"location": { "x": 4, "y": 4 }
+			},
+			"combat_leash_range": 30,
+			"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:nina"
+		},
+		"citizens": {
+			"workers": {
+				"from_population": {
+					"min": 2,
+					"max": 2,
+					"location": { "x": 4, "z": 4 },
+					"range": 3
+				},
+				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:worker"
+			},
+			"trapper": {
+				"from_population": {
+					"min": 1,
+					"max": 1,
+					"location": { "x": 4, "z": 4 },
+					"range": 3
+				},
+				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:trapper"
+			},
+			"knight": {
+				"from_population": {
+					"min": 1,
+					"max": 1,
+					"location": { "x": 4, "z": 4 },
+					"range": 3
+				},
+				"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:knight"
+			}
+		},
+		"pieces": {
+			"campfire": {
+				"info": "file(create_camp/campfire.json)",
+				"position": { "x": 0, "y": 0 }
+			},
+			"banner": {
+				"info": "file(create_camp/banner.json)",
+				"position": { "x": 0, "y": 0 }
+			},
+			"furniture": {
+				"info": "file(create_camp/furniture.json)",
+				"position": { "x": 0, "y": 0 }
+			},
+			"stockpile": {
+				"position": { "x": 6, "y": 8 },
+				"info": "file(create_camp/stockpile.json)"
+			}
+		},
+		"landmark_data": {
+			"brush": "/swamp_goblins/data/models/landmark/32x_firefly_human_encounter.qb",
+			"brush_mask": "/swamp_goblins/data/models/landmark/32x_firefly_human_encounter_mask.qb",
+			"landmark_block_types": "stonehearth:landmark_blocks",
+			"translation":{
+				"x":1,
+				"y":0,
+				"z":1
+			}
+		}
+	}
+}

@@ -8,12 +8,12 @@
 		"nodes": {
 			"msg1": {
 				"bulletin": {
-					"title": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.title)",
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.title)",
 					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
 					"portrait": "file(images/nina.png)",
-					"message": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.message)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.message)",
 					"choices": {
-						"swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.what": {
+						"swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.what": {
 							"next_node": "message_2"
 						}
 					}
@@ -21,12 +21,12 @@
 			},
 			"message_2": {
 				"bulletin": {
-					"title": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.title)",
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.title)",
 					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
 					"portrait": "file(images/nina.png)",
-					"message": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.message_2)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.message_2)",
 					"choices": {
-						"swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.wait": {
+						"swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.wait": {
 							"next_node": "message_3"
 						}
 					}
@@ -34,12 +34,12 @@
 			},
 			"message_3": {
 				"bulletin": {
-					"title": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.title)",
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.title)",
 					"dialog_title": "i18n(swamp_goblins:data.gm.human)",
 					"portrait": "file(images/nina.png)",
-					"message": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.message_3)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.message_3)",
 					"choices": {
-						"swamp_goblins:data.gm.campaigns.firefly_humans.trigger.first_contact.listen": {
+						"swamp_goblins:data.gm.campaigns.town_progression.challenge.first_contact.listen": {
 							"out_edge": {
 								"type": "trigger_many",
 								"out_edges": [

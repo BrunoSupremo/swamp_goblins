@@ -1,0 +1,10 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_event",
+	"in_edge": "wait_for_footman_death",
+	"out_edge": "footman_death_dialog",
+	"wait_for_event_info": {
+		"source": "firefly_human_raid.footman",
+		"event": "stonehearth:kill_event"
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"type": "encounter",
+	"encounter_type": "delivery_quest",
+	"in_edge": "hearth_quest_nature",
+	"out_edge": "hearth_upgrade_nature",
+	"delivery_quest_info": {
+		"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.hearth_quest_nature.title)",
+		"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.hearth_quest_nature.dialog_title)",
+		"requirements": [
+			{
+				"type": "happiness",
+				"min_value": 35,
+				"min_citizens": "all"
+			},
+			{
+				"type": "happiness",
+				"min_value": 65,
+				"min_citizens": 2
+			},
+			{
+				"type": "give_material",
+				"material": "herb resource",
+				"count": 5,
+				"keep_items": true
+			},
+			{
+				"type": "give_material",
+				"material": "seed_hard",
+				"count": 5,
+				"keep_items": true
+			},
+			{
+				"type": "give_item",
+				"uri": "swamp_goblins:resources:firefly_essense",
+				"count": 10,
+				"keep_items": true
+			}
+		],
+		"abandon_out_edge": "hearth_abandon"
+	}
+}

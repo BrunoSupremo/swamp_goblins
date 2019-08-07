@@ -3,6 +3,16 @@
 	"encounter_type": "dialog_tree",
 	"rarity": "common",
 	"in_edge": "before_chosing_banner",
+	"can_start": {
+		"test_1": {
+			"flag_check": {
+				"uri": "swamp_goblins:camp_standard",
+				"item": "exists_in_world",
+				"type": "deny_if_not",
+				"value": true
+			}
+		}
+	},
 	"dialog_tree_info": {
 		"start_node": "msg1",
 		"nodes": {
@@ -12,7 +22,7 @@
 					"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.trigger.before_chosing_banner.dialog_title)",
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.trigger.before_chosing_banner.message)",
 					"choices": {
-						"ok": {
+						"stonehearth:ui.game.common.ok": {
 							"out_edge": "chose_banner"
 						}
 					}

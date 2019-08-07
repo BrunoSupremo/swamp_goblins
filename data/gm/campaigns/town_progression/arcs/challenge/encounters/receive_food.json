@@ -1,0 +1,28 @@
+{
+	"type": "encounter",
+	"encounter_type": "donation",
+	"in_edge": "receive_food",
+	"out_edge" : "wait_human_hearth_update",
+	"donation_info": {
+		"loot_table": {
+			"entries": {
+				"roast_pork": {
+					"items": {
+						"roast_pork": {
+							"uri": "stonehearth:food:roast_pork",
+							"weight": 1
+						}
+					}
+				},
+				"roast_venison": {
+					"items": {
+						"roast_venison": {
+							"uri": "stonehearth:food:roast_venison",
+							"weight": 1
+						}
+					}
+				}
+			}
+		}
+	}
+}

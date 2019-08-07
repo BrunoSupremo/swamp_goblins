@@ -1,0 +1,37 @@
+{
+	"type": "arc",
+	"rarity": "common",
+	"encounters": {
+		"start": "file(encounters/start.json)",
+		"create_camp": "file(encounters/create_camp.json)",
+
+		"create_camp_peaceful": "file(encounters/create_camp_peaceful.json)",
+		"peaceful_introduction": "file(encounters/peaceful_introduction.json)",
+
+		"wait_for_boss_death": "file(encounters/wait_for_boss_death.json)",
+		"boss_death_dialog": "file(encounters/boss_death_dialog.json)",
+
+		"first_contact": "file(encounters/first_contact.json)",
+		"first_contact_alert": "file(encounters/first_contact_alert.json)",
+		"first_attack": "file(encounters/first_attack.json)",
+		"footman_attacks": "file(encounters/footman_attacks.json)",
+
+		"wait_to_destroy_footman_attacks": "file(encounters/wait_to_destroy_footman_attacks.json)",
+		"unreachable_attack": "file(encounters/unreachable_attack.json)",
+		"destroy_footman_attacks": "file(encounters/destroy_footman_attacks.json)",
+
+		"wait_for_footman_death": "file(encounters/wait_for_footman_death.json)",
+		"footman_death_dialog": "file(encounters/footman_death_dialog.json)",
+
+		"nina_introduction": "file(encounters/nina_introduction.json)",
+		"receive_food": "file(encounters/receive_food.json)",
+		"wait_human_hearth_update": "file(encounters/wait_human_hearth_update.json)",
+		"human_hearth_update": "file(encounters/human_hearth_update.json)",
+		"notice_human_hearth": "file(encounters/notice_human_hearth.json)",
+		"hearth_choice_generator": "file(encounters/hearth_choice_generator.json)",
+		"hearth_choice": "file(encounters/hearth_choice.json)",
+		"hearth_quest_warrior": "file(encounters/hearth_quest_warrior.json)",
+		"hearth_quest_nature": "file(encounters/hearth_quest_nature.json)",
+		"hearth_abandon": "file(encounters/hearth_abandon.json)",
+	}
+}

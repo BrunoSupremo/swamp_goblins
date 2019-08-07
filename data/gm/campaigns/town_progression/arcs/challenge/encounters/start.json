@@ -2,14 +2,15 @@
 	"type": "encounter",
 	"encounter_type": "wait_for_requirements_met",
 	"in_edge": "start",
-	"out_edge": "create_camp",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"create_camp",
+			"create_camp_peaceful"
+		]
+	},
 	"wait_for_requirements_met_info": {
 		"requirements": {
-			"days_elapsed_requirement": {
-				"item": "days_elapsed",
-				"type": "deny_if_less_than",
-				"value": 3
-			},
 			"or":{
 				"item": "or",
 				"type":"deny_if_not",
@@ -32,6 +33,11 @@
 						"job_alias": "swamp_goblins:jobs:beast_tamer",
 						"type": "deny_if_less_than",
 						"value": 1
+					},
+					"game_mode_check": {
+						"type": "deny_if_not",
+						"item": "game_mode",
+						"value": "stonehearth:game_mode:peaceful"
 					}
 				}
 			}

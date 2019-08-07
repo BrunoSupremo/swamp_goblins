@@ -104,10 +104,8 @@
 							"dialog_title":"Daily Report?",
 							"message":"What is a 'Daily Report'? A way to get new citizens? We don't have such a thing. <br> Use the Goblinpedia, crafted by the Shaman, to learn how it is done."
 						}
-					}
-				},
-				"firefly_humans":{
-					"trigger":{
+					},
+					"challenge":{
 						"first_contact":{
 							"title":"First Impression",
 							"message":"No, that's not possible...<br>You guys are here too?",
@@ -121,6 +119,55 @@
 						"raid":{
 							"title":"Incoming attack",
 							"message":"Some footman, watch out!"
+						},
+						"footman_death_dialog":{
+							"title":"Not bad",
+							"message":"Next attack wave will be harder.<br>Let's see if you can handle that tomorrow."
+						},
+						"unreachable_attack":{
+							"title":"Cowards!",
+							"message":"We can't reach you! We will increase our forces anyway, and we will get you once you are reachable!",
+							"answer":"We don't want to fight!"
+						},
+						"boss_death_dialog":{
+							"title":"Victory",
+							"message":"Oh man, I can't believe we were defeated.<br>Why you did this?",
+							"answer":"Because you attacked us!",
+							"message2":"Of course we attacked you, you would attack us anyway.",
+							"message3":"We didn't had to fight? Nice!<br>I'm Nina, sorry for the trouble.<br>So... Who are you guys?",
+							"answer3":"(proceeds with introductions)"
+						},
+						"nina_introduction":{
+							"title":"Introductions",
+							"message":"Interesting. And similar to our group.<br>We are exploring new and far lands, to better understand our world, and map it for new settlements when needed.",
+							"message2":"We will stay around, if you need help with something just ask<br>Oh, and we have some food to you, as payback for our trouble<br><br><font size=-1>The food will be dropped at your banner</font>",
+							"thanks":"Thanks!"
+						},
+						"peaceful_introduction":{
+							"title":"Introductions",
+							"message":"Hi, I'm Nina, we have just settled here, hope we can grow together peacefully in this area.<br>We are exploring new and far lands, to better understand our world, and map it for new settlements when needed.",
+							"message2":"We will stay around, if you need help with something just ask<br>Oh, and we have some food to you, as a neighbor gift<br><br><font size=-1>The food will be dropped at your banner</font>",
+							"thanks":"Thanks!"
+						},
+						"notice_human_hearth":{
+							"title":"Step up",
+							"dialog_title":"Hearth Update",
+							"message":"Our friends over there already got their shiny new hearth!<br>Maybe we should start thinking about our hearth upgrade too.",
+							"message2":"We decided on two options to represent our town:<br>Warrior Hearth and Nature Hearth",
+							"message3":"The <i>Warrior Hearth</i> is for those who believe their destiny is to stand strong in a hostile world.<br>We will be able to fight against our best warriors from the past, training with them and learning from them.",
+							"message4":"The <i>Nature Hearth</i> is for those who believe that a town's value is found within its happy citizens in harmony with nature.<br>We will receive random daily blessings.",
+							"message5":"Warrior or Nature? What you think it would be the most fitting for out town from here and beyond?",
+							"choice":"We choose..."
+						},
+						"hearth_choice":{
+							"warrior": {
+								"name": "Warrior Hearth",
+								"description": "<i>Proof that you have military strength, and that you're prepared to keep it on its feet.</i><ul><li>Allows summoning increasingly difficult enemies to improve your skills</li></ul>"
+							},
+							"nature": {
+								"name": "Nature Hearth",
+								"description": "<i>Proof that you have happy citizens in sync with nature, and nice places for them to live.</i><ul><li>Each day brings a new random buff for your townsfolk.</li></ul>"
+							}
 						}
 					}
 				}
@@ -537,6 +584,12 @@
 				"flavor":"Use this item to open an actual encyclopedia with all the necessary information about the Firefly Clan and the Swamp Biome. Can also be used as just a nice decoration"
 			}
 		},
+		"humans":{
+			"nina":{
+				"display_name":"Nina",
+				"description":"Royalty"
+			}
+		},
 		"monsters": {
 			"bear": {
 				"display_name": "Swamp Bear",
@@ -606,7 +659,7 @@
 		},
 		"resources": {
 			"cattail": {
-				"display_name": "Cattail",
+				"display_name": "Cattail Bundle",
 				"description": "Spinnable into thread."
 			},
 			"giant_flower": {

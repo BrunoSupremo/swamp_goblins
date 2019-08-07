@@ -1,0 +1,15 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait",
+	"in_edge": "wait_human_hearth_update",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"human_hearth_update",
+			"notice_human_hearth"
+		]
+	},
+	"wait_info": {
+		"duration": "1d+1d"
+	}
+}

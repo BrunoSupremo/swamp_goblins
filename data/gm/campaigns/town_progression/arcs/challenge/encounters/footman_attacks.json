@@ -3,7 +3,13 @@
 	"encounter_type": "city_raid",
 	"rarity": "common",
 	"in_edge": "footman_attacks",
-	"out_edge": "wait_to_destroy_footman_attacks",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"wait_to_destroy_footman_attacks",
+			"wait_for_footman_death"
+		]
+	},
 	"city_raid_info": {
 		"missions": {
 			"raid_stockpiles": {
@@ -12,8 +18,8 @@
 				"role": "raid_stockpiles",
 				"offset": { "x": 0, "y": 0, "z": 0 },
 				"sighted_bulletin": {
-					"title": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.raid.title)",
-					"message": "i18n(swamp_goblins:data.gm.campaigns.firefly_humans.trigger.raid.message)"
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.raid.title)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.raid.message)"
 				},
 				"members": {
 					"footman": {

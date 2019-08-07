@@ -5,17 +5,18 @@
 	"attributes": {
 		"max_health": 150,
 		"muscle": 40,
-		"menace": 80,
-		"courage": 210,
+		"menace": 75,
+		"courage": 250,
 		"speed": 70,
 		"additive_armor_modifier": 5,
 		"exp_reward": 40
 	},
 	"unit_info": {
-		"display_name":"i18n(swamp_goblins:entities.humans.nina.display_name)"
+		"display_name":"i18n(swamp_goblins:entities.humans.nina.display_name)",
+		"description":"i18n(swamp_goblins:entities.humans.nina.description)"
 	},
 	"equipment": {
-		"mainhand": "stonehearth:trapper:knife",
+		"mainhand": "stonehearth:geomancer:staff",
 		"multi_target_attack":"stonehearth:footman:manual_of_cleave"
 	}
 }

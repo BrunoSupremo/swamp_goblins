@@ -1,0 +1,40 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(hearth.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"allow_vertical_adjacent": true
+		},
+		"render_info": {},
+		"stonehearth:firepit": {},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 2, "y": 2, "z": 2 }
+				}
+			]
+		},
+		"effect_list": {
+			"default": "swamp_goblins:effects:hearth_human"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:entities.decoration.firepit_hearth.firepit_hearth_ghost.display_name)",
+			"description": "i18n(stonehearth:entities.decoration.firepit_hearth.firepit_hearth_ghost.description)"
+		},
+		"stonehearth:item": {
+			"clearable": false
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "notice_human_hearth",
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.dialog_title)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.message)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message_2"
+						}
+					}
+				}
+			},
+			"message_2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.dialog_title)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.message_2)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message_3"
+						}
+					}
+				}
+			},
+			"message_3": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.dialog_title)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.message_3)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message_4"
+						}
+					}
+				}
+			},
+			"message_4": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.dialog_title)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.message_4)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message_5"
+						}
+					}
+				}
+			},
+			"message_5": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.dialog_title)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.message_5)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.challenge.notice_human_hearth.choice": {
+							"out_edge": "hearth_choice_generator"
+						}
+					}
+				}
+			}
+		}
+	}
+}
