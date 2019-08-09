@@ -5,6 +5,12 @@
 	"in_edge": "create_camp_peaceful",
 	"can_start": {
 		"test_1": {
+			"unique": {
+				"type": "deny_if_greater_than",
+				"item": "number_active",
+				"node_name": "create_camp_peaceful",
+				"value": 0
+			},
 			"game_mode_check": {
 				"type": "deny_if_not",
 				"item": "game_mode",

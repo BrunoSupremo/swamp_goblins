@@ -153,10 +153,10 @@
 							"title":"Step up",
 							"dialog_title":"Hearth Update",
 							"message":"Our friends over there already got their shiny new hearth!<br>Maybe we should start thinking about our hearth upgrade too.",
-							"message2":"We decided on two options to represent our town:<br>Warrior Hearth and Nature Hearth",
-							"message3":"The <i>Warrior Hearth</i> is for those who believe their destiny is to stand strong in a hostile world.<br>We will be able to fight against our best warriors from the past, training with them and learning from them.",
-							"message4":"The <i>Nature Hearth</i> is for those who believe that a town's value is found within its happy citizens in harmony with nature.<br>We will receive random daily blessings.",
-							"message5":"Warrior or Nature? What you think it would be the most fitting for out town from here and beyond?",
+							"message_2":"We decided on two options to represent our town:<br>Warrior Hearth and Nature Hearth",
+							"message_3":"The <i>Warrior Hearth</i> is for those who believe their destiny is to stand strong in a hostile world.<br>We will be able to fight against our best warriors from the past, training with them and learning from them.",
+							"message_4":"The <i>Nature Hearth</i> is for those who believe that a town's value is found within its happy citizens in harmony with nature.<br>We will receive random daily blessings.",
+							"message_5":"Warrior or Nature? What you think it would be the most fitting for out town from here and beyond?",
 							"choice":"We choose..."
 						},
 						"hearth_choice":{
@@ -168,6 +168,14 @@
 								"name": "Nature Hearth",
 								"description": "<i>Proof that you have happy citizens in sync with nature, and nice places for them to live.</i><ul><li>Each day brings a new random buff for your townsfolk.</li></ul>"
 							}
+						},
+						"hearth_quest_warrior":{
+							"title":"Hearth Upgrade: Warrior",
+							"dialog_title":"Hearth Upgrade: Warrior"
+						},
+						"hearth_quest_nature":{
+							"title":"Hearth Upgrade: Nature",
+							"dialog_title":"Hearth Upgrade: Nature"
 						}
 					}
 				}
@@ -1177,7 +1185,16 @@
 						"display_name":"Swamp Biome",
 						"fauna":{
 							"display_name":"Fauna",
-							"firefly":"Firefly"
+							"firefly":"Firefly",
+							"frog":"Frog",
+							"varanus":"Varanus"
+						},
+						"flora":{
+							"display_name":"Flora",
+							"cattail":"Cattail",
+							"giple":"Giple Flower",
+							"mushroom":"Mushroom",
+							"tree":"Trees"
 						}
 					}
 				},
@@ -1320,6 +1337,38 @@
 							"topic3":{
 								"title":"Interaction:",
 								"desc1":"Can't be interacted directly, but shamans can extract magic powers from them, hence their clan name."
+							}
+						},
+						"frog":{
+							"title":"Frog",
+							"description1":"Small and slippy",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Ambient small critters that can be found near the water."
+							},
+							"topic2":{
+								"title":"Behaviour:",
+								"desc1":"Spend their time jumping from one lilypad to another, hunting small insects. Very noisy at night."
+							},
+							"topic3":{
+								"title":"Interaction:",
+								"desc1":"Trappers can get them for food or even as pets, baby goblins love them."
+							}
+						},
+						"varanus":{
+							"title":"Varanus",
+							"description1":"Always watching",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Large reptiles with a hard skin, loves water."
+							},
+							"topic2":{
+								"title":"Behaviour:",
+								"desc1":"Usually hostile to those that get too close. Can be found near their nests at caves entrances."
+							},
+							"topic3":{
+								"title":"Interaction:",
+								"desc1":"When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight."
 							}
 						}
 					}

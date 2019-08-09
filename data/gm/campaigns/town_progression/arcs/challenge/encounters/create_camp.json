@@ -5,6 +5,12 @@
 	"in_edge": "create_camp",
 	"can_start": {
 		"test_1": {
+			"unique": {
+				"type": "deny_if_greater_than",
+				"item": "number_active",
+				"node_name": "create_camp",
+				"value": 0
+			},
 			"game_mode_check": {
 				"type": "deny_if",
 				"item": "game_mode",
@@ -39,7 +45,7 @@
 				"gender":"female",
 				"location": { "x": 4, "y": 4 }
 			},
-			"combat_leash_range": 30,
+			"combat_leash_range": 60,
 			"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:nina"
 		},
 		"citizens": {

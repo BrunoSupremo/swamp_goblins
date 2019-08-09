@@ -44,6 +44,10 @@
 		}
 	},
 	"entity_data": {
+		"stonehearth:town_patrol": {
+			"auto_patrol": true,
+			"patrol_pattern": "perimeter"
+		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(swamp_goblins:entities.goblins.egg.display_name)",
 			"description": "i18n(swamp_goblins:entities.goblins.egg.description)",

@@ -54,6 +54,14 @@
 						"firefly":{
 							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.swamp.fauna.firefly)",
 							"open_page_id":"fauna_firefly"
+						},
+						"frog":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.swamp.fauna.frog)",
+							"open_page_id":"fauna_frog"
+						},
+						"varanus":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.swamp.fauna.varanus)",
+							"open_page_id":"fauna_varanus"
 						}
 					}
 				}
@@ -282,6 +290,62 @@
 					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.firefly.topic3.title)",
 					"descriptions":{
 						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.firefly.topic3.desc1)"
+					}
+				}
+			}
+		},
+		"fauna_frog":{
+			"page_id":"fauna_frog",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.frog.title)",
+			"image":"/swamp_goblins/entities/critters/frog/frog.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.frog.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.frog.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.frog.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.frog.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.frog.topic2.desc1)"
+					}
+				},
+				"topic3":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.frog.topic3.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.frog.topic3.desc1)"
+					}
+				}
+			}
+		},
+		"fauna_varanus":{
+			"page_id":"fauna_varanus",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.title)",
+			"image":"/stonehearth/entities/monsters/forest/alligator/alligator.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.topic2.desc1)"
+					}
+				},
+				"topic3":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.topic3.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.topic3.desc1)"
 					}
 				}
 			}
