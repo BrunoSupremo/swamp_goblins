@@ -10,6 +10,8 @@ function LayEgg_spot:initialize()
 end
 
 function LayEgg_spot:post_activate()
+	self.player_id = self._entity:get_player_id()
+
 	if self._sv._use_state == "off" then
 		self:enable_commands(true)
 	else --waiting or has_egg
@@ -18,7 +20,6 @@ function LayEgg_spot:post_activate()
 			self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:egg_pedestal", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
 		end
 	end
-	self.player_id = self._entity:get_player_id()
 
 	if self._sv._current_egg then
 		self._egg_listener = radiant.events.listen_once(self._sv._current_egg, 'stonehearth:on_evolved', function(e)
