@@ -6,6 +6,7 @@ function LayEgg_spot:initialize()
 	self._sv._use_state = "off" --off, waiting, has_egg
 	self._sv._current_egg = nil
 	self._sv._current_baby = nil
+	self._sv._task_effect = nil
 end
 
 function LayEgg_spot:post_activate()
@@ -13,6 +14,9 @@ function LayEgg_spot:post_activate()
 		self:enable_commands(true)
 	else --waiting or has_egg
 		self:enable_commands(false)
+		if self._sv._use_state == "waiting" then
+			self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:egg_pedestal", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
+		end
 	end
 	self.player_id = self._entity:get_player_id()
 
@@ -45,6 +49,7 @@ end
 function LayEgg_spot:now_waiting()
 	self:enable_commands(false)
 	self._sv._use_state = "waiting" --someone lay an egg
+	self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:egg_pedestal", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
 
 	stonehearth.ai:reconsider_entity(self._entity)
 end
@@ -58,6 +63,10 @@ function LayEgg_spot:create_egg()
 	radiant.terrain.place_entity_at_exact_location(egg, location +Point3.unit_y)
 	radiant.effects.run_effect(egg, "stonehearth:effects:buff_tonic_energy_added")
 	radiant.effects.run_effect(egg, "stonehearth:effects:fursplosion_effect")
+	if self._sv._task_effect then
+		self._sv._task_effect:stop()
+		self._sv._task_effect = nil
+	end
 
 	self._sv._current_egg = egg
 	self._egg_listener = radiant.events.listen_once(egg, 'stonehearth:on_evolved', function(e)
@@ -194,6 +203,10 @@ function LayEgg_spot:destroy()
 	if self._searcher then
 		self._searcher:destroy()
 		self._searcher = nil
+	end
+	if self._sv._task_effect then
+		self._sv._task_effect:stop()
+		self._sv._task_effect = nil
 	end
 end
 
