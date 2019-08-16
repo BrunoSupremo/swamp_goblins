@@ -1,6 +1,6 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.8.9")
---last steam update: 19.7.14
+print("Swamp Goblins Mod version 19.8.15")
+--last steam update: 19.8.10
 
 -- todo
 -- templates, inn, dinning hall, tavern, profession workshops

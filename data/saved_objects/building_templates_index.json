@@ -2,7 +2,6 @@
 	"template_tabs": {
 		"firefly_clan": {
 			"display_name": "fire_fly",
-			"_display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.display_name)",
 			"required_kingdom": "swamp_goblins:kingdoms:firefly_clan",
 			"categories": {
 				"outpost": {
@@ -11,33 +10,77 @@
 					"templates": {
 						"tent":		"file(building_templates/tent.json)",
 						"barrack":	"file(building_templates/barrack.json)",
-						"hut":		"file(building_templates/hut.json)"
-					}
-				},
-				"settlement": {
-					"display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.categories.settlement)",
-					"ordinal": 2,
-					"_required_city_tier": 2,
-					"templates": {
-						"house1":	"file(building_templates/house1.json)",
-						"house2":	"file(building_templates/house2.json)",
-						"house3":	"file(building_templates/house3.json)",
-						"temple":	"file(building_templates/temple.json)",
-						"trading":	"file(building_templates/trading.json)",
+						"hut":		"file(building_templates/hut.json)",
 						"nursery":	"file(building_templates/nursery.json)",
-						"bonesmith_workshop":	"file(building_templates/bonesmith_workshop.json)",
-						"earthmaster_workshop":	"file(building_templates/earthmaster_workshop.json)",
-						"treasure_storage":	"file(building_templates/treasure_storage.json)",
-						"shaman_center":	"file(building_templates/shaman_center.json)",
-						"garden":	"file(building_templates/garden.json)",
-
-
+						"bonesmith_workshop": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:bonesmith"
+							},
+							"file": "file(building_templates/bonesmith_workshop.json)"
+						},
+						"earthmaster_workshop": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:earthmaster"
+							},
+							"file": "file(building_templates/earthmaster_workshop.json)"
+						},
+						"shaman_center": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:shaman"
+							},
+							"file": "file(building_templates/shaman_center.json)"
+						},
 						"fisher_hut": {
 							"unlock_requirement": {
 								"type": "has_job",
 								"value": "archipelago_biome:jobs:fisher"
 							},
 							"file": "file(building_templates/fisher_hut.json)"
+						}
+					}
+				},
+				"settlement": {
+					"display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.categories.settlement)",
+					"ordinal": 2,
+					"required_city_tier": 2,
+					"templates": {
+						"house1":	"file(building_templates/house1.json)",
+						"house2":	"file(building_templates/house2.json)",
+						"house3":	"file(building_templates/house3.json)",
+						"temple":	"file(building_templates/temple.json)",
+						"trading":	"file(building_templates/trading.json)",
+						"treasure_storage":	"file(building_templates/treasure_storage.json)",
+						"garden":	"file(building_templates/garden.json)",
+						"bonesmith_workshop2": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:bonesmith"
+							},
+							"file": "file(building_templates/bonesmith_workshop2.json)"
+						},
+						"earthmaster_workshop2": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:earthmaster"
+							},
+							"file": "file(building_templates/earthmaster_workshop2.json)"
+						},
+						"shaman_center2": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:shaman"
+							},
+							"file": "file(building_templates/shaman_center2.json)"
+						},
+						"fisher_hut2": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "archipelago_biome:jobs:fisher"
+							},
+							"file": "file(building_templates/fisher_hut2.json)"
 						}
 					}
 				}

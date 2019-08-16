@@ -3,6 +3,7 @@
 	"encounter_type": "dialog_tree",
 	"rarity": "common",
 	"in_edge": "footman_death_dialog",
+	"unique": true,
 	"dialog_tree_info": {
 		"start_node": "msg1",
 		"source_entity" : "firefly_human_encounter.boss",
@@ -14,7 +15,9 @@
 					"portrait": "file(images/nina.png)",
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.footman_death_dialog.message)",
 					"choices": {
-						"stonehearth:ui.game.common.ok": {}
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "destroy_footman_attacks"
+						}
 					}
 				}
 			}
