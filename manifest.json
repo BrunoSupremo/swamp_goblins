@@ -103,6 +103,8 @@
 		"construction:brick_fence_end":	"file(entities/construction/brick_fence_end)",
 		"construction:goblin_barricade":		"file(entities/construction/goblin_barricade)",
 		"construction:goblin_barricade_single":	"file(entities/construction/goblin_barricade_single)",
+		"construction:clay_water_well":	"file(entities/construction/clay_water_well)",
+		"construction:wooden_water_well":	"file(entities/construction/wooden_water_well)",
 
 		"consumables:small_healing":"file(entities/consumables/small_healing)",
 
@@ -431,6 +433,9 @@
 		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/herbalist/recipes/recipes.json":	"file(jobs/herbalist/recipes)",
 
+		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":	"stonehearth_ace/jobs/bonesmith/recipes/ace_recipes.json",
+		"swamp_goblins/jobs/earthmaster/recipes/recipes.json":	"stonehearth_ace/jobs/earthmaster/recipes/ace_recipes.json",
+
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
 
 		"stonehearth:personal_logs:dreams": "file(data/personality/dreams.json)",
@@ -508,7 +513,10 @@
 		"stonehearth/data/rigs/entities/humans/effects/dart_tube.json":"file(data/rigs/entities/humans/effects/dart_tube.json)",
 		"stonehearth/data/rigs/entities/humans/effects/bonesmith_saw.json":"file(data/rigs/entities/humans/effects/bonesmith_saw.json)",
 		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",
-		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"stonehearth/data/rigs/entities/pets/kitten/effects/combat_1h_backhand.json"
+		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"stonehearth/data/rigs/entities/pets/kitten/effects/combat_1h_backhand.json",
+
+		"stonehearth_ace/jobs/bonesmith/recipes/ace_recipes.json":	"swamp_goblins/jobs/bonesmith/recipes/ace_recipes.json",
+		"stonehearth_ace/jobs/earthmaster/recipes/ace_recipes.json":"swamp_goblins/jobs/earthmaster/recipes/ace_recipes.json"
 	},
 	"controllers": {
 		"class:beast_tamer":	"file(jobs/beast_tamer/beast_tamer.lua)",

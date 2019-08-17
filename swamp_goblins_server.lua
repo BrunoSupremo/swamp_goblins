@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.8.15")
+print("Swamp Goblins Mod version 19.8.16")
 --last steam update: 19.8.10
 
 -- todo

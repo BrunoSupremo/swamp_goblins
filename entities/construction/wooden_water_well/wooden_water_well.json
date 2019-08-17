@@ -2,6 +2,11 @@
 	"type": "entity",
 	"mixins": "file(wooden_water_well_ghost.json)",
 	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(wooden_water_well_iconic.json)",
+			"ghost_form": "file(wooden_water_well_ghost.json)",
+			"placeable_on_ground": true
+		},
 		"destination": {
 			"region": [
 				{
@@ -19,7 +24,7 @@
 			"region": [
 				{
 					"min": { "x": -2, "y": 0, "z": -2 },
-					"max": { "x": 3, "y": 6, "z": 3 }
+					"max": { "x": 3, "y": 5, "z": 3 }
 				}
 			]
 		}
@@ -28,11 +33,11 @@
 		"stonehearth_ace:drink_container": {
 			"effect": "work_water_well",
 			"container_effect": "work",
-			"drink": "stonehearth_ace:drink:water_serving",
-			"source": true
+			"drink": "stonehearth_ace:drink:water_serving:cool",
+			"stacks_per_serving": 0
 		},
 		"stonehearth:net_worth": {
-			"value_in_gold": 54,
+			"value_in_gold": 10,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": false,
