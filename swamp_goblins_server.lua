@@ -1,18 +1,41 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.8.16")
+print("Swamp Goblins Mod version 19.8.20")
 --last steam update: 19.8.10
 
 -- todo
--- templates, inn, dinning hall, tavern, profession workshops
--- engineer -> earthmaster
--- goblinpedia
--- weather stone
--- double wood door
--- dart traps, smoke traps
--- mushroom garden
--- swamp fish colors, eels, blowfish
--- fountain effects, hourglass effects
--- checkers table ugh
+--[[
+contruction:
+	door, double door
+	windows 2x2, 2x3, 3x2
+	fence, fence door
+containers:
+	piles, crate/urn, chest, vault
+	input_bin, input_corner, input_shelf_ground, input_shelf_wall, input_table, output_box
+decorations:
+	lamp post, lamp/lantern, mat/rug/mosaic, statue
+	painting/tapestry, banner wall, wall planter
+furniture:
+	bed, chair, table, bench
+templates:
+	inn, dinning hall, tavern
+earthmaster:
+	dart traps, smoke traps
+gizmos:
+	goblinpedia
+	weather stone (move to manipulation folder)
+	mushroom garden
+equipments:
+	replace weapon placeholders, improve overall models
+	beast_tamer/spirit_walker better weapons
+	shields? worker outfit?
+redo:
+	hourglass effects
+	checkers table
+fisher:
+	swamp fish colors, eels, blowfish
+Bugs:
+	invalid file path '/swamp_goblins/data/rigs/entities/monster/bear/effects/combat_1h_backhand.json'
+]]
 
 function swamp_goblins:_on_services_init()
 	if stonehearth.world_generation:get_biome_alias() ~= "swamp_goblins:biome:swamp" then

@@ -178,12 +178,13 @@
 		"effects:firefly_effect":			"file(data/effects/firefly_effect)",
 		"effects:firefly_essense_effect":	"file(data/effects/firefly_effect/firefly_essense_effect.json)",
 		"effects:big_firefly_essense":		"file(data/effects/firefly_effect/big_firefly_essense.json)",
+		"effects:buff:firefly_confusion":	"file(data/effects/firefly_effect/firefly_confusion.json)",
 		"effects:firefly_shield":"file(data/effects/firefly_shield)",
 		"effects:firefly_token:crafting":	"file(data/effects/firefly_token/crafting.json)",
 		"effects:firefly_token:jewel":		"file(data/effects/firefly_token/jewel.json)",
-		"effects:buff:firefly_confusion":	"file(data/effects/firefly_effect/firefly_confusion.json)",
-		"effects:hourglass":	"file(data/effects/hourglass)",
 		"effects:goblin_aura":	"file(data/effects/goblin_aura)",
+		"effects:hourglass":	"file(data/effects/hourglass)",
+		"effects:mini_fountain":"file(data/effects/mini_fountain)",
 		"effects:shaman_workbench_effect":"file(data/effects/shaman_workbench_effect)",
 		"effects:spirit_walker":"file(data/effects/spirit_walker)",
 		"effects:spirit:goblin_spirit":	"file(data/effects/spirit/goblin_spirit.json)",
@@ -212,6 +213,7 @@
 		"furniture:simple_table":	"file(entities/furniture/simple_table)",
 		"furniture:stone_chair":	"file(entities/furniture/stone_chair)",
 		"furniture:swing":			"file(entities/furniture/swing)",
+		"furniture:stone_bench":	"file(entities/furniture/stone_bench)",
 		"furniture:wood_bench":		"file(entities/furniture/wood_bench)",
 
 		"gizmos:firefly_shield":"file(entities/gizmos/firefly_shield)",
@@ -472,6 +474,8 @@
 		"stonehearth/scenarios/static/landmarks/128x_stone_collection_3.json":"file(scenarios/static/add_to_swamp_too.json)",
 
 		"stonehearth:traits_index":"file(data/traits/traits_index_to_merge.json)",
+
+		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
 
 		"stonehearth:trapper:outfit": "file(jobs/trapper/trapper_outfit)",
 		"stonehearth:worker:outfit":		"file(jobs/worker/worker_outfit)",
