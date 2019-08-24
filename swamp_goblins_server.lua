@@ -1,8 +1,6 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.8.20")
---last steam update: 19.8.10
+print("Swamp Goblins Mod version 19.8.23")
 
--- todo
 --[[
 contruction:
 	door, double door

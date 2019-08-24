@@ -3,11 +3,11 @@
 	"tracks": {
 		"cubemitter": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/candle/candle.json",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
 			"loop": true,
 			"transforms": {
 				"x":0,
-				"y":2.5,
+				"y":1.4,
 				"z":0,
 				"rx":90,
 				"ry":0,
@@ -16,10 +16,10 @@
 		},
 		"light": {
 			"type": "light",
-			"light": "/swamp_goblins/data/horde/animatedlights/candle/candle.json",
+			"light": "/swamp_goblins/data/horde/animatedlights/green_fire/tiny.json",
 			"transforms": {
 				"x":0,
-				"y":2.5,
+				"y":1.4,
 				"z":0
 			},
 			"shadows": false

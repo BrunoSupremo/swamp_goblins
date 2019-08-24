@@ -2,11 +2,7 @@
 	"mixins": "stonehearth:mixins:placed_object",
 	"components": {
 		"render_info": {
-			"scale": 0.133,
-			"animation_table": "/stonehearth_ace/data/rigs/entities/construction/water_well/water_well.json"
-		},
-		"effect_list": {
-			"default": "/stonehearth_ace/data/rigs/entities/construction/water_well/effects/idle.json"
+			"scale": 0.133
 		},
 		"model_variants": {
 			"default": {
@@ -22,8 +18,8 @@
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
-			"display_name": "i18n(stonehearth_ace:entities.construction.clay_water_well_roofed.display_name)",
-			"description": "i18n(stonehearth_ace:entities.construction.clay_water_well_roofed.description)",
+			"display_name": "i18n(swamp_goblins:entities.construction.clay_water_well.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.clay_water_well.description)",
 			"icon": "file(clay_water_well.png)",
 			"category": "construction",
 			"material_tags": [

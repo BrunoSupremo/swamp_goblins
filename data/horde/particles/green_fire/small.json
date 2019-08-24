@@ -1,21 +1,12 @@
 {
 	"name": "fire",
-	"duration": 2000,
+	"duration": 5000,
 	"material": "materials/cubemitter_bloom.material.json",
 	"loops": true,
-	"mesh": {
-		"file": "",
-		"matrix": "",
-		"offset": {
-			"x": 0,
-			"y": 0,
-			"z": 0
-		}
-	},
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [15]
+			"values": [20]
 		},
 		"angle": {
 			"kind": "CONSTANT",
@@ -23,20 +14,20 @@
 		},
 		"origin": {
 			"surface": "RECTANGLE",
-			"values": [0.1, 0.1, 0, 0]
+			"values": [0.6, 0.6, 0, 0]
 		}
 	},
 	"particle": {
 		"lifetime": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values": [600, 1200]
+				"values": [1200, 2400]
 			}
 		},
 		"speed": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values": [0.7, 1.2]
+				"values": [1, 2]
 			},
 			"over_lifetime": {
 				"kind": "CURVE",
@@ -54,11 +45,15 @@
 				"values": [
 					[
 						[0, 0],
-						[1, 0.4]
+						[0.4, 0],
+						[0.6, 0.3],
+						[1, -0.3]
 					],
 					[
 						[0, 0],
-						[1, -0.4]
+						[0.4, 0],
+						[0.6, 1],
+						[1, -1]
 					]
 				]
 			},
@@ -67,11 +62,15 @@
 				"values": [
 					[
 						[0, 0],
-						[1, 0.4]
+						[0.4, 0],
+						[0.6, 0.3],
+						[1, -0.3]
 					],
 					[
 						[0, 0],
-						[1, -0.4]
+						[0.4, 0],
+						[0.6, 1],
+						[1, -1]
 					]
 				]
 			}
@@ -81,20 +80,7 @@
 				"kind": "RANDOM_BETWEEN_CURVES",
 				"values": [
 					[
-						[0, 86.39999999999998],
-						[1, 360]
-					],
-					[
-						[0, 360],
-						[1, 360]
-					]
-				]
-			},
-			"over_lifetime_z": {
-				"kind": "RANDOM_BETWEEN_CURVES",
-				"values": [
-					[
-						[0, 86.39999999999998],
+						[0, -360],
 						[1, 360]
 					],
 					[
@@ -107,7 +93,7 @@
 		"scale": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values": [0.04, 0.12]
+				"values": [0.1, 0.3]
 			},
 			"over_lifetime": {
 				"kind": "RANDOM_BETWEEN_CURVES",

@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.tower_brazier_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.tower_brazier_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.mason.recipes.tower_brazier_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/tower_brazier/tower_brazier.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 2,
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 2
+		},
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:tower_brazier"
+		}
+	]
+}

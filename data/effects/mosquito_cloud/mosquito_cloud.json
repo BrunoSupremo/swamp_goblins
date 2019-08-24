@@ -1,0 +1,29 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"dummy_animation": {
+			"type": "animation_effect",
+			"start_time": 0,
+			"animation": "dummy.json",
+			"loop": false
+		},
+		"mosquito_cloud": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/mosquito_cloud/mosquito.json",
+			"loop": false,
+			"transforms": {
+				"x":0, "y":2.5, "z":0,
+				"rx":90, "ry":0, "rz":0
+			}
+		},
+		"mosquito_cloud_dust": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/mosquito_cloud/mosquito_cloud.json",
+			"loop": false,
+			"transforms": {
+				"x":0, "y":2.5, "z":0,
+				"rx":90, "ry":0, "rz":0
+			}
+		}
+	}
+}

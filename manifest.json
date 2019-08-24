@@ -168,13 +168,12 @@
 		"decoration:wood_sign:saw":			"file(entities/decoration/wood_sign/saw)",
 		"decoration:wood_sign:tree":		"file(entities/decoration/wood_sign/tree)",
 		"decoration:wood_sign:varanus":		"file(entities/decoration/wood_sign/varanus)",
+		"decoration:tower_brazier":			"file(entities/decoration/tower_brazier)",
 		"decoration:travel_stall":			"file(entities/decoration/travel_stall)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
 		"decoration:window_box:wood":		"file(entities/decoration/window_box_wood)",
 
 		"effects:egg_pedestal":	"file(data/effects/egg_pedestal)",
-		"effects:small_candle_effect":	"file(data/effects/candle_effect/small_candle_effect.json)",
-		"effects:large_candle_effect":	"file(data/effects/candle_effect/large_candle_effect.json)",
 		"effects:firefly_effect":			"file(data/effects/firefly_effect)",
 		"effects:firefly_essense_effect":	"file(data/effects/firefly_effect/firefly_essense_effect.json)",
 		"effects:big_firefly_essense":		"file(data/effects/firefly_effect/big_firefly_essense.json)",
@@ -183,8 +182,12 @@
 		"effects:firefly_token:crafting":	"file(data/effects/firefly_token/crafting.json)",
 		"effects:firefly_token:jewel":		"file(data/effects/firefly_token/jewel.json)",
 		"effects:goblin_aura":	"file(data/effects/goblin_aura)",
+		"effects:green_fire:small_candle":	"file(data/effects/green_fire/candle/small_candle.json)",
+		"effects:green_fire:large_candle":	"file(data/effects/green_fire/candle/large_candle.json)",
+		"effects:green_fire:tower_brazier":	"file(data/effects/green_fire/tower_brazier)",
 		"effects:hourglass":	"file(data/effects/hourglass)",
 		"effects:mini_fountain":"file(data/effects/mini_fountain)",
+		"effects:mosquito_cloud":"file(data/effects/mosquito_cloud)",
 		"effects:shaman_workbench_effect":"file(data/effects/shaman_workbench_effect)",
 		"effects:spirit_walker":"file(data/effects/spirit_walker)",
 		"effects:spirit:goblin_spirit":	"file(data/effects/spirit/goblin_spirit.json)",
@@ -259,6 +262,7 @@
 		"monsters:doodles_egg_raider":				"file(entities/monsters/doodles_egg_raider)",
 		"monsters:forest:bear:teeth_weapon":		"file(entities/monsters/bear/bear_teeth.json)",
 		"monsters:forest:bear:weak_teeth_weapon":	"file(entities/monsters/bear/weak_bear_teeth.json)",
+		"monsters:mosquito_cloud":					"file(entities/monsters/mosquito_cloud)",
 		"monsters:varanus_nest":					"file(entities/monsters/varanus_nest)",
 
 		"monster_tuning:forest:easy_bear":	"file(data/monster_tuning/forest/easy_bear.json)",
@@ -435,9 +439,6 @@
 		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/herbalist/recipes/recipes.json":	"file(jobs/herbalist/recipes)",
 
-		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":	"stonehearth_ace/jobs/bonesmith/recipes/ace_recipes.json",
-		"swamp_goblins/jobs/earthmaster/recipes/recipes.json":	"stonehearth_ace/jobs/earthmaster/recipes/ace_recipes.json",
-
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
 
 		"stonehearth:personal_logs:dreams": "file(data/personality/dreams.json)",
@@ -483,7 +484,10 @@
 		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)",
 
 		"tower_defense/data/compatible_mods.json": "file(data/compatible_mods.json)",
-		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)"
+		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)",
+
+		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
+		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json"
 	},
 	"functions": {
 		"change_weather": {
@@ -519,8 +523,7 @@
 		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",
 		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"stonehearth/data/rigs/entities/pets/kitten/effects/combat_1h_backhand.json",
 
-		"stonehearth_ace/jobs/bonesmith/recipes/ace_recipes.json":	"swamp_goblins/jobs/bonesmith/recipes/ace_recipes.json",
-		"stonehearth_ace/jobs/earthmaster/recipes/ace_recipes.json":"swamp_goblins/jobs/earthmaster/recipes/ace_recipes.json"
+		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json"
 	},
 	"controllers": {
 		"class:beast_tamer":	"file(jobs/beast_tamer/beast_tamer.lua)",
