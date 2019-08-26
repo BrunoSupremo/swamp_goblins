@@ -1,0 +1,28 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"render_info": {
+			"scale": 0.15
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(wood_throne.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.furniture.wood_throne.display_name)",
+			"description": "i18n(swamp_goblins:entities.furniture.wood_throne.description)",
+			"icon": "file(wood_throne.png)",
+			"category": "furniture",
+			"material_tags": ["firefly_made", "wood", "furniture", "crafted", "chair", "stockpile_furniture"]
+		}
+	}
+}

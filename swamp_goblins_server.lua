@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.8.23")
+print("Swamp Goblins Mod version 19.8.25")
 
 --[[
 contruction:
@@ -32,7 +32,6 @@ redo:
 fisher:
 	swamp fish colors, eels, blowfish
 Bugs:
-	invalid file path '/swamp_goblins/data/rigs/entities/monster/bear/effects/combat_1h_backhand.json'
 ]]
 
 function swamp_goblins:_on_services_init()

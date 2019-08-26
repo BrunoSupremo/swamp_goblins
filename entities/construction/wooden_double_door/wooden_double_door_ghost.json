@@ -1,0 +1,25 @@
+{
+	"type": "entity",
+	"mixins": [
+		"stonehearth:mixins:portals:double_door:ghost",
+		"stonehearth:mixins:placed_object"
+	],
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(wooden_double_door.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:entities.construction.wooden_double_door.wooden_double_door_ghost.display_name)",
+			"description": "i18n(stonehearth:entities.construction.wooden_double_door.wooden_double_door_ghost.description)",
+			"icon": "file(wooden_double_door.png)",
+			"category": "door",
+			"material_tags": ["firefly_made", "wood", "portal", "crafted", "door", "stockpile_portal"]
+		}
+	}
+}
