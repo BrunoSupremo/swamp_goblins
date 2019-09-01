@@ -57,20 +57,36 @@
 			"title": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.display_name)",
 			"perks": [
 				{
-					"name": "i18n(swamp_goblins:wip)",
-					"id": "wip",
-					"icon": "/stonehearth/jobs/unknown/images/icon.png",
-					"description": "i18n(swamp_goblins:wip)",
+					"name": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.level_1_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_1",
+					"icon": "file(images/stone_perk.png)",
+					"description": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.level_1_data.perk_000_description)",
 					"level": 1
 				}
 			]
 		},
 		"2": {
-			"title": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.display_name)"
+			"title": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.display_name)",
+			"perks": [
+				{
+					"name": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.level_2_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_2",
+					"icon": "file(images/clay_perk.png)",
+					"description": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.level_2_data.perk_000_description)",
+					"level": 2
+				}
+			]
 		},
 		"3": {
 			"title": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.display_name)",
 			"perks": [
+				{
+					"name": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.level_3_data.perk_001_name)",
+					"id": "crafter_recipe_unlock_31",
+					"icon": "file(images/magma_perk.png)",
+					"description": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.level_3_data.perk_001_description)",
+					"level": 3
+				},
 				{
 					"name": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.level_3_data.perk_000_name)",
 					"id": "crafter_recipe_unlock_3",

@@ -130,6 +130,7 @@
 
 		"data:trapping:all_trappable_animals":"file(data/trapping/all_trappable_animals.json)",
 
+		"decoration:awning":				"file(entities/decoration/awning)",
 		"decoration:big_firefly_essense":	"file(entities/decoration/big_firefly_essense)",
 		"decoration:certificate":			"file(entities/decoration/certificate)",
 		"decoration:fiber_rug":				"file(entities/decoration/fiber_rug)",
@@ -204,8 +205,10 @@
 		"earthmaster:potter_workbench": "file(jobs/earthmaster/potter_workbench)",
 		"earthmaster:potter_kiln": "file(jobs/earthmaster/potter_kiln)",
 
-		"food:mushroom":"file(entities/food/mushroom)",
+		"food:mushroom":			"file(entities/food/mushroom)",
 		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
+		"food:fake_vegetables":			"file(entities/food/fake_vegetables)",
+		"food:fake_vegetables_serving":	"file(entities/food/fake_vegetables_serving)",
 
 		"furniture:checkers_table":	"file(entities/furniture/checkers_table)",
 		"furniture:clay_bed":		"file(entities/furniture/clay_bed)",
@@ -288,8 +291,9 @@
 		"plants:lilypad:small":	"file(entities/plants/lilypad/small_lilypad.json)",
 		"plants:lilypad:medium":"file(entities/plants/lilypad/medium_lilypad.json)",
 		"plants:lilypad:large":	"file(entities/plants/lilypad/large_lilypad.json)",
-		"plants:log":			"file(entities/plants/log)",
-		"plants:mushroom":		"file(entities/plants/mushroom)",
+		"plants:log":	"file(entities/plants/log)",
+		"plants:mushroom":			"file(entities/plants/mushroom)",
+		"plants:mushroom_garden":	"file(entities/plants/mushroom_garden)",
 
 		"portals:stone_door":			"file(entities/construction/stone_door)",
 		"portals:stone_window":			"file(entities/construction/stone_window)",

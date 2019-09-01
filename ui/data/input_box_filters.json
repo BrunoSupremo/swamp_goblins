@@ -1,12 +1,22 @@
 {
 	"type": "index",
 	"stockpile": {
+		"raw_foods": {
+			"categories": {
+				"mushroom": {
+					"ordinal": 200.016641,
+					"display_name": "i18n(swamp_goblins:entities.food.mushroom.display_name)",
+					"icon": "/swamp_goblins/entities/food/mushroom/mushroom.png",
+					"filter": "mushroom"
+				}
+			}
+		},
 		"cooked_food": {
 			"categories": {
-				"hibiscus": {
-					"ordinal": 100.016641,
-					"display_name": "i18n(swamp_goblins:entities.food.plate_of_mushroom.plate_of_mushroom.display_name)",
-					"icon": "/swamp_goblins/entities/food/plate_of_mushroom/plate_of_mushroom.png",
+				"plate_of_mushrooms": {
+					"ordinal": 200.016641,
+					"display_name": "i18n(swamp_goblins:entities.food.plate_of_mushrooms.display_name)",
+					"icon": "/swamp_goblins/entities/food/plate_of_mushrooms/plate_of_mushrooms.png",
 					"filter": "plate_of_mushrooms"
 				}
 			}

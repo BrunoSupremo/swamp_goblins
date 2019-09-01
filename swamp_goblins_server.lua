@@ -1,7 +1,10 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.8.25")
+print("Swamp Goblins Mod version 19.9.01")
 
 --[[
+mosquito model
+banner shred
+
 contruction:
 	door, double door
 	windows 2x2, 2x3, 3x2
@@ -11,7 +14,8 @@ containers:
 	input_bin, input_corner, input_shelf_ground, input_shelf_wall, input_table, output_box
 decorations:
 	lamp post, lamp/lantern, mat/rug/mosaic, statue
-	painting/tapestry, banner wall, wall planter
+	painting/tapestry, banner wall, awning, wall planter
+	aroma candles, incenses
 furniture:
 	bed, chair, table, bench
 templates:
@@ -32,6 +36,7 @@ redo:
 fisher:
 	swamp fish colors, eels, blowfish
 Bugs:
+	trapper ace bug??
 ]]
 
 function swamp_goblins:_on_services_init()

@@ -110,7 +110,7 @@
 						"first_contact":{
 							"title":"First Impression",
 							"message":"No, that's not possible...<br>You guys are here too?",
-							"what":"What you mean?",
+							"what":"What do you mean?",
 							"message_2":"Good try, but it will not work.<br>We know your tactics.<br>This time, we will take the initiative first!",
 							"wait":"Wait, what?",
 							"message_3":"Foward!",
@@ -132,22 +132,22 @@
 						},
 						"boss_death_dialog":{
 							"title":"Victory",
-							"message":"Oh man, I can't believe we were defeated.<br>Why you did this?",
+							"message":"Oh man, I can't believe we were defeated.<br>Why did you do this?",
 							"answer":"Because you attacked us!",
-							"message2":"Of course we attacked you, you would attack us anyway.",
-							"message3":"We didn't had to fight? Nice!<br>I'm Nina, sorry for the trouble.<br>So... Who are you guys?",
+							"message2":"Of course we attacked you, you would have attacked us anyway.",
+							"message3":"We didn't have to fight? Nice!<br>I'm Nina, sorry for the trouble.<br>So... Who are you guys?",
 							"answer3":"(proceeds with introductions)"
 						},
 						"nina_introduction":{
 							"title":"Introductions",
 							"message":"Interesting. And similar to our group.<br>We are exploring new and far lands, to better understand our world, and map it for new settlements when needed.",
-							"message2":"We will stay around, if you need help with something just ask<br>Oh, and we have some food to you, as payback for our trouble<br><br><font size=-1>The food will be dropped at your banner</font>",
+							"message2":"We will stay around, if you need help with something just ask<br>Oh, and we have some food for you, as payback for our trouble<br><br><font size=-1>The food will be dropped at your banner</font>",
 							"thanks":"Thanks!"
 						},
 						"peaceful_introduction":{
 							"title":"Introductions",
-							"message":"Hi, I'm Nina, we have just settled here, hope we can grow together peacefully in this area.<br>We are exploring new and far lands, to better understand our world, and map it for new settlements when needed.",
-							"message2":"We will stay around, if you need help with something just ask<br>Oh, and we have some food to you, as a neighbor gift<br><br><font size=-1>The food will be dropped at your banner</font>",
+							"message":"Hi, I'm Nina, we have just settled here, I hope we can grow together peacefully in this area.<br>We are exploring new and far lands, to better understand our world, and map it for new settlements when needed.",
+							"message2":"We will stay around, if you need help with something just ask<br>Oh, and we have some food for you, consider it a neighborly gift<br><br><font size=-1>The food will be dropped at your banner</font>",
 							"thanks":"Thanks!"
 						},
 						"notice_human_hearth":{
@@ -157,7 +157,7 @@
 							"message_2":"We decided on two options to represent our town:<br>Warrior Hearth and Nature Hearth",
 							"message_3":"The <i>Warrior Hearth</i> is for those who believe their destiny is to stand strong in a hostile world.<br>We will be able to fight against our best warriors from the past, training with them and learning from them.",
 							"message_4":"The <i>Nature Hearth</i> is for those who believe that a town's value is found within its happy citizens in harmony with nature.<br>We will receive random daily blessings.",
-							"message_5":"Warrior or Nature? What you think it would be the most fitting for out town from here and beyond?",
+							"message_5":"Warrior or Nature? What do you think would be the most fitting for out town from here and beyond?",
 							"choice":"We choose..."
 						},
 						"hearth_choice":{
@@ -186,7 +186,7 @@
 			"toys": {
 				"display_name": "Goblin Toys",
 				"description": "This is what happens when goblins are asked to bring their own stuff",
-				"tooltip": "Hands full of weapons, belly full of food, and pockets full of money."
+				"tooltip": "Hands full of weapons, bellies full of food, and pockets full of money."
 			},
 			"nature": {
 				"display_name": "Nature Synergy",
@@ -401,6 +401,11 @@
 			}
 		},
 		"decoration": {
+			"awning": {
+				"display_name": "Awning",
+				"description": "For those who don't like sun in their eyes.",
+				"flavor": "Light-blocking technology encourages sleeping-in."
+			},
 			"big_firefly_essense": {
 				"display_name": "Big Firefly Essence",
 				"description": "Has the equivalent of 8 small firefly essence bottles. Glow in the dark",
@@ -532,6 +537,11 @@
 			}
 		},
 		"food": {
+			"fake_vegetables": {
+				"display_name": "Vegetables Substitute",
+				"description": "Goblins are not too fond of vegetables, so Shamans had to get creative to keep a healthy diet.",
+				"flavor": "It is like hiding vegetables in the food"
+			},
 			"plate_of_mushrooms": {
 				"display_name": "Plate of Mushrooms",
 				"description": "Chopped mushroom",
@@ -669,15 +679,12 @@
 			"mushroom": {
 				"display_name": "Mushroom",
 				"description": "Harvestable for a meager food supply.",
-				"unripe_description": "This plant has been harvested and has not grown back yet",
-				"seed":{
-					"display_name": "Mushroom Seeds",
-					"description": "Little pieces from a bigger mushroom"
-				},
-				"sprout":{
-					"display_name": "Mushroom Sprout",
-					"description": "Just needs some time and care."
-				}
+				"unripe_description": "This mushroom has been harvested and has not grown back yet"
+			},
+			"mushroom_garden": {
+				"display_name": "Mushroom Garden",
+				"description": "Harvestable for new plantable mushrooms",
+				"unripe_description": "The mushroom in this garden has not fully grown yet"
 			},
 			"log": {
 				"display_name": "Log",
@@ -977,9 +984,19 @@
 				"display_name": "Earthmaster",
 				"description": "Craft advance items and decorations using hard materials like stone and clay",
 				"requirements": "Crafted by Shaman",
+				"level_1_data": {
+					"perk_000_name": "Stone Crafting",
+					"perk_000_description": "From the advanced materials, stone is the most basic one. Still, quite a leap compared to the usual wood and fiber stuff."
+				},
+				"level_2_data": {
+					"perk_000_name": "Clay Sculpting",
+					"perk_000_description": "Crafting with clay is always interesting, such a soft material when modelled and heated end almost as solid as stone."
+				},
 				"level_3_data": {
 					"perk_000_name": "Journeyman's Knowledge",
-					"perk_000_description": "When inspiration strikes, the Earthmaster may now craft an especially Fine quality of item."
+					"perk_000_description": "When inspiration strikes, the Earthmaster may now craft an especially Fine quality of item.",
+					"perk_001_name": "Magma Smithing",
+					"perk_001_description": "What about rocks and metals as soft as clay? Liquid fire as some call it."
 				},
 				"level_5_data": {
 					"perk_000_name": "Master's Insight",

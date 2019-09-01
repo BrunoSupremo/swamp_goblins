@@ -61,6 +61,9 @@
 			"ordinal": 40,
 			"name": "i18n(stonehearth:jobs.cook.recipes.food_name)",
 			"recipes": {
+				"fake_vegetables": {
+					"recipe": "file(food/fake_vegetables_recipe.json)"
+				},
 				"plate_of_mushrooms": {
 					"recipe": "file(food/plate_of_mushrooms_recipe.json)"
 				},
@@ -153,6 +156,9 @@
 				},
 				"giple": {
 					"recipe": "file(seeds/giple_recipe.json)"
+				},
+				"mushroom_garden": {
+					"recipe": "file(seeds/mushroom_garden_recipe.json)"
 				}
 			}
 		},

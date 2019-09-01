@@ -1,0 +1,34 @@
+{
+	"type": "recipe",
+	"effort": 25,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.plants.mushroom_garden.display_name)",
+	"description": "i18n(swamp_goblins:entities.plants.mushroom_garden.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/plants/mushroom_garden/mushroom_garden.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 2
+		},
+		{
+			"material": "clay resource",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		},
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:plants:mushroom_garden"
+		}
+	]
+}

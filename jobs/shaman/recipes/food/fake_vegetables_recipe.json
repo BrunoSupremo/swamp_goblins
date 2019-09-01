@@ -1,0 +1,25 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 2,
+	"recipe_name": "i18n(swamp_goblins:entities.food.fake_vegetables.display_name)",
+	"description": "i18n(swamp_goblins:entities.food.fake_vegetables.description)",
+	"flavor": "i18n(swamp_goblins:entities.food.fake_vegetables.flavor)",
+	"portrait": "/swamp_goblins/entities/food/fake_vegetables/fake_vegetables.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 4
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:food:fake_vegetables"
+		}
+	]
+}
