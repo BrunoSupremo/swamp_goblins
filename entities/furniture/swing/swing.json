@@ -17,7 +17,8 @@
 		},
 		"stonehearth:mount": {
 			"mounted_posture": "stonehearth:sitting_on_chair"
-		}
+		},
+		"stonehearth:traveler_attraction": {}
 	},
 	"entity_data": {
 		"stonehearth:chair": {},
@@ -30,6 +31,12 @@
 				"shopkeeper_level": 1,
 				"shopkeeper_type": "caravan"
 			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 6
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
 		}
 	}
 }

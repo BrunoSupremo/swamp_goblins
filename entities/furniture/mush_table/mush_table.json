@@ -24,7 +24,8 @@
 					"max": { "x": 1.5, "y": 2, "z": 1.5 }
 				}
 			]
-		}
+		},
+		"stonehearth:traveler_attraction": {}
 	},
 	"entity_data": {
 		"stonehearth:net_worth": {
@@ -36,6 +37,12 @@
 				"shopkeeper_level": 1,
 				"shopkeeper_type": "caravan"
 			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 4
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
 		}
 	}
 }
