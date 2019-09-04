@@ -1,0 +1,48 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"mob": {
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"render_info": {
+			"animation_table": "stonehearth/data/rigs/entities/construction/door/door.json"
+		},
+		"effect_list": {
+			"default": "stonehearth/data/rigs/entities/construction/door/effects/closed.json",
+			"initial_pose_animation": "closed.json"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(goblin_barricade_gate.qb)"
+				]
+			}
+		},
+		"stonehearth:fixture": {
+			"valign": "bottom",
+			"cursor": "stonehearth:cursors:create_door",
+			"bounds": {
+				"min": { "x": -1, "y": 0 },
+				"max": { "x": 2, "y": 3 }
+			}
+		},
+		"stonehearth:portal": {
+			"cutter": [
+				{
+					"min": { "x": -1, "y": 0 },
+					"max": { "x": 2, "y": 3 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.construction.goblin_barricade_gate.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.goblin_barricade_gate.description)",
+			"icon": "file(goblin_barricade_gate.png)",
+			"category": "door",
+			"material_tags": ["firefly_made", "wood", "defense", "crafted", "portal", "gate", "stockpile_defense"]
+		}
+	}
+}

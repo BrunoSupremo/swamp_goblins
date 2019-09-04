@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 1,
+	"recipe_name": "i18n(swamp_goblins:entities.construction.goblin_barricade_gate.display_name)",
+	"description": "i18n(swamp_goblins:entities.construction.goblin_barricade_gate.description)",
+	"flavor": "i18n(swamp_goblins:entities.construction.goblin_barricade_gate.flavor)",
+	"portrait": "/swamp_goblins/entities/construction/goblin_barricade_gate/goblin_barricade_gate.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:construction:goblin_barricade_gate"
+		}
+	]
+}

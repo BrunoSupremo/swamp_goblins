@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.01")
+print("Swamp Goblins Mod version 19.9.4")
 
 --[[
 mosquito model
@@ -33,10 +33,10 @@ equipments:
 redo:
 	hourglass effects
 	checkers table
+	tree colors
 fisher:
 	swamp fish colors, eels, blowfish
 Bugs:
-	trapper ace bug??
 ]]
 
 function swamp_goblins:_on_services_init()

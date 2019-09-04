@@ -1,20 +1,20 @@
 {
 	"type": "entity",
 	"mixins": [
-		"file(wooden_door_ghost.json)",
+		"file(goblin_barricade_gate_ghost.json)",
 		"stonehearth:mixins:portals:single_door",
 		"stonehearth:mixins:basic_destructable_door"
 	],
 	"components": {
 		"stonehearth:entity_forms": {
-			"iconic_form": "file(wooden_door_iconic.json)",
-			"ghost_form": "file(wooden_door_ghost.json)",
+			"iconic_form": "file(goblin_barricade_gate_iconic.json)",
+			"ghost_form": "file(goblin_barricade_gate_ghost.json)",
 			"hide_placement_ui": false
 		}
 	},
 	"entity_data": {
 		"stonehearth:net_worth": {
-			"value_in_gold": 2,
+			"value_in_gold": 4,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": true,
@@ -22,12 +22,6 @@
 				"shopkeeper_level": 1,
 				"shopkeeper_type": "caravan"
 			}
-		},
-		"stonehearth:appeal": {
-			"appeal": 6
-		},
-		"stonehearth:item_quality": {
-			"variable_quality": true
 		}
 	}
 }
