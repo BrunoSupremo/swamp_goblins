@@ -22,7 +22,8 @@
 		"type": "trigger_many",
 		"out_edges": [
 			"wait_for_boss_death",
-			"first_contact"
+			"first_contact",
+			"they_are_friends_already"
 		]
 	},
 	"create_camp_info": {

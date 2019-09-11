@@ -1,0 +1,15 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait",
+	"in_edge"  : "wait_before_egg_again",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"explain_egg_again",
+			"arc:finish"
+		]
+	},
+	"wait_info": {
+		"duration": "1d+1d"
+	}
+}

@@ -104,6 +104,11 @@
 							"title":"Daily Report?",
 							"dialog_title":"Daily Report?",
 							"message":"What is a 'Daily Report'? A way to get new citizens? We don't have such a thing. <br> Use the Goblinpedia, crafted by the Shaman, to learn how it is done."
+						},
+						"explain_egg_again":{
+							"title":"Goblin eggs!",
+							"dialog_title":"Goblin eggs!",
+							"message":"We are going to repeat this, just to make sure you know about it, ok?<br>To get new goblins, you need to first place and use the <strong>egg pedestal</strong>.<br><br><font size=-1>More information available on the goblinpedia.</font>"
 						}
 					},
 					"challenge":{
@@ -113,7 +118,7 @@
 							"what":"What do you mean?",
 							"message_2":"Good try, but it will not work.<br>We know your tactics.<br>This time, we will take the initiative first!",
 							"wait":"Wait, what?",
-							"message_3":"Foward!",
+							"message_3":"Forward!",
 							"listen":"You are not listening!"
 						},
 						"first_contact_alert":"They are sending an attack!",
@@ -248,11 +253,6 @@
 		"traits": {
 			"party_goblin": {
 				"display_name": "Party Goblin"
-			}
-		},
-		"weather": {
-			"foggy": {
-				"description": "A cover of fog crawls across the landscape, hiding untold mysteries.<ul><li>Vision radius is greatly reduced.</li></ul>"
 			}
 		},
 		"buffs": {

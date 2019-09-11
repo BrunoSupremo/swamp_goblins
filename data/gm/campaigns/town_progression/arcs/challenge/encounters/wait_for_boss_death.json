@@ -2,6 +2,15 @@
 	"type": "encounter",
 	"encounter_type": "wait_for_event",
 	"in_edge": "wait_for_boss_death",
+	"can_start": {
+		"test_1": {
+			"hostile_check": {
+				"item": "hostility",
+				"type": "deny_if_not",
+				"value": true
+			}
+		}
+	},
 	"out_edge": "boss_death_dialog",
 	"wait_for_event_info": {
 		"source": "firefly_human_encounter.boss",

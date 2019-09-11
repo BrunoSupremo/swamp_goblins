@@ -544,7 +544,9 @@
 		"class:warrior":		"file(jobs/warrior/warrior.lua)",
 		"class:worker":			"file(jobs/worker/worker.lua)",
 
-		"trait_scripts:party_goblin":"file(data/traits/party_goblin/party_goblin_script.lua)"
+		"trait_scripts:party_goblin":"file(data/traits/party_goblin/party_goblin_script.lua)",
+
+		"weather_scripts:foggy": "file(data/weather/foggy/foggy.lua)"
 	},
 	"ui":{
 		"html":[

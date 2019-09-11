@@ -1,9 +1,19 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.4")
+print("Swamp Goblins Mod version 19.9.10")
 
 --[[
+
+fireflies spawn as critters (interactions became possible,
+and can limit the spawn to around player territory only)
+Requires to test backward compatibility now that the component is removed
+
+add adjancency to all entities
+
 mosquito model
 banner shred
+animals haulers requiring food and care
+slimes
+varanus repelent
 
 contruction:
 	door, double door
@@ -19,13 +29,12 @@ decorations:
 furniture:
 	bed, chair, table, bench
 templates:
-	inn, dinning hall, tavern
+	inn, dinning hall, tavern, combat houses
 earthmaster:
 	dart traps, smoke traps
 gizmos:
 	goblinpedia
 	weather stone (move to manipulation folder)
-	mushroom garden
 equipments:
 	replace weapon placeholders, improve overall models
 	beast_tamer/spirit_walker better weapons
@@ -33,7 +42,6 @@ equipments:
 redo:
 	hourglass effects
 	checkers table
-	tree colors
 fisher:
 	swamp fish colors, eels, blowfish
 Bugs:

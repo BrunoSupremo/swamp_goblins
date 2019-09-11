@@ -62,6 +62,12 @@ function LayEgg_spot:create_egg()
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	radiant.entities.turn_to(egg, rng:get_int(0,3)*90)
 	radiant.terrain.place_entity_at_exact_location(egg, location +Point3.unit_y)
+
+	local inventory = stonehearth.inventory:get_inventory(self.player_id)
+	if inventory then
+		inventory:add_item_if_not_full(egg)
+	end
+
 	radiant.effects.run_effect(egg, "stonehearth:effects:buff_tonic_energy_added")
 	radiant.effects.run_effect(egg, "stonehearth:effects:fursplosion_effect")
 	if self._sv._task_effect then
@@ -95,6 +101,11 @@ function LayEgg_spot:egg_hatched(baby)
 	self._baby_listener = radiant.events.listen_once(baby, 'stonehearth:on_evolved', function(e)
 		self:grow_into_adult(e.evolved_form)
 	end)
+
+	local inventory = stonehearth.inventory:get_inventory(self.player_id)
+	if inventory then
+		inventory:add_item_if_not_full(baby)
+	end
 
 	stonehearth.bulletin_board:post_bulletin(self.player_id)
 	:set_data({

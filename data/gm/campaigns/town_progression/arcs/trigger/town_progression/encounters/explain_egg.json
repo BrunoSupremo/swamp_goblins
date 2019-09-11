@@ -14,7 +14,7 @@
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.trigger.explain_egg.message)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {
-							"out_edge": "arc:finish"
+							"out_edge": "wait_before_egg_again"
 						}
 					}
 				}

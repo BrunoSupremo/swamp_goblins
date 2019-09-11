@@ -62,11 +62,13 @@ end
 function BeastTamerClass:summon_big_wolf(delay)
 	local uris = {"swamp_goblins:summons:big_wolf"}
 	self:summon_animals(delay, uris, 1, true)
+	self:thought_bubble("/swamp_goblins/jobs/beast_tamer/images/summon_big_wolf.png")
 end
 
 function BeastTamerClass:summon_dragon_aura(delay)
 	local uris = {"swamp_goblins:summons:dragon_aura"}
 	self:summon_animals(delay, uris, 1, true)
+	self:thought_bubble("/swamp_goblins/jobs/beast_tamer/images/summon_dragon_aura.png")
 end
 
 function BeastTamerClass:summon_firefly(delay, target)
@@ -84,11 +86,13 @@ function BeastTamerClass:summon_firefly(delay, target)
 			radiant.entities.add_buff(entity, "swamp_goblins:buffs:firefly_confusion")
 		end
 	end
+	self:thought_bubble("/swamp_goblins/jobs/beast_tamer/images/summon_firefly.png")
 end
 
 function BeastTamerClass:summon_varanus(delay)
 	local uris = {"swamp_goblins:summons:varanus"}
 	self:summon_animals(delay, uris, 2)
+	self:thought_bubble("/swamp_goblins/jobs/beast_tamer/images/summon_varanus.png")
 end
 
 function BeastTamerClass:summon_traps(delay, target)
@@ -111,6 +115,7 @@ function BeastTamerClass:summon_traps(delay, target)
 			end
 		end
 	end
+	self:thought_bubble("/swamp_goblins/jobs/beast_tamer/images/summon_traps.png")
 end
 
 function BeastTamerClass:summon_wildlife(delay)
@@ -125,11 +130,13 @@ function BeastTamerClass:summon_wildlife(delay)
 		"swamp_goblins:summons:squirrel"
 	}
 	self:summon_animals(delay, uris, 6)
+	self:thought_bubble("/swamp_goblins/jobs/beast_tamer/images/summon_wildlife.png")
 end
 
 function BeastTamerClass:summon_poyos(delay)
 	local uris = {"swamp_goblins:summons:poyo"}
 	self:summon_animals(delay, uris, 4)
+	self:thought_bubble("/swamp_goblins/jobs/beast_tamer/images/summon_poyos.png")
 end
 
 function BeastTamerClass:summon_animals(delay, uris, amount, has_attributes)
@@ -166,6 +173,13 @@ end
 function BeastTamerClass:copy_menace(animal)
 	radiant.entities.set_attribute(animal, "menace", radiant.entities.get_attribute(self._sv._entity, "menace") +1)
 	radiant.entities.set_attribute(animal, "courage", radiant.entities.get_attribute(self._sv._entity, "courage") +1)
+end
+
+function BeastTamerClass:thought_bubble(image)
+	self._sv._entity:add_component('stonehearth:thought_bubble')
+	:add_bubble(stonehearth.constants.thought_bubble.effects.INDICATOR,
+		stonehearth.constants.thought_bubble.priorities.HUNGER+1,
+		image, nil, '5m')
 end
 
 return BeastTamerClass

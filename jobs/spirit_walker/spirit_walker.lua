@@ -24,6 +24,7 @@ function SpiritWalkerClass:summon_big_g(delay)
 	stonehearth.combat:set_timer("SpiritWalkerClass summoning_delay: big_g", summoning_delay, function()
 		self:create_spirit("swamp_goblins:summons:big_g", "double")
 		end)
+	self:thought_bubble("/swamp_goblins/jobs/spirit_walker/images/summon_big_g.png")
 end
 
 function SpiritWalkerClass:summon_spirit(delay, amount)
@@ -38,11 +39,13 @@ function SpiritWalkerClass:summon_spirit(delay, amount)
 			self:create_spirit("swamp_goblins:summons:goblin_spirit", "copy")
 			end)
 	end
+	self:thought_bubble("/swamp_goblins/jobs/spirit_walker/images/summon_spirit.png")
 end
 
 function SpiritWalkerClass:summon_spirits(delay)
 	local spirit_amount = radiant.entities.get_attribute(self._sv._entity, "spirit")
 	self:summon_spirit(delay, spirit_amount)
+	self:thought_bubble("/swamp_goblins/jobs/spirit_walker/images/summon_spirits.png")
 end
 
 function SpiritWalkerClass:create_spirit(url, attributes)
@@ -99,6 +102,13 @@ end
 
 function SpiritWalkerClass:dragon_aura(args)
 	radiant.events.trigger_async(stonehearth.job, 'swamp_goblins:spirit_walker_dragon_aura')
+end
+
+function SpiritWalkerClass:thought_bubble(image)
+	self._sv._entity:add_component('stonehearth:thought_bubble')
+	:add_bubble(stonehearth.constants.thought_bubble.effects.INDICATOR,
+		stonehearth.constants.thought_bubble.priorities.HUNGER+1,
+		image, nil, '5m')
 end
 
 return SpiritWalkerClass

@@ -1,0 +1,43 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "explain_egg_again",
+	"unique": true,
+	"can_start": {
+		"check_if_learned_to_use_eggs_already": {
+			"no_egg": {
+				"uri": "swamp_goblins:goblins:egg",
+				"item": "exists_in_world",
+				"type": "deny_if",
+				"value": true
+			},
+			"no_baby": {
+				"uri": "swamp_goblins:goblins:baby",
+				"item": "exists_in_world",
+				"type": "deny_if",
+				"value": true
+			},
+			"no_more_than_5_goblins": {
+				"item": "num_citizens",
+				"type": "deny_if_greater_than",
+				"value": 5
+			}
+		}
+	},
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.trigger.explain_egg_again.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.trigger.explain_egg_again.dialog_title)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.trigger.explain_egg_again.message)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {}
+					}
+				}
+			}
+		}
+	}
+}

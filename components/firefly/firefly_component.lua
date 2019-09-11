@@ -1,5 +1,4 @@
 local rng = _radiant.math.get_default_rng()
--- local log = radiant.log.create_logger('FireflyComponent')
 local FireflyComponent = class()
 
 function FireflyComponent:activate()
@@ -40,18 +39,18 @@ function FireflyComponent:_create_nighttime_alarms()
 
 	self._sunrise_listener = stonehearth.calendar:set_alarm(sunrise_alarm_time, function()
 		self:light_off()
-		end)
+	end)
 	self._sunset_listener = stonehearth.calendar:set_alarm(sunset_alarm_time, function()
 		self:light_on()
-		end)
+	end)
 end
 
 function FireflyComponent:_check_light()
 	if stonehearth.calendar:is_daytime() then
-	self:light_off()
-else
-	self:light_on()
-end
+		self:light_off()
+	else
+		self:light_on()
+	end
 end
 
 function FireflyComponent:light_on()
@@ -59,8 +58,6 @@ function FireflyComponent:light_on()
 		local location = radiant.entities.get_world_grid_location(self._entity)
 		if location==nil then
 			local delayed_function = function ()
-				--object location is returning nil sometimes for some reason,
-				--so I have to do this, waiting 1gametick for it to be set
 				self:light_on()
 
 				self.stupid_delay:destroy()

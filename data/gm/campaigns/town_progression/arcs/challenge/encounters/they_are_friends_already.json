@@ -1,0 +1,18 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait",
+	"in_edge": "they_are_friends_already",
+	"can_start": {
+		"test_1": {
+			"hostile_check": {
+				"item": "hostility",
+				"type": "deny_if",
+				"value": true
+			}
+		}
+	},
+	"out_edge": "peaceful_introduction",
+	"wait_info": {
+		"duration": "1m"
+	}
+}
