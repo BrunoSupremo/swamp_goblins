@@ -8,6 +8,14 @@
 				"/stonehearth/data/materials/material_maps/magic_material_map.json"
 			]
 		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 4, "z": 1 }
+				}
+			]
+		},
 		"region_collision_shape": {
 			"region": [
 				{

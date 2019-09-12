@@ -1,19 +1,20 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.10")
+print("Swamp Goblins Mod version 19.9.12")
 
 --[[
 
+edit earthamster template to avoid goblisn going through windows
+
 fireflies spawn as critters (interactions became possible,
 and can limit the spawn to around player territory only)
-Requires to test backward compatibility now that the component is removed
-
-add adjancency to all entities
 
 mosquito model
 banner shred
 animals haulers requiring food and care
 slimes
-varanus repelent
+varanus/mobs repelent
+
+use ace tools and tools upgrades
 
 contruction:
 	door, double door

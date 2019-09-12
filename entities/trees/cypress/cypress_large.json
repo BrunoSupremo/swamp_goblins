@@ -2,10 +2,6 @@
 	"mixins": "stonehearth:mixins:tree",
 	"type": "entity",
 	"components": {
-		"swamp_goblins:firefly" : {
-			"chance_to_run" : 50,
-			"random_location" : true
-		},
 		"mob": {
 			"model_origin": { "x": -0.5, "y": 0, "z": 0.5 },
 			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }

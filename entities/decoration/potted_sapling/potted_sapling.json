@@ -7,6 +7,14 @@
 			"ghost_form": "file(potted_sapling_ghost.json)",
 			"placeable_on_ground": true
 		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 1, "y": 2, "z": 1 }
+				}
+			]
+		},
 		"region_collision_shape": {
 			"region": [
 				{

@@ -7,6 +7,14 @@
 			"ghost_form": "file(pole_banner_ghost.json)",
 			"placeable_on_ground": true
 		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 5, "z": 1 }
+				}
+			]
+		},
 		"region_collision_shape": {
 			"region": [
 				{
