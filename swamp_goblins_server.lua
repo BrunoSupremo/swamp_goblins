@@ -1,11 +1,16 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.12")
+print("Swamp Goblins Mod version 19.9.13")
 
 --[[
 
-edit earthamster template to avoid goblisn going through windows
+fix bugs spawn
 
-fireflies spawn as critters (interactions became possible,
+fix summon spawn places
+
+ores+essense in magmasmithing for firefly jewels (ornate stuff like gold flakes)
+add gold flakes recipe
+
+fireflies spawn as critters (so interactions became possible,
 and can limit the spawn to around player territory only)
 
 mosquito model

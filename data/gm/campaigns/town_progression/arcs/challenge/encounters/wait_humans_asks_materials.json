@@ -1,0 +1,9 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait",
+	"in_edge": "wait_humans_asks_materials",
+	"out_edge": "humans_asks_materials",
+	"wait_info": {
+		"duration": "1d+1d"
+	}
+}

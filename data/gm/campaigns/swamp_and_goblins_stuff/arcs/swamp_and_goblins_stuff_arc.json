@@ -1,0 +1,14 @@
+{
+	"type": "arc",
+	"rarity": "common",
+	"encounters": {
+		"start":"file(encounters/start.json)",
+
+		"goblin_stuff":"file(encounters/goblin_stuff.json)",
+		"wait_travel":"file(encounters/wait_travel.json)",
+		"travel":"file(encounters/travel.json)",
+		"destroy_travel":"file(encounters/destroy_travel.json)",
+
+		"swamp_stuff":"file(encounters/swamp_stuff.json)"
+	}
+}

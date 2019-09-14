@@ -1,0 +1,22 @@
+{
+	"type": "encounter",
+	"encounter_type": "script",
+	"in_edge": "footman_attacks_allied",
+	"out_edge": {
+		"type": "destroy_tree",
+		"root": "first_attack",
+		"destroy_root": true
+	},
+	"can_start": {
+		"test_1": {
+			"hostile_check": {
+				"item": "hostility",
+				"type": "deny_if",
+				"value": true
+			}
+		}
+	},
+	"script_info": {
+		"script":"file(force_kill_boss.lua)"
+	}
+}
