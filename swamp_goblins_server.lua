@@ -1,17 +1,12 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.13")
+print("Swamp Goblins Mod version 19.9.15")
 
 --[[
-
-fix bugs spawn
-
-fix summon spawn places
 
 ores+essense in magmasmithing for firefly jewels (ornate stuff like gold flakes)
 add gold flakes recipe
 
-fireflies spawn as critters (so interactions became possible,
-and can limit the spawn to around player territory only)
+new herb and fiber for dry areas
 
 mosquito model
 banner shred
@@ -35,7 +30,7 @@ decorations:
 furniture:
 	bed, chair, table, bench
 templates:
-	inn, dinning hall, tavern, combat houses
+	inn, dinning hall, tavern, combat houses (n.a. inspired)
 earthmaster:
 	dart traps, smoke traps
 gizmos:

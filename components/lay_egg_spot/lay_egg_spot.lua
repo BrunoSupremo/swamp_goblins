@@ -1,5 +1,7 @@
 local LayEgg_spot = class()
+local WeightedSet = require 'stonehearth.lib.algorithms.weighted_set'
 local Point3 = _radiant.csg.Point3
+local Point2 = _radiant.csg.Point2
 local rng = _radiant.math.get_default_rng()
 
 function LayEgg_spot:initialize()
@@ -147,35 +149,42 @@ function LayEgg_spot:trigger_raid_toward_the_egg(egg)
 		return
 	end
 
-	self._searcher = radiant.create_controller('stonehearth:game_master:util:choose_location_outside_town',
-		16, 100,
-		function(op, location)
-			return self:_find_location_callback(op, location)
-		end)
-
 	self.timer = stonehearth.calendar:set_timer('preparing egg raid', "30m+1h", function()
-		self:_spawn(self.doodle_spawn_location)
+		self:_spawn()
 		self.timer = nil
 	end)
 	self.timer2 = stonehearth.calendar:set_timer('preparing egg raid', "8h+1h", function()
-		self:_spawn(self.doodle_spawn_location)
+		self:_spawn()
 		self.timer2 = nil
 	end)
 	self.timer3 = stonehearth.calendar:set_timer('preparing egg raid', "16h+1h", function()
-		self:_spawn(self.doodle_spawn_location)
+		self:_spawn()
 		self.timer3 = nil
 	end)
 end
 
-function LayEgg_spot:_spawn(location)
-	if not self._sv._current_egg or not location then
+function LayEgg_spot:_spawn()
+	if not self._sv._current_egg then
 		return
 	end
+
 	local enemy
+	local territory = self.player_id and stonehearth.terrain:get_territory(self.player_id) or stonehearth.terrain:get_total_territory()
+	local territory_region = territory:get_region()
+	local valid_points_region = territory_region:inflated(Point2(64, 64)) - territory_region:inflated(Point2(32, 32))
+	local pedestal_location = radiant.entities.get_world_grid_location(self._entity) +Point3.unit_y+Point3.unit_z
+	local valid_cubes = WeightedSet(rng)
+	for cube in valid_points_region:each_cube() do
+		valid_cubes:add(cube, cube:get_area())
+	end
+	local max_y = radiant.terrain.get_terrain_component():get_bounds().max.y
+
 	for i=1, stonehearth.population:get_population_size(self.player_id) do
 		enemy = radiant.entities.create_entity('swamp_goblins:monsters:doodles_egg_raider', {owner = "forest"})
-		location = radiant.terrain.find_placement_point(location, 1, 8, enemy)
-		radiant.terrain.place_entity(enemy, location)
+
+		local location = self:find_spawning_point(valid_cubes, pedestal_location, max_y)
+		radiant.terrain.place_entity_at_exact_location(enemy, location)
+
 		radiant.entities.add_buff(enemy, 'stonehearth:buffs:despawn:after_day')
 
 		enemy:get_component('stonehearth:ai')
@@ -196,32 +205,24 @@ function LayEgg_spot:_spawn(location)
 	})
 end
 
-function LayEgg_spot:_find_location_callback(op, location)
-	if op == 'check_location' then
-		return true
-	elseif op == 'set_location' then
-		self.doodle_spawn_location = location
-
-		if self._searcher then
-			self._searcher:destroy()
-			self._searcher = nil
-		end
-	else
-		radiant.error('op "%s" in LayEgg_spot _find_location_callback', op)
-	end
-end
-
 function LayEgg_spot:destroy()
-	if self._searcher then
-		self._searcher:destroy()
-		self._searcher = nil
-	end
 	if self._sv._task_effect then
 		self._sv._task_effect:stop()
 		self._sv._task_effect = nil
 	end
 end
 
-
+function LayEgg_spot:find_spawning_point(valid_cubes, target_location, max_y)
+	local point
+	for i=1, 100 do
+		local cube = valid_cubes:choose_random()
+		point = radiant.terrain.get_point_on_terrain(Point3(rng:get_int(cube.min.x, cube.max.x), max_y, rng:get_int(cube.min.y, cube.max.y)))
+		
+		if _radiant.sim.topology.are_strictly_connected(point, target_location, 0) then
+			break
+		end
+	end
+	return point
+end
 
 return LayEgg_spot

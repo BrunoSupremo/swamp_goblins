@@ -52,11 +52,6 @@ function SpiritWalkerClass:create_spirit(url, attributes)
 	local entity_location = radiant.entities.get_world_location(self._sv._entity)
 	local player_id = radiant.entities.get_player_id(self._sv._entity)
 
-	local x, z = entity_location.x, entity_location.z
-	local dir = radiant.math.random_xz_unit_vector()
-	dir:scale(6)
-
-	local location = radiant.terrain.get_point_on_terrain(Point3(dir.x + x, 1, dir.z + z))
 	local spirit = radiant.entities.create_entity(url, {owner = player_id})
 	if attributes == "copy" then
 		self:copy_attributes(spirit)
@@ -65,6 +60,7 @@ function SpiritWalkerClass:create_spirit(url, attributes)
 			self:double_attributes(spirit)
 		end
 	end
+	local location = radiant.terrain.find_placement_point(entity_location, 3, 6, self._sv._entity, nil, true)
 	radiant.terrain.place_entity_at_exact_location(spirit, location)
 
 	radiant.effects.run_effect(spirit, "stonehearth:effects:spawn_entity")

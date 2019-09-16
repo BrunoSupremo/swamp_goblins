@@ -1,4 +1,4 @@
-local game_master_lib = require 'lib.game_master.game_master_lib'
+local game_master_lib = require 'stonehearth.lib.game_master.game_master_lib'
 local rng = _radiant.math.get_default_rng()
 local Point2 = _radiant.csg.Point2
 local Point3 = _radiant.csg.Point3

@@ -154,15 +154,11 @@ function BeastTamerClass:create_animal(url, has_attributes)
 	local entity_location = radiant.entities.get_world_location(self._sv._entity)
 	local player_id = radiant.entities.get_player_id(self._sv._entity)
 
-	local x, z = entity_location.x, entity_location.z
-	local dir = radiant.math.random_xz_unit_vector()
-	dir:scale(5)
-
-	local location = radiant.terrain.get_point_on_terrain(Point3(dir.x + x, 1, dir.z + z))
 	local animal = radiant.entities.create_entity(url, {owner = player_id})
 	if not has_attributes then
 		self:copy_menace(animal)
 	end
+	local location = radiant.terrain.find_placement_point(entity_location, 3, 5, self._sv._entity, nil, true)
 	radiant.terrain.place_entity_at_exact_location(animal, location)
 
 	radiant.effects.run_effect(animal, "stonehearth:effects:spawn_entity")
