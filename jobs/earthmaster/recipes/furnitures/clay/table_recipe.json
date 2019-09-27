@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.furniture.clay.table.display_name)",
+	"description": "i18n(swamp_goblins:entities.furniture.clay.table.description)",
+	"flavor": "i18n(swamp_goblins:entities.furniture.clay.table.flavor)",
+	"portrait": "/swamp_goblins/entities/furniture/clay/table/table.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:furniture:clay:table"
+		}
+	]
+}

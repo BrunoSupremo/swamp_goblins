@@ -86,22 +86,22 @@
 			"name": "i18n(stonehearth:jobs.carpenter.recipes.furniture_name)",
 			"recipes":{
 				"stone_chair": {
-					"recipe": "file(furnitures/stone_chair_recipe.json)"
+					"recipe": "file(furnitures/stone/chair_recipe.json)"
 				},
 				"stone_table": {
-					"recipe": "file(furnitures/stone_table_recipe.json)"
-				},
-				"checkers_table": {
-					"recipe": "file(furnitures/checkers_table_recipe.json)"
-				},
-				"clay_bed": {
-					"recipe": "file(furnitures/clay_bed_recipe.json)"
+					"recipe": "file(furnitures/stone/table_recipe.json)"
 				},
 				"stone_bench": {
-					"recipe": "file(furnitures/stone_bench_recipe.json)"
+					"recipe": "file(furnitures/stone/bench_recipe.json)"
 				},
 				"stone_throne": {
-					"recipe": "file(furnitures/stone_throne_recipe.json)"
+					"recipe": "file(furnitures/stone/throne_recipe.json)"
+				},
+				"checkers_table": {
+					"recipe": "file(furnitures/clay/table_recipe.json)"
+				},
+				"clay_bed": {
+					"recipe": "file(furnitures/clay/bed_recipe.json)"
 				}
 			}
 		},
@@ -159,6 +159,21 @@
 				},
 				"sign_varanus": {
 					"recipe": "file(signs/sign_varanus_recipe.json)"
+				}
+			}
+		},
+		"goblin_refined": {
+			"ordinal": 80,
+			"name": "i18n(stonehearth:jobs.mason.recipes.refined_name)",
+			"recipes": {
+				"gold_flakes": {
+					"recipe": "file(refined/gold_flakes_recipe.json)"
+				},
+				"gold_flakes_times_three": {
+					"recipe": "file(refined/gold_flakes_times_three_recipe.json)"
+				},
+				"jewel": {
+					"recipe": "file(refined/jewel_recipe.json)"
 				}
 			}
 		},

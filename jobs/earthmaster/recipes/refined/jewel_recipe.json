@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.refined.jewel.display_name)",
+	"description": "i18n(swamp_goblins:entities.refined.jewel.description)",
+	"flavor": "i18n(swamp_goblins:entities.refined.jewel.flavor)",
+	"portrait": "/swamp_goblins/entities/refined/jewel/jewel.png",
+	"workshop": "swamp_goblins:earthmaster:magmasmith_workbench",
+	"work_effect": "work",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "ore resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:refined:jewel"
+		}
+	]
+}

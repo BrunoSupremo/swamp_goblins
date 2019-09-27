@@ -1,10 +1,9 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.16")
+print("Swamp Goblins Mod version 19.9.27")
 
 --[[
 
-ores+essense in magmasmithing for firefly jewels (ornate stuff like gold flakes)
-add gold flakes recipe
+firefly jewels for ornate stuff (like gold flakes)
 
 new herb and fiber for dry areas
 
@@ -36,6 +35,8 @@ earthmaster:
 gizmos:
 	goblinpedia
 	weather stone (move to manipulation folder)
+music:
+	bongo, drum, flute, gong, triangulo
 equipments:
 	replace weapon placeholders, improve overall models
 	beast_tamer/spirit_walker better weapons

@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 22,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.stone_chair_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.stone_chair_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.mason.recipes.stone_chair_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/furniture/stone/chair/chair.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:furniture:stone:chair"
+		}
+	]
+}

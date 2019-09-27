@@ -31,6 +31,7 @@
 		"ai_pack:ranged_darts":	"file(ai/packs/ranged_darts.json)",
 
 		"task_groups:lay_egg": "file(ai/task_groups/lay_egg.lua)",
+		"task_groups:beekeeping": "file(ai/task_groups/beekeeping.lua)",
 
 		"armor:flower_helmet":	"file(entities/armor/flower_helmet)",
 		"armor:full_leather_helmet":"file(entities/armor/full_leather_helmet)",
@@ -211,18 +212,19 @@
 		"food:fake_vegetables":			"file(entities/food/fake_vegetables)",
 		"food:fake_vegetables_serving":	"file(entities/food/fake_vegetables_serving)",
 
-		"furniture:checkers_table":	"file(entities/furniture/checkers_table)",
-		"furniture:clay_bed":		"file(entities/furniture/clay_bed)",
+		"furniture:clay:bed":	"file(entities/furniture/clay/bed)",
+		"furniture:clay:table":	"file(entities/furniture/clay/table)",
+		"furniture:mushroom:chair":	"file(entities/furniture/mushroom/chair)",
+		"furniture:mushroom:table":	"file(entities/furniture/mushroom/table)",
+		"furniture:stone:bench":	"file(entities/furniture/stone/bench)",
+		"furniture:stone:chair":	"file(entities/furniture/stone/chair)",
+		"furniture:stone:table":	"file(entities/furniture/stone/table)",
+		"furniture:stone:throne":	"file(entities/furniture/stone/throne)",
+
 		"furniture:hammock":		"file(entities/furniture/hammock)",
-		"furniture:mush_chair":		"file(entities/furniture/mush_chair)",
-		"furniture:mush_table":		"file(entities/furniture/mush_table)",
 		"furniture:simple_chair":	"file(entities/furniture/simple_chair)",
 		"furniture:simple_table":	"file(entities/furniture/simple_table)",
-		"furniture:stone_chair":	"file(entities/furniture/stone_chair)",
-		"furniture:stone_table":	"file(entities/furniture/stone_table)",
 		"furniture:swing":			"file(entities/furniture/swing)",
-		"furniture:stone_bench":	"file(entities/furniture/stone_bench)",
-		"furniture:stone_throne":	"file(entities/furniture/stone_throne)",
 		"furniture:wood_bench":		"file(entities/furniture/wood_bench)",
 		"furniture:wood_throne":	"file(entities/furniture/wood_throne)",
 
@@ -302,6 +304,8 @@
 		"portals:wooden_double_door":	"file(entities/construction/wooden_double_door)",
 		"portals:curtains_door":		"file(entities/construction/curtains_door)",
 		"portals:wooden_window_frame":	"file(entities/construction/wooden_window_frame)",
+
+		"refined:jewel":"file(entities/refined/jewel)",
 
 		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
 		"resources:cattail":		"file(entities/resources/cattail)",
@@ -398,7 +402,16 @@
 
 		"worker:abilities:goblin":"file(jobs/worker/goblin_worker_abilities.json)"
 	},
-	"deprecated_aliases":{},
+	"deprecated_aliases":{
+		"furniture:mush_chair":		"file(entities/furniture/mushroom/chair)",
+		"furniture:mush_table":		"file(entities/furniture/mushroom/table)",
+		"furniture:checkers_table":	"file(entities/furniture/clay/table)",
+		"furniture:clay_bed":		"file(entities/furniture/clay/bed)",
+		"furniture:stone_bench":	"file(entities/furniture/stone/bench)",
+		"furniture:stone_chair":	"file(entities/furniture/stone/chair)",
+		"furniture:stone_table":	"file(entities/furniture/stone/table)",
+		"furniture:stone_throne":	"file(entities/furniture/stone/throne)"
+	},
 	"mixintos" :  {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 

@@ -1,0 +1,25 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(bench.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:entities.furniture.stone_bench.stone_bench_ghost.display_name)",
+			"description": "i18n(stonehearth:entities.furniture.stone_bench.stone_bench_ghost.description)",
+			"icon": "file(bench.png)",
+			"category": "furniture",
+			"material_tags": ["firefly_made", "stone", "furniture", "crafted", "chair", "stockpile_furniture"]
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "recipe",
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.furniture.mushroom.table.display_name)",
+	"description": "i18n(swamp_goblins:entities.furniture.mushroom.table.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/furniture/mushroom/table/table.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:furniture:mushroom:table"
+		}
+	]
+}

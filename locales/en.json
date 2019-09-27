@@ -572,22 +572,33 @@
 			}
 		},
 		"furniture": {
-			"checkers_table": {
-				"display_name": "Checkers Table",
-				"description": "A table with a checkerboard",
-				"flavor": "No, you already played with the green pieces last time, it is my turn now"
+			"clay": {
+				"table": {
+					"display_name": "Checkers Table",
+					"description": "A table with a checkerboard",
+					"flavor": "No, you already played with the green pieces last time, it is my turn now"
+				}
+			},
+			"mushroom": {
+				"chair": {
+					"display_name": "Mushroom Chair",
+					"description": "You can sit on it. Very soft."
+				},
+				"table": {
+					"display_name": "Mushroom Table",
+					"description": "A table, for table things. A little wobbly."
+				}
+			},
+			"stone": {
+				"throne": {
+					"display_name": "Stone Throne",
+					"description": "Large and fancy chair for special goblins",
+					"flavor": "Watchout, no one wants to be left out, everyone is special"
+				}
 			},
 			"hammock": {
 				"display_name": "Hammock",
 				"description": "To sleep far from the ground"
-			},
-			"mush_chair": {
-				"display_name": "Mushroom Chair",
-				"description": "You can sit on it. Very soft."
-			},
-			"mush_table": {
-				"display_name": "Mushroom Table",
-				"description": "A table, for table things. A little wobbly."
 			},
 			"simple_chair": {
 				"display_name": "Simple Chair",
@@ -601,11 +612,6 @@
 				"display_name": "Swing",
 				"description": "You can sit on it",
 				"flavor": "Is this broken? Why the swing does not move?"
-			},
-			"stone_throne": {
-				"display_name": "Stone Throne",
-				"description": "Large and fancy chair for special goblins",
-				"flavor": "Watchout, no one wants to be left out, everyone is special"
 			},
 			"wood_throne": {
 				"display_name": "Wood Throne",
@@ -717,6 +723,13 @@
 				"display_name": "Lilypad",
 				"description": "Floats and can hold up a lot of weight"
 			}
+		},
+		"refined": {
+			"jewel": {
+				"display_name": "Firefly Jewel",
+				"description": "Bright, glowing marbles",
+				"flavor": "Has the magical properties of the essences and minerals used to craft them."
+			},
 		},
 		"resources": {
 			"cattail": {
@@ -1376,7 +1389,7 @@
 							},
 							"topic2":{
 								"title":"What it does:",
-								"desc1":"Harvest firefly essense used to imbue items in magic, some cooking and herbalism.",
+								"desc1":"Harvest firefly essence used to imbue items in magic, some cooking and herbalism.",
 								"desc2":"Crafts all the clan talismans. Can also craft the egg pedestal, an important item for the clan growth."
 							},
 							"topic3":{

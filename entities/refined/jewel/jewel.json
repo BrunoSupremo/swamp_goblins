@@ -1,0 +1,47 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:item_properties",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(jewel.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"render_info": {
+			"color_map": "stonehearth:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/magic_material_map.json"
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.refined.jewel.display_name)",
+			"description": "i18n(swamp_goblins:entities.refined.jewel.description)",
+			"category": "resources",
+			"material_tags": ["stockpile_refined_ore", "refined", "firefly_made", "jewel"],
+			"icon": "file(jewel.png)",
+			"is_item": true
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 20,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 5
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": false
+		}
+	}
+}
