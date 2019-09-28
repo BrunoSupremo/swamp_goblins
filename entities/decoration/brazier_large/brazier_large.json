@@ -1,0 +1,62 @@
+{
+	"type": "entity",
+	"mixins": "file(brazier_large_ghost.json)",
+	"components": {
+		"render_info": {
+			"color_map": "stonehearth:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/magic_material_map.json"
+			]
+		},
+		"stonehearth:firepit": {
+			"buff_source": true
+		},
+		"sensor_list": {
+			"sensors": {
+				"warmth": {
+					"radius": 16
+				}
+			}
+		},
+		"stonehearth:lamp": {
+			"light_policy": "manual",
+			"light_effect": "swamp_goblins:effects:green_fire:brazier_firepit",
+			"light_origin": { "x": 0, "y": 1, "z": 5 }
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 2, "y": 2, "z": 2 }
+				}
+			]
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(brazier_large_iconic.json)",
+			"ghost_form": "file(brazier_large_ghost.json)",
+			"placeable_on_ground": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:table": {
+			"drop_effect": "carry_putdown_on_table",
+			"drop_offset": { "x": 0, "y": 0.6, "z": 0 }
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 25,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 2,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 20
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

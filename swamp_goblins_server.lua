@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.27")
+print("Swamp Goblins Mod version 19.9.28")
 
 --[[
 
@@ -27,6 +27,7 @@ decorations:
 	painting/tapestry, banner wall, awning, wall planter
 	aroma candles, incenses
 furniture:
+	themes: mushroom, fiber, wood, fancy/clothed wood, stone, clay
 	bed, chair, table, bench
 templates:
 	inn, dinning hall, tavern, combat houses (n.a. inspired)
