@@ -1,11 +1,11 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.28")
+print("Swamp Goblins Mod version 19.9.29")
 
 --[[
 
-firefly jewels for ornate stuff (like gold flakes)
+bonus when playing at home biome
 
-new herb and fiber for dry areas
+firefly jewels for ornate stuff (like gold flakes)
 
 mosquito model
 banner shred

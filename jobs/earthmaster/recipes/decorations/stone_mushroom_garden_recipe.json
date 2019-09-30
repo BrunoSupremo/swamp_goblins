@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.plants.mushroom_garden.display_name)",
+	"description": "i18n(swamp_goblins:entities.plants.mushroom_garden.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/plants/stone_mushroom_garden/stone_mushroom_garden.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:plants:mushroom_garden",
+			"count": 1
+		},
+		{
+			"material": "stone resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:plants:stone_mushroom_garden"
+		}
+	]
+}

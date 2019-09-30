@@ -198,11 +198,27 @@
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
 			},
+			"stonehearth:plants:violet": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.21,
+					"exclusion_radius": 0
+				}
+			},
+			"stonehearth:plants:sweet_potato": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 4,
+					"item_density": 0.19,
+					"exclusion_radius": 0
+				}
+			},
 			"swamp_goblins:plants:lilypad": {
 				"placement_type": "dense",
 				"parameters": {
 					"grid_multiple": 4,
-					"item_density": 0.2,
+					"item_density": 0.19,
 					"exclusion_radius": 1
 				}
 			},
@@ -218,7 +234,7 @@
 				"placement_type": "dense",
 				"parameters": {
 					"grid_multiple": 4,
-					"item_density": 0.15,
+					"item_density": 0.14,
 					"exclusion_radius": 1
 				}
 			},
@@ -341,13 +357,15 @@
 							"swamp_goblins:trees:dead:medium":2,
 							"swamp_goblins:trees:dead:large":0.1,
 
+							"stonehearth:plants:violet": 1,
+							"stonehearth:plants:sweet_potato": 1,
 							"swamp_goblins:plants:giant_flower": 0.2,
 							"swamp_goblins:plants:mushroom": 3
 						}
 					},
 					"mountains": {
 						"1": {
-							"swamp_goblins:trees:dead:small":0.2,
+							"swamp_goblins:trees:dead:small":0.2
 						}
 					}
 				},
@@ -416,7 +434,7 @@
 			"spawn_objects":{
 				"water_1":{
 					"none":2.5,
-					"swamp_goblins:plants:lilypad":2.4,
+					"swamp_goblins:plants:lilypad":2.3,
 					"swamp_goblins:plants:cattail":4.9,
 					"swamp_goblins:plants:log":1.5,
 					"swamp_goblins:plants:giant_flower":1.25,

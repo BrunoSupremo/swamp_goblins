@@ -1,0 +1,27 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"mob": {
+			"align_to_grid": ["x", "z"],
+			"model_origin": {"x": 0, "y": 0, "z": 0 },
+			"region_origin": {"x": 0, "y": 0, "z": 0 }
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(stone_mushroom_garden.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.plants.mushroom_garden.display_name)",
+			"description": "i18n(swamp_goblins:entities.plants.mushroom_garden.description)",
+			"icon": "file(stone_mushroom_garden.png)",
+			"category": "plants",
+			"material_tags": ["firefly_made", "plant", "stockpile_plant"]
+		}
+	}
+}
