@@ -1,7 +1,9 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.9.29")
+print("Swamp Goblins Mod version 19.10.1")
 
 --[[
+
+cultist seeks fireflies
 
 bonus when playing at home biome
 

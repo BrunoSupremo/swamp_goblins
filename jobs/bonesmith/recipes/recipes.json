@@ -97,6 +97,9 @@
 			"ordinal": 30,
 			"name": "i18n(stonehearth:jobs.carpenter.recipes.building_parts_name)",
 			"recipes":{
+				"ladder": {
+					"recipe": "file(construction/ladder_recipe.json)"
+				},
 				"wooden_door": {
 					"recipe": "file(construction/wooden_door_recipe.json)"
 				},

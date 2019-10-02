@@ -1,0 +1,28 @@
+{
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(ladder.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.0, "y": 0, "z": 0.0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"allow_vertical_adjacent": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:data.build.prototypes.ladder.display_name)",
+			"description": "i18n(stonehearth:data.build.prototypes.ladder.description)",
+			"icon": "file(ladder.png)",
+			"category": "construction",
+			"material_tags": ["firefly_made", "wood", "ladder", "crafted", "stockpile_construction"]
+		},
+		"stonehearth:target_type": {
+			"target_type": "item"
+		}
+	}
+}
