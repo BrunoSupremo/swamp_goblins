@@ -21,7 +21,12 @@
 				"max": 5
 			},
 			"spirit": {
+				"base": 2,
 				"max": 8
+			},
+			"inspiration": {
+				"type": "derived",
+				"equation": "spirit - 4"
 			}
 		}
 	},

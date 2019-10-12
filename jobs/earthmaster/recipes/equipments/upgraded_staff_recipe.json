@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.spirit_walker.upgraded_staff.display_name)",
+	"description": "i18n(swamp_goblins:jobs.spirit_walker.upgraded_staff.description)",
+	"flavor": "i18n(swamp_goblins:jobs.spirit_walker.upgraded_staff.flavor)",
+	"portrait": "/swamp_goblins/jobs/spirit_walker/upgraded_staff/upgraded_staff.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"work_effect": "fiddle",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:spirit_walker:talisman",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:refined:jewel",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:spirit_walker:upgraded_staff"
+		}
+	]
+}

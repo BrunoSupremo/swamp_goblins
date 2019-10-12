@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.10.1")
+print("Swamp Goblins Mod version 19.10.11")
 
 --[[
 
@@ -7,15 +7,14 @@ cultist seeks fireflies
 
 bonus when playing at home biome
 
-firefly jewels for ornate stuff (like gold flakes)
-
 mosquito model
 banner shred
 animals haulers requiring food and care
 slimes
 varanus/mobs repelent
 
-use ace tools and tools upgrades
+add ace tools and tools upgrades
+add ace bone decor
 
 contruction:
 	door, double door

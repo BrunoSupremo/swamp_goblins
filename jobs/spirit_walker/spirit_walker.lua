@@ -3,28 +3,27 @@ local SpiritWalkerClass = class()
 radiant.mixin(SpiritWalkerClass, ClericJob)
 local Point3 = _radiant.csg.Point3
 local conversation_subjects = {
-"stonehearth:subjects:cult",
-"stonehearth:subjects:darkness",
-"stonehearth:subjects:death",
-"stonehearth:cleric:talisman",
-"stonehearth:loot:dusty_tome",
-"stonehearth:npc:herald:untz",
-"stonehearth:monsters:forest:alligator",
-"swamp_goblins:beast_tamer:talisman",
-"swamp_goblins:bonesmith:talisman",
-"swamp_goblins:earthmaster:talisman",
-"swamp_goblins:scavenger:talisman",
-"swamp_goblins:shaman:talisman",
-"swamp_goblins:spirit_walker:talisman",
-"swamp_goblins:warrior:talisman"
+	"stonehearth:subjects:cult",
+	"stonehearth:subjects:darkness",
+	"stonehearth:subjects:death",
+	"stonehearth:cleric:talisman",
+	"stonehearth:loot:dusty_tome",
+	"stonehearth:npc:herald:untz",
+	"stonehearth:monsters:forest:alligator",
+	"swamp_goblins:beast_tamer:talisman",
+	"swamp_goblins:bonesmith:talisman",
+	"swamp_goblins:earthmaster:talisman",
+	"swamp_goblins:scavenger:talisman",
+	"swamp_goblins:shaman:talisman",
+	"swamp_goblins:spirit_walker:talisman",
+	"swamp_goblins:warrior:talisman"
 }
 
 function SpiritWalkerClass:summon_big_g(delay)
 	local summoning_delay = (delay * 33.3)
 	stonehearth.combat:set_timer("SpiritWalkerClass summoning_delay: big_g", summoning_delay, function()
 		self:create_spirit("swamp_goblins:summons:big_g", "double")
-		end)
-	self:thought_bubble("/swamp_goblins/jobs/spirit_walker/images/summon_big_g.png")
+	end)
 end
 
 function SpiritWalkerClass:summon_spirit(delay, amount)
@@ -37,15 +36,13 @@ function SpiritWalkerClass:summon_spirit(delay, amount)
 		local summoning_delay = (delay * 33.3 * offset)
 		stonehearth.combat:set_timer("SpiritWalkerClass summoning_delay: "..i, summoning_delay, function()
 			self:create_spirit("swamp_goblins:summons:goblin_spirit", "copy")
-			end)
+		end)
 	end
-	self:thought_bubble("/swamp_goblins/jobs/spirit_walker/images/summon_spirit.png")
 end
 
 function SpiritWalkerClass:summon_spirits(delay)
 	local spirit_amount = radiant.entities.get_attribute(self._sv._entity, "spirit")
 	self:summon_spirit(delay, spirit_amount)
-	self:thought_bubble("/swamp_goblins/jobs/spirit_walker/images/summon_spirits.png")
 end
 
 function SpiritWalkerClass:create_spirit(url, attributes)
@@ -71,7 +68,7 @@ function SpiritWalkerClass:create_spirit(url, attributes)
 		subjects:add_override({
 			subject = subject_uri,
 			sentiment = 1
-			})
+		})
 	end
 	radiant.entities.add_buff(spirit, "swamp_goblins:buffs:despawn:in_2h")
 end
@@ -98,13 +95,6 @@ end
 
 function SpiritWalkerClass:dragon_aura(args)
 	radiant.events.trigger_async(stonehearth.job, 'swamp_goblins:spirit_walker_dragon_aura')
-end
-
-function SpiritWalkerClass:thought_bubble(image)
-	self._sv._entity:add_component('stonehearth:thought_bubble')
-	:add_bubble(stonehearth.constants.thought_bubble.effects.INDICATOR,
-		stonehearth.constants.thought_bubble.priorities.HUNGER+1,
-		image, nil, '5m')
 end
 
 return SpiritWalkerClass

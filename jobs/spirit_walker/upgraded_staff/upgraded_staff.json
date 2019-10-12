@@ -1,0 +1,72 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:item_properties",
+	"components": {
+		"render_info": {
+			"color_map": "stonehearth:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/magic_material_map.json"
+			]
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(upgraded_staff_equipped.qb)"
+				]
+			}
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(upgraded_staff_iconic.json)"
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "mainhand",
+			"render_type": "attach_to_bone",
+			"postures": [
+				"stonehearth:combat",
+				"stonehearth:patrol"
+			],
+			"ilevel": 5,
+			"roles": ["goblin_spirit_walker_job"],
+			"equip_effect": "stonehearth:effects:weapon_level_up"
+		},
+		"effect_list": {
+			"default": "swamp_goblins:effects:upgraded_staff"
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:weapon_data": {
+			"base_damage": 5,
+			"range": 31,
+			"reach": 1.6
+		},
+		"stonehearth:combat:healing_data": {
+			"base_healing": 6
+		},
+		"stonehearth:combat:melee_attacks": [
+			{
+				"name": "combat_1h_forehand",
+				"effect": "combat_1h_forehand",
+				"active_frame": 16,
+				"cooldown": 0,
+				"priority": 0
+			}
+		],
+		"stonehearth:net_worth": {
+			"value_in_gold": 31,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 3,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:jobs.spirit_walker.upgraded_staff.display_name)",
+			"description": "i18n(swamp_goblins:jobs.spirit_walker.upgraded_staff.description)",
+			"icon": "file(upgraded_staff.png)",
+			"category": "weapons",
+			"material_tags": ["firefly_made", "tool", "melee_weapon", "crafted", "stockpile_weapon"]
+		}
+	}
+}
