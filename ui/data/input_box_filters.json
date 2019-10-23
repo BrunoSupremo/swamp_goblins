@@ -1,10 +1,52 @@
 {
 	"type": "index",
 	"stockpile": {
+		"resources": {
+			"categories": {
+				"firefly_essense": {
+					"ordinal": 200.016641,
+					"display_name": "i18n(swamp_goblins:entities.resources.firefly_essense.display_name)",
+					"icon": "/swamp_goblins/entities/resources/firefly_essense/firefly_essense.png",
+					"filter": "firefly_essense"
+				}
+			}
+		},
+		"ingots": {
+			"categories": {
+				"jewel": {
+					"ordinal": 200.016641,
+					"display_name": "i18n(swamp_goblins:entities.refined.jewel.display_name)",
+					"icon": "/swamp_goblins/entities/refined/jewel/jewel.png",
+					"filter": "firefly_made jewel"
+				}
+			}
+		},
+		"plants": {
+			"categories": {
+				"cattail": {
+					"ordinal": 200.016641,
+					"display_name": "i18n(swamp_goblins:entities.resources.cattail.display_name)",
+					"icon": "/swamp_goblins/entities/resources/cattail/cattail.png",
+					"filter": "fiber resource plant cattail"
+				},
+				"giant_flower": {
+					"ordinal": 200.016642,
+					"display_name": "i18n(swamp_goblins:entities.resources.giant_flower.display_name)",
+					"icon": "/swamp_goblins/entities/resources/giant_flower/giant_flower.png",
+					"filter": "herb resource plant giant_flower"
+				}
+			}
+		},
 		"raw_foods": {
 			"categories": {
-				"mushroom": {
+				"fake_vegetables": {
 					"ordinal": 200.016641,
+					"display_name": "i18n(swamp_goblins:entities.food.fake_vegetables.display_name)",
+					"icon": "/swamp_goblins/entities/food/fake_vegetables/fake_vegetables.png",
+					"filter": "fake_vegetables"
+				},
+				"mushroom": {
+					"ordinal": 200.016642,
 					"display_name": "i18n(swamp_goblins:entities.food.mushroom.display_name)",
 					"icon": "/swamp_goblins/entities/food/mushroom/mushroom.png",
 					"filter": "mushroom"

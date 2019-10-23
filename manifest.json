@@ -354,6 +354,7 @@
 
 		"traits_index": "file(data/traits/traits_index.json)",
 		"traits:animal_companion":	"file(data/traits/animal_companion)",
+		"traits:firefly_chaser":	"file(data/traits/firefly_chaser)",
 		"traits:party_goblin":		"file(data/traits/party_goblin)",
 		"traits:passion_beast_tamer":	"file(data/traits/passion_beast_tamer)",
 		"traits:passion_bonesmith":		"file(data/traits/passion_bonesmith)",
@@ -564,6 +565,8 @@
 		"class:spirit_walker":	"file(jobs/spirit_walker/spirit_walker.lua)",
 		"class:warrior":		"file(jobs/warrior/warrior.lua)",
 		"class:worker":			"file(jobs/worker/worker.lua)",
+
+		"game_master:spawn_firefly":"file(data/gm/campaigns/swamp_and_goblins_stuff/arcs/encounters/scripts/spawn_firefly.lua)",
 
 		"trait_scripts:party_goblin":"file(data/traits/party_goblin/party_goblin_script.lua)",
 

@@ -1,9 +1,10 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.10.11")
+print("Swamp Goblins Mod version 19.10.22")
 
 --[[
 
-cultist seeks fireflies
+
+shaman not healing, fix this
 
 bonus when playing at home biome
 

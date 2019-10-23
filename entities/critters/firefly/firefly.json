@@ -5,6 +5,14 @@
 			"model_origin": {"x": 0, "y": 0, "z": 0 },
 			"region_origin": {"x": 0, "y": 0, "z": 0 }
 		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
 		"effect_list": {
 			"default": "swamp_goblins:effects:firefly_effect"
 		}

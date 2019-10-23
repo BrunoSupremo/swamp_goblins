@@ -1,0 +1,36 @@
+{
+	"type": "trait",
+	"display_name": "i18n(swamp_goblins:data.traits.firefly_chaser.display_name)",
+	"description": "i18n(swamp_goblins:data.traits.firefly_chaser.description)",
+	"icon": "file(firefly_chaser.png)",
+	"script_controller": "stonehearth:trait_scripts:cultist",
+	"subject_overrides": [
+		{
+			"subject": "stonehearth:subjects:cult",
+			"sentiment": 1,
+			"permanent": true,
+			"unvarying": true
+		}
+	],
+	"data": {
+		"pray": {
+			"statue": "swamp_goblins:critters:firefly",
+			"need_threshold": 0,
+			"time_of_day_min": 21,
+			"time_of_day_max": 6,
+			"stop_distance_min": 1,
+			"stop_distance_max": 3,
+			"search_radius": 100,
+			"animations": [
+				"emote_applaud_upward",
+				"emote_dance_handsup",
+				"emote_dance_shuffle",
+				"emote_dance_themonkey",
+				"emote_delighted",
+				"emote_proud",
+				"emote_watch_upward",
+				"emote_wave"
+			]
+		}
+	}
+}

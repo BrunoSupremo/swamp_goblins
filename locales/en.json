@@ -271,6 +271,10 @@
 		"traits": {
 			"party_goblin": {
 				"display_name": "Party Goblin"
+			},
+			"firefly_chaser": {
+				"display_name": "Firefly Chaser",
+				"description": "At night, [name(i18n_data.entity)] will wander around looking for fireflies to admire"
 			}
 		},
 		"buffs": {
@@ -565,6 +569,10 @@
 				"description": "Goblins are not too fond of vegetables, so Shamans had to get creative to keep a healthy diet.",
 				"flavor": "It is like hiding vegetables in the food"
 			},
+			"mushroom": {
+				"display_name": "Mushroom",
+				"description": "Ready for eating"
+			},
 			"plate_of_mushrooms": {
 				"display_name": "Plate of Mushrooms",
 				"description": "Chopped mushroom",
@@ -739,10 +747,6 @@
 			"giant_flower": {
 				"display_name": "Giple Flower",
 				"description": "An herb commonly used for medicinal purposes"
-			},
-			"mushroom": {
-				"display_name": "Mushroom",
-				"description": "Ready for eating"
 			},
 			"pelt": {
 				"bear_pelt": {
