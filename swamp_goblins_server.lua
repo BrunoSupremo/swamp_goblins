@@ -1,11 +1,7 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.10.22")
+print("Swamp Goblins Mod version 19.10.24")
 
 --[[
-
-
-shaman not healing, fix this
-
 bonus when playing at home biome
 
 mosquito model

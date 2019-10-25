@@ -31,6 +31,11 @@
 		}
 	},
 	"entity_data": {
+		"stonehearth:ai_packs": {
+			"actions": [
+				"swamp_goblins:actions:health:rest_when_injured"
+			]
+		},
 		"stonehearth:species": {
 			"id": "goblin",
 			"display_name": "i18n(swamp_goblins:entities.peoples.goblin.species)"
