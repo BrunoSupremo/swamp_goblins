@@ -1263,7 +1263,11 @@
 							"display_name":"Jobs",
 							"beast_tamer":"Beast Tamer",
 							"bonesmith":"Bonesmith",
-							"shaman":"Shaman"
+							"earthmaster":"Earthmaster",
+							"shaman":"Shaman",
+							"spirit_walker":"Spirit Walker",
+							"trapper":"Trapper",
+							"warrior":"Warrior"
 						}
 					},
 					"swamp":{
@@ -1286,7 +1290,7 @@
 				"pages":{
 					"cover":{
 						"title":"About goblins and swamps",
-						"text":"Pick the desired topic to read from the side menu"
+						"text":"* Pick the desired topic to read from the side menu"
 					},
 					"growth":{
 						"pedestal":{
@@ -1313,7 +1317,7 @@
 							},
 							"topic2":{
 								"title":"Hatching:",
-								"desc1":"After a day, the egg will hatch into a baby goblin."
+								"desc1":"After one day, the egg will hatch into a baby goblin."
 							},
 							"topic3":{
 								"title":"Protecting:",
@@ -1389,6 +1393,24 @@
 								"desc1":"Bonesmith can later be promoted into Earthmaster, an advanced highlevel crafter class."
 							}
 						},
+						"earthmaster":{
+							"title":"Earthmaster",
+							"description1":"High level, complex materials crafter",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Advanced crafter class. From equipments to furniture and decorations."
+							},
+							"topic2":{
+								"title":"What it does:",
+								"desc1":"Uses high level materials like stone and clay to craft furniture and decorations.",
+								"desc2":"Can upgrade other classes tools and workbenches, and do some simple metal refining, like crafting firefly jewels, a high level crafting resource"
+							},
+							"topic3":{
+								"title":"Beyond crafting:",
+								"desc1":"Earthmaster can recycle items made from wood, stone and clay, or burn wood items to make coal",
+								"desc2":"The class can also repair most items, like door, turrets and other breakable gizmos"
+							}
+						},
 						"shaman":{
 							"title":"Shaman",
 							"description1":"The clan starter class",
@@ -1404,6 +1426,56 @@
 							"topic3":{
 								"title":"Promotion:",
 								"desc1":"Shamans can later be promoted into Spirit Walkers, a summoner/healer class."
+							}
+						},
+						"spirit_walker":{
+							"title":"Spirit Walker",
+							"description1":"Connects goblins with their past",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Healer class, promoted from a Shaman. Can summon spirits to fight."
+							},
+							"topic2":{
+								"title":"What it does:",
+								"desc1":"Aside from summoning spirits, they can heal some health of near allies by small amounts."
+							},
+							"topic3":{
+								"title":"Class synergies:",
+								"desc1":"Can cast a protective aura to all warriors, increasing their defenses",
+								"desc2":"With the help of a Beast Tamer, they join forces and can summon an ancient dragon spirit."
+							}
+						},
+						"trapper":{
+							"title":"Trapper",
+							"description1":"Basic food producer",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"wip"
+							},
+							"topic2":{
+								"title":"What it does:",
+								"desc1":"wip"
+							},
+							"topic3":{
+								"title":"Promotion:",
+								"desc1":"wip"
+							}
+						},
+						"warrior":{
+							"title":"Warrior",
+							"description1":"Front line fighter",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Main fighter class. The muscles of the party."
+							},
+							"topic2":{
+								"title":"What it does:",
+								"desc1":"Close range fighter, have access to many goblin equipments, increasing their attack and defense."
+							},
+							"topic3":{
+								"title":"Skills:",
+								"desc1":"Can learn new abilities as they progress.",
+								"desc2":"Can hit multiple enemies at once, use ranged poison darts, and even gets stronger stats."
 							}
 						}
 					},
@@ -1421,7 +1493,7 @@
 							},
 							"topic3":{
 								"title":"Interaction:",
-								"desc1":"Can't be interacted directly, but shamans can extract magic powers from them, hence their clan name."
+								"desc1":"Can't be interacted directly, but shamans can extract magic powers from them, hence their clan name. Some goblins have a trait called Firefly Chaser, those goblins will walk into firefly clouds to admire them"
 							}
 						},
 						"frog":{
@@ -1453,7 +1525,73 @@
 							},
 							"topic3":{
 								"title":"Interaction:",
-								"desc1":"When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight."
+								"desc1":"When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight with them."
+							}
+						}
+					},
+					"flora":{
+						"cattail":{
+							"title":"Firefly",
+							"description1":"Lights in the night",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Flying insects that glows at night. Loved by the goblins."
+							},
+							"topic2":{
+								"title":"Behaviour:",
+								"desc1":"Usually group in big clouds glowing at night under the trees"
+							},
+							"topic3":{
+								"title":"Interaction:",
+								"desc1":"Can't be interacted directly, but shamans can extract magic powers from them, hence their clan name. Some goblins have a trait called Firefly Chaser, those will walk into firefly clouds to admire"
+							}
+						},
+						"giple":{
+							"title":"Frog",
+							"description1":"Small and slippy",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Ambient small critters that can be found near the water."
+							},
+							"topic2":{
+								"title":"Behaviour:",
+								"desc1":"Spend their time jumping from one lilypad to another, hunting small insects. Very noisy at night."
+							},
+							"topic3":{
+								"title":"Interaction:",
+								"desc1":"Trappers can get them for food or even as pets, baby goblins love them."
+							}
+						},
+						"mushroom":{
+							"title":"Varanus",
+							"description1":"Always watching",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Large reptiles with a hard skin, loves water."
+							},
+							"topic2":{
+								"title":"Behaviour:",
+								"desc1":"Usually hostile to those that get too close. Can be found near their nests at caves entrances."
+							},
+							"topic3":{
+								"title":"Interaction:",
+								"desc1":"When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight with them."
+							}
+						},
+						"tree":{
+							"title":"Varanus",
+							"description1":"Always watching",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Large reptiles with a hard skin, loves water."
+							},
+							"topic2":{
+								"title":"Behaviour:",
+								"desc1":"Usually hostile to those that get too close. Can be found near their nests at caves entrances."
+							},
+							"topic3":{
+								"title":"Interaction:",
+								"desc1":"When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight with them."
 							}
 						}
 					}

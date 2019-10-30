@@ -36,9 +36,21 @@
 							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.bonesmith)",
 							"open_page_id":"jobs_bonesmith"
 						},
+						"earthmaster":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.earthmaster)",
+							"open_page_id":"jobs_earthmaster"
+						},
 						"shaman":{
 							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.shaman)",
 							"open_page_id":"jobs_shaman"
+						},
+						"spirit_walker":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.spirit_walker)",
+							"open_page_id":"jobs_spirit_walker"
+						},
+						"warrior":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.warrior)",
+							"open_page_id":"jobs_warrior"
 						}
 					}
 				}
@@ -237,6 +249,36 @@
 				}
 			}
 		},
+		"jobs_earthmaster":{
+			"page_id":"jobs_earthmaster",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.title)",
+			"image":"/swamp_goblins/jobs/earthmaster/images/icon.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.topic2.desc1)",
+						"desc2":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.topic2.desc2)"
+					}
+				},
+				"topic3":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.topic3.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.topic3.desc1)",
+						"desc2":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.earthmaster.topic3.desc2)"
+					}
+				}
+			}
+		},
 		"jobs_shaman":{
 			"page_id":"jobs_shaman",
 			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.shaman.title)",
@@ -266,10 +308,68 @@
 				}
 			}
 		},
+		"jobs_spirit_walker":{
+			"page_id":"jobs_spirit_walker",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.title)",
+			"image":"/swamp_goblins/jobs/spirit_walker/images/icon.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.topic2.desc1)"
+					}
+				},
+				"topic3":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.topic3.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.topic3.desc1)",
+						"desc2":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.spirit_walker.topic3.desc2)"
+					}
+				}
+			}
+		},
+		"jobs_warrior":{
+			"page_id":"jobs_warrior",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.title)",
+			"image":"/swamp_goblins/jobs/warrior/images/icon.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic2.desc1)"
+					}
+				},
+				"topic3":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic3.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic3.desc1)",
+						"desc2":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic3.desc2)"
+					}
+				}
+			}
+		},
 		"fauna_firefly":{
 			"page_id":"fauna_firefly",
 			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.firefly.title)",
-			"image":"/swamp_goblins/entities/resources/firefly_essense/firefly_essense.png",
+			"image":"/swamp_goblins/data/traits/firefly_chaser/firefly_chaser.png",
 			"descriptions":{
 				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.firefly.description1)"
 			},

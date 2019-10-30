@@ -14,6 +14,7 @@
 	"client_init_script" : "file(swamp_goblins_client)",
 	"server_init_script" : "file(swamp_goblins_server)",
 	"aliases":{
+		"actions:memorialize_death":	"file(ai/actions/memorialize_death_action.lua)",
 		"actions:health:rest_when_injured":	"file(ai/actions/health/rest_when_injured_action.lua)",
 		"actions:lay_egg":		"file(ai/actions/lay_egg/lay_egg.lua)",
 		"actions:create_egg":	"file(ai/actions/lay_egg/create_egg.lua)",
@@ -176,6 +177,7 @@
 		"decoration:stone_brazier":			"file(entities/decoration/stone_brazier)",
 		"decoration:tower_brazier":			"file(entities/decoration/tower_brazier)",
 		"decoration:brazier_large":			"file(entities/decoration/brazier_large)",
+		"decoration:tombstone":				"file(entities/decoration/tombstone)",
 		"decoration:travel_stall":			"file(entities/decoration/travel_stall)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
 		"decoration:window_box:wood":		"file(entities/decoration/window_box_wood)",
