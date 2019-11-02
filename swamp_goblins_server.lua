@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.10.29")
+print("Swamp Goblins Mod version 19.11.01")
 
 --[[
 bonus when playing at home biome

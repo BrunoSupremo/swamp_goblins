@@ -12,6 +12,26 @@
 					"stackable": false
 				}
 			}
+		},
+		"town": {
+			"founding": {
+				"values": {
+					"swamp_home": {
+						"display_name": "i18n(swamp_goblins:data.happiness.thoughts.town.values.swamp_home.display_name)",
+						"tooltip": "i18n(swamp_goblins:data.happiness.thoughts.town.values.swamp_home.tooltip)",
+						"happiness_delta": 10,
+						"duration": "7d",
+						"stackable": false
+					},
+					"not_swamp_home": {
+						"display_name": "i18n(swamp_goblins:data.happiness.thoughts.town.values.not_swamp_home.display_name)",
+						"tooltip": "i18n(swamp_goblins:data.happiness.thoughts.town.values.not_swamp_home.tooltip)",
+						"happiness_delta": -2,
+						"duration": "7d",
+						"stackable": false
+					}
+				}
+			}
 		}
 	}
 }
