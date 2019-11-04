@@ -2,7 +2,6 @@ swamp_goblins = {}
 print("Swamp Goblins Mod version 19.11.01")
 
 --[[
-bonus when playing at home biome
 
 mosquito model
 banner shred
