@@ -1,0 +1,47 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(weather_stone.qb)"
+				]
+			},
+			"charged_1": {
+				"models": [
+					"file(weather_stone_1.qb)"
+				]
+			},
+			"charged_2": {
+				"models": [
+					"file(weather_stone_2.qb)"
+				]
+			},
+			"charged_3": {
+				"models": [
+					"file(weather_stone_3.qb)"
+				]
+			}
+		},
+		"render_info":{
+			"color_map": "stonehearth:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/magic_material_map.json"
+			]
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.manipulation.weather_stone.display_name)",
+			"description": "i18n(swamp_goblins:entities.manipulation.weather_stone.description)",
+			"icon": "file(weather_stone.png)",
+			"category": "decoration",
+			"material_tags": ["firefly_made", "stone", "decoration", "stockpile_decoration"]
+		}
+	}
+}

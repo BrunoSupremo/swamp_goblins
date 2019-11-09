@@ -73,6 +73,7 @@ function SwampFoggyWeather:destroy()
 end
 
 function SwampFoggyWeather:_find_spawn_point_and_spawn_monsters()
+	print(stonehearth.calendar:get_elapsed_days())
 	if stonehearth.calendar:get_elapsed_days() <7 then
 		return --stop spawning in early games
 	end

@@ -1,7 +1,10 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.11.01")
+print("Swamp Goblins Mod version 19.11.9")
 
 --[[
+
+add swamp landmarks to geomancer
+fix undead bug in foggy weather
 
 mosquito model
 banner shred
@@ -32,7 +35,6 @@ earthmaster:
 	dart traps, smoke traps
 gizmos:
 	goblinpedia
-	weather stone (move to manipulation folder)
 music:
 	bongo, drum, flute, gong, triangulo
 equipments:

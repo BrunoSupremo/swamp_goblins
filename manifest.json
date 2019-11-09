@@ -27,13 +27,17 @@
 		"actions:combat:darts:move_to_targetable_location2":"file(ai/actions/combat/move_to_targetable_location2.lua)",
 		"actions:combat:darts:from_current_location":	"file(ai/actions/combat/from_current_location.lua)",
 		"actions:combat:darts:check_entity_targetable":	"file(ai/actions/combat/check_entity_targetable.lua)",
+		"actions:weather:charge_weather_stone":	"file(ai/actions/weather/charge_weather_stone.lua)",
+		"actions:weather:use_weather_stone":	"file(ai/actions/weather/use_weather_stone.lua)",
 
+		"ai_pack:change_weather":"file(ai/packs/change_weather.json)",
 		"ai_pack:lay_egg":		"file(ai/packs/lay_egg.json)",
 		"ai_pack:summon":		"file(ai/packs/summon_ai_pack.json)",
 		"ai_pack:ranged_darts":	"file(ai/packs/ranged_darts.json)",
 
-		"task_groups:lay_egg": "file(ai/task_groups/lay_egg.lua)",
-		"task_groups:beekeeping": "file(ai/task_groups/beekeeping.lua)",
+		"task_groups:beekeeping":		"file(ai/task_groups/beekeeping.lua)",
+		"task_groups:change_weather":	"file(ai/task_groups/change_weather.lua)",
+		"task_groups:lay_egg":			"file(ai/task_groups/lay_egg.lua)",
 
 		"armor:flower_helmet":	"file(entities/armor/flower_helmet)",
 		"armor:full_leather_helmet":"file(entities/armor/full_leather_helmet)",
@@ -96,7 +100,8 @@
 		"varanus_camp_standard":"file(entities/gizmos/varanus_camp_standard)",
 		"goblinpedia":"file(entities/gizmos/goblinpedia)",
 
-		"commands:change_weather":	"file(data/commands/change_weather)",
+		"commands:weather_stone:charge":"file(data/commands/weather_stone/charge.json)",
+		"commands:weather_stone:use":	"file(data/commands/weather_stone/use.json)",
 		"commands:enable_egg_spot":	"file(data/commands/enable_egg_spot)",
 		"commands:goblinpedia":		"file(data/commands/goblinpedia)",
 		"commands:travel":			"file(data/commands/travel)",
@@ -396,6 +401,7 @@
 		"warrior:abilities:multiple_targets":	"file(jobs/warrior/warrior_abilities/multiple_targets.json)",
 		"warrior:abilities:poison_darts":		"file(jobs/warrior/warrior_abilities/poison_darts.json)",
 
+		"weapons:crude_wooden_club":"file(entities/weapons/crude_wooden_club)",
 		"weapons:spear":			"file(entities/weapons/spear)",
 		"weapons:crude_axe":		"file(entities/weapons/crude_axe)",
 		"weapons:skull_basher":		"file(entities/weapons/skull_basher)",
@@ -407,7 +413,7 @@
 		"weapons:stick":		"file(entities/weapons/stick)",
 		"weapons:magma_sword":		"file(entities/weapons/magma_sword)",
 
-		"weather_stone":"file(entities/gizmos/weather_stone)",
+		"weather_stone":"file(entities/manipulation/weather_stone)",
 
 		"weather:foggy": "file(data/weather/foggy)",
 		"sky_settings:foggy": "file(data/weather/foggy/foggy_sky_settings.json)",
@@ -524,7 +530,11 @@
 		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json"
 	},
 	"functions": {
-		"change_weather": {
+		"weather_stone_charge": {
+			"controller": "file(call_handlers/weather_call_handler.lua)",
+			"endpoint": "server"
+		},
+		"weather_stone_use": {
 			"controller": "file(call_handlers/weather_call_handler.lua)",
 			"endpoint": "server"
 		},
@@ -549,7 +559,8 @@
 		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)",
-		"water":					"file(components/water/water.lua)"
+		"water":					"file(components/water/water.lua)",
+		"weather_stone":			"file(components/weather_stone/weather_stone.lua)"
 	},
 	"overrides": {
 		"stonehearth/data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json":"file(data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json)",

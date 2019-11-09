@@ -3,6 +3,8 @@
 	"ai": {
 		"actions": {
 			"status_text": {
+				"charging_weather_stone": "Charging Weather Stone",
+				"using_weather_stone": "Using Weather Stone",
 				"summoning": "Summoning",
 				"lay_egg": "Laying an egg"
 			}
@@ -63,6 +65,18 @@
 			"travel":{
 				"display_name":"Travel",
 				"description":"Chose which goblins will reembark"
+			},
+			"weather_stone":{
+				"charge":{
+					"display_name":"Charge the Stone",
+					"description":"Uses 3 firefly jewels to charge it",
+					"disabled_description":"Waiting the 3 jewels to be delivered"
+				},
+				"use":{
+					"display_name":"Use the Stone",
+					"description":"Will change the weather",
+					"disabled_description":"Waiting someone to come and use it"
+				}
 			}
 		},
 		"gm":{
@@ -286,7 +300,7 @@
 			},
 			"firefly_chaser": {
 				"display_name": "Firefly Chaser",
-				"description": "At night, [name(i18n_data.entity)] will wander around looking for fireflies to admire"
+				"description": "At night, [name(i18n_data.entity)] will wander around looking for fireflies to admire."
 			}
 		},
 		"buffs": {
@@ -678,6 +692,12 @@
 			"nina":{
 				"display_name":"Nina",
 				"description":"Royalty"
+			}
+		},
+		"manipulation":{
+			"weather_stone": {
+				"display_name": "Weather Stone",
+				"description": "Can randomly change the weather"
 			}
 		},
 		"monsters": {

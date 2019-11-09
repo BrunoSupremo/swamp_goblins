@@ -4,6 +4,7 @@
 		"stonehearth:equipment_piece": {
 			"injected_ai": {
 				"ai_packs": [
+					"swamp_goblins:ai_pack:change_weather",
 					"stonehearth:ai_pack:crafting",
 					"stonehearth:ai_pack:ladders",
 					"stonehearth:ai_pack:place_item",
@@ -15,7 +16,8 @@
 					"stonehearth:ai_pack:healing"
 				],
 				"task_groups": [
-					"swamp_goblins:task_groups:beekeeping"
+					"swamp_goblins:task_groups:beekeeping",
+					"swamp_goblins:task_groups:change_weather"
 				]
 			},
 			"injected_commands": []

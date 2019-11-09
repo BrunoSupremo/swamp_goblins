@@ -1,0 +1,12 @@
+{
+	"type": "command",
+	"name": "weather_stone_use",
+	"display_name": "i18n(swamp_goblins:data.commands.weather_stone.use.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.weather_stone.use.description)",
+	"disabled_description": "i18n(swamp_goblins:data.commands.weather_stone.use.disabled_description)",
+	"icon": "/stonehearth/data/weather/rain/rain_sunny_subject.png",
+	"ordinal": 10,
+	"action": "call",
+	"function": "swamp_goblins:weather_stone_use",
+	"args": []
+}

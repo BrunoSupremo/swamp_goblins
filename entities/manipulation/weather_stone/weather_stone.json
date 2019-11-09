@@ -2,6 +2,7 @@
 	"type": "entity",
 	"mixins": "file(weather_stone_ghost.json)",
 	"components": {
+		"swamp_goblins:weather_stone": {},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(weather_stone_iconic.json)",
 			"ghost_form": "file(weather_stone_ghost.json)",
@@ -9,7 +10,7 @@
 		},
 		"stonehearth:commands": {
 			"commands": [
-				"swamp_goblins:commands:change_weather"
+				"swamp_goblins:commands:weather_stone:charge"
 			]
 		},
 		"destination": {
@@ -24,7 +25,7 @@
 			"region": [
 				{
 					"min": { "x": 0, "y": 0, "z": 0 },
-					"max": { "x": 1, "y": 1, "z": 1 }
+					"max": { "x": 1, "y": 2, "z": 1 }
 				}
 			]
 		}
