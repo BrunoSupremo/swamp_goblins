@@ -271,6 +271,13 @@
 		"kingdoms:battle_royal_team_2": "file(services/server/population/data/battle_royal_team_2.json)",
 
 		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
+		"landmark:firefly_nest":	"file(entities/landmark/firefly_nest)",
+		"landmark:giant_mushroom":	"file(entities/landmark/giant_mushroom)",
+		"landmark:mushroom_stone":	"file(entities/landmark/mushroom_stone)",
+		"landmark:varanus_nest":	"file(entities/landmark/varanus_nest)",
+		"landmark:king_stone":		"file(entities/landmark/king_stone)",
+		"landmark:minerals":		"file(entities/landmark/minerals)",
+		"landmark:waterfall":		"file(entities/landmark/waterfall)",
 
 		"loot_bag:swamp:tree_random": "file(data/loot_bag/tree_random.json)",
 
@@ -476,8 +483,9 @@
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
-		"stonehearth/jobs/carpenter/recipes/recipes.json":	"file(jobs/carpenter/recipes)",
-		"stonehearth/jobs/herbalist/recipes/recipes.json":	"file(jobs/herbalist/recipes)",
+		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
+		"stonehearth/jobs/herbalist/recipes/recipes.json":			"file(jobs/herbalist/recipes)",
+		"stonehearth/jobs/geomancer/recipes/geomancer_recipes.json":"file(jobs/geomancer/recipes)",
 
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
 

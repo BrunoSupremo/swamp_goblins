@@ -1,0 +1,34 @@
+{
+	"type": "recipe",
+	"effort": 35,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.landmark.firefly_nest.display_name)",
+	"description": "i18n(swamp_goblins:entities.landmark.firefly_nest.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/landmark/firefly_nest/firefly_nest.png",
+	"level_requirement": 1,
+	"workshop": "stonehearth:geomancer:workbench",
+	"ingredients": [
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:rock",
+			"count": 1
+		},
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:surface",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		},
+		{
+			"material": "earth_essence resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:landmark:firefly_nest"
+		}
+	]
+}

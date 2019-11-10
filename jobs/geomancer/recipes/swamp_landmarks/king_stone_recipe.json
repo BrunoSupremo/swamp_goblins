@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 50,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.landmark.king_stone.display_name)",
+	"description": "i18n(swamp_goblins:entities.landmark.king_stone.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/landmark/king_stone/king_stone.png",
+	"level_requirement": 4,
+	"workshop": "stonehearth:geomancer:workbench",
+	"ingredients": [
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:rock",
+			"count": 6
+		},
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:surface",
+			"count": 1
+		},
+		{
+			"material": "earth_essence resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:landmark:king_stone"
+		}
+	]
+}

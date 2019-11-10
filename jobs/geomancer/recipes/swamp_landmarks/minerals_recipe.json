@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 45,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.landmark.minerals.display_name)",
+	"description": "i18n(swamp_goblins:entities.landmark.minerals.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/landmark/minerals/minerals.png",
+	"level_requirement": 3,
+	"workshop": "stonehearth:geomancer:workbench",
+	"ingredients": [
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:rock",
+			"count": 3
+		},
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:surface",
+			"count": 1
+		},
+		{
+			"material": "earth_essence resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:landmark:minerals"
+		}
+	]
+}

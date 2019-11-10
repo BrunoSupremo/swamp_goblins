@@ -1,0 +1,34 @@
+{
+	"type": "recipe",
+	"effort": 55,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.landmark.varanus_nest.display_name)",
+	"description": "i18n(swamp_goblins:entities.landmark.varanus_nest.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/landmark/varanus_nest/varanus_nest.png",
+	"level_requirement": 5,
+	"workshop": "stonehearth:geomancer:workbench",
+	"ingredients": [
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:rock",
+			"count": 5
+		},
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:surface",
+			"count": 1
+		},
+		{
+			"uri": "stonehearth:resources:varanus_skin",
+			"count": 1
+		},
+		{
+			"material": "earth_essence resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:landmark:varanus_nest"
+		}
+	]
+}

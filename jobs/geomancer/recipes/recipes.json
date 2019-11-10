@@ -1,0 +1,31 @@
+{
+	"craftable_recipes" : {
+		"swamp_landmarks": {
+			"ordinal": 26,
+			"name": "i18n(swamp_goblins:jobs.geomancer.recipes.categories.swamp_landmarks)",
+			"recipes": {
+				"firefly_nest": {
+					"recipe": "file(swamp_landmarks/firefly_nest_recipe.json)"
+				},
+				"giant_mushroom": {
+					"recipe": "file(swamp_landmarks/giant_mushroom_recipe.json)"
+				},
+				"mushroom_stone": {
+					"recipe": "file(swamp_landmarks/mushroom_stone_recipe.json)"
+				},
+				"varanus_nest": {
+					"recipe": "file(swamp_landmarks/varanus_nest_recipe.json)"
+				},
+				"king_stone": {
+					"recipe": "file(swamp_landmarks/king_stone_recipe.json)"
+				},
+				"minerals": {
+					"recipe": "file(swamp_landmarks/minerals_recipe.json)"
+				},
+				"waterfall": {
+					"recipe": "file(swamp_landmarks/waterfall_recipe.json)"
+				}
+			}
+		}
+	}
+}

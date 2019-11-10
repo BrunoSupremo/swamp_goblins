@@ -694,6 +694,36 @@
 				"description":"Royalty"
 			}
 		},
+		"landmark":{
+			"firefly_nest":{
+				"display_name":"Firefly Nest",
+				"description":"Summons a firefly nest in a raised garden"
+			},
+			"giant_mushroom":{
+				"display_name":"Giant Mushroom",
+				"description":"Summons a giant mushroom, mineable and edible"
+			},
+			"king_stone":{
+				"display_name":"King Stone",
+				"description":"Summons a big rock with a stair formation to the top"
+			},
+			"minerals":{
+				"display_name":"Minerals",
+				"description":"Summons big rocks spread in a large area"
+			},
+			"mushroom_stone":{
+				"display_name":"Mushroom Stone",
+				"description":"Summons a raised piece of rock with some mushrooms on top"
+			},
+			"varanus_nest":{
+				"display_name":"Varanus Nest",
+				"description":"Summons a cave entrance with a varanus nest inside"
+			},
+			"waterfall":{
+				"display_name":"Waterfall",
+				"description":"Summons a big rock formation with a waterfall"
+			}
+		},
 		"manipulation":{
 			"weather_stone": {
 				"display_name": "Weather Stone",
@@ -900,6 +930,197 @@
 		}
 	},
 	"jobs": {
+		"beast_tamer": {
+			"beast_tamer_description": {
+				"display_name": "Beast Tamer",
+				"description": "Summon and order animals into fight",
+				"requirements": "Crafted by Carpenter",
+				"goblin_requirements": "Crafted by Shaman",
+				"level_1_data": {
+					"perk_000_name": "Four Feathers",
+					"perk_000_description": "A group of elite Poyos called the Four Feathers will join and help in the fight"
+				},
+				"level_2_data": {
+					"perk_000_name": "Wild Life",
+					"perk_000_description": "Summons local fauna wildlife to help in the battle"
+				},
+				"level_3_data": {
+					"perk_000_name": "Traps",
+					"perk_000_description": "Immobilize enemies using traps, the amount based on this goblin mind stat"
+				},
+				"level_4_data": {
+					"perk_000_name": "Varanus",
+					"perk_000_description": "Summons a pair of varanus into the fight"
+				},
+				"level_5_data": {
+					"perk_000_name": "Firefly Cloud",
+					"perk_000_description": "Casts a cloud of fireflies into enemies, confusing and blinding them"
+				},
+				"level_6_data": {
+					"perk_000_name": "Dragon Aura",
+					"perk_000_description": "(Goblins only)<br>With the combined power of a (max level) Spirit Walker, they summon an ancient Dragon Spirit into battle",
+					"perk_001_name": "Big Wolf",
+					"perk_001_description": "(Hearthlings only)<br>Summons a big wolf, one that inspires your allies and scares the enemies."
+				}
+			},
+			"beast_tamer_flute": {
+				"display_name": "Beast Tamer Flute",
+				"beast_tamer_flute_talisman": {
+					"display_name": "Beast Tamer Flute",
+					"description": "Communicates with animals",
+					"flavor": "Promotes to Beast Tamer"
+				}
+			},
+			"beast_tamer_claw": {
+				"display_name": "Claw",
+				"description": "Short range sharp weapon"
+			}
+		},
+		"bonesmith": {
+			"bonesmith_description": {
+				"display_name": "Bonesmith",
+				"description": "Crafts basic items with materials like wood and fiber",
+				"requirements": "Crafted by Shaman",
+				"level_3_data": {
+					"perk_000_name": "Journeyman's Knowledge",
+					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item."
+				},
+				"level_5_data": {
+					"perk_000_name": "Master's Insight",
+					"perk_000_description": "The Bonesmith can now create items of Excellent quality, and will make Fine quality items more often."
+				}
+			},
+			"bonesmith_saw": {
+				"display_name": "Bonesmith Saw",
+				"bonesmith_saw_talisman": {
+					"display_name": "Bonesmith Saw",
+					"description": "Basic saw for basic tasks",
+					"flavor": "Promotes a goblin to Bonesmith"
+				},
+				"description": "Basic saw for basic tasks"
+			},
+			"bonesmith_workbench": {
+				"display_name": "Bonesmith Workbench",
+				"description": "Only simple tasks should be done here"
+			},
+			"recipes": {
+				"signs": "Signs"
+			},
+			"weaving_table": {
+				"display_name": "Weaving Table",
+				"description": "A place to weave armors, even the hard solid ones"
+			}
+		},
+		"earthmaster": {
+			"earthmaster_description": {
+				"display_name": "Earthmaster",
+				"description": "Craft advance items and decorations using hard materials like stone and clay",
+				"requirements": "Crafted by Shaman",
+				"level_1_data": {
+					"perk_000_name": "Stone Crafting",
+					"perk_000_description": "From the advanced materials, stone is the most basic one. Still, quite a leap compared to the usual wood and fiber stuff."
+				},
+				"level_2_data": {
+					"perk_000_name": "Clay Sculpting",
+					"perk_000_description": "Crafting with clay is always interesting, such a soft material when modelled and heated end almost as solid as stone."
+				},
+				"level_3_data": {
+					"perk_000_name": "Journeyman's Knowledge",
+					"perk_000_description": "When inspiration strikes, the Earthmaster may now craft an especially Fine quality of item.",
+					"perk_001_name": "Magma Smithing",
+					"perk_001_description": "What about rocks and metals as soft as clay? Liquid fire as some call it."
+				},
+				"level_5_data": {
+					"perk_000_name": "Master's Insight",
+					"perk_000_description": "The Earthmaster can now create items of Excellent quality, and will make Fine quality items more often."
+				}
+			},
+			"earthmaster_chisel": {
+				"display_name": "Earthmaster Chisel",
+				"earthmaster_chisel_talisman": {
+					"display_name": "Earthmaster Chisel",
+					"description": "To sculpt hard materials",
+					"flavor": "Promotes a goblin to Earthmaster"
+				},
+				"description": "To sculpt hard materials"
+			},
+			"magmasmith_workbench": {
+				"display_name": "Magma Workbench",
+				"description": "Lava flows from within"
+			},
+			"mason_pedestal": {
+				"display_name": "Masonry Pedestal",
+				"description": "Craft in a well-lit space."
+			},
+			"potter_kiln": {
+				"display_name": "Pottery Kiln",
+				"description": "Hardens basic clay objects."
+			},
+			"potter_workbench": {
+				"display_name": "Pottery Wheel",
+				"description": "For making symmetrical clay goods"
+			},
+			"recipes":{
+				"gizmos":"Gizmos",
+				"reclaim":"Reclaim",
+				"burn":{
+					"description":"Burn the object into coal",
+					"flavor":"Not much can be saved",
+					"decoration":"Burn Wood Decoration",
+					"fence":"Burn Wood Defense",
+					"furniture":"Burn Wood Furniture",
+					"portal":"Burn Wood Door",
+					"window":"Burn Wood Window"
+				},
+				"wood":{
+					"description":"Break the object back into a wood piece",
+					"flavor":"Not much can be saved",
+					"decoration":"Break Wood Decoration",
+					"fence":"Break Wood Defense",
+					"furniture":"Break Wood Furniture",
+					"portal":"Break Wood Door",
+					"window":"Break Wood Window"
+				},
+				"stone":{
+					"description":"Break the object back into a stone piece",
+					"flavor":"Not much can be saved",
+					"decoration":"Break Stone Decoration",
+					"fence":"Break Stone Defense",
+					"furniture":"Break Stone Furniture",
+					"portal":"Break Stone Door",
+					"window":"Break Stone Window"
+				},
+				"clay":{
+					"description":"Break the object back into a clay piece",
+					"flavor":"Not much can be saved",
+					"decoration":"Break Clay Decoration",
+					"fence":	"Break Clay Defense",
+					"furniture":"Break Clay Furniture",
+					"portal":	"Break Clay Door",
+					"window":	"Break Clay Window"
+				}
+			}
+		},
+		"geomancer":{
+			"recipes":{
+				"categories":{
+					"swamp_landmarks":"Swamp Landmarks"
+				}
+			}
+		},
+		"scavenger": {
+			"scavenger_description": {
+				"requirements": "Crafted by Shaman"
+			},
+			"scavenger_backpack": {
+				"display_name": "Trapper Backpack",
+				"scavenger_backpack_talisman": {
+					"display_name": "Trapper Backpack",
+					"description": "Hold the scavenged loot",
+					"flavor": "Promotes a goblin to Trapper"
+				}
+			}
+		},
 		"shaman": {
 			"shaman_description": {
 				"display_name": "Shaman",
@@ -1041,190 +1262,6 @@
 		"peon": {
 			"peon_description": {
 				"display_name": "Peon"
-			}
-		},
-		"scavenger": {
-			"scavenger_description": {
-				"requirements": "Crafted by Shaman"
-			},
-			"scavenger_backpack": {
-				"display_name": "Trapper Backpack",
-				"scavenger_backpack_talisman": {
-					"display_name": "Trapper Backpack",
-					"description": "Hold the scavenged loot",
-					"flavor": "Promotes a goblin to Trapper"
-				}
-			}
-		},
-		"earthmaster": {
-			"earthmaster_description": {
-				"display_name": "Earthmaster",
-				"description": "Craft advance items and decorations using hard materials like stone and clay",
-				"requirements": "Crafted by Shaman",
-				"level_1_data": {
-					"perk_000_name": "Stone Crafting",
-					"perk_000_description": "From the advanced materials, stone is the most basic one. Still, quite a leap compared to the usual wood and fiber stuff."
-				},
-				"level_2_data": {
-					"perk_000_name": "Clay Sculpting",
-					"perk_000_description": "Crafting with clay is always interesting, such a soft material when modelled and heated end almost as solid as stone."
-				},
-				"level_3_data": {
-					"perk_000_name": "Journeyman's Knowledge",
-					"perk_000_description": "When inspiration strikes, the Earthmaster may now craft an especially Fine quality of item.",
-					"perk_001_name": "Magma Smithing",
-					"perk_001_description": "What about rocks and metals as soft as clay? Liquid fire as some call it."
-				},
-				"level_5_data": {
-					"perk_000_name": "Master's Insight",
-					"perk_000_description": "The Earthmaster can now create items of Excellent quality, and will make Fine quality items more often."
-				}
-			},
-			"earthmaster_chisel": {
-				"display_name": "Earthmaster Chisel",
-				"earthmaster_chisel_talisman": {
-					"display_name": "Earthmaster Chisel",
-					"description": "To sculpt hard materials",
-					"flavor": "Promotes a goblin to Earthmaster"
-				},
-				"description": "To sculpt hard materials"
-			},
-			"magmasmith_workbench": {
-				"display_name": "Magma Workbench",
-				"description": "Lava flows from within"
-			},
-			"mason_pedestal": {
-				"display_name": "Masonry Pedestal",
-				"description": "Craft in a well-lit space."
-			},
-			"potter_kiln": {
-				"display_name": "Pottery Kiln",
-				"description": "Hardens basic clay objects."
-			},
-			"potter_workbench": {
-				"display_name": "Pottery Wheel",
-				"description": "For making symmetrical clay goods"
-			},
-			"recipes":{
-				"gizmos":"Gizmos",
-				"reclaim":"Reclaim",
-				"burn":{
-					"description":"Burn the object into coal",
-					"flavor":"Not much can be saved",
-					"decoration":"Burn Wood Decoration",
-					"fence":"Burn Wood Defense",
-					"furniture":"Burn Wood Furniture",
-					"portal":"Burn Wood Door",
-					"window":"Burn Wood Window"
-				},
-				"wood":{
-					"description":"Break the object back into a wood piece",
-					"flavor":"Not much can be saved",
-					"decoration":"Break Wood Decoration",
-					"fence":"Break Wood Defense",
-					"furniture":"Break Wood Furniture",
-					"portal":"Break Wood Door",
-					"window":"Break Wood Window"
-				},
-				"stone":{
-					"description":"Break the object back into a stone piece",
-					"flavor":"Not much can be saved",
-					"decoration":"Break Stone Decoration",
-					"fence":"Break Stone Defense",
-					"furniture":"Break Stone Furniture",
-					"portal":"Break Stone Door",
-					"window":"Break Stone Window"
-				},
-				"clay":{
-					"description":"Break the object back into a clay piece",
-					"flavor":"Not much can be saved",
-					"decoration":"Break Clay Decoration",
-					"fence":	"Break Clay Defense",
-					"furniture":"Break Clay Furniture",
-					"portal":	"Break Clay Door",
-					"window":	"Break Clay Window"
-				}
-			}
-		},
-		"bonesmith": {
-			"bonesmith_description": {
-				"display_name": "Bonesmith",
-				"description": "Crafts basic items with materials like wood and fiber",
-				"requirements": "Crafted by Shaman",
-				"level_3_data": {
-					"perk_000_name": "Journeyman's Knowledge",
-					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item."
-				},
-				"level_5_data": {
-					"perk_000_name": "Master's Insight",
-					"perk_000_description": "The Bonesmith can now create items of Excellent quality, and will make Fine quality items more often."
-				}
-			},
-			"bonesmith_saw": {
-				"display_name": "Bonesmith Saw",
-				"bonesmith_saw_talisman": {
-					"display_name": "Bonesmith Saw",
-					"description": "Basic saw for basic tasks",
-					"flavor": "Promotes a goblin to Bonesmith"
-				},
-				"description": "Basic saw for basic tasks"
-			},
-			"bonesmith_workbench": {
-				"display_name": "Bonesmith Workbench",
-				"description": "Only simple tasks should be done here"
-			},
-			"recipes": {
-				"signs": "Signs"
-			},
-			"weaving_table": {
-				"display_name": "Weaving Table",
-				"description": "A place to weave armors, even the hard solid ones"
-			}
-		},
-		"beast_tamer": {
-			"beast_tamer_description": {
-				"display_name": "Beast Tamer",
-				"description": "Summon and order animals into fight",
-				"requirements": "Crafted by Carpenter",
-				"goblin_requirements": "Crafted by Shaman",
-				"level_1_data": {
-					"perk_000_name": "Four Feathers",
-					"perk_000_description": "A group of elite Poyos called the Four Feathers will join and help in the fight"
-				},
-				"level_2_data": {
-					"perk_000_name": "Wild Life",
-					"perk_000_description": "Summons local fauna wildlife to help in the battle"
-				},
-				"level_3_data": {
-					"perk_000_name": "Traps",
-					"perk_000_description": "Immobilize enemies using traps, the amount based on this goblin mind stat"
-				},
-				"level_4_data": {
-					"perk_000_name": "Varanus",
-					"perk_000_description": "Summons a pair of varanus into the fight"
-				},
-				"level_5_data": {
-					"perk_000_name": "Firefly Cloud",
-					"perk_000_description": "Casts a cloud of fireflies into enemies, confusing and blinding them"
-				},
-				"level_6_data": {
-					"perk_000_name": "Dragon Aura",
-					"perk_000_description": "(Goblins only)<br>With the combined power of a (max level) Spirit Walker, they summon an ancient Dragon Spirit into battle",
-					"perk_001_name": "Big Wolf",
-					"perk_001_description": "(Hearthlings only)<br>Summons a big wolf, one that inspires your allies and scares the enemies."
-				}
-			},
-			"beast_tamer_flute": {
-				"display_name": "Beast Tamer Flute",
-				"beast_tamer_flute_talisman": {
-					"display_name": "Beast Tamer Flute",
-					"description": "Communicates with animals",
-					"flavor": "Promotes to Beast Tamer"
-				}
-			},
-			"beast_tamer_claw": {
-				"display_name": "Claw",
-				"description": "Short range sharp weapon"
 			}
 		},
 		"party_goblin": {

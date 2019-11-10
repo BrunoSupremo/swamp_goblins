@@ -1,0 +1,26 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"stonehearth:landmark": {
+			"landmark": {
+				"brush" : "/swamp_goblins/data/models/landmark/32x_mushroom.qb",
+				"landmark_block_types": "swamp_goblins:landmark_blocks",
+				"destroy_entities": false,
+				"clip_if_outside_terrain": true
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.landmark.giant_mushroom.display_name)",
+			"description": "i18n(swamp_goblins:entities.landmark.giant_mushroom.description)",
+			"icon": "file(giant_mushroom.png)",
+			"category": "geomancer",
+			"material_tags":["crafted", "stone", "summon_stone", "stockpile_geomancer"]
+		}
+	}
+}

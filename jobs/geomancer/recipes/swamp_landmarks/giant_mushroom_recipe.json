@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.landmark.giant_mushroom.display_name)",
+	"description": "i18n(swamp_goblins:entities.landmark.giant_mushroom.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/landmark/giant_mushroom/giant_mushroom.png",
+	"level_requirement": 2,
+	"workshop": "stonehearth:geomancer:workbench",
+	"ingredients": [
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:rock",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 10
+		},
+		{
+			"material": "earth_essence resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:landmark:giant_mushroom"
+		}
+	]
+}

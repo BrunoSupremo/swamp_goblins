@@ -1,0 +1,34 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.landmark.mushroom_stone.display_name)",
+	"description": "i18n(swamp_goblins:entities.landmark.mushroom_stone.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/landmark/mushroom_stone/mushroom_stone.png",
+	"level_requirement": 0,
+	"workshop": "stonehearth:geomancer:workbench",
+	"ingredients": [
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:rock",
+			"count": 1
+		},
+		{
+			"uri": "stonehearth:landmark:summon_stone:block:surface",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 1
+		},
+		{
+			"material": "earth_essence resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:landmark:mushroom_stone"
+		}
+	]
+}
