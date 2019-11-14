@@ -37,8 +37,11 @@ return ai:create_compound_action(ChargeWeatherStone)
 :execute('stonehearth:turn_to_face_entity', {
 	entity = ai.BACK(2).destination_entity
 })
+:execute('stonehearth:run_effect', {
+	effect = "cast_geomancer"
+})
 :execute('stonehearth:call_function', {
 	fn = change_weather, args = {
-		ai.BACK(3).destination_entity
+		ai.BACK(4).destination_entity
 	}
 })

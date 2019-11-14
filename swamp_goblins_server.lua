@@ -1,11 +1,7 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.11.9")
+print("Swamp Goblins Mod version 19.11.14")
 
 --[[
-
-add swamp landmarks to geomancer
-fix undead bug in foggy weather
-
 mosquito model
 banner shred
 animals haulers requiring food and care

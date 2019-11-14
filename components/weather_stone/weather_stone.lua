@@ -44,6 +44,7 @@ end
 function WeatherStone:now_charging()
 	self:enable_commands(false)
 	self._sv._use_state = "charging"
+	self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:weather_stone:charging", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
 
 	stonehearth.ai:reconsider_entity(self._entity)
 end
@@ -51,6 +52,7 @@ end
 function WeatherStone:increase_charge()
 	self._sv._charged_state = self._sv._charged_state +1
 	self._entity:get_component('render_info'):set_model_variant("charged_"..self._sv._charged_state)
+	radiant.effects.run_effect(self._entity, "stonehearth:effects:buff_tonic_energy_added")
 	if self._sv._charged_state >= 3 then
 		self:ready()
 	end
@@ -61,7 +63,8 @@ function WeatherStone:ready()
 	self:switch_command()
 	self._sv._use_state = "ready"
 
-	--add effects of the active stone
+	self:remove_effect()
+	self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:green_fire:large_candle")
 
 	stonehearth.ai:reconsider_entity(self._entity)
 end
@@ -69,6 +72,9 @@ end
 function WeatherStone:now_waiting()
 	self:enable_commands(false)
 	self._sv._use_state = "waiting" --someone will be using it soon
+
+	self:remove_effect()
+	self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:weather_stone:waiting", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
 
 	stonehearth.ai:reconsider_entity(self._entity)
 end
@@ -100,6 +106,7 @@ function WeatherStone:full_reset()
 	self._sv._use_state = "off"
 	self._sv._charged_state = 0
 	self._entity:get_component('render_info'):set_model_variant("default")
+	self:remove_effect()
 
 	stonehearth.ai:reconsider_entity(self._entity)
 end
@@ -109,6 +116,10 @@ function WeatherStone:current_stage()
 end
 
 function WeatherStone:destroy()
+	self:remove_effect()
+end
+
+function WeatherStone:remove_effect()
 	if self._sv._task_effect then
 		self._sv._task_effect:stop()
 		self._sv._task_effect = nil
