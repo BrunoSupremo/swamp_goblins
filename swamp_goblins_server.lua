@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.11.14")
+print("Swamp Goblins Mod version 19.11.15")
 
 --[[
 mosquito model
@@ -7,6 +7,7 @@ banner shred
 animals haulers requiring food and care
 slimes
 varanus/mobs repelent
+bug nests to attack eggs
 
 add ace tools and tools upgrades
 add ace bone decor
