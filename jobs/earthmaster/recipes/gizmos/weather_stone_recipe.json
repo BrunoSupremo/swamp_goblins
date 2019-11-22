@@ -1,0 +1,31 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.manipulation.weather_stone.display_name)",
+	"description": "i18n(swamp_goblins:entities.manipulation.weather_stone.description)",
+	"flavor": "i18n(swamp_goblins:entities.manipulation.weather_stone.flavor)",
+	"portrait": "/swamp_goblins/entities/manipulation/weather_stone/weather_stone.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"work_effect": "work",
+	"level_requirement": 5,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 3
+		},
+		{
+			"material": "ore resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:weather_stone"
+		}
+	]
+}

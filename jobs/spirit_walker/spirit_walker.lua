@@ -32,7 +32,7 @@ function SpiritWalkerClass:summon_spirit(delay, amount)
 		spirit_amount = 1
 	end
 	for i=1, spirit_amount do
-		local offset = (0.1*i+1) - (0.1*spirit_amount)/2
+		local offset = (0.2*i+1) - (0.2*spirit_amount)/2
 		local summoning_delay = (delay * 33.3 * offset)
 		stonehearth.combat:set_timer("SpiritWalkerClass summoning_delay: "..i, summoning_delay, function()
 			self:create_spirit("swamp_goblins:summons:goblin_spirit", "copy")
@@ -42,6 +42,8 @@ end
 
 function SpiritWalkerClass:summon_spirits(delay)
 	local spirit_amount = radiant.entities.get_attribute(self._sv._entity, "spirit")
+	spirit_amount = math.floor( (spirit_amount+1) / 2 ) --1 summon for every 2 spirit stat
+	spirit_amount = math.max(2, spirit_amount) --at least 2 summons, pls
 	self:summon_spirit(delay, spirit_amount)
 end
 

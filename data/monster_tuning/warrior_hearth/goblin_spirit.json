@@ -1,0 +1,47 @@
+{
+	"type": "monster_tuning",
+	"estimated_difficulty": 0,
+	"attributes": {
+		"max_health": 200,
+		"menace": 40,
+		"courage": 100,
+		"exp_reward": 15
+	},
+	"_equipment": {
+		"weapon": [
+			"stonehearth:mining_pick",
+			"stonehearth:worker_axe"
+		]
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"none": {
+						"weight": 1
+					},
+					"cattail": {
+						"uri": "swamp_goblins:plants:cattail:seed",
+						"weight": 1
+					},
+					"giant_flower": {
+						"uri": "swamp_goblins:plants:giant_flower:seed",
+						"weight": 1
+					},
+					"mushroom": {
+						"uri": "swamp_goblins:plants:mushroom",
+						"weight": 1
+					},
+					"bogger": {
+						"uri": "swamp_goblins:trees:bogger:seed",
+						"weight": 1
+					},
+					"cypress": {
+						"uri": "swamp_goblins:trees:cypress:seed",
+						"weight": 1
+					}
+				}
+			}
+		}
+	}
+}

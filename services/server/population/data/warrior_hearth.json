@@ -1,0 +1,25 @@
+{
+	"mixins": "swamp_goblins:kingdoms:firefly_clan",
+	"type": "kingdom",
+	"kingdom_name": "The Golden Conquering Arm",
+	"kingdom_id": "warrior_hearth",
+	"amenity_to_strangers": "hostile",
+	"amenity_to": {
+		"human_npcs": "neutral",
+		"orc_npcs": "neutral",
+		"rabbit_biped_npcs": "neutral"
+	},
+	"roles": {
+		"default": {
+			"male": {
+				"mixintypes": {
+					"uri": "override"
+				},
+				"uri": [
+					"swamp_goblins:summons:warrior_hearth:goblin_spirit"
+				]
+			}
+		}
+	},
+	"task_groups": "stonehearth:data:player_task_groups"
+}

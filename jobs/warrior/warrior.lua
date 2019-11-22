@@ -7,6 +7,9 @@ function WarriorClass:_create_listeners()
 
 	local player_id = radiant.entities.get_player_id(self._sv._entity)
 	local job = stonehearth.job:get_job_info(player_id, "swamp_goblins:jobs:spirit_walker")
+	if not job then
+		return
+	end
 	if job:get_highest_level() >=5 then
 		self:spirit_walker_buffing()
 	else

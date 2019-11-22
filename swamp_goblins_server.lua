@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.11.15")
+print("Swamp Goblins Mod version 19.11.21")
 
 --[[
 mosquito model

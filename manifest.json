@@ -100,12 +100,13 @@
 		"varanus_camp_standard":"file(entities/gizmos/varanus_camp_standard)",
 		"goblinpedia":"file(entities/gizmos/goblinpedia)",
 
+		"commands:glory_wave:abandon":	"file(data/commands/glory_wave/abandon.json)",
+		"commands:glory_wave:spawn":	"file(data/commands/glory_wave/spawn.json)",
 		"commands:weather_stone:charge":"file(data/commands/weather_stone/charge.json)",
 		"commands:weather_stone:use":	"file(data/commands/weather_stone/use.json)",
 		"commands:enable_egg_spot":	"file(data/commands/enable_egg_spot)",
 		"commands:goblinpedia":		"file(data/commands/goblinpedia)",
 		"commands:travel":			"file(data/commands/travel)",
-		"commands:battle_royal":	"file(data/commands/battle_royal)",
 
 		"construction:ladder":	"file(entities/construction/ladder)",
 		"construction:brick_fence":		"file(entities/construction/brick_fence)",
@@ -207,9 +208,10 @@
 		"effects:shaman_workbench_effect":"file(data/effects/shaman_workbench_effect)",
 		"effects:spirit_walker":"file(data/effects/spirit_walker)",
 		"effects:upgraded_staff":"file(data/effects/spirit_walker/upgraded_staff.json)",
-		"effects:spirit:goblin_spirit":	"file(data/effects/spirit/goblin_spirit.json)",
-		"effects:spirit:big_g":			"file(data/effects/spirit/big_g.json)",
-		"effects:spirit:dragon_aura":	"file(data/effects/spirit/dragon_aura.json)",
+		"effects:spirit:big_g":					"file(data/effects/spirit/big_g.json)",
+		"effects:spirit:dragon_aura":			"file(data/effects/spirit/dragon_aura.json)",
+		"effects:spirit:goblin_spirit":			"file(data/effects/spirit/goblin_spirit.json)",
+		"effects:spirit:warrior_goblin_spirit":	"file(data/effects/spirit/warrior_hearth_spirit.json)",
 		"effects:poison_spiral":"file(data/effects/poison_spiral)",
 		"effects:hearth":"file(data/effects/hearth)",
 		"effects:hearth_human":"file(data/effects/hearth/hearth_human.json)",
@@ -269,8 +271,7 @@
 
 		"kingdoms:firefly_clan": "file(data/firefly_clan_population.json)",
 		"kingdoms:firefly_human_encounter": "file(services/server/population/data/firefly_human_encounter.json)",
-		"kingdoms:battle_royal_team_1": "file(services/server/population/data/battle_royal_team_1.json)",
-		"kingdoms:battle_royal_team_2": "file(services/server/population/data/battle_royal_team_2.json)",
+		"kingdoms:warrior_hearth": "file(services/server/population/data/warrior_hearth.json)",
 
 		"landmark_blocks": "file(data/terrain/landmark_blocks.json)",
 		"landmark:firefly_nest":	"file(entities/landmark/firefly_nest)",
@@ -306,6 +307,7 @@
 		"monster_tuning:firefly_human_encounter:footman":	"file(data/monster_tuning/firefly_human_encounter/footman.json)",
 		"monster_tuning:firefly_human_encounter:knight":	"file(data/monster_tuning/firefly_human_encounter/knight.json)",
 		"monster_tuning:firefly_human_encounter:nina":		"file(data/monster_tuning/firefly_human_encounter/nina.json)",
+		"monster_tuning:warrior_hearth:goblin_spirit":	"file(data/monster_tuning/warrior_hearth/goblin_spirit.json)",
 
 		"plants:cattail":		"file(entities/plants/cattail)",
 		"plants:cattail:seed":	"file(entities/plants/cattail/seed)",
@@ -368,6 +370,7 @@
 		"summons:dragon_aura":	"file(entities/summons/dragon_aura)",
 		"summons:big_wolf":		"file(entities/summons/big_wolf)",
 		"summons:trap":			"file(entities/summons/trap)",
+		"summons:warrior_hearth:goblin_spirit":"file(entities/summons/warrior_hearth/goblin_spirit.json)",
 
 		"traits_index": "file(data/traits/traits_index.json)",
 		"traits:animal_companion":	"file(data/traits/animal_companion)",
@@ -437,7 +440,10 @@
 		"furniture:stone_bench":	"file(entities/gizmos/deprecated)",
 		"furniture:stone_chair":	"file(entities/gizmos/deprecated)",
 		"furniture:stone_table":	"file(entities/gizmos/deprecated)",
-		"furniture:stone_throne":	"file(entities/gizmos/deprecated)"
+		"furniture:stone_throne":	"file(entities/gizmos/deprecated)",
+
+		"kingdoms:battle_royal_team_1": "file(services/server/population/data/firefly_human_encounter.json)",
+		"kingdoms:battle_royal_team_2": "file(services/server/population/data/firefly_human_encounter.json)"
 	},
 	"mixintos" :  {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
@@ -565,8 +571,12 @@
 			"controller": "file(call_handlers/firefly_stuff.lua)",
 			"endpoint": "server"
 		},
-		"start_madness": {
-			"controller": "file(call_handlers/battle_royal.lua)",
+		"spawn_glory_wave": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
+		},
+		"abandon_glory_wave": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
 			"endpoint": "server"
 		}
 	},
@@ -578,6 +588,7 @@
 		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)",
+		"warrior_hearth":			"file(components/warrior_hearth/warrior_hearth.lua)",
 		"water":					"file(components/water/water.lua)",
 		"weather_stone":			"file(components/weather_stone/weather_stone.lua)"
 	},

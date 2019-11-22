@@ -4,7 +4,7 @@
 	"display_name": "i18n(swamp_goblins:data.commands.weather_stone.charge.display_name)",
 	"description": "i18n(swamp_goblins:data.commands.weather_stone.charge.description)",
 	"disabled_description": "i18n(swamp_goblins:data.commands.weather_stone.charge.disabled_description)",
-	"icon": "/stonehearth/data/weather/rain/rain_sunny_subject.png",
+	"icon": "file(charge.png)",
 	"ordinal": 10,
 	"action": "call",
 	"function": "swamp_goblins:weather_stone_charge",

@@ -1,0 +1,204 @@
+{
+	"type" : "entity",
+	"mixins": "stonehearth:mixins:mob",
+	"components": {
+		"stonehearth:trivial_death" : {},
+		"render_info" : {
+			"animation_table": "stonehearth:skeletons:humanoid:female",
+			"model_variant": "firefly_goblin",
+			"scale":0.09,
+			"material": "materials/transparent_with_depth_bloom.material.json"
+		},
+		"stonehearth:equipment": {
+			"items": [
+				"file(weapon.json)",
+				"file(effect.json)"
+			]
+		},
+		"model_variants": {
+			"firefly_goblin": {
+				"models": [
+					"file(../goblin_spirit/goblin_spirit.qb)",
+					{
+						"type": "one_of",
+						"items": [
+							"/swamp_goblins/entities/goblins/tattoos_1.qb",
+							"/swamp_goblins/entities/goblins/tattoos_2.qb",
+							"/swamp_goblins/entities/goblins/tattoos_3.qb",
+							"/swamp_goblins/entities/goblins/tattoos_4.qb",
+							"/swamp_goblins/entities/goblins/tattoos_5.qb",
+							"/swamp_goblins/entities/goblins/tattoos_6.qb",
+							"/swamp_goblins/entities/goblins/tattoos_7.qb",
+							"/swamp_goblins/entities/goblins/tattoos_8.qb"
+						]
+					}
+				]
+			}
+		},
+		"stonehearth:job": {
+			"starting_level_title": "i18n(stonehearth:stonehearth_mixins.monster.job.starting_level_title)",
+			"default_level_title": "i18n(stonehearth:stonehearth_mixins.monster.job.default_level_title)",
+			"default_level_announcement": "i18n(stonehearth:stonehearth_mixins.monster.job.default_level_announcement)",
+			"default_promote_announcement": "i18n(stonehearth:stonehearth_mixins.monster.job.default_promote_announcement)",
+			"xp_equation_for_next_level": "curr_level ^ 2 * 100",
+			"levels_between_attribute_increase": 10,
+			"level_data": {
+				"general_description_desc": "i18n(stonehearth:stonehearth_mixins.monster.job.general_description_desc)",
+				"attribute_up_desc": "i18n(stonehearth:stonehearth_mixins.monster.job.attribute_up_desc)"
+			}
+		},
+		"sensor_list": {
+			"sensors": {
+				"sight": {
+					"radius": 64
+				}
+			}
+		},
+		"stonehearth:combat_state": {
+			"stance": "aggressive"
+		},
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 100
+			},
+			"muscle": {
+				"type": "basic",
+				"value": 1
+			},
+			"menace": {
+				"type": "basic",
+				"value": 1
+			},
+			"courage": {
+				"type": "basic",
+				"value": 1
+			},
+			"speed": {
+				"type": "basic",
+				"value": 70
+			},
+			"exp_reward": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_dmg_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"multiplicative_dmg_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"additive_armor_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"multiplicative_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"multiplicative_target_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_target_armor_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"additive_weapon_range_modifier": {
+				"type": "basic",
+				"value": 0
+			}
+		},
+		"stonehearth:posture": {
+			"priorities": {
+				"stonehearth:climb_ladder_up": 1100,
+				"stonehearth:climb_ladder_down": 1100,
+				"stonehearth:sitting_on_chair": 1000,
+				"stonehearth:sitting": 900,
+				"stonehearth:carrying": 800,
+				"stonehearth:panic": 100,
+				"stonehearth:combat": 50,
+				"stonehearth:swimming": 40,
+				"stonehearth:patrol": 30,
+				"stonehearth:injured": 20,
+				"stonehearth:have_shield": 10
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:healable": {
+			"healable_by_anyone": false,
+			"target_type": "spirit"
+		},
+		"stonehearth:entity_radius": 0.75,
+		"stonehearth:entity_reach": 1.0,
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.summons.goblin_spirit.display_name)",
+			"description": "i18n(swamp_goblins:entities.summons.goblin_spirit.description)"
+		},
+		"stonehearth:ai_packs": {
+			"packs": [
+				"stonehearth:ai_pack:death",
+				"stonehearth:ai_pack:patrolling",
+				"stonehearth:ai_pack:combat_control",
+				"stonehearth:ai_pack:human",
+				"stonehearth:ai_pack:combat",
+				"stonehearth:ai_pack:conversation",
+				"stonehearth:ai_pack:idle",
+				"stonehearth:ai_pack:idle:bored:idle_effects",
+				"stonehearth:ai_pack:idle:bored:wander"
+			]
+		},
+		"stonehearth:conversation_type": "humanoid",
+		"stonehearth:idle_effects": {
+			"effects": [
+				{
+					"name": "idle_breathe",
+					"weight": 5
+				},
+				{
+					"name": "idle_look_around",
+					"weight": 2
+				},
+				{
+					"name": "idle_sway",
+					"weight": 2
+				},
+				{
+					"name": "emote_count",
+					"weight": 0.25
+				},
+				{
+					"name": "emote_foottap",
+					"weight": 0.25
+				},
+				{
+					"name": "emote_toolinspection",
+					"weight": 0.25
+				},
+				{
+					"name": "emote_complete",
+					"weight": 0.25
+				},
+				{
+					"name": "emote_concerned",
+					"weight": 0.25
+				},
+				{
+					"name": "yawn",
+					"weight": 0.25
+				},
+				{
+					"name": "emote_browwipe",
+					"weight": 0.25
+				},
+				{
+					"name": "emote_reservation",
+					"weight": 0.1
+				}
+			]
+		}
+	}
+}
