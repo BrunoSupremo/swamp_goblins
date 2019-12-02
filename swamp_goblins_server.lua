@@ -1,11 +1,13 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.11.21")
+print("Swamp Goblins Mod version 19.12.1")
 
 --[[
+shaman needs to craft pet food for the trappers pets
+
 mosquito model
 banner shred
 animals haulers requiring food and care
-slimes
+swamp slimes
 varanus/mobs repelent
 bug nests to attack eggs
 
@@ -41,6 +43,7 @@ equipments:
 redo:
 	hourglass effects
 	checkers table
+	warrior goblin aura effects
 fisher:
 	swamp fish colors, eels, blowfish
 Bugs:

@@ -34,11 +34,10 @@
 		"stonehearth:catalog": {
 			"display_name": "i18n(swamp_goblins:entities.food.fake_vegetables.display_name)",
 			"description": "i18n(swamp_goblins:entities.food.fake_vegetables.description)",
-			"icon": "file(fake_vegetables_serving.png)",
 			"is_item": true,
 			"category": "food",
 			"material_tags": ["food", "vegetarian"],
-			"subject_override": "swamp_goblins:plants:mushroom"
+			"subject_override": "swamp_goblins:food:fake_vegetables"
 		}
 	}
 }

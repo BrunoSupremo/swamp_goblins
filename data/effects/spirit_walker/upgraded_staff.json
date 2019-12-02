@@ -1,15 +1,55 @@
 {
 	"type": "effect",
 	"tracks": {
-		"upgraded_staff": {
+		"cubemitter_flame": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/spirit_walker/upgraded_staff.json",
+			"start_time": 0,
 			"loop": true,
-			"transforms": { "x": 0, "y": 0, "z": 0,
-				"rx": 0,
+			"cubemitter": "/swamp_goblins/data/horde/particles/spirit_walker/upgraded_staff/flame.json",
+			"transforms": { "x": 0, "y": 0, "z": -1.45,
+				"rx": 180,
 				"ry": 0,
 				"rz": 0
 			}
+		},
+		"cubemitter_sparkles": {
+			"type": "cubemitter",
+			"start_time": 0,
+			"loop": true,
+			"cubemitter": "/swamp_goblins/data/horde/particles/spirit_walker/upgraded_staff/sparkles.json",
+			"transforms": { "x": 0, "y": 0, "z": -1.45,
+				"rx": 180,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"cubemitter_smoke": {
+			"type": "cubemitter",
+			"start_time": 0,
+			"loop": true,
+			"cubemitter": "/swamp_goblins/data/horde/particles/spirit_walker/upgraded_staff/smoke.json",
+			"transforms": { "x": 0, "y": 0, "z": -1.45,
+				"rx": 180,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"cubemitter_glint": {
+			"type": "cubemitter",
+			"start_time": 0,
+			"loop": true,
+			"cubemitter": "/swamp_goblins/data/horde/particles/spirit_walker/upgraded_staff/glint.json",
+			"transforms": { "x": 0, "y": 0, "z": -1.45,
+				"rx": 180,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"light_main": {
+			"type": "light",
+			"light": "/swamp_goblins/data/horde/animatedlights/spirit/spirit.json",
+			"transforms": { "x": 0, "y": 0, "z": -1.45 },
+			"shadows": false
 		}
 	}
 }

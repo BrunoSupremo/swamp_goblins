@@ -41,9 +41,15 @@
 	"traits": {
 		"swamp_goblins:traits:firefly_chaser": {},
 		"swamp_goblins:traits:party_goblin": {},
+		"swamp_goblins:traits:frog_companion": {
+			"excludes": {
+				"stonehearth:traits:callous": true
+			}
+		},
 		"stonehearth:traits:courageous": {},
 		"stonehearth:traits:callous": {
 			"excludes": {
+				"swamp_goblins:traits:frog_companion": true,
 				"stonehearth:traits:empathetic": true,
 				"swamp_goblins:traits:party_goblin": true
 			}

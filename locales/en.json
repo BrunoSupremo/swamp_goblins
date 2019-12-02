@@ -301,6 +301,11 @@
 			"firefly_chaser": {
 				"display_name": "Firefly Chaser",
 				"description": "At night, [name(i18n_data.entity)] will wander around looking for fireflies to admire."
+			},
+			"frog_companion": {
+				"display_name": "Frog Companion",
+				"description": "Ever since [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)] saved their [str(i18n_data.savee_species)], [name(i18n_data.savee)], from mortal danger, they've been inseparable.",
+				"default_species": "companion"
 			}
 		},
 		"buffs": {
@@ -593,7 +598,7 @@
 			"fake_vegetables": {
 				"display_name": "Vegetables Substitute",
 				"description": "Goblins are not too fond of vegetables, so Shamans had to get creative to keep a healthy diet.",
-				"flavor": "It is like hiding vegetables in the food"
+				"flavor": "This food item counts as vegetable for all other recipes"
 			},
 			"mushroom": {
 				"display_name": "Mushroom",
