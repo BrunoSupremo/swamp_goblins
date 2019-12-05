@@ -1,21 +1,9 @@
 {
-	"type": "recipe",
-	"work_units": 3,
+	"mixins": "swamp_goblins:mixins:sign:wood_recipe",
 	"recipe_name": "i18n(swamp_goblins:entities.decoration.wood_sign.poyo.display_name)",
 	"description": "i18n(swamp_goblins:entities.decoration.wood_sign.poyo.description)",
 	"flavor": "",
 	"portrait": "/swamp_goblins/entities/decoration/wood_sign/poyo/poyo.png",
-	"workshop": "swamp_goblins:bonesmith:workbench",
-	"ingredients": [
-		{
-			"material": "wood resource",
-			"count": 1
-		},
-		{
-			"material": "fiber resource",
-			"count": 1
-		}
-	],
 	"produces": [
 		{
 			"item": "swamp_goblins:decoration:wood_sign:poyo"

@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.12.1")
+print("Swamp Goblins Mod version 19.12.5")
 
 --[[
 shaman needs to craft pet food for the trappers pets

@@ -1,11 +1,13 @@
 {
 	"type": "recipe",
+	"effort": 33,
 	"work_units": 10,
 	"recipe_name": "i18n(swamp_goblins:entities.armor.horn_helmet.display_name)",
 	"description": "i18n(swamp_goblins:entities.armor.horn_helmet.description)",
 	"flavor": "",
 	"portrait": "/swamp_goblins/entities/armor/horn_helmet/horn_helmet.png",
 	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"work_effect": "fiddle",
 	"level_requirement": 6,
 	"ingredients": [
 		{
