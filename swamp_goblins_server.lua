@@ -1,8 +1,11 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.12.5")
+print("Swamp Goblins Mod version 19.12.15")
 
 --[[
-shaman needs to craft pet food for the trappers pets
+import hearthlings
+move travel to earthmaster
+
+shaman needs to craft pet food for the trappers pets, bug meat?
 
 mosquito model
 banner shred
