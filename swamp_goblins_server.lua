@@ -15,7 +15,6 @@ varanus/mobs repelent
 bug nests to attack eggs
 
 add ace tools and tools upgrades
-add ace bone decor
 
 contruction:
 	door, double door

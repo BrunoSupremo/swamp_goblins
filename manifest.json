@@ -477,9 +477,8 @@
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_raider_camp.json":"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_thief_camp.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth/data/gm/campaigns/game_events/arcs/trigger/game_events/encounters/generate_daily_report.json":		"file(data/gm/campaigns/remove_firefly_clan.json)",
-		"stonehearth/data/gm/campaigns/goblin_war/goblin_war_campaign.json":											"file(data/gm/campaigns/remove_firefly_clan.json)",
-		"stonehearth/data/gm/campaigns/orc_war/orc_war_campaign.json":													"file(data/gm/campaigns/remove_firefly_clan.json)",
-		"stonehearth_ace/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_raider_camp.json":		"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth/data/gm/campaigns/goblin_war/goblin_war_campaign.json":"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth/data/gm/campaigns/orc_war/orc_war_campaign.json":		"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth_ace/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/goblin_raid_1.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth_ace/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/goblin_raid_2.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth_ace/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/goblin_raid_3.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
@@ -488,6 +487,7 @@
 		"stonehearth_ace/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/goblin_raid_6.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth_ace/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/goblin_raid_7.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth_ace/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/goblin_raid_8.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth_ace/data/gm/campaigns/bonecarving/bonecarving_campaign.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
 
 		"stonehearth:data:npc_index": "file(data/npc_index.json)",
 
@@ -509,6 +509,8 @@
 		"stonehearth/jobs/geomancer/recipes/geomancer_recipes.json":"file(jobs/geomancer/recipes)",
 
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
+
+		"stonehearth_ace:mason:workbench_bone":"file(jobs/bonesmith/ace_workbench_bone)",
 
 		"stonehearth:personal_logs:dreams": "file(data/personality/dreams.json)",
 
@@ -556,7 +558,8 @@
 		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)",
 
 		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
-		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json"
+		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
+		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json"
 	},
 	"functions": {
 		"weather_stone_charge": {
@@ -603,7 +606,8 @@
 		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",
 		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"stonehearth/data/rigs/entities/pets/kitten/effects/combat_1h_backhand.json",
 
-		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json"
+		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json",
+		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json"
 	},
 	"controllers": {
 		"class:beast_tamer":	"file(jobs/beast_tamer/beast_tamer.lua)",
