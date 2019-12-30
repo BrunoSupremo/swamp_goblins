@@ -1,0 +1,19 @@
+{
+	"type": "encounter",
+	"encounter_type": "delivery_quest",
+	"in_edge": "14_chase_scene_quest_b_firefly",
+	"out_edge": "14_chase_scene_reward_b",
+	"delivery_quest_info": {
+		"title": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.14_chase_scene.14_chase_scene_quest_b.title)",
+		"dialog_title": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.14_chase_scene.14_chase_scene_quest_b.dialog_title)",
+		"text": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.14_chase_scene.14_chase_scene_quest_b.text)",
+		"requirements": [
+			{
+				"type": "give_item",
+				"uri": "swamp_goblins:consumables:small_healing",
+				"count": 4
+			}
+		],
+		"abandon_out_edge": "14_chase_scene_abandon_firefly"
+	}
+}

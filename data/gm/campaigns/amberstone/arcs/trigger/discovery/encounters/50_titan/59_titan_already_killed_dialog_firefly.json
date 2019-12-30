@@ -1,0 +1,13 @@
+{
+	"mixins": "/stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/50_titan/59_titan_already_killed_dialog.json",
+	"in_edge": "59_titan_already_killed_dialog_firefly",
+	"dialog_tree_info": {
+		"nodes": {
+			"greet": {
+				"bulletin": {
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.titan_already_killed_dialog.dialog_tree_info.dialog_nodes.greet.bulletin_message.00)"
+				}
+			}
+		}
+	}
+}

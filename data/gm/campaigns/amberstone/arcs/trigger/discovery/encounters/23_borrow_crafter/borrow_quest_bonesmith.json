@@ -1,0 +1,10 @@
+{
+	"mixins": "/stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/23_borrow_crafter/borrow_quest_trapper.json",
+	"in_edge": "borrow_quest_bonesmith",
+	"dispatch_quest_info": {
+		"title": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.23_borrow_crafter.borrow_quest_bonesmith.title)",
+		"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.23_borrow_crafter.borrow_quest_bonesmith.dialog_title)",
+		"text": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.23_borrow_crafter.borrow_quest_bonesmith.text)",
+		"required_job": "swamp_goblins:jobs:bonesmith"
+	}
+}

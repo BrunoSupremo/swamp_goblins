@@ -1,0 +1,18 @@
+{
+	"mixins": "/stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/40_recipe_sharing/40_recipe_sharing_outro.json",
+	"in_edge": "40_recipe_sharing_outro_firefly",
+	"dialog_tree_info": {
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.40_recipe_sharing.40_recipe_sharing_outro.dialog_tree_info.dialog_nodes.msg1.bulletin_message.00)",
+					"choices": {
+						"stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.40_recipe_sharing.40_recipe_sharing_outro.dialog_tree_info.dialog_nodes.msg1.choice_000": {
+							"out_edge": "40_grant_recipes_earthmaster"
+						}
+					}
+				}
+			}
+		}
+	}
+}

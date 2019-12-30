@@ -1,0 +1,24 @@
+{
+	"type": "encounter",
+	"encounter_type": "dispatch_quest",
+	"in_edge": "50_titan_weapon_quest_firefly",
+	"out_edge": "50_titan_weapon_help_complete",
+	"dispatch_quest_info": {
+		"title": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.50_titan.50_titan_weapon_quest.title)",
+		"dialog_title": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.50_titan.50_titan_weapon_quest.dialog_title)",
+		"text": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.50_titan.50_titan_weapon_quest.text)",
+		"requirements": [
+			{
+				"job": "swamp_goblins:jobs:earthmaster",
+				"job_level": 4
+			},
+			{},
+			{},
+			{}
+		],
+		"return_delay": "3d",
+		"buff_on_return": "stonehearth:amberstone:visit_buff",
+		"xp_gained": 500,
+		"thought_on_return": "stonehearth:thoughts:amberstone:borrow_crafter:helped_out"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "encounter",
+	"encounter_type": "unlock_recipe",
+	"in_edge": "40_grant_recipes_earthmaster",
+	"out_edge": "40_grant_recipes_bonesmith",
+	"unlock_recipe_info": {
+		"job": "swamp_goblins:jobs:earthmaster",
+		"recipe_key": [
+			"amberstone:mason_pedestal_amberstone",
+			"amberstone:output_box_amberstone",
+			"amberstone:amberstone_tunnel_door",
+			"amberstone:amberstone_window",
+			"amberstone:amberstone_table",
+			"amberstone:amberstone_teapot",
+			"amberstone:amberstone_lantern"
+		],
+		"bulletin_title": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.40_recipe_sharing.40_grant_recipes_earthmaster.bulletin_title)"
+	}
+}

@@ -15,10 +15,14 @@ end
 function WeatherStone:post_activate()
 	self.player_id = self._entity:get_player_id()
 
+	self._sv._task_effect = nil
 	if self._sv._use_state == "off" then
 		self:enable_commands(true)
-	else --waiting
+	else
 		self:enable_commands(false)
+		if self._sv._use_state == "ready" then
+			self:switch_command()
+		end
 	end
 end
 
@@ -34,10 +38,12 @@ function WeatherStone:switch_command(to_charging)
 	local commands_component = self._entity:get_component("stonehearth:commands")
 	if to_charging then
 		commands_component:add_command("swamp_goblins:commands:weather_stone:charge")
+		commands_component:set_command_enabled("swamp_goblins:commands:weather_stone:charge",true)
 		commands_component:remove_command("swamp_goblins:commands:weather_stone:use")
 	else
 		commands_component:remove_command("swamp_goblins:commands:weather_stone:charge")
 		commands_component:add_command("swamp_goblins:commands:weather_stone:use")
+		commands_component:set_command_enabled("swamp_goblins:commands:weather_stone:use",true)
 	end
 end
 

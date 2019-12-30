@@ -1,0 +1,40 @@
+{
+	"mixins": "/stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/11_shook_down/11_shook_down_intro.json",
+	"in_edge": "11_shook_down_intro_firefly",
+	"can_start": {
+		"all_tests": {
+			"firefly_check": {
+				"type": "deny_if_not",
+				"item": "kingdom",
+				"value": "swamp_goblins:kingdoms:firefly_clan"
+			}
+		}
+	},
+	"dialog_tree_info": {
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.11_shook_down.11_shook_down_intro.dialog_tree_info.dialog_nodes.msg1.bulletin_message.00)"
+				}
+			},
+			"msg2_a": {
+				"bulletin": {
+					"choices": {
+						"stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.11_shook_down.11_shook_down_intro.dialog_tree_info.dialog_nodes.msg2_a.choice_000": {
+							"out_edge": "11_shook_down_quest_a_firely"
+						}
+					}
+				}
+			},
+			"msg2_b": {
+				"bulletin": {
+					"choices": {
+						"stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.11_shook_down.11_shook_down_intro.dialog_tree_info.dialog_nodes.msg2_b.choice_000": {
+							"out_edge": "11_shook_down_quest_b_firely"
+						}
+					}
+				}
+			}
+		}
+	}
+}

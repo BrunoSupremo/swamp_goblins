@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 6,
+	"recipe_name": "i18n(stonehearth:jobs.weaver.recipes.amberstone_painting_branch_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.weaver.recipes.amberstone_painting_branch_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.amberstone_painting_branch_recipe.flavor)",
+	"portrait": "/stonehearth/entities/decoration/amberstone_painting_branch/amberstone_painting_branch.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"level_requirement": 3,
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 3
+		},
+		{
+			"uri": "swamp_goblins:consumables:small_healing",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:decoration:amberstone_painting_branch"
+		}
+	]
+}

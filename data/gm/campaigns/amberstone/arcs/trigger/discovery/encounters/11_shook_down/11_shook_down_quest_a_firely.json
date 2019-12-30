@@ -1,0 +1,19 @@
+{
+	"type": "encounter",
+	"encounter_type": "delivery_quest",
+	"in_edge": "11_shook_down_quest_a_firely",
+	"out_edge": "11_shook_down_outro_a_firefly",
+	"delivery_quest_info": {
+		"title": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.11_shook_down.11_shook_down_quest_a.title)",
+		"dialog_title": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.11_shook_down.11_shook_down_quest_a.dialog_title)",
+		"text": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.11_shook_down.11_shook_down_quest_a.text)",
+		"requirements": [
+			{
+				"type": "give_item",
+				"uri": "swamp_goblins:portals:wooden_door",
+				"count": 10
+			}
+		],
+		"abandon_out_edge": "quest_finish"
+	}
+}

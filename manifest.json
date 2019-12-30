@@ -376,7 +376,6 @@
 		"summons:warrior_hearth:goblin_spirit":"file(entities/summons/warrior_hearth/goblin_spirit.json)",
 
 		"traits_index": "file(data/traits/traits_index.json)",
-		"traits:animal_companion":	"file(data/traits/animal_companion)",
 		"traits:firefly_chaser":	"file(data/traits/firefly_chaser)",
 		"traits:frog_companion":	"file(data/traits/frog_companion)",
 		"traits:party_goblin":		"file(data/traits/party_goblin)",
@@ -459,6 +458,23 @@
 		"stonehearth:data:constants": "file(data/constants.json)",
 
 		"stonehearth:data:gm_index": "swamp_goblins:data:gm_index",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/discovery_arc.json":"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/discovery_arc.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/quest_entry.json":"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/quest_entry.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/stage_transition_generator.json":"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/stage_transition_generator.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/02_hello/02a_hello_friend_intro.json":				"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/02_hello/02a_hello_friend_intro.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/11_shook_down/11_shook_down_intro.json":			"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/11_shook_down/11_shook_down_intro.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/12_heirbloom/12_heirbloom_entry.json":				"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/12_heirbloom/12_heirbloom_entry.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/14_chase_scene/14_chase_scene_intro.json":			"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/14_chase_scene/14_chase_scene_intro.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/15_crystal_charging/15_crystal_charging_intro.json":"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/15_crystal_charging/15_crystal_charging_intro.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/23_borrow_crafter/23_borrow_crafter_entry.json":	"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/23_borrow_crafter/23_borrow_crafter_entry.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/23_borrow_crafter/borrow_intro_trapper.json":		"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/23_borrow_crafter/borrow_intro_trapper.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/20_partnership/20_partnership_set_stage.json":		"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/20_partnership/20_partnership_set_stage.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/30_geomancy/30_geomancy_set_stage.json":			"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/30_geomancy/30_geomancy_set_stage.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/40_recipe_sharing/40_recipe_sharing_set_stage.json":"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/40_recipe_sharing/40_recipe_sharing_set_stage.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/50_titan/50_titan_set_stage.json":					"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/50_titan/50_titan_set_stage.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/50_titan/50_titan_dialog.json":						"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/50_titan/50_titan_dialog.json)",
+		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/50_titan/59_wait_group_titan_already_killed.json":	"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/50_titan/59_wait_group_titan_already_killed.json)",
+
 		"stonehearth:gm:campaigns:arcs:ambient_threats": "file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/ambient_threats_arc.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/randomize_advanced_threats.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json)",
@@ -549,7 +565,8 @@
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
 
-		"stonehearth:trapper:outfit": "file(jobs/trapper/trapper_outfit)",
+		"stonehearth:geomancer:outfit":	"file(jobs/geomancer/geomancer_outfit)",
+		"stonehearth:trapper:outfit":	"file(jobs/trapper/trapper_outfit)",
 		"stonehearth:worker:outfit":		"file(jobs/worker/worker_outfit)",
 		"rayyas_children:worker:outfit":	"file(jobs/worker/worker_outfit)",
 		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)",

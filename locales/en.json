@@ -83,6 +83,256 @@
 			"human":"Unknown human",
 			"nina":"Nina",
 			"campaigns":{
+				"amberstone":{
+					"arcs":{
+						"trigger":{
+							"discovery":{
+								"encounters":{
+									"02_hello":{
+										"02a_hello_friend_intro":{
+											"dialog_tree_info":{
+												"dialog_nodes":{
+													"msg2":{
+														"bulletin_message":{
+															"00":"Your clan has proven gracious, and your gardens savory. Many of my kin mistrust the progeny of Snake, but I feel we must extend a paw of friendship."
+														}
+													}
+												}
+											}
+										}
+									},
+									"11_shook_down":{
+										"11_shook_down_intro":{
+											"dialog_tree_info":{
+												"dialog_nodes":{
+													"msg1":{
+														"bulletin_message":{
+															"00":"Some orcs somehow found an entrance to our hovel and are asking for... a bunch of wooden doors? We have neither wood nor carpenter on paw, so could you perhaps craft some for us?<br><br>Alternatively, we're not afraid to fight them off, but we lack the means to heal our injured afterwards."
+														}
+													}
+												}
+											}
+										},
+										"11_shook_down_outro_a":{
+											"donation_dialog_info":{
+												"dialog_nodes":{
+													"simple_message":{
+														"bulletin_message":{
+															"00": "\"Thank you, I'm sure those big orcs will find these quite satisfactory. May our friendship ever blossom!.\" He offers you glittering bags as payment.<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+														}
+													}
+												}
+											}
+										}
+									},
+									"14_chase_scene":{
+										"14_chase_scene_intro":{
+											"dialog_tree_info":{
+												"dialog_nodes":{
+													"leave":{
+														"bulletin_message":{
+															"00": "\"I understand. I haven't heard any howling in a while, I think your goblin odors might have thrown them off. I'll make a break for it, the long way around...\""
+														}
+													}
+												}
+											}
+										}
+									},
+									"15_crystal_charging":{
+										"15_crystal_charging_intro":{
+											"dialog_tree_info":{
+												"dialog_nodes":{
+													"msg1":{
+														"bulletin_message":{
+															"00": "\"Greetings, kind goblins. As you know, we live undergound, and because of that we rely on Amberstone, our namesake material, for many things.\"<br><br>\"Amberstones can absorb many kinds of energy, sunlight being one of them - and these stones here have lost their glow.\""
+														}
+													},
+													"msg4":{
+														"bulletin_message":{
+															"00": "\"I understand. Perhaps next time. Farewell, goblins.\""
+														}
+													}
+												}
+											}
+										}
+									},
+									"23_borrow_crafter": {
+										"borrow_intro_trapper": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"msg1": {
+														"bulletin_message": {
+															"00": "\"Dear goblins, some of my clan respect the efficiency of your Trappers. Could one visit for two days, so that we might learn their methods and adapt them for our own use?\"<br><br>\"We will provide the supplies, and they will be an honored guest of the warren.\""
+														}
+													}
+												}
+											}
+										},
+										"borrow_intro_bonesmith": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"msg1": {
+														"bulletin_message": {
+															"00": "\"We have need of someone experienced with wood for two days, to help with bracing a tunnel and putting up new vegetable storage.\"\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+														}
+													}
+												}
+											}
+										},
+										"borrow_intro_earthmaster": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"msg1": {
+														"bulletin_message": {
+															"00": "\"We have need of someone experienced with hard materials for two days, to help us with forging some new digging equipment.\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+														}
+													}
+												}
+											}
+										},
+										"borrow_intro_shaman": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"msg1": {
+														"bulletin_message": {
+															"00": "\"Our medics would like to compare notes with one of your Shamans for a couple of days.\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+														}
+													}
+												}
+											}
+										},
+										"borrow_quest_bonesmith": {
+											"title": "Send a Bonesmith",
+											"dialog_title": "Send a Bonesmith",
+											"text": "Select a Bonesmith (Level 3+) to help Clan Amberstone."
+										},
+										"borrow_quest_earthmaster": {
+											"title": "Send an Earthmaster",
+											"dialog_title": "Send an Earthmaster",
+											"text": "Select an Earthmaster (Level 3+) to help Clan Amberstone."
+										},
+										"borrow_quest_shaman": {
+											"title": "Send a Shaman",
+											"dialog_title": "Send a Shaman",
+											"text": "Select a Shaman (Level 3+) to help Clan Amberstone."
+										}
+									},
+									"20_partnership": {
+										"20_partnership_intro": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"msg1": {
+														"bulletin_message": {
+															"00": "Sasha Lightfoot approaches, a small load-bearing stone insect bobbling along behind him. \"Friends! Not long ago, my kind were afraid of you kin of Snake, but you have dissolved our purposeless trepidation! We have found in you a dependable ally in the aboveground!\""
+														}
+													}
+												}
+											}
+										}
+									},
+									"30_geomancy": {
+										"30_geomancy_intro": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"msg1": {
+														"bulletin_message": {
+															"00": "\"My dear goblin friends! It has been generations since we Lapine have found an ally as trustworthy as you. We have decided to offer you a precious gift.\"<br><br>\"We would like to bring one of your own into our warren for a time, to teach them the art of Geomancy.\"<br><br>\"Do you understand how vital Geomancy is to us, of the history of my kind and of Clan Amberstone?\""
+														}
+													},
+													"story1": {
+														"bulletin_message": {
+															"00": "Sasha nods sagely. \"This world of Hearth is ruled by the Heavenly Cycles. Each eon brings a different entity to Ascendance, who raises their own kind to an evolved state.\"<br><br>\"Monkey is in Ascendance now, giving Humans form and cleverness. Snake was before. Rabbit before that; long ago, but you can find our statues dotting the landscape even now.\""
+														}
+													}
+												}
+											}
+										}
+									},
+									"40_recipe_sharing": {
+										"40_recipe_sharing_intro": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"accept": {
+														"bulletin_message": {
+															"00": "\"Splendid! I think even a novice Bonesmith and Earthmaster would work just fine, so long as they're receptive to teaching. It shouldn't take more than two days.\""
+														}
+													},
+													"reject2": {
+														"bulletin_message": {
+															"00": "\"Hum. Well, I suppose maybe I still have much to learn about goblin aesthetics after all...\""
+														}
+													},
+													"msg1": {
+														"bulletin_message": {
+															"00": "\"Kind greetings, goblin friends! I was struck by an idea after watching your crafters at work - how would you like to send a Bonesmith and an Earthmaster down to our warren for a few days, to learn our various crafting recipes and techniques?\""
+														}
+													}
+												}
+											}
+										},
+										"40_recipe_sharing_quest": {
+											"text": "Select a Bonesmith and Earthmaster (Levels 1+) to go learn Amberstone recipes"
+										},
+										"40_recipe_sharing_outro": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"msg1": {
+														"bulletin_message": {
+															"00": "Your venturing Bonesmith and Earthmaster have returned, with knowledge of all sorts of Rabbit recipes!<br><br>\"I must say, your citizens shared tales of mushroom recipes with us. I simply must try it sometime...\""
+														}
+													}
+												}
+											}
+										},
+										"40_grant_recipes_earthmaster": {
+											"bulletin_title": "Amberstone Earthmaster recipes unlocked!"
+										},
+										"40_grant_recipes_bonesmith": {
+											"bulletin_title": "Amberstone Bonesmith recipes unlocked!"
+										}
+									},
+									"50_titan":{
+										"50_titan_dialog": {
+											"dialog_tree_info": {
+												"dialog_nodes": {
+													"greet": {
+														"bulletin_message": {
+															"00": "\"Dear friends of the Snake, I bring greetings and well wishes from the twenty-third warren of Amberstone.\"<br><br>\"I have a… momentous favor to ask of you, but I think perhaps you lack the context to understand it. Am I right that the human history of the Phoenix Empire became lost after the cataclysm?\""
+														}
+													},
+													"story5": {
+														"bulletin_message": {
+															"00": "\"Humans, sensible, fled; to the coasts, to the northern mountains. Only recently have they started to build inwards again. Orcs, stubborn, stayed and fought the corruptions, fought the apparitions of a natural world brought to anger, defending the lands abandoned by the humans. And we Lapine, already underground, were content to wait.\"<br><br>\"But as the evil energies settled, they embedded in the ground, drawn downwards towards the source of Hearth’s magic. These fragments absorb that magic, slowly gaining strength over generations, congealing into malevolent aspects which we have come to call ‘Titans’.\""
+														}
+													},
+													"favor2": {
+														"bulletin_message": {
+															"00": "\"First, I will need to borrow some of your citizens: One experienced Earthmaster to double-check our work and help with reinforcement, plus three other citizens of your choosing to... help reach the tall parts.\"<br><br>\"With that complete, we will return with the weapon, and once you have prepared, we will use it to summon, attack, and destroy the Titan. The attack may take some significant time, so you should prepare for a siege.\"<br><br>\"I should say... this evil is of no <i>immediate</i> threat to you. This is a task to benefit your people's children, and mine.\""
+														}
+													}
+												}
+											}
+										},
+										"50_titan_weapon_quest": {
+											"text": "Choose an Earthmaster (Lv4), plus any three other citizens to help Clan Amberstone"
+										}
+									},
+									"titan_already_killed_dialog": {
+										"dialog_tree_info": {
+											"dialog_nodes": {
+												"greet": {
+													"bulletin_message": {
+														"00": "\"Hello again, my friends of the Snake! I hope this day finds you at peace.<br><br>Honorable Goblins, I... have a confession to make.\""
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
 				"trader": {
 					"arcs": {
 						"encounters": {
@@ -1010,6 +1260,7 @@
 				"description": "Only simple tasks should be done here"
 			},
 			"recipes": {
+				"amberstone": "Amberstone Items",
 				"signs": "Signs"
 			},
 			"weaving_table": {
@@ -1067,6 +1318,7 @@
 				"description": "For making symmetrical clay goods"
 			},
 			"recipes":{
+				"amberstone":"Amberstone Items",
 				"gizmos":"Gizmos",
 				"reclaim":"Reclaim",
 				"burn":{

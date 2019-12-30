@@ -1,0 +1,27 @@
+{
+	"mixins": "/stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/30_geomancy/30_geomancy_intro.json",
+	"in_edge": "30_geomancy_intro_firefly",
+	"dialog_tree_info": {
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.30_geomancy.30_geomancy_intro.dialog_tree_info.dialog_nodes.msg1.bulletin_message.00)"
+				}
+			},
+			"story1": {
+				"bulletin": {
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.30_geomancy.30_geomancy_intro.dialog_tree_info.dialog_nodes.story1.bulletin_message.00)"
+				}
+			},
+			"accept": {
+				"bulletin": {
+					"choices": {
+						"stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.30_geomancy.30_geomancy_intro.dialog_tree_info.dialog_nodes.accept.choice_000": {
+							"out_edge": "30_geomancy_quest_firefly"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"can_start": {
+		"firefly_a": {
+			"stage": {
+				"type": "deny_if_less_than",
+				"item": "counter",
+				"key": "stage",
+				"value": 20
+			},
+			"crafter": {
+				"item": "highest_job_level",
+				"type": "deny_if_less_than",
+				"value": 3,
+				"job_alias": "swamp_goblins:jobs:shaman"
+			}
+		},
+		"firefly_b": {
+			"stage": {
+				"type": "deny_if_less_than",
+				"item": "counter",
+				"key": "stage",
+				"value": 20
+			},
+			"crafter": {
+				"item": "highest_job_level",
+				"type": "deny_if_less_than",
+				"value": 3,
+				"job_alias": "swamp_goblins:jobs:bonesmith"
+			}
+		},
+		"firefly_c": {
+			"stage": {
+				"type": "deny_if_less_than",
+				"item": "counter",
+				"key": "stage",
+				"value": 20
+			},
+			"crafter": {
+				"item": "highest_job_level",
+				"type": "deny_if_less_than",
+				"value": 3,
+				"job_alias": "swamp_goblins:jobs:earthmaster"
+			}
+		}
+	},
+	"out_edge": {
+		"out_edges": [
+			"borrow_intro_trapper_firefly",
+			"borrow_intro_shaman",
+			"borrow_intro_bonesmith",
+			"borrow_intro_earthmaster"
+		]
+	}
+}

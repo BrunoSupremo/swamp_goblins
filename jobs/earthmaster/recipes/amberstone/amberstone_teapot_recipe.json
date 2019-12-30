@@ -1,0 +1,31 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 6,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.amberstone_teapot_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.amberstone_teapot_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.mason.recipes.amberstone_teapot_recipe.flavor)",
+	"portrait": "/stonehearth/entities/decoration/amberstone_teapot/amberstone_teapot.png",
+	"workshop": "stonehearth:mason:workbench",
+	"level_requirement": 5,
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		},
+		{
+			"uri": "stonehearth:refined:gold_flakes",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:decoration:amberstone_teapot"
+		}
+	]
+}

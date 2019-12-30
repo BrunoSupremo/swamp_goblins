@@ -1,0 +1,28 @@
+{
+	"mixins": "/stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/40_recipe_sharing/40_recipe_sharing_intro.json",
+	"in_edge": "40_recipe_sharing_intro_firefly",
+	"dialog_tree_info": {
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.40_recipe_sharing.40_recipe_sharing_intro.dialog_tree_info.dialog_nodes.msg1.bulletin_message.00)"
+				}
+			},
+			"accept": {
+				"bulletin": {
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.40_recipe_sharing.40_recipe_sharing_intro.dialog_tree_info.dialog_nodes.accept.bulletin_message.00)",
+					"choices": {
+						"stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.40_recipe_sharing.40_recipe_sharing_intro.dialog_tree_info.dialog_nodes.accept.choice_000": {
+							"out_edge": "40_recipe_sharing_quest_firefly"
+						}
+					}
+				}
+			},
+			"reject2": {
+				"bulletin": {
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.40_recipe_sharing.40_recipe_sharing_intro.dialog_tree_info.dialog_nodes.reject2.bulletin_message.00)"
+				}
+			}
+		}
+	}
+}

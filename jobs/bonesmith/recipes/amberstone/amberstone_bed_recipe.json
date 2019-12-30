@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth:jobs.weaver.recipes.amberstone_bed_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.weaver.recipes.amberstone_bed_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.amberstone_bed_recipe.flavor)",
+	"portrait": "/stonehearth/entities/furniture/amberstone_bed/amberstone_bed.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"level_requirement": 3,
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 7
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:furniture:amberstone_bed"
+		}
+	]
+}

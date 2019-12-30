@@ -1,0 +1,14 @@
+{
+	"mixins": "/stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/30_geomancy/30_geomancy_set_stage.json",
+	"in_edge": "30_geomancy_set_stage_firefly",
+	"out_edge": "30_geomancy_intro_firefly",
+	"can_start": {
+		"all_tests": {
+			"firefly_check": {
+				"type": "deny_if_not",
+				"item": "kingdom",
+				"value": "swamp_goblins:kingdoms:firefly_clan"
+			}
+		}
+	}
+}

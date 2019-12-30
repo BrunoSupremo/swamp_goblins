@@ -257,6 +257,33 @@
 					"recipe": "file(reclaim/clay/fence_recipe.json)"
 				}
 			}
+		},
+		"amberstone": {
+			"ordinal": 110,
+			"name": "i18n(swamp_goblins:jobs.earthmaster.recipes.amberstone)",
+			"recipes": {
+				"mason_pedestal_amberstone": {
+					"recipe": "file(amberstone/mason_pedestal_amberstone_recipe.json)"
+				},
+				"output_box_amberstone": {
+					"recipe": "file(amberstone/output_box_amberstone_recipe.json)"
+				},
+				"amberstone_tunnel_door": {
+					"recipe": "file(amberstone/amberstone_tunnel_door_recipe.json)"
+				},
+				"amberstone_window": {
+					"recipe": "file(amberstone/amberstone_window_recipe.json)"
+				},
+				"amberstone_table": {
+					"recipe": "file(amberstone/amberstone_table_recipe.json)"
+				},
+				"amberstone_teapot": {
+					"recipe": "file(amberstone/amberstone_teapot_recipe.json)"
+				},
+				"amberstone_lantern": {
+					"recipe": "file(amberstone/amberstone_lantern_recipe.json)"
+				}
+			}
 		}
 	}
 }

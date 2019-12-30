@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 10,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.amberstone_window_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.amberstone_window_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.mason.recipes.amberstone_window_recipe.flavor)",
+	"portrait": "/stonehearth/entities/construction/amberstone_window/amberstone_window.png",
+	"workshop": "stonehearth:mason:workbench",
+	"level_requirement": 3,
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:portals:amberstone_window"
+		}
+	]
+}

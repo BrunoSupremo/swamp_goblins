@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 25,
+	"work_units": 4,
+	"recipe_name": "i18n(stonehearth:jobs.weaver.recipes.input_bin_amberstone_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.weaver.recipes.input_bin_amberstone_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.input_bin_amberstone_recipe.flavor)",
+	"portrait": "/stonehearth/entities/containers/input_bin_amberstone/input_bin_amberstone.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"level_requirement": 4,
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 4
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:containers:input_bin:amberstone"
+		}
+	]
+}

@@ -230,6 +230,30 @@
 					"recipe": "file(signs/sign_varanus_recipe.json)"
 				}
 			}
+		},
+		"amberstone": {
+			"ordinal": 70,
+			"name": "i18n(swamp_goblins:jobs.bonesmith.recipes.amberstone)",
+			"recipes": {
+				"amberstone_bed": {
+					"recipe": "file(amberstone/amberstone_bed_recipe.json)"
+				},
+				"amberstone_chair": {
+					"recipe": "file(amberstone/amberstone_chair_recipe.json)"
+				},
+				"input_bin_amberstone": {
+					"recipe": "file(amberstone/input_bin_amberstone_recipe.json)"
+				},
+				"amberstone_chest": {
+					"recipe": "file(amberstone/amberstone_chest_recipe.json)"
+				},
+				"amberstone_painting_branch": {
+					"recipe": "file(amberstone/amberstone_painting_branch_recipe.json)"
+				},
+				"amberstone_mat": {
+					"recipe": "file(amberstone/amberstone_mat_recipe.json)"
+				}
+			}
 		}
 	}
 }

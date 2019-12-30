@@ -1,7 +1,13 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.12.15")
+print("Swamp Goblins Mod version 19.12.30")
 
 --[[
+enable crafter buttons through js
+
+connect equivalent workbenches
+
+Wait gobbos can't chop wood?
+
 import hearthlings
 move travel to earthmaster
 

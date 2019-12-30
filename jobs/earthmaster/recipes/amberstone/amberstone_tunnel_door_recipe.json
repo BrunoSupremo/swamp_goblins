@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 20,
+	"work_units": 6,
+	"recipe_name": "i18n(stonehearth:jobs.mason.recipes.amberstone_tunnel_door_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.amberstone_tunnel_door_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.mason.recipes.amberstone_tunnel_door_recipe.flavor)",
+	"portrait": "/stonehearth/entities/construction/amberstone_tunnel_door/amberstone_tunnel_door.png",
+	"workshop": "stonehearth:mason:workbench",
+	"level_requirement": 3,
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:portals:amberstone_tunnel_door"
+		}
+	]
+}

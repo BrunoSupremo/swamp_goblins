@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 10,
+	"recipe_name": "i18n(stonehearth:jobs.weaver.recipes.amberstone_chest_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.weaver.recipes.amberstone_chest_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.amberstone_chest_recipe.flavor)",
+	"portrait": "/stonehearth/entities/containers/amberstone_chest/amberstone_chest.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"level_requirement": 3,
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 4
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:containers:amberstone_chest"
+		}
+	]
+}

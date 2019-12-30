@@ -30,7 +30,11 @@ function FireflyGoblin:update_job_list()
 			firefly_job_list[alias] = true
 		end
 	end
-	self._entity:get_component("stonehearth:job"):set_allowed_jobs(firefly_job_list)
+	local job_comp = self._entity:get_component("stonehearth:job")
+	if job_comp and job_comp:get_job_uri() then
+		firefly_job_list[job_comp:get_job_uri()] = true
+	end
+	job_comp:set_allowed_jobs(firefly_job_list)
 end
 
 return FireflyGoblin

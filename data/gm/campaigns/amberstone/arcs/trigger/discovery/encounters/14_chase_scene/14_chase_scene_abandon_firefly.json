@@ -1,0 +1,25 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "14_chase_scene_abandon_firefly",
+	"dialog_tree_info": {
+		"start_node": "leave",
+		"use_ctx_portrait": true,
+		"nodes": {
+			"leave": {
+				"bulletin": {
+					"title": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.14_chase_scene.14_chase_scene_intro.dialog_tree_info.dialog_nodes.leave.bulletin_title)",
+					"dialog_title": "i18n(stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.14_chase_scene.14_chase_scene_intro.dialog_tree_info.dialog_nodes.leave.dialog_title)",
+					"portrait": "$ctx",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.14_chase_scene.14_chase_scene_intro.dialog_tree_info.dialog_nodes.leave.bulletin_message.00)",
+					"choices": {
+						"stonehearth:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.14_chase_scene.14_chase_scene_intro.dialog_tree_info.dialog_nodes.leave.choice_000": {
+							"out_edge": "quest_finish"
+						}
+					}
+				}
+			}
+		}
+	}
+}
