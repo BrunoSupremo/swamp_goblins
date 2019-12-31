@@ -34,6 +34,12 @@
 		}
 	},
 	"entity_data": {
+		"stonehearth:workshop": {
+			"equivalents": [
+				"stonehearth:cook:workbench",
+				"stonehearth:herbalist:workbench"
+			]
+		},
 		"stonehearth:table": {
 			"drop_effect": "carry_putdown_on_table",
 			"drop_offset": { "x": 0, "y": 0.9, "z": -0.9 }

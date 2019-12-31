@@ -455,6 +455,19 @@
 
 		"stonehearth:building_templates:index": "file(data/saved_objects/building_templates_index.json)",
 
+		"stonehearth:blacksmith:forge":			"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
+		"stonehearth:blacksmith:workbench":		"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
+		"stonehearth:carpenter:toolbench":		"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
+		"stonehearth:carpenter:workbench":		"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
+		"stonehearth:cook:workbench":			"file(jobs/shaman/shaman_workbench/equivalents.json)",
+		"stonehearth:herbalist:workbench":		"file(jobs/shaman/shaman_workbench/equivalents.json)",
+		"stonehearth:mason:pedestal":			"file(jobs/earthmaster/mason_pedestal/equivalents.json)",
+		"stonehearth:mason:workbench":			"file(jobs/earthmaster/mason_pedestal/equivalents.json)",
+		"stonehearth:potter:kiln":				"file(jobs/earthmaster/potter_kiln/equivalents.json)",
+		"stonehearth:potter:workbench":			"file(jobs/earthmaster/potter_workbench/equivalents.json)",
+		"stonehearth:weaver:workbench":			"file(jobs/bonesmith/weaving_table/equivalents.json)",
+		"stonehearth_ace:mason:workbench_bone":	"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
+
 		"stonehearth:data:constants": "file(data/constants.json)",
 
 		"stonehearth:data:gm_index": "swamp_goblins:data:gm_index",
@@ -525,8 +538,6 @@
 		"stonehearth/jobs/geomancer/recipes/geomancer_recipes.json":"file(jobs/geomancer/recipes)",
 
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
-
-		"stonehearth_ace:mason:workbench_bone":"file(jobs/bonesmith/ace_workbench_bone)",
 
 		"stonehearth:personal_logs:dreams": "file(data/personality/dreams.json)",
 

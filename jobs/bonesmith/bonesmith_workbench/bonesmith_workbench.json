@@ -28,6 +28,12 @@
 		}
 	},
 	"entity_data": {
+		"stonehearth:workshop": {
+			"equivalents": [
+				"stonehearth:carpenter:workbench",
+				"stonehearth:carpenter:toolbench"
+			]
+		},
 		"stonehearth:table": {
 			"drop_effect": "carry_putdown_on_table",
 			"drop_offset": { "x": 0.5, "y": 1, "z": 0.5 }
