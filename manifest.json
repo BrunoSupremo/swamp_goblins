@@ -375,6 +375,8 @@
 		"summons:trap":			"file(entities/summons/trap)",
 		"summons:warrior_hearth:goblin_spirit":"file(entities/summons/warrior_hearth/goblin_spirit.json)",
 
+		"terrain:water_negative_pathfind":"file(entities/terrain/water_negative_pathfind)",
+
 		"traits_index": "file(data/traits/traits_index.json)",
 		"traits:firefly_chaser":	"file(data/traits/firefly_chaser)",
 		"traits:frog_companion":	"file(data/traits/frog_companion)",
@@ -624,7 +626,6 @@
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)",
 		"warrior_hearth":			"file(components/warrior_hearth/warrior_hearth.lua)",
-		"water":					"file(components/water/water.lua)",
 		"weather_stone":			"file(components/weather_stone/weather_stone.lua)"
 	},
 	"overrides": {

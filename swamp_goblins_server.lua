@@ -1,13 +1,10 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 19.12.30")
+print("Swamp Goblins Mod version 20.1.1")
 
 --[[
-Wait gobbos can't chop wood?
 
 import hearthlings
 move travel to earthmaster
-
-shaman needs to craft pet food for the trappers pets, bug meat?
 
 mosquito model
 banner shred
@@ -16,7 +13,10 @@ swamp slimes
 varanus/mobs repelent
 bug nests to attack eggs
 
-add ace tools and tools upgrades
+ace stuff:
+	add ace tools and tools upgrades
+	Wait gobbos can't chop wood?
+	shaman needs to craft pet food for the trappers pets, bug meat?
 
 contruction:
 	door, double door
@@ -108,6 +108,10 @@ function swamp_goblins:_on_biome_set(e)
 	local custom_micro_map_generator = require('services.server.world_generation.custom_micro_map_generator')
 	local micro_map_generator = radiant.mods.require('stonehearth.services.server.world_generation.micro_map_generator')
 	radiant.mixin(micro_map_generator, custom_micro_map_generator)
+
+	local custom_world_generation_service = require('services.server.world_generation.custom_world_generation_service')
+	local world_generation_service = radiant.mods.require('stonehearth.services.server.world_generation.world_generation_service')
+	radiant.mixin(world_generation_service, custom_world_generation_service)
 end
 
 radiant.events.listen_once(radiant, 'radiant:services:init', swamp_goblins, swamp_goblins._on_services_init)
