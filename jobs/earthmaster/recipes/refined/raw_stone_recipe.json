@@ -1,0 +1,32 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 8,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.recipes.raw_stone.display_name)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.recipes.raw_stone.description)",
+	"flavor": "i18n(swamp_goblins:jobs.earthmaster.recipes.raw_stone.flavor)",
+	"portrait": "/stonehearth/entities/resources/stone/stone.png",
+	"workshop": "swamp_goblins:earthmaster:potter_kiln",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		},
+		{
+			"material": "chitin resource",
+			"count": 9
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:resources:stone:hunk_of_stone"
+		},
+		{
+			"item": "stonehearth:resources:stone:hunk_of_stone"
+		},
+		{
+			"item": "stonehearth:resources:stone:hunk_of_stone"
+		}
+	]
+}

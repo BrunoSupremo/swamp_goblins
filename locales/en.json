@@ -1356,6 +1356,11 @@
 					"furniture":"Break Clay Furniture",
 					"portal":	"Break Clay Door",
 					"window":	"Break Clay Window"
+				},
+				"raw_stone":{
+					"display_name":"Raw Stone (x3)",
+					"description":"A mix of clay and chitin powder heated up to rock hard",
+					"flavor":""
 				}
 			}
 		},
@@ -1545,6 +1550,8 @@
 	"ui": {
 		"data":{
 			"constants":{
+				"chitin_resource":"Any Chitin",
+
 				"clay_decoration":"Any Clay Decoration",
 				"clay_fence":"Any Clay Fence",
 				"clay_furniture":"Any Clay Furniture",

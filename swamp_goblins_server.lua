@@ -1,7 +1,8 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.1.1")
+print("Swamp Goblins Mod version 20.1.2")
 
 --[[
+check candledark compatibility
 
 import hearthlings
 move travel to earthmaster

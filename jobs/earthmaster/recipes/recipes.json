@@ -181,6 +181,9 @@
 			"ordinal": 80,
 			"name": "i18n(stonehearth:jobs.mason.recipes.refined_name)",
 			"recipes": {
+				"raw_stone": {
+					"recipe": "file(refined/raw_stone_recipe.json)"
+				},
 				"gold_flakes": {
 					"recipe": "file(refined/gold_flakes_recipe.json)"
 				},

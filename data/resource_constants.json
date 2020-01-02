@@ -7,6 +7,11 @@
 			"builder_sound_uri": "stonehearth:sounds:building_wall_wood",
 			"tooltip": "swamp_goblins:ui.game.build_mode2.tooltips.fiber_resource"
 		},
+		"chitin resource": {
+			"name": "i18n(swamp_goblins:ui.data.constants.chitin_resource)",
+			"icon": "/stonehearth/entities/resources/chitin/beetle_chitin/beetle_chitin.png",
+			"default_resource": "stonehearth:resources:beetle_chitin"
+		},
 
 		"wood stockpile_decoration": {
 			"name": "i18n(swamp_goblins:ui.data.constants.wood_decoration)",
