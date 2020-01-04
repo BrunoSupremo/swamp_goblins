@@ -1,8 +1,19 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.1.2")
+print("Swamp Goblins Mod version 20.1.4")
 
 --[[
-check candledark compatibility
+
+tower defense:
+	each class as a tower
+		worker is base tower
+		warrior is high damage, single target
+		shaman poison
+		spirit walker reveals invisible mobs
+		trapper slow down
+		beast tamer multi target
+		bonesmith buff
+		earthmaster wound
+	egg is a tower that randomly transforms to another tower after a turn
 
 import hearthlings
 move travel to earthmaster

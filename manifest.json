@@ -584,6 +584,8 @@
 		"rayyas_children:worker:outfit":	"file(jobs/worker/worker_outfit)",
 		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)",
 
+		"candledark:buffs:plagued":"file(modding_mods/candledark/plagued.json)",
+
 		"tower_defense/data/compatible_mods.json": "file(data/compatible_mods.json)",
 		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)",
 
@@ -630,6 +632,8 @@
 	},
 	"overrides": {
 		"stonehearth:actions:material_to_filter_fn": "file(ai/actions/fixed_material_to_filter_fn_action.lua)",
+
+		"candledark/data/buffs/plagued/plagued.lua":"file(modding_mods/candledark/plagued.lua)",
 
 		"stonehearth/data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json":"file(data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json)",
 		"stonehearth/data/rigs/entities/humans/effects/dart_tube.json":"file(data/rigs/entities/humans/effects/dart_tube.json)",
