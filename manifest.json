@@ -89,6 +89,9 @@
 		"buff_scripts:rage_over_time":	"file(data/buffs/rage_over_time/rage_over_time.lua)",
 		"buff_scripts:poison":			"file(data/buffs/poison/poison.lua)",
 
+		"buffs:tower:egg":"file(tower_defense/data/buffs/egg)",
+		"buffs:tower:egg_hatch":"file(tower_defense/data/buffs/egg/egg_hatch.json)",
+
 		"build:brushes:pattern:fiber_diagonal":	"file(data/build/brushes/pattern/fiber_diagonal.qb)",
 		"build:brushes:pattern:fiber_checker":	"file(data/build/brushes/pattern/fiber_checker.qb)",
 		"build:brushes:wall:white_stripes":		"file(data/build/brushes/wall/white_stripes.qb)",
@@ -294,12 +297,13 @@
 		"mixins:sign:stone_ghost":	"file(mixins/sign/stone_ghost.json)",
 		"mixins:sign:stone_recipe":	"file(mixins/sign/stone_recipe.json)",
 
-		"monsters:bear":							"file(entities/monsters/bear)",
-		"monsters:doodles_egg_raider":				"file(entities/monsters/doodles_egg_raider)",
-		"monsters:forest:bear:teeth_weapon":		"file(entities/monsters/bear/bear_teeth.json)",
-		"monsters:forest:bear:weak_teeth_weapon":	"file(entities/monsters/bear/weak_bear_teeth.json)",
-		"monsters:mosquito_cloud":					"file(entities/monsters/mosquito_cloud)",
-		"monsters:varanus_nest":					"file(entities/monsters/varanus_nest)",
+		"monsters:bear":					"file(entities/monsters/bear)",
+		"monsters:doodles_egg_raider":		"file(entities/monsters/doodles_egg_raider)",
+		"monsters:bear:teeth_weapon":		"file(entities/monsters/bear/bear_teeth.json)",
+		"monsters:bear:weak_teeth_weapon":	"file(entities/monsters/bear/weak_bear_teeth.json)",
+		"monsters:mosquito_cloud":			"file(entities/monsters/mosquito_cloud)",
+		"monsters:varanus":					"file(entities/monsters/varanus_nest/varanus.json)",
+		"monsters:varanus_nest":			"file(entities/monsters/varanus_nest)",
 
 		"monster_tuning:forest:easy_bear":	"file(data/monster_tuning/forest/easy_bear.json)",
 		"monster_tuning:forest:medium_bear":"file(data/monster_tuning/forest/medium_bear.json)",
@@ -435,7 +439,38 @@
 		"weather:foggy": "file(data/weather/foggy)",
 		"sky_settings:foggy": "file(data/weather/foggy/foggy_sky_settings.json)",
 
-		"worker:abilities:goblin":"file(jobs/worker/goblin_worker_abilities.json)"
+		"worker:abilities:goblin":"file(jobs/worker/goblin_worker_abilities.json)",
+
+		"data:kingdom_level_costs:firefly_clan":"file(tower_defense/data/kingdoms/level_costs/firefly_clan.json)",
+		"towers:beast_tamer":	"file(tower_defense/towers/beast_tamer)",
+		"towers:bonesmith":		"file(tower_defense/towers/bonesmith)",
+		"towers:earthmaster":	"file(tower_defense/towers/earthmaster)",
+		"towers:shaman":		"file(tower_defense/towers/shaman)",
+		"towers:spirit_walker":	"file(tower_defense/towers/spirit_walker)",
+		"towers:trapper":		"file(tower_defense/towers/trapper)",
+		"towers:warrior":		"file(tower_defense/towers/warrior)",
+		"towers:worker":		"file(tower_defense/towers/worker)",
+		"towers:egg":	"file(tower_defense/towers/egg.json)",
+		"towers:beast_tamer:weapon":	"file(tower_defense/towers/beast_tamer/weapon.json)",
+		"towers:bonesmith:weapon":		"file(tower_defense/towers/bonesmith/weapon.json)",
+		"towers:earthmaster:weapon":	"file(tower_defense/towers/earthmaster/weapon.json)",
+		"towers:shaman:weapon":			"file(tower_defense/towers/shaman/weapon.json)",
+		"towers:spirit_walker:weapon":	"file(tower_defense/towers/spirit_walker/weapon.json)",
+		"towers:trapper:weapon":		"file(tower_defense/towers/trapper/weapon.json)",
+		"towers:warrior:weapon":		"file(tower_defense/towers/warrior/weapon.json)",
+		"towers:worker:weapon":			"file(tower_defense/towers/worker/weapon.json)",
+		"towers:beast_tamer:weapon_damage":		"file(tower_defense/towers/beast_tamer/weapon_damage.json)",
+		"towers:beast_tamer:weapon_utility":	"file(tower_defense/towers/beast_tamer/weapon_utility.json)",
+		"towers:bonesmith:weapon_damage":		"file(tower_defense/towers/bonesmith/weapon_damage.json)",
+		"towers:bonesmith:weapon_utility":		"file(tower_defense/towers/bonesmith/weapon_utility.json)",
+		"towers:earthmaster:weapon_damage":		"file(tower_defense/towers/earthmaster/weapon_damage.json)",
+		"towers:earthmaster:weapon_utility":	"file(tower_defense/towers/earthmaster/weapon_utility.json)",
+		"towers:spirit_walker:weapon_damage":	"file(tower_defense/towers/spirit_walker/weapon_damage.json)",
+		"towers:spirit_walker:weapon_utility":	"file(tower_defense/towers/spirit_walker/weapon_utility.json)",
+		"towers:trapper:weapon_damage":			"file(tower_defense/towers/trapper/weapon_damage.json)",
+		"towers:trapper:weapon_utility":		"file(tower_defense/towers/trapper/weapon_utility.json)",
+		"towers:warrior:weapon_damage":			"file(tower_defense/towers/warrior/weapon_damage.json)",
+		"towers:warrior:weapon_utility":		"file(tower_defense/towers/warrior/weapon_utility.json)",
 	},
 	"deprecated_aliases":{
 		"furniture:mush_chair":		"file(entities/gizmos/deprecated)",
@@ -452,6 +487,8 @@
 	},
 	"mixintos" :  {
 		"stonehearth:biome:index": "file(data/biome/index.json)",
+
+		"candledark:buffs:plagued":"file(candledark/plagued.json)",
 
 		"stonehearth:build:brushes" : "file(data/build/building_brushes.json)",
 
@@ -578,16 +615,16 @@
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
 
+		"stonehearth_ace/ui/data/season_icons.json":"file(ui/data/season_icons.json)",
+
 		"stonehearth:geomancer:outfit":	"file(jobs/geomancer/geomancer_outfit)",
+		"stonehearth_ace/jobs/geomancer/geomancer_outfit/geomancer_outfit_hat/geomancer_outfit_hat.json":"file(jobs/geomancer/geomancer_outfit/geomancer_outfit_hat.json)",
 		"stonehearth:trapper:outfit":	"file(jobs/trapper/trapper_outfit)",
 		"stonehearth:worker:outfit":		"file(jobs/worker/worker_outfit)",
 		"rayyas_children:worker:outfit":	"file(jobs/worker/worker_outfit)",
 		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)",
 
-		"candledark:buffs:plagued":"file(modding_mods/candledark/plagued.json)",
-
-		"tower_defense/data/compatible_mods.json": "file(data/compatible_mods.json)",
-		"tower_defense/manifest.json":	"file(modding_mods/tower_defense/manifest.json)",
+		"tower_defense/manifest.json":	"file(tower_defense/manifest.json)",
 
 		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
@@ -633,7 +670,7 @@
 	"overrides": {
 		"stonehearth:actions:material_to_filter_fn": "file(ai/actions/fixed_material_to_filter_fn_action.lua)",
 
-		"candledark/data/buffs/plagued/plagued.lua":"file(modding_mods/candledark/plagued.lua)",
+		"candledark/data/buffs/plagued/plagued.lua":"file(candledark/plagued.lua)",
 
 		"stonehearth/data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json":"file(data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json)",
 		"stonehearth/data/rigs/entities/humans/effects/dart_tube.json":"file(data/rigs/entities/humans/effects/dart_tube.json)",

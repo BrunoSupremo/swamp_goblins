@@ -1078,6 +1078,10 @@
 			}
 		},
 		"summons": {
+			"dragon_aura": {
+				"display_name": "Dragon Spirit",
+				"description": "Ancient Dragon from older times"
+			},
 			"big_g": {
 				"display_name": "Big G",
 				"description": "Beloved and playful, helped his generation through tough times"
@@ -1089,6 +1093,10 @@
 			"goblin_spirit": {
 				"display_name": "Goblin Spirit",
 				"description": "An old ancestor summoned back"
+			},
+			"poyo":{
+				"display_name": "Four Feathers Member",
+				"description": "Elite Poyo summoned to help in the fight"
 			},
 			"trap": {
 				"display_name": "Trap",
@@ -1189,7 +1197,7 @@
 		"beast_tamer": {
 			"beast_tamer_description": {
 				"display_name": "Beast Tamer",
-				"description": "Summon and order animals into fight",
+				"description": "Summon and controls animals in battle",
 				"requirements": "Crafted by Carpenter",
 				"goblin_requirements": "Crafted by Shaman",
 				"level_1_data": {

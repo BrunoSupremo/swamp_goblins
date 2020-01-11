@@ -1,0 +1,47 @@
+{
+	"type": "entity",
+	"components": {
+		"stonehearth:equipment_piece": {
+			"military_score": 1,
+			"slot": "mainhand",
+			"render_type": "none"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"category": "tower_weapon",
+			"display_name": "i18n(tower_defense:entities.towers.air_102.weapon.display_name)",
+			"description": "i18n(tower_defense:entities.towers.air_102.weapon.description)"
+		},
+		"stonehearth:combat:weapon_data": {
+			"targeting": {
+				"type": "circle",
+				"radius": 5,
+				"attacks_ground": true,
+				"attacks_air": true,
+				"reveals_invis": false,
+				"defaults": "focus_end"
+			}
+		},
+		"stonehearth:combat:ranged_attacks": [
+			{
+				"name": "air_102",
+				"effect": "tower_defense:effects:air_particles",
+				"base_damage": 200,
+				"damage_type": "pure",
+				"projectile": {
+					"speed": 20,
+					"uri": "stonehearth:weapons:bullet",
+					"scale_mult": 0.5,
+					"start_offset": { "x": 0, "y": 0.6, "z": 0 },
+					"end_offset": { "x": 0, "y": 1, "z": 0 }
+				},
+				"attack_times": [
+					500
+				],
+				"cooldown": 1500,
+				"priority": 0
+			}
+		]
+	}
+}

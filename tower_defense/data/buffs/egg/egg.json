@@ -1,0 +1,10 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"script": "tower_defense:buff_scripts:wave_end_add_buff",
+	"invisible_to_player": true,
+	"persistent": true,
+	"script_info": {
+		"buff_to_add": "swamp_goblins:buffs:tower:egg_hatch"
+	}
+}

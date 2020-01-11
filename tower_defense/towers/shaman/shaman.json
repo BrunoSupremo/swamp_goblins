@@ -1,0 +1,75 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 0.9, "z": 1 }
+				}
+			],
+			"region_collision_type": "none"
+		},
+		"stonehearth:attributes": {
+			"additive_dmg_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"multiplicative_dmg_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"multiplicative_cooldown_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"multiplicative_target_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_target_armor_modifier": {
+				"type": "basic",
+				"value": 0
+			},
+			"accuracy": {
+				"type": "basic",
+				"value": 1
+			}
+		},
+		"render_info": {
+			"scale": 0.1
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(shaman.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.1, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"tower_defense:tower": {
+			"default_weapon": "swamp_goblins:towers:shaman:weapon"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"category": "tower",
+			"display_name": "i18n(swamp_goblins:entities.towers.shaman.display_name)",
+			"description": "i18n(swamp_goblins:entities.towers.shaman.description)",
+			"icon": "/swamp_goblins/jobs/shaman/images/icon.png",
+			"material_tags": ["ground"]
+		},
+		"tower_defense:tower_data": {
+			"kingdoms": ["firefly_clan"],
+			"level": 1,
+			"ordinal": 103,
+			"cost": {
+				"gold": 45
+			}
+		}
+	}
+}

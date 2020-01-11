@@ -99,10 +99,18 @@
 		},
 		"stonehearth:social": {},
 		"stonehearth:conversation": {},
-		"stonehearth:subject_matter": {}
+		"stonehearth:subject_matter": {},
+		"stonehearth:commands": {
+			"mixintypes": {
+				"commands": "override"
+			},
+			"commands": []
+		}
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.summons.poyo.display_name)",
+			"description": "i18n(swamp_goblins:entities.summons.poyo.description)",
 			"category": "beast_tamer_summon"
 		},
 		"mixintypes": {
