@@ -1,0 +1,30 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(bongo.qb)"
+						]
+					}
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.music.bongo.display_name)",
+			"description": "i18n(swamp_goblins:entities.music.bongo.description)",
+			"icon": "file(bongo.png)",
+			"category": "decoration",
+			"material_tags": ["firefly_made", "wood", "fiber", "music", "decoration", "stockpile_decoration"]
+		}
+	}
+}

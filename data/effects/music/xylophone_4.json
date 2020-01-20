@@ -1,0 +1,18 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"sound": {
+			"type": "sound_effect",
+			"start_time": 0,
+			"duration": 4000,
+			"volume": 80,
+			"track" : {
+				"type": "one_of",
+				"items": [
+					"swamp_goblins:sounds:xylophone_2",
+					"swamp_goblins:sounds:xylophone_3"
+				]
+			}
+		}
+	}
+}

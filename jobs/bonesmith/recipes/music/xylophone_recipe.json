@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.music.xylophone.display_name)",
+	"description": "i18n(swamp_goblins:entities.music.xylophone.description)",
+	"flavor": "i18n(swamp_goblins:entities.music.xylophone.flavor)",
+	"portrait": "/swamp_goblins/entities/music/xylophone/xylophone.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 2
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:music:xylophone"
+		}
+	]
+}

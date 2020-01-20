@@ -86,18 +86,16 @@ function WeatherStone:now_waiting()
 end
 
 function WeatherStone:change_weather()
-	local current_weather = stonehearth.weather._sv.current_weather_state
-
 	local current_season = stonehearth.seasons:get_current_season()
 
 	local weighted_set = WeightedSet(rng)
 	for _, entry in ipairs(current_season.weather) do
-		if entry.uri ~= current_weather then
-			--avoid picking the same weather by leaving it out of the set
-			weighted_set:add(entry.uri, entry.weight)
-		end
+		weighted_set:add(entry.uri, entry.weight)
 	end
-	local chosen_weather = weighted_set:choose_random()
+	--avoid picking the same weather by removing it out of the set
+	local current_weather = stonehearth.weather._sv.current_weather_state
+	weighted_set:remove(current_weather)
+	local chosen_weather = weighted_set:choose_random() or "stonehearth:weather:sunny"
 
 	stonehearth.weather:_switch_to(chosen_weather, self.player_id)
 

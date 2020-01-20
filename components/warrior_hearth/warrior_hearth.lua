@@ -1,4 +1,6 @@
 local game_master_lib = require 'stonehearth.lib.game_master.game_master_lib'
+local WeightedSet = require 'stonehearth.lib.algorithms.weighted_set'
+local rng = _radiant.math.get_default_rng()
 
 local WarriorHearth = class()
 
@@ -27,6 +29,8 @@ function WarriorHearth:activate()
 		self._entity:get_component('stonehearth:commands'):remove_command('swamp_goblins:commands:glory_wave:abandon')
 		self._entity:get_component('stonehearth:commands'):add_command('swamp_goblins:commands:glory_wave:spawn')
 	end
+
+	self.waves_json = radiant.resources.load_json("swamp_goblins:monster_tuning:warrior_hearth:waves", true, false)
 end
 
 -- Returns whether a wave was summoned (i.e. another isn't in progress, and there are more levels to go).
@@ -71,28 +75,75 @@ function WarriorHearth:abandon_current_wave()
 	end
 end
 
+function WarriorHearth:_pick_a_wave(level)
+	local weighted_set = WeightedSet(rng)
+	for wave, info in pairs(self.waves_json) do
+		local min = info.at_glory_level and info.at_glory_level.min or 1
+		local max = info.at_glory_level and info.at_glory_level.max or 9999
+		if level >= min and level <= max then
+			weighted_set:add(info, info.weight)
+		end
+	end
+	return weighted_set:choose_random()
+end
+
+function WarriorHearth:_pick_members(wave, level)
+	local weighted_set = WeightedSet(rng)
+	for key, value in pairs(wave.members) do
+		weighted_set:add(key, value.weight)
+	end
+	local members = {}
+	for i=1,level do
+		local chosen = weighted_set:choose_random()
+		if not chosen then break end
+		if members[chosen] then
+			members[chosen] = members[chosen]+1
+		else
+			members[chosen] = 1
+		end
+		local max = wave.members[chosen].max_allowed or 9999
+		if members[chosen] >= max then
+			weighted_set:remove(chosen)
+		end
+	end
+	return members
+end
+
 function WarriorHearth:_spawn_wave(level)
 	self._sv.current_wave = {}
-	local pop = stonehearth.population:get_population("warrior_hearth")
-	local citizen_table = {
-		from_population = {
-			role = "default",
-			min = level,
-			max = level,
-			range = 4,
-			location = { x = 0, z = 0 }
-		}, 
-		tuning = "swamp_goblins:monster_tuning:warrior_hearth:goblin_spirit"
-	}
 	local origin = radiant.entities.get_world_grid_location(self._entity)
+	local pop = stonehearth.population:get_population("warrior_hearth")
+	local wave = self:_pick_a_wave(level)
+	local members_keys = self:_pick_members(wave, level)
 
-	local members = game_master_lib.create_citizens(pop, citizen_table, origin)
-	for _, member in ipairs(members) do
-		local effect = radiant.effects.run_effect(member, 'stonehearth:effects:spawn_entity')
-		self._sv.current_wave[member:get_id()] = member
-		radiant.events.listen(member, 'radiant:entity:pre_destroy', function()
-			self:_on_wave_member_died(member)
-		end)
+	for key, quantity in pairs(members_keys) do
+		local citizen_table = {
+			from_population = {
+				role = wave.members[key].role,
+				min = quantity,
+				max = quantity,
+				range = 4,
+				location = { x = 0, z = 0 }
+			},
+			combat_leash_range = 32,
+			tuning = wave.members[key].tuning
+		}
+
+		local members = game_master_lib.create_citizens(pop, citizen_table, origin)
+		for _, member in ipairs(members) do
+			member:remove_component("stonehearth:traits")
+			member:add_component("stonehearth:trivial_death")
+			local ai = member:get_component("stonehearth:ai")
+			ai:remove_action("stonehearth:actions:die_citizen")
+			ai:add_action("stonehearth:actions:die_generic")
+
+			radiant.entities.add_buff(member, "stonehearth:buffs:combat_basics")
+			local effect = radiant.effects.run_effect(member, 'stonehearth:effects:spawn_entity')
+			self._sv.current_wave[member:get_id()] = member
+			radiant.events.listen(member, 'radiant:entity:pre_destroy', function()
+				self:_on_wave_member_died(member)
+			end)
+		end
 	end
 end
 

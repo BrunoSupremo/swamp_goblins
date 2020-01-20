@@ -1,0 +1,44 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:archer",
+	"equipment": {
+		"helmet": "/stonehearth/jobs/archer/archer_outfit/archer_hood/archer_hood.json",
+		"torso": "/stonehearth/jobs/archer/archer_outfit/archer_outfit.json",
+		"mainhand": "stonehearth:weapons:bow"
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"none": {
+						"weight": 4
+					},
+					"silkweed": {
+						"uri": "stonehearth:plants:silkweed:seed",
+						"weight": 3
+					},
+					"frostsnap": {
+						"uri": "stonehearth:plants:frostsnap:seed",
+						"weight": 3
+					},
+					"brightbell": {
+						"uri": "stonehearth:plants:brightbell:seed",
+						"weight": 3
+					},
+					"berry_bush": {
+						"uri": "stonehearth:plants:berry_bush:seed",
+						"weight": 1
+					},
+					"oak": {
+						"uri": "stonehearth:trees:oak:seed",
+						"weight": 2
+					},
+					"pine": {
+						"uri": "stonehearth:trees:pine:seed",
+						"weight": 2
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"just_workers": {
+		"weight": 10,
+		"at_glory_level": {
+			"min":1,
+			"max":2
+		},
+		"members": {
+			"worker": {
+				"role": "goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:goblin_worker",
+				"weight": 1
+			}
+		}
+	},
+	"easy_goblins": {
+		"weight": 10,
+		"at_glory_level": {
+			"min":3
+		},
+		"members": {
+			"worker": {
+				"role": "goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:goblin_worker",
+				"weight": 2,
+				"max_allowed": 10
+			},
+			"warrior": {
+				"role": "goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:goblin_warrior",
+				"weight": 1
+			}
+		}
+	},
+	"easy_hearthlings": {
+		"weight": 2,
+		"at_glory_level": {
+			"min":5
+		},
+		"members": {
+			"footman": {
+				"role": "hearthling",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling_footman",
+				"weight": 10
+			},
+			"archer": {
+				"role": "hearthling",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling_archer",
+				"weight": 1
+			}
+		}
+	}
+}

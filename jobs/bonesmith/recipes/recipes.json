@@ -198,6 +198,18 @@
 				}
 			}
 		},
+		"goblin_music": {
+			"ordinal": 55,
+			"name": "i18n(swamp_goblins:jobs.bonesmith.recipes.music)",
+			"recipes": {
+				"bongo": {
+					"recipe": "file(music/bongo_recipe.json)"
+				},
+				"xylophone": {
+					"recipe": "file(music/xylophone_recipe.json)"
+				}
+			}
+		},
 		"signs": {
 			"ordinal": 60,
 			"name": "i18n(swamp_goblins:jobs.bonesmith.recipes.signs)",

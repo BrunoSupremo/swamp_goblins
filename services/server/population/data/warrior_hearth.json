@@ -10,13 +10,35 @@
 		"rabbit_biped_npcs": "neutral"
 	},
 	"roles": {
-		"default": {
+		"goblin": {
 			"male": {
-				"mixintypes": {
-					"uri": "override"
-				},
 				"uri": [
-					"swamp_goblins:summons:warrior_hearth:goblin_spirit"
+					"swamp_goblins:goblins:goblin"
+				],
+				"given_names": [
+					"Challenger"
+				]
+			}
+		},
+		"hearthling": {
+			"male": {
+				"uri": [
+					"stonehearth:male_1",
+					"stonehearth:male_2",
+					"stonehearth:male_3"
+				],
+				"given_names": [
+					"Challenger"
+				]
+			},
+			"female": {
+				"uri": [
+					"stonehearth:female_1",
+					"stonehearth:female_2",
+					"stonehearth:female_3"
+				],
+				"given_names": [
+					"Challenger"
 				]
 			}
 		}

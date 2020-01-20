@@ -52,7 +52,15 @@
 			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
 		},
 		"tower_defense:tower": {
-			"default_weapon": "swamp_goblins:towers:worker:weapon"
+			"default_weapon": "swamp_goblins:towers:worker:weapon",
+			"upgrades": {
+				"utility": {
+					"uri": "swamp_goblins:towers:worker:weapon_utility",
+					"cost": {
+						"wood": 3
+					}
+				}
+			}
 		}
 	},
 	"entity_data": {

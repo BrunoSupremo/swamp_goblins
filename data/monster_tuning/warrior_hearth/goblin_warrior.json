@@ -1,32 +1,28 @@
 {
 	"type": "monster_tuning",
-	"estimated_difficulty": 0,
-	"attributes": {
-		"max_health": 200,
-		"menace": 40,
-		"courage": 100,
-		"exp_reward": 15
-	},
-	"_equipment": {
-		"weapon": [
-			"stonehearth:mining_pick",
-			"stonehearth:worker_axe"
-		]
+	"job": "swamp_goblins:jobs:warrior",
+	"equipment": {
+		"torso": "swamp_goblins/jobs/warrior/warrior_outfit/warrior_outfit.json",
+		"mainhand": "stonehearth:weapons:jagged_cleaver"
 	},
 	"loot_drops": {
 		"entries": {
 			"default": {
 				"items": {
 					"none": {
-						"weight": 1
+						"weight": 4
 					},
 					"cattail": {
 						"uri": "swamp_goblins:plants:cattail:seed",
-						"weight": 1
+						"weight": 3
+					},
+					"violet": {
+						"uri": "stonehearth:plants:violet:seed",
+						"weight": 3
 					},
 					"giant_flower": {
 						"uri": "swamp_goblins:plants:giant_flower:seed",
-						"weight": 1
+						"weight": 3
 					},
 					"mushroom": {
 						"uri": "swamp_goblins:plants:mushroom",
@@ -34,11 +30,11 @@
 					},
 					"bogger": {
 						"uri": "swamp_goblins:trees:bogger:seed",
-						"weight": 1
+						"weight": 2
 					},
 					"cypress": {
 						"uri": "swamp_goblins:trees:cypress:seed",
-						"weight": 1
+						"weight": 2
 					}
 				}
 			}

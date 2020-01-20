@@ -1,9 +1,13 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.1.10")
+print("Swamp Goblins Mod version 20.1.20")
 
 --[[
+trapper+ templates
+add visible goblin trader
 import hearthlings
 move travel to earthmaster
+
+avoid weather stone use on titan storms
 
 mosquito model
 banner shred

@@ -10,8 +10,8 @@
 	"entity_data": {
 		"stonehearth:catalog": {
 			"category": "tower_weapon",
-			"display_name": "i18n(tower_defense:entities.towers.air_102.weapon.display_name)",
-			"description": "i18n(tower_defense:entities.towers.air_102.weapon.description)"
+			"display_name": "i18n(swamp_goblins:entities.towers.worker.weapon.display_name)",
+			"description": "i18n(swamp_goblins:entities.towers.worker.weapon.description)"
 		},
 		"stonehearth:combat:weapon_data": {
 			"targeting": {
@@ -38,7 +38,7 @@
 				"attack_times": [
 					500
 				],
-				"cooldown": 1500,
+				"cooldown": 1000,
 				"priority": 0
 			}
 		]

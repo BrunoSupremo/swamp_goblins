@@ -6,7 +6,9 @@
 				"charging_weather_stone": "Charging Weather Stone",
 				"using_weather_stone": "Using Weather Stone",
 				"summoning": "Summoning",
-				"lay_egg": "Laying an egg"
+				"lay_egg": "Laying an egg",
+				"play_music": "Playing music",
+				"enjoy_music": "Enjoying music"
 			}
 		}
 	},
@@ -61,6 +63,11 @@
 			"goblinpedia":{
 				"display_name":"Open the Goblinpedia",
 				"description":"Click to read it"
+			},
+			"music":{
+				"display_name":"Play Music",
+				"description":"Will call someone to play this instrument",
+				"disabled_description":"Waiting for someone to play it, or in use already."
 			},
 			"travel":{
 				"display_name":"Travel",
@@ -442,7 +449,7 @@
 							"dialog_title":"Hearth Update",
 							"message":"Our friends over there already got their shiny new hearth!<br>Maybe we should start thinking about our hearth upgrade too.",
 							"message_2":"We decided on two options to represent our town:<br>Warrior Hearth and Nature Hearth",
-							"message_3":"The <i>Warrior Hearth</i> is for those who believe their destiny is to stand strong in a hostile world.<br>We will be able to fight against our best warriors from the past, training with them and learning from them.",
+							"message_3":"The <i>Warrior Hearth</i> is for those who believe their destiny is to stand strong in a hostile world.<br>We will be able to fight against the best warriors from other clans, training with them and learning from them.",
 							"message_4":"The <i>Nature Hearth</i> is for those who believe that a town's value is found within its happy citizens in harmony with nature.<br>We will receive random daily blessings.",
 							"message_5":"Warrior or Nature? What do you think would be the most fitting for out town from here and beyond?",
 							"choice":"We choose..."
@@ -450,7 +457,7 @@
 						"hearth_choice":{
 							"warrior": {
 								"name": "Warrior Hearth",
-								"description": "<i>Proof that you have military strength, and that you're prepared to keep it on its feet.</i><ul><li>Allows summoning increasingly difficult enemies to improve your skills</li></ul>"
+								"description": "<i>Proof that you have military strength, and that you're prepared to keep it on its feet.</i><ul><li>Allows summoning increasingly difficult challengers to improve your skills</li></ul>"
 							},
 							"nature": {
 								"name": "Nature Hearth",
@@ -930,7 +937,7 @@
 			"goblin_camp_standard": {
 				"display_name": "Banner of Goblins",
 				"description": "How you know you've come home",
-				"town_bonus_description": "<i>This settlement will grow strong through our muscles and spirits.</i><ul><li>Mining gives 50% more Ore, Stone, and Clay</li><li>Goblins no longer mind cramped spaces</li></ul>"
+				"town_bonus_description": "<i>This settlement will grow strong through our muscles and spirit.</i><ul><li>Mining gives 50% more Ore, Stone, and Clay</li><li>Goblins no longer mind cramped spaces</li></ul>"
 			},
 			"varanus_camp_standard": {
 				"display_name": "Banner of Nature",
@@ -997,6 +1004,18 @@
 			"varanus_nest": {
 				"display_name": "Varanus Nest",
 				"description": "Spawns more varanus over time"
+			}
+		},
+		"music":{
+			"bongo":{
+				"display_name":"Bongo",
+				"description":"A percussion instrument consisting of a pair of small drums of different sizes.",
+				"flavor":"Click on it and press the play button, someone will come to play it"
+			},
+			"xylophone":{
+				"display_name":"Xylophone",
+				"description":"A musical instrument in the percussion family that consists of wooden bars struck by mallets.",
+				"flavor":"Click on it and press the play button, someone will come to play it"
 			}
 		},
 		"peoples": {
@@ -1269,6 +1288,7 @@
 			},
 			"recipes": {
 				"amberstone": "Amberstone Items",
+				"music": "Music",
 				"signs": "Signs"
 			},
 			"weaving_table": {

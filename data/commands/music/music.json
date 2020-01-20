@@ -1,0 +1,12 @@
+{
+	"type": "command",
+	"name": "play_music",
+	"display_name": "i18n(swamp_goblins:data.commands.music.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.music.description)",
+	"disabled_description": "i18n(swamp_goblins:data.commands.music.disabled_description)",
+	"icon": "file(music.png)",
+	"ordinal": 10,
+	"action": "call",
+	"function": "swamp_goblins:play_music",
+	"args": []
+}

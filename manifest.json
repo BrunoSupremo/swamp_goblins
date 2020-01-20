@@ -16,6 +16,11 @@
 	"aliases":{
 		"actions:memorialize_death":	"file(ai/actions/memorialize_death_action.lua)",
 		"actions:health:rest_when_injured":	"file(ai/actions/health/rest_when_injured_action.lua)",
+		"actions:play_music":		"file(ai/actions/music/play_music.lua)",
+		"actions:play_instrument":	"file(ai/actions/music/play_instrument.lua)",
+		"actions:create_audience":	"file(ai/actions/music/create_audience.lua)",
+		"actions:goto_music":		"file(ai/actions/music/goto_music.lua)",
+		"actions:enjoy_music":		"file(ai/actions/music/enjoy_music.lua)",
 		"actions:lay_egg":		"file(ai/actions/lay_egg/lay_egg.lua)",
 		"actions:create_egg":	"file(ai/actions/lay_egg/create_egg.lua)",
 		"actions:summon":			"file(ai/actions/summon/summon.lua)",
@@ -32,12 +37,14 @@
 
 		"ai_pack:change_weather":"file(ai/packs/change_weather.json)",
 		"ai_pack:lay_egg":		"file(ai/packs/lay_egg.json)",
+		"ai_pack:music":		"file(ai/packs/music.json)",
 		"ai_pack:summon":		"file(ai/packs/summon_ai_pack.json)",
 		"ai_pack:ranged_darts":	"file(ai/packs/ranged_darts.json)",
 
 		"task_groups:beekeeping":		"file(ai/task_groups/beekeeping.lua)",
 		"task_groups:change_weather":	"file(ai/task_groups/change_weather.lua)",
 		"task_groups:lay_egg":			"file(ai/task_groups/lay_egg.lua)",
+		"task_groups:music":			"file(ai/task_groups/music.lua)",
 
 		"armor:flower_helmet":	"file(entities/armor/flower_helmet)",
 		"armor:full_leather_helmet":"file(entities/armor/full_leather_helmet)",
@@ -110,6 +117,7 @@
 		"commands:enable_egg_spot":	"file(data/commands/enable_egg_spot)",
 		"commands:goblinpedia":		"file(data/commands/goblinpedia)",
 		"commands:travel":			"file(data/commands/travel)",
+		"commands:music":			"file(data/commands/music)",
 
 		"construction:ladder":	"file(entities/construction/ladder)",
 		"construction:brick_fence":		"file(entities/construction/brick_fence)",
@@ -208,6 +216,12 @@
 		"effects:green_fire:brazier_firepit":	"file(data/effects/green_fire/brazier_firepit)",
 		"effects:hourglass":	"file(data/effects/hourglass)",
 		"effects:mini_fountain":"file(data/effects/mini_fountain)",
+		"effects:music:bongo_2":	"file(data/effects/music/bongo_2.json)",
+		"effects:music:bongo_3":	"file(data/effects/music/bongo_3.json)",
+		"effects:music:bongo_4":	"file(data/effects/music/bongo_4.json)",
+		"effects:music:bongo_5":	"file(data/effects/music/bongo_5.json)",
+		"effects:music:xylophone_1":"file(data/effects/music/xylophone_1.json)",
+		"effects:music:xylophone_4":"file(data/effects/music/xylophone_4.json)",
 		"effects:mosquito_cloud":"file(data/effects/mosquito_cloud)",
 		"effects:shaman_workbench_effect":"file(data/effects/shaman_workbench_effect)",
 		"effects:spirit_walker":"file(data/effects/spirit_walker)",
@@ -314,7 +328,15 @@
 		"monster_tuning:firefly_human_encounter:footman":	"file(data/monster_tuning/firefly_human_encounter/footman.json)",
 		"monster_tuning:firefly_human_encounter:knight":	"file(data/monster_tuning/firefly_human_encounter/knight.json)",
 		"monster_tuning:firefly_human_encounter:nina":		"file(data/monster_tuning/firefly_human_encounter/nina.json)",
-		"monster_tuning:warrior_hearth:goblin_spirit":	"file(data/monster_tuning/warrior_hearth/goblin_spirit.json)",
+		"monster_tuning:warrior_hearth:waves":				"file(data/monster_tuning/warrior_hearth/waves.json)",
+		"monster_tuning:warrior_hearth:goblin_worker":		"file(data/monster_tuning/warrior_hearth/goblin_worker.json)",
+		"monster_tuning:warrior_hearth:goblin_warrior":		"file(data/monster_tuning/warrior_hearth/goblin_warrior.json)",
+		"monster_tuning:warrior_hearth:hearthling_footman":	"file(data/monster_tuning/warrior_hearth/hearthling_footman.json)",
+		"monster_tuning:warrior_hearth:hearthling_archer":	"file(data/monster_tuning/warrior_hearth/hearthling_archer.json)",
+
+		"music:audience":	"file(entities/music/audience)",
+		"music:bongo":		"file(entities/music/bongo)",
+		"music:xylophone":	"file(entities/music/xylophone)",
 
 		"plants:cattail":		"file(entities/plants/cattail)",
 		"plants:cattail:seed":	"file(entities/plants/cattail/seed)",
@@ -355,6 +377,49 @@
 
 		"skeletons:humanoid:baby":"file(data/rigs/entities/humans/skeletons/baby.json)",
 
+		"sounds:bongo_1":	"file(data/sounds/instruments/bongo/bongo_1.ogg)",
+		"sounds:bongo_2":	"file(data/sounds/instruments/bongo/bongo_2.ogg)",
+		"sounds:bongo_3":	"file(data/sounds/instruments/bongo/bongo_3.ogg)",
+		"sounds:bongo_4":	"file(data/sounds/instruments/bongo/bongo_4.ogg)",
+		"sounds:bongo_5":	"file(data/sounds/instruments/bongo/bongo_5.ogg)",
+		"sounds:bongo_6":	"file(data/sounds/instruments/bongo/bongo_6.ogg)",
+		"sounds:bongo_7":	"file(data/sounds/instruments/bongo/bongo_7.ogg)",
+		"sounds:bongo_8":	"file(data/sounds/instruments/bongo/bongo_8.ogg)",
+		"sounds:bongo_9":	"file(data/sounds/instruments/bongo/bongo_9.ogg)",
+		"sounds:bongo_10":	"file(data/sounds/instruments/bongo/bongo_10.ogg)",
+		"sounds:bongo_11":	"file(data/sounds/instruments/bongo/bongo_11.ogg)",
+		"sounds:bongo_12":	"file(data/sounds/instruments/bongo/bongo_12.ogg)",
+		"sounds:bongo_13":	"file(data/sounds/instruments/bongo/bongo_13.ogg)",
+		"sounds:bongo_14":	"file(data/sounds/instruments/bongo/bongo_14.ogg)",
+		"sounds:bongo_15":	"file(data/sounds/instruments/bongo/bongo_15.ogg)",
+		"sounds:bongo_16":	"file(data/sounds/instruments/bongo/bongo_16.ogg)",
+		"sounds:bongo_17":	"file(data/sounds/instruments/bongo/bongo_17.ogg)",
+		"sounds:bongo_18":	"file(data/sounds/instruments/bongo/bongo_18.ogg)",
+		"sounds:bongo_19":	"file(data/sounds/instruments/bongo/bongo_19.ogg)",
+		"sounds:bongo_20":	"file(data/sounds/instruments/bongo/bongo_20.ogg)",
+		"sounds:bongo_21":	"file(data/sounds/instruments/bongo/bongo_21.ogg)",
+		"sounds:bongo_22":	"file(data/sounds/instruments/bongo/bongo_22.ogg)",
+		"sounds:bongo_23":	"file(data/sounds/instruments/bongo/bongo_23.ogg)",
+		"sounds:bongo_24":	"file(data/sounds/instruments/bongo/bongo_24.ogg)",
+		"sounds:bongo_25":	"file(data/sounds/instruments/bongo/bongo_25.ogg)",
+		"sounds:bongo_26":	"file(data/sounds/instruments/bongo/bongo_26.ogg)",
+		"sounds:bongo_27":	"file(data/sounds/instruments/bongo/bongo_27.ogg)",
+		"sounds:bongo_29":	"file(data/sounds/instruments/bongo/bongo_29.ogg)",
+		"sounds:bongo_30":	"file(data/sounds/instruments/bongo/bongo_30.ogg)",
+		"sounds:bongo_31":	"file(data/sounds/instruments/bongo/bongo_31.ogg)",
+		"sounds:bongo_32":	"file(data/sounds/instruments/bongo/bongo_32.ogg)",
+		"sounds:bongo_33":	"file(data/sounds/instruments/bongo/bongo_33.ogg)",
+		"sounds:bongo_34":	"file(data/sounds/instruments/bongo/bongo_34.ogg)",
+		"sounds:bongo_35":	"file(data/sounds/instruments/bongo/bongo_35.ogg)",
+		"sounds:bongo_36":	"file(data/sounds/instruments/bongo/bongo_36.ogg)",
+		"sounds:bongo_37":	"file(data/sounds/instruments/bongo/bongo_37.ogg)",
+		"sounds:bongo_38":	"file(data/sounds/instruments/bongo/bongo_38.ogg)",
+		"sounds:bongo_39":	"file(data/sounds/instruments/bongo/bongo_39.ogg)",
+		"sounds:xylophone_1":	"file(data/sounds/instruments/xylophone/xylophone_1.ogg)",
+		"sounds:xylophone_2":	"file(data/sounds/instruments/xylophone/xylophone_2.ogg)",
+		"sounds:xylophone_3":	"file(data/sounds/instruments/xylophone/xylophone_3.ogg)",
+		"sounds:xylophone_4":	"file(data/sounds/instruments/xylophone/xylophone_4.ogg)",
+
 		"spirit_walker:staff": "file(jobs/spirit_walker/spirit_walker_staff)",
 		"spirit_walker:upgraded_staff": "file(jobs/spirit_walker/upgraded_staff)",
 		"spirit_walker:talisman": "file(jobs/spirit_walker/spirit_walker_staff/spirit_walker_staff_talisman.json)",
@@ -377,7 +442,6 @@
 		"summons:dragon_aura":	"file(entities/summons/dragon_aura)",
 		"summons:big_wolf":		"file(entities/summons/big_wolf)",
 		"summons:trap":			"file(entities/summons/trap)",
-		"summons:warrior_hearth:goblin_spirit":"file(entities/summons/warrior_hearth/goblin_spirit.json)",
 
 		"terrain:water_negative_pathfind":"file(entities/terrain/water_negative_pathfind)",
 
@@ -471,6 +535,7 @@
 		"towers:trapper:weapon_utility":		"file(tower_defense/towers/trapper/weapon_utility.json)",
 		"towers:warrior:weapon_damage":			"file(tower_defense/towers/warrior/weapon_damage.json)",
 		"towers:warrior:weapon_utility":		"file(tower_defense/towers/warrior/weapon_utility.json)",
+		"towers:worker:weapon_utility":			"file(tower_defense/towers/worker/weapon_utility.json)"
 	},
 	"deprecated_aliases":{
 		"furniture:mush_chair":		"file(entities/gizmos/deprecated)",
@@ -486,6 +551,8 @@
 		"kingdoms:battle_royal_team_2": "file(services/server/population/data/firefly_human_encounter.json)"
 	},
 	"mixintos" :  {
+		"stonehearth:ai_pack:free_time": "file(ai/packs/free_time_ai_pack.json)",
+
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 
 		"candledark:buffs:plagued":"file(candledark/plagued.json)",
@@ -631,6 +698,10 @@
 		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json"
 	},
 	"functions": {
+		"play_music": {
+			"controller": "file(call_handlers/music_call_handler.lua)",
+			"endpoint": "server"
+		},
 		"weather_stone_charge": {
 			"controller": "file(call_handlers/weather_call_handler.lua)",
 			"endpoint": "server"
@@ -663,6 +734,7 @@
 		"firefly":					"file(components/firefly/firefly_component.lua)",
 		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
+		"music":					"file(components/music/music.lua)",
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)",
 		"warrior_hearth":			"file(components/warrior_hearth/warrior_hearth.lua)",
 		"weather_stone":			"file(components/weather_stone/weather_stone.lua)"
@@ -672,11 +744,11 @@
 
 		"candledark/data/buffs/plagued/plagued.lua":"file(candledark/plagued.lua)",
 
-		"stonehearth/data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json":"file(data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json)",
-		"stonehearth/data/rigs/entities/humans/effects/dart_tube.json":"file(data/rigs/entities/humans/effects/dart_tube.json)",
-		"stonehearth/data/rigs/entities/humans/effects/bonesmith_saw.json":"file(data/rigs/entities/humans/effects/bonesmith_saw.json)",
-		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",
-		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"stonehearth/data/rigs/entities/pets/kitten/effects/combat_1h_backhand.json",
+		"stonehearth/data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json":	"file(data/rigs/entities/critters/wolf/effects/combat_1h_backhand.json)",
+		"stonehearth/data/rigs/entities/humans/effects/dart_tube.json":					"file(data/rigs/entities/humans/effects/dart_tube.json)",
+		"stonehearth/data/rigs/entities/humans/effects/bonesmith_saw.json":				"file(data/rigs/entities/humans/effects/bonesmith_saw.json)",
+		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":	"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",
+		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"file(data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json)",
 
 		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json"

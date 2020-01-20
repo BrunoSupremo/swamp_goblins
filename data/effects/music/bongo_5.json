@@ -1,0 +1,18 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"sound": {
+			"type": "sound_effect",
+			"start_time": 0,
+			"duration": 5000,
+			"volume": 100,
+			"track" : {
+				"type": "one_of",
+				"items": [
+					"swamp_goblins:sounds:bongo_3",
+					"swamp_goblins:sounds:bongo_37"
+				]
+			}
+		}
+	}
+}

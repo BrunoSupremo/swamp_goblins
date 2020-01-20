@@ -1,0 +1,36 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"animation": {
+			"type": "animation_effect",
+			"start_time": 0,
+			"animation": "combat_scratch.json",
+			"loop": false
+		},
+		"attack_trigger" : {
+			"type": "trigger_effect",
+			"start_frame": 18,
+			"end_time": 20
+		},
+		"sound": {
+			"type": "sound_effect",
+			"start_time": 0,
+			"min_distance": 20,
+			"falloff" : 3.6,
+			"volume": 80,
+			"track" : {
+				"type": "one_of",
+				"items": [
+					"stonehearth:sounds:wolf_bite_01",
+					"stonehearth:sounds:wolf_bite_02",
+					"stonehearth:sounds:wolf_bite_03",
+					"stonehearth:sounds:wolf_bite_04",
+					"stonehearth:sounds:wolf_growl_01",
+					"stonehearth:sounds:wolf_growl_02",
+					"stonehearth:sounds:wolf_growl_03",
+					"stonehearth:sounds:wolf_growl_04"
+				]
+			}
+		}
+	}
+}

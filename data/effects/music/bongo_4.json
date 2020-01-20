@@ -1,0 +1,26 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"sound": {
+			"type": "sound_effect",
+			"start_time": 0,
+			"duration": 4000,
+			"volume": 100,
+			"track" : {
+				"type": "one_of",
+				"items": [
+					"swamp_goblins:sounds:bongo_4",
+					"swamp_goblins:sounds:bongo_5",
+					"swamp_goblins:sounds:bongo_9",
+					"swamp_goblins:sounds:bongo_10",
+					"swamp_goblins:sounds:bongo_14",
+					"swamp_goblins:sounds:bongo_23",
+					"swamp_goblins:sounds:bongo_24",
+					"swamp_goblins:sounds:bongo_29",
+					"swamp_goblins:sounds:bongo_31",
+					"swamp_goblins:sounds:bongo_38"
+				]
+			}
+		}
+	}
+}
