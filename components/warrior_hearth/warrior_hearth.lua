@@ -110,6 +110,8 @@ function WarriorHearth:_pick_members(wave, level)
 end
 
 function WarriorHearth:_spawn_wave(level)
+	radiant.effects.run_effect(self._entity, 'stonehearth:effects:glory_wave_spawn')
+
 	self._sv.current_wave = {}
 	local origin = radiant.entities.get_world_grid_location(self._entity)
 	local pop = stonehearth.population:get_population("warrior_hearth")
@@ -138,7 +140,7 @@ function WarriorHearth:_spawn_wave(level)
 			ai:add_action("stonehearth:actions:die_generic")
 
 			radiant.entities.add_buff(member, "stonehearth:buffs:combat_basics")
-			local effect = radiant.effects.run_effect(member, 'stonehearth:effects:spawn_entity')
+			radiant.effects.run_effect(member, 'stonehearth:effects:spawn_entity')
 			self._sv.current_wave[member:get_id()] = member
 			radiant.events.listen(member, 'radiant:entity:pre_destroy', function()
 				self:_on_wave_member_died(member)

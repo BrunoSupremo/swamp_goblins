@@ -8,10 +8,6 @@ function WeatherStone:initialize()
 	self._sv._task_effect = nil
 end
 
--- check weather for titan weather and block it
--- local weather_state = stonehearth.weather:get_current_weather()
--- lhs = weather_state and weather_state:get_uri()
-
 function WeatherStone:post_activate()
 	self.player_id = self._entity:get_player_id()
 
@@ -92,8 +88,16 @@ function WeatherStone:change_weather()
 	for _, entry in ipairs(current_season.weather) do
 		weighted_set:add(entry.uri, entry.weight)
 	end
+	--titan weather is blocked
+	local current_weather = stonehearth.weather:get_current_weather()
+	if current_weather:get_uri() == 'stonehearth:weather:titanstorm' then
+		radiant.effects.run_effect(self._entity, "stonehearth:effects:death")
+		radiant.effects.run_effect(self._entity, "stonehearth:effects:titan_summoning:gong")
+		self:full_reset()
+		return
+	end
+
 	--avoid picking the same weather by removing it out of the set
-	local current_weather = stonehearth.weather._sv.current_weather_state
 	weighted_set:remove(current_weather)
 	local chosen_weather = weighted_set:choose_random() or "stonehearth:weather:sunny"
 
