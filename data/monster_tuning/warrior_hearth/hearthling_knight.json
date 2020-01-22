@@ -1,13 +1,14 @@
 {
 	"type": "monster_tuning",
-	"job": "stonehearth:jobs:archer",
+	"job": "stonehearth:jobs:knight",
 	"attributes": {
 		"exp_reward": 5
 	},
 	"equipment": {
-		"helmet": "/stonehearth/jobs/archer/archer_outfit/archer_hood/archer_hood.json",
-		"torso": "/stonehearth/jobs/archer/archer_outfit/archer_outfit.json",
-		"mainhand": "stonehearth:weapons:bow"
+		"torso": "/stonehearth/jobs/knight/knight_outfit/knight_outfit.json",
+		"helmet": "/stonehearth/jobs/knight/knight_helm/knight_helm.json",
+		"offhand": "stonehearth:armor:knights_shield",
+		"mainhand": "stonehearth:weapons:bronze_sword"
 	},
 	"loot_drops": {
 		"entries": {

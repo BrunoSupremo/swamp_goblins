@@ -1,13 +1,12 @@
 {
 	"type": "monster_tuning",
-	"job": "stonehearth:jobs:archer",
+	"job": "stonehearth:jobs:cleric",
 	"attributes": {
 		"exp_reward": 5
 	},
 	"equipment": {
-		"helmet": "/stonehearth/jobs/archer/archer_outfit/archer_hood/archer_hood.json",
-		"torso": "/stonehearth/jobs/archer/archer_outfit/archer_outfit.json",
-		"mainhand": "stonehearth:weapons:bow"
+		"torso": "/stonehearth/jobs/cleric/cleric_outfit/cleric_outfit.json",
+		"mainhand": "stonehearth:weapons:tome"
 	},
 	"loot_drops": {
 		"entries": {
@@ -39,6 +38,10 @@
 					"pine": {
 						"uri": "stonehearth:trees:pine:seed",
 						"weight": 2
+					},
+					"dusty_tome": {
+						"uri": "stonehearth:loot:dusty_tome",
+						"weight": 0.1
 					}
 				}
 			}

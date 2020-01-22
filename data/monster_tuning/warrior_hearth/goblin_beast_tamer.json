@@ -1,13 +1,13 @@
 {
 	"type": "monster_tuning",
-	"job": "stonehearth:jobs:worker",
+	"job": "swamp_goblins:jobs:beast_tamer",
 	"attributes": {
 		"exp_reward": 5
 	},
 	"equipment": {
-		"mainhand": [
-			"swamp_goblins:weapons:crude_wooden_club"
-		]
+		"torso": "swamp_goblins/jobs/beast_tamer/beast_tamer_outfit/beast_tamer_outfit.json",
+		"helmet": "swamp_goblins/jobs/beast_tamer/beast_tamer_helmet/beast_tamer_helmet.json",
+		"mainhand": "swamp_goblins:beast_tamer:claw"
 	},
 	"loot_drops": {
 		"entries": {

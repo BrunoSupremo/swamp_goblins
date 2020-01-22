@@ -12,8 +12,8 @@ function WarriorHearth:initialize()
 end
 
 function WarriorHearth:create()
-	self._entity:get_component('stonehearth:commands'):remove_command('stonehearth:commands:spawn_glory_wave')
-	self._entity:get_component('stonehearth:commands'):remove_command('stonehearth:commands:abandon_glory_wave')
+	-- self._entity:get_component('stonehearth:commands'):remove_command('stonehearth:commands:spawn_glory_wave')
+	-- self._entity:get_component('stonehearth:commands'):remove_command('stonehearth:commands:abandon_glory_wave')
 end
 
 function WarriorHearth:activate()

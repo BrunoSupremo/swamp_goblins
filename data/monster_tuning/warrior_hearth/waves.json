@@ -33,7 +33,7 @@
 		}
 	},
 	"easy_hearthlings": {
-		"weight": 2,
+		"weight": 3,
 		"at_glory_level": {
 			"min":5
 		},
@@ -46,7 +46,67 @@
 			"archer": {
 				"role": "hearthling",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling_archer",
+				"weight": 2
+			}
+		}
+	},
+	"easy_hearthlings2": {
+		"weight": 10,
+		"at_glory_level": {
+			"min":11
+		},
+		"members": {
+			"footman": {
+				"role": "hearthling",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling_footman",
+				"weight": 4
+			},
+			"archer": {
+				"role": "hearthling",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling_archer",
+				"weight": 2
+			},
+			"knight": {
+				"role": "hearthling",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling_knight",
 				"weight": 1
+			},
+			"cleric": {
+				"role": "hearthling",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling_cleric",
+				"weight": 1,
+				"max_allowed": 1
+			}
+		}
+	},
+	"easy_goblins2": {
+		"weight": 10,
+		"at_glory_level": {
+			"min":15
+		},
+		"members": {
+			"worker": {
+				"role": "goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:goblin_worker",
+				"weight": 1,
+				"max_allowed": 10
+			},
+			"warrior": {
+				"role": "goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:goblin_warrior",
+				"weight": 1
+			},
+			"beast_tamer": {
+				"role": "goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:goblin_beast_tamer",
+				"weight": 1,
+				"max_allowed": 2
+			},
+			"spirit_walker": {
+				"role": "goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:goblin_spirit_walker",
+				"weight": 1,
+				"max_allowed": 2
 			}
 		}
 	}
