@@ -1,0 +1,31 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:npc:footman",
+	"attributes": {
+		"max_health": 750,
+		"muscle": 80,
+		"menace": 100,
+		"courage": 350,
+		"speed": 70,
+		"additive_armor_modifier": 8,
+		"exp_reward": 150
+	},
+	"equipment": {
+		"weapon": [
+			"stonehearth:weapons:giant_bone_mace"
+		],
+		"outfit": "stonehearth:monsters:goblins:outfits:boss"
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"gold_flakes": {
+						"uri": "stonehearth:refined:gold_flakes",
+						"weight": 1
+					}
+				}
+			}
+		}
+	}
+}

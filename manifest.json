@@ -328,15 +328,19 @@
 		"monster_tuning:firefly_human_encounter:footman":	"file(data/monster_tuning/firefly_human_encounter/footman.json)",
 		"monster_tuning:firefly_human_encounter:knight":	"file(data/monster_tuning/firefly_human_encounter/knight.json)",
 		"monster_tuning:firefly_human_encounter:nina":		"file(data/monster_tuning/firefly_human_encounter/nina.json)",
-		"monster_tuning:warrior_hearth:waves":				"file(data/monster_tuning/warrior_hearth/waves.json)",
-		"monster_tuning:warrior_hearth:goblin_worker":		"file(data/monster_tuning/warrior_hearth/goblin_worker.json)",
-		"monster_tuning:warrior_hearth:goblin_warrior":		"file(data/monster_tuning/warrior_hearth/goblin_warrior.json)",
-		"monster_tuning:warrior_hearth:goblin_beast_tamer":	"file(data/monster_tuning/warrior_hearth/goblin_beast_tamer.json)",
-		"monster_tuning:warrior_hearth:goblin_spirit_walker":"file(data/monster_tuning/warrior_hearth/goblin_spirit_walker.json)",
-		"monster_tuning:warrior_hearth:hearthling_footman":	"file(data/monster_tuning/warrior_hearth/hearthling_footman.json)",
-		"monster_tuning:warrior_hearth:hearthling_archer":	"file(data/monster_tuning/warrior_hearth/hearthling_archer.json)",
-		"monster_tuning:warrior_hearth:hearthling_knight":	"file(data/monster_tuning/warrior_hearth/hearthling_knight.json)",
-		"monster_tuning:warrior_hearth:hearthling_cleric":	"file(data/monster_tuning/warrior_hearth/hearthling_cleric.json)",
+		"monster_tuning:warrior_hearth:waves":	"file(data/monster_tuning/warrior_hearth/waves.json)",
+		"monster_tuning:warrior_hearth:firefly:worker":			"file(data/monster_tuning/warrior_hearth/firefly/worker.json)",
+		"monster_tuning:warrior_hearth:firefly:warrior":		"file(data/monster_tuning/warrior_hearth/firefly/warrior.json)",
+		"monster_tuning:warrior_hearth:firefly:beast_tamer":	"file(data/monster_tuning/warrior_hearth/firefly/beast_tamer.json)",
+		"monster_tuning:warrior_hearth:firefly:spirit_walker":	"file(data/monster_tuning/warrior_hearth/firefly/spirit_walker.json)",
+		"monster_tuning:warrior_hearth:hearthling:footman":	"file(data/monster_tuning/warrior_hearth/hearthling/footman.json)",
+		"monster_tuning:warrior_hearth:hearthling:archer":	"file(data/monster_tuning/warrior_hearth/hearthling/archer.json)",
+		"monster_tuning:warrior_hearth:hearthling:knight":	"file(data/monster_tuning/warrior_hearth/hearthling/knight.json)",
+		"monster_tuning:warrior_hearth:hearthling:cleric":	"file(data/monster_tuning/warrior_hearth/hearthling/cleric.json)",
+		"monster_tuning:warrior_hearth:vanilla_goblin:boss":		"file(data/monster_tuning/warrior_hearth/vanilla_goblin/boss.json)",
+		"monster_tuning:warrior_hearth:vanilla_goblin:wolf":		"file(data/monster_tuning/warrior_hearth/vanilla_goblin/wolf.json)",
+		"monster_tuning:warrior_hearth:vanilla_goblin:thief":		"file(data/monster_tuning/warrior_hearth/vanilla_goblin/thief.json)",
+		"monster_tuning:warrior_hearth:vanilla_goblin:marauder":	"file(data/monster_tuning/warrior_hearth/vanilla_goblin/marauder.json)",
 
 		"music:audience":	"file(entities/music/audience)",
 		"music:bongo":		"file(entities/music/bongo)",
@@ -773,11 +777,19 @@
 
 		"weather_scripts:foggy": "file(data/weather/foggy/foggy.lua)"
 	},
+	"object_commands":{
+		"warrior_hearth":[
+			"_spawn_wave",
+			"_declined"
+		]
+	},
 	"ui":{
 		"html":[
+			"file(ui/game/bulletin/warrior_hearth_dialog/warrior_hearth_dialog.html)",
 			"file(ui/game/goblinpedia/goblinpedia.html)"
 		],
 		"js":[
+			"file(ui/game/bulletin/warrior_hearth_dialog/warrior_hearth_dialog.js)",
 			"file(ui/game/goblinpedia/goblinpedia.js)",
 			"file(ui/game/start_menu/stonehearth_menu.js)"
 		],
@@ -786,6 +798,7 @@
 			"file(jobs/bonesmith/skin/workshop.less)",
 			"file(jobs/earthmaster/skin/workshop.less)",
 
+			"file(ui/game/bulletin/warrior_hearth_dialog/warrior_hearth_dialog.less)",
 			"file(ui/game/goblinpedia/goblinpedia.less)",
 			"file(ui/game/start_menu/start_menu.less)",
 			"file(ui/shell/select_roster/select_roster.less)",

@@ -1,0 +1,35 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:npc:footman",
+	"attributes": {
+		"max_health": 150,
+		"muscle": 20,
+		"menace": 40,
+		"courage": 250,
+		"speed": 80,
+		"additive_armor_modifier": 2,
+		"exp_reward": 30
+	},
+	"equipment": {
+		"weapon": [
+			"stonehearth:weapons:dagger"
+		],
+		"outfit": "stonehearth:monsters:goblins:outfits:thief"
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"lump_of_coal": {
+						"uri": "stonehearth:resources:coal:lump_of_coal",
+						"weight": 1
+					},
+					"oak_log": {
+						"uri": "stonehearth:resources:wood:oak_log",
+						"weight": 2
+					}
+				}
+			}
+		}
+	}
+}

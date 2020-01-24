@@ -1,0 +1,37 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:npc:footman",
+	"attributes": {
+		"max_health": 200,
+		"muscle": 50,
+		"menace": 90,
+		"courage": 250,
+		"speed": 70,
+		"additive_armor_modifier": 4,
+		"exp_reward": 75
+	},
+	"equipment": {
+		"weapon": [
+			"stonehearth:weapons:stone_maul"
+		],
+		"armor": [
+			"stonehearth:monsters:goblins:outfits:maurauder"
+		]
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"lump_of_coal": {
+						"uri": "stonehearth:resources:coal:lump_of_coal",
+						"weight": 1
+					},
+					"oak_log": {
+						"uri": "stonehearth:resources:wood:oak_log",
+						"weight": 2
+					}
+				}
+			}
+		}
+	}
+}

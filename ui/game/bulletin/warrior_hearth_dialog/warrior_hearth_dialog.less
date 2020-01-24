@@ -1,0 +1,53 @@
+.bulletinDialog.warrior_hearth_bulletinDialog {
+
+	.window {
+		position: absolute;
+		right: 10px;
+		top: 330px;
+		width: auto;
+		min-width: 300px;
+		max-width: 500px;
+		height: auto;
+		max-height: 560px;
+		text-align: center;
+
+		#content {
+			position: relative;
+			padding: 20px 10px 0px;
+			font-family: @controlFontFamily;
+
+			.message {
+				font-size: 20px;
+				color: #cccccc;
+			}
+
+			#nametag {
+				position: absolute;
+				left: 0px;
+				top: -35px;
+				display: inline-flex;
+				border-image: url(/stonehearth/ui/game/unit_frame/images/name-bg.png) 4 32 4 32;
+				border-width: 4px 32px 4px 32px;
+				border-style: solid;
+				height: 32px;
+				color: #ebebeb;
+
+				.name {
+					display: inline-block;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					font-size: 25px;
+					background-color: #55413a;
+					padding-left: 3px;
+					padding-right: 3px;
+				}
+			}
+
+			#buts{
+				position: relative;
+				padding-top: 20px;
+			}
+		}
+	}
+}

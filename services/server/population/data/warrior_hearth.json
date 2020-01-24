@@ -16,7 +16,7 @@
 					"swamp_goblins:goblins:goblin"
 				],
 				"given_names": [
-					"Challenger"
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
 				]
 			}
 		},
@@ -28,7 +28,7 @@
 					"stonehearth:male_3"
 				],
 				"given_names": [
-					"Challenger"
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
 				]
 			},
 			"female": {
@@ -38,7 +38,27 @@
 					"stonehearth:female_3"
 				],
 				"given_names": [
-					"Challenger"
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
+				]
+			}
+		},
+		"vanilla_goblin": {
+			"male": {
+				"uri": [
+					"stonehearth:monsters:goblins:goblin"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
+				]
+			}
+		},
+		"vanilla_goblin_wolf": {
+			"male": {
+				"uri": [
+					"stonehearth:monsters:goblins:wolf"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
 				]
 			}
 		}
