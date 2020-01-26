@@ -1,12 +1,11 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.1.24")
+print("Swamp Goblins Mod version 20.1.25")
 
 --[[
 
 waves:
 	boss, bunnies, orcs, kobolds, ogres
 
-trapper+ templates
 add visible goblin trader
 import hearthlings
 move travel to earthmaster

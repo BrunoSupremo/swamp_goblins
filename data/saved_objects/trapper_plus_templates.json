@@ -1,0 +1,30 @@
+{
+	"template_tabs": {
+		"firefly_clan": {
+			"categories": {
+				"outpost": {
+					"templates": {
+						"trapper_hut": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "stonehearth:jobs:trapper"
+							},
+							"file": "file(building_templates/trapper_hut.json)"
+						}
+					}
+				},
+				"settlement": {
+					"templates": {
+						"trapper_hut2": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "stonehearth:jobs:trapper"
+							},
+							"file": "file(building_templates/trapper_hut2.json)"
+						}
+					}
+				}
+			}
+		}
+	}
+}
