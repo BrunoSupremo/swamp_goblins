@@ -93,7 +93,7 @@ function WarriorHearth:_pick_members(wave, level)
 		weighted_set:add(key, value.weight)
 	end
 	local members = {}
-	local amount = math.ceil(level ^ 0.75)
+	local amount = math.ceil(level ^ 0.7)
 	for i=1, amount do
 		local chosen = weighted_set:choose_random()
 		if not chosen then break end
@@ -147,7 +147,7 @@ function WarriorHearth:_spawn_wave()
 				role = wave.members[key].role,
 				min = quantity,
 				max = quantity,
-				range = 4,
+				range = 5,
 				location = { x = 0, z = 0 }
 			},
 			combat_leash_range = 32,
@@ -158,11 +158,8 @@ function WarriorHearth:_spawn_wave()
 		for _, member in ipairs(members) do
 			member:remove_component("stonehearth:traits")
 			member:add_component("stonehearth:trivial_death")
-			local ai = member:get_component("stonehearth:ai")
-			ai:remove_action("stonehearth:actions:die_citizen")
-			ai:add_action("stonehearth:actions:die_generic")
-			ai:remove_action("stonehearth:actions:incapacitate:become_incapacitated")
-			ai:remove_action("stonehearth:actions:incapacitate:be_incapacitated")
+			self:_change_ai(member)
+
 			local job_level = wave.members[key].job_level or {min =1, max =1}
 			for i=2, rng:get_int(job_level.min, job_level.max) do
 				--for i=2 because they already start at level 1
@@ -179,6 +176,16 @@ function WarriorHearth:_spawn_wave()
 			end)
 		end
 	end
+end
+
+function WarriorHearth:_change_ai(member)
+	local ai = member:get_component("stonehearth:ai")
+	ai:remove_action("stonehearth:actions:die_citizen")
+	ai:remove_action("stonehearth:actions:incapacitate:become_incapacitated")
+	ai:remove_action("stonehearth:actions:incapacitate:be_incapacitated")
+	ai:remove_action("stonehearth:actions:eat")
+
+	ai:add_action("stonehearth:actions:die_generic")
 end
 
 function WarriorHearth:_on_wave_member_died(entity)

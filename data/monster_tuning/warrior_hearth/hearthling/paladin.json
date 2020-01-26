@@ -1,0 +1,51 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:cleric",
+	"attributes": {
+		"exp_reward": 100
+	},
+	"equipment": {
+		"torso": "/stonehearth/jobs/cleric/cleric_outfit/cleric_outfit.json",
+		"helmet": [
+			"stonehearth:armor:bronze_circlet",
+			"stonehearth:armor:iron_circlet",
+			"stonehearth:armor:steel_circlet",
+			"stonehearth:armor:legendary:circlet",
+		],
+		"offhand": [
+			"stonehearth:armor:bronze_shield",
+			"stonehearth:armor:iron_shield",
+			"stonehearth:armor:knights_shield",
+			"stonehearth:armor:steel_shield",
+			"stonehearth:armor:legendary:shield",
+		],
+		"mainhand": [
+			"stonehearth:weapons:stone_maul",
+			"stonehearth:weapons:bronze_mace",
+			"stonehearth:weapons:iron_mace"
+		]
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"none": {
+						"weight": 10
+					},
+					"dusty_tome": {
+						"uri": "stonehearth:loot:dusty_tome",
+						"weight": 1
+					}
+				}
+			},
+			"bonus": {
+				"items": {
+					"healing": {
+						"uri": "stonehearth:consumables:healing_tonic:small",
+						"weight": 1
+					}
+				}
+			}
+		}
+	}
+}

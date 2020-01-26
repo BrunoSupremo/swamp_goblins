@@ -146,10 +146,7 @@
 			"knight": {
 				"role": "hearthling",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling:knight",
-				"job_level":{
-					"min":1,
-					"max":2
-				},
+				"max_allowed": 1,
 				"weight": 1
 			},
 			"cleric": {
@@ -201,33 +198,20 @@
 		}
 	},
 	"boss_at_15": {
-		"bulletin":"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.boss_at_10)",
+		"bulletin":"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.boss_at_15)",
 		"weight": 9999,
 		"at_glory_level": {
 			"min":15,
 			"max":15
 		},
 		"members": {
-			"boss": {
-				"role": "vanilla_goblin",
-				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:boss",
-				"weight": 9999,
-				"max_allowed": 1
-			},
-			"wolf": {
-				"role": "vanilla_goblin_wolf",
-				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:wolf",
-				"weight": 1,
-			},
-			"marauder": {
-				"role": "vanilla_goblin",
-				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:marauder",
-				"weight": 9999,
-				"max_allowed": 2
-			},
-			"thief": {
-				"role": "vanilla_goblin",
-				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:thief",
+			"paladin": {
+				"role": "hearthling",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling:paladin",
+				"job_level":{
+					"min":1,
+					"max":3
+				},
 				"weight": 1
 			}
 		}
