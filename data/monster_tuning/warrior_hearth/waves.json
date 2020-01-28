@@ -1,16 +1,15 @@
 {
 	"just_workers": {
 		"bulletin":"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.just_workers)",
-		"weight": 10,
+		"weight": 9999,
 		"at_glory_level": {
 			"min":1,
-			"max":2
+			"max":1
 		},
 		"members": {
 			"worker": {
 				"role": "goblin",
-				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:worker",
-				"weight": 1
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:worker"
 			}
 		}
 	},
@@ -18,7 +17,7 @@
 		"bulletin":"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.easy_goblins)",
 		"weight": 10,
 		"at_glory_level": {
-			"min":3
+			"min":2
 		},
 		"members": {
 			"worker": {
@@ -45,25 +44,17 @@
 			"boss": {
 				"role": "vanilla_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:boss",
-				"weight": 9999,
 				"max_allowed": 1
 			},
 			"wolf": {
 				"role": "vanilla_goblin_wolf",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:wolf",
-				"weight": 9999,
 				"max_allowed": 1
 			},
 			"marauder": {
 				"role": "vanilla_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:marauder",
-				"weight": 9999,
 				"max_allowed": 1
-			},
-			"thief": {
-				"role": "vanilla_goblin",
-				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:thief",
-				"weight": 1
 			}
 		}
 	},
@@ -97,24 +88,53 @@
 			"boss": {
 				"role": "vanilla_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:boss",
+				"max_allowed": 1
+			},
+			"wolf": {
+				"role": "vanilla_goblin_wolf",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:wolf",
+				"max_allowed": 1
+			},
+			"marauder": {
+				"role": "vanilla_goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:marauder",
+				"max_allowed": 1
+			},
+			"thief": {
+				"role": "vanilla_goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:thief",
+				"max_allowed": 1
+			}
+		}
+	},
+	"recurring_boss_from_10": {
+		"bulletin":"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.recurring_boss_from_10)",
+		"weight": 0.5,
+		"at_glory_level": {
+			"min":11
+		},
+		"members": {
+			"boss": {
+				"role": "vanilla_goblin",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:boss",
 				"weight": 9999,
 				"max_allowed": 1
 			},
 			"wolf": {
 				"role": "vanilla_goblin_wolf",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:wolf",
-				"weight": 1,
+				"weight": 10,
+				"max_allowed": 2
 			},
 			"marauder": {
 				"role": "vanilla_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:marauder",
-				"weight": 9999,
-				"max_allowed": 2
+				"weight": 1
 			},
 			"thief": {
 				"role": "vanilla_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:vanilla_goblin:thief",
-				"weight": 1
+				"weight": 2
 			}
 		}
 	},
@@ -137,10 +157,6 @@
 			"archer": {
 				"role": "hearthling",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:hearthling:archer",
-				"job_level":{
-					"min":1,
-					"max":2
-				},
 				"weight": 2
 			},
 			"knight": {
@@ -171,7 +187,6 @@
 			"worker": {
 				"role": "goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:worker",
-				"weight": 1,
 				"max_allowed": 2
 			},
 			"warrior": {
@@ -180,20 +195,17 @@
 				"job_level":{
 					"min":1,
 					"max":6
-				},
-				"weight": 1
+				}
 			},
 			"beast_tamer": {
 				"role": "goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:beast_tamer",
-				"weight": 1,
-				"max_allowed": 2
+				"max_allowed": 1
 			},
 			"spirit_walker": {
 				"role": "goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:spirit_walker",
-				"weight": 1,
-				"max_allowed": 2
+				"max_allowed": 1
 			}
 		}
 	},

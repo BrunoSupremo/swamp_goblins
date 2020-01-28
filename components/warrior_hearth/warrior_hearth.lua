@@ -81,7 +81,7 @@ function WarriorHearth:_pick_a_wave(level)
 		local min = info.at_glory_level and info.at_glory_level.min or 1
 		local max = info.at_glory_level and info.at_glory_level.max or 9999
 		if level >= min and level <= max then
-			weighted_set:add(info, info.weight)
+			weighted_set:add(info, info.weight or 1)
 		end
 	end
 	return weighted_set:choose_random()
@@ -90,10 +90,10 @@ end
 function WarriorHearth:_pick_members(wave, level)
 	local weighted_set = WeightedSet(rng)
 	for key, value in pairs(wave.members) do
-		weighted_set:add(key, value.weight)
+		weighted_set:add(key, value.weight or 1)
 	end
 	local members = {}
-	local amount = math.ceil(level ^ 0.7)
+	local amount = math.ceil( math.sqrt( level ) )
 	for i=1, amount do
 		local chosen = weighted_set:choose_random()
 		if not chosen then break end

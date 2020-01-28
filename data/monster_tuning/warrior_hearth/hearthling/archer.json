@@ -2,7 +2,9 @@
 	"type": "monster_tuning",
 	"job": "stonehearth:jobs:archer",
 	"attributes": {
-		"exp_reward": 5
+		"body": 1,
+		"multiplicative_dmg_modifier": -0.5,
+		"exp_reward": 15
 	},
 	"equipment": {
 		"helmet": "/stonehearth/jobs/archer/archer_outfit/archer_hood/archer_hood.json",
