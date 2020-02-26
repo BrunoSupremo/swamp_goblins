@@ -1,0 +1,29 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:npc:cleric",
+	"attributes": {
+		"max_health": 150,
+		"muscle": 40,
+		"menace": 40,
+		"courage": 150,
+		"speed": 80,
+		"exp_reward": 120
+	},
+	"equipment": {
+		"weapon": [
+			"stonehearth:weapons:tome"
+		]
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"small_healing_tonic" : {
+						"uri": "stonehearth:consumables:healing_tonic:small",
+						"weight" : 1
+					}
+				}
+			}
+		}
+	}
+}

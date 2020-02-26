@@ -1,6 +1,6 @@
 Instructions on how to use the waves.json file
 
-It is a list of waves, each wave needs an unique name identifier, can't repeat names.
+It is a list of possible waves, each wave entry needs an unique name identifier, can't repeat names.
 For example:
 
 {
@@ -14,9 +14,9 @@ For example:
 
 Each wave has 4 fields. bulletin, weight, at_glory_level and members.
 * "bulletin" is optional, it is the custom message that appears when confirmation window asks to accept or decline a challenge. When ommited, a default message is used instead.
-* "at_glory_level" is optional too. It defaults to {"min":1,"max":9999}. It restricts at which glory levels this wave can appear.
-* "weight" is optional, defaults to 1. weight measures the chance this wave has to be picked (has to be on the correct glory level) against other wave options. 
-* "members" is a required field. It should contain a list of unique members, using this format:
+* "at_glory_level" is optional too. It defaults to {"min":1,"max":9999}. It restricts at which glory levels this wave can happen.
+* "weight" is optional, defaults to 1. Weight measures the chance this wave has to be picked (has to be on the correct glory level) against other wave options. 
+* "members" is a required field. It should contain a list of possible members, with unique names, using this format:
 
 "members": {
 	"cool_member": {
@@ -37,10 +37,10 @@ Examples:
 
 Each member has 5 fields. role, tuning, job_level, weight and max_allowed.
 * "weight" is optional and defaults to 1. Weight measures the chance this member has to be picked against other member options. 
-* "max_allowed" is optional and defaults to 9999. The randomizer will not try to pick this member again if it already spawned this amount of times
-* "tuning" is optional, points to a monster_tuning file. Those files can set a bunch of parameters for the entity, such as job, hp, speed, loot, equipments, etc... (vanilla has it too, for more examples)
+* "max_allowed" is optional and defaults to 9999. The randomizer will not try to pick this member again if it already spawned this amount of times in this wave
+* "tuning" is optional, points to a monster_tuning file. Those files can set a bunch of parameters for the entity, such as job, hp, speed, loot, equipments, etc... (vanilla has it too, far more examples)
 * "job_level" is optional and defaults to {"min":1, "max":1}. It randomly set the level of the job for each member spawned. Do not use if the member had no job set in its tuning file (or no tuning)
-* "role" points to a role in the "swamp_goblins:kingdoms:warrior_hearth" file. It is a kingdom population file. Each role in the population can have male and female variations, each with random uris and names. As long as the role is correctly set in the population file, you can use it in a wave. (check any population file for examples, plenty in vanilla)
+* "role" points to a role set in the "swamp_goblins:kingdoms:warrior_hearth" file, which is a kingdom population file. Each role in the population can have male and female variations, each with random uris and names. As long as the role is correctly set in that population file, you can use it in a wave. (check any population file for examples, plenty in vanilla)
 
 Here two new waves added as an example, explanation below it:
 

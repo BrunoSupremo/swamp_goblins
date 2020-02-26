@@ -1,7 +1,7 @@
 {
 	"mixins": "swamp_goblins:kingdoms:firefly_clan",
 	"type": "kingdom",
-	"kingdom_name": "The Golden Conquering Arm",
+	"kingdom_name": "The Challengers",
 	"kingdom_id": "warrior_hearth",
 	"amenity_to_strangers": "hostile",
 	"amenity_to": {
@@ -10,7 +10,7 @@
 		"rabbit_biped_npcs": "neutral"
 	},
 	"roles": {
-		"goblin": {
+		"firefly_goblin": {
 			"male": {
 				"uri": [
 					"swamp_goblins:goblins:goblin"
@@ -56,6 +56,64 @@
 			"male": {
 				"uri": [
 					"stonehearth:monsters:goblins:wolf"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
+				]
+			}
+		},
+		"kobold": {
+			"male": {
+				"uri": [
+					"stonehearth:monsters:kobolds:kobold"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
+				]
+			}
+		},
+		"ogre": {
+			"male": {
+				"uri": [
+					"stonehearth:monsters:ogres:ogre"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
+				]
+			}
+		},
+		"orc": {
+			"male": {
+				"uri": [
+					"stonehearth:monsters:orcs:orc_male"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
+				]
+			},
+			"female": {
+				"uri": [
+					"stonehearth:monsters:orcs:orc_female"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
+				]
+			}
+		},
+		"orc_warchief": {
+			"male": {
+				"uri": [
+					"stonehearth:monsters:orcs:orc_female"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"
+				]
+			}
+		},
+		"kobold_wolf": {
+			"male": {
+				"uri": [
+					"stonehearth:monsters:kobolds:kobold_wolf"
 				],
 				"given_names": [
 					"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.display_name)"

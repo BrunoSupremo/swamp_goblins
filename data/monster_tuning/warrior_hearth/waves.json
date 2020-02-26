@@ -8,7 +8,7 @@
 		},
 		"members": {
 			"worker": {
-				"role": "goblin",
+				"role": "firefly_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:worker"
 			}
 		}
@@ -21,13 +21,13 @@
 		},
 		"members": {
 			"worker": {
-				"role": "goblin",
+				"role": "firefly_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:worker",
 				"weight": 2,
 				"max_allowed": 2
 			},
 			"warrior": {
-				"role": "goblin",
+				"role": "firefly_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:warrior",
 				"weight": 1
 			}
@@ -185,12 +185,12 @@
 		},
 		"members": {
 			"worker": {
-				"role": "goblin",
+				"role": "firefly_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:worker",
 				"max_allowed": 2
 			},
 			"warrior": {
-				"role": "goblin",
+				"role": "firefly_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:warrior",
 				"job_level":{
 					"min":1,
@@ -198,12 +198,12 @@
 				}
 			},
 			"beast_tamer": {
-				"role": "goblin",
+				"role": "firefly_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:beast_tamer",
 				"max_allowed": 1
 			},
 			"spirit_walker": {
-				"role": "goblin",
+				"role": "firefly_goblin",
 				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:firefly:spirit_walker",
 				"max_allowed": 1
 			}
@@ -225,6 +225,41 @@
 					"max":3
 				},
 				"weight": 1
+			}
+		}
+	},
+	"boss_at_20": {
+		"bulletin":"i18n(swamp_goblins:data.monster_tuning.warrior_hearth.boss_at_20)",
+		"weight": 9999,
+		"at_glory_level": {
+			"min":20,
+			"max":20
+		},
+		"members": {
+			"warchief": {
+				"role": "orc_warchief",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:orc:warchief",
+				"max_allowed":1
+			},
+			"kobold": {
+				"role": "kobold",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:orc:kobold",
+				"max_allowed":1
+			},
+			"ogre": {
+				"role": "ogre",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:orc:ogre",
+				"max_allowed":1
+			},
+			"orc_cleric": {
+				"role": "orc",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:orc:cleric",
+				"max_allowed": 1
+			},
+			"orc_footman": {
+				"role": "orc",
+				"tuning":"swamp_goblins:monster_tuning:warrior_hearth:orc:footman",
+				"max_allowed": 1
 			}
 		}
 	}

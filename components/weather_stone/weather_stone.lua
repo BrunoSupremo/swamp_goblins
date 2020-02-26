@@ -99,10 +99,10 @@ function WeatherStone:change_weather()
 
 	--avoid picking the same weather by removing it out of the set
 	weighted_set:remove(current_weather)
-	local chosen_weather = weighted_set:choose_random() or "stonehearth:weather:sunny"
-
-	stonehearth.weather:_switch_to(chosen_weather, self.player_id)
-
+	local chosen_weather = weighted_set:choose_random()
+	if chosen_weather then
+		stonehearth.weather:_switch_to(chosen_weather, self.player_id)
+	end
 	radiant.effects.run_effect(self._entity, "stonehearth:effects:buff_tonic_energy_added")
 
 	self:full_reset()

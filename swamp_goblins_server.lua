@@ -1,7 +1,10 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.1.28")
+print("Swamp Goblins Mod version 20.2.25")
 
 --[[
+
+spirit walker ranged attack as a high level skill (spirit ball attack)
+ranged attack for beast tamer
 
 waves:
 	boss, bunnies, orcs, kobolds, ogres

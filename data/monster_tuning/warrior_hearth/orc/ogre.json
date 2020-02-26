@@ -1,0 +1,35 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:npc:knight",
+	"attributes": {
+		"max_health": 500,
+		"muscle": 0,
+		"menace": 100,
+		"courage": 300,
+		"speed": 80,
+		"exp_reward": 200
+	},
+	"equipment_scale": 0.15,
+	"equipment": {
+		"abilities": "stonehearth:abilities:door_breaker_abilities",
+		"equipment": "stonehearth:abilities:ogre_attack_abilities",
+		"invisible_weapon": "stonehearth:monsters:ogres:ogre_foot_weapon",
+		"weapon": [
+			"stonehearth:weapons:giant_bone_mace"
+		],
+		"shield": "stonehearth:armor:cracked_wooden_buckler",
+		"outfit": "stonehearth:monsters:ogres:outfits:tank"
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"small_healing_tonic": {
+						"uri": "stonehearth:consumables:stamina_tonic",
+						"weight": 1
+					}
+				}
+			}
+		}
+	}
+}

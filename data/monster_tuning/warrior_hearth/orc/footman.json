@@ -1,0 +1,29 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:npc:footman",
+	"attributes": {
+		"max_health": 250,
+		"muscle": 20,
+		"menace": 80,
+		"courage": 250,
+		"speed": 100,
+		"exp_reward": 120
+	},
+	"equipment": {
+		"weapon": [
+			"stonehearth:weapons:giant_bone_axe"
+		]
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"small_healing_tonic": {
+						"uri": "stonehearth:consumables:stamina_tonic",
+						"weight": 1
+					}
+				}
+			}
+		}
+	}
+}

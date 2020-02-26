@@ -1,0 +1,29 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:npc:archer",
+	"attributes": {
+		"max_health": 150,
+		"muscle": 0,
+		"menace": 80,
+		"courage": 130,
+		"speed": 85,
+		"exp_reward": 50
+	},
+	"equipment": {
+		"weapon": [
+			"stonehearth:weapons:kobold_bow"
+		]
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"small_healing_tonic" : {
+						"uri" : "stonehearth:consumables:stamina_tonic",
+						"weight" : 1
+					}
+				}
+			}
+		}
+	}
+}

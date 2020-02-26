@@ -1,0 +1,32 @@
+{
+	"type": "monster_tuning",
+	"job": "stonehearth:jobs:npc:knight",
+	"scale": 0.13,
+	"attributes": {
+		"max_health": 500,
+		"muscle": 100,
+		"menace": 80,
+		"courage": 300,
+		"speed": 80,
+		"exp_reward": 200
+	},
+	"equipment": {
+		"weapon": [
+			"stonehearth:weapons:giant_bone_axe"
+		],
+		"shield": "stonehearth:armor:cracked_wooden_buckler",
+		"outfit": "stonehearth:monsters:orcs:outfits:warchief_boss"
+	},
+	"loot_drops": {
+		"entries": {
+			"default": {
+				"items": {
+					"small_healing_tonic": {
+						"uri": "stonehearth:consumables:healing_tonic:small",
+						"weight": 1
+					}
+				}
+			}
+		}
+	}
+}
