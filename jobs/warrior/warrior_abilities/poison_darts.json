@@ -16,7 +16,7 @@
 			"range": 30,
 			"reach": 1.5,
 			"base_ranged_damage": 10,
-			"projectile_speed": 15,
+			"projectile_speed": 20,
 			"projectile_uri": "swamp_goblins:weapons:poison_dart",
 			"projectile_start_offset": { "x": 0, "y": 1.3, "z": -1.5 }
 		},
@@ -28,6 +28,7 @@
 				"target_armor_multiplier": 0.5,
 				"cooldown": 15000,
 				"priority": 2,
+				"image": "/swamp_goblins/jobs/warrior/images/poison_darts.png",
 				"inflictable_debuffs": {
 					"infection": {
 						"uri": "swamp_goblins:buffs:poison",

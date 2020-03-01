@@ -1,24 +1,24 @@
 local Entity = _radiant.om.Entity
 
-local SummonSpirit = class()
+local SummonSomething = class()
 
-SummonSpirit.name = 'attack ranged'
-SummonSpirit.does = 'stonehearth:combat:attack_ranged'
-SummonSpirit.args = {
+SummonSomething.name = 'attack ranged'
+SummonSomething.does = 'stonehearth:combat:attack_ranged'
+SummonSomething.args = {
 target = Entity
 }
-SummonSpirit.version = 2
-SummonSpirit.priority = 10
-SummonSpirit.weight = 1
+SummonSomething.version = 2
+SummonSomething.priority = 10
+SummonSomething.weight = 1
 
-function SummonSpirit:start_thinking(ai, entity, args)
+function SummonSomething:start_thinking(ai, entity, args)
 	-- refetch every start_thinking as the set of actions may have changed
 	self._attack_types = stonehearth.combat:get_combat_actions(entity, 'stonehearth:combat:ranged_attacks')
 
 	self:_choose_attack_action(ai, entity, args)
 end
 
-function SummonSpirit:_choose_attack_action(ai, entity, args)
+function SummonSomething:_choose_attack_action(ai, entity, args)
 	self._attack_info = stonehearth.combat:choose_attack_action(entity, self._attack_types)
 
 	if self._attack_info then
@@ -28,13 +28,13 @@ function SummonSpirit:_choose_attack_action(ai, entity, args)
 
 	-- choose_attack_action might have complex logic, so just wait 1 second and try again
 	-- instead of trying to guess which coolodowns to track
-	self._think_timer = stonehearth.combat:set_timer("SummonSpirit waiting for cooldown", 1000, function()
+	self._think_timer = stonehearth.combat:set_timer("SummonSomething waiting for cooldown", 1000, function()
 		self._think_timer = nil
 		self:_choose_attack_action(ai, entity, args)
 		end)
 end
 
-function SummonSpirit:stop_thinking(ai, entity, args)
+function SummonSomething:stop_thinking(ai, entity, args)
 	if self._think_timer then
 		self._think_timer:destroy()
 		self._think_timer = nil
@@ -43,7 +43,7 @@ function SummonSpirit:stop_thinking(ai, entity, args)
 	self._attack_types = nil
 end
 
-function SummonSpirit:run(ai, entity, args)
+function SummonSomething:run(ai, entity, args)
 	local target = args.target
 
 	ai:set_status_text_key('swamp_goblins:ai.actions.status_text.summoning', { target = target })
@@ -72,8 +72,8 @@ function SummonSpirit:run(ai, entity, args)
 	ai:execute('stonehearth:run_effect', { effect = self._attack_info.effect })
 end
 
-function SummonSpirit:stop(ai, entity, args)
+function SummonSomething:stop(ai, entity, args)
 	self._attack_info = nil
 end
 
-return SummonSpirit
+return SummonSomething
