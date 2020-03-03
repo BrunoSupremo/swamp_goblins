@@ -1,0 +1,21 @@
+{
+	"type": "recipe",
+	"effort": 15,
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.containers.small_bag.display_name)",
+	"description": "i18n(swamp_goblins:entities.containers.small_bag.description)",
+	"flavor": "i18n(swamp_goblins:entities.containers.small_bag.flavor)",
+	"portrait": "/swamp_goblins/entities/containers/small_bag/small_bag.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:containers:small_bag"
+		}
+	]
+}

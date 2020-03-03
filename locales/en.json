@@ -726,6 +726,11 @@
 			"clay_chest":{
 				"display_name": "Clay Chest",
 				"description": "Stores up to 48 items"
+			},
+			"small_bag":{
+				"display_name": "Small Bag",
+				"description": "Stores up to 8 items",
+				"flavor":"\"-How many times I have to tell you to not leave your stuff on the floor?\""
 			}
 		},
 		"critters": {
@@ -822,6 +827,11 @@
 			"travel_stall": {
 				"display_name": "Firefly Travel Stall",
 				"description": "Send goblins into reembarkations"
+			},
+			"wall_mask": {
+				"display_name": "Wall Mask",
+				"description": "Wall hanging decorative mask",
+				"flavor": "Each mask tells a different story"
 			},
 			"windchime": {
 				"display_name": "Windchime",
@@ -1819,7 +1829,7 @@
 							},
 							"topic2":{
 								"title":"What it does:",
-								"desc1":"Aside from summoning spirits, they can heal some health of near allies by small amounts."
+								"desc1":"Aside from summoning spirits and ranged attacks, they can heal some health of near allies by small amounts."
 							},
 							"topic3":{
 								"title":"Class synergies:",

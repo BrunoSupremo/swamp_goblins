@@ -1,9 +1,11 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.1")
+print("Swamp Goblins Mod version 20.3.2")
 
 --[[
 
-ranged attack for beast tamer
+merge goblin_aura with spirit walker effects into a single armor, default to spirit walker, granted to warrior later
+
+ranged attack for beast tamer, bow
 
 waves:
 	boss, bunnies, orcs, kobolds, ogres
