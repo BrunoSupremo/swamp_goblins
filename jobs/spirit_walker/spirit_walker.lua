@@ -174,8 +174,8 @@ function SpiritWalkerClass:double_attributes(spirit)
 	radiant.entities.set_attribute(spirit, "speed", radiant.entities.get_attribute(self._sv._entity, "speed") +1)
 end
 
-function SpiritWalkerClass:warrior_aura(args)
-	radiant.events.trigger_async(stonehearth.job, 'swamp_goblins:spirit_walker_buffing')
+function SpiritWalkerClass:spirit_armor(args)
+	radiant.events.trigger_async(stonehearth.job, 'swamp_goblins:spirit_armor')
 end
 
 function SpiritWalkerClass:dragon_aura(args)

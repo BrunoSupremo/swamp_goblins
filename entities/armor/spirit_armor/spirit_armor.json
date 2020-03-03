@@ -3,15 +3,17 @@
 	"mixins": "stonehearth:mixins:item_properties",
 	"components": {
 		"effect_list": {
-			"default": "swamp_goblins:effects:goblin_aura"
+			"default": "swamp_goblins:effects:spirit:armor"
 		},
 		"stonehearth:equipment_piece": {
 			"slot": "root",
 			"render_type": "attach_to_bone",
 			"postures": [
+				"stonehearth:default_posture",
 				"stonehearth:combat",
 				"stonehearth:patrol"
-			]
+			],
+			"military_score": 10
 		}
 	},
 	"entity_data": {
@@ -19,9 +21,9 @@
 			"base_damage_reduction": 5
 		},
 		"stonehearth:catalog": {
-			"display_name": "i18n(swamp_goblins:entities.armor.goblin_aura.display_name)",
-			"description": "i18n(swamp_goblins:entities.armor.goblin_aura.description)",
-			"icon": "file(goblin_aura.png)",
+			"display_name": "i18n(swamp_goblins:entities.armor.spirit_armor.display_name)",
+			"description": "i18n(swamp_goblins:entities.armor.spirit_armor.description)",
+			"icon": "/swamp_goblins/jobs/spirit_walker/images/icon.png",
 		}
 	}
 }

@@ -1,17 +1,7 @@
 {
 	"type": "entity",
 	"components": {
-		"effect_list": {
-			"default": "swamp_goblins:effects:spirit_walker"
-		},
 		"stonehearth:equipment_piece": {
-			"slot": "root",
-			"render_type": "attach_to_bone",
-			"postures": [
-				"stonehearth:default_posture",
-				"stonehearth:combat",
-				"stonehearth:patrol"
-			],
 			"injected_ai": {
 				"ai_packs": [
 					"swamp_goblins:ai_pack:summon",

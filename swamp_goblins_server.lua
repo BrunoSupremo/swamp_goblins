@@ -1,9 +1,7 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.2")
+print("Swamp Goblins Mod version 20.3.3")
 
 --[[
-
-merge goblin_aura with spirit walker effects into a single armor, default to spirit walker, granted to warrior later
 
 ranged attack for beast tamer, bow
 
@@ -50,12 +48,10 @@ music:
 	bongo, drum, flute, gong, triangulo
 equipments:
 	replace weapon placeholders, improve overall models
-	beast_tamer/spirit_walker better weapons
 	shields? worker outfit?
 redo:
 	hourglass effects
 	checkers table
-	warrior goblin aura effects
 fisher:
 	swamp fish colors, eels, blowfish
 Bugs:

@@ -11,16 +11,17 @@ function WarriorClass:_create_listeners()
 		return
 	end
 	if job:get_highest_level() >=5 then
-		self:spirit_walker_buffing()
+		self:spirit_armor()
 	else
-		self.spirit_listener = radiant.events.listen_once(stonehearth.job, 'swamp_goblins:spirit_walker_buffing', self, self.spirit_walker_buffing)
+		self.spirit_listener = radiant.events.listen_once(stonehearth.job, 'swamp_goblins:spirit_armor', self, self.spirit_armor)
 	end
 end
 
-function WarriorClass:spirit_walker_buffing()
+function WarriorClass:spirit_armor()
 	local equipment_component = self._sv._entity:get_component("stonehearth:equipment")
-	if not equipment_component:has_item_type("swamp_goblins:armor:goblin_aura") then
-		local equipment = radiant.entities.create_entity("swamp_goblins:armor:goblin_aura")
+	local spirit_armor = "swamp_goblins:armor:spirit_armor"
+	if not equipment_component:has_item_type(spirit_armor) then
+		local equipment = radiant.entities.create_entity(spirit_armor)
 		radiant.entities.equip_item(self._sv._entity, equipment)
 	end
 	self:_remove_spirit_listener()
