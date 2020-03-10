@@ -60,6 +60,10 @@
 				"swamp_goblins:build:brushes:pattern:fiber_checker": {
 					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/fiber_checker.png",
 					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.fiber_checker)"
+				},
+				"swamp_goblins:build:brushes:pattern:fiber_dotted": {
+					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/fiber_dotted.png",
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.fiber_dotted)"
 				}
 			}
 		}
@@ -85,9 +89,19 @@
 	"roof": {
 		"fiber resource": {
 			"patterns": {
+				"swamp_goblins:build:brushes:roof:green_stripes": {
+					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/roof/green_stripes.png",
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.roof.green_stripes)",
+					"type": "peaked"
+				},
 				"swamp_goblins:build:brushes:roof:purple_stripes": {
-					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/purple_stripes.png",
-					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.purple_stripes)",
+					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/roof/purple_stripes.png",
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.roof.purple_stripes)",
+					"type": "peaked"
+				},
+				"swamp_goblins:build:brushes:roof:white_stripes": {
+					"icon": "/swamp_goblins/ui/game/modes/build_mode/images/brushes/roof/white_stripes.png",
+					"display_name": "i18n(swamp_goblins:data.build.building_brushes.patterns.roof.white_stripes)",
 					"type": "peaked"
 				}
 			}

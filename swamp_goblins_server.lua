@@ -1,16 +1,19 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.3")
+print("Swamp Goblins Mod version 20.3.10")
 
 --[[
 
-ranged attack for beast tamer, bow
+add_goblin_citizen cheat command
+
+shaman potions
+
+vine cobblestone wall
 
 waves:
 	boss, bunnies, orcs, kobolds, ogres
 
 add visible goblin trader
 import hearthlings
-move travel to earthmaster
 
 mosquito model
 banner shred
@@ -42,6 +45,7 @@ templates:
 	inn, dinning hall, tavern, combat houses (n.a. inspired)
 earthmaster:
 	dart traps, smoke traps
+	upgraded workbenches
 gizmos:
 	goblinpedia
 music:
@@ -49,9 +53,11 @@ music:
 equipments:
 	replace weapon placeholders, improve overall models
 	shields? worker outfit?
+	ranged attack for beast tamer, bow?
 redo:
 	hourglass effects
 	checkers table
+	travel stall
 fisher:
 	swamp fish colors, eels, blowfish
 Bugs:

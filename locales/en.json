@@ -49,7 +49,12 @@
 				"patterns":{
 					"fiber_checker":"Green Fiber Checkerboard",
 					"fiber_diagonal":"Green Fiber Diagonal Stripes",
-					"purple_stripes":"Purple Fiber Stripes",
+					"fiber_dotted":"White Fiber Dots",
+					"roof":{
+						"green_stripes":"Green Fiber Stripes",
+						"purple_stripes":"Purple Fiber Stripes",
+						"white_stripes":"White Fiber Stripes"
+					},
 					"white_stripes":"White Fiber Stripes",
 				}
 			}
@@ -548,8 +553,6 @@
 		},
 		"saved_objects": {
 			"building_templates": {
-				"trapper_hut": "💜 Trapper Workshop",
-				"trapper_hut2": "💜 Trapper Workshop (Tier 2)",
 				"barrack": "💜 Barrack",
 				"house1": "💜 House 1 (wip)",
 				"house2": "💜 House 2 (wip)",
@@ -558,17 +561,20 @@
 				"temple": "💜 Temple",
 				"tent": "💜 Tent",
 				"nursery": "💜 Nursery",
-				"fisher_hut": "💜 Fisher Hut",
-				"bonesmith_workshop": "💜 Bonesmith Workshop",
-				"earthmaster_workshop": "💜 Earthmaster Workshop",
-				"shaman_center": "💜 Shaman Center",
-				"fisher_hut2": "💜 Fisher Hut (Tier 2)",
-				"bonesmith_workshop2": "💜 Bonesmith Workshop (Tier 2)",
-				"earthmaster_workshop2": "💜 Earthmaster Workshop (Tier 2)",
-				"shaman_center2": "💜 Shaman Center (Tier 2)",
 				"treasure_storage": "💜 Treasure Storage",
-				"trading": "💜 Trading (wip)",
-				"garden": "💜 Garden"
+				"garden": "💜 Garden",
+				"bonesmith_workshop": "💜 Bonesmith Workshop",
+				"bonesmith_workshop2": "💜 Bonesmith Workshop (Tier 2)",
+				"earthmaster_workshop": "💜 Earthmaster Workshop",
+				"earthmaster_workshop2": "💜 Earthmaster Workshop (Tier 2)",
+				"shaman_center": "💜 Shaman Center",
+				"shaman_center2": "💜 Shaman Center (Tier 2)",
+				"spirit_walker_sanctuary": "💜 Spirit Walker Sanctuary",
+				"spirit_walker_sanctuary2": "💜 Spirit Walker Sanctuary (Tier 2)",
+				"fisher_hut": "💜 Fisher Hut",
+				"fisher_hut2": "💜 Fisher Hut (Tier 2)",
+				"trapper_hut": "💜 Trapper Workshop",
+				"trapper_hut2": "💜 Trapper Workshop (Tier 2)"
 			}
 		},
 		"traits": {
@@ -922,17 +928,19 @@
 					"flavor": "Watchout, no one wants to be left out, everyone is special"
 				}
 			},
+			"wood":{
+				"chair": {
+					"display_name": "Simple Chair",
+					"description": "You can sit on it"
+				},
+				"table": {
+					"display_name": "Simple Table",
+					"description": "A table, for table things"
+				}
+			},
 			"hammock": {
 				"display_name": "Hammock",
 				"description": "To sleep far from the ground"
-			},
-			"simple_chair": {
-				"display_name": "Simple Chair",
-				"description": "You can sit on it"
-			},
-			"simple_table": {
-				"display_name": "Simple Table",
-				"description": "A table, for table things"
 			},
 			"swing": {
 				"display_name": "Swing",

@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 15,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.furniture.wood.chair.display_name)",
+	"description": "i18n(swamp_goblins:entities.furniture.wood.chair.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/furniture/wood/chair/chair.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:furniture:wood:chair"
+		}
+	]
+}

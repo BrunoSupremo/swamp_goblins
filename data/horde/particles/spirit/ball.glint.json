@@ -20,8 +20,8 @@
 	"particle": {
 		"lifetime": {
 			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [1750, 2000]
+				"kind": "CONSTANT",
+				"values": [1000]
 			}
 		},
 		"speed": {
@@ -33,7 +33,7 @@
 		"acceleration": {
 			"over_lifetime_y": {
 				"kind": "CONSTANT",
-				"values": [-1]
+				"values": [-2]
 			}
 		},
 		"scale": {

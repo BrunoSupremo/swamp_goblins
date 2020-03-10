@@ -6,11 +6,16 @@ function PoisonOverTimeBuffScript:on_buff_added(entity, buff)
 
 	self._pulse_listener = stonehearth.calendar:set_interval("PoisonOverTime pulse", "5m", 
 		function()
-			radiant.entities.add_buff(self._entity, "swamp_goblins:buffs:poison:add")
-			radiant.effects.run_effect(self._entity, "stonehearth:effects:debuff_added:undead_infection")
-			local health = radiant.entities.get_health(self._entity)
-			radiant.entities.modify_health(self._entity, health*-0.02)
-			end)
+			self:on_pulse()
+		end)
+	self:on_pulse()
+end
+
+function PoisonOverTimeBuffScript:on_pulse()
+	radiant.entities.add_buff(self._entity, "swamp_goblins:buffs:poison:add")
+	radiant.effects.run_effect(self._entity, "stonehearth:effects:debuff_added:undead_infection")
+	local health = radiant.entities.get_health(self._entity)
+	radiant.entities.modify_health(self._entity, health*-0.02)
 end
 
 function PoisonOverTimeBuffScript:on_buff_removed(entity, buff)

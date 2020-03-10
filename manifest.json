@@ -99,10 +99,13 @@
 		"buffs:tower:egg":"file(tower_defense/data/buffs/egg)",
 		"buffs:tower:egg_hatch":"file(tower_defense/data/buffs/egg/egg_hatch.json)",
 
+		"build:brushes:pattern:fiber_dotted":	"file(data/build/brushes/pattern/fiber_dotted.qb)",
 		"build:brushes:pattern:fiber_diagonal":	"file(data/build/brushes/pattern/fiber_diagonal.qb)",
 		"build:brushes:pattern:fiber_checker":	"file(data/build/brushes/pattern/fiber_checker.qb)",
 		"build:brushes:wall:white_stripes":		"file(data/build/brushes/wall/white_stripes.qb)",
+		"build:brushes:roof:green_stripes":		"file(data/build/brushes/roof/green_stripes.qb)",
 		"build:brushes:roof:purple_stripes":	"file(data/build/brushes/roof/purple_stripes.qb)",
+		"build:brushes:roof:white_stripes":		"file(data/build/brushes/roof/white_stripes.qb)",
 
 		"camp_hearth":	"file(entities/decoration/firepit_skulls)",
 		"camp_standard":	"file(entities/gizmos/camp_standard)",
@@ -259,10 +262,10 @@
 		"furniture:stone:chair":	"file(entities/furniture/stone/chair)",
 		"furniture:stone:table":	"file(entities/furniture/stone/table)",
 		"furniture:stone:throne":	"file(entities/furniture/stone/throne)",
+		"furniture:wood:chair":	"file(entities/furniture/wood/chair)",
+		"furniture:wood:table":	"file(entities/furniture/wood/table)",
 
 		"furniture:hammock":		"file(entities/furniture/hammock)",
-		"furniture:simple_chair":	"file(entities/furniture/simple_chair)",
-		"furniture:simple_table":	"file(entities/furniture/simple_table)",
 		"furniture:swing":			"file(entities/furniture/swing)",
 		"furniture:wood_bench":		"file(entities/furniture/wood_bench)",
 		"furniture:wood_throne":	"file(entities/furniture/wood_throne)",
@@ -522,6 +525,7 @@
 		"sky_settings:foggy": "file(data/weather/foggy/foggy_sky_settings.json)",
 
 		"worker:abilities:goblin":"file(jobs/worker/goblin_worker_abilities.json)",
+		"worker:abilities:hunter":"file(jobs/worker/hunter_abilities.json)",
 
 		"data:kingdom_level_costs:firefly_clan":"file(tower_defense/data/kingdoms/level_costs/firefly_clan.json)",
 		"towers:beast_tamer":	"file(tower_defense/towers/beast_tamer)",
@@ -556,6 +560,8 @@
 		"towers:worker:weapon_utility":			"file(tower_defense/towers/worker/weapon_utility.json)"
 	},
 	"deprecated_aliases":{
+		"furniture:simple_chair":	"file(entities/gizmos/deprecated)",
+		"furniture:simple_table":	"file(entities/gizmos/deprecated)",
 		"furniture:mush_chair":		"file(entities/gizmos/deprecated)",
 		"furniture:mush_table":		"file(entities/gizmos/deprecated)",
 		"furniture:checkers_table":	"file(entities/gizmos/deprecated)",

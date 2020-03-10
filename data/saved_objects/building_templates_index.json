@@ -39,6 +39,13 @@
 								"value": "archipelago_biome:jobs:fisher"
 							},
 							"file": "file(building_templates/fisher_hut.json)"
+						},
+						"spirit_walker_sanctuary": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:spirit_walker"
+							},
+							"file": "file(building_templates/spirit_walker_sanctuary.json)"
 						}
 					}
 				},
@@ -51,7 +58,6 @@
 						"house2":	"file(building_templates/house2.json)",
 						"house3":	"file(building_templates/house3.json)",
 						"temple":	"file(building_templates/temple.json)",
-						"trading":	"file(building_templates/trading.json)",
 						"treasure_storage":	"file(building_templates/treasure_storage.json)",
 						"garden":	"file(building_templates/garden.json)",
 						"bonesmith_workshop2": {
@@ -81,6 +87,13 @@
 								"value": "archipelago_biome:jobs:fisher"
 							},
 							"file": "file(building_templates/fisher_hut2.json)"
+						},
+						"spirit_walker_sanctuary2": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:spirit_walker"
+							},
+							"file": "file(building_templates/spirit_walker_sanctuary2.json)"
 						}
 					}
 				}
