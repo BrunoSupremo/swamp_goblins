@@ -755,6 +755,10 @@
 		"abandon_glory_wave": {
 			"controller": "file(call_handlers/firefly_stuff.lua)",
 			"endpoint": "server"
+		},
+		"add_goblin_citizen_command": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
 		}
 	},
 	"components": {
@@ -811,6 +815,7 @@
 			"file(ui/game/goblinpedia/goblinpedia.html)"
 		],
 		"js":[
+			"file(ui/console/console_commands.js)",
 			"file(ui/game/bulletin/warrior_hearth_dialog/warrior_hearth_dialog.js)",
 			"file(ui/game/goblinpedia/goblinpedia.js)",
 			"file(ui/game/start_menu/stonehearth_menu.js)"

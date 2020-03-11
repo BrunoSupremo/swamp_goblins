@@ -3,7 +3,7 @@ print("Swamp Goblins Mod version 20.3.10")
 
 --[[
 
-add_goblin_citizen cheat command
+bug:goblins cannot lay egg in other kingdoms
 
 shaman potions
 
@@ -13,6 +13,7 @@ waves:
 	boss, bunnies, orcs, kobolds, ogres
 
 add visible goblin trader
+	and goblin market
 import hearthlings
 
 mosquito model
