@@ -4,8 +4,11 @@ local rng = _radiant.math.get_default_rng()
 local IntegerGaussianRandom = require 'stonehearth.lib.math.integer_gaussian_random'
 local gaussian_rng = IntegerGaussianRandom(rng)
 
+local firefly_kingdom = radiant.resources.load_json("swamp_goblins:kingdoms:firefly_clan")
+local goblin_role_data = firefly_kingdom.roles["default"]
+
 function GoblinPopulationFaction:create_new_goblin_citizen_from_role_data(citizen)
-	self:_set_citizen_initial_state(citizen, "male", self:get_role_data(), {})
+	self:_set_citizen_initial_state(citizen, "male", goblin_role_data, {})
 	self._sv.citizens:add(citizen:get_id(), citizen)
 	self:on_citizen_count_changed()
 	self:_monitor_citizen(citizen)

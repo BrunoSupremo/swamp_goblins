@@ -1,9 +1,17 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.10")
+print("Swamp Goblins Mod version 20.3.18")
 
 --[[
 
-bug:goblins cannot lay egg in other kingdoms
+non blue skin trait
+
+goblin worker outfit2 similar to the storyboard cloth
+
+modrepairer for the discourse
+
+more varanus spawnings, maybe replace wolfs
+
+bigger high level chests
 
 shaman potions
 
@@ -37,8 +45,10 @@ containers:
 	input_bin, input_corner, input_shelf_ground, input_shelf_wall, input_table, output_box
 decorations:
 	lamp post, lamp/lantern, mat/rug/mosaic, statue
-	painting/tapestry, banner wall, awning, wall planter
+	painting/tapestry, banner wall, awning
 	aroma candles, incenses
+	weapon/armor decorations
+	wall planter, pots, violets versions
 furniture:
 	themes: mushroom, fiber, wood, fancy/clothed wood, stone, clay
 	bed, chair, table, bench

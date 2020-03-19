@@ -4,7 +4,7 @@
 			"display_name": "fire_fly",
 			"required_kingdom": "swamp_goblins:kingdoms:firefly_clan",
 			"categories": {
-				"outpost": {
+				"goblin_outpost": {
 					"display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.categories.outpost)",
 					"ordinal": 1,
 					"templates": {
@@ -49,14 +49,14 @@
 						}
 					}
 				},
-				"settlement": {
+				"goblin_settlement": {
 					"display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.categories.settlement)",
 					"ordinal": 2,
 					"required_city_tier": 2,
 					"templates": {
-						"house1":	"file(building_templates/house1.json)",
-						"house2":	"file(building_templates/house2.json)",
-						"house3":	"file(building_templates/house3.json)",
+						"firefly_house1":	"file(building_templates/firefly_house1.json)",
+						"firefly_house2":	"file(building_templates/firefly_house2.json)",
+						"firefly_house3":	"file(building_templates/firefly_house3.json)",
 						"temple":	"file(building_templates/temple.json)",
 						"treasure_storage":	"file(building_templates/treasure_storage.json)",
 						"garden":	"file(building_templates/garden.json)",

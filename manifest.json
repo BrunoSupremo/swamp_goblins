@@ -472,7 +472,6 @@
 		"traits:passion_beast_tamer":	"file(data/traits/passion_beast_tamer)",
 		"traits:passion_bonesmith":		"file(data/traits/passion_bonesmith)",
 		"traits:passion_earthmaster":	"file(data/traits/passion_earthmaster)",
-		"traits:passion_scavenger":		"file(data/traits/passion_scavenger)",
 		"traits:passion_shaman":		"file(data/traits/passion_shaman)",
 		"traits:passion_spirit_walker":	"file(data/traits/passion_spirit_walker)",
 		"traits:passion_warrior":		"file(data/traits/passion_warrior)",
@@ -560,6 +559,8 @@
 		"towers:worker:weapon_utility":			"file(tower_defense/towers/worker/weapon_utility.json)"
 	},
 	"deprecated_aliases":{
+		"traits:passion_scavenger":	"stonehearth/data/traits/passion_trapper/passion_trapper_trait.json",
+
 		"furniture:simple_chair":	"file(entities/gizmos/deprecated)",
 		"furniture:simple_table":	"file(entities/gizmos/deprecated)",
 		"furniture:mush_chair":		"file(entities/gizmos/deprecated)",
@@ -795,7 +796,7 @@
 		"class:shaman":			"file(jobs/shaman/shaman.lua)",
 		"class:spirit_walker":	"file(jobs/spirit_walker/spirit_walker.lua)",
 		"class:warrior":		"file(jobs/warrior/warrior.lua)",
-		"class:worker":			"file(jobs/worker/worker.lua)",
+		"class:worker":			"stonehearth/jobs/worker/worker.lua",
 
 		"game_master:spawn_firefly":"file(data/gm/campaigns/swamp_and_goblins_stuff/arcs/encounters/scripts/spawn_firefly.lua)",
 
