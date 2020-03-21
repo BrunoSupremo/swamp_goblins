@@ -1,0 +1,31 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:jobs.weaver.recipes.worker_outfit_2_recipe.recipe_name)",
+	"description": "i18n(swamp_goblins:jobs.worker.upgraded_outfit.description)",
+	"flavor": "i18n(stonehearth:jobs.weaver.recipes.worker_outfit_2_recipe.flavor)",
+	"portrait": "/swamp_goblins/jobs/worker/upgraded_outfit/upgraded_outfit.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"work_effect": "fiddle",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "pelt resource",
+			"count": 2
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:refined:jewel",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:worker:upgraded_outfit"
+		}
+	]
+}

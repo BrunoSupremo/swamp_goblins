@@ -2,6 +2,9 @@
 	"mixins": "stonehearth:mixins:placed_object",
 	"type": "entity",
 	"components": {
+		"render_info": {
+			"scale": 0.3
+		},
 		"swamp_goblins:monster_spawner" : {
 			"monster":"swamp_goblins:monsters:varanus"
 		},
@@ -19,16 +22,16 @@
 		"destination": {
 			"region": [
 				{
-					"min": { "x": 0, "y": 0, "z": 0 },
-					"max": { "x": 1, "y": 1, "z": 1 }
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 2, "y": 1, "z": 2 }
 				}
 			]
 		},
 		"region_collision_shape": {
 			"region": [
 				{
-					"min": { "x": 0, "y": 0, "z": 0 },
-					"max": { "x": 1, "y": 1, "z": 1 }
+					"min": { "x": -1, "y": 0, "z": -1 },
+					"max": { "x": 2, "y": 1, "z": 2 }
 				}
 			]
 		}

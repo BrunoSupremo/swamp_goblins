@@ -78,10 +78,17 @@ function FireflyGoblin:fix_traits()
 		"stonehearth:traits:passion_potter",
 		"stonehearth:traits:passion_shepherd",
 		"stonehearth:traits:passion_weaver",
+		
+		"kmnky_traits:traits:barbarian",
+		"kmnky_traits:traits:divine_soul",
+		"kmnky_traits:traits:goblin",
+		"kmnky_traits:traits:noble",
+		"kmnky_traits:traits:pacifist",
+		"kmnky_traits:traits:scarred",
+		"kmnky_traits:traits:wizened",
 	}
 	for _, trait in pairs(traits_to_remove) do
 		if trait_comp:has_trait(trait) then
-			print("removing trait: "..trait)
 			trait_comp:remove_trait(trait)
 		end
 	end

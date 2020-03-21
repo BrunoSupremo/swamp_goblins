@@ -22,6 +22,9 @@
 			"ordinal": 5,
 			"name": "i18n(stonehearth:ui.game.citizen_character_sheet.equipment)",
 			"recipes": {
+				"upgraded_outfit": {
+					"recipe": "file(equipments/upgraded_outfit_recipe.json)"
+				},
 				"magma_sword": {
 					"recipe": "file(equipments/magma_sword_recipe.json)"
 				},

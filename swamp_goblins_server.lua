@@ -1,13 +1,9 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.18")
+print("Swamp Goblins Mod version 20.3.21")
 
 --[[
 
 non blue skin trait
-
-goblin worker outfit2 similar to the storyboard cloth
-
-modrepairer for the discourse
 
 more varanus spawnings, maybe replace wolfs
 
