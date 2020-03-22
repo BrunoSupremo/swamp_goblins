@@ -29,10 +29,14 @@ return ai:create_compound_action(FireflyLayEgg)
 :execute('stonehearth:goto_entity_type', {
 	filter_fn = ai.CALL(find_an_egg_spot, ai.ENTITY),
 	description = 'find egg spot'
-	})
+})
 :execute('stonehearth:reserve_entity', { entity = ai.PREV.destination_entity })
+:execute('stonehearth:abort_on_event_triggered', {
+	source = ai.BACK(2).destination_entity,
+	event_name = 'swamp_goblins:lay_egg:cancel'
+})
 :execute('stonehearth:run_effect', {
 	effect = "emote_dance_shuffle",
 	times = 3
-	})
-:execute('swamp_goblins:create_egg', {pedestal = ai.BACK(3).destination_entity})
+})
+:execute('swamp_goblins:create_egg', {pedestal = ai.BACK(4).destination_entity})

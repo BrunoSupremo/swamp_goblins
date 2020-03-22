@@ -14,13 +14,9 @@ end
 function LayEgg_spot:post_activate()
 	self.player_id = self._entity:get_player_id()
 
-	if self._sv._use_state == "off" then
-		self:enable_commands(true)
-	else --waiting or has_egg
-		self:enable_commands(false)
-		if self._sv._use_state == "waiting" then
-			self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:egg_pedestal", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
-		end
+	self:update_commands()
+	if self._sv._use_state == "waiting" then
+		self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:egg_pedestal", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
 	end
 
 	if self._sv._current_egg then
@@ -30,7 +26,7 @@ function LayEgg_spot:post_activate()
 			self._egg_listener = nil
 		end)
 		self._kill_listener = radiant.events.listen_once(self._sv._current_egg, 'stonehearth:kill_event', function(e)
-			self:egg_killed()
+			self:reset_pedestal()
 			self._sv._current_egg = nil
 			self._kill_listener = nil
 		end)
@@ -42,24 +38,42 @@ function LayEgg_spot:post_activate()
 	end
 end
 
-function LayEgg_spot:enable_commands(enable)
+function LayEgg_spot:update_commands()
 	local commands_component = self._entity:get_component("stonehearth:commands")
-	commands_component:set_command_enabled("swamp_goblins:commands:enable_egg_spot",enable)
-	commands_component:set_command_enabled('stonehearth:commands:move_item',enable)
-	commands_component:set_command_enabled('stonehearth:commands:undeploy_item',enable)
+	if self._sv._use_state == "off" then
+		commands_component:set_command_enabled('stonehearth:commands:move_item',true)
+		commands_component:set_command_enabled('stonehearth:commands:undeploy_item',true)
+		commands_component:add_command("swamp_goblins:commands:enable_egg_spot")
+		commands_component:remove_command("swamp_goblins:commands:cancel_egg_spot")
+	else
+		commands_component:set_command_enabled('stonehearth:commands:move_item',false)
+		commands_component:set_command_enabled('stonehearth:commands:undeploy_item',false)
+		commands_component:remove_command("swamp_goblins:commands:enable_egg_spot")
+
+		if self._sv._use_state == "waiting" then
+			commands_component:add_command("swamp_goblins:commands:cancel_egg_spot")
+		else --"has_egg"
+			commands_component:remove_command("swamp_goblins:commands:cancel_egg_spot")
+		end
+	end
+end
+
+function LayEgg_spot:cancel_egg()
+	radiant.events.trigger(self._entity, 'swamp_goblins:lay_egg:cancel')
+	self:reset_pedestal()
 end
 
 function LayEgg_spot:now_waiting()
-	self:enable_commands(false)
-	self._sv._use_state = "waiting" --someone lay an egg
+	self._sv._use_state = "waiting" --someone to lay an egg
+	self:update_commands()
 	self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:egg_pedestal", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
 
 	stonehearth.ai:reconsider_entity(self._entity)
 end
 
 function LayEgg_spot:create_egg()
-	self:enable_commands(false)
 	self._sv._use_state = "has_egg"
+	self:update_commands()
 	local egg = radiant.entities.create_entity("swamp_goblins:goblins:egg", {owner = self.player_id})
 	local location = radiant.entities.get_world_grid_location(self._entity)
 	radiant.entities.turn_to(egg, rng:get_int(0,3)*90)
@@ -84,7 +98,7 @@ function LayEgg_spot:create_egg()
 		self._egg_listener = nil
 	end)
 	self._kill_listener = radiant.events.listen_once(egg, 'stonehearth:kill_event', function(e)
-		self:egg_killed()
+		self:reset_pedestal()
 		self._sv._current_egg = nil
 		self._kill_listener = nil
 	end)
@@ -95,8 +109,7 @@ function LayEgg_spot:create_egg()
 end
 
 function LayEgg_spot:egg_hatched(baby)
-	self:enable_commands(true)
-	self._sv._use_state = "off"
+	self:reset_pedestal()
 	radiant.effects.run_effect(baby, "stonehearth:effects:buff_tonic_energy_added")
 
 	self._sv._current_baby = baby
@@ -114,8 +127,6 @@ function LayEgg_spot:egg_hatched(baby)
 		zoom_to_entity = baby,
 		title = "i18n(swamp_goblins:ui.data.new_goblin_baby)"
 	})
-
-	stonehearth.ai:reconsider_entity(self._entity)
 end
 
 function LayEgg_spot:grow_into_adult(adult)
@@ -133,9 +144,13 @@ function LayEgg_spot:grow_into_adult(adult)
 	:add_i18n_data('adult_name', radiant.entities.get_custom_name(adult))
 end
 
-function LayEgg_spot:egg_killed()
-	self:enable_commands(true)
+function LayEgg_spot:reset_pedestal()
 	self._sv._use_state = "off"
+	if self._sv._task_effect then
+		self._sv._task_effect:stop()
+		self._sv._task_effect = nil
+	end
+	self:update_commands()
 
 	stonehearth.ai:reconsider_entity(self._entity)
 end

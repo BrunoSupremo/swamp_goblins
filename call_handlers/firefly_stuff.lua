@@ -10,6 +10,13 @@ function FireflyCallHandler:enable_egg_spot(session, response, entity)
 	entity:get_component("swamp_goblins:lay_egg_spot"):now_waiting()
 end
 
+function FireflyCallHandler:cancel_egg_spot(session, response, entity)
+	validator.expect_argument_types({'Entity'}, entity)
+	validator.expect.matching_player_id(session.player_id, entity)
+
+	entity:get_component("swamp_goblins:lay_egg_spot"):cancel_egg()
+end
+
 function FireflyCallHandler:travel(session, response, entity)
 	validator.expect_argument_types({'Entity'}, entity)
 	validator.expect.matching_player_id(session.player_id, entity)

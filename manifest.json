@@ -118,6 +118,7 @@
 		"commands:weather_stone:charge":"file(data/commands/weather_stone/charge.json)",
 		"commands:weather_stone:use":	"file(data/commands/weather_stone/use.json)",
 		"commands:enable_egg_spot":	"file(data/commands/enable_egg_spot)",
+		"commands:cancel_egg_spot":	"file(data/commands/enable_egg_spot/cancel_egg_spot.json)",
 		"commands:goblinpedia":		"file(data/commands/goblinpedia)",
 		"commands:travel":			"file(data/commands/travel)",
 		"commands:music":			"file(data/commands/music)",
@@ -737,6 +738,10 @@
 			"endpoint": "server"
 		},
 		"enable_egg_spot": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
+		},
+		"cancel_egg_spot": {
 			"controller": "file(call_handlers/firefly_stuff.lua)",
 			"endpoint": "server"
 		},

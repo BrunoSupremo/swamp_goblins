@@ -6,6 +6,7 @@ print("Swamp Goblins Mod version 20.3.21")
 non blue skin trait
 
 more varanus spawnings, maybe replace wolfs
+	swamp zilla
 
 bigger high level chests
 

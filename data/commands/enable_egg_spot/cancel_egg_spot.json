@@ -1,0 +1,11 @@
+{
+	"type": "command",
+	"name": "cancel_egg_spot",
+	"display_name": "i18n(swamp_goblins:data.commands.cancel_egg_spot.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.cancel_egg_spot.description)",
+	"icon": "file(cancel_egg_spot.png)",
+	"ordinal": 9,
+	"action": "call",
+	"function": "swamp_goblins:cancel_egg_spot",
+	"args": []
+}

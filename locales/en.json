@@ -62,8 +62,11 @@
 		"commands":{
 			"enable_egg_spot":{
 				"display_name":"Lay Egg",
-				"description":"Calls a goblin to lay an egg",
-				"disabled_description":"Already in use"
+				"description":"Calls a goblin to lay an egg"
+			},
+			"cancel_egg_spot":{
+				"display_name":"Cancel Lay Egg",
+				"description":"Cancel a goblin order to lay an egg"
 			},
 			"goblinpedia":{
 				"display_name":"Open the Goblinpedia",
