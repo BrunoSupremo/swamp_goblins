@@ -1,9 +1,7 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.22")
+print("Swamp Goblins Mod version 20.3.23")
 
 --[[
-
-integrating the thrust attack from Goblin_warfare into the swamp goblins?
 
 non blue skin trait
 

@@ -293,7 +293,7 @@
 												"dialog_nodes": {
 													"msg1": {
 														"bulletin_message": {
-															"00": "Your venturing Bonesmith and Earthmaster have returned, with knowledge of all sorts of Rabbit recipes!<br><br>\"I must say, your citizens shared tales of mushroom recipes with us. I simply must try it sometime...\""
+															"00": "Your venturing Bonesmith and Earthmaster have returned, with knowledge of all sorts of Rabbit recipes!<br><br>\"I must say, your citizens shared tales of swamp mushroom recipes with us. I simply must try it sometime...\""
 														}
 													}
 												}
@@ -897,11 +897,11 @@
 				"flavor": "This food item counts as vegetable for all other recipes"
 			},
 			"mushroom": {
-				"display_name": "Mushroom",
+				"display_name": "Swamp Mushroom",
 				"description": "Ready for eating"
 			},
 			"plate_of_mushrooms": {
-				"display_name": "Plate of Mushrooms",
+				"display_name": "Plate of Swamp Mushrooms",
 				"description": "Chopped mushroom",
 				"flavor": "Uses ingredients found in the Swamp Biome"
 			}
@@ -1003,7 +1003,7 @@
 				"description":"Summons a firefly nest in a raised garden"
 			},
 			"giant_mushroom":{
-				"display_name":"Giant Mushroom",
+				"display_name":"Giant Swamp Mushroom",
 				"description":"Summons a giant mushroom, mineable and edible"
 			},
 			"king_stone":{
@@ -1016,7 +1016,7 @@
 			},
 			"mushroom_stone":{
 				"display_name":"Mushroom Stone",
-				"description":"Summons a raised piece of rock with some mushrooms on top"
+				"description":"Summons a raised piece of rock with some swamp mushrooms on top"
 			},
 			"varanus_nest":{
 				"display_name":"Varanus Nest",
@@ -1092,12 +1092,12 @@
 				}
 			},
 			"mushroom": {
-				"display_name": "Mushroom",
+				"display_name": "Swamp Mushroom",
 				"description": "Harvestable for a meager food supply.",
 				"unripe_description": "This mushroom has been harvested and has not grown back yet"
 			},
 			"mushroom_garden": {
-				"display_name": "Mushroom Garden",
+				"display_name": "Swamp Mushroom Garden",
 				"description": "Harvestable for new plantable mushrooms",
 				"unripe_description": "The mushroom in this garden has not fully grown yet"
 			},
@@ -1696,7 +1696,7 @@
 							"display_name":"Flora",
 							"cattail":"Cattail",
 							"giple":"Giple Flower",
-							"mushroom":"Mushroom",
+							"mushroom":"Swamp Mushroom",
 							"tree":"Trees"
 						}
 					}
