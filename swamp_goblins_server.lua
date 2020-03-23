@@ -1,16 +1,19 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.21")
+print("Swamp Goblins Mod version 20.3.22")
 
 --[[
 
+integrating the thrust attack from Goblin_warfare into the swamp goblins?
+
 non blue skin trait
 
-more varanus spawnings, maybe replace wolfs
-	swamp zilla
+swamp zilla
 
 bigger high level chests
 
-shaman potions
+shaman:
+	cook recipes
+	potions
 
 vine cobblestone wall
 

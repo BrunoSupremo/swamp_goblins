@@ -1,0 +1,10 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_event",
+	"in_edge": "wait_for_all_varanus_killed",
+	"out_edge": "varanus_pack_killed",
+	"wait_for_event_info": {
+		"source": "varanus_pack_raid.varanus",
+		"event": "stonehearth:kill_event"
+	}
+}

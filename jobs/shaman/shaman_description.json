@@ -57,16 +57,25 @@
 			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",
 			"perks": [
 				{
-					"name": "i18n(swamp_goblins:wip)",
-					"id": "wip",
-					"icon": "/stonehearth/jobs/unknown/images/icon.png",
-					"description": "i18n(swamp_goblins:wip)",
+					"name": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_1_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_1",
+					"icon": "file(images/firefly_essence.png)",
+					"description": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_1_data.perk_000_description)",
 					"level": 1
 				}
 			]
 		},
 		"2": {
-			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)"
+			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",
+			"perks": [
+				{
+					"name": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_2_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_2",
+					"icon": "file(images/egg_pedestal.png)",
+					"description": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_2_data.perk_000_description)",
+					"level": 2
+				}
+			]
 		},
 		"3": {
 			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",

@@ -1,0 +1,25 @@
+{
+	"components": {
+		"render_info": {
+			"model_variant": "swamp_version"
+		},
+		"model_variants": {
+			"swamp_version": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(entling_1.qb)",
+							"file(entling_2.qb)",
+							"file(entling_3.qb)",
+							"file(entling_4.qb)",
+							"file(entling_5.qb)",
+							"file(entling_6.qb)",
+							"file(entling_7.qb)"
+						]
+					}
+				]
+			}
+		}
+	}
+}

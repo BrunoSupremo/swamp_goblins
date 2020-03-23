@@ -1,0 +1,21 @@
+{
+	"type": "encounter",
+	"mixins": "stonehearth:mixins:encounter:alligator_raid",
+	"encounter_type": "create_mission",
+	"in_edge": "varanus_raid_4",
+	"out_edge": "wait_to_destroy_raiding_party",
+	"create_mission_info": {
+		"mission": {
+			"ctx_entity_registration_path": "varanus_raid_4",
+			"members": {
+				"varanus": {
+					"from_population": {
+						"min": 1,
+						"max": 1
+					},
+					"tuning" : "stonehearth:monster_tuning:forest:medium_alligator"
+				}
+			}
+		}
+	}
+}

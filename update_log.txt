@@ -1,13 +1,18 @@
 Additions:
 Console cheat "add_goblin_citizen", when typed at the console will spawn a new goblin citizen even if playing in a hearthling town
 Added upgraded outfit for goblin workers
+Added shaman level 1 and 2 perks
 
 Changes:
 Goblins can have a few more traits, including traits from ace mod
 Varanus nest models and collisions are bigger now, 3x3 instead of 1x1 block
 Egg Pedestal now have a button to cancel the calling to lay an egg
+More varanus spawnings in the swamp, including at end game level (which had none)
+Entlings have a swamp skin now, with varied plants from the biome
+Duckducks and ostriches rebalanced as common critters, having way less hp now and drawing less aggro from hunters
 
 Fixes:
 Goblins raised in other kingdoms now correctly gets firefly based names, traits, equips, etc. instead of using hearthling versions
 Goblin templates will not leak and appear for other kingdoms template lists
 Fixed eyepatch clipping over shaman outfit
+Repaired rabbit statue model, it was missing a quarter of its voxels somehow

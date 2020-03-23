@@ -1,0 +1,12 @@
+{
+	"out_edge": {
+		"type": "trigger_one",
+		"out_edges": [
+			{
+				"out_edge": "pack_of_varanus",
+				"type": "weighted_edge",
+				"weight": 4
+			}
+		]
+	}
+}

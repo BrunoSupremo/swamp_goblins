@@ -1,0 +1,11 @@
+{
+	"can_start": {
+		"test_swamp": {
+			"biome_check": {
+				"type": "deny_if_not",
+				"item": "biome",
+				"value": "swamp_goblins:biome:swamp"
+			}
+		}
+	}
+}

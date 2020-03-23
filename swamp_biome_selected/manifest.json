@@ -6,11 +6,18 @@
 	},
 	"default_locale": "en",
 	"mixintos":{
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/alligator_entling_raid_5.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/alligator_entling_raid_5.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/pack_of_wolves.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/pack_of_wolves.json)",
+
 		"stonehearth/data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/spawn_friendly_entities.json":"file(data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/spawn_friendly_entities.json)",
 
 		"stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json": "file(data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/goblin_raiding_camp_1.json)",
 
 		"stonehearth:landmark_blocks": "file(data/terrain/landmark_blocks.json)",
+
+		"stonehearth:mixins:encounter:wolf_raid": "file(mixins/encounter/mixin_wolf_raid.json)",
+
+		"stonehearth:monsters:forest:entling": "file(entities/monsters/forest/entling)",
 
 		"stonehearth/scenarios/static/landmarks/64x_cave_lake.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
 		"stonehearth/scenarios/static/landmarks/64x_cave_ore_bad_omen.json":"file(scenarios/static/add_to_foothills_mountains_too.json)",
