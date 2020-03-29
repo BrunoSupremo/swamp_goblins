@@ -158,6 +158,10 @@ function FireflyGoblin:primary_target_changed()
 	local equipment = "swamp_goblins:worker:abilities:hunter"
 	if target and target:get_player_id() == "animals" then
 		radiant.entities.equip_item(self._entity, equipment)
+
+		radiant.events.listen_once(self._entity, 'stonehearth:combat:target_hit', function()
+			radiant.entities.unequip_item(self._entity, equipment)
+		end)
 	else
 		radiant.entities.unequip_item(self._entity, equipment)
 	end

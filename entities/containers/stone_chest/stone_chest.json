@@ -1,14 +1,14 @@
 {
 	"type": "entity",
-	"mixins": "file(clay_chest_ghost.json)",
+	"mixins": "file(stone_chest_ghost.json)",
 	"components": {
 		"stonehearth:storage": {
 			"type": "crate",
-			"capacity": 64
+			"capacity": 48
 		},
 		"stonehearth:entity_forms": {
-			"iconic_form": "file(clay_chest_iconic.json)",
-			"ghost_form": "file(clay_chest_ghost.json)",
+			"iconic_form": "file(stone_chest_iconic.json)",
+			"ghost_form": "file(stone_chest_ghost.json)",
 			"placeable_on_ground": true
 		},
 		"destination": {
@@ -35,7 +35,7 @@
 	},
 	"entity_data": {
 		"stonehearth:net_worth": {
-			"value_in_gold": 8,
+			"value_in_gold": 4,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": true,

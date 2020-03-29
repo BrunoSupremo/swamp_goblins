@@ -1,13 +1,13 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.23")
+print("Swamp Goblins Mod version 20.3.28")
 
 --[[
+
+changing a trapper off and on again breaks his crafting ability (trapper+)
 
 non blue skin trait
 
 swamp zilla
-
-bigger high level chests
 
 shaman:
 	cook recipes
@@ -20,7 +20,7 @@ waves:
 
 add visible goblin trader
 	and goblin market
-import hearthlings
+import hearthlings/goblins to the other kingdom
 
 mosquito model
 banner shred

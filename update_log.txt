@@ -1,19 +1,9 @@
 Additions:
-Console cheat "add_goblin_citizen", when typed at the console will spawn a new goblin citizen even if playing in a hearthling town
-Added upgraded outfit for goblin workers
-Added shaman level 1 and 2 perks
+Stone chest, with space for 48 items
 
 Changes:
-Goblins can now have base vanilla, ace, and other mods traits (with a few exceptions to avoid bugs or lore breaking)
-Varanus nest models and collisions are bigger now, 3x3 instead of 1x1 block
-Egg Pedestal now have a button to cancel the calling to lay an egg
-More varanus spawnings in the swamp, including at end game level (which had none)
-Entlings have swamp models now, based on plants from the biome
-Duckducks and ostriches rebalanced as common critters, having way less hp now and drawing less aggro from hunters
-Mushrooms (now called Swamp Mushrooms) are now recognized as fungi in ace mod and are equivalent to their mushrooms
+Slightly better hunting, goblins only detects possible targets in a 48 blocks range (instead of default 64) and darts will slow critters way more, for a longer time, and do more damage. This should help with faster hunting and less chasing.
+Clay chest capacity bumped from 48 to 64 items
 
 Fixes:
-Goblins raised in other kingdoms now correctly gets firefly based names, traits, equips, etc. instead of using hearthling versions
-Goblin templates will not leak and appear for other kingdoms template lists
-Fixed eyepatch clipping over shaman outfit
-Repaired rabbit statue model, it was missing a quarter of its voxels somehow
+Giant Mushrooms spawned by geomancers now properly drops mushroom food when mined

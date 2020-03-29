@@ -1,0 +1,14 @@
+{
+	"type": "buff",
+	"axis": "debuff",
+	"display_name": "i18n(swamp_goblins:data.buffs.slow_dart.display_name)",
+	"description": "i18n(swamp_goblins:data.buffs.slow_dart.description)",
+	"icon": "/stonehearth/data/buffs/slowed/snap_trap_2.png",
+	"repeat_add_action": "renew_duration",
+	"duration": "1h",
+	"modifiers": {
+		"speed": {
+			"multiply": 0.1
+		}
+	}
+}
