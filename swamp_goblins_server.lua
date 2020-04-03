@@ -1,9 +1,7 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.3.28")
+print("Swamp Goblins Mod version 20.4.2")
 
 --[[
-
-changing a trapper off and on again breaks his crafting ability (trapper+)
 
 non blue skin trait
 
