@@ -121,6 +121,7 @@
 		"commands:enable_egg_spot":	"file(data/commands/enable_egg_spot)",
 		"commands:cancel_egg_spot":	"file(data/commands/enable_egg_spot/cancel_egg_spot.json)",
 		"commands:goblinpedia":		"file(data/commands/goblinpedia)",
+		"commands:market":		"file(data/commands/market)",
 		"commands:travel":			"file(data/commands/travel)",
 		"commands:music":			"file(data/commands/music)",
 
@@ -164,6 +165,7 @@
 		"decoration:big_firefly_essense":	"file(entities/decoration/big_firefly_essense)",
 		"decoration:certificate":			"file(entities/decoration/certificate)",
 		"decoration:fiber_rug":				"file(entities/decoration/fiber_rug)",
+		"decoration:goblin_market":			"file(entities/decoration/goblin_market)",
 		"decoration:goblin_market_stall":	"file(entities/decoration/goblin_market_stall)",
 		"decoration:goblin_large_totem":	"file(entities/decoration/goblin_large_totem)",
 		"decoration:goblin_small_totem":	"file(entities/decoration/goblin_small_totem)",
@@ -770,6 +772,10 @@
 		"add_goblin_citizen_command": {
 			"controller": "file(call_handlers/firefly_stuff.lua)",
 			"endpoint": "server"
+		},
+		"market": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
 		}
 	},
 	"components": {
@@ -778,6 +784,7 @@
 		"firefly_goblin":			"file(components/firefly_goblin/firefly_goblin.lua)",
 		"firefly":					"file(components/firefly/firefly_component.lua)",
 		"lay_egg_spot":				"file(components/lay_egg_spot/lay_egg_spot.lua)",
+		"market":					"file(components/market/market.lua)",
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
 		"music":					"file(components/music/music.lua)",
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)",
@@ -820,6 +827,10 @@
 		"weather_scripts:foggy": "file(data/weather/foggy/foggy.lua)"
 	},
 	"object_commands":{
+		"market":[
+			"_on_opened",
+			"_on_closed"
+		],
 		"warrior_hearth":[
 			"_spawn_wave",
 			"_declined"

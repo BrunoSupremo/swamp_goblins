@@ -1,7 +1,9 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.4.2")
+print("Swamp Goblins Mod version 20.4.7")
 
 --[[
+
+move default market stall to earthmaster
 
 non blue skin trait
 
@@ -16,8 +18,6 @@ vine cobblestone wall
 waves:
 	boss, bunnies, orcs, kobolds, ogres
 
-add visible goblin trader
-	and goblin market
 import hearthlings/goblins to the other kingdom
 
 mosquito model

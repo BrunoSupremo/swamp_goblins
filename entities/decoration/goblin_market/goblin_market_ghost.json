@@ -1,0 +1,40 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"render_info": {
+			"animation_table": "stonehearth:skeletons:humanoid:female",
+			"scale": 0.09
+		},
+		"effect_list": {
+			"default": "stonehearth/data/rigs/entities/humans/effects/sitting_idle.json"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(goblin_market.qb)",
+					"file(open.qb)",
+					"file(trader.qb)"
+				]
+			},
+			"closed": {
+				"models": [
+					"file(goblin_market.qb)",
+					"file(closed.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.goblin_market.display_name)",
+			"description": "i18n(stonehearth:entities.furniture.blue_market_stall.blue_market_stall_ghost.description)",
+			"icon": "file(goblin_market.png)",
+			"category": "decoration",
+			"material_tags": ["firefly_made", "wood","decoration","cloth","crafted","utility","stockpile_decoration"]
+		}
+	}
+}

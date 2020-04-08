@@ -1,0 +1,55 @@
+{
+	"type": "entity",
+	"mixins": "file(goblin_market_ghost.json)",
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(goblin_market_iconic.json)",
+			"ghost_form": "file(goblin_market_ghost.json)",
+			"placeable_on_ground": true
+		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": -2, "y": 0, "z": -1 },
+					"max": {"x": 4, "y": 2, "z": 2 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": -2, "y": 0, "z": -1 },
+					"max": {"x": 4, "y": 2, "z": 2 }
+				}
+			]
+		},
+		"stonehearth:commands": {
+			"commands": [
+				"swamp_goblins:commands:market"
+			]
+		},
+		"swamp_goblins:market": {
+			"tier_1":"swamp_goblins/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/firefly_shop_1.json",
+			"tier_2":"swamp_goblins/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/firefly_shop_2.json",
+			"tier_3":"swamp_goblins/data/gm/campaigns/trader/arcs/encounters/tier_3_shops/firefly_shop_3.json"
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 28,
+			"rarity": "uncommon",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 2,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 18
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

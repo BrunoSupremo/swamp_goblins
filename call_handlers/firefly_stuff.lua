@@ -66,4 +66,15 @@ function FireflyCallHandler:add_goblin_citizen_command(session, response)
 	return true
 end
 
+function FireflyCallHandler:market(session, response, source_entity)
+	validator.expect_argument_types({'Entity'}, source_entity)
+	validator.expect.matching_player_id(session.player_id, source_entity)
+
+	local market_component = source_entity:get_component("swamp_goblins:market")
+	if market_component then
+		return market_component:create_shop()
+	end
+	return false
+end
+
 return FireflyCallHandler

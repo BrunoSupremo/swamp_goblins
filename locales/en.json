@@ -72,6 +72,11 @@
 				"display_name":"Open the Goblinpedia",
 				"description":"Click to read it"
 			},
+			"market":{
+				"display_name":"Shop",
+				"description":"Opens a trading window",
+				"disabled_description":"Waiting a new trader"
+			},
 			"music":{
 				"display_name":"Play Music",
 				"description":"Will call someone to play this instrument",
@@ -813,8 +818,11 @@
 				"description": "Commemorative totem, resembling someone from the clan",
 				"flavor": "Don't worry, it is not made from real skulls, just white paint"
 			},
+			"goblin_market": {
+				"display_name": "Firefly Bazaar"
+			},
 			"goblin_market_stall": {
-				"display_name": "Firefly Market Stall"
+				"display_name": "Trading Stall"
 			},
 			"mini_fountain": {
 				"display_name": "Mini Fountain",

@@ -1,0 +1,12 @@
+{
+	"type": "command",
+	"name": "market",
+	"display_name": "i18n(swamp_goblins:data.commands.market.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.market.description)",
+	"disabled_description": "i18n(swamp_goblins:data.commands.market.disabled_description)",
+	"icon": "/stonehearth/data/commands/call_trader/call_trader.png",
+	"ordinal": 9,
+	"action": "call",
+	"function": "swamp_goblins:market",
+	"args": []
+}
