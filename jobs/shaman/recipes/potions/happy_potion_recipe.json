@@ -1,0 +1,34 @@
+{
+	"type": "recipe",
+	"effort":42,
+	"work_units": 16,
+	"recipe_name": "i18n(swamp_goblins:entities.consumables.happy_potion.display_name)",
+	"description": "i18n(swamp_goblins:entities.consumables.happy_potion.description)",
+	"flavor": "i18n(swamp_goblins:entities.consumables.happy_potion.flavor)",
+	"portrait": "/swamp_goblins/entities/consumables/happy_potion/happy_potion.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 4
+		},
+		{
+			"material": "chitin resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:consumables:happy_potion"
+		}
+	]
+}

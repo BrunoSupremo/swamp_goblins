@@ -1,0 +1,23 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"display_name": "i18n(swamp_goblins:data.buffs.potions.spirit.display_name)",
+	"description": "i18n(swamp_goblins:data.buffs.potions.spirit.description)",
+	"icon": "/stonehearth/ui/game/images/spirit_stat.png",
+	"duration": "4h",
+	"repeat_add_action": "stack_and_refresh",
+	"effect": "stonehearth:effects:buff_tonic_courage_added",
+	"modifiers": {
+		"spirit": {
+			"add": 1
+		},
+		"mind": {
+			"add": -1,
+			"min":1
+		},
+		"body": {
+			"add": -1,
+			"min":1
+		}
+	}
+}

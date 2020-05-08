@@ -1,0 +1,34 @@
+{
+	"type": "recipe",
+	"effort":42,
+	"work_units": 16,
+	"recipe_name": "i18n(swamp_goblins:entities.consumables.teleport_potion.display_name)",
+	"description": "i18n(swamp_goblins:entities.consumables.teleport_potion.description)",
+	"flavor": "i18n(swamp_goblins:entities.consumables.teleport_potion.flavor)",
+	"portrait": "/swamp_goblins/entities/consumables/teleport_potion/teleport_potion.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 6,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:refined:jewel",
+			"count": 1
+		},
+		{
+			"material": "feather resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:consumables:teleport_potion"
+		}
+	]
+}

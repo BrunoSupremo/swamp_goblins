@@ -32,6 +32,17 @@
 					}
 				}
 			}
+		},
+		"social": {
+			"values": {
+				"happy_potion": {
+					"display_name": "i18n(swamp_goblins:data.happiness.thoughts.social.values.happy_potion.display_name)",
+					"tooltip": "i18n(swamp_goblins:data.happiness.thoughts.social.values.happy_potion.tooltip)",
+					"happiness_delta": 10,
+					"duration": "3h",
+					"stackable": false
+				}
+			}
 		}
 	}
 }

@@ -1,5 +1,19 @@
 {
+	"mixins": "/stonehearth/jobs/cook/recipes/recipes.json",
 	"craftable_recipes": {
+		"mixintypes": {
+			"workbenches": "remove",
+			"ingredients": "remove",
+			"chefs_specials": "remove",
+			"chefs_desserts": "remove",
+			"animal_feed": "remove",
+			"decoration": "remove",
+			"tropical_recipes": "remove",
+			"legendary": "remove",
+			"food_preparation": "remove",
+			"brewing_ingredients": "remove",
+			"drinks": "remove"
+		},
 		"goblin_workbenches": {
 			"ordinal": 1,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.workbenches_name)",
@@ -54,50 +68,49 @@
 				},
 				"small_herbal_tonic": {
 					"recipe": "file(potions/small_healing_tonic_recipe.json)"
+				},
+				"large_healing": {
+					"recipe": "file(potions/large_healing_recipe.json)"
+				},
+				"appearance_potion": {
+					"recipe": "file(potions/appearance_potion_recipe.json)"
+				},
+				"body_potion": {
+					"recipe": "file(potions/body_potion_recipe.json)"
+				},
+				"happy_potion": {
+					"recipe": "file(potions/happy_potion_recipe.json)"
+				},
+				"memory_potion": {
+					"recipe": "file(potions/memory_potion_recipe.json)"
+				},
+				"mind_potion": {
+					"recipe": "file(potions/mind_potion_recipe.json)"
+				},
+				"speed_potion": {
+					"recipe": "file(potions/speed_potion_recipe.json)"
+				},
+				"spirit_potion": {
+					"recipe": "file(potions/spirit_potion_recipe.json)"
+				},
+				"teleport_potion": {
+					"recipe": "file(potions/teleport_potion_recipe.json)"
 				}
 			}
 		},
-		"goblin_food": {
+		"food": {
 			"ordinal": 40,
-			"name": "i18n(stonehearth:jobs.cook.recipes.food_name)",
 			"recipes": {
 				"fake_vegetables": {
 					"recipe": "file(food/fake_vegetables_recipe.json)"
 				},
 				"plate_of_mushrooms": {
 					"recipe": "file(food/plate_of_mushrooms_recipe.json)"
-				},
-				"meat_stew": {
-					"recipe": "file(food/meat_stew_recipe.json)"
-				},
-				"bug_meat_stew": {
-					"recipe": "file(food/bug_meat_stew_recipe.json)"
-				},
-				"bug_meat_kabob": {
-					"recipe": "file(food/bug_meat_kabob_recipe.json)"
-				},
-				"bacon_and_eggs": {
-					"recipe": "file(food/bacon_and_eggs_recipe.json)"
-				},
-				"omelette": {
-					"recipe": "file(food/omelette_recipe.json)"
-				},
-				"fried_eggs_large": {
-					"recipe": "file(food/fried_eggs_large_recipe.json)"
-				},
-				"fried_eggs": {
-					"recipe": "file(food/fried_eggs_recipe.json)"
-				},
-				"sausage": {
-					"recipe": "file(food/sausage_recipe.json)"
-				},
-				"roast_sausage": {
-					"recipe": "file(food/roast_sausage_recipe.json)"
 				}
 			}
 		},
 		"goblin_seeds": {
-			"ordinal": 50,
+			"ordinal": 70,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.refined_name)",
 			"recipes": {
 				"brightbell_herbalist": {
@@ -163,7 +176,7 @@
 			}
 		},
 		"goblin_decorations": {
-			"ordinal": 70,
+			"ordinal": 90,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.decorations_name)",
 			"recipes": {
 				"big_firefly_essense": {

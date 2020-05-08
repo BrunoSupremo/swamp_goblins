@@ -1,0 +1,23 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"display_name": "i18n(swamp_goblins:data.buffs.potions.mind.display_name)",
+	"description": "i18n(swamp_goblins:data.buffs.potions.mind.description)",
+	"icon": "/stonehearth/ui/game/images/mind_stat.png",
+	"duration": "4h",
+	"repeat_add_action": "stack_and_refresh",
+	"effect": "stonehearth:effects:buff_tonic_energy_added",
+	"modifiers": {
+		"mind": {
+			"add": 1
+		},
+		"body": {
+			"add": -1,
+			"min":1
+		},
+		"spirit": {
+			"add": -1,
+			"min":1
+		}
+	}
+}

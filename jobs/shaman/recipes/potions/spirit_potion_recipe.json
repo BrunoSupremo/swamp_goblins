@@ -1,0 +1,34 @@
+{
+	"type": "recipe",
+	"effort":42,
+	"work_units": 16,
+	"recipe_name": "i18n(swamp_goblins:entities.consumables.spirit_potion.display_name)",
+	"description": "i18n(swamp_goblins:entities.consumables.spirit_potion.description)",
+	"flavor": "i18n(swamp_goblins:entities.consumables.common.flavor)",
+	"portrait": "/swamp_goblins/entities/consumables/spirit_potion/spirit_potion.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 5,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:refined:jewel",
+			"count": 1
+		},
+		{
+			"material": "pelt resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:consumables:spirit_potion"
+		}
+	]
+}

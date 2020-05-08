@@ -1,0 +1,46 @@
+{
+	"mixins": "/stonehearth/jobs/cook/recipes/recipes.json",
+	"craftable_recipes": {
+		"mixintypes": {
+			"workbenches": "remove",
+			"legendary": "remove",
+			"brewing_ingredients": "remove",
+			"drinks": "remove",
+			"decoration": "remove"
+		},
+		"goblin_workbenches": {
+			"recipes": {
+				"cook_workbench": {
+					"recipe": "/stonehearth/jobs/cook/recipes/cook_workbench_recipe.json"
+				},
+				"cook_mill": {
+					"recipe": "/stonehearth/jobs/cook/recipes/cook_mill_recipe.json"
+				},
+				"cook_oven": {
+					"recipe": "/stonehearth/jobs/cook/recipes/cook_oven_recipe.json"
+				}
+			}
+		},
+		"food": {
+			"ordinal": 40
+		},
+		"ingredients": {
+			"ordinal": 41
+		},
+		"food_preparation": {
+			"ordinal": 42
+		},
+		"chefs_specials": {
+			"ordinal": 44
+		},
+		"tropical_recipes": {
+			"ordinal": 45
+		},
+		"chefs_desserts": {
+			"ordinal": 46
+		},
+		"animal_feed": {
+			"ordinal": 47
+		}
+	}
+}

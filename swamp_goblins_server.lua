@@ -1,17 +1,17 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.4.7")
+print("Swamp Goblins Mod version 20.5.7")
 
 --[[
+
+bug: potions affect knocked out or sleeping guys
+
+bug: shaman cook workbenches at the wrong level, move it all after the others
 
 move default market stall to earthmaster
 
 non blue skin trait
 
 swamp zilla
-
-shaman:
-	cook recipes
-	potions
 
 vine cobblestone wall
 
@@ -30,7 +30,6 @@ bug nests to attack eggs
 ace stuff:
 	add ace tools and tools upgrades
 	Wait gobbos can't chop wood?
-	shaman needs to craft pet food for the trappers pets, bug meat?
 
 contruction:
 	door, double door
@@ -46,10 +45,11 @@ decorations:
 	weapon/armor decorations
 	wall planter, pots, violets versions
 furniture:
-	themes: mushroom, fiber, wood, fancy/clothed wood, stone, clay
+	themes:
+		mushroom, fiber, wood, fancy/clothed wood, stone, clay
 	bed, chair, table, bench
 templates:
-	inn, dinning hall, tavern, combat houses (n.a. inspired)
+	inn, dinning hall, tavern, combat houses (n.a. inspired roofs)
 earthmaster:
 	dart traps, smoke traps
 	upgraded workbenches

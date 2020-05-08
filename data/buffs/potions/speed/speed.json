@@ -1,0 +1,18 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"display_name": "i18n(swamp_goblins:data.buffs.potions.speed.display_name)",
+	"description": "i18n(swamp_goblins:data.buffs.potions.speed.description)",
+	"icon": "/stonehearth/jobs/footman/footman_buffs/footman_buff_speed_boost.png",
+	"duration": "2h",
+	"repeat_add_action": "stack_and_refresh",
+	"effect": "stonehearth:effects:buff_tonic_courage_added",
+	"modifiers": {
+		"speed": {
+			"multiply": 1.3
+		},
+		"max_health": {
+			"max": 10
+		}
+	}
+}

@@ -90,7 +90,16 @@
 			]
 		},
 		"4": {
-			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)"
+			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",
+			"perks": [
+				{
+					"name": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_4_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_4",
+					"icon": "file(images/potions.png)",
+					"description": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_4_data.perk_000_description)",
+					"level": 4
+				}
+			]
 		},
 		"5": {
 			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",
@@ -105,7 +114,17 @@
 			]
 		},
 		"6": {
-			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)"
+			"title": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",
+			"perks": [
+				{
+					"type": "get_cook_recipes",
+					"name": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_6_data.perk_000_name)",
+					"id": "crafter_recipe_unlock_6",
+					"icon": "file(images/cook_recipes.png)",
+					"description": "i18n(swamp_goblins:jobs.shaman.shaman_description.level_6_data.perk_000_description)",
+					"level": 6
+				}
+			]
 		}
 	}
 }

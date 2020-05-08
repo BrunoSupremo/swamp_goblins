@@ -32,6 +32,54 @@
 				}
 			}
 		},
+		"buffs": {
+			"body_up": {
+				"display_name": "Body Up",
+				"description": "+1 Body attribute"
+			},
+			"firefly_confusion": {
+				"display_name": "Firefly Cloud",
+				"description": "A firefly cloud blinds and confuses the enemy"
+			},
+			"poison": {
+				"display_name": "Poison",
+				"description": "Poisoned, stats are going down"
+			},
+			"potions": {
+				"body": {
+					"display_name": "Body Potion",
+					"description":"Increases body attribute, but decreases mind and spirit."
+				},
+				"mind": {
+					"display_name": "Mind Potion",
+					"description":"Increases mind attribute, but decreases body and spirit."
+				},
+				"speed": {
+					"display_name": "Speed Potion",
+					"description":"Increase speed, but decreases health."
+				},
+				"spirit": {
+					"display_name": "Spirit Potion",
+					"description":"Increases spirit attribute, but decreases mind and body."
+				}
+			},
+			"rage_over_time": {
+				"display_name": "Rage over Time",
+				"description": "Stats going up over time"
+			},
+			"self_aid": {
+				"display_name": "Self Aid",
+				"description": "Faster health recovery"
+			},
+			"slow_dart": {
+				"display_name": "Slowness",
+				"description": "Slower from the poison dart"
+			},
+			"trapped": {
+				"display_name": "Trapped",
+				"description": "Trapped by the Beast Tamer"
+			}
+		},
 		"build": {
 			"building_brushes": {
 				"colors": {
@@ -503,6 +551,14 @@
 		},
 		"happiness": {
 			"thoughts": {
+				"social":{
+					"values": {
+						"happy_potion": {
+							"display_name": "Happy Potion",
+							"tooltip": "I feel like I could taste colors."
+						}
+					}
+				},
 				"town": {
 					"values": {
 						"swamp_home": {
@@ -597,36 +653,6 @@
 				"display_name": "Frog Companion",
 				"description": "Ever since [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)] saved their [str(i18n_data.savee_species)], [name(i18n_data.savee)], from mortal danger, they've been inseparable.",
 				"default_species": "companion"
-			}
-		},
-		"buffs": {
-			"body_up": {
-				"display_name": "Body Up",
-				"description": "+1 Body attribute"
-			},
-			"firefly_confusion": {
-				"display_name": "Firefly Cloud",
-				"description": "A firefly cloud blinds and confuses the enemy"
-			},
-			"poison": {
-				"display_name": "Poison",
-				"description": "Poisoned, stats are going down"
-			},
-			"rage_over_time": {
-				"display_name": "Rage over Time",
-				"description": "Stats going up over time"
-			},
-			"self_aid": {
-				"display_name": "Self Aid",
-				"description": "Faster health recovery"
-			},
-			"slow_dart": {
-				"display_name": "Slowness",
-				"description": "Slower from the poison dart"
-			},
-			"trapped": {
-				"display_name": "Trapped",
-				"description": "Trapped by the Beast Tamer"
 			}
 		}
 	},
@@ -723,17 +749,57 @@
 			}
 		},
 		"consumables": {
-			"blue_potion": {
-				"display_name": "Blue Potion"
+			"common":{
+				"flavor":"The effect is temporary, for the whole town."
 			},
-			"green_potion": {
-				"display_name": "Green Potion"
+			"appearance_potion": {
+				"display_name": "Appearance Potion",
+				"description":"Randomly changes someone appearance",
+				"flavor":"After using the potion, a list of all citizens will appear on the screen, there you can then select who will be affected.",
+				"ui":{
+					"title":"Appearance Potion",
+					"dialog_title":"Using an appearance potion",
+					"text":"Pick someone to have the effect applied to:"
+				}
 			},
-			"purple_potion": {
-				"display_name": "Purple Potion"
+			"body_potion": {
+				"display_name": "Body Potion",
+				"description":"Increases body attribute, but decreases mind and spirit."
 			},
-			"white_potion": {
-				"display_name": "White Potion"
+			"happy_potion": {
+				"display_name": "Happy Potion",
+				"description":"Happy thoughts but makes you hungry",
+				"flavor":"The effect is for the whole town."
+			},
+			"large_healing": {
+				"display_name": "Strong Healing Tonic",
+				"description":"Heals a lot more than the small versions",
+				"flavor":"Shamans can manually use it to heal someone injuried in bed."
+			},
+			"memory_potion": {
+				"display_name": "Memory Potion",
+				"description":"Erases all current thoughts",
+				"flavor":"The effect is for the whole town."
+			},
+			"mind_potion": {
+				"display_name": "Mind Potion",
+				"description":"Increases mind attribute, but decreases body and spirit."
+			},
+			"small_healing": {
+				"flavor":"Shamans can manually use it to heal someone injuried in bed."
+			},
+			"speed_potion": {
+				"display_name": "Speed Potion",
+				"description":"Increase speed, but decreases health."
+			},
+			"spirit_potion": {
+				"display_name": "Spirit Potion",
+				"description":"Increases spirit attribute, but decreases mind and body."
+			},
+			"teleport_potion": {
+				"display_name": "Teleport Potion",
+				"description":"Teleport back to the banner, but everyone gets tired and sleepy",
+				"flavor":"The effect is for the whole town."
 			}
 		},
 		"containers":{
@@ -1150,7 +1216,8 @@
 			},
 			"firefly_essense": {
 				"display_name": "Firefly Essence",
-				"description": "Has magical properties"
+				"description": "Has magical properties",
+				"flavor": "Essential ingredient for many magic related recipes"
 			}
 		},
 		"summons": {
@@ -1486,9 +1553,17 @@
 					"perk_000_name": "Journeyman's Knowledge",
 					"perk_000_description": "When inspiration strikes, the Shaman may now craft an especially Fine quality of item."
 				},
+				"level_4_data": {
+					"perk_000_name": "Potions",
+					"perk_000_description": "The Shaman is now skillful in different potions effects. Bad taste means better potions, they say."
+				},
 				"level_5_data": {
 					"perk_000_name": "Master's Insight",
 					"perk_000_description": "The Shaman can now create items of Excellent quality, and will make Fine quality items more often."
+				},
+				"level_6_data": {
+					"perk_000_name": "Chef",
+					"perk_000_description": "The clan is in good shape, time to get fancy. Recipes from all over were collected and now easily available."
 				}
 			},
 			"shaman_workbench": {

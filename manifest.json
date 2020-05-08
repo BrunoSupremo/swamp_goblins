@@ -94,6 +94,12 @@
 		"buffs:slow_dart":			"file(data/buffs/slow_dart)",
 		"buffs:sticky_water":		"file(data/buffs/sticky_water)",
 		"buffs:trapped":			"file(data/buffs/trapped)",
+
+		"buffs:potions:body":	"file(data/buffs/potions/body)",
+		"buffs:potions:mind":	"file(data/buffs/potions/mind)",
+		"buffs:potions:spirit":	"file(data/buffs/potions/spirit)",
+		"buffs:potions:speed":	"file(data/buffs/potions/speed)",
+		
 		"buff_scripts:rage_over_time":	"file(data/buffs/rage_over_time/rage_over_time.lua)",
 		"buff_scripts:poison":			"file(data/buffs/poison/poison.lua)",
 
@@ -134,7 +140,21 @@
 		"construction:clay_water_well":	"file(entities/construction/clay_water_well)",
 		"construction:wooden_water_well":	"file(entities/construction/wooden_water_well)",
 
-		"consumables:small_healing":"file(entities/consumables/small_healing)",
+		"consumables:appearance_potion":"file(entities/consumables/appearance_potion)",
+		"consumables:body_potion":		"file(entities/consumables/body_potion)",
+		"consumables:mind_potion":		"file(entities/consumables/mind_potion)",
+		"consumables:spirit_potion":	"file(entities/consumables/spirit_potion)",
+		"consumables:happy_potion":		"file(entities/consumables/happy_potion)",
+		"consumables:memory_potion":	"file(entities/consumables/memory_potion)",
+		"consumables:small_healing":	"file(entities/consumables/small_healing)",
+		"consumables:large_healing":	"file(entities/consumables/large_healing)",
+		"consumables:speed_potion":		"file(entities/consumables/speed_potion)",
+		"consumables:teleport_potion":	"file(entities/consumables/teleport_potion)",
+
+		"consumables:scripts:appearance":	"file(entities/consumables/scripts/appearance.lua)",
+		"consumables:scripts:happy":		"file(entities/consumables/scripts/happy.lua)",
+		"consumables:scripts:memory":		"file(entities/consumables/scripts/memory.lua)",
+		"consumables:scripts:teleport":		"file(entities/consumables/scripts/teleport.lua)",
 
 		"containers:chest":						"file(entities/containers/chest)",
 		"containers:clay_chest":				"file(entities/containers/clay_chest)",
@@ -822,11 +842,19 @@
 
 		"game_master:spawn_firefly":"file(data/gm/campaigns/swamp_and_goblins_stuff/arcs/encounters/scripts/spawn_firefly.lua)",
 
+		"potion:appearance":"file(entities/consumables/scripts/appearance_controller.lua)",
+
 		"trait_scripts:party_goblin":"file(data/traits/party_goblin/party_goblin_script.lua)",
 
 		"weather_scripts:foggy": "file(data/weather/foggy/foggy.lua)"
 	},
 	"object_commands":{
+		"potion":{
+			"appearance":[
+				"_on_try_dispatch",
+				"_on_abandon"
+			],
+		},
 		"market":[
 			"_on_opened",
 			"_on_closed"

@@ -5,7 +5,7 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(small_healing.qb)"
+					"file(large_healing.qb)"
 				]
 			}
 		},
@@ -15,7 +15,7 @@
 	},
 	"entity_data": {
 		"stonehearth:net_worth": {
-			"value_in_gold": 3,
+			"value_in_gold": 20,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": true,
@@ -26,17 +26,17 @@
 		},
 		"stonehearth:consumable": {
 			"script": "stonehearth:consumables:scripts:heal_target",
-			"work_units": 1,
-			"health_healed": 30,
-			"guts_healed": 2
+			"work_units": 4,
+			"health_healed": 150,
+			"guts_healed": 8
 		},
 		"stonehearth:catalog": {
-			"display_name": "i18n(stonehearth:entities.consumables.healing_tonic.small_healing_tonic.display_name)",
-			"description": "i18n(stonehearth:entities.consumables.healing_tonic.small_healing_tonic.description)",
-			"icon": "file(small_healing.png)",
+			"display_name": "i18n(swamp_goblins:entities.consumables.large_healing.display_name)",
+			"description": "i18n(swamp_goblins:entities.consumables.large_healing.description)",
+			"icon": "file(large_healing.png)",
 			"is_item": true,
 			"category": "consumable",
-			"material_tags": ["firefly_made", "healing_item", "small", "consumable", "stockpile_consumable"]
+			"material_tags": ["firefly_made", "healing_item", "large", "consumable", "stockpile_consumable"]
 		}
 	}
 }
