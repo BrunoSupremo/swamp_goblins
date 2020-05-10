@@ -1,11 +1,9 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.5.7")
+print("Swamp Goblins Mod version 20.5.10")
 
 --[[
 
-bug: potions affect knocked out or sleeping guys
-
-bug: shaman cook workbenches at the wrong level, move it all after the others
+bug?: shaman cook workbenches at the wrong level, move it all after the others
 
 move default market stall to earthmaster
 

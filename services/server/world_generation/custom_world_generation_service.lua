@@ -18,7 +18,7 @@ function SwampWorldGenerationService:_add_water_bodies(regions)
 		water_bounds.max.y = water_bounds.max.y - math.floor(water_height_delta)
 
 		local water_region = terrain_region:intersect_cube(water_bounds)
-		stonehearth.hydrology:create_water_body_with_region(water_region, height)
+		stonehearth.hydrology:create_water_body_with_region(water_region, height, true)
 
 		local water_bounds_negative = Cube3(terrain_bounds)
 		water_bounds_negative.max.y = water_bounds_negative.max.y - math.floor(water_height_delta)

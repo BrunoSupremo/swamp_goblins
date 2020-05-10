@@ -9,7 +9,8 @@ function HappyTown.use(consumable, consumable_data, player_id, target_entity)
 	}
 	local population = stonehearth.population:get_population(player_id)
 	for _, entity in population:get_citizens():each() do
-		if entity and entity:is_valid() then
+		local ic = entity:get_component('stonehearth:incapacitation')
+		if entity and entity:is_valid() and not ic:is_incapacitated() then
 			local paused_goblin = stonehearth.ai:inject_ai(entity, { actions = { 'stonehearth:actions:be_away_from_town' } })
 			radiant.entities.add_thought(entity, 'stonehearth:thoughts:social:happy_potion')
 			radiant.entities.set_resource(entity, 'calories', 50)

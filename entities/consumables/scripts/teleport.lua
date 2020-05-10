@@ -16,7 +16,8 @@ function TeleportTown.use(consumable, consumable_data, player_id, target_entity)
 	local town_center = stonehearth.town:get_town(player_id):get_landing_location()
 	local location = radiant.terrain.find_placement_point(town_center, 1, 5)
 	for _, entity in population:get_citizens():each() do
-		if entity and entity:is_valid() then
+		local ic = entity:get_component('stonehearth:incapacitation')
+		if entity and entity:is_valid() and not ic:is_incapacitated() then
 			local paused_goblin = stonehearth.ai:inject_ai(entity, { actions = { 'stonehearth:actions:be_away_from_town' } })
 			local delay_start_timer = radiant.on_game_loop_once('reset ai wait', function()
 				if paused_goblin then
