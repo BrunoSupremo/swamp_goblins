@@ -3,7 +3,7 @@
 	"name": "travel",
 	"display_name": "i18n(swamp_goblins:data.commands.travel.display_name)",
 	"description": "i18n(swamp_goblins:data.commands.travel.description)",
-	"icon": "/stonehearth/data/commands/change_owner/change_owner.png",
+	"icon": "file(travel.png)",
 	"ordinal": 9,
 	"action": "call",
 	"function": "swamp_goblins:travel",

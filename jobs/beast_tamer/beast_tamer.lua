@@ -35,7 +35,7 @@ end
 
 function BeastTamerClass:_create_listeners()
 	CombatJob._create_listeners(self)
-	
+	self.summons = radiant.resources.load_json("swamp_goblins:beast_tamer:summons")
 end
 
 function BeastTamerClass:spirit_walker_dragon_aura()
@@ -60,13 +60,13 @@ function BeastTamerClass:_remove_listeners()
 end
 
 function BeastTamerClass:summon_big_wolf(delay)
-	local uris = {"swamp_goblins:summons:big_wolf"}
-	self:summon_animals(delay, uris, 1, true)
+	local uris, amount = self:get_summons_uris("summon_big_wolf")
+	self:summon_animals(delay, uris, amount, true)
 end
 
 function BeastTamerClass:summon_dragon_aura(delay)
-	local uris = {"swamp_goblins:summons:dragon_aura"}
-	self:summon_animals(delay, uris, 1, true)
+	local uris, amount = self:get_summons_uris("summon_dragon_aura")
+	self:summon_animals(delay, uris, amount, true)
 end
 
 function BeastTamerClass:summon_firefly(delay, target)
@@ -87,8 +87,8 @@ function BeastTamerClass:summon_firefly(delay, target)
 end
 
 function BeastTamerClass:summon_varanus(delay)
-	local uris = {"swamp_goblins:summons:varanus"}
-	self:summon_animals(delay, uris, 2)
+	local uris, amount = self:get_summons_uris("summon_varanus")
+	self:summon_animals(delay, uris, amount)
 end
 
 function BeastTamerClass:summon_traps(delay, target)
@@ -114,22 +114,24 @@ function BeastTamerClass:summon_traps(delay, target)
 end
 
 function BeastTamerClass:summon_wildlife(delay)
-	local uris = {
-		"swamp_goblins:summons:frog",
-		"swamp_goblins:summons:beetle",
-		"swamp_goblins:summons:bitsy_ant",
-		"swamp_goblins:summons:doodles",
-		"swamp_goblins:summons:rabbit",
-		"swamp_goblins:summons:racoon",
-		"swamp_goblins:summons:red_fox_wolf",
-		"swamp_goblins:summons:squirrel"
-	}
-	self:summon_animals(delay, uris, 6)
+	local uris, amount = self:get_summons_uris("summon_wildlife")
+	self:summon_animals(delay, uris, amount)
 end
 
 function BeastTamerClass:summon_poyos(delay)
-	local uris = {"swamp_goblins:summons:poyo"}
-	self:summon_animals(delay, uris, 4)
+	local uris, amount = self:get_summons_uris("summon_poyos")
+	self:summon_animals(delay, uris, amount)
+end
+
+function BeastTamerClass:get_summons_uris(category)
+	local uris = {}
+	local amount = self.summons[category].quantity
+	for entity, active in pairs(self.summons[category].entities) do
+		if active then
+			table.insert(uris, entity)
+		end
+	end
+	return uris, amount
 end
 
 function BeastTamerClass:summon_animals(delay, uris, amount, has_attributes)

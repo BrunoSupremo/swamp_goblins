@@ -174,6 +174,13 @@ function WarriorHearth:_spawn_wave()
 			radiant.events.listen(member, 'radiant:entity:pre_destroy', function()
 				self:_on_wave_member_died(member)
 			end)
+
+			radiant.on_game_loop_once('warrior_hearth name delay', function()
+				local unit_info = member:get_component('stonehearth:unit_info')
+				if unit_info then
+					radiant.entities.set_entity_name(member, {display_name=unit_info:get_custom_name()})
+				end
+			end)
 		end
 	end
 end
