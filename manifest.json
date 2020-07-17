@@ -318,6 +318,7 @@
 		"jobs:spirit_walker":	"file(jobs/spirit_walker/spirit_walker_description.json)",
 		"jobs:warrior":			"file(jobs/warrior/warrior_description.json)",
 		"jobs:worker":			"file(jobs/worker/worker_description.json)",
+		"jobs:npc:baby":"file(jobs/npc_baby/npc_baby_description.json)",
 
 		"kingdoms:firefly_clan": "file(data/firefly_clan_population.json)",
 		"kingdoms:firefly_human_encounter": "file(services/server/population/data/firefly_human_encounter.json)",
@@ -605,6 +606,8 @@
 	"mixintos" :  {
 		"stonehearth:ai_pack:free_time": "file(ai/packs/free_time_ai_pack.json)",
 
+		"stonehearth_ace:beehive": "file(entities/critters/beehive/beehive.json)",
+
 		"stonehearth:biome:index": "file(data/biome/index.json)",
 
 		"candledark:buffs:plagued":"file(candledark/plagued.json)",
@@ -755,6 +758,7 @@
 		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
+		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
 		"swamp_goblins/jobs/worker/upgraded_outfit/upgraded_outfit.json":"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
 		"swamp_goblins/jobs/bonesmith/bonesmith_abilities/bonesmith_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/earthmaster/earthmaster_abilities/earthmaster_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
@@ -848,8 +852,11 @@
 		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":	"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",
 		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"file(data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json)",
 
+		"box_o_vox/services/server/game_creation/game_creation_service.lua":"stonehearth/services/server/game_creation/game_creation_service.lua",
+
 		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
+		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":	"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json":	"swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json":	"swamp_goblins/jobs/common/ace_abilities.json"
 	},

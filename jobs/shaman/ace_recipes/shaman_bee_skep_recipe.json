@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 35,
+	"work_units": 5,
+	"recipe_name": "i18n(stonehearth_ace:jobs.herbalist.recipes.herbalist_bee_skep_recipe.recipe_name)",
+	"description": "i18n(stonehearth_ace:jobs.herbalist.recipes.herbalist_bee_skep_recipe.description)",
+	"flavor": "i18n(stonehearth_ace:jobs.herbalist.recipes.herbalist_bee_skep_recipe.flavor)",
+	"portrait": "/stonehearth_ace/jobs/herbalist/herbalist_bee_skep/herbalist_bee_skep.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:containers:small_bag",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth_ace:herbalist:bee_skep:empty"
+		}
+	]
+}

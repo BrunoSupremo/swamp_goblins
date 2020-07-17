@@ -1,7 +1,7 @@
 local GoblinsBeekeepingTaskGroup = class()
 GoblinsBeekeepingTaskGroup.name = 'beekeeping'
 GoblinsBeekeepingTaskGroup.does = 'stonehearth:work'
-GoblinsBeekeepingTaskGroup.priority = 0.15
+GoblinsBeekeepingTaskGroup.priority = 0.83
 
 return stonehearth.ai:create_task_group(GoblinsBeekeepingTaskGroup)
 :work_order_tag("job")

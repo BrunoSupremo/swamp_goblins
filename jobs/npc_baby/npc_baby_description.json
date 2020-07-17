@@ -1,0 +1,21 @@
+{
+	"type": "job",
+	"alias": "swamp_goblins:jobs:npc:baby",
+	"is_npc_job": true,
+	"display_name": "i18n(swamp_goblins:entities.goblins.baby.description)",
+	"controller": "stonehearth:class:worker",
+	"description": "i18n(swamp_goblins:entities.goblins.baby.description)",
+	"requirements": "i18n(swamp_goblins:entities.goblins.baby.description)",
+	"default_stance": "passive",
+	"abilities": "file(npc_baby_abilities)",
+	"task_groups": [
+		"stonehearth:task_groups:town_alert"
+	],
+	"roles": ["npc_baby"],
+	"icon": "file(images/icon.png)",
+	"level_data": {
+		"1": {
+			"title": "i18n(swamp_goblins:entities.goblins.baby.description)"
+		}
+	}
+}
