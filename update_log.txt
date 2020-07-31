@@ -1,12 +1,14 @@
 Additions:
-(for ACE mod) Bee skep recipe to shaman (thanks P3rdit1ous)
-(for Fisher mod) fishers can get cattail resources (random junk) instead of fish (higher chances at low levels)
+Wide wall banner decoration and recipe
+Lamppost decoration and recipe
 
 Changes:
-Goblin babies now respects the town alert and go to banner/hearths with everyone else.
-Goblin babies will try to flee from near enemies.
+Renamed Shaman recipes Tools category to Talismans, for clarity.
+Goblins start with two plantable violet plants instead of two rocks.
+New egg and baby icons (thanks Stmpnk)
+Decreased Knight and Nina (from the human camp) "fighting" area, so they will only attack players that get really close to the camp (~30 blocks)
+Removed weapon and armor traders showing at tier 1 as they are a big noob trap (those items do not fit the goblins classes)
 
 Fixes:
-(for ACE mod) Shamans can harvest beehives
-(for Box o Vox mod) Fixed custom hearths from modded kingdoms (e.g. our goblins) being replaced by vanilla firepit (which bugged the campaigns). (Only for new saves :( )
-Downed goblin babies can now be rescued without errors. (thanks for the report Rons)
+The human camp could be killed by other enemies and move the campaign forward without the player interaction. They would also ally with everyone else once befriended by the player. They should now properly be ignored by other enemies until they are allied with players.
+(for ACE mod)

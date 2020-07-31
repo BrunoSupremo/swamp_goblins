@@ -112,6 +112,10 @@ function LayEgg_spot:egg_hatched(baby)
 	self:reset_pedestal()
 	radiant.effects.run_effect(baby, "stonehearth:effects:buff_tonic_energy_added")
 
+	-- local pop = stonehearth.population:get_population(self.player_id)
+	-- pop:set_baby(baby)
+	-- if we end up showing it on character list, players "can" change its job...
+
 	self._sv._current_baby = baby
 	self._baby_listener = radiant.events.listen_once(baby, 'stonehearth:on_evolved', function(e)
 		self:grow_into_adult(e.evolved_form)

@@ -47,7 +47,6 @@ function FireflyCallHandler:abandon_glory_wave(session, response, source_entity)
 	return false
 end
 
-
 function FireflyCallHandler:add_goblin_citizen_command(session, response)
 	local player_id = session.player_id
 	local pop = stonehearth.population:get_population(player_id)
@@ -62,6 +61,19 @@ function FireflyCallHandler:add_goblin_citizen_command(session, response)
 
 	local spawn_point = radiant.terrain.find_placement_point(town_center, 20, 30)
 	radiant.terrain.place_entity(goblin, spawn_point)
+
+	return true
+end
+
+function FireflyCallHandler:everyone_max_level_command(session, response)
+	local player_id = session.player_id
+	local population = stonehearth.population:get_population(player_id)
+	for _, citizen in population:get_citizens():each() do
+		local job_component = citizen:get_component('stonehearth:job')
+		for i=2,6 do
+			job_component:level_up(true)
+		end
+	end
 
 	return true
 end

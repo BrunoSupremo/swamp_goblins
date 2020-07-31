@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 30,
+	"work_units": 12,
+	"recipe_name": "i18n(stonehearth:jobs.blacksmith.recipes.lamppost_rustic_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.blacksmith.recipes.lamppost_rustic_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.blacksmith.recipes.lamppost_rustic_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/lamppost/lamppost.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "clay resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:lamppost"
+		}
+	]
+}

@@ -5,4 +5,10 @@ $(document).ready(function(){
 		},
 		description: "Add a new goblin to your town, even if playing with hearthlings."
 	});
+	radiant.console.register('everyone_max_level', {
+		call: function(cmdobj, fn, args) {
+			return radiant.call('swamp_goblins:everyone_max_level_command');
+		},
+		description: "Level up everyone to the max level."
+	});
 });

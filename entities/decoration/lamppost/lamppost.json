@@ -1,0 +1,41 @@
+{
+	"type": "entity",
+	"mixins": "file(lamppost_ghost.json)",
+	"components": {
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 3, "z": 1 }
+				}
+			]
+		},
+		"stonehearth:lamp": {
+			"light_effect" : "swamp_goblins:effects:green_fire:large_candle",
+			"light_origin": { "x": 0, "y": 0, "z": 0 }
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(lamppost_iconic.json)",
+			"ghost_form": "file(lamppost_ghost.json)",
+			"placeable_on_ground": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 9,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 3,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 10
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

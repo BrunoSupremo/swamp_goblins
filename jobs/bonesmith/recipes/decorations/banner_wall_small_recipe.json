@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 3,
+	"recipe_name": "i18n(rayyas_children:jobs.potter.recipes.banner_wall_small_recipe.recipe_name)",
+	"description": "i18n(rayyas_children:jobs.potter.recipes.banner_wall_small_recipe.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/banner_wall_small/banner_wall_small.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"work_effect": "fiddle",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 4
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:banner_wall_small"
+		}
+	]
+}

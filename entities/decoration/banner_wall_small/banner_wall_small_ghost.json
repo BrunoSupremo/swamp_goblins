@@ -1,0 +1,36 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(banner_wall_small.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"region_origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			},
+			"allow_vertical_adjacent": true
+		},
+		"render_info": {
+			"scale": 0.1
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(rayyas_children:entities.decoration.monkey_shrine_monument.banner_wall_small.banner_wall_small_ghost.display_name)",
+			"description": "i18n(rayyas_children:entities.decoration.monkey_shrine_monument.banner_wall_small.banner_wall_small_ghost.description)",
+			"icon": "file(banner_wall_small.png)",
+			"category": "decoration"
+		}
+	}
+}

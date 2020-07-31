@@ -183,6 +183,8 @@
 		"data:trapping:all_trappable_animals":"file(data/trapping/all_trappable_animals.json)",
 
 		"decoration:awning":				"file(entities/decoration/awning)",
+		"decoration:banner_wall_small":		"file(entities/decoration/banner_wall_small)",
+		"decoration:pole_banner":			"file(entities/decoration/pole_banner)",
 		"decoration:big_firefly_essense":	"file(entities/decoration/big_firefly_essense)",
 		"decoration:certificate":			"file(entities/decoration/certificate)",
 		"decoration:fiber_rug":				"file(entities/decoration/fiber_rug)",
@@ -193,11 +195,11 @@
 		"decoration:hourglass":				"file(entities/decoration/hourglass)",
 		"decoration:hearth:nature":			"file(entities/decoration/nature_hearth)",
 		"decoration:hearth:warrior":		"file(entities/decoration/warrior_hearth)",
+		"decoration:lamppost":				"file(entities/decoration/lamppost)",
 		"decoration:large_candle":			"file(entities/decoration/large_candle)",
 		"decoration:mini_fountain":			"file(entities/decoration/mini_fountain)",
 		"decoration:small_candle":			"file(entities/decoration/small_candle)",
 		"decoration:wall_candle":			"file(entities/decoration/wall_candle)",
-		"decoration:pole_banner":			"file(entities/decoration/pole_banner)",
 		"decoration:potted_cattail":		"file(entities/decoration/potted_cattail)",
 		"decoration:potted_giple":			"file(entities/decoration/potted_giple)",
 		"decoration:potted_sapling":		"file(entities/decoration/potted_sapling)",
@@ -676,6 +678,7 @@
 		"stonehearth/data/gm/campaigns/game_events/arcs/trigger/game_events/encounters/generate_daily_report.json":		"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth/data/gm/campaigns/goblin_war/goblin_war_campaign.json":											"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth/data/gm/campaigns/orc_war/orc_war_campaign.json":													"file(data/gm/campaigns/remove_firefly_clan.json)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/weapon_armor_shop_1.json":					"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth_ace:mixins:encounter:goblin_raid":																	"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth_ace/data/gm/campaigns/bonecarving/bonecarving_campaign.json":										"file(data/gm/campaigns/remove_firefly_clan.json)",
 
@@ -816,6 +819,10 @@
 			"endpoint": "server"
 		},
 		"add_goblin_citizen_command": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
+		},
+		"everyone_max_level_command": {
 			"controller": "file(call_handlers/firefly_stuff.lua)",
 			"endpoint": "server"
 		},

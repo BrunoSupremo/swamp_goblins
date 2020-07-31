@@ -7,6 +7,15 @@ local gaussian_rng = IntegerGaussianRandom(rng)
 local firefly_kingdom = radiant.resources.load_json("swamp_goblins:kingdoms:firefly_clan")
 local goblin_role_data = firefly_kingdom.roles["default"]
 
+function GoblinPopulationFaction:set_baby(baby)
+	radiant.entities.set_custom_name(baby, "i18n(swamp_goblins:entities.goblins.baby.display_name)")
+	self._sv.citizens:add(baby:get_id(), baby)
+	self:on_citizen_count_changed()
+	self:_monitor_citizen(baby)
+
+	self.__saved_variables:mark_changed()
+end
+
 function GoblinPopulationFaction:create_new_goblin_citizen_from_role_data(citizen)
 	self:_set_citizen_initial_state(citizen, "male", goblin_role_data, {})
 	self._sv.citizens:add(citizen:get_id(), citizen)
