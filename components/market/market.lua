@@ -2,10 +2,23 @@ local GoblinMarketComponent = class()
 
 function GoblinMarketComponent:initialize()
 	self._sv._restock_timer = nil
+	self._sv._is_open = false
+end
+
+function GoblinMarketComponent:create()
+	self._sv._is_open = true
 end
 
 function GoblinMarketComponent:post_activate()
 	self.json = radiant.entities.get_json(self)
+	local commands_component = self._entity:get_component("stonehearth:commands")
+	if self._sv._is_open then
+		commands_component:set_command_enabled('swamp_goblins:commands:market',true)
+		self._entity:get_component('render_info'):set_model_variant("default")
+	else
+		commands_component:set_command_enabled('swamp_goblins:commands:market',false)
+		self._entity:get_component('render_info'):set_model_variant("closed")
+	end
 end
 
 
@@ -42,10 +55,13 @@ function GoblinMarketComponent:create_shop()
 end
 
 function GoblinMarketComponent:destroy()
-	self:close_shop()
-	if self._sv._restock_timer then
-		self._sv._restock_timer:destroy()
-		self._sv._restock_timer = nil
+	if self.shop then
+		stonehearth.shop:destroy_shop(self.shop)
+		self.shop = nil
+	end
+	if self.bulletin then
+		stonehearth.bulletin_board:remove_bulletin(self.bulletin)
+		self.bulletin = nil
 	end
 end
 
@@ -55,19 +71,19 @@ end
 
 function GoblinMarketComponent:_on_closed()
 	self:close_shop()
-	self._sv._restock_timer = stonehearth.calendar:set_persistent_timer('shopkeeper restocking', '1d', function()
-		self:open_shop()
-	end)
+	self._sv._restock_timer = stonehearth.calendar:set_persistent_timer('shopkeeper restocking', '1d', radiant.bind(self, 'open_shop'))
 	radiant.effects.run_effect(self._entity, 'stonehearth:effects:spawn_entity')
 end
 
 function GoblinMarketComponent:open_shop()
+	self._sv._is_open = true
 	local commands_component = self._entity:get_component("stonehearth:commands")
 	commands_component:set_command_enabled('swamp_goblins:commands:market',true)
 	self._entity:get_component('render_info'):set_model_variant("default")
 end
 
 function GoblinMarketComponent:close_shop()
+	self._sv._is_open = false
 	self._entity:get_component('render_info'):set_model_variant("closed")
 	if self.shop then
 		stonehearth.shop:destroy_shop(self.shop)

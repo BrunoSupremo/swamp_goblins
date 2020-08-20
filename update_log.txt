@@ -1,14 +1,16 @@
 Additions:
-Wide wall banner decoration and recipe
-Lamppost decoration and recipe
+Two dining area templates (tier 1 and tier 2)
+Two sleeping area templates (tier 1 and tier 2)
+Wide wooden window (3x2) and Tall wooden window (2x3)
+Window Mushroom Box
 
 Changes:
-Renamed Shaman recipes Tools category to Talismans, for clarity.
-Goblins start with two plantable violet plants instead of two rocks.
-New egg and baby icons (thanks Stmpnk)
-Decreased Knight and Nina (from the human camp) "fighting" area, so they will only attack players that get really close to the camp (~30 blocks)
-Removed weapon and armor traders showing at tier 1 as they are a big noob trap (those items do not fit the goblins classes)
+Stone bench recipe level decreased to 1 (required for the earthmaster template)
+Three house templates previously marked as WIP are now complete, as tier 2 houses
+Updated stone chair model (squashed it, was too tall)
+Rebalanced potted plants ingredients (now uses harvested resources instead of whole plants) and stats
+Rebalanced networth for multiple items
 
 Fixes:
-The human camp could be killed by other enemies and move the campaign forward without the player interaction. They would also ally with everyone else once befriended by the player. They should now properly be ignored by other enemies until they are allied with players.
+Goblin markets were stuck as closed after reloading the game
 (for ACE mod)

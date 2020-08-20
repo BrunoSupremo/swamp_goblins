@@ -1,0 +1,24 @@
+{
+	"type": "recipe",
+	"effort": 8,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.window_mushroom_box_wood.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.window_mushroom_box_wood.description)",
+	"portrait": "/swamp_goblins/entities/decoration/window_mushroom_box_wood/window_mushroom_box_wood.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:window_mushroom_box:wood"
+		}
+	]
+}

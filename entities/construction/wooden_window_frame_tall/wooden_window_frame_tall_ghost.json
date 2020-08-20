@@ -1,0 +1,51 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.099
+		},
+		"mob": {
+			"align_to_grid": [
+				"x"
+			]
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(wooden_window_frame_tall.qb)"
+				]
+			}
+		},
+		"stonehearth:fixture": {
+			"cursor": "stonehearth:cursors:create_window",
+			"margin": {
+				"left": 0,
+				"right": 0,
+				"top": 1,
+				"bottom": 1
+			},
+			"bounds": {
+				"min": { "x": -1, "y": 0 },
+				"max": { "x": 1, "y": 3 }
+			}
+		},
+		"stonehearth:portal": {
+			"cutter": [
+				{
+					"min": { "x": -1, "y": 0 },
+					"max": { "x": 1, "y": 3 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.construction.wooden_window_frame_tall.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.wooden_window_frame_tall.description)",
+			"icon": "file(wooden_window_frame_tall.png)",
+			"category": "window",
+			"material_tags": ["firefly_made", "wood", "portal", "crafted", "window", "stockpile_portal"]
+		}
+	}
+}

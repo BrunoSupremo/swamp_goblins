@@ -1,0 +1,61 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(mushroom_shield.qb)"
+				]
+			}
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(mushroom_shield_iconic.json)"
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "leftArm",
+			"render_type": "attach_to_bone",
+			"postures": [
+				"stonehearth:combat",
+				"stonehearth:patrol",
+				"stonehearth:have_shield"
+			],
+			"required_job_level": 2,
+			"ilevel": 3,
+			"roles": ["goblin_warrior_job"],
+			"equip_effect": "stonehearth:effects:weapon_level_up"
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:armor_data": {
+			"base_damage_reduction": 3
+		},
+		"stonehearth:combat:melee_defenses": [
+			{
+				"name": "simple_shield_block",
+				"effect": "combat_1h_shield_block",
+				"active_frame": 4,
+				"cooldown": 10000,
+				"priority": 0,
+				"chance_of_success": 0.15
+			}
+		],
+		"stonehearth:net_worth": {
+			"value_in_gold": 10,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": false,
+				"shopkeeper_level": 2,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.armor.mushroom_shield.display_name)",
+			"description": "i18n(swamp_goblins:entities.armor.mushroom_shield.description)",
+			"icon": "file(mushroom_shield.png)",
+			"category": "armor",
+			"material_tags": ["mushroom", "armor", "heavy_armor", "shield", "stockpile_equipment"]
+		}
+	}
+}

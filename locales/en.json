@@ -103,7 +103,7 @@
 						"purple_stripes":"Purple Fiber Stripes",
 						"white_stripes":"White Fiber Stripes"
 					},
-					"white_stripes":"White Fiber Stripes",
+					"white_stripes":"White Fiber Stripes"
 				}
 			}
 		},
@@ -127,12 +127,12 @@
 			},
 			"music":{
 				"display_name":"Play Music",
-				"description":"Will call someone to play this instrument",
+				"description":"It will call someone to play this instrument",
 				"disabled_description":"Waiting for someone to play it, or in use already."
 			},
 			"travel":{
 				"display_name":"Travel",
-				"description":"Chose which goblins will reembark"
+				"description":"Choose which goblins will reembark"
 			},
 			"weather_stone":{
 				"charge":{
@@ -241,7 +241,7 @@
 												"dialog_nodes": {
 													"msg1": {
 														"bulletin_message": {
-															"00": "\"We have need of someone experienced with wood for two days, to help with bracing a tunnel and putting up new vegetable storage.\"\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+															"00": "\"We have need of someone experienced with wood for two days, to help with bracing a tunnel and putting up new vegetable storage.\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
 														}
 													}
 												}
@@ -611,22 +611,26 @@
 				"initial_town_name": "Small Goblin Clan",
 				"display_name": "Firefly Clan",
 				"quote": "",
-				"long_description": "Living in the swamp as a shamanistic tribe setup. This way of living has given them a perception on life, that are a bit different than their greenskinned cousins.",
+				"long_description": "Living in the swamp like an established shamanic tribe. This way of living gave them a slightly different perception of life than that of their green-skinned cousins.",
 				"post_selection_description": ", a magical gang of goblins."
 			}
 		},
 		"saved_objects": {
 			"building_templates": {
 				"barrack": "💜 Barrack",
-				"firefly_house1": "💜 House 1 (wip)",
-				"firefly_house2": "💜 House 2 (wip)",
-				"firefly_house3": "💜 House 3 (wip)",
+				"firefly_house1": "💜 House 1",
+				"firefly_house2": "💜 House 2",
+				"firefly_house3": "💜 House 3",
 				"hut": "💜 Hut",
 				"temple": "💜 Temple",
 				"tent": "💜 Tent",
 				"nursery": "💜 Nursery",
 				"treasure_storage": "💜 Treasure Storage",
 				"garden": "💜 Garden",
+				"firefly_inn": "💜 Firefly Inn",
+				"firefly_inn2": "💜 Firefly Inn (Tier 2)",
+				"snack_bar": "💜 Snack Bar",
+				"snack_bar2": "💜 Snack Bar (Tier 2)",
 				"bonesmith_workshop": "💜 Bonesmith Workshop",
 				"bonesmith_workshop2": "💜 Bonesmith Workshop (Tier 2)",
 				"earthmaster_workshop": "💜 Earthmaster Workshop",
@@ -746,6 +750,14 @@
 			"wooden_window_frame": {
 				"display_name": "Wooden Window Frame",
 				"description": "Let the light come in"
+			},
+			"wooden_window_frame_wide": {
+				"display_name": "Wide Wooden Window Frame",
+				"description": "Let more light come in"
+			},
+			"wooden_window_frame_tall": {
+				"display_name": "Tall Wooden Window Frame",
+				"description": "Let more light come in. Actually, even goblins can go through it"
 			}
 		},
 		"consumables": {
@@ -932,6 +944,10 @@
 			"window_box_wood": {
 				"display_name": "Window Box",
 				"description": "A tidy home for the plant."
+			},
+			"window_mushroom_box_wood": {
+				"display_name": "Window Mushroom Box",
+				"description": "A tidy home for the mushroom."
 			},
 			"wood_sign": {
 				"goblin": {
@@ -1197,7 +1213,7 @@
 				"display_name": "Firefly Jewel",
 				"description": "Bright, glowing marbles",
 				"flavor": "Has the magical properties of the essences and minerals used to craft them."
-			},
+			}
 		},
 		"resources": {
 			"cattail": {
@@ -1723,19 +1739,16 @@
 		"data":{
 			"constants":{
 				"chitin_resource":"Any Chitin",
-
 				"clay_decoration":"Any Clay Decoration",
 				"clay_fence":"Any Clay Fence",
 				"clay_furniture":"Any Clay Furniture",
 				"clay_portal_door":"Any Clay Door",
 				"clay_portal_window":"Any Clay Window",
-
 				"stone_decoration":"Any Stone Decoration",
 				"stone_fence":"Any Stone Fence",
 				"stone_furniture":"Any Stone Furniture",
 				"stone_portal_door":"Any Stone Door",
 				"stone_portal_window":"Any Stone Window",
-
 				"wood_decoration":"Any Wood Decoration",
 				"wood_fence":"Any Wood Fence",
 				"wood_furniture":"Any Wood Furniture",
@@ -1763,7 +1776,7 @@
 							"pedestal":"Pedestal",
 							"egg":"Egg",
 							"baby":"Baby",
-							"goblin":"Goblin",
+							"goblin":"Goblin"
 						},
 						"jobs":{
 							"display_name":"Jobs",

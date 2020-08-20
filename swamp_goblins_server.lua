@@ -1,9 +1,7 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.7.30")
+print("Swamp Goblins Mod version 20.8.19")
 
 --[[
-
-bug?: shaman cook workbenches at the wrong level, move it all after the others
 
 move default market stall to earthmaster
 
@@ -47,7 +45,7 @@ furniture:
 		mushroom, fiber, wood, fancy/clothed wood, stone, clay
 	bed, chair, table, bench
 templates:
-	inn, dinning hall, tavern, combat houses (n.a. inspired roofs)
+	combat houses (n.a. inspired roofs?)
 earthmaster:
 	dart traps, smoke traps
 	upgraded workbenches

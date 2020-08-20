@@ -58,6 +58,9 @@
 		"armor:varanus_armor":	"file(entities/armor/varanus_armor)",
 		"armor:varanus_helmet":	"file(entities/armor/varanus_helmet)",
 
+		"armor:mask_shield":	"file(entities/armor/mask_shield)",
+		"armor:mushroom_shield":"file(entities/armor/mushroom_shield)",
+
 		"beast_tamer:claw": "file(jobs/beast_tamer/beast_tamer_claw)",
 		"beast_tamer:talisman": "file(jobs/beast_tamer/beast_tamer_flute)",
 		"beast_tamer:abilities:summon_poyos":		"file(jobs/beast_tamer/beast_tamer_abilities/summon_poyos.json)",
@@ -231,7 +234,8 @@
 		"decoration:travel_stall":			"file(entities/decoration/travel_stall)",
 		"decoration:wall_mask":				"file(entities/decoration/wall_mask)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
-		"decoration:window_box:wood":		"file(entities/decoration/window_box_wood)",
+		"decoration:window_box:wood":			"file(entities/decoration/window_box_wood)",
+		"decoration:window_mushroom_box:wood":	"file(entities/decoration/window_mushroom_box_wood)",
 
 		"effects:egg_pedestal":	"file(data/effects/egg_pedestal)",
 		"effects:firefly_effect":			"file(data/effects/firefly_effect)",
@@ -407,7 +411,9 @@
 		"portals:wooden_door":			"file(entities/construction/wooden_door)",
 		"portals:wooden_double_door":	"file(entities/construction/wooden_double_door)",
 		"portals:curtains_door":		"file(entities/construction/curtains_door)",
-		"portals:wooden_window_frame":	"file(entities/construction/wooden_window_frame)",
+		"portals:wooden_window_frame":		"file(entities/construction/wooden_window_frame)",
+		"portals:wooden_window_frame_wide":	"file(entities/construction/wooden_window_frame_wide)",
+		"portals:wooden_window_frame_tall":	"file(entities/construction/wooden_window_frame_tall)",
 
 		"refined:jewel":"file(entities/refined/jewel)",
 
@@ -768,6 +774,7 @@
 		"swamp_goblins/jobs/scavenger/scavenger_abilities/scavenger_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/shaman/shaman_abilities/shaman_abilities.json":					"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/worker/goblin_worker_abilities.json":							"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+
     	"swamp_goblins:armor:flower_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
     	"swamp_goblins:armor:log_armor":			"stonehearth_ace:mixins:armor:light_armor_torso",
     	"swamp_goblins:armor:log_helmet":			"stonehearth_ace:mixins:armor:light_armor_helmet",
@@ -777,6 +784,9 @@
     	"swamp_goblins:armor:varanus_armor":		"stonehearth_ace:mixins:armor:heavy_armor_torso",
     	"swamp_goblins:armor:varanus_helmet":		"stonehearth_ace:mixins:armor:heavy_armor_helmet",
     	"swamp_goblins:armor:horn_helmet":			"stonehearth_ace:mixins:armor:heavy_armor_helmet",
+		"swamp_goblins:armor:mask_shield":		"stonehearth_ace:mixins:armor:light_shield",
+		"swamp_goblins:armor:mushroom_shield":	"stonehearth_ace:mixins:armor:light_shield",
+
     	"swamp_goblins:weapons:spear":			"stonehearth_ace:mixins:weapons:twohanded_shaken_minor",
     	"swamp_goblins:weapons:crude_axe":		"stonehearth_ace:mixins:weapons:mainhand_hacking",
     	"swamp_goblins:weapons:skull_basher":	"stonehearth_ace:mixins:weapons:mainhand_fracture_minor",
