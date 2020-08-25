@@ -7,23 +7,23 @@
 					{
 						"type": "one_of",
 						"items": [
-							"file(brick_fence_1.qb)",
-							"file(brick_fence_2.qb)"
+							"file(brick_fence_half_1.qb)",
+							"file(brick_fence_half_2.qb)"
 						]
 					}
 				]
 			}
 		},
 		"mob": {
-			"model_origin": { "x": -0.5, "y": 0, "z": 0 },
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
 			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
 		}
 	},
 	"entity_data": {
 		"stonehearth:catalog": {
-			"display_name": "i18n(swamp_goblins:entities.construction.brick_fence.display_name)",
-			"description": "i18n(swamp_goblins:entities.construction.brick_fence.description)",
-			"icon": "file(brick_fence.png)",
+			"display_name": "i18n(swamp_goblins:entities.construction.brick_fence_half.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.brick_fence_half.description)",
+			"icon": "file(brick_fence_half.png)",
 			"category": "construction",
 			"material_tags": ["firefly_made", "stone", "defense", "fence", "stockpile_defense"]
 		}

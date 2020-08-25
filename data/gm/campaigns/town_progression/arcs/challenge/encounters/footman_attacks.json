@@ -43,7 +43,9 @@
 							"max": 1,
 							"location": { "x": 0, "z": 0 },
 							"range": 5,
-							"scale_with_run": {}
+							"scale_with_run": {
+								"encounter_cap":6
+							}
 						},
 						"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:footman",
 						"abilities": "stonehearth:abilities:maurauder_abilities"

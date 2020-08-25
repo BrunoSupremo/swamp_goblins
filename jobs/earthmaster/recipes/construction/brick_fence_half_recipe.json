@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 22,
+	"work_units": 1,
+	"recipe_name": "i18n(swamp_goblins:entities.construction.brick_fence_half.display_name)",
+	"description": "i18n(swamp_goblins:entities.construction.brick_fence_half.description)",
+	"flavor": "i18n(swamp_goblins:entities.construction.brick_fence_half.flavor)",
+	"portrait": "/swamp_goblins/entities/construction/brick_fence_half/brick_fence_half.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:construction:brick_fence_half"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 22,
+	"work_units": 1,
+	"recipe_name": "i18n(swamp_goblins:entities.construction.clay_fence_half.display_name)",
+	"description": "i18n(swamp_goblins:entities.construction.clay_fence_half.description)",
+	"flavor": "i18n(swamp_goblins:entities.construction.clay_fence_half.flavor)",
+	"portrait": "/swamp_goblins/entities/construction/clay_fence_half/clay_fence_half.png",
+	"workshop": "swamp_goblins:earthmaster:potter_kiln",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "clay_brick resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:construction:clay_fence_half"
+		}
+	]
+}

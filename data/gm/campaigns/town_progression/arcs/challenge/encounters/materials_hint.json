@@ -1,0 +1,32 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "materials_hint",
+	"can_start": {
+		"unique": {
+			"number_active_check": {
+				"type": "deny_if_not",
+				"item": "number_spawned",
+				"node_name": "wait_human_hearth_update",
+				"value": 0
+			}
+		}
+	},
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.materials_hint.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.materials_hint.message)",
+					"choices": {
+						"stonehearth:ui.game.common.yes": {}
+					}
+				}
+			}
+		}
+	}
+}

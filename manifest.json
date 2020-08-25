@@ -137,7 +137,11 @@
 
 		"construction:ladder":	"file(entities/construction/ladder)",
 		"construction:brick_fence":		"file(entities/construction/brick_fence)",
+		"construction:brick_fence_half":"file(entities/construction/brick_fence_half)",
 		"construction:brick_fence_end":	"file(entities/construction/brick_fence_end)",
+		"construction:clay_fence":		"file(entities/construction/clay_fence)",
+		"construction:clay_fence_half":	"file(entities/construction/clay_fence_half)",
+		"construction:clay_fence_end":	"file(entities/construction/clay_fence_end)",
 		"construction:goblin_barricade":		"file(entities/construction/goblin_barricade)",
 		"construction:goblin_barricade_single":	"file(entities/construction/goblin_barricade_single)",
 		"construction:goblin_barricade_gate":	"file(entities/construction/goblin_barricade_gate)",
@@ -868,8 +872,6 @@
 		"stonehearth/data/rigs/entities/humans/effects/bonesmith_saw.json":				"file(data/rigs/entities/humans/effects/bonesmith_saw.json)",
 		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":	"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",
 		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"file(data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json)",
-
-		"box_o_vox/services/server/game_creation/game_creation_service.lua":"stonehearth/services/server/game_creation/game_creation_service.lua",
 
 		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",

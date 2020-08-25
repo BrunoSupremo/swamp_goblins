@@ -1,0 +1,25 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(clay_fence.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.5, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.construction.clay_fence.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.clay_fence.description)",
+			"icon": "file(clay_fence.png)",
+			"category": "construction",
+			"material_tags": ["firefly_made", "clay", "defense", "fence", "stockpile_defense"]
+		}
+	}
+}

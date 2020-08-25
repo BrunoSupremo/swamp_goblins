@@ -1,15 +1,22 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.8.20")
+print("Swamp Goblins Mod previous version 20.8.20")
+print("Swamp Goblins Mod version 20.8.24")
 
 --[[
+
+oga wind:
+hi, im oga blabal
+i heard of a group of goblins that defeated a human town full of soldiers and knights, with nothign more than a few sticks
+... not exactly
+
+oh, so humble
+but i see that you are still too weak blablaabl
 
 move default market stall to earthmaster
 
 non blue skin trait
 
 swamp zilla
-
-vine cobblestone wall
 
 waves:
 	boss, bunnies, orcs, kobolds, ogres

@@ -382,7 +382,7 @@
 											}
 										},
 										"50_titan_weapon_quest": {
-											"text": "Choose an Earthmaster (Lv4), plus any three other citizens to help Clan Amberstone"
+											"text": "Choose an Earthmaster (level 4+), plus any three other citizens to help Clan Amberstone"
 										}
 									},
 									"titan_already_killed_dialog": {
@@ -505,6 +505,10 @@
 							"title":"Quest Completed",
 							"message":"Thanks, this will help us a lot!<br>Here, we have prepared some food as a thank you gift.<br><br><font size=-1>The food will be dropped at your banner</font>"
 						},
+						"materials_hint":{
+							"title":"Hint",
+							"message":"We heard something about one of your crafters, I think you called it Earthmaster, being good at burning wood items to make coal, is that true? That can be useful for our quest."
+						},
 						"notice_human_hearth":{
 							"title":"Step up",
 							"dialog_title":"Hearth Update",
@@ -512,7 +516,7 @@
 							"message_2":"We decided on two options to represent our town:<br>Warrior Hearth and Nature Hearth",
 							"message_3":"The <i>Warrior Hearth</i> is for those who believe their destiny is to stand strong in a hostile world.<br>We will be able to fight against the best warriors from other clans, training with them and learning from them.",
 							"message_4":"The <i>Nature Hearth</i> is for those who believe that a town's value is found within its happy citizens in harmony with nature.<br>We will receive random daily blessings.",
-							"message_5":"Warrior or Nature? What do you think would be the most fitting for out town from here and beyond?",
+							"message_5":"Warrior or Nature? What do you think would be the most fitting for our town from here and beyond?",
 							"choice":"We choose..."
 						},
 						"hearth_choice":{
@@ -709,12 +713,32 @@
 			"brick_fence": {
 				"display_name": "Brick Fence",
 				"description": "Blocks the way",
-				"flavor":"one piece at a time"
+				"flavor":"One piece at a time"
+			},
+			"brick_fence_half": {
+				"display_name": "Brick Fence Half",
+				"description": "Blocks the way",
+				"flavor":"One piece at a time"
 			},
 			"brick_fence_end": {
 				"display_name": "Brick Fence End",
 				"description": "Blocks the way",
-				"flavor":"one piece at a time"
+				"flavor":"One piece at a time"
+			},
+			"clay_fence": {
+				"display_name": "Clay Fence",
+				"description": "Blocks the way",
+				"flavor":"One piece at a time"
+			},
+			"clay_fence_half": {
+				"display_name": "Clay Fence Half",
+				"description": "Blocks the way",
+				"flavor":"One piece at a time"
+			},
+			"clay_fence_end": {
+				"display_name": "Clay Fence End",
+				"description": "Blocks the way",
+				"flavor":"One piece at a time"
 			},
 			"clay_water_well": {
 				"display_name": "Clay Water Well",
@@ -786,7 +810,7 @@
 			"large_healing": {
 				"display_name": "Strong Healing Tonic",
 				"description":"Heals a lot more than the small versions",
-				"flavor":"Shamans can manually use it to heal someone injuried in bed."
+				"flavor":"Shamans can manually use it to heal someone injured in bed."
 			},
 			"memory_potion": {
 				"display_name": "Memory Potion",
@@ -798,7 +822,7 @@
 				"description":"Increases mind attribute, but decreases body and spirit."
 			},
 			"small_healing": {
-				"flavor":"Shamans can manually use it to heal someone injuried in bed."
+				"flavor":"Shamans can manually use it to heal someone injured in bed."
 			},
 			"speed_potion": {
 				"display_name": "Speed Potion",
@@ -880,7 +904,7 @@
 			},
 			"small_candle": {
 				"display_name": "Small Candle",
-				"description": "Smaller candle, same light"
+				"description": "Small candle, same light"
 			},
 			"wall_candle": {
 				"display_name": "Wall Candle",

@@ -30,7 +30,13 @@
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.challenge.humans_asks_materials.yep)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {
-							"out_edge": "materials_quest"
+							"out_edge": {
+								"type": "trigger_many",
+								"out_edges": [
+									"materials_quest",
+									"wait_for_materials_hint"
+								]
+							}
 						}
 					}
 				}
