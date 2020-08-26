@@ -35,7 +35,7 @@ end
 
 function BeastTamerClass:_create_listeners()
 	CombatJob._create_listeners(self)
-	self.summons = radiant.resources.load_json("swamp_goblins:beast_tamer:summons")
+	self.summons = radiant.resources.load_json(self._job_json.summons)
 end
 
 function BeastTamerClass:spirit_walker_dragon_aura()
