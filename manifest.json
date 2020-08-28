@@ -181,6 +181,8 @@
 		"critters:firefly":	"file(entities/critters/firefly)",
 		"critters:frog":	"file(entities/critters/frog)",
 
+		"crops:violet_crop": "file(entities/crops/violet_crop)",
+
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
 		"data:goblinpedia": "file(data/goblinpedia)",
@@ -702,7 +704,8 @@
 
 		"stonehearth/data/ui/start_menu.json":"file(data/ui/start_menu.json)",
 
-		"stonehearth:farmer:initial_crops": "file(services/server/farming/data/initial_crops.json)",
+		"stonehearth:farmer:initial_crops":	"file(services/server/farming/data/initial_crops.json)",
+		"stonehearth:farmer:all_crops":		"file(services/server/farming/data/all_crops.json)",
 
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
 
@@ -779,25 +782,25 @@
 		"swamp_goblins/jobs/shaman/shaman_abilities/shaman_abilities.json":					"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/worker/goblin_worker_abilities.json":							"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 
-    	"swamp_goblins:armor:flower_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
-    	"swamp_goblins:armor:log_armor":			"stonehearth_ace:mixins:armor:light_armor_torso",
-    	"swamp_goblins:armor:log_helmet":			"stonehearth_ace:mixins:armor:light_armor_helmet",
-    	"swamp_goblins:armor:leather_armor":		"stonehearth_ace:mixins:armor:light_armor_torso",
-    	"swamp_goblins:armor:leather_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
-    	"swamp_goblins:armor:full_leather_helmet":	"stonehearth_ace:mixins:armor:light_armor_helmet",
-    	"swamp_goblins:armor:varanus_armor":		"stonehearth_ace:mixins:armor:heavy_armor_torso",
-    	"swamp_goblins:armor:varanus_helmet":		"stonehearth_ace:mixins:armor:heavy_armor_helmet",
-    	"swamp_goblins:armor:horn_helmet":			"stonehearth_ace:mixins:armor:heavy_armor_helmet",
+		"swamp_goblins:armor:flower_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
+		"swamp_goblins:armor:log_armor":			"stonehearth_ace:mixins:armor:light_armor_torso",
+		"swamp_goblins:armor:log_helmet":			"stonehearth_ace:mixins:armor:light_armor_helmet",
+		"swamp_goblins:armor:leather_armor":		"stonehearth_ace:mixins:armor:light_armor_torso",
+		"swamp_goblins:armor:leather_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
+		"swamp_goblins:armor:full_leather_helmet":	"stonehearth_ace:mixins:armor:light_armor_helmet",
+		"swamp_goblins:armor:varanus_armor":		"stonehearth_ace:mixins:armor:heavy_armor_torso",
+		"swamp_goblins:armor:varanus_helmet":		"stonehearth_ace:mixins:armor:heavy_armor_helmet",
+		"swamp_goblins:armor:horn_helmet":			"stonehearth_ace:mixins:armor:heavy_armor_helmet",
 		"swamp_goblins:armor:mask_shield":		"stonehearth_ace:mixins:armor:light_shield",
 		"swamp_goblins:armor:mushroom_shield":	"stonehearth_ace:mixins:armor:light_shield",
 
-    	"swamp_goblins:weapons:spear":			"stonehearth_ace:mixins:weapons:twohanded_shaken_minor",
-    	"swamp_goblins:weapons:crude_axe":		"stonehearth_ace:mixins:weapons:mainhand_hacking",
-    	"swamp_goblins:weapons:skull_basher":	"stonehearth_ace:mixins:weapons:mainhand_fracture_minor",
-    	"swamp_goblins:weapons:stone_maul":		"stonehearth_ace:mixins:weapons:mainhand_fracture",
-    	"swamp_goblins:weapons:giant_bone_mace":"stonehearth_ace:mixins:weapons:mainhand_fracture_major",
-    	"swamp_goblins:weapons:giant_bone_axe":	"stonehearth_ace:mixins:weapons:twohanded_open_wounds_major",
-    	"swamp_goblins:weapons:magma_sword":	"stonehearth_ace:mixins:weapons:twohanded_shaken_major"
+		"swamp_goblins:weapons:spear":			"stonehearth_ace:mixins:weapons:twohanded_shaken_minor",
+		"swamp_goblins:weapons:crude_axe":		"stonehearth_ace:mixins:weapons:mainhand_hacking",
+		"swamp_goblins:weapons:skull_basher":	"stonehearth_ace:mixins:weapons:mainhand_fracture_minor",
+		"swamp_goblins:weapons:stone_maul":		"stonehearth_ace:mixins:weapons:mainhand_fracture",
+		"swamp_goblins:weapons:giant_bone_mace":"stonehearth_ace:mixins:weapons:mainhand_fracture_major",
+		"swamp_goblins:weapons:giant_bone_axe":	"stonehearth_ace:mixins:weapons:twohanded_open_wounds_major",
+		"swamp_goblins:weapons:magma_sword":	"stonehearth_ace:mixins:weapons:twohanded_shaken_major"
 	},
 	"functions": {
 		"play_music": {

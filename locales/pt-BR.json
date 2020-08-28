@@ -864,6 +864,30 @@
 				"description": "Anfíbio saltitante"
 			}
 		},
+		"crops":{
+			"violet_crop": {
+				"display_name": "Violet Flower",
+				"description": "Can be used as a healing herb",
+				"growth_stage": {
+					"000": {
+						"name": "Violet Seedlings",
+						"description": "Still growing!"
+					},
+					"001": {
+						"name": "Violet Sprouts",
+						"description": "Just need some time and care."
+					},
+					"002": {
+						"name": "Violet Buds",
+						"description": "It's almost there!  Look, it has buds!"
+					},
+					"003": {
+						"name": "Violets",
+						"description": "Can be harvested for healing herbs"
+					}
+				}
+			}
+		},
 		"decoration": {
 			"awning": {
 				"display_name": "Toldo",
