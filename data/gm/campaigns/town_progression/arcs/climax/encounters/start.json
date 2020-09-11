@@ -1,0 +1,40 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_requirements_met",
+	"in_edge": "start",
+	"out_edge": "delay_dialog",
+	"wait_for_requirements_met_info": {
+		"requirements": {
+			"or":{
+				"item": "or",
+				"type":"deny_if_not",
+				"value": true,
+				"tests": {
+					"warrior_level": {
+						"item": "highest_job_level",
+						"job_alias": "swamp_goblins:jobs:warrior",
+						"type": "deny_if_less_than",
+						"value": 6
+					},
+					"spirit_level": {
+						"item": "highest_job_level",
+						"job_alias": "swamp_goblins:jobs:spirit_walker",
+						"type": "deny_if_less_than",
+						"value": 6
+					},
+					"beast_level": {
+						"item": "highest_job_level",
+						"job_alias": "swamp_goblins:jobs:beast_tamer",
+						"type": "deny_if_less_than",
+						"value": 6
+					},
+					"game_mode_check": {
+						"type": "deny_if_not",
+						"item": "game_mode",
+						"value": "stonehearth:game_mode:peaceful"
+					}
+				}
+			}
+		}
+	}
+}

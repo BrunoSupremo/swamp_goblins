@@ -1,6 +1,5 @@
 {
 	"mixins": [
-		"stonehearth:mixins:tree",
 		"stonehearth:mixins:align_to_grid"
 	],
 	"type": "entity",
@@ -16,6 +15,9 @@
 			}
 		},
 		"stonehearth:resource_node": {
+			"harvest_overlay_effect": "stonehearth:effects:chop_overlay_effect",
+			"harvester_effect": "chop",
+			"description": "chop_tree",
 			"resource": "stonehearth:resources:wood:oak_log"
 		},
 		"mob": {
@@ -45,7 +47,8 @@
 		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(swamp_goblins:entities.trees.stump.display_name)",
-			"description": "i18n(swamp_goblins:entities.trees.stump.description)"
+			"description": "i18n(swamp_goblins:entities.trees.stump.description)",
+			"category": "plants"
 		}
 	}
 }

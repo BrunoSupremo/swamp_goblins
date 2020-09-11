@@ -150,6 +150,7 @@
 		"gm":{
 			"human":"Unknown human",
 			"nina":"Nina",
+			"erdene":"Erdene, Speaker of the Red Kiln",
 			"campaigns":{
 				"amberstone":{
 					"arcs":{
@@ -401,6 +402,32 @@
 						}
 					}
 				},
+				"dragonborn_king":{
+					"arcs":{
+						"trigger":{
+							"dragonborn_king":{
+								"encounters":{
+									"dialog_thank_player_for_help":{
+										"dialog_tree_info":{
+											"dialog_nodes":{
+												"information_howlong":{
+													"bulletin_message":{
+														"000": "It has been many cycles... too many. My family line lives no longer, and my body failed me long ago. My soul has been of the dragon's watch long enough to see many races born and die. Yours has been of great interest, Children of Snake, as my vigil comes to an end."
+													}
+												},
+												"hatch_and_attach":{
+													"bulletin_message":{
+														"000": "I am fading fast, but I have given the last of my spirit to this egg of the Great Dragon, so that the dragonling inside may finally hatch out into this world. I have known you for little time, Children of Snake, but I trust you will aid this young welp as you have aided me. May you carry yourselves with strength and compassion, as the Dragonborn once did."
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
 				"trader": {
 					"arcs": {
 						"encounters": {
@@ -536,6 +563,12 @@
 						"hearth_quest_nature":{
 							"title":"Hearth Upgrade: Nature",
 							"dialog_title":"Hearth Upgrade: Nature"
+						}
+					},
+					"climax":{
+						"erdene_intro_dialog":{
+							"title":"It is time",
+							"message":"No need to wait any longer, the shaman is ready, and we are all set.<br>Let's pick our banner."
 						}
 					}
 				}

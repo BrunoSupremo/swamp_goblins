@@ -17,7 +17,9 @@
 		"challenge" : {
 			"human_camp": "file(arcs/challenge/encounter_list.json)"
 		},
-		"climax" : {
+		"climax" : {},
+		"_climax" : {
+			"orc_skirmishs": "file(arcs/climax/encounter_list.json)"
 		}
 	}
 }

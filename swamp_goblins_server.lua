@@ -1,16 +1,36 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod previous version 20.8.20")
-print("Swamp Goblins Mod version 20.8.24")
+print("Swamp Goblins Mod version 20.9.10")
 
 --[[
 
-orc campaign
-oga wind:
-hi, im oga blabal
-i heard of a group of goblins that defeated a human town full of soldiers and knights, with nothign more than a few sticks
-... not exactly
+ace new fuel system
+
+Erdene, Speaker of the Red Kiln
+hi, im erdene blabla
+i heard of a group of goblins that defeated a human town full of soldiers and knights, with nothing more than a few sticks
+*... not exactly
 oh, so humble
-but i see that you are still too weak blablaabl
+but i see that you are still too weak blabla
+we love challenges, but we also value our time, so we will send you a test first, from our lower ranks
+*ok
+--fighting
+if you want to climb through our ranks, put the gongs, they are our universal challenge symbol. While they are up, we will challenge you.
+*ok
+--crafting
+--fighting
+--reaching top rank
+you will have to forgive us, our high ranks are not here yet. they are complaing that we got no food, which is true... we sent it to the wrong camp lol
+--20 sweet potatoes (or anything else hard to get using goblins)
+--fail to fulfill it (because it is purposely hard)
+humans:
+oh, so what about we get a farmer to help with your quest, and in return you convince them to not bother us anymore?
+*ok
+--fulfill quest
+--finish fighting the last rank
+--rewarded with orc footman that liked your town and warriors
+your town is way better than it looks, you should display it somehow
+--shrine options
+--tier 3 reached, new templates, etc...
 
 
 move default market stall to earthmaster

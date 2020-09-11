@@ -150,6 +150,7 @@
 		"gm": {
 			"human": "Humano desconhecido",
 			"nina": "Nina ",
+			"erdene": "Erdene, Oradora do Forno Vermelho",
 			"campaigns": {
 				"amberstone": {
 					"arcs": {
@@ -537,6 +538,12 @@
 							"title": "Melhoria da Lareira: Natureza",
 							"dialog_title": "Melhoria da Lareira: Natureza"
 						}
+					},
+					"climax": {
+						"erdene_intro_dialog": {
+							"title": "It is time",
+							"message": "No need to wait any longer, the shaman is ready, and we are all set.<br>Let's pick our banner."
+						}
 					}
 				}
 			}
@@ -864,26 +871,26 @@
 				"description": "Anfíbio saltitante"
 			}
 		},
-		"crops":{
+		"crops": {
 			"violet_crop": {
-				"display_name": "Violet Flower",
-				"description": "Can be used as a healing herb",
+				"display_name": "Flor Violeta",
+				"description": "Pode ser usado como erva curativa",
 				"growth_stage": {
 					"000": {
-						"name": "Violet Seedlings",
-						"description": "Still growing!"
+						"name": "Mudas de Violeta",
+						"description": "Ainda crescendo!"
 					},
 					"001": {
-						"name": "Violet Sprouts",
-						"description": "Just need some time and care."
+						"name": "Couves de Violeta",
+						"description": "Só preciso de algum tempo e cuidado."
 					},
 					"002": {
-						"name": "Violet Buds",
-						"description": "It's almost there!  Look, it has buds!"
+						"name": "Botões de Violeta",
+						"description": "Está quase lá! Olha, tem botões!"
 					},
 					"003": {
-						"name": "Violets",
-						"description": "Can be harvested for healing herbs"
+						"name": "Violetas",
+						"description": "Pode ser usado como erva curativa"
 					}
 				}
 			}
@@ -1229,31 +1236,31 @@
 				"description": "Pode ser colhido para ervas curativas",
 				"unripe_description": "Esta planta foi colhida e ainda não cresceu novamente",
 				"seed": {
-					"display_name": "Giple Flower Seeds",
-					"description": "The small seeds of a giant flower"
+					"display_name": "Sementes de Flor Giple",
+					"description": "As pequenas sementes de uma flor gigante"
 				},
 				"sprout": {
-					"display_name": "Giple Flower Sprout",
-					"description": "Just needs some time and care."
+					"display_name": "Broto de Flor Giple",
+					"description": "Só precisa de algum tempo e cuidado."
 				}
 			},
 			"mushroom": {
-				"display_name": "Swamp Mushroom",
-				"description": "Harvestable for a meager food supply.",
-				"unripe_description": "This mushroom has been harvested and has not grown back yet"
+				"display_name": "Cogumelo do Pântano",
+				"description": "Colhível para um escasso abastecimento alimentar.",
+				"unripe_description": "Este cogumelo foi colhido e ainda não cresceu novamente"
 			},
 			"mushroom_garden": {
-				"display_name": "Swamp Mushroom Garden",
-				"description": "Harvestable for new plantable mushrooms",
-				"unripe_description": "The mushroom in this garden has not fully grown yet"
+				"display_name": "Jardim de Cogumelo do Pântano",
+				"description": "Colhíveis para novos cogumelos plantáveis",
+				"unripe_description": "O cogumelo neste jardim ainda não cresceu totalmente"
 			},
 			"log": {
-				"display_name": "Log",
-				"description": "A floating piece of log"
+				"display_name": "Tronco",
+				"description": "Um pedaço de tronco flutuante"
 			},
 			"lilypad": {
-				"display_name": "Lilypad",
-				"description": "Floats and can hold up a lot of weight"
+				"display_name": "Vitória Régia",
+				"description": "Flutua e pode suportar muito peso"
 			}
 		},
 		"refined": {
@@ -1265,11 +1272,11 @@
 		},
 		"resources": {
 			"cattail": {
-				"display_name": "Cattail Bundle",
-				"description": "Spinnable into thread."
+				"display_name": "Fardo de Taboa",
+				"description": "Pode ser transformada em fio"
 			},
 			"giant_flower": {
-				"display_name": "Giple Flower",
+				"display_name": "Flor Giple",
 				"description": "An herb commonly used for medicinal purposes"
 			},
 			"pelt": {
