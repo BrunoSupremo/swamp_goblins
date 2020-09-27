@@ -1,0 +1,10 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_event",
+	"in_edge": "wait_rookies_defeat",
+	"out_edge": "rookies_defeat_dialog",
+	"wait_for_event_info": {
+		"source": "spawn_rookies.orc_footmen",
+		"event": "stonehearth:kill_event"
+	}
+}

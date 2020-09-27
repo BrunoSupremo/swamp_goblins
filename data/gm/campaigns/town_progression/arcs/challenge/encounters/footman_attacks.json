@@ -14,9 +14,9 @@
 		"test_1": {
 			"combat_units_amount": {
 				"item": "script",
-				"type": "deny_if",
+				"type": "deny_if_not",
 				"value": true,
-				"script": "file(has_less_soldiers_than_enemy.lua)"
+				"script": "file(soldiers_counter.lua)"
 			},
 			"hostile_check": {
 				"item": "hostility",
@@ -44,7 +44,7 @@
 							"location": { "x": 0, "z": 0 },
 							"range": 5,
 							"scale_with_run": {
-								"encounter_cap":6
+								"encounter_cap":10
 							}
 						},
 						"tuning": "swamp_goblins:monster_tuning:firefly_human_encounter:footman",

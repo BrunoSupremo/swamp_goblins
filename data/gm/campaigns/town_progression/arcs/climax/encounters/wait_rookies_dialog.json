@@ -1,0 +1,24 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "wait_rookies_dialog",
+	"dialog_tree_info": {
+		"start_node": "message1",
+		"nodes": {
+			"message1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.wait_rookies_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.wait_rookies_dialog.message)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "spawn_rookies"
+						}
+					}
+				}
+			}
+		}
+	}
+}

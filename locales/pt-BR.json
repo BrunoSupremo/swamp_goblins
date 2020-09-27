@@ -402,6 +402,32 @@
 						}
 					}
 				},
+				"dragonborn_king": {
+					"arcs": {
+						"trigger": {
+							"dragonborn_king": {
+								"encounters": {
+									"dialog_thank_player_for_help": {
+										"dialog_tree_info": {
+											"dialog_nodes": {
+												"information_howlong": {
+													"bulletin_message": {
+														"000": "Foram muitos ciclos ... muitos. Minha linhagem familiar não vive mais, e meu corpo falhou comigo há muito tempo. Minha alma esteve sob a vigilância do dragão por tempo suficiente para ver muitas raças nascerem e morrerem. A sua tem sido de grande interesse, Filhos da Cobra, pois minha vigília chega ao fim."
+													}
+												},
+												"hatch_and_attach": {
+													"bulletin_message": {
+														"000": "Estou morrendo rapidamente, mas dei o que restava de meu espírito a este ovo do Grande Dragão, para que o dragãozinho possa finalmente eclodir neste mundo. Eu os conheço há pouco tempo, Filhos da Cobra, mas confio que vocês ajudarão este jovem assim como me ajudaram. Que vocês se portem com força e compaixão, como os Dragonborn uma vez foram."
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
 				"trader": {
 					"arcs": {
 						"encounters": {
@@ -541,8 +567,32 @@
 					},
 					"climax": {
 						"erdene_intro_dialog": {
-							"title": "It is time",
-							"message": "No need to wait any longer, the shaman is ready, and we are all set.<br>Let's pick our banner."
+							"title": "Orcs visit",
+							"message": "Greetings, little ones. I'm Erdene, Speaker of the Red Kiln.<br>I came here because of some rumors running among the orcs.<br>Rumors about a group of goblins defeating a human fort full of heavily armored soldiers and knights, on their own...<br>How you guys did it? Here in person you guys don't look strong enough, no offense. Was it hard?",
+							"message2_yes": "Fair. You did it anyway, and the boys were promised a worthy opponent.",
+							"message2_no": "Uhm, to be fair, that human camp over there is not a big deal.",
+							"message3": "You see, we came here for you, well, for a bigger challenge.<br>We orcs, along with kobolds and ogres, have a ranking system based on colors. Green, blue, red and then purple.<br>We value our time though, and weak enemies are not fun. So we will send some of our rookies to test you first.",
+							"choice_wait": "Wait",
+							"message4_accept": "Then watchout, as they will reach your camp soon",
+							"message4_wait": "Fine. We will give you one more day."
+						},
+						"wait_rookies_dialog": {
+							"title": "Orc rookies",
+							"message": "I hope you are ready now, as they will reach your camp soon"
+						},
+						"sighted_spawn_rookies": "Rookie Orcs Sighted",
+						"rookies_defeat_dialog": {
+							"title": "Orc rookies defeated",
+							"message1": "I saw that. Not bad!",
+							"message2": "Do you remember our talk about our ranks being based on colors?",
+							"message3_yes": "So, I will leave instructions for your metal worker on how to make one of our colored gongs.<br>Place them in your area to signal that you are ready for that color, and challengers from that rank will come. You will start in the green rank.",
+							"message3_no": "Ok, a quick recap.<br>Orcs, with kobolds and ogres, use a color system to measure each other ranks. Green, blue, red and then purple."
+						},
+						"recipes": {
+							"unlock_gong_green_recipe": "The Earthmaster has unlocked the Green Gong recipe!",
+							"unlock_gong_blue_recipe": "The Earthmaster has unlocked the Blue Gong recipe!",
+							"unlock_gong_red_recipe": "The Earthmaster has unlocked the Red Gong recipe!",
+							"unlock_gong_purple_recipe": "The Earthmaster has unlocked the Purple Gong recipe!"
 						}
 					}
 				}
@@ -921,6 +971,11 @@
 				"description": "Um copo de formato engraçado com areia dentro, escorrendo de uma ponta a outra",
 				"flavor": "Não é minha vez de virar!"
 			},
+			"green_gong": {
+				"display_name": "Green Gong",
+				"description": "Enormous and decorative!",
+				"flavor": "As it turns out, their hats were very dense"
+			},
 			"nature_hearth": {
 				"display_name": "Lareira da Natureza",
 				"description": "Fornece calor, luz, conforto e buffs diários aleatórios"
@@ -1277,94 +1332,94 @@
 			},
 			"giant_flower": {
 				"display_name": "Flor Giple",
-				"description": "An herb commonly used for medicinal purposes"
+				"description": "Uma erva comumente usada para fins medicinais"
 			},
 			"pelt": {
 				"bear_pelt": {
-					"display_name": "Bear Pelt",
-					"description": "Pelt from a beear"
+					"display_name": "Pele de urso",
+					"description": "Pele de um urso"
 				}
 			},
 			"firefly_essense": {
-				"display_name": "Firefly Essence",
-				"description": "Has magical properties",
-				"flavor": "Essential ingredient for many magic related recipes"
+				"display_name": "Essência de Vaga-lume",
+				"description": "Tem propriedades mágicas",
+				"flavor": "Ingrediente essencial para muitas receitas de magia"
 			}
 		},
 		"summons": {
 			"dragon_aura": {
-				"display_name": "Dragon Spirit",
-				"description": "Ancient Dragon from older times"
+				"display_name": "Espírito do dragão",
+				"description": "Dragão antigo de tempos antigos"
 			},
 			"big_g": {
-				"display_name": "Big G",
-				"description": "Beloved and playful, helped his generation through tough times"
+				"display_name": "Grande G",
+				"description": "Amado e brincalhão, ajudou sua geração em tempos difíceis"
 			},
 			"big_wolf": {
-				"display_name": "Big Wolf",
-				"description": "Playful with allies, a beast for the enemies."
+				"display_name": "Lobo Grande",
+				"description": "Brincalhão com os aliados, uma besta para os inimigos."
 			},
 			"goblin_spirit": {
-				"display_name": "Goblin Spirit",
-				"description": "An old ancestor summoned back"
+				"display_name": "Espírito Goblin",
+				"description": "Um velho ancestral convocado de volta"
 			},
 			"poyo": {
-				"display_name": "Four Feathers Member",
-				"description": "Elite Poyo summoned to help in the fight"
+				"display_name": "Membro do Quatro Penas",
+				"description": "Poyo de Elite convocado para ajudar na luta"
 			},
 			"trap": {
-				"display_name": "Trap",
-				"description": "Trapping something inside"
+				"display_name": "Armadilha",
+				"description": "Prendendo algo dentro"
 			}
 		},
 		"trees": {
 			"bogger": {
-				"display_name": "Bogger Tree",
-				"description": "It radiates a mysterious aura",
+				"display_name": "Árvore Bogger",
+				"description": "Irradia uma aura misteriosa",
 				"bud": {
-					"display_name": "Bogger bud",
-					"description": "Growing"
+					"display_name": "Botão Bogger",
+					"description": "Crescendo"
 				},
 				"seed": {
-					"display_name": "Bogger seed",
-					"description": "Plantable to grow a bogger tree"
+					"display_name": "Semente Bogger",
+					"description": "Plantável para crescer uma árvore bogger"
 				},
 				"sprout": {
-					"display_name": "Bogger sprout",
-					"description": "Growing"
+					"display_name": "Broto Bogger",
+					"description": "Crescendo"
 				},
 				"stem": {
-					"display_name": "Bogger stem",
-					"description": "Growing"
+					"display_name": "Pé de Bogger",
+					"description": "Crescendo"
 				}
 			},
 			"cypress": {
-				"display_name": "Swamp Cypress",
-				"description": "Deep roots into the soil",
+				"display_name": "Cipreste do Pântano",
+				"description": "Raízes profundas no solo",
 				"bud": {
-					"display_name": "Cypress bud",
-					"description": "Growing"
+					"display_name": "Botão de Cipreste",
+					"description": "Crescendo"
 				},
 				"seed": {
-					"display_name": "Cypress seed",
-					"description": "Plantable to grow a cypress tree"
+					"display_name": "Semente de Cipreste",
+					"description": "Plantável para crescer um cipreste"
 				},
 				"sprout": {
-					"display_name": "Cypress sprout",
-					"description": "Growing"
+					"display_name": "Broto de Cipreste",
+					"description": "Crescendo"
 				},
 				"stem": {
-					"display_name": "Cypress stem",
-					"description": "Growing"
+					"display_name": "Pé de Cipreste",
+					"description": "Crescendo"
 				}
 			},
 			"stump": {
-				"display_name": "Tree Stump",
-				"description": "The remains of a tree."
+				"display_name": "Toco de árvore",
+				"description": "Os restos de uma árvore."
 			},
 			"swirl": {
-				"display_name": "Swirl Tree",
-				"description": "An impressive specimen."
+				"display_name": "Árvore Redemoinho",
+				"description": "Um espécime impressionante."
 			}
 		},
 		"weapons": {
@@ -1461,7 +1516,9 @@
 				"requirements": "Crafted by Shaman",
 				"level_3_data": {
 					"perk_000_name": "Journeyman's Knowledge",
-					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item."
+					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item.",
+					"perk_001_name": "Job Opportunities",
+					"perk_001_description": "Different materials are suddenly more interesting. This Bonesmith can be promoted to a Earthmaster."
 				},
 				"level_5_data": {
 					"perk_000_name": "Master's Insight",
@@ -1626,7 +1683,9 @@
 				},
 				"level_4_data": {
 					"perk_000_name": "Potions",
-					"perk_000_description": "The Shaman is now skillful in different potions effects. Bad taste means better potions, they say."
+					"perk_000_description": "The Shaman is now skillful in different potions effects. Bad taste means better potions, they say.",
+					"perk_001_name": "Job Opportunities",
+					"perk_001_description": "It is possible to hear the spirits now. This Shaman can be promoted to a Spirit Walker."
 				},
 				"level_5_data": {
 					"perk_000_name": "Master's Insight",
@@ -1793,313 +1852,313 @@
 	"ui": {
 		"data": {
 			"constants": {
-				"chitin_resource": "Any Chitin",
-				"clay_decoration": "Any Clay Decoration",
-				"clay_fence": "Any Clay Fence",
-				"clay_furniture": "Any Clay Furniture",
-				"clay_portal_door": "Any Clay Door",
-				"clay_portal_window": "Any Clay Window",
-				"stone_decoration": "Any Stone Decoration",
-				"stone_fence": "Any Stone Fence",
-				"stone_furniture": "Any Stone Furniture",
-				"stone_portal_door": "Any Stone Door",
-				"stone_portal_window": "Any Stone Window",
-				"wood_decoration": "Any Wood Decoration",
-				"wood_fence": "Any Wood Fence",
-				"wood_furniture": "Any Wood Furniture",
-				"wood_portal_door": "Any Wood Door",
-				"wood_portal_window": "Any Wood Window"
+				"chitin_resource": "Qualquer quitina",
+				"clay_decoration": "Qualquer decoração de argila",
+				"clay_fence": "Qualquer cerca de argila",
+				"clay_furniture": "Qualquer mobília de barro",
+				"clay_portal_door": "Qualquer porta de barro",
+				"clay_portal_window": "Qualquer janela de argila",
+				"stone_decoration": "Qualquer decoração de pedra",
+				"stone_fence": "Qualquer cerca de pedra",
+				"stone_furniture": "Qualquer mobília de pedra",
+				"stone_portal_door": "Qualquer porta de pedra",
+				"stone_portal_window": "Qualquer janela de pedra",
+				"wood_decoration": "Qualquer decoração de madeira",
+				"wood_fence": "Qualquer cerca de madeira",
+				"wood_furniture": "Qualquer mobília de madeira",
+				"wood_portal_door": "Qualquer porta de madeira",
+				"wood_portal_window": "Qualquer janela de madeira"
 			},
-			"raid_egg": "Watch out! Some bugs are after our eggs!",
-			"new_goblin_baby": "An egg has hatched",
-			"new_goblin_citizen": "A baby no more. Welcome [str(i18n_data.adult_name)]"
+			"raid_egg": "Cuidado! Alguns insetos estão atrás de nossos ovos!",
+			"new_goblin_baby": "Um ovo chocou",
+			"new_goblin_citizen": "Um bebê não mais. Bem-vindo [str(i18n_data.adult_name)]"
 		},
 		"game": {
 			"build_mode2": {
 				"tooltips": {
-					"fiber_resource": "Fiber"
+					"fiber_resource": "Fibra"
 				}
 			},
 			"goblinpedia": {
-				"title": "Goblinpedia",
+				"title": "Goblinpedia ",
 				"menu": {
-					"display_name": "Menu",
+					"display_name": "Menu ",
 					"goblins": {
-						"display_name": "Firefly Clan",
+						"display_name": "Clã Vaga-lume",
 						"growth": {
-							"display_name": "Clan Growth",
-							"pedestal": "Pedestal",
-							"egg": "Egg",
-							"baby": "Baby",
-							"goblin": "Goblin"
+							"display_name": "Crescimento do clã",
+							"pedestal": "Pedestal ",
+							"egg": "Ovo",
+							"baby": "Bebê",
+							"goblin": "Goblin "
 						},
 						"jobs": {
-							"display_name": "Jobs",
-							"beast_tamer": "Beast Tamer",
-							"bonesmith": "Bonesmith",
-							"earthmaster": "Earthmaster",
-							"shaman": "Shaman",
-							"spirit_walker": "Spirit Walker",
-							"trapper": "Trapper",
-							"warrior": "Warrior"
+							"display_name": "Classes",
+							"beast_tamer": "Domador de Feras",
+							"bonesmith": "Ferreiro de Ossos",
+							"earthmaster": "Mestre Terra",
+							"shaman": "Xamã",
+							"spirit_walker": "Guia Espiritual",
+							"trapper": "Caçador",
+							"warrior": "Guerreiro"
 						}
 					},
 					"swamp": {
-						"display_name": "Swamp Biome",
+						"display_name": "Bioma Pântano",
 						"fauna": {
-							"display_name": "Fauna",
-							"firefly": "Firefly",
-							"frog": "Frog",
-							"varanus": "Varanus"
+							"display_name": "Fauna ",
+							"firefly": "Vaga-lume",
+							"frog": "Sapo",
+							"varanus": "Varanus "
 						},
 						"flora": {
-							"display_name": "Flora",
-							"cattail": "Cattail",
-							"giple": "Giple Flower",
-							"mushroom": "Swamp Mushroom",
-							"tree": "Trees"
+							"display_name": "Flora ",
+							"cattail": "Taboa",
+							"giple": "Flor Giple",
+							"mushroom": "Cogumelo do Pântano",
+							"tree": "Árvores"
 						}
 					}
 				},
 				"pages": {
 					"cover": {
-						"title": "About goblins and swamps",
-						"text": "* Pick the desired topic to read from the side menu"
+						"title": "Sobre goblins e pântanos",
+						"text": "* Escolha o tópico desejado no menu lateral para ler"
 					},
 					"growth": {
 						"pedestal": {
-							"title": "Egg Pedestal",
-							"description1": "A nice cerimonial table for an important ocasion",
+							"title": "Pedestal de Ovo",
+							"description1": "Uma bela mesa cerimonial para uma ocasião importante",
 							"topic1": {
-								"title": "Crafting:",
-								"desc1": "The egg pedestal is crafted by the shaman of your clan"
+								"title": "Construindo:",
+								"desc1": "O pedestal do ovo é feito pelo xamã do seu clã"
 							},
 							"topic2": {
-								"title": "How to use:",
-								"desc1": "After placing it, click on it. In the bottom left you will see its buttons. Click on the egg icon.",
-								"desc2": "One of your goblins (worker only) will come to this pedestal and lay an egg."
+								"title": "Como usar:",
+								"desc1": "Depois de colocá-lo, clique nele. No canto inferior esquerdo você verá seus botões. Clique no ícone do ovo.",
+								"desc2": "Um de seus goblins (apenas trabalhador) virá para este pedestal e colocará um ovo."
 							}
 						},
 						"egg": {
-							"title": "Goblin Egg",
-							"description1": "Who came first, the egg or the goblin?",
-							"description2": "Many goblins wondered about it for as long as they remember, but no one knows for sure.",
-							"description3": "The goblins current most acceptable hypotesys is that it was neither. It was a tie.",
+							"title": "Ovo de Goblin",
+							"description1": "Quem veio primeiro, o ovo ou o goblin?",
+							"description2": "Muitos goblins se perguntam sobre isso desde que se lembram, mas ninguém sabe ao certo.",
+							"description3": "A hipótese mais aceitável dos goblins é que não era nenhuma das duas coisas. Foi um empate.",
 							"topic1": {
-								"title": "How to get:",
-								"desc1": "An egg pedestal is needed first, for a goblin to lay his egg."
+								"title": "Como conseguir:",
+								"desc1": "Um pedestal de ovo é necessário primeiro, para um goblin botar seu ovo."
 							},
 							"topic2": {
-								"title": "Hatching:",
-								"desc1": "After one day, the egg will hatch into a baby goblin."
+								"title": "Chocando:",
+								"desc1": "Depois de um dia, o ovo chocará em um goblin bebê."
 							},
 							"topic3": {
-								"title": "Protecting:",
-								"desc1": "Watch out, the egg attracts wild animals."
+								"title": "Protegendo:",
+								"desc1": "Cuidado, o ovo atrai animais selvagens."
 							}
 						},
 						"baby": {
-							"title": "Baby Goblin",
-							"description1": "Little devils",
+							"title": "Bebê Goblin",
+							"description1": "Diabinhos",
 							"topic1": {
-								"title": "Behaviour:",
-								"desc1": "Eat, sleep, ask for attention, repeat."
+								"title": "Comportamento:",
+								"desc1": "Coma, durma, peça atenção, repita."
 							},
 							"topic2": {
-								"title": "Raising:",
-								"desc1": "Just feed it, a lot. Babies eat 5 times more than adults, so watch your stocks!"
+								"title": "Criando:",
+								"desc1": "Basta alimentá-lo, muito. Os bebês comem 5 vezes mais do que os adultos, por isso tome cuidado!"
 							},
 							"topic3": {
-								"title": "Grow:",
-								"desc1": "One more day and they grow into adult goblins."
+								"title": "Crescer:",
+								"desc1": "Mais um dia e eles se transformarão em goblins adultos."
 							}
 						},
 						"goblin": {
-							"title": "Goblin",
-							"description1": "Firefly Goblin",
+							"title": "Goblin ",
+							"description1": "Vaga-lume Goblin",
 							"topic1": {
-								"title": "Firefly Clan:",
-								"desc1": "Now a fully member of society."
+								"title": "Clã Vaga-lume:",
+								"desc1": "Agora um membro pleno da sociedade."
 							},
 							"topic2": {
-								"title": "Jobs:",
-								"desc1": "Can be promoted to Warrior, Shaman, Spirit Walker, Trapper, Beast Tamer, Bonesmith and Earthmaster.",
-								"desc2": "(With mods, some other jobs may be possible too)"
+								"title": "Classes:",
+								"desc1": "Pode ser promovido a Guerreiro, Xamã, Guia Espiritual, Caçador, Domador de Feras, Ferreiro de Ossos e Mestre Terra.",
+								"desc2": "(Com mods, algumas outras classes também podem ser possíveis)"
 							},
 							"topic3": {
-								"title": "The good guys:",
-								"desc1": "Different from the green goblins, often associated with trouble, these ones are way more behaved and rooted."
+								"title": "Os caras bons:",
+								"desc1": "Diferente dos goblins verdes, frequentemente associados a problemas, esses são muito mais comportados e enraizados."
 							}
 						}
 					},
 					"jobs": {
 						"beast_tamer": {
-							"title": "Beast Tamer",
-							"description1": "Synergy with the animals",
+							"title": "Domador de Feras",
+							"description1": "Sinergia com os animais",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Fighter class, promoted from a Trapper. Can summon animals to fight, from little poyos to giant dragons."
+								"title": "Descrição:",
+								"desc1": "Classe de batalhas, promovido de um Caçador. Pode convocar animais para lutar, de pequenos poyos a dragões gigantes."
 							},
 							"topic2": {
-								"title": "What it does:",
-								"desc1": "Aside from summoning animals, they can trap enemies and cast a firefly cloud, blinding and confusing them.",
-								"desc2": "With the help of a Spirit Walker, they join forces and can summon an ancient dragon spirit."
+								"title": "O que faz:",
+								"desc1": "Além de invocar animais, eles podem prender os inimigos e lançar uma nuvem de vaga-lumes, cegando-os e confundindo-os.",
+								"desc2": "Com a ajuda de um Guia Espiritual, eles unem forças e podem convocar um antigo espírito de dragão."
 							},
 							"topic3": {
-								"title": "Hearthling variation:",
-								"desc1": "Hearthlings can be promoted to it too. Though the Spirit Walker teamwork to summon a dragon is now a solo effort to summon a Big Wolf."
+								"title": "Variação de Hearthling:",
+								"desc1": "Hearthlings também podem ser promovidos a ele. Embora o trabalho em equipe com o Guia Espiritual para invocar um dragão agora seja um esforço solo para invocar um Lobo Grande."
 							}
 						},
 						"bonesmith": {
-							"title": "Bonesmith",
-							"description1": "Low level, basic materials crafter",
+							"title": "Ferreiro de Ossos",
+							"description1": "Criador de materiais básicos de baixo nível",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Basic crafter class. From equipments to furniture and decorations."
+								"title": "Descrição:",
+								"desc1": "Artesão básico. De equipamentos a móveis e decorações."
 							},
 							"topic2": {
-								"title": "What it does:",
-								"desc1": "Uses low level materials like wood and fibers to craft simple items.",
-								"desc2": "Starter houses uses mostly furniture and decoration from this class. Can also equip warriors with most of their weapons and armors."
+								"title": "O que faz:",
+								"desc1": "Usa materiais de baixo nível como madeira e fibras para criar itens simples.",
+								"desc2": "Casas iniciais usam principalmente móveis e decoração desta classe. Também pode equipar guerreiros com a maioria de suas armas e armaduras."
 							},
 							"topic3": {
-								"title": "Promotion:",
-								"desc1": "Bonesmith can later be promoted into Earthmaster, an advanced highlevel crafter class."
+								"title": "Promoção:",
+								"desc1": "Ferreiro de Ossos pode mais tarde ser promovido a Mestre Terra, uma classe de artesão de alto nível avançado."
 							}
 						},
 						"earthmaster": {
-							"title": "Earthmaster",
-							"description1": "High level, complex materials crafter",
+							"title": "Mestre Terra",
+							"description1": "Criador de materiais complexos de alto nível",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Advanced crafter class. From equipments to furniture and decorations."
+								"title": "Descrição:",
+								"desc1": "Artesão avançado. De equipamentos a móveis e decorações."
 							},
 							"topic2": {
-								"title": "What it does:",
-								"desc1": "Uses high level materials like stone and clay to craft furniture and decorations.",
-								"desc2": "Can upgrade other classes tools and workbenches, and do some simple metal refining, like crafting firefly jewels, a high level crafting resource"
+								"title": "O que faz:",
+								"desc1": "Utiliza materiais de alto nível como pedra e argila para criar móveis e decorações.",
+								"desc2": "Pode atualizar outras ferramentas de classes e bancadas de trabalho e fazer algum refinamento simples de metal, como criar joias de vaga-lumes, um recurso de artesanato de alto nível"
 							},
 							"topic3": {
-								"title": "Beyond crafting:",
-								"desc1": "Earthmaster can recycle items made from wood, stone and clay, or burn wood items to make coal",
-								"desc2": "The class can also repair most items, like door, turrets and other breakable gizmos"
+								"title": "Além da construção:",
+								"desc1": "Mestre Terra pode reciclar itens feitos de madeira, pedra e argila ou queimar itens de madeira para fazer carvão",
+								"desc2": "A classe também pode consertar a maioria dos itens, como portas, torres e outros dispositivos quebráveis"
 							}
 						},
 						"shaman": {
-							"title": "Shaman",
-							"description1": "The clan starter class",
+							"title": "Xamã",
+							"description1": "A classe inicial do clã",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Starter crafter class. Central figure for the clan well-being and growth."
+								"title": "Descrição:",
+								"desc1": "Artesão inicial. Figura central para o bem-estar e crescimento do clã."
 							},
 							"topic2": {
-								"title": "What it does:",
-								"desc1": "Harvest firefly essence used to imbue items in magic, some cooking and herbalism.",
-								"desc2": "Crafts all the clan talismans. Can also craft the egg pedestal, an important item for the clan growth."
+								"title": "O que faz:",
+								"desc1": "Colha a essência de vaga-lume usada para embeber itens em magia, alguma culinária e fitoterapia.",
+								"desc2": "Cria todos os talismãs do clã. Também pode fabricar o pedestal do ovo, um item importante para o crescimento do clã."
 							},
 							"topic3": {
-								"title": "Promotion:",
-								"desc1": "Shamans can later be promoted into Spirit Walkers, a summoner/healer class."
+								"title": "Promoção:",
+								"desc1": "Mais tarde, os Xamãs podem ser promovidos a Guia Espiritual, uma classe de invocador / curandeiro."
 							}
 						},
 						"spirit_walker": {
-							"title": "Spirit Walker",
-							"description1": "Connects goblins with their past",
+							"title": "Guia Espiritual",
+							"description1": "Conecta goblins com seu passado",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Healer class, promoted from a Shaman. Can summon spirits to fight."
+								"title": "Descrição:",
+								"desc1": "Curandeiro, promovido de Xamã. Pode convocar espíritos para lutar."
 							},
 							"topic2": {
-								"title": "What it does:",
-								"desc1": "Aside from summoning spirits and ranged attacks, they can heal some health of near allies by small amounts."
+								"title": "O que faz:",
+								"desc1": "Além de invocar espíritos e ataques à distância, eles podem curar um pouco da saúde de aliados próximos em pequenas quantidades."
 							},
 							"topic3": {
-								"title": "Class synergies:",
-								"desc1": "Can cast a protective aura to all warriors, increasing their defenses",
-								"desc2": "With the help of a Beast Tamer, they join forces and can summon an ancient dragon spirit."
+								"title": "Sinergias de classe:",
+								"desc1": "Pode lançar uma aura protetora para todos os guerreiros, aumentando suas defesas",
+								"desc2": "Com a ajuda de um Domador de Feras, eles unem forças e podem convocar um antigo espírito de dragão."
 							}
 						},
 						"trapper": {
 							"title": "Trapper",
 							"description1": "Basic food producer",
 							"topic1": {
-								"title": "Description:",
+								"title": "Descrição:",
 								"desc1": "wip"
 							},
 							"topic2": {
-								"title": "What it does:",
+								"title": "O que faz:",
 								"desc1": "wip"
 							},
 							"topic3": {
-								"title": "Promotion:",
+								"title": "Promoção:",
 								"desc1": "wip"
 							}
 						},
 						"warrior": {
-							"title": "Warrior",
-							"description1": "Front line fighter",
+							"title": "Guerreiro",
+							"description1": "Lutador de linha de frente",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Main fighter class. The muscles of the party."
+								"title": "Descrição:",
+								"desc1": "Principal lutador. Os músculos do grupo."
 							},
 							"topic2": {
-								"title": "What it does:",
-								"desc1": "Close range fighter, have access to many goblin equipments, increasing their attack and defense."
+								"title": "O que faz:",
+								"desc1": "Lutador de curta distância, tem acesso a diversos equipamentos goblins, aumentando seu ataque e defesa."
 							},
 							"topic3": {
-								"title": "Skills:",
-								"desc1": "Can learn new abilities as they progress.",
-								"desc2": "Can hit multiple enemies at once, use ranged poison darts, and even gets stronger stats."
+								"title": "Habilidades:",
+								"desc1": "Pode aprender novas habilidades à medida que progridem.",
+								"desc2": "Pode atingir vários inimigos ao mesmo tempo, usar dardos envenenados à distância e ainda obter estatísticas mais fortes."
 							}
 						}
 					},
 					"fauna": {
 						"firefly": {
-							"title": "Firefly",
-							"description1": "Lights in the night",
+							"title": "Vaga-lume",
+							"description1": "Luzes da noite",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Flying insects that glows at night. Loved by the goblins."
+								"title": "Descrição:",
+								"desc1": "Insetos voadores que brilham à noite. Amado pelos goblins."
 							},
 							"topic2": {
-								"title": "Behaviour:",
-								"desc1": "Usually group in big clouds glowing at night under the trees"
+								"title": "Comportamento:",
+								"desc1": "Normalmente agrupam-se em grandes nuvens brilhando à noite sob as árvores"
 							},
 							"topic3": {
-								"title": "Interaction:",
-								"desc1": "Can't be interacted directly, but shamans can extract magic powers from them, hence their clan name. Some goblins have a trait called Firefly Chaser, those goblins will walk into firefly clouds to admire them"
+								"title": "Interação:",
+								"desc1": "Não pode ser interagido diretamente, mas os xamãs podem extrair poderes mágicos deles, daí o nome do clã. Alguns goblins têm uma característica chamada caçador de vaga-lumes, esses goblins caminham nas nuvens de vaga-lumes para admirá-los"
 							}
 						},
 						"frog": {
-							"title": "Frog",
-							"description1": "Small and slippy",
+							"title": "Sapo",
+							"description1": "Pequeno e escorregadio",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Ambient small critters that can be found near the water."
+								"title": "Descrição:",
+								"desc1": "Pequenas criaturas do ambiente que podem ser encontradas perto da água."
 							},
 							"topic2": {
-								"title": "Behaviour:",
-								"desc1": "Spend their time jumping from one lilypad to another, hunting small insects. Very noisy at night."
+								"title": "Comportamento:",
+								"desc1": "Passe o tempo pulando de uma Vitória Régia para outra, caçando pequenos insetos. Muito barulhento à noite."
 							},
 							"topic3": {
-								"title": "Interaction:",
-								"desc1": "Trappers can get them for food or even as pets, baby goblins love them."
+								"title": "Interação:",
+								"desc1": "Os caçadores podem pegá-los para comer ou até como animais de estimação, pois os goblins bebês os adoram."
 							}
 						},
 						"varanus": {
-							"title": "Varanus",
-							"description1": "Always watching",
+							"title": "Varanus ",
+							"description1": "Sempre assistindo",
 							"topic1": {
-								"title": "Description:",
-								"desc1": "Large reptiles with a hard skin, loves water."
+								"title": "Descrição:",
+								"desc1": "Répteis grandes com pele dura, adora água."
 							},
 							"topic2": {
-								"title": "Behaviour:",
-								"desc1": "Usually hostile to those that get too close. Can be found near their nests at caves entrances."
+								"title": "Comportamento:",
+								"desc1": "Geralmente hostil para aqueles que se aproximam demais. Podem ser encontrados perto de seus ninhos nas entradas das cavernas."
 							},
 							"topic3": {
-								"title": "Interaction:",
-								"desc1": "When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight with them."
+								"title": "Interação:",
+								"desc1": "Quando na natureza, eles são hostis, mas um Domador de Feras pode convocar varanus domesticados para lutar com eles."
 							}
 						}
 					},
@@ -2108,15 +2167,15 @@
 							"title": "Firefly",
 							"description1": "Lights in the night",
 							"topic1": {
-								"title": "Description:",
+								"title": "Descrição:",
 								"desc1": "Flying insects that glows at night. Loved by the goblins."
 							},
 							"topic2": {
-								"title": "Behaviour:",
+								"title": "Comportamento:",
 								"desc1": "Usually group in big clouds glowing at night under the trees"
 							},
 							"topic3": {
-								"title": "Interaction:",
+								"title": "Interação:",
 								"desc1": "Can't be interacted directly, but shamans can extract magic powers from them, hence their clan name. Some goblins have a trait called Firefly Chaser, those will walk into firefly clouds to admire"
 							}
 						},
@@ -2124,15 +2183,15 @@
 							"title": "Frog",
 							"description1": "Small and slippy",
 							"topic1": {
-								"title": "Description:",
+								"title": "Descrição:",
 								"desc1": "Ambient small critters that can be found near the water."
 							},
 							"topic2": {
-								"title": "Behaviour:",
+								"title": "Comportamento:",
 								"desc1": "Spend their time jumping from one lilypad to another, hunting small insects. Very noisy at night."
 							},
 							"topic3": {
-								"title": "Interaction:",
+								"title": "Interação:",
 								"desc1": "Trappers can get them for food or even as pets, baby goblins love them."
 							}
 						},
@@ -2140,15 +2199,15 @@
 							"title": "Varanus",
 							"description1": "Always watching",
 							"topic1": {
-								"title": "Description:",
+								"title": "Descrição:",
 								"desc1": "Large reptiles with a hard skin, loves water."
 							},
 							"topic2": {
-								"title": "Behaviour:",
+								"title": "Comportamento:",
 								"desc1": "Usually hostile to those that get too close. Can be found near their nests at caves entrances."
 							},
 							"topic3": {
-								"title": "Interaction:",
+								"title": "Interação:",
 								"desc1": "When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight with them."
 							}
 						},
@@ -2156,15 +2215,15 @@
 							"title": "Varanus",
 							"description1": "Always watching",
 							"topic1": {
-								"title": "Description:",
+								"title": "Descrição:",
 								"desc1": "Large reptiles with a hard skin, loves water."
 							},
 							"topic2": {
-								"title": "Behaviour:",
+								"title": "Comportamento:",
 								"desc1": "Usually hostile to those that get too close. Can be found near their nests at caves entrances."
 							},
 							"topic3": {
-								"title": "Interaction:",
+								"title": "Interação:",
 								"desc1": "When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight with them."
 							}
 						}
@@ -2175,19 +2234,19 @@
 				"crafter_menu": {
 					"items": {
 						"bonesmith": {
-							"display_name": "Bonesmith Craft Menu",
-							"description": "Build simple furniture and decor.",
-							"required_job_text": "Requires a Bonesmith"
+							"display_name": "Ferreiro de Ossos",
+							"description": "Construa móveis e decoração simples.",
+							"required_job_text": "Requer um Ferreiro de Ossos"
 						},
 						"earthmaster": {
-							"display_name": "Earthmaster Craft Menu",
-							"description": "Stone and clay crafting.",
-							"required_job_text": "Requires a Earthmaster"
+							"display_name": "Mestre Terra",
+							"description": "Trabalhos de pedra e argila.",
+							"required_job_text": "Requer um Mestre Terra"
 						},
 						"shaman": {
-							"display_name": "Shaman Craft Menu",
-							"description": "Craft well-being improving items.",
-							"required_job_text": "Requires a Shaman"
+							"display_name": "Xamã",
+							"description": "Crie itens que melhoram o bem-estar.",
+							"required_job_text": "Requer um Xamã"
 						}
 					}
 				}

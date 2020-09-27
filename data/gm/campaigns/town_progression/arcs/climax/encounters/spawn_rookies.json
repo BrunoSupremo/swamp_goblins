@@ -1,0 +1,38 @@
+{
+	"type": "encounter",
+	"encounter_type": "create_mission",
+	"in_edge": "spawn_rookies",
+	"out_edge": "wait_rookies_defeat",
+	"create_mission_info": {
+		"spawn_range": {
+			"min": 60,
+			"max": 120
+		},
+		"on_searcher_failure": {
+			"retry":true
+		},
+		"mission": {
+			"npc_player_id": "orcs",
+			"role": "pillage",
+			"offset": { "x": 0, "y": 0, "z": 0 },
+			"pillage_radius": {
+				"min": 0,
+				"max": 50
+			},
+			"sighted_bulletin": {
+				"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.sighted_spawn_rookies)"
+			},
+			"members": {
+				"orc_footmen": {
+					"from_population": {
+						"role": "orc",
+						"min": 2,
+						"max": 2
+					},
+					"tuning": "stonehearth:monster_tuning:orcs:footman"
+				}
+			},
+			"ctx_entity_registration_path": "spawn_rookies"
+		}
+	}
+}

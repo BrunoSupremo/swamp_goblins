@@ -567,8 +567,32 @@
 					},
 					"climax":{
 						"erdene_intro_dialog":{
-							"title":"It is time",
-							"message":"No need to wait any longer, the shaman is ready, and we are all set.<br>Let's pick our banner."
+							"title":"Orcs visit",
+							"message":"Greetings, little ones. I'm Erdene, Speaker of the Red Kiln.<br>I came here because of some rumors running among the orcs.<br>Rumors about a group of goblins defeating a human fort full of heavily armored soldiers and knights, on their own...<br>How you guys did it? Here in person you don't look strong enough, no offense. Was it hard?",
+							"message2_yes":"Fair. You did it anyway, and the boys were promised a worthy opponent.",
+							"message2_no":"Uhm, to be fair, that human camp over there does not look like a big deal.",
+							"message3":"You see, we came here for you, well, for a bigger challenge.<br>Orcs, with kobolds and ogres, use a color system to measure each other ranks. Green, blue, red and then purple.<br>That said, I'm still not really convinced about your strength. We will send some rookies to test you first, just to avoid wasting the higher ranks time.<br>Else they can complain for days...",
+							"choice_wait":"Wait",
+							"message4_accept":"Then watchout, as they will reach your camp soon",
+							"message4_wait":"Fine. We will give you one more day."
+						},
+						"wait_rookies_dialog":{
+							"title":"Orc rookies",
+							"message":"I hope you are ready now, as they will reach your camp soon"
+						},
+						"sighted_spawn_rookies":"Rookie Orcs Sighted",
+						"rookies_defeat_dialog":{
+							"title":"Orc rookies defeated",
+							"message1":"I saw that. Not bad!",
+							"message2":"Do you remember our talk about our ranks being based on colors?",
+							"message3_yes":"So, I will leave instructions for your metal worker on how to make one of our colored gongs.<br>Place them in your area to signal that you are ready for that color, and challengers from that rank will come. You will start in the green rank.",
+							"message3_no":"Ok, a quick recap.<br>Orcs, with kobolds and ogres, use a color system to measure each other ranks. Green, blue, red and then purple."
+						},
+						"recipes":{
+							"unlock_gong_green_recipe":"The Earthmaster has unlocked the Green Gong recipe!",
+							"unlock_gong_blue_recipe":"The Earthmaster has unlocked the Blue Gong recipe!",
+							"unlock_gong_red_recipe":"The Earthmaster has unlocked the Red Gong recipe!",
+							"unlock_gong_purple_recipe":"The Earthmaster has unlocked the Purple Gong recipe!"
 						}
 					}
 				}
@@ -947,6 +971,11 @@
 				"description": "A funny shaped glass with sand inside, draining from one end to the other",
 				"flavor": "It is not my turn to flip it!"
 			},
+			"green_gong": {
+				"display_name": "Green Gong",
+				"description": "Enormous and decorative!",
+				"flavor": "As it turns out, their hats were very dense"
+			},
 			"nature_hearth": {
 				"display_name": "Nature Hearth",
 				"description": "Provides warmth, light, comfort, and random daily buffs"
@@ -1308,7 +1337,7 @@
 			"pelt": {
 				"bear_pelt": {
 					"display_name": "Bear Pelt",
-					"description": "Pelt from a beear"
+					"description": "Pelt from a bear"
 				}
 			},
 			"firefly_essense": {
@@ -1487,7 +1516,9 @@
 				"requirements": "Crafted by Shaman",
 				"level_3_data": {
 					"perk_000_name": "Journeyman's Knowledge",
-					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item."
+					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item.",
+					"perk_001_name": "Job Opportunities",
+					"perk_001_description": "Different materials are suddenly more interesting. This Bonesmith can be promoted to a Earthmaster."
 				},
 				"level_5_data": {
 					"perk_000_name": "Master's Insight",
@@ -1652,7 +1683,9 @@
 				},
 				"level_4_data": {
 					"perk_000_name": "Potions",
-					"perk_000_description": "The Shaman is now skillful in different potions effects. Bad taste means better potions, they say."
+					"perk_000_description": "The Shaman is now skillful in different potions effects. Bad taste means better potions, they say.",
+					"perk_001_name": "Job Opportunities",
+					"perk_001_description": "It is possible to hear the spirits now. This Shaman can be promoted to a Spirit Walker."
 				},
 				"level_5_data": {
 					"perk_000_name": "Master's Insight",
@@ -1895,7 +1928,7 @@
 					"growth":{
 						"pedestal":{
 							"title":"Egg Pedestal",
-							"description1":"A nice cerimonial table for an important ocasion",
+							"description1":"A nice ceremonial table for an important occasion",
 							"topic1":{
 								"title":"Crafting:",
 								"desc1":"The egg pedestal is crafted by the shaman of your clan"
@@ -1910,7 +1943,7 @@
 							"title":"Goblin Egg",
 							"description1":"Who came first, the egg or the goblin?",
 							"description2":"Many goblins wondered about it for as long as they remember, but no one knows for sure.",
-							"description3":"The goblins current most acceptable hypotesys is that it was neither. It was a tie.",
+							"description3":"The goblins current most acceptable hypothesys is that it was neither. It was a tie.",
 							"topic1":{
 								"title":"How to get:",
 								"desc1":"An egg pedestal is needed first, for a goblin to lay his egg."
@@ -1945,7 +1978,7 @@
 							"description1":"Firefly Goblin",
 							"topic1":{
 								"title":"Firefly Clan:",
-								"desc1":"Now a fully member of society."
+								"desc1":"Now a full member of society."
 							},
 							"topic2":{
 								"title":"Jobs:",
@@ -1990,7 +2023,7 @@
 							},
 							"topic3":{
 								"title":"Promotion:",
-								"desc1":"Bonesmith can later be promoted into Earthmaster, an advanced highlevel crafter class."
+								"desc1":"Bonesmith can later be promoted into Earthmaster, an advanced high level crafter class."
 							}
 						},
 						"earthmaster":{

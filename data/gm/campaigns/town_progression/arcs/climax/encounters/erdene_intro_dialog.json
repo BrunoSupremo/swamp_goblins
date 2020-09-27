@@ -4,43 +4,88 @@
 	"rarity": "common",
 	"in_edge": "erdene_intro_dialog",
 	"dialog_tree_info": {
-		"start_node": "msg1",
+		"start_node": "message1",
 		"nodes": {
-			"msg1": {
+			"message1": {
 				"bulletin": {
 					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.title)",
 					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
 					"portrait": "file(images/erdene.png)",
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.message)",
 					"choices": {
-						"swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.answer": {
-							"next_node": "msg2"
+						"stonehearth:ui.game.common.yes": {
+							"next_node": "message2_yes"
+						},
+						"stonehearth:ui.game.common.no": {
+							"next_node": "message2_no"
 						}
 					}
 				}
 			},
-			"msg2": {
+			"message2_yes": {
 				"bulletin": {
 					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.title)",
 					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
 					"portrait": "file(images/erdene.png)",
-					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.message2)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.message2_yes)",
 					"choices": {
-						"stonehearth:ui.game.common.no": {
-							"next_node": "msg3"
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message3"
 						}
 					}
 				}
 			},
-			"msg3": {
+			"message2_no": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.message2_no)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message3"
+						}
+					}
+				}
+			},
+			"message3": {
 				"bulletin": {
 					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.title)",
 					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
 					"portrait": "file(images/erdene.png)",
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.message3)",
 					"choices": {
-						"swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.answer3": {
-							"out_edge": "erdene_introduction"
+						"stonehearth:ui.game.common.accept": {
+							"next_node": "message4_accept"
+						},
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.choice_wait": {
+							"next_node": "message4_wait"
+						}
+					}
+				}
+			},
+			"message4_accept": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.message4_accept)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "spawn_rookies"
+						}
+					}
+				}
+			},
+			"message4_wait": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_intro_dialog.message4_wait)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "wait_rookies"
 						}
 					}
 				}

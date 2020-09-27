@@ -1,0 +1,32 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 15,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.purple_gong.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.purple_gong.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.purple_gong.flavor)",
+	"portrait": "/stonehearth/entities/decoration/decorative_generals_gong/decorative_generals_gong.png",
+	"workshop": "swamp_goblins:earthmaster:magmasmith_workbench",
+	"level_requirement": 6,
+	"work_effect": "work",
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 2
+		},
+		{
+			"material": "ore resource",
+			"count": 2
+		},
+		{
+			"uri": "stonehearth:monsters:kobolds:loot:generals_bling_hat",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:decoration:decorative_generals_gong"
+		}
+	]
+}

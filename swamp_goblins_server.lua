@@ -1,19 +1,15 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.9.10")
+print("Swamp Goblins Mod version 20.9.26")
 
 --[[
 
+jobs side quests for new stuff
+	shaman lvl 6: travel to learn cook recipes
+
+trapper fancy boots upgrade
+
 ace new fuel system
 
-Erdene, Speaker of the Red Kiln
-hi, im erdene blabla
-i heard of a group of goblins that defeated a human town full of soldiers and knights, with nothing more than a few sticks
-*... not exactly
-oh, so humble
-but i see that you are still too weak blabla
-we love challenges, but we also value our time, so we will send you a test first, from our lower ranks
-*ok
---fighting
 if you want to climb through our ranks, put the gongs, they are our universal challenge symbol. While they are up, we will challenge you.
 *ok
 --crafting
@@ -37,19 +33,18 @@ move default market stall to earthmaster
 
 non blue skin trait
 
-swamp zilla
-
 waves:
 	boss, bunnies, orcs, kobolds, ogres
 
 import hearthlings/goblins to the other kingdom
 
-mosquito model
 banner shred
 animals haulers requiring food and care
-swamp slimes
 varanus/mobs repelent
 bug nests to attack eggs
+
+mobs:
+	slimes, swamp zilla, mosquito
 
 ace stuff:
 	add ace tools and tools upgrades

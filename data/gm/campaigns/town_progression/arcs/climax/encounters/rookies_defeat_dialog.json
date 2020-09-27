@@ -1,0 +1,66 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "rookies_defeat_dialog",
+	"dialog_tree_info": {
+		"start_node": "message1",
+		"nodes": {
+			"message1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.rookies_defeat_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.rookies_defeat_dialog.message1)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message2"
+						}
+					}
+				}
+			},
+			"message2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.rookies_defeat_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.rookies_defeat_dialog.message2)",
+					"choices": {
+						"stonehearth:ui.game.common.yes": {
+							"next_node": "message3_yes"
+						},
+						"stonehearth:ui.game.common.no": {
+							"next_node": "message3_no"
+						}
+					}
+				}
+			},
+			"message3_yes": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.rookies_defeat_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.rookies_defeat_dialog.message3_yes)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "unlock_gong_green_recipe"
+						}
+					}
+				}
+			},
+			"message3_no": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.rookies_defeat_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.rookies_defeat_dialog.message3_no)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message3_yes"
+						}
+					}
+				}
+			}
+		}
+	}
+}
