@@ -1,0 +1,22 @@
+{
+	"type" : "campaign",
+	"rarity" : "common",
+	"can_start": {
+		"test_1": {
+			"kingdom_check": {
+				"type": "deny_if",
+				"item": "kingdom",
+				"value": "swamp_goblins:kingdoms:firefly_clan"
+			}
+		}
+	},
+	"arcs" : {
+		"trigger" : {
+			"firefly_traveler" : "file(arcs/firefly_traveler_arc.json)"
+		},
+		"challenge" : {
+		},
+		"climax" : {
+		}
+	}
+}

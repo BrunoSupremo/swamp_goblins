@@ -90,8 +90,9 @@
 		"buffs:despawn":			"file(data/buffs/despawn)",
 		"buffs:despawn:in_2h":		"file(data/buffs/despawn/despawn_in_2h.json)",
 		"buffs:firefly_confusion":	"file(data/buffs/firefly_confusion)",
-		"buffs:poison":				"file(data/buffs/poison)",
-		"buffs:poison:add":			"file(data/buffs/poison/poison_add.json)",
+		"buffs:poison":			"file(data/buffs/poison)",
+		"buffs:poison:add":		"file(data/buffs/poison/poison_add.json)",
+		"buffs:poison:resist":	"file(data/buffs/poison/resist.json)",
 		"buffs:rage_over_time":		"file(data/buffs/rage_over_time)",
 		"buffs:rage_over_time:add":	"file(data/buffs/rage_over_time/rage_over_time_add.json)",
 		"buffs:self_aid":			"file(data/buffs/self_aid)",
@@ -286,10 +287,11 @@
 		"earthmaster:potter_workbench": "file(jobs/earthmaster/potter_workbench)",
 		"earthmaster:potter_kiln": "file(jobs/earthmaster/potter_kiln)",
 
-		"food:mushroom":			"file(entities/food/mushroom)",
-		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 		"food:fake_vegetables":			"file(entities/food/fake_vegetables)",
 		"food:fake_vegetables_serving":	"file(entities/food/fake_vegetables_serving)",
+		"food:frog_jerky":	"file(entities/food/frog_jerky)",
+		"food:mushroom":			"file(entities/food/mushroom)",
+		"food:plate_of_mushrooms":	"file(entities/food/plate_of_mushrooms)",
 
 		"furniture:clay:bed":	"file(entities/furniture/clay/bed)",
 		"furniture:clay:chair":	"file(entities/furniture/clay/chair)",
@@ -778,6 +780,7 @@
 
 		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
+		"swamp_goblins/entities/plants/lilypad/lilypad.json":	"stonehearth_ace/swamp_goblins/entities/plants/lilypad/ace_lilypad.json",
 		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
 		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
 		"swamp_goblins/jobs/worker/upgraded_outfit/upgraded_outfit.json":"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
@@ -882,6 +885,7 @@
 		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"file(data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json)",
 
 		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json",
+		"stonehearth_ace/swamp_goblins/entities/plants/lilypad/ace_lilypad.json":"swamp_goblins/entities/plants/lilypad/ace_lilypad.json",
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":	"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json":	"swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",

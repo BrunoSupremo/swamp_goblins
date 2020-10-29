@@ -567,32 +567,32 @@
 					},
 					"climax": {
 						"erdene_intro_dialog": {
-							"title": "Orcs visit",
-							"message": "Greetings, little ones. I'm Erdene, Speaker of the Red Kiln.<br>I came here because of some rumors running among the orcs.<br>Rumors about a group of goblins defeating a human fort full of heavily armored soldiers and knights, on their own...<br>How you guys did it? Here in person you guys don't look strong enough, no offense. Was it hard?",
-							"message2_yes": "Fair. You did it anyway, and the boys were promised a worthy opponent.",
-							"message2_no": "Uhm, to be fair, that human camp over there is not a big deal.",
-							"message3": "You see, we came here for you, well, for a bigger challenge.<br>We orcs, along with kobolds and ogres, have a ranking system based on colors. Green, blue, red and then purple.<br>We value our time though, and weak enemies are not fun. So we will send some of our rookies to test you first.",
-							"choice_wait": "Wait",
-							"message4_accept": "Then watchout, as they will reach your camp soon",
-							"message4_wait": "Fine. We will give you one more day."
+							"title": "Orcs visitam",
+							"message": "Saudações, pequeninos. Sou Erdene, Oradora do Forno Vermelho. <br> Eu vim aqui por causa de alguns rumores que corriam entre os orcs. <br> Rumores sobre um grupo de goblins derrotando um forte humano cheio de soldados e cavaleiros com armaduras pesadas, por conta própria ... <br> Como vocês fizeram isso? Aqui pessoalmente você não parece forte o suficiente, sem ofensa. Foi difícil?",
+							"message2_yes": "Justo. De qualquer maneira, foi feito, e os rapazes receberam a promessa de um adversário digno.",
+							"message2_no": "Hum, para ser justo, aquele acampamento humano ali não parece grande coisa.",
+							"message3": "Veja, viemos aqui por você, bem, para um desafio maior. <br> Orcs, junto de kobolds e ogros, usam um sistema de cores para medir as categorias uns dos outros. Verde, azul, vermelho e roxo. <br> Dito isso, ainda não estou muito convencido sobre a sua força. Enviaremos alguns novatos para testá-lo primeiro, apenas para evitar a perda de tempo dos escalões superiores. <br> Do contrário, eles reclamarão por dias ...",
+							"choice_wait": "Espere",
+							"message4_accept": "Então fique atento, pois eles chegarão ao seu acampamento em breve",
+							"message4_wait": "Bem. Vamos dar-lhe mais um dia."
 						},
 						"wait_rookies_dialog": {
-							"title": "Orc rookies",
-							"message": "I hope you are ready now, as they will reach your camp soon"
+							"title": "Orc novatos",
+							"message": "Espero que você esteja pronto agora, pois eles chegarão ao seu acampamento em breve"
 						},
-						"sighted_spawn_rookies": "Rookie Orcs Sighted",
+						"sighted_spawn_rookies": "Orcs novatos avistados",
 						"rookies_defeat_dialog": {
-							"title": "Orc rookies defeated",
-							"message1": "I saw that. Not bad!",
-							"message2": "Do you remember our talk about our ranks being based on colors?",
-							"message3_yes": "So, I will leave instructions for your metal worker on how to make one of our colored gongs.<br>Place them in your area to signal that you are ready for that color, and challengers from that rank will come. You will start in the green rank.",
-							"message3_no": "Ok, a quick recap.<br>Orcs, with kobolds and ogres, use a color system to measure each other ranks. Green, blue, red and then purple."
+							"title": "Orcs novatos derrotados",
+							"message1": "Eu vi aquilo. Nada mal!",
+							"message2": "Você se lembra de nossa conversa sobre nossas classificações serem baseadas em cores?",
+							"message3_yes": "Portanto, vou deixar instruções para o seu metalúrgico sobre como fazer um de nossos gongos coloridos. <br> Coloque-os em sua área para sinalizar que você está pronto para aquela cor, e os desafiadores dessa categoria virão. Você começará na classificação verde.",
+							"message3_no": "Ok, uma recapitulação rápida. <br> Orcs, com kobolds e ogros, usam um sistema de cores para medir as categorias uns dos outros. Verde, azul, vermelho e roxo."
 						},
 						"recipes": {
-							"unlock_gong_green_recipe": "The Earthmaster has unlocked the Green Gong recipe!",
-							"unlock_gong_blue_recipe": "The Earthmaster has unlocked the Blue Gong recipe!",
-							"unlock_gong_red_recipe": "The Earthmaster has unlocked the Red Gong recipe!",
-							"unlock_gong_purple_recipe": "The Earthmaster has unlocked the Purple Gong recipe!"
+							"unlock_gong_green_recipe": "O Mestre Terra desbloqueou a receita Gongo Verde!",
+							"unlock_gong_blue_recipe": "O Mestre Terra desbloqueou a receita Gongo Azul!",
+							"unlock_gong_red_recipe": "O Mestre Terra desbloqueou a receita Gongo Vermelho!",
+							"unlock_gong_purple_recipe": "O Mestre Terra desbloqueou a receita Gongo Roxo!"
 						}
 					}
 				}
@@ -972,9 +972,9 @@
 				"flavor": "Não é minha vez de virar!"
 			},
 			"green_gong": {
-				"display_name": "Green Gong",
-				"description": "Enormous and decorative!",
-				"flavor": "As it turns out, their hats were very dense"
+				"display_name": "Gongo Verde",
+				"description": "Enorme e decorativo!",
+				"flavor": "Acontece que seus chapéus eram muito densos"
 			},
 			"nature_hearth": {
 				"display_name": "Lareira da Natureza",
@@ -1103,6 +1103,9 @@
 				"display_name": "Substituto de Vegetais",
 				"description": "Os goblins não gostam muito de vegetais, então os xamãs tiveram que ser criativos para manter uma dieta saudável.",
 				"flavor": "Este alimento conta como um vegetal para todas as outras receitas"
+			},
+			"frog_jerky": {
+				"display_name": "Carne de Sapo"
 			},
 			"mushroom": {
 				"display_name": "Cogumelo do Pântano",
@@ -1467,179 +1470,179 @@
 			"beast_tamer_description": {
 				"display_name": "Domador de Feras",
 				"description": "Invoca e controla animais em batalha",
-				"requirements": "Crafted by Carpenter",
-				"goblin_requirements": "Crafted by Shaman",
+				"requirements": "Feito pelo Carpinteiro",
+				"goblin_requirements": "Feito pelo Xamã",
 				"level_1_data": {
-					"perk_000_name": "Four Feathers",
-					"perk_000_description": "A group of elite Poyos called the Four Feathers will join and help in the fight"
+					"perk_000_name": "Quatro Penas",
+					"perk_000_description": "Um grupo Poyos de elite chamado as Quatro Penas se juntará e ajudará na luta"
 				},
 				"level_2_data": {
-					"perk_000_name": "Wild Life",
-					"perk_000_description": "Summons local fauna wildlife to help in the battle"
+					"perk_000_name": "Vida Selvagem",
+					"perk_000_description": "Convoca a fauna local para ajudar na batalha"
 				},
 				"level_3_data": {
-					"perk_000_name": "Traps",
-					"perk_000_description": "Immobilize enemies using traps, the amount based on this goblin mind stat"
+					"perk_000_name": "Armadilhas",
+					"perk_000_description": "Imobilize os inimigos usando armadilhas, a quantidade baseada na estatística da mente desse goblin"
 				},
 				"level_4_data": {
-					"perk_000_name": "Varanus",
-					"perk_000_description": "Summons a pair of varanus into the fight"
+					"perk_000_name": "Varanus ",
+					"perk_000_description": "Convoca um par de varanus para a luta"
 				},
 				"level_5_data": {
-					"perk_000_name": "Firefly Cloud",
-					"perk_000_description": "Casts a cloud of fireflies into enemies, confusing and blinding them"
+					"perk_000_name": "Nuvem Vaga-lume",
+					"perk_000_description": "Lança uma nuvem de vaga-lumes nos inimigos, confundindo e cegando-os"
 				},
 				"level_6_data": {
-					"perk_000_name": "Dragon Aura",
-					"perk_000_description": "(Goblins only)<br>With the combined power of a (max level) Spirit Walker, they summon an ancient Dragon Spirit into battle",
-					"perk_001_name": "Big Wolf",
-					"perk_001_description": "(Hearthlings only)<br>Summons a big wolf, one that inspires your allies and scares the enemies."
+					"perk_000_name": "Aura de Dragão",
+					"perk_000_description": "(Somente goblins) <br> Com o poder combinado de um Spirit Walker (nível máximo), eles convocam um antigo Espírito do Dragão para a batalha",
+					"perk_001_name": "Lobo Grande",
+					"perk_001_description": "(Somente Hearthlings) <br> Invoca um lobo grande, que inspira seus aliados e assusta os inimigos."
 				}
 			},
 			"beast_tamer_flute": {
-				"display_name": "Beast Tamer Flute",
+				"display_name": "Flauta do Domador de Feras",
 				"beast_tamer_flute_talisman": {
-					"display_name": "Beast Tamer Flute",
-					"description": "Communicates with animals",
-					"flavor": "Promotes to Beast Tamer"
+					"display_name": "Flauta do Domador de Feras",
+					"description": "Comunica-se com animais",
+					"flavor": "Promove a Domador de Feras"
 				}
 			},
 			"beast_tamer_claw": {
-				"display_name": "Claw",
-				"description": "Short range sharp weapon"
+				"display_name": "Garra",
+				"description": "Arma afiada de curto alcance"
 			}
 		},
 		"bonesmith": {
 			"bonesmith_description": {
-				"display_name": "Bonesmith",
-				"description": "Crafts basic items with materials like wood and fiber",
-				"requirements": "Crafted by Shaman",
+				"display_name": "Ferreiro de Ossos",
+				"description": "Fabrica itens básicos com materiais como madeira e fibra",
+				"requirements": "Feito por Xamã",
 				"level_3_data": {
-					"perk_000_name": "Journeyman's Knowledge",
-					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item.",
-					"perk_001_name": "Job Opportunities",
-					"perk_001_description": "Different materials are suddenly more interesting. This Bonesmith can be promoted to a Earthmaster."
+					"perk_000_name": "Conhecimento do Jornaleiro",
+					"perk_000_description": "Quando a inspiração bate, o Ferreiro de Ossos pode agora criar um item de qualidade especialmente fina.",
+					"perk_001_name": "Oportunidades de Trabalho",
+					"perk_001_description": "Diferentes materiais tornam-se subitamente mais interessantes. Este Ferreiro de Ossos pode ser promovido a Mestre Terra."
 				},
 				"level_5_data": {
-					"perk_000_name": "Master's Insight",
-					"perk_000_description": "The Bonesmith can now create items of Excellent quality, and will make Fine quality items more often."
+					"perk_000_name": "Visão do Mestre",
+					"perk_000_description": "O Ferreiro de Ossos agora pode criar itens de excelente qualidade e fará itens de qualidade fina com mais frequência."
 				}
 			},
 			"bonesmith_saw": {
-				"display_name": "Bonesmith Saw",
+				"display_name": "Serra do Ferreiro de Ossos",
 				"bonesmith_saw_talisman": {
-					"display_name": "Bonesmith Saw",
-					"description": "Basic saw for basic tasks",
-					"flavor": "Promotes a goblin to Bonesmith"
+					"display_name": "Serra do Ferreiro de Ossos",
+					"description": "Serra básica para tarefas básicas",
+					"flavor": "Promove um goblin a Ferreiro de Ossos"
 				},
-				"description": "Basic saw for basic tasks"
+				"description": "Serra básica para tarefas básicas"
 			},
 			"bonesmith_workbench": {
-				"display_name": "Bonesmith Workbench",
-				"description": "Only simple tasks should be done here"
+				"display_name": "Bancada do Ferreiro de Ossos",
+				"description": "Apenas tarefas simples devem ser feitas aqui"
 			},
 			"recipes": {
-				"amberstone": "Amberstone Items",
-				"music": "Music",
-				"signs": "Signs"
+				"amberstone": "Itens de Amberstone",
+				"music": "Música",
+				"signs": "Placas"
 			},
 			"weaving_table": {
-				"display_name": "Weaving Table",
-				"description": "A place to weave armors, even the hard solid ones"
+				"display_name": "Mesa de Tecelagem",
+				"description": "Um lugar para tecer armaduras, mesmo as sólidas e duras"
 			}
 		},
 		"earthmaster": {
 			"earthmaster_description": {
-				"display_name": "Earthmaster",
-				"description": "Craft advance items and decorations using hard materials like stone and clay",
-				"requirements": "Crafted by Shaman",
+				"display_name": "Mestre Terra",
+				"description": "Crie itens e decorações avançadas usando materiais duros como pedra e argila",
+				"requirements": "Feito por Xamã",
 				"level_1_data": {
-					"perk_000_name": "Stone Crafting",
-					"perk_000_description": "From the advanced materials, stone is the most basic one. Still, quite a leap compared to the usual wood and fiber stuff."
+					"perk_000_name": "Fabricação com Pedras",
+					"perk_000_description": "Dos materiais avançados, a pedra é o mais básico. Ainda assim, um grande salto comparando-se a madeira e fibra."
 				},
 				"level_2_data": {
-					"perk_000_name": "Clay Sculpting",
-					"perk_000_description": "Crafting with clay is always interesting, such a soft material when modelled and heated end almost as solid as stone."
+					"perk_000_name": "Escultura em Argila",
+					"perk_000_description": "Trabalhar com argila é sempre interessante, um material tão macio mas quando modelado e aquecido acaba quase tão sólido quanto pedra."
 				},
 				"level_3_data": {
-					"perk_000_name": "Journeyman's Knowledge",
-					"perk_000_description": "When inspiration strikes, the Earthmaster may now craft an especially Fine quality of item.",
-					"perk_001_name": "Magma Smithing",
-					"perk_001_description": "What about rocks and metals as soft as clay? Liquid fire as some call it."
+					"perk_000_name": "Conhecimento do Jornaleiro",
+					"perk_000_description": "Quando a inspiração bate, o Mestre Terra pode agora criar um item de qualidade especialmente fina.",
+					"perk_001_name": "Forja de Magma",
+					"perk_001_description": "E quanto a rochas e metais tão macios como argila? Fogo líquido, como alguns o chamam."
 				},
 				"level_5_data": {
-					"perk_000_name": "Master's Insight",
-					"perk_000_description": "The Earthmaster can now create items of Excellent quality, and will make Fine quality items more often."
+					"perk_000_name": "Visão do Mestre",
+					"perk_000_description": "O Mestre Terra agora pode criar itens de excelente qualidade e fará itens de qualidade fina com mais frequência."
 				}
 			},
 			"earthmaster_chisel": {
-				"display_name": "Earthmaster Chisel",
+				"display_name": "Cinzel do Mestre Terra",
 				"earthmaster_chisel_talisman": {
-					"display_name": "Earthmaster Chisel",
-					"description": "To sculpt hard materials",
-					"flavor": "Promotes a goblin to Earthmaster"
+					"display_name": "Cinzel do Mestre Terra",
+					"description": "Para esculpir materiais duros",
+					"flavor": "Promove um goblin a Mestre Terra"
 				},
-				"description": "To sculpt hard materials"
+				"description": "Para esculpir materiais duros"
 			},
 			"magmasmith_workbench": {
-				"display_name": "Magma Workbench",
-				"description": "Lava flows from within"
+				"display_name": "Bancada de Magma",
+				"description": "A lava flui de dentro"
 			},
 			"mason_pedestal": {
-				"display_name": "Masonry Pedestal",
-				"description": "Craft in a well-lit space."
+				"display_name": "Pedestal de Alvenaria",
+				"description": "Crie em um espaço bem iluminado."
 			},
 			"potter_kiln": {
-				"display_name": "Pottery Kiln",
-				"description": "Hardens basic clay objects."
+				"display_name": "Forno de Cerâmica",
+				"description": "Endurece objetos básicos de argila."
 			},
 			"potter_workbench": {
-				"display_name": "Pottery Wheel",
-				"description": "For making symmetrical clay goods"
+				"display_name": "Roda de Cerâmica",
+				"description": "Para fazer produtos de argila simétricos"
 			},
 			"recipes": {
-				"amberstone": "Amberstone Items",
-				"gizmos": "Gizmos",
-				"reclaim": "Reclaim",
+				"amberstone": "Itens de Amberstone",
+				"gizmos": "Engenhocas",
+				"reclaim": "Recuperar",
 				"burn": {
-					"description": "Burn the object into coal",
-					"flavor": "Not much can be saved",
-					"decoration": "Burn Wood Decoration",
-					"fence": "Burn Wood Defense",
-					"furniture": "Burn Wood Furniture",
-					"portal": "Burn Wood Door",
-					"window": "Burn Wood Window"
+					"description": "Queime o objeto em carvão",
+					"flavor": "Nem tudo pode ser salvo",
+					"decoration": "Queime Decoração de Madeira",
+					"fence": "Queime Defesa de Madeira",
+					"furniture": "Queime Móvel de Madeira",
+					"portal": "Queime Porta de Madeira",
+					"window": "Queime Janela de Madeira"
 				},
 				"wood": {
-					"description": "Break the object back into a wood piece",
-					"flavor": "Not much can be saved",
-					"decoration": "Break Wood Decoration",
-					"fence": "Break Wood Defense",
-					"furniture": "Break Wood Furniture",
-					"portal": "Break Wood Door",
-					"window": "Break Wood Window"
+					"description": "Quebre o objeto de volta para um pedaço de madeira",
+					"flavor": "Nem tudo pode ser salvo",
+					"decoration": "Quebrar Decoração de Madeira",
+					"fence": "Quebrar Defesa de Madeira",
+					"furniture": "Quebrar Móvel de Madeira",
+					"portal": "Quebrar Porta de Madeira",
+					"window": "Quebrar Janela de Madeira"
 				},
 				"stone": {
-					"description": "Break the object back into a stone piece",
-					"flavor": "Not much can be saved",
-					"decoration": "Break Stone Decoration",
-					"fence": "Break Stone Defense",
-					"furniture": "Break Stone Furniture",
-					"portal": "Break Stone Door",
-					"window": "Break Stone Window"
+					"description": "Quebre o objeto de volta para um pedaço de pedra",
+					"flavor": "Nem tudo pode ser salvo",
+					"decoration": "Quebrar Decoração de Pedra",
+					"fence": "Quebrar Defesa de Pedra",
+					"furniture": "Quebrar Móvel de Pedra",
+					"portal": "Quebrar Porta de Pedra",
+					"window": "Quebrar Janela de Pedra"
 				},
 				"clay": {
-					"description": "Break the object back into a clay piece",
-					"flavor": "Not much can be saved",
-					"decoration": "Break Clay Decoration",
-					"fence": "Break Clay Defense",
-					"furniture": "Break Clay Furniture",
-					"portal": "Break Clay Door",
-					"window": "Break Clay Window"
+					"description": "Quebre o objeto de volta para um pedaço de argila",
+					"flavor": "Nem tudo pode ser salvo",
+					"decoration": "Quebrar Decoração de Argila",
+					"fence": "Quebrar Defesa de Argila",
+					"furniture": "Quebrar Móvel de Argila",
+					"portal": "Quebrar Porta de Argila",
+					"window": "Quebrar Janela de Argila"
 				},
 				"raw_stone": {
-					"display_name": "Raw Stone (x3)",
-					"description": "A mix of clay and chitin powder heated up to rock hard",
+					"display_name": "Pedra Bruta (x3)",
+					"description": "Uma mistura de argila e pó de quitina aquecida até ficar dura como uma rocha",
 					"flavor": ""
 				}
 			}
@@ -1647,28 +1650,28 @@
 		"geomancer": {
 			"recipes": {
 				"categories": {
-					"swamp_landmarks": "Swamp Landmarks"
+					"swamp_landmarks": "Marcos do Pântano"
 				}
 			}
 		},
 		"scavenger": {
 			"scavenger_description": {
-				"requirements": "Crafted by Shaman"
+				"requirements": "Feito por Xamã"
 			},
 			"scavenger_backpack": {
-				"display_name": "Trapper Backpack",
+				"display_name": "Mochila do Caçador",
 				"scavenger_backpack_talisman": {
-					"display_name": "Trapper Backpack",
-					"description": "Hold the scavenged loot",
-					"flavor": "Promotes a goblin to Trapper"
+					"display_name": "Mochila do Caçador",
+					"description": "Guarda os recursos",
+					"flavor": "Promove um goblin a Caçador"
 				}
 			}
 		},
 		"shaman": {
 			"shaman_description": {
-				"display_name": "Shaman",
-				"description": "Takes care of the clan well-being and growth",
-				"requirements": "Crafted by another Shaman",
+				"display_name": "Xamã",
+				"description": "Cuida do bem estar e crescimento do clã",
+				"requirements": "Feito por outro Xamã",
 				"level_1_data": {
 					"perk_000_name": "Firefly Essence",
 					"perk_000_description": "A power source extract from nature by shamans, used in most of the clans activities."
@@ -1678,7 +1681,7 @@
 					"perk_000_description": "With an egg pedestal, goblins can do their most important ritual."
 				},
 				"level_3_data": {
-					"perk_000_name": "Journeyman's Knowledge",
+					"perk_000_name": "Conhecimento do Jornaleiro",
 					"perk_000_description": "When inspiration strikes, the Shaman may now craft an especially Fine quality of item."
 				},
 				"level_4_data": {
@@ -1688,7 +1691,7 @@
 					"perk_001_description": "It is possible to hear the spirits now. This Shaman can be promoted to a Spirit Walker."
 				},
 				"level_5_data": {
-					"perk_000_name": "Master's Insight",
+					"perk_000_name": "Visão do Mestre",
 					"perk_000_description": "The Shaman can now create items of Excellent quality, and will make Fine quality items more often."
 				},
 				"level_6_data": {
@@ -1726,7 +1729,7 @@
 			"spirit_walker_description": {
 				"display_name": "Spirit Walker",
 				"description": "Healer, summons spirits to help in fights",
-				"requirements": "Crafted by Shaman",
+				"requirements": "Feito por Xamã",
 				"level_1_data": {
 					"perk_000_name": "Healing",
 					"perk_000_description": "Can heal in small amounts the health of allies"
@@ -1775,7 +1778,7 @@
 		"warrior": {
 			"warrior_description": {
 				"display_name": "Warrior",
-				"requirements": "Crafted by Shaman",
+				"requirements": "Feito por Xamã",
 				"description": "Pride in fighting. Warriors are the ones to use heavy weapons and wear armor.",
 				"level_1_data": {
 					"perk_000_name": "The Basics",
@@ -2079,8 +2082,8 @@
 							}
 						},
 						"trapper": {
-							"title": "Trapper",
-							"description1": "Basic food producer",
+							"title": "Caçador",
+							"description1": "Produtor de alimentos básicos",
 							"topic1": {
 								"title": "Descrição:",
 								"desc1": "wip"

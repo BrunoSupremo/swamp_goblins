@@ -26,7 +26,15 @@
 		},
 		"stonehearth:lamp": {
 			"light_effect": "swamp_goblins:effects:green_fire:tower_brazier",
-			"light_origin": { "x": 0, "y": 5, "z": 0 }
+			"light_origin": { "x": 0, "y": 5, "z": 0 },
+			"buff_source": true
+		},
+		"sensor_list": {
+			"sensors": {
+				"warmth": {
+					"radius": 12
+				}
+			}
 		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(tower_brazier_iconic.json)",

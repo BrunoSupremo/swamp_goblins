@@ -12,7 +12,7 @@
 					},
 					"items": {
 						"jerky": {
-							"uri": "stonehearth:rabbit_jerky"
+							"uri": "swamp_goblins:food:frog_jerky"
 						}
 					}
 				}
@@ -40,7 +40,7 @@
 			"harvest_overlay_effect": "stonehearth:effects:chop_overlay_effect",
 			"harvester_effect": "fiddle",
 			"description": "harvest_animal",
-			"resource": "stonehearth:rabbit_jerky",
+			"resource": "swamp_goblins:food:frog_jerky",
 			"harvestable_by_harvest_tool": false,
 			"check_owner": true,
 			"resource_loot_table": {
@@ -76,7 +76,7 @@
 					},
 					"items": {
 						"jerky": {
-							"uri": "stonehearth:rabbit_jerky"
+							"uri": "swamp_goblins:food:frog_jerky"
 						},
 						"pelt": {
 							"uri": "stonehearth:resources:rabbit_pelt"
@@ -106,10 +106,12 @@
 			}
 		},
 		"stonehearth:net_worth": {
-			"value_in_gold": 3,
+			"value_in_gold": 100,
 			"shop_info": {
-				"buyable": false,
-				"sellable": false
+				"buyable": true,
+				"sellable": false,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "pet"
 			}
 		},
 		"stonehearth:conversation_type": "animal",
@@ -117,7 +119,11 @@
 			"player_id": "animals",
 			"display_name": "i18n(swamp_goblins:entities.critters.frog.display_name)",
 			"description": "i18n(swamp_goblins:entities.critters.frog.description)",
-			"icon": "file(frog.png)"
+			"icon": "file(frog.png)",
+			"category": "pets",
+			"material_tags": [
+				"firefly_made"
+			]
 		}
 	}
 }

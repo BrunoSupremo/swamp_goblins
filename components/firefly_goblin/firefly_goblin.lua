@@ -52,6 +52,9 @@ end
 
 function FireflyGoblin:add_goblin_race_abilities()
 	self:fix_traits()
+	if swamp_goblins.ace_is_here then
+		radiant.entities.add_buff(self._entity, "swamp_goblins:buffs:poison:resist")
+	end
 end
 
 function FireflyGoblin:fix_traits()
@@ -59,25 +62,34 @@ function FireflyGoblin:fix_traits()
 	if not trait_comp then
 		return
 	end
+	local traits_to_replace = {
+		["stonehearth:traits:animal_companion"] = "swamp_goblins:traits:frog_companion",
+		["stonehearth:traits:cultist"] = "swamp_goblins:traits:firefly_chaser",
+		["stonehearth:traits:jokester"] = "swamp_goblins:traits:party_goblin",
+		["stonehearth:traits:passion_archer"] =		"swamp_goblins:traits:passion_warrior",
+		["stonehearth:traits:passion_footman"] =	"swamp_goblins:traits:passion_warrior",
+		["stonehearth:traits:passion_knight"] =		"swamp_goblins:traits:passion_warrior",
+		["stonehearth:traits:passion_blacksmith"] =	"swamp_goblins:traits:passion_earthmaster",
+		["stonehearth:traits:passion_engineer"] =	"swamp_goblins:traits:passion_earthmaster",
+		["stonehearth:traits:passion_mason"] = 		"swamp_goblins:traits:passion_earthmaster",
+		["stonehearth:traits:passion_potter"] = 	"swamp_goblins:traits:passion_earthmaster",
+		["stonehearth:traits:passion_carpenter"] =	"swamp_goblins:traits:passion_bonesmith",
+		["stonehearth:traits:passion_weaver"] =		"swamp_goblins:traits:passion_bonesmith",
+		["stonehearth:traits:passion_cleric"] = "swamp_goblins:traits:passion_spirit_walker",
+		["stonehearth:traits:passion_cook"] =		"swamp_goblins:traits:passion_shaman",
+		["stonehearth:traits:passion_herbalist"] =	"swamp_goblins:traits:passion_shaman",
+		["stonehearth:traits:passion_shepherd"] = "swamp_goblins:traits:passion_beast_tamer",
+	}
+	for old_trait, new_trait in pairs(traits_to_replace) do
+		if trait_comp:has_trait(old_trait) then
+			trait_comp:remove_trait(old_trait)
+			trait_comp:add_trait(new_trait)
+		end
+	end
+
 	local traits_to_remove = {
-		"stonehearth:traits:animal_companion",
-		"stonehearth:traits:cultist",
-		"stonehearth:traits:jokester",
 		"stonehearth:traits:magnificent_beard",
-		"stonehearth:traits:passion_archer",
-		"stonehearth:traits:passion_blacksmith",
-		"stonehearth:traits:passion_carpenter",
-		"stonehearth:traits:passion_cleric",
-		"stonehearth:traits:passion_cook",
-		"stonehearth:traits:passion_engineer",
 		"stonehearth:traits:passion_farmer",
-		"stonehearth:traits:passion_footman",
-		"stonehearth:traits:passion_herbalist",
-		"stonehearth:traits:passion_knight",
-		"stonehearth:traits:passion_mason",
-		"stonehearth:traits:passion_potter",
-		"stonehearth:traits:passion_shepherd",
-		"stonehearth:traits:passion_weaver",
 		
 		"kmnky_traits:traits:barbarian",
 		"kmnky_traits:traits:divine_soul",
@@ -93,6 +105,7 @@ function FireflyGoblin:fix_traits()
 		end
 	end
 	if next(trait_comp:get_traits()) == nil then
+		-- you need at least one trait, so here, take this frog
 		trait_comp:add_trait("swamp_goblins:traits:frog_companion")
 	end
 end

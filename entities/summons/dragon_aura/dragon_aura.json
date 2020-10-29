@@ -115,6 +115,12 @@
 		"stonehearth:subject_matter": {}
 	},
 	"entity_data": {
+		"stonehearth:buffs": {
+			"only_affected_by":{
+				"swamp_goblins:buffs:despawn:in_2h":true,
+				"swamp_goblins:buffs:despawn":true
+			}
+		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(swamp_goblins:entities.summons.dragon_aura.display_name)",
 			"description": "i18n(swamp_goblins:entities.summons.dragon_aura.description)",

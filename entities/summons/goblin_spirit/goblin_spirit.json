@@ -132,6 +132,12 @@
 		"stonehearth:subject_matter": {}
 	},
 	"entity_data": {
+		"stonehearth:buffs": {
+			"only_affected_by":{
+				"swamp_goblins:buffs:despawn:in_2h":true,
+				"swamp_goblins:buffs:despawn":true
+			}
+		},
 		"stonehearth:healable": {
 			"healable_by_anyone": false,
 			"target_type": "spirit"

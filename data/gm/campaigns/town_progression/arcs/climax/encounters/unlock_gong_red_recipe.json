@@ -2,7 +2,7 @@
 	"type": "encounter",
 	"encounter_type": "unlock_recipe",
 	"in_edge": "unlock_gong_red_recipe",
-	"out_edge": "",
+	"out_edge": "wait_for_first_gong_red",
 	"unlock_recipe_info": {
 		"job": "swamp_goblins:jobs:earthmaster",
 		"recipe_key": "goblin_decorations:red_gong",

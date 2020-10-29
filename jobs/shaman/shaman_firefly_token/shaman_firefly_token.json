@@ -2,6 +2,18 @@
 	"type": "entity",
 	"mixins": "file(shaman_firefly_token_ghost.json)",
 	"components": {
+		"stonehearth:buffs": {
+			"buffs": {
+				"stonehearth_ace:buffs:weather:warmth_source": true
+			}
+		},
+		"sensor_list": {
+			"sensors": {
+				"warmth": {
+					"radius": 4
+				}
+			}
+		},
 		"render_info": {
 			"color_map": "stonehearth:color_map:magic",
 			"material_maps": [

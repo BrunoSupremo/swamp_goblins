@@ -8,7 +8,18 @@
 			"placeable_on_ground": true,
 			"hide_undeploy_ui": true
 		},
-		"stonehearth:firepit": {},
+		"stonehearth:firepit": {
+			"allow_charcoal": false,
+			"buff_source": true,			
+			"ember_uri": "stonehearth_ace:decoration:ember_green"
+		},
+		"sensor_list": {
+			"sensors": {
+				"warmth": {
+					"radius": 12
+				}
+			}
+		},
 		"stonehearth:lamp": {
 			"light_policy": "manual",
 			"light_effect": "stonehearth:effects:firepit_effect:green",
@@ -25,6 +36,10 @@
 		"stonehearth:traveler_attraction": {}
 	},
 	"entity_data": {
+		"stonehearth:table": {
+			"drop_effect": "carry_putdown",
+			"drop_offset": { "x": 0, "y": 0.2, "z": 0 }
+		},
 		"stonehearth:town_patrol": {
 			"auto_patrol": true,
 			"patrol_pattern": "perimeter"

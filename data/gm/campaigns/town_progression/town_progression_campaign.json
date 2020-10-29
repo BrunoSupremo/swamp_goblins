@@ -11,13 +11,14 @@
 		}
 	},
 	"arcs" : {
-		"climax" : {
+		"trigger" : {
 			"town_progression" : "file(arcs/trigger/town_progression/town_progression_arc.json)"
 		},
 		"challenge" : {
 			"human_camp": "file(arcs/challenge/encounter_list.json)"
 		},
-		"trigger" : {
+		"climax" : {},
+		"_climax" : {
 			"orc_skirmishs": "file(arcs/climax/encounter_list.json)"
 		}
 	}

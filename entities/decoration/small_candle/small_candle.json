@@ -19,7 +19,15 @@
 			]
 		},
 		"stonehearth:lamp" : {
-			"light_effect" : "swamp_goblins:effects:green_fire:small_candle"
+			"light_effect" : "swamp_goblins:effects:green_fire:small_candle",
+			"buff_source": true
+		},
+		"sensor_list": {
+			"sensors": {
+				"warmth": {
+					"radius": 8
+				}
+			}
 		},
 		"stonehearth:entity_forms" : {
 			"iconic_form" : "file(small_candle_iconic.json)",

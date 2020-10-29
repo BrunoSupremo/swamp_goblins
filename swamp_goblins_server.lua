@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.9.26")
+print("Swamp Goblins Mod version 20.10.28")
 
 --[[
 
@@ -8,7 +8,11 @@ jobs side quests for new stuff
 
 trapper fancy boots upgrade
 
-ace new fuel system
+ace stuff:
+	add ace tools and tools upgrades
+	Wait gobbos can't chop wood?
+	fuel system
+	training dummies (target mushroom, sparring spirit)
 
 if you want to climb through our ranks, put the gongs, they are our universal challenge symbol. While they are up, we will challenge you.
 *ok
@@ -28,6 +32,8 @@ your town is way better than it looks, you should display it somehow
 --shrine options
 --tier 3 reached, new templates, etc...
 
+eating constest
+
 
 move default market stall to earthmaster
 
@@ -37,6 +43,7 @@ waves:
 	boss, bunnies, orcs, kobolds, ogres
 
 import hearthlings/goblins to the other kingdom
+	(traveler campaign)
 
 banner shred
 animals haulers requiring food and care
@@ -45,10 +52,6 @@ bug nests to attack eggs
 
 mobs:
 	slimes, swamp zilla, mosquito
-
-ace stuff:
-	add ace tools and tools upgrades
-	Wait gobbos can't chop wood?
 
 contruction:
 	door, double door
@@ -112,14 +115,14 @@ function swamp_goblins:_on_required_loaded()
 	radiant.mixin(job_component, custom_job_component)
 
 	local mod_list = radiant.resources.get_mod_list()
-	local ace_is_here = false
+	swamp_goblins.ace_is_here = false
 	for i, mod in ipairs(mod_list) do
 		if mod == "stonehearth_ace" then
-			ace_is_here = true
+			swamp_goblins.ace_is_here = true
 			break
 		end
 	end
-	if ace_is_here then
+	if swamp_goblins.ace_is_here then
 		local ace_job_component = radiant.mods.require('stonehearth_ace.monkey_patches.ace_job_component')
 		radiant.mixin(ace_job_component, custom_job_component)
 	end

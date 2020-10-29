@@ -2,6 +2,18 @@
 	"type": "entity",
 	"mixins": "file(warrior_hearth_ghost.json)",
 	"components": {
+		"stonehearth:buffs": {
+			"buffs": {
+				"stonehearth_ace:buffs:weather:warmth_source": true
+			}
+		},
+		"sensor_list": {
+			"sensors": {
+				"warmth": {
+					"radius": 12
+				}
+			}
+		},
 		"swamp_goblins:warrior_hearth": {},
 		"stonehearth:commands": {},
 		"render_info": {},
