@@ -1,7 +1,9 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.10.28")
+print("Swamp Goblins Mod version 20.11.7")
 
 --[[
+
+mushroom variations, mushroom on wood decorations
 
 jobs side quests for new stuff
 	shaman lvl 6: travel to learn cook recipes
@@ -12,7 +14,6 @@ ace stuff:
 	add ace tools and tools upgrades
 	Wait gobbos can't chop wood?
 	fuel system
-	training dummies (target mushroom, sparring spirit)
 
 if you want to climb through our ranks, put the gongs, they are our universal challenge symbol. While they are up, we will challenge you.
 *ok

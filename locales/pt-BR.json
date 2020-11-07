@@ -966,15 +966,18 @@
 				"description": "Uma mistura de fibras é tecida firmemente à mão, para qualquer quantidade de pés que surja.",
 				"flavor": "Fácil de limpar mais tarde."
 			},
+			"gong": {
+				"green_name": "Gongo Verde",
+				"blue_name": "Gongo Azul",
+				"red_name": "Gongo Vermelho",
+				"purple_name": "Gongo Roxo",
+				"description": "Enorme e decorativo!",
+				"flavor": "Acontece que seus chapéus eram muito densos"
+			},
 			"hourglass": {
 				"display_name": "Ampulheta Gigante",
 				"description": "Um copo de formato engraçado com areia dentro, escorrendo de uma ponta a outra",
 				"flavor": "Não é minha vez de virar!"
-			},
-			"green_gong": {
-				"display_name": "Gongo Verde",
-				"description": "Enorme e decorativo!",
-				"flavor": "Acontece que seus chapéus eram muito densos"
 			},
 			"nature_hearth": {
 				"display_name": "Lareira da Natureza",
@@ -1016,6 +1019,11 @@
 				"display_name": "Mini Fonte",
 				"description": "A água começa no topo e desce passando por todas as peças",
 				"flavor": "4 deles podem ser colocados juntos para criar uma fonte maior"
+			},
+			"mushroom_target": {
+				"display_name": "Alvo de Cogumelo",
+				"description": "Prática de alvo suave para iniciantes",
+				"flavor": "Espero que não revide"
 			},
 			"pole_banner": {
 				"display_name": "Bandeira de Pólo",
@@ -1673,160 +1681,160 @@
 				"description": "Cuida do bem estar e crescimento do clã",
 				"requirements": "Feito por outro Xamã",
 				"level_1_data": {
-					"perk_000_name": "Firefly Essence",
-					"perk_000_description": "A power source extract from nature by shamans, used in most of the clans activities."
+					"perk_000_name": "Essência de Vaga-lume",
+					"perk_000_description": "Fonte de energia extraída da natureza pelos xamãs, utilizada na maioria das atividades dos clãs."
 				},
 				"level_2_data": {
-					"perk_000_name": "Cycle of Life",
-					"perk_000_description": "With an egg pedestal, goblins can do their most important ritual."
+					"perk_000_name": "Ciclo da Vida",
+					"perk_000_description": "Com um pedestal de ovo, os goblins podem realizar seu ritual mais importante."
 				},
 				"level_3_data": {
 					"perk_000_name": "Conhecimento do Jornaleiro",
-					"perk_000_description": "When inspiration strikes, the Shaman may now craft an especially Fine quality of item."
+					"perk_000_description": "Quando a inspiração bate, o Xamã pode agora criar um item de qualidade especialmente fina."
 				},
 				"level_4_data": {
-					"perk_000_name": "Potions",
-					"perk_000_description": "The Shaman is now skillful in different potions effects. Bad taste means better potions, they say.",
-					"perk_001_name": "Job Opportunities",
-					"perk_001_description": "It is possible to hear the spirits now. This Shaman can be promoted to a Spirit Walker."
+					"perk_000_name": "Poções",
+					"perk_000_description": "O Shaman agora é hábil em diferentes efeitos de poções. Gosto ruim significa poções melhores, dizem eles.",
+					"perk_001_name": "Oportunidades de Trabalho",
+					"perk_001_description": "É possível ouvir os espíritos agora. Este Xamã pode ser promovido a Guia Espiritual"
 				},
 				"level_5_data": {
 					"perk_000_name": "Visão do Mestre",
-					"perk_000_description": "The Shaman can now create items of Excellent quality, and will make Fine quality items more often."
+					"perk_000_description": "O Xamã agora pode criar itens de excelente qualidade e fará itens de boa qualidade com mais frequência."
 				},
 				"level_6_data": {
-					"perk_000_name": "Chef",
-					"perk_000_description": "The clan is in good shape, time to get fancy. Recipes from all over were collected and now easily available."
+					"perk_000_name": "Chef ",
+					"perk_000_description": "O clã está em boa forma, é hora de subir de nível. Receitas de todo o mundo foram coletadas e agora estão facilmente disponíveis."
 				}
 			},
 			"shaman_workbench": {
-				"display_name": "Shaman Workbench",
-				"description": "Shamans will use to craft their stuff"
+				"display_name": "Bancada do Xamã",
+				"description": "Os xamãs usarão para criar suas coisas"
 			},
 			"shaman_firefly_token": {
 				"display_name": "Shaman Firefly Token",
-				"description": "Shamans will use this to extract firefly essences"
+				"description": "Os xamãs usarão isso para extrair essências de vaga-lumes"
 			},
 			"dreamcatcher": {
 				"display_name": "Shaman Dreamcatcher",
 				"dreamcatcher_talisman": {
 					"display_name": "Shaman Dreamcatcher",
-					"description": "Helps with magic. Don't let your dreams just be dreams.",
-					"flavor": "Promotes a goblin to Shaman"
+					"description": "Ajuda com magia. Não deixe seus sonhos serem apenas sonhos.",
+					"flavor": "Promove um goblin a Xamã"
 				},
-				"description": "Helps with magic"
+				"description": "Ajuda com magia"
 			},
 			"egg_pedestal": {
-				"display_name": "Egg Pedestal",
+				"display_name": "Pedestal de Ovo",
 				"description": "Used to lay eggs and take care of it"
 			},
 			"recipes": {
-				"potions": "Potions",
-				"talismans": "Talismans"
+				"potions": "Poções",
+				"talismans": "Talismãs"
 			}
 		},
 		"spirit_walker": {
 			"spirit_walker_description": {
-				"display_name": "Spirit Walker",
-				"description": "Healer, summons spirits to help in fights",
+				"display_name": "Guia Espiritual",
+				"description": "Curandeiro, convoca espíritos para ajudar nas lutas",
 				"requirements": "Feito por Xamã",
 				"level_1_data": {
-					"perk_000_name": "Healing",
-					"perk_000_description": "Can heal in small amounts the health of allies"
+					"perk_000_name": "Curando",
+					"perk_000_description": "Pode curar em pequenas quantidades a saúde de aliados"
 				},
 				"level_2_data": {
-					"perk_000_name": "Spirit Ball",
-					"perk_000_description": "Ranged attack, shoots spirit balls at enemies. Ball amount based on this goblin spirit stat."
+					"perk_000_name": "Bola Espiritual",
+					"perk_000_description": "Ataque à distância, atira bolas espirituais nos inimigos. Quantidade de bolas baseada na estatística de espírito."
 				},
 				"level_3_data": {
-					"perk_000_name": "Multiple Spirits",
-					"perk_000_description": "Summons multiple goblin spirits to help in the fight, the amount based on this goblin spirit stat"
+					"perk_000_name": "Espíritos Múltiplos",
+					"perk_000_description": "Invoca vários espíritos goblin para ajudar na luta, a quantidade baseada na estatística de espírito"
 				},
 				"level_4_data": {
-					"perk_000_name": "Big G",
-					"perk_000_description": "Summons the beloved and playful goblin Big G. He helped his generation through tough times ages ago."
+					"perk_000_name": "Grande G",
+					"perk_000_description": "Convoca o amado e brincalhão goblin Grande G. Ele ajudou sua geração em tempos difíceis há muito tempo."
 				},
 				"level_5_data": {
-					"perk_000_name": "Warrior Aura Armor",
-					"perk_000_description": "All your Warriors will now be shielded by a defensive aura"
+					"perk_000_name": "Armadura de Aura de Guerreiro",
+					"perk_000_description": "Todos os seus guerreiros agora serão protegidos por uma aura defensiva"
 				},
 				"level_6_data": {
-					"perk_000_name": "Dragon Aura",
-					"perk_000_description": "With the combined power of a (max level) Beast Tamer, they summon an ancient Dragon Spirit into battle"
+					"perk_000_name": "Aura de Dragão",
+					"perk_000_description": "Com o poder combinado de um domador de feras (nível máximo), eles convocam um antigo espírito do dragão para a batalha"
 				}
 			},
 			"spirit_walker_staff": {
-				"display_name": "Spirit Walker Staff",
+				"display_name": "Cajado do Guia Espiritual",
 				"spirit_walker_staff_talisman": {
-					"display_name": "Spirit Walker Staff",
-					"description": "Scary mace weapon",
-					"flavor": "Promotes a goblin to Spirit Walker"
+					"display_name": "Cajado do Guia Espiritual",
+					"description": "Arma de maça assustadora",
+					"flavor": "Promove um goblin a Guia Espiritual"
 				},
-				"description": "Scary mace weapon"
+				"description": "Arma de maça assustadora"
 			},
 			"upgraded_staff": {
-				"display_name": "Spirit Walker Upgraded Staff",
-				"description": "Upgraded weapon",
+				"display_name": "Cajado Atualizado do Guia Espiritual",
+				"description": "Arma atualizada",
 				"flavor": ""
 			}
 		},
 		"shadow_walker": {
 			"shadow_walker_description": {
-				"display_name": "Shadow Walker"
+				"display_name": "Shadow Walker "
 			}
 		},
 		"warrior": {
 			"warrior_description": {
-				"display_name": "Warrior",
+				"display_name": "Guerreiro",
 				"requirements": "Feito por Xamã",
-				"description": "Pride in fighting. Warriors are the ones to use heavy weapons and wear armor.",
+				"description": "Orgulho de lutar. Guerreiros são aqueles que usam armas pesadas e usam armaduras.",
 				"level_1_data": {
-					"perk_000_name": "The Basics",
-					"perk_000_description": "The basics are learned, gaining courage and increasing stamina"
+					"perk_000_name": "O básico",
+					"perk_000_description": "O básico é aprendido, ganhando coragem e aumentando a resistência"
 				},
 				"level_2_data": {
-					"perk_000_name": "Multiple Targets",
-					"perk_000_description": "Performs a Spin Attack that hits everyone around."
+					"perk_000_name": "Múltiplos Alvos",
+					"perk_000_description": "Executa um ataque giratório que atinge todos ao redor."
 				},
 				"level_3_data": {
-					"perk_000_name": "Poison Darts",
-					"perk_000_description": "Hits enemies far away with darts, poisoning them."
+					"perk_000_name": "Dardos Venenosos",
+					"perk_000_description": "Atinge os inimigos de longe com dardos, envenenando-os."
 				},
 				"level_4_data": {
-					"perk_000_name": "Self Aid",
-					"perk_000_description": "Tougher skin for a faster health regeneration."
+					"perk_000_name": "Auto-ajuda",
+					"perk_000_description": "Pele mais resistente para uma regeneração mais rápida da saúde."
 				},
 				"level_5_data": {
-					"perk_000_name": "Body Up",
-					"perk_000_description": "Strength aquired from past fights grants +1 Body stat"
+					"perk_000_name": "Corpo para Cima",
+					"perk_000_description": "Força adquirida em lutas anteriores concede +1 Estatística Corporal"
 				},
 				"level_6_data": {
-					"perk_000_name": "Rage over Time",
-					"perk_000_description": "Stats gets higher the longer a fight lasts."
+					"perk_000_name": "Raiva ao longo do tempo",
+					"perk_000_description": "As estatísticas ficam mais altas quanto mais tempo dura uma luta."
 				}
 			},
 			"warrior_horn": {
-				"display_name": "Warrior War Horn",
+				"display_name": "Trompa de Guerra Guerreiro",
 				"warrior_horn_talisman": {
-					"display_name": "Warrior War Horn",
-					"description": "Useful communication tool in battles",
-					"flavor": "Promotes a goblin to Warrior"
+					"display_name": "Trompa de Guerra Guerreiro",
+					"description": "Ferramenta de comunicação útil em batalhas",
+					"flavor": "Promove um goblin a Guerreiro"
 				}
 			}
 		},
 		"chief": {
 			"chief_description": {
-				"display_name": "Chief"
+				"display_name": "Chief "
 			}
 		},
 		"firemaster": {
 			"firemaster_description": {
-				"display_name": "Firemaster"
+				"display_name": "Firemaster "
 			}
 		},
 		"peon": {
 			"peon_description": {
-				"display_name": "Peon"
+				"display_name": "Peão"
 			}
 		},
 		"party_goblin": {
@@ -1842,10 +1850,10 @@
 		},
 		"worker": {
 			"worker_description": {
-				"description": "Workers perform basic tasks like harvesting resources, hauling stuff around, and constructing buildings.<br><br>⚔️ Goblin workers can also fight and be in a combat party."
+				"description": "Os trabalhadores realizam tarefas básicas, como colher recursos, transportar coisas e construir edifícios. <br> <br> ⚔️ Os trabalhadores goblins também podem lutar e participar de um grupo de combate."
 			},
 			"upgraded_outfit": {
-				"description": "Reinforced shiny talisman improves worker defenses, and it is fancy!"
+				"description": "Talismã brilhante reforçado melhora as defesas do trabalhador, e é chique!"
 			}
 		}
 	},

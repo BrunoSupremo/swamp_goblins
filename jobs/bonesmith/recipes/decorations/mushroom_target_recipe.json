@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 22,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.mushroom_target.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.mushroom_target.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.mushroom_target.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/mushroom_target/mushroom_target.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"work_effect": "fiddle",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:mushroom_target"
+		}
+	]
+}

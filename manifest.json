@@ -208,6 +208,7 @@
 		"decoration:lamppost":				"file(entities/decoration/lamppost)",
 		"decoration:large_candle":			"file(entities/decoration/large_candle)",
 		"decoration:mini_fountain":			"file(entities/decoration/mini_fountain)",
+		"decoration:mushroom_target":		"file(entities/decoration/mushroom_target)",
 		"decoration:small_candle":			"file(entities/decoration/small_candle)",
 		"decoration:wall_candle":			"file(entities/decoration/wall_candle)",
 		"decoration:potted_cattail":		"file(entities/decoration/potted_cattail)",
@@ -410,6 +411,7 @@
 		"plants:lilypad:medium":"file(entities/plants/lilypad/medium_lilypad.json)",
 		"plants:lilypad:large":	"file(entities/plants/lilypad/large_lilypad.json)",
 		"plants:log":	"file(entities/plants/log)",
+		"plants:small_mushroom":		"file(entities/plants/small_mushroom)",
 		"plants:mushroom":				"file(entities/plants/mushroom)",
 		"plants:mushroom_garden":		"file(entities/plants/mushroom_garden)",
 		"plants:stone_mushroom_garden":	"file(entities/plants/stone_mushroom_garden)",
@@ -714,6 +716,11 @@
 		"stonehearth:farmer:initial_crops":	"file(services/server/farming/data/initial_crops.json)",
 		"stonehearth:farmer:all_crops":		"file(services/server/farming/data/all_crops.json)",
 
+		"stonehearth_ace:gizmos:brass_training_dummy":	"file(entities/gizmos/training_dummy)",
+		"stonehearth_ace:gizmos:clay_training_dummy":	"file(entities/gizmos/training_dummy)",
+		"stonehearth_ace:gizmos:stone_training_dummy":	"file(entities/gizmos/training_dummy)",
+		"stonehearth_ace:gizmos:training_dummy":		"file(entities/gizmos/training_dummy)",
+
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
@@ -789,6 +796,7 @@
 		"swamp_goblins/jobs/scavenger/scavenger_abilities/scavenger_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/shaman/shaman_abilities/shaman_abilities.json":					"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/worker/goblin_worker_abilities.json":							"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/warrior/warrior_abilities/warrior_abilities.json":"stonehearth_ace/jobs/footman/footman_abilities/footman_abilities.json",
 
 		"swamp_goblins:armor:flower_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
 		"swamp_goblins:armor:log_armor":			"stonehearth_ace:mixins:armor:light_armor_torso",

@@ -966,15 +966,18 @@
 				"description": "A blend of fibers are woven tightly by hand, for whatever foot traffic comes its way.",
 				"flavor": "Easy to clean later."
 			},
+			"gong": {
+				"green_name": "Green Gong",
+				"blue_name": "Blue Gong",
+				"red_name": "Red Gong",
+				"purple_name": "Purple Gong",
+				"description": "Enormous and decorative!",
+				"flavor": "As it turns out, their hats were very dense"
+			},
 			"hourglass": {
 				"display_name": "Giant Hourglass",
 				"description": "A funny shaped glass with sand inside, draining from one end to the other",
 				"flavor": "It is not my turn to flip it!"
-			},
-			"green_gong": {
-				"display_name": "Green Gong",
-				"description": "Enormous and decorative!",
-				"flavor": "As it turns out, their hats were very dense"
 			},
 			"nature_hearth": {
 				"display_name": "Nature Hearth",
@@ -1016,6 +1019,11 @@
 				"display_name": "Mini Fountain",
 				"description": "Water starts at the top and flow down going through all pieces",
 				"flavor": "4 of these can be placed together to create a larger fountain"
+			},
+			"mushroom_target": {
+				"display_name": "Mushroom Target",
+				"description": "Soft target practice for beginners",
+				"flavor": "Hopefully it does not hit back"
 			},
 			"pole_banner": {
 				"display_name": "Pole Banner",
@@ -1696,7 +1704,7 @@
 				},
 				"level_6_data": {
 					"perk_000_name": "Chef",
-					"perk_000_description": "The clan is in good shape, time to get fancy. Recipes from all over were collected and now easily available."
+					"perk_000_description": "The clan is in good shape, time to get fancy. Recipes from all over were collected and are now easily available."
 				}
 			},
 			"shaman_workbench": {
@@ -1798,7 +1806,7 @@
 				},
 				"level_5_data": {
 					"perk_000_name": "Body Up",
-					"perk_000_description": "Strength aquired from past fights grants +1 Body stat"
+					"perk_000_description": "Strength acquired from past fights grants +1 Body stat"
 				},
 				"level_6_data": {
 					"perk_000_name": "Rage over Time",

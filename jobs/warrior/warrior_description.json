@@ -25,9 +25,11 @@
 	],
 	"parent_job": "stonehearth:jobs:worker",
 	"xp_rewards": {
+		"training": 1,
 		"town_protection": 2
 	},
 	"max_level": 6,
+	"max_training_level": 2,
 	"level_data": {
 		"1": {
 			"title": "i18n(swamp_goblins:jobs.warrior.warrior_description.display_name)",
