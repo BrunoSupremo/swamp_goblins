@@ -3,6 +3,8 @@ print("Swamp Goblins Mod version 20.11.11")
 
 --[[
 
+update steam pictures
+
 jobs side quests for new stuff
 	shaman lvl 6: travel to learn cook recipes
 
