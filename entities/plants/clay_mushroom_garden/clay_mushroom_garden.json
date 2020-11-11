@@ -1,11 +1,11 @@
 {
 	"type": "entity",
-	"mixins": "file(mushroom_garden_ghost.json)",
+	"mixins": "file(clay_mushroom_garden_ghost.json)",
 	"components": {
 		"model_variants": {
 			"depleted": {
 				"models": [
-					"file(mushroom_garden_harvested.qb)"
+					"file(clay_mushroom_garden_harvested.qb)"
 				]
 			}
 		},
@@ -13,12 +13,12 @@
 			"category": "harvest",
 			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect",
 			"unripe_description": "i18n(swamp_goblins:entities.plants.mushroom_garden.unripe_description)",
-			"resource": "swamp_goblins:plants:small_mushroom",
+			"resource": "swamp_goblins:plants:tall_mushroom",
 			"renewal_time": "1d+1d"
 		},
 		"stonehearth:entity_forms": {
-			"iconic_form": "file(mushroom_garden_iconic.json)",
-			"ghost_form": "file(mushroom_garden_ghost.json)",
+			"iconic_form": "file(clay_mushroom_garden_iconic.json)",
+			"ghost_form": "file(clay_mushroom_garden_ghost.json)",
 			"placeable_on_ground": true
 		},
 		"destination": {
@@ -40,15 +40,15 @@
 	},
 	"entity_data": {
 		"stonehearth:appeal": {
-			"appeal": 7
+			"appeal": 9
 		},
 		"stonehearth:net_worth": {
-			"value_in_gold": 12,
+			"value_in_gold": 20,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": true,
 				"sellable": true,
-				"shopkeeper_level": 1,
+				"shopkeeper_level": 3,
 				"shopkeeper_type": "caravan"
 			}
 		}

@@ -922,6 +922,28 @@
 			}
 		},
 		"crops": {
+			"mushroom_crop": {
+				"display_name": "Cogumelos do Pântano",
+				"description": "Crescimento lento para um cogumelo e bastante insípido por si só.",
+				"growth_stage": {
+					"000": {
+						"name": "Cogumelo",
+						"description": "Plantada para cultivar um escasso suprimento de comida."
+					},
+					"001": {
+						"name": "Cogumelo",
+						"description": "Só preciso de algum tempo e cuidado."
+					},
+					"002": {
+						"name": "Cogumelo",
+						"description": "Ainda crescendo!"
+					},
+					"003": {
+						"name": "Cogumelo",
+						"description": "Pode ser colhido para alimentação"
+					}
+				}
+			},
 			"violet_crop": {
 				"display_name": "Flor Violeta",
 				"description": "Pode ser usado como erva curativa",
@@ -1010,7 +1032,8 @@
 				"flavor": "Não se preocupe, não é feito de ossos, apenas tinta branca"
 			},
 			"goblin_market": {
-				"display_name": "Bazar Vaga-lume"
+				"display_name": "Bazar Vaga-lume",
+				"description": "Comerciante goblin com itens goblin"
 			},
 			"goblin_market_stall": {
 				"display_name": "Tenda de negociação"
@@ -1120,7 +1143,7 @@
 				"description": "Pronto para comer"
 			},
 			"plate_of_mushrooms": {
-				"display_name": "Plato de Cogumelos do Pântano",
+				"display_name": "Prato de Cogumelos do Pântano",
 				"description": "Cogumelo picado",
 				"flavor": "Usa ingredientes encontrados no Bioma Pântano"
 			}
@@ -1716,9 +1739,9 @@
 				"description": "Os xamãs usarão isso para extrair essências de vaga-lumes"
 			},
 			"dreamcatcher": {
-				"display_name": "Shaman Dreamcatcher",
+				"display_name": "Apanhador de Sonhos do Xamã",
 				"dreamcatcher_talisman": {
-					"display_name": "Shaman Dreamcatcher",
+					"display_name": "Apanhador de Sonhos do Xamã",
 					"description": "Ajuda com magia. Não deixe seus sonhos serem apenas sonhos.",
 					"flavor": "Promove um goblin a Xamã"
 				},
@@ -1726,7 +1749,7 @@
 			},
 			"egg_pedestal": {
 				"display_name": "Pedestal de Ovo",
-				"description": "Used to lay eggs and take care of it"
+				"description": "É usado para botar ovos e cuidar deles"
 			},
 			"recipes": {
 				"potions": "Poções",

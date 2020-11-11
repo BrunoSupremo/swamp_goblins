@@ -254,6 +254,14 @@
 					"exclusion_radius": 1
 				}
 			},
+			"swamp_goblins:plants:tall_mushroom": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 2,
+					"item_density": 0.25,
+					"exclusion_radius": 1
+				}
+			},
 			"swamp_goblins:boulder:small" : {
 				"placement_type" : "dense",
 				"parameters" : { "grid_multiple": 4, "item_density": 0.19, "exclusion_radius": 1 }
@@ -344,7 +352,8 @@
 
 							"swamp_goblins:plants:giant_flower": 2,
 							"swamp_goblins:plants:cattail": 3,
-							"swamp_goblins:plants:mushroom":5
+							"swamp_goblins:plants:mushroom":3,
+							"swamp_goblins:plants:tall_mushroom":2
 						}
 					},
 					"foothills": {
@@ -360,7 +369,8 @@
 							"stonehearth:plants:violet": 1,
 							"stonehearth:plants:sweet_potato": 1,
 							"swamp_goblins:plants:giant_flower": 0.2,
-							"swamp_goblins:plants:mushroom": 3
+							"swamp_goblins:plants:mushroom": 2,
+							"swamp_goblins:plants:tall_mushroom": 1
 						}
 					},
 					"mountains": {

@@ -71,7 +71,9 @@ function FireflyCallHandler:everyone_max_level_command(session, response)
 	for _, citizen in population:get_citizens():each() do
 		local job_component = citizen:get_component('stonehearth:job')
 		for i=2,6 do
-			job_component:level_up(true)
+			if not job_component:is_max_level() then
+				job_component:level_up(true)
+			end
 		end
 	end
 

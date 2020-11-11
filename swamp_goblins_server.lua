@@ -1,9 +1,7 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.11.7")
+print("Swamp Goblins Mod version 20.11.11")
 
 --[[
-
-mushroom variations, mushroom on wood decorations
 
 jobs side quests for new stuff
 	shaman lvl 6: travel to learn cook recipes
@@ -53,6 +51,13 @@ bug nests to attack eggs
 
 mobs:
 	slimes, swamp zilla, mosquito
+
+party goblin:
+	no patrolling
+	chatty
+	combat skills:
+		illusion clone, distracts enemies
+		smoke bomb, aoe, halfs enemy attack (blindness)
 
 contruction:
 	door, double door

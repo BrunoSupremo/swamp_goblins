@@ -9,7 +9,16 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(log.qb)"
+					{
+						"type": "one_of",
+						"items": [
+							"file(log.qb)",
+							"file(log.qb)",
+							"file(log.qb)",
+							"file(log.qb)",
+							"file(log_2.qb)"
+						]
+					}
 				]
 			}
 		},

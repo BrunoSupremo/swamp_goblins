@@ -87,7 +87,8 @@
 			"appeal": 1
 		},
 		"stonehearth:siege_object": {
-			"repair_work_units": 2
+			"repairable_by_any_job": true,
+			"repair_work_units": 1
 		},
 		"stonehearth:killable": {
 			"killable_by_anyone": true

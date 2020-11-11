@@ -1,11 +1,11 @@
 {
 	"type": "entity",
-	"mixins": "file(small_mushroom_ghost.json)",
+	"mixins": "file(tall_mushroom_ghost.json)",
 	"components": {
 		"model_variants": {
 			"depleted": {
 				"models": [
-					"file(small_mushroom_harvested.qb)"
+					"file(tall_mushroom_harvested.qb)"
 				]
 			}
 		},
@@ -30,8 +30,8 @@
 			"renewal_time": "22h+2h"
 		},
 		"stonehearth:entity_forms": {
-			"iconic_form": "file(small_mushroom_iconic.json)",
-			"ghost_form": "file(small_mushroom_ghost.json)",
+			"iconic_form": "file(tall_mushroom_iconic.json)",
+			"ghost_form": "file(tall_mushroom_ghost.json)",
 			"placeable_on_ground": true
 		},
 		"destination": {
@@ -46,7 +46,7 @@
 			"region": [
 				{
 					"min": {"x": -1, "y": 0, "z": -1 },
-					"max": {"x": 1, "y": 1, "z": 1 }
+					"max": {"x": 1, "y": 2, "z": 1 }
 				}
 			]
 		}

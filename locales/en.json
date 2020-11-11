@@ -922,6 +922,28 @@
 			}
 		},
 		"crops":{
+			"mushroom_crop": {
+				"display_name": "Swamp Mushrooms",
+				"description": "Slow grow for a mushroom, and pretty bland on its own.",
+				"growth_stage": {
+					"000": {
+						"name": "Mushroom",
+						"description": "Planted to grow a meager food supply."
+					},
+					"001": {
+						"name": "Mushroom",
+						"description": "Just need some time and care."
+					},
+					"002": {
+						"name": "Mushroom",
+						"description": "Still growing!"
+					},
+					"003": {
+						"name": "Mushroom",
+						"description": "Can be harvested for food"
+					}
+				}
+			},
 			"violet_crop": {
 				"display_name": "Violet Flower",
 				"description": "Can be used as a healing herb",
@@ -1010,7 +1032,8 @@
 				"flavor": "Don't worry, it is not made from real skulls, just white paint"
 			},
 			"goblin_market": {
-				"display_name": "Firefly Bazaar"
+				"display_name": "Firefly Bazaar",
+				"description": "Goblin trader with goblin items"
 			},
 			"goblin_market_stall": {
 				"display_name": "Trading Stall"
@@ -1726,7 +1749,7 @@
 			},
 			"egg_pedestal": {
 				"display_name": "Egg Pedestal",
-				"description": "Used to lay eggs and take care of it"
+				"description": "It is used to lay eggs and take care of them"
 			},
 			"recipes": {
 				"potions": "Potions",

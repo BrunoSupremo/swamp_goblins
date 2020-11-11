@@ -1,0 +1,117 @@
+{
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(mushroom_1.qb)"
+				]
+			},
+			"mushroom_1": {
+				"models": [
+					"file(mushroom_1.qb)"
+				]
+			},
+			"mushroom_2": {
+				"models": [
+					"file(mushroom_2.qb)"
+				]
+			},
+			"mushroom_3": {
+				"models": [
+					"file(mushroom_3.qb)"
+				]
+			},
+			"mushroom_4": {
+				"models": [
+					{
+						"type": "one_of",
+						"items": [
+							"file(mushroom_4.qb)",
+							"file(mushroom_42.qb)",
+							"file(mushroom_43.qb)",
+							"file(mushroom_44.qb)"
+						]
+					}
+				]
+			}
+		},
+		"render_info": {
+			"scale": 0.1
+		},
+		"mob": {
+			"model_origin": { "x": -0.05, "y": -0.25, "z": 0.05 },
+			"mob_collision_type": "clutter"
+		},
+		"stonehearth:crop": {
+			"resource_pairings": {
+				"mushroom_4": "swamp_goblins:food:mushroom"
+			},
+			"harvest_threshhold": "mushroom_4",
+			"plant_overlay_effect": "stonehearth:effects:plant_crop_overlay_effect"
+		},
+		"stonehearth:growing": {
+			"growth_period": "24h",
+			"preferred_seasons": {
+				"stonehearth:biome:temperate": [
+					"spring",
+					"autumn"
+				],
+				"stonehearth:biome:desert": [
+					"spring"
+				],
+				"stonehearth:biome:arctic": [
+					"summer"
+				],
+				"archipelago_biome:biome:archipelago": ["wet"],
+				"canyon_biome:biome:canyon": ["spring"],
+				"swamp_goblins:biome:swamp": ["wet"]
+			},
+			"preferred_climate": "arctic_staple",
+			"growth_stages": [
+				{
+					"model_name": "mushroom_1",
+					"name": "i18n(swamp_goblins:entities.crops.mushroom_crop.growth_stage.000.name)",
+					"description": "i18n(swamp_goblins:entities.crops.mushroom_crop.growth_stage.000.description)"
+				},
+				{
+					"model_name": "mushroom_2",
+					"name": "i18n(swamp_goblins:entities.crops.mushroom_crop.growth_stage.001.name)",
+					"description": "i18n(swamp_goblins:entities.crops.mushroom_crop.growth_stage.001.description)"
+				},
+				{
+					"model_name": "mushroom_3",
+					"name": "i18n(swamp_goblins:entities.crops.mushroom_crop.growth_stage.002.name)",
+					"description": "i18n(swamp_goblins:entities.crops.mushroom_crop.growth_stage.002.description)"
+				},
+				{
+					"model_name": "mushroom_4",
+					"name": "i18n(swamp_goblins:entities.crops.mushroom_crop.growth_stage.003.name)",
+					"description": "i18n(swamp_goblins:entities.crops.mushroom_crop.growth_stage.003.description)"
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 1,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": false
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.crops.mushroom_crop.display_name)",
+			"description": "i18n(swamp_goblins:entities.crops.mushroom_crop.description)",
+			"icon": "/swamp_goblins/entities/plants/small_mushroom/small_mushroom.png",
+			"material_tags": [
+				"crop",
+				"mushroom"
+			]
+		},
+		"stonehearth:appeal": {
+			"appeal": 1
+		}
+	}
+}

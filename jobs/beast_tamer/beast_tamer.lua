@@ -2,7 +2,7 @@ local CombatJob = require 'stonehearth.jobs.combat_job'
 local BeastTamerClass = class()
 radiant.mixin(BeastTamerClass, CombatJob)
 local Point3 = _radiant.csg.Point3
-local Region3 = _radiant.csg.Region3
+local Cube3 = _radiant.csg.Cube3
 local rng = _radiant.math.get_default_rng()
 
 function BeastTamerClass:dragon_aura_equip()
@@ -74,14 +74,15 @@ function BeastTamerClass:summon_firefly(delay, target)
 	local location = radiant.entities.get_world_grid_location(target)
 	if not location then return end
 
-	local region = Region3()
-	region:add_point(location)
-	region = region:inflated(Point3(11,11,11))
-	local entities = radiant.terrain.get_entities_in_region(region)
-	for _, entity in pairs(entities) do
-		local is_hostile = stonehearth.player:are_entities_hostile(entity, self._sv._entity)
-		if is_hostile and radiant.entities.has_free_will(entity) then
-			radiant.entities.add_buff(entity, "swamp_goblins:buffs:firefly_confusion")
+	local cube = Cube3(location):inflated(Point3(11, 6, 11))
+	local all_entities = radiant.terrain.get_entities_in_region(cube)
+	local enemies = self:get_menacing_enemy_list_ascending(all_entities)
+	local limit = radiant.entities.get_attribute(self._sv._entity, "mind") *2
+	for _, entity in pairs(enemies) do
+		radiant.entities.add_buff(entity, "swamp_goblins:buffs:firefly_confusion")
+		limit = limit -1
+		if limit <1 then
+			break
 		end
 	end
 end
@@ -91,24 +92,44 @@ function BeastTamerClass:summon_varanus(delay)
 	self:summon_animals(delay, uris, amount)
 end
 
+function BeastTamerClass:get_menacing_enemy_list_ascending(all_entities)
+	--return a list of enemies in order of low to high menace
+	local enemies = {}
+	local not_menacing = {}
+	for _, enemy in pairs(all_entities) do
+		local is_hostile = stonehearth.player:are_entities_hostile(enemy, self._sv._entity)
+		if is_hostile and radiant.entities.has_free_will(enemy) then
+			if radiant.entities.get_attribute(enemy, "menace")>1 then
+				table.insert(enemies, enemy)
+			else
+				table.insert(not_menacing, enemy)
+			end
+		end
+	end
+	table.sort(enemies, function(a, b)
+		return radiant.entities.get_attribute(a, "menace") < radiant.entities.get_attribute(b, "menace")
+	end)
+	if #enemies < 1 then
+		--no menacing enemies? ok, grab the rest
+		enemies = not_menacing
+	end
+	return enemies
+end
+
 function BeastTamerClass:summon_traps(delay, target)
 	if not target then return end
 	local location = radiant.entities.get_world_grid_location(target)
 	if not location then return end
 
-	local region = Region3()
-	region:add_point(location)
-	region = region:inflated(Point3(10,10,10))
-	local entities = radiant.terrain.get_entities_in_region(region)
+	local cube = Cube3(location):inflated(Point3(11, 6, 11))
+	local all_entities = radiant.terrain.get_entities_in_region(cube)
+	local enemies = self:get_menacing_enemy_list_ascending(all_entities)
 	local limit = radiant.entities.get_attribute(self._sv._entity, "mind")
-	for _, entity in pairs(entities) do
-		local is_hostile = stonehearth.player:are_entities_hostile(entity, self._sv._entity)
-		if is_hostile and radiant.entities.has_free_will(entity) then
-			radiant.entities.add_buff(entity, "swamp_goblins:buffs:trapped")
-			limit = limit -1
-			if limit <1 then
-				break
-			end
+	for _, entity in ipairs(enemies) do
+		radiant.entities.add_buff(entity, "swamp_goblins:buffs:trapped")
+		limit = limit -1
+		if limit <1 then
+			break
 		end
 	end
 end

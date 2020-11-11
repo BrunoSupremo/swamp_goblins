@@ -47,7 +47,7 @@ function SpiritWalkerClass:find_enemies(target)
 	if not target_location then
 		return
 	end
-	local cube = Cube3(target_location):inflated(Point3(20, 5, 20))
+	local cube = Cube3(target_location):inflated(Point3(20, 6, 20))
 	local intersected_entities = radiant.terrain.get_entities_in_cube(cube)
 	local hostiles = {}
 	for id, entity in pairs(intersected_entities) do
