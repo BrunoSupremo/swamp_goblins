@@ -11,7 +11,20 @@
 					"title": "i18n(stonehearth:data.gm.campaigns.orc_war.arcs.trigger.old_khan.encounters.green_tier_end_dialog.dialog_tree_info.dialog_nodes.msg1.bulletin_title)",
 					"dialog_title": "i18n(stonehearth:data.gm.campaigns.orc_war.arcs.trigger.old_khan.encounters.green_tier_end_dialog.dialog_tree_info.dialog_nodes.msg1.dialog_title)",
 					"portrait": "/stonehearth/data/gm/campaigns/orc_war/arcs/trigger/old_khan/encounters/encounter_data/kobold_scout_portrait.png",
-					"message": "i18n(stonehearth:data.gm.campaigns.orc_war.arcs.trigger.old_khan.encounters.green_tier_end_dialog.dialog_tree_info.dialog_nodes.msg1.bulletin_message.00)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.green_tier_end_dialog.message)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "msg2"
+						}
+					}
+				}
+			},
+			"msg2": {
+				"bulletin": {
+					"title": "i18n(stonehearth:data.gm.campaigns.orc_war.arcs.trigger.old_khan.encounters.green_tier_end_dialog.dialog_tree_info.dialog_nodes.msg1.bulletin_title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.green_tier_end_dialog.message2)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {
 							"out_edge": "unlock_gong_blue_recipe"

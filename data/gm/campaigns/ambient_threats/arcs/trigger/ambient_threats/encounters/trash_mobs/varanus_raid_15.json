@@ -4,13 +4,22 @@
 	"encounter_type": "create_mission",
 	"in_edge": "varanus_raid_15",
 	"out_edge": "wait_to_destroy_raiding_party",
+	"can_start": {
+		"test_1": {
+			"biome_check": {
+				"type": "deny_if_not",
+				"item": "biome",
+				"value": "swamp_goblins:biome:swamp"
+			}
+		}
+	},
 	"create_mission_info": {
 		"mission": {
 			"ctx_entity_registration_path": "varanus_raid_15",
 			"members": {
-				"varanus": {
+				"alligators": {
 					"from_population": {
-						"min": 1,
+						"min": 2,
 						"max": 2
 					},
 					"tuning" : "stonehearth:monster_tuning:forest:insane_alligator"

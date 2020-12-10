@@ -6,7 +6,8 @@
 	"out_edge": {
 		"type": "trigger_many",
 		"out_edges": [
-			"green_orc_thief_raid_5",
+			"challenge_accepted_green",
+			"delay_raid_green",
 			"wait_for_green_camp_boss_killed"
 		]
 	},

@@ -1,0 +1,35 @@
+{
+	"wait_for_requirements_met_info": {
+		"requirements": {
+			"firefly_check":{
+				"item": "or",
+				"type":"deny_if_not",
+				"value": true,
+				"tests": {
+					"using_firefly":{
+						"item": "and",
+						"type":"deny_if_not",
+						"value": true,
+						"tests": {
+							"firefly_kingdom": {
+								"type": "deny_if_not",
+								"item": "kingdom",
+								"value": "swamp_goblins:kingdoms:firefly_clan"
+							},
+							"city_tier": {
+								"type": "deny_if_less_than",
+								"item": "city_tier",
+								"value": 2
+							}
+						}
+					},
+					"not_using_firefly": {
+						"type": "deny_if",
+						"item": "kingdom",
+						"value": "swamp_goblins:kingdoms:firefly_clan"
+					}
+				}
+			}
+		}
+	}
+}

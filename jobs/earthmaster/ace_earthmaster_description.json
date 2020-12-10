@@ -1,0 +1,14 @@
+{
+	"level_data": {
+		"1": {
+			"perks": [
+				{
+					"id": "can_repair_as_any_job",
+					"type": "set_can_repair_as_any_job",
+					"level": 1,
+					"demote_fn": "remove_can_repair_as_any_job"
+				}
+			]
+		}
+	}
+}

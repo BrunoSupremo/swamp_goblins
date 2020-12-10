@@ -14,32 +14,14 @@
 	},
 	"roles":[
 		"goblin_scavenger_job",
-		"hunter"
+		"hunter",
+		"field_work",
+		"fish_trap_placer"
 	],
 	"talisman_uri": "swamp_goblins:scavenger:talisman",
 	"parent_job": "stonehearth:jobs:worker",
 	"xp_rewards": {
 		"unsuccessful_trap": 10,
 		"successful_trap": 15
-	},
-	"level_data": {
-		"1": {
-			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
-		},
-		"2": {
-			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
-		},
-		"3": {
-			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
-		},
-		"4": {
-			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
-		},
-		"5": {
-			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
-		},
-		"6": {
-			"title": "i18n(stonehearth:jobs.trapper.trapper_description.display_name)"
-		}
 	}
 }

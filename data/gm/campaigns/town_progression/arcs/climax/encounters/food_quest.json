@@ -1,0 +1,31 @@
+{
+	"type": "encounter",
+	"encounter_type": "delivery_quest",
+	"in_edge": "food_quest",
+	"out_edge": "food_quest_done",
+	"delivery_quest_info": {
+		"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest.title)",
+		"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest.dialog_title)",
+		"requirements": [
+			{
+				"type": "give_material",
+				"material": "food_container raw_food vegetable",
+				"count": 100,
+				"keep_items": false
+			},
+			{
+				"type": "give_material",
+				"material": "wood resource",
+				"count": 2,
+				"keep_items": false
+			},
+			{
+				"type": "give_item",
+				"uri": "stonehearth:resources:coal:lump_of_coal",
+				"count": 1,
+				"keep_items": false
+			}
+		],
+		"abandon_out_edge": "food_quest_abandon"
+	}
+}

@@ -87,6 +87,7 @@
 		"boulder:small":	"file(entities/boulders/small_boulder)",
 
 		"buffs:body_up":			"file(data/buffs/body_up)",
+		"buffs:chatty":				"file(data/buffs/chatty)",
 		"buffs:despawn":			"file(data/buffs/despawn)",
 		"buffs:despawn:in_2h":		"file(data/buffs/despawn/despawn_in_2h.json)",
 		"buffs:firefly_confusion":	"file(data/buffs/firefly_confusion)",
@@ -365,6 +366,7 @@
 		"monsters:bear:teeth_weapon":		"file(entities/monsters/bear/bear_teeth.json)",
 		"monsters:bear:weak_teeth_weapon":	"file(entities/monsters/bear/weak_bear_teeth.json)",
 		"monsters:mosquito_cloud":			"file(entities/monsters/mosquito_cloud)",
+		"monsters:swamp_zilla":				"file(entities/monsters/swamp_zilla)",
 		"monsters:varanus":					"file(entities/monsters/varanus_nest/varanus.json)",
 		"monsters:varanus_nest":			"file(entities/monsters/varanus_nest)",
 
@@ -573,7 +575,6 @@
 
 		"worker:upgraded_outfit":"file(jobs/worker/upgraded_outfit)",
 		"worker:abilities:goblin":"file(jobs/worker/goblin_worker_abilities.json)",
-		"worker:abilities:hunter":"file(jobs/worker/hunter_abilities.json)",
 
 		"data:kingdom_level_costs:firefly_clan":"file(tower_defense/data/kingdoms/level_costs/firefly_clan.json)",
 		"towers:beast_tamer":	"file(tower_defense/towers/beast_tamer)",
@@ -638,19 +639,6 @@
 		"stonehearth:building_templates:index":	"file(data/saved_objects/building_templates_index.json)",
 		"trapper_plus:building_templates:index":"file(data/saved_objects/trapper_plus_templates.json)",
 
-		"stonehearth:blacksmith:forge":			"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
-		"stonehearth:blacksmith:workbench":		"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
-		"stonehearth:carpenter:toolbench":		"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
-		"stonehearth:carpenter:workbench":		"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
-		"stonehearth:cook:workbench":			"file(jobs/shaman/shaman_workbench/equivalents.json)",
-		"stonehearth:herbalist:workbench":		"file(jobs/shaman/shaman_workbench/equivalents.json)",
-		"stonehearth:mason:pedestal":			"file(jobs/earthmaster/mason_pedestal/equivalents.json)",
-		"stonehearth:mason:workbench":			"file(jobs/earthmaster/mason_pedestal/equivalents.json)",
-		"stonehearth:potter:kiln":				"file(jobs/earthmaster/potter_kiln/equivalents.json)",
-		"stonehearth:potter:workbench":			"file(jobs/earthmaster/potter_workbench/equivalents.json)",
-		"stonehearth:weaver:workbench":			"file(jobs/bonesmith/weaving_table/equivalents.json)",
-		"stonehearth_ace:mason:workbench_bone":	"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
-
 		"stonehearth:data:constants": "file(data/constants.json)",
 		"extra_map_options:data:extra_map_options":"file(data/extra_map_options.json)",
 
@@ -678,11 +666,18 @@
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/easy_raids.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/medium_raids.json":	"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/medium_raids.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json":		"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/hard_raids.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/epic_1_raids.json":	"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/epic_1_raids.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/epic_2_raids.json":	"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/epic_2_raids.json)",
+		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/epic_4_raids.json":	"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/raid_difficulty/epic_4_raids.json)",
 
 		"stonehearth/data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/dragonborn_king_arc.json": "file(data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/dragonborn_king_arc.json)",
 		"stonehearth/data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/spawn_enemy_entities.json":			"file(data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/spawn_enemy_entities.json)",
 		"stonehearth/data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/wait_for_enemy_death.json":			"file(data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/wait_for_enemy_death.json)",
 		"stonehearth/data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/dialog_thank_player_for_help.json":	"file(data/gm/campaigns/dragonborn_king/arcs/trigger/dragonborn_king/encounters/dialog_thank_player_for_help.json)",
+
+		"stonehearth_ace/data/gm/campaigns/friendly_strangers/arcs/trigger/encounters/wait_for_fisher_requirements.json":	"file(data/gm/campaigns/friendly_strangers/arcs/trigger/encounters/wait_for_stranger_requirements.json)",
+		"stonehearth_ace/data/gm/campaigns/friendly_strangers/arcs/trigger/encounters/wait_for_healer_requirements.json":	"file(data/gm/campaigns/friendly_strangers/arcs/trigger/encounters/wait_for_stranger_requirements.json)",
+		"stonehearth_ace/data/gm/campaigns/friendly_strangers/arcs/trigger/encounters/wait_for_smith_requirements.json":	"file(data/gm/campaigns/friendly_strangers/arcs/trigger/encounters/wait_for_stranger_requirements.json)",
 
 		"stonehearth/data/gm/campaigns/orc_war/arcs/trigger/old_khan/encounters/grant_orc_citizen.json":			"file(data/gm/campaigns/orc_war/arcs/trigger/old_khan/encounters/add_beast_tamer_job.json)",
 		"stonehearth/data/gm/campaigns/orc_war/arcs/trigger/old_khan/encounters/grant_recurring_orc_citizen.json":	"file(data/gm/campaigns/orc_war/arcs/trigger/old_khan/encounters/add_beast_tamer_job.json)",
@@ -727,9 +722,50 @@
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
+
+		"swamp_goblins:jobs:earthmaster":"stonehearth_ace/swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json",
+		"swamp_goblins:jobs:bonesmith":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+		"swamp_goblins:jobs:earthmaster":	"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+		"swamp_goblins:jobs:shaman":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+		"swamp_goblins:jobs:worker":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+
+		"swamp_goblins/jobs/bonesmith/bonesmith_abilities/bonesmith_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/earthmaster/earthmaster_abilities/earthmaster_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/scavenger/scavenger_abilities/scavenger_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/shaman/shaman_abilities/shaman_abilities.json":					"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/worker/goblin_worker_abilities.json":							"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/warrior/warrior_abilities/warrior_abilities.json":"stonehearth_ace/jobs/footman/footman_abilities/footman_abilities.json",
+
 		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/herbalist/recipes/recipes.json":			"file(jobs/herbalist/recipes)",
 		"stonehearth/jobs/geomancer/recipes/geomancer_recipes.json":"file(jobs/geomancer/recipes)",
+
+		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
+		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
+
+		"stonehearth_ace:herbalist:bee_skep":		"file(jobs/herbalist/herbalist_bee_skep/herbalist_bee_skep.json)",
+		"stonehearth_ace:herbalist:bee_skep:empty":	"file(jobs/herbalist/herbalist_bee_skep/herbalist_bee_skep_empty.json)",
+
+		"stonehearth:geomancer:outfit":	"file(jobs/geomancer/geomancer_outfit)",
+		"stonehearth_ace/jobs/geomancer/geomancer_outfit/geomancer_outfit_hat/geomancer_outfit_hat.json":"file(jobs/geomancer/geomancer_outfit/geomancer_outfit_hat.json)",
+		"stonehearth:trapper:outfit":	"file(jobs/trapper/trapper_outfit)",
+		"stonehearth:worker:outfit":		"file(jobs/worker/worker_outfit)",
+		"rayyas_children:worker:outfit":	"file(jobs/worker/worker_outfit)",
+		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)",
+		"swamp_goblins:worker:upgraded_outfit":"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
+
+		"stonehearth:blacksmith:forge":			"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
+		"stonehearth:blacksmith:workbench":		"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
+		"stonehearth:carpenter:toolbench":		"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
+		"stonehearth:carpenter:workbench":		"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
+		"stonehearth:cook:workbench":			"file(jobs/shaman/shaman_workbench/equivalents.json)",
+		"stonehearth:herbalist:workbench":		"file(jobs/shaman/shaman_workbench/equivalents.json)",
+		"stonehearth:mason:pedestal":			"file(jobs/earthmaster/mason_pedestal/equivalents.json)",
+		"stonehearth:mason:workbench":			"file(jobs/earthmaster/mason_pedestal/equivalents.json)",
+		"stonehearth:potter:kiln":				"file(jobs/earthmaster/potter_kiln/equivalents.json)",
+		"stonehearth:potter:workbench":			"file(jobs/earthmaster/potter_workbench/equivalents.json)",
+		"stonehearth:weaver:workbench":			"file(jobs/bonesmith/weaving_table/equivalents.json)",
+		"stonehearth_ace:mason:workbench_bone":	"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
 
 		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
 
@@ -775,13 +811,6 @@
 
 		"stonehearth_ace/ui/data/season_icons.json":"file(ui/data/season_icons.json)",
 
-		"stonehearth:geomancer:outfit":	"file(jobs/geomancer/geomancer_outfit)",
-		"stonehearth_ace/jobs/geomancer/geomancer_outfit/geomancer_outfit_hat/geomancer_outfit_hat.json":"file(jobs/geomancer/geomancer_outfit/geomancer_outfit_hat.json)",
-		"stonehearth:trapper:outfit":	"file(jobs/trapper/trapper_outfit)",
-		"stonehearth:worker:outfit":		"file(jobs/worker/worker_outfit)",
-		"rayyas_children:worker:outfit":	"file(jobs/worker/worker_outfit)",
-		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)",
-
 		"stonehearth:weapons:bronze_mace":	"file(data/monster_tuning/warrior_hearth/hearthling/paladin_add_to_weapons.json)",
 		"stonehearth:weapons:iron_mace":	"file(data/monster_tuning/warrior_hearth/hearthling/paladin_add_to_weapons.json)",
 		"stonehearth:weapons:stone_maul":	"file(data/monster_tuning/warrior_hearth/hearthling/paladin_add_to_weapons.json)",
@@ -791,15 +820,6 @@
 		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/entities/plants/lilypad/lilypad.json":	"stonehearth_ace/swamp_goblins/entities/plants/lilypad/ace_lilypad.json",
-		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
-		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
-		"swamp_goblins/jobs/worker/upgraded_outfit/upgraded_outfit.json":"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
-		"swamp_goblins/jobs/bonesmith/bonesmith_abilities/bonesmith_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/earthmaster/earthmaster_abilities/earthmaster_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/scavenger/scavenger_abilities/scavenger_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/shaman/shaman_abilities/shaman_abilities.json":					"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/worker/goblin_worker_abilities.json":							"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/warrior/warrior_abilities/warrior_abilities.json":"stonehearth_ace/jobs/footman/footman_abilities/footman_abilities.json",
 
 		"swamp_goblins:armor:flower_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
 		"swamp_goblins:armor:log_armor":			"stonehearth_ace:mixins:armor:light_armor_torso",
@@ -897,10 +917,13 @@
 
 		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"stonehearth_ace/swamp_goblins/entities/plants/lilypad/ace_lilypad.json":"swamp_goblins/entities/plants/lilypad/ace_lilypad.json",
+
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":	"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json":	"swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
-		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json":	"swamp_goblins/jobs/common/ace_abilities.json"
+		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json":	"swamp_goblins/jobs/common/ace_abilities.json",
+		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json":	"swamp_goblins/jobs/common/ace_description.json",
+		"stonehearth_ace/swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json":	"swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json"
 	},
 	"controllers": {
 		"class:beast_tamer":	"file(jobs/beast_tamer/beast_tamer.lua)",

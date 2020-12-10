@@ -5,6 +5,9 @@
 		"player_id": "remove"
 	},
 	"components": {
+		"mixintypes": {
+			"stonehearth:loot_drops": "remove"
+		},
 		"stonehearth:equipment": {
 			"items": [
 				"file(weapon.json)"

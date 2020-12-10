@@ -593,7 +593,57 @@
 							"unlock_gong_blue_recipe":"The Earthmaster has unlocked the Blue Gong recipe!",
 							"unlock_gong_red_recipe":"The Earthmaster has unlocked the Red Gong recipe!",
 							"unlock_gong_purple_recipe":"The Earthmaster has unlocked the Purple Gong recipe!"
+						},
+						"challenge_accepted":"Challenge accepted",
+						"green_tier_end_dialog":{
+							"message":"Us.. too weak.. Put out Blue Gong if you dares..",
+							"message2":"Seems like the green rank was not a hard challenge for you.<br>Here, the recipe for Blue Gong so you can challenge the next rank."
+						},
+						"blue_tier_end_dialog":{
+							"message":"Ok, ok... You won. If only we had some ogres like in the red ranks...<br>Put out Red Gong if you dares..",
+							"message2":"Still easy, uh? Interesting.<br>Here, the next Gong recipe."
+						},
+						"red_tier_end_dialog":{
+							"message":"You are way stronger than what we imagined, but don't get too confident! Next rank, if you take their challenge, will be way harder. They even have clerics!",
+							"message2":"So you guy are really this strong?<br>As usual, I'm here to give you the next Gong recipe. Good luck."
+						},
+						"no_food":{
+							"title":"Erdene?...",
+							"message":"Sorry guys, we are having some technical difficulties...<br>Our higher ranks are not ready yet.",
+							"choice_difficulties":"Difficulties?",
+							"choice_what":"What happened?",
+							"message2":"Some miscommunications happened, and long story short, we sent our resources to the wrong place. And now we can't set camp here and answer your challenge anymore...",
+							"choice_resources":"You need resources?",
+							"choice_camp":"Isn't a camp easy to build?",
+							"message3":"Building the camp is easy, it is very modular and we can use local resources for it.<br>The problem is their diet...",
+							"choice_who":"Whose diet?",
+							"choice_what_diet":"What diet?",
+							"message4":"Those in purple ranks say a healthy diet is the key for their strength.<br>We have the meat. But no vegetables...",
+							"choice_yuck":"Yuck",
+							"choice_veggies":"Veggies?",
+							"message5":"For such a challenge, we usually set at around 100 vegetables. But we are so far away from our farmers, and traders have almost nothing on them. We don't know how we will reach this amount soon.",
+							"choice_100":"100?",
+							"choice_100_2":"100?!?",
+							"message6":"Can you help us?",
+							"choice_guess":"I guess...",
+							"choice_sure":"Sure..."
+						},
+						"food_quest":{
+							"title":"Veggies Quest",
+							"dialog_title":"Veggies Quest"
+						},
+						"food_quest_abandon":{
+							"title":"Veggies Quest",
+							"message":"Oh no. We were counting with those materials...<br>Don't worry. We will change a few things here, maybe it ends up just with a longer delay."
+						},
+						"food_quest_done":{
+							"title":"Quest Completed",
+							"message":"Thanks, this will help us a lot!<br>Here, we have prepared some food as a thank you gift.<br><br><font size=-1>The food will be dropped at your banner</font>"
+						},
+						"purple_tier_end_dialog":{
+							"message":"Us.. too weak.. Put out xxx Gong if you dares.."
 						}
+
 					}
 				}
 			}

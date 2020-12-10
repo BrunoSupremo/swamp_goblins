@@ -75,7 +75,7 @@ function BeastTamerClass:summon_firefly(delay, target)
 	if not location then return end
 
 	local cube = Cube3(location):inflated(Point3(11, 6, 11))
-	local all_entities = radiant.terrain.get_entities_in_region(cube)
+	local all_entities = radiant.terrain.get_entities_in_cube(cube)
 	local enemies = self:get_menacing_enemy_list_ascending(all_entities)
 	local limit = radiant.entities.get_attribute(self._sv._entity, "mind") *2
 	for _, entity in pairs(enemies) do
@@ -122,7 +122,7 @@ function BeastTamerClass:summon_traps(delay, target)
 	if not location then return end
 
 	local cube = Cube3(location):inflated(Point3(11, 6, 11))
-	local all_entities = radiant.terrain.get_entities_in_region(cube)
+	local all_entities = radiant.terrain.get_entities_in_cube(cube)
 	local enemies = self:get_menacing_enemy_list_ascending(all_entities)
 	local limit = radiant.entities.get_attribute(self._sv._entity, "mind")
 	for _, entity in ipairs(enemies) do

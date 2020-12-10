@@ -1,0 +1,24 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "food_quest_done",
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done.message)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.nina_introduction.thanks": {
+							"out_edge": ""
+						}
+					}
+				}
+			}
+		}
+	}
+}

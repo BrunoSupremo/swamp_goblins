@@ -1,0 +1,25 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:monsters:forest:zilla",
+	"components": {
+		"mob": {
+			"model_origin": { "x": 0, "y": 1, "z": 0 }
+		},
+		"render_info": {
+			"scale": 0.3
+		},
+		"model_variants": {
+			"mixintypes": {
+				"default": "override"
+			},
+			"default": {
+				"models": [
+					"file(swamp_zilla.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:panic_threshold": 0.0
+	}
+}

@@ -6,7 +6,8 @@
 	"out_edge": {
 		"type": "trigger_many",
 		"out_edges": [
-			"blue_orc_raid_7",
+			"challenge_accepted_blue",
+			"delay_raid_blue",
 			"wait_for_blue_camp_boss_killed"
 		]
 	},

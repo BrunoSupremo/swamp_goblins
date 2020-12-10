@@ -1,0 +1,10 @@
+{
+	"type" : "encounter",
+	"encounter_type" : "wait",
+
+	"in_edge"  : "delay_raid_red",
+	"out_edge" : "red_orc_raid_9",
+	"wait_info" :  {
+		"duration" : "20m"
+	}
+}

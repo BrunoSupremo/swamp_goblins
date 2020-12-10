@@ -2,8 +2,9 @@
 	"type": "encounter",
 	"encounter_type": "wait_for_requirements_met",
 	"in_edge": "wait_for_first_gong_purple",
-	"out_edge": "create_camp_purple",
+	"out_edge": "no_food",
 	"wait_for_requirements_met_info": {
+		"recheck_delay":"1d",
 		"requirements": {
 			"item_placed_requirement": {
 				"item": "exists_in_world",

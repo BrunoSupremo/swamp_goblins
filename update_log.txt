@@ -1,20 +1,21 @@
 Additions:
-Mushroom target decoration (with ACE it can be used as training dummy)
-Small and Tall Mushroom variations
-Clay Mushroom Garden
+Swamp Zillas, high level enemy random spawn
 
 Changes:
-Earthmaster can gain xp when fixing and repairing items (doors, fences, etc...)
-Wood Mushroom Garden gives small mushrooms, Stone Garden gives medium mushrooms and the new Clay gives tall mushrooms
-Rarely barricades have mushrooms on their models
-Goblin Bazaar description updated to clarify it spawning goblin traders only
+Workers will not hunt critters anymore. The cons outweighted the pros, confusing newbies and annoying old players
+Beast Tamer critters will not drop items when defeated
+Party Goblin trait makes them more chatty
+Max level military (Warriors, Spirit Walkers and Beast Tamers) will increase the town "military score" (you can see it in the town menu, shortcut "T")
+In the swamp, varanus have a higher chance of being picked for random enemies spawnings
 
 Changes for ACE:
-Warriors can train at training dummies
+Swamp Trees can be replanted when using the "Gather & Replant" harvest command (except dead trees)
+With Firefly, ace friendly visitors tutorials are delayed to after the human camp quest is completed (for lore and mechanics reasons)
+Custom foraging loot for the swamp
 
 Fixes:
-Beast Tamer trap disappearing too soon leaving the enemy locked in an invisible trap for a while
-Town Alert freezing the game (Thanks Jevil02 for the report)
+Empty job perk icon on Earthmaster
+Error [attempt to index local 'role_data' (a nil value)] when an enemy varanus spawned
 
-
-(for ACE mod)
+Fixes for ACE:
+Shamans can finally work with bees again

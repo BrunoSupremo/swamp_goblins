@@ -1,28 +1,34 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.11.11")
+print("Swamp Goblins Mod version 20.12.9")
 
 --[[
 
-update steam pictures
+window box stuff from ace
+
+warrior rework:
+	max level at 3
+	two job promotions after:
+		light/fast combat and heavy/strong combat
+
+
+
+reversed porticulis stone gate
+wolf reward? (i can't remember this one lol [orc campaign?])
 
 jobs side quests for new stuff
-	shaman lvl 6: travel to learn cook recipes
+	shaman lvl 6: travel to learn cook recipes || eating contest?
 
 trapper fancy boots upgrade
 
 ace stuff:
 	add ace tools and tools upgrades
-	Wait gobbos can't chop wood?
-	fuel system
+	fuel system (Wait gobbos can't chop wood?)
+	herb planters
+	wounds and tonics
 
-if you want to climb through our ranks, put the gongs, they are our universal challenge symbol. While they are up, we will challenge you.
-*ok
---crafting
---fighting
---reaching top rank
-you will have to forgive us, our high ranks are not here yet. they are complaing that we got no food, which is true... we sent it to the wrong camp lol
---20 sweet potatoes (or anything else hard to get using goblins)
---fail to fulfill it (because it is purposely hard)
+orc quest
+	food arc
+
 humans:
 oh, so what about we get a farmer to help with your quest, and in return you convince them to not bother us anymore?
 *ok
@@ -32,8 +38,6 @@ oh, so what about we get a farmer to help with your quest, and in return you con
 your town is way better than it looks, you should display it somehow
 --shrine options
 --tier 3 reached, new templates, etc...
-
-eating constest
 
 
 move default market stall to earthmaster
@@ -49,17 +53,20 @@ import hearthlings/goblins to the other kingdom
 banner shred
 animals haulers requiring food and care
 varanus/mobs repelent
-bug nests to attack eggs
+bug nests to attack eggs, rebalance, new egg enemies
+old shepherd_outfit as a new goblin outfit? (looks good at least)
+spirit world has inverted colors?
 
 mobs:
 	slimes, swamp zilla, mosquito
 
 party goblin:
-	no patrolling
+	different tattoo color?
 	chatty
 	combat skills:
-		illusion clone, distracts enemies
-		smoke bomb, aoe, halfs enemy attack (blindness)
+		smoke bomb: aoe, halfs enemy attack (blindness)
+		fireworks: calls enemys attention
+		frog escape: changes into a frog and jump out of battle
 
 contruction:
 	door, double door
@@ -81,6 +88,7 @@ furniture:
 templates:
 	combat houses (n.a. inspired roofs?)
 earthmaster:
+	change name to earthshaper?
 	dart traps, smoke traps
 	upgraded workbenches
 gizmos:

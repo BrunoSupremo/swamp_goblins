@@ -1,0 +1,74 @@
+{
+	"mixins": "stonehearth_ace:terrain:foraging_spot",
+	"components": {
+		"stonehearth:resource_node": {
+			"resource_loot_table": {
+				"entries": {
+					"optional": {
+						"items": {
+							"nothing": {
+								"weight": 45
+							},
+							"bough": {
+								"weight": 4
+							},
+							"bough_evergreen": {
+								"weight": 2
+							},
+							"fiber": {
+								"uri": "swamp_goblins:resources:cattail",
+								"weight": 2
+							},
+							"random_herb": {
+								"uri": "swamp_goblins:resources:giant_flower",
+								"weight": 8
+							},
+							"random_herb2": {
+								"uri": "stonehearth:resources:herb:violet",
+								"weight": 1
+							},
+							"chanterelle": {
+								"uri": "stonehearth_ace:food:chanterelle:chanterelle_basket",
+								"weight": 1
+							},
+							"bolete": {
+								"uri": "stonehearth_ace:food:bolete:bolete_basket",
+								"weight": 1
+							},
+							"sweet_tooth": {
+								"uri": "stonehearth_ace:food:sweet_tooth:sweet_tooth_basket",
+								"weight": 1
+							},
+							"parasol": {
+								"uri": "stonehearth_ace:food:parasol:parasol_basket",
+								"weight": 1
+							},
+							"random_seed_tree": {
+								"type": "bag",
+								"uri": "swamp_goblins:trees:bogger:seed",
+								"weight": 1
+							},
+							"random_seed_tree2": {
+								"type": "bag",
+								"uri": "swamp_goblins:trees:cypress:seed",
+								"weight": 1
+							},
+							"lily_pad": {
+								"uri": "stonehearth_ace:plants:water_lily:lily_pad:seed",
+								"weight": 0.5
+							},
+							"lily_pink": {
+								"uri": "stonehearth_ace:plants:water_lily:pink:seed",
+								"weight": 0.5
+							},
+							"lily_white": {
+								"uri": "stonehearth_ace:plants:water_lily:white:seed",
+								"weight": 0.5
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

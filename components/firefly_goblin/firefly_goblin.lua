@@ -133,7 +133,6 @@ function FireflyGoblin:add_goblin_worker_abilities()
 	local job_comp = self._entity:get_component("stonehearth:job")
 	local roles = {
 		goblin_worker_job = true,
-		hunter = true,
 		melee_combat = true,
 		combat = true,
 	}
@@ -161,22 +160,6 @@ function FireflyGoblin:add_goblin_worker_abilities()
 				party_component:add_member(self._entity)
 			end
 		end
-	end
-
-	self.waiting_for_combat_listener = radiant.events.listen(self._entity, 'stonehearth:combat:primary_target_changed', self, self.primary_target_changed)
-end
-
-function FireflyGoblin:primary_target_changed()
-	local target = stonehearth.combat:get_primary_target(self._entity)
-	local equipment = "swamp_goblins:worker:abilities:hunter"
-	if target and target:get_player_id() == "animals" then
-		radiant.entities.equip_item(self._entity, equipment)
-
-		radiant.events.listen_once(self._entity, 'stonehearth:combat:target_hit', function()
-			radiant.entities.unequip_item(self._entity, equipment)
-		end)
-	else
-		radiant.entities.unequip_item(self._entity, equipment)
 	end
 end
 
