@@ -134,6 +134,16 @@
 				"display_name": "Viajar",
 				"description": "Escolha quais goblins irão reembarcar"
 			},
+			"transform": {
+				"build_well_wood": {
+					"display_name": "Construir Poço de Água de Madeira (Vaga-lume)",
+					"description": "Peça que este poço simples seja transformado em poço de água de madeira. Fazer isso requer Essência de Vaga-lume, um item refinado que pode ser criado pelo Shaman."
+				},
+				"build_well_roof_clay": {
+					"display_name": "Atualize para Argila",
+					"description": "Atualize usando uma Joia Firefly para um poço de argila chique para deixar seus cidadãos mais felizes e sua água sempre fresca!"
+				}
+			},
 			"weather_stone": {
 				"charge": {
 					"display_name": "Carregar a Pedra",
@@ -594,7 +604,55 @@
 							"unlock_gong_red_recipe": "O Mestre Terra desbloqueou a receita Gongo Vermelho!",
 							"unlock_gong_purple_recipe": "O Mestre Terra desbloqueou a receita Gongo Roxo!"
 						},
-						"challenge_accepted":"Desafio aceito"
+						"challenge_accepted": "Desafio aceito",
+						"green_tier_end_dialog": {
+							"message": "Us.. too weak.. Put out Blue Gong if you dares..",
+							"message2": "Seems like the green rank was not a hard challenge for you.<br>Here, the recipe for Blue Gong so you can challenge the next rank."
+						},
+						"blue_tier_end_dialog": {
+							"message": "Ok, ok... You won. If only we had some ogres like in the red ranks...<br>Put out Red Gong if you dares..",
+							"message2": "Still easy, uh? Interesting.<br>Here, the next Gong recipe."
+						},
+						"red_tier_end_dialog": {
+							"message": "You are way stronger than what we imagined, but don't get too confident! Next rank, if you take their challenge, will be way harder. They even have clerics!",
+							"message2": "So you guy are really this strong?<br>As usual, I'm here to give you the next Gong recipe. Good luck."
+						},
+						"no_food": {
+							"title": "Erdene?...",
+							"message": "Sorry guys, we are having some technical difficulties...<br>Our higher ranks are not ready yet.",
+							"choice_difficulties": "Difficulties?",
+							"choice_what": "What happened?",
+							"message2": "Some miscommunications happened, and long story short, we sent our resources to the wrong place. And now we can't set camp here and answer your challenge anymore...",
+							"choice_resources": "You need resources?",
+							"choice_camp": "Isn't a camp easy to build?",
+							"message3": "Building the camp is easy, it is very modular and we can use local resources for it.<br>The problem is their diet...",
+							"choice_who": "Whose diet?",
+							"choice_what_diet": "What diet?",
+							"message4": "Those in purple ranks say a healthy diet is the key for their strength.<br>We have the meat. But no vegetables...",
+							"choice_yuck": "Yuck",
+							"choice_veggies": "Veggies?",
+							"message5": "For such a challenge, we usually set at around 100 vegetables. But we are so far away from our farmers, and traders have almost nothing on them. We don't know how we will reach this amount soon.",
+							"choice_100": "100?",
+							"choice_100_2": "100?!?",
+							"message6": "Can you help us?",
+							"choice_guess": "I guess...",
+							"choice_sure": "Sure..."
+						},
+						"food_quest": {
+							"title": "Veggies Quest",
+							"dialog_title": "Veggies Quest"
+						},
+						"food_quest_abandon": {
+							"title": "Veggies Quest",
+							"message": "Oh no. We were counting with those materials...<br>Don't worry. We will change a few things here, maybe it ends up just with a longer delay."
+						},
+						"food_quest_done": {
+							"title": "Quest Completed",
+							"message": "Thanks, this will help us a lot!<br>Here, we have prepared some food as a thank you gift.<br><br><font size=-1>The food will be dropped at your banner</font>"
+						},
+						"purple_tier_end_dialog": {
+							"message": "Us.. too weak.. Put out xxx Gong if you dares.."
+						}
 					}
 				}
 			}
@@ -608,7 +666,7 @@
 			"nature": {
 				"display_name": "Sinergia da Natureza",
 				"description": "Equilibrar-se com a natureza pode ser difícil às vezes, isso deve ajudar.",
-				"tooltip": "Materiais básicos desde o início, caso precise de todos."
+				"tooltip": "Uma opção segura para novos jogadores. Materiais básicos desde o início, caso precise de todos."
 			}
 		},
 		"happiness": {
@@ -709,7 +767,8 @@
 		},
 		"traits": {
 			"party_goblin": {
-				"display_name": "Goblin Festeiro"
+				"display_name": "Goblin Festeiro",
+				"description": "[name(i18n_data.entity)] adora contar piadas e usar chapéus engraçados. Eles são bons? É difícil dizer, mas frequentemente parecem deixar os outros com um sorriso."
 			},
 			"firefly_chaser": {
 				"display_name": "Observador de Vaga-lumes",
@@ -1863,12 +1922,12 @@
 		},
 		"party_goblin": {
 			"party_goblin_description": {
-				"display_name": "Party Goblin"
+				"display_name": "Goblin Festeiro"
 			},
 			"party_goblin_flute": {
-				"display_name": "Party Goblin Flute",
+				"display_name": "Flauta de Goblin Festeiro",
 				"party_goblin_flute_talisman": {
-					"display_name": "Party Goblin Flute"
+					"display_name": "Flauta de Goblin Festeiro"
 				}
 			}
 		},

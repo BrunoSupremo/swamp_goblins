@@ -1,0 +1,26 @@
+{
+	"stockpile": {
+		"production": {
+			"categories": {
+				"shaman": {
+					"ordinal": 13,
+					"display_name": "i18n(swamp_goblins:jobs.shaman.shaman_description.display_name)",
+					"icon": "/swamp_goblins/jobs/shaman/images/icon.png",
+					"filter": "shaman"
+				},
+				"bonesmith": {
+					"ordinal": 14,
+					"display_name": "i18n(swamp_goblins:jobs.bonesmith.bonesmith_description.display_name)",
+					"icon": "/swamp_goblins/jobs/bonesmith/images/icon.png",
+					"filter": "bonesmith"
+				},
+				"earthmaster": {
+					"ordinal": 15,
+					"display_name": "i18n(swamp_goblins:jobs.earthmaster.earthmaster_description.display_name)",
+					"icon": "/swamp_goblins/jobs/earthmaster/images/icon.png",
+					"filter": "earthmaster"
+				}
+			}
+		}
+	}
+}

@@ -62,8 +62,8 @@
 			"silver_ore": "#CCCCCC",
 			"gold_ore": "#FFD700",
 			"coal": "#021C24",
-			"marble" : "#DEDEDE",
-			"clay" : "#492A16"
+			"marble": "#DEDEDE",
+			"clay": "#492A16"
 		},
 		"wet": {
 			"null": "#FF00FF",
@@ -93,8 +93,8 @@
 			"silver_ore": "#CCCCCC",
 			"gold_ore": "#FFD700",
 			"coal": "#021C24",
-			"marble" : "#DEDEDE",
-			"clay" : "#492A16"
+			"marble": "#DEDEDE",
+			"clay": "#492A16"
 		}
 	},
 	"terrain": {
@@ -169,7 +169,7 @@
 	},
 	"landscape": {
 		"has_grass": true,
-		"placement_table" : {
+		"placement_table": {
 			"swamp_goblins:trees:dead:small": {
 				"placement_type": "single",
 				"parameters": {"ground_radius": 2, "exclusion_radius": 3 }
@@ -182,19 +182,19 @@
 				"placement_type": "single",
 				"parameters": {"ground_radius": 3, "exclusion_radius": 5 }
 			},
-			"swamp_goblins:trees:cypress:small" : {
+			"swamp_goblins:trees:cypress:small": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
 			},
-			"swamp_goblins:trees:cypress:medium" : {
+			"swamp_goblins:trees:cypress:medium": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
 			},
-			"swamp_goblins:trees:cypress:large" : {
+			"swamp_goblins:trees:cypress:large": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
 			},
-			"swamp_goblins:trees:bogger:small" : {
+			"swamp_goblins:trees:bogger:small": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
 			},
@@ -262,27 +262,27 @@
 					"exclusion_radius": 1
 				}
 			},
-			"swamp_goblins:boulder:small" : {
-				"placement_type" : "dense",
-				"parameters" : { "grid_multiple": 4, "item_density": 0.19, "exclusion_radius": 1 }
+			"swamp_goblins:boulder:small": {
+				"placement_type": "dense",
+				"parameters": { "grid_multiple": 4, "item_density": 0.19, "exclusion_radius": 1 }
 			},
-			"swamp_goblins:boulder:medium_1" : {
+			"swamp_goblins:boulder:medium_1": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 1, "exclusion_radius": 2 }
 			},
-			"swamp_goblins:boulder:medium_2" : {
+			"swamp_goblins:boulder:medium_2": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 1, "exclusion_radius": 2 }
 			},
-			"swamp_goblins:boulder:medium_3" : {
+			"swamp_goblins:boulder:medium_3": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 1, "exclusion_radius": 2 }
 			},
-			"swamp_goblins:boulder:large_1" : {
+			"swamp_goblins:boulder:large_1": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
 			},
-			"swamp_goblins:boulder:large_2" : {
+			"swamp_goblins:boulder:large_2": {
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
 			}

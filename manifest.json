@@ -136,6 +136,8 @@
 		"commands:market":		"file(data/commands/market)",
 		"commands:travel":			"file(data/commands/travel)",
 		"commands:music":			"file(data/commands/music)",
+		"commands:transform:build_well_roof_clay":	"file(data/commands/transform/build_well_roof_clay.json)",
+		"commands:transform:build_well_wood":		"file(data/commands/transform/build_well_wood.json)",
 
 		"construction:ladder":	"file(entities/construction/ladder)",
 		"construction:brick_fence":		"file(entities/construction/brick_fence)",
@@ -639,6 +641,8 @@
 		"stonehearth:building_templates:index":	"file(data/saved_objects/building_templates_index.json)",
 		"trapper_plus:building_templates:index":"file(data/saved_objects/trapper_plus_templates.json)",
 
+		"stonehearth_ace:construction:simple:water_well": "file(entities/construction/simple_water_well)",
+
 		"stonehearth:data:constants": "file(data/constants.json)",
 		"extra_map_options:data:extra_map_options":"file(data/extra_map_options.json)",
 
@@ -728,6 +732,7 @@
 		"swamp_goblins:jobs:earthmaster":	"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 		"swamp_goblins:jobs:shaman":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 		"swamp_goblins:jobs:worker":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+		"stonehearth:jobs:trapper":	"file(jobs/trapper/trapper_description.json)",
 
 		"swamp_goblins/jobs/bonesmith/bonesmith_abilities/bonesmith_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/earthmaster/earthmaster_abilities/earthmaster_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
@@ -808,7 +813,7 @@
 		"stonehearth:traits_index":"file(data/traits/traits_index_to_merge.json)",
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
-
+		"stonehearth_ace:ui:output_box:filters": "file(ui/data/output_box_filters.json)",
 		"stonehearth_ace/ui/data/season_icons.json":"file(ui/data/season_icons.json)",
 
 		"stonehearth:weapons:bronze_mace":	"file(data/monster_tuning/warrior_hearth/hearthling/paladin_add_to_weapons.json)",
@@ -839,7 +844,10 @@
 		"swamp_goblins:weapons:stone_maul":		"stonehearth_ace:mixins:weapons:mainhand_fracture",
 		"swamp_goblins:weapons:giant_bone_mace":"stonehearth_ace:mixins:weapons:mainhand_fracture_major",
 		"swamp_goblins:weapons:giant_bone_axe":	"stonehearth_ace:mixins:weapons:twohanded_open_wounds_major",
-		"swamp_goblins:weapons:magma_sword":	"stonehearth_ace:mixins:weapons:twohanded_shaken_major"
+		"swamp_goblins:weapons:magma_sword":	"stonehearth_ace:mixins:weapons:twohanded_shaken_major",
+
+		"swamp_goblins/jobs/bonesmith/recipes/construction/wooden_water_well_recipe.json":"stonehearth_ace/swamp_goblins/jobs/common/ace_manual_unlock.json",
+		"swamp_goblins/jobs/earthmaster/recipes/construction/clay_water_well_recipe.json":"stonehearth_ace/swamp_goblins/jobs/common/ace_manual_unlock.json"
 	},
 	"functions": {
 		"play_music": {
@@ -921,8 +929,9 @@
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":	"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json":	"swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
-		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json":	"swamp_goblins/jobs/common/ace_abilities.json",
+		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json":		"swamp_goblins/jobs/common/ace_abilities.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json":	"swamp_goblins/jobs/common/ace_description.json",
+		"stonehearth_ace/swamp_goblins/jobs/common/ace_manual_unlock.json":	"swamp_goblins/jobs/common/ace_manual_unlock.json",
 		"stonehearth_ace/swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json":	"swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json"
 	},
 	"controllers": {

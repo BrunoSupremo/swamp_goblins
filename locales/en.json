@@ -134,6 +134,16 @@
 				"display_name":"Travel",
 				"description":"Choose which goblins will reembark"
 			},
+			"transform":{
+				"build_well_wood": {
+					"display_name": "Build Wooden Water Well (Firefly)",
+					"description": "Order this simple well to be upgraded into a wooden water well. Doing so requires Firefly Essence, a refined item that can be crafted by the Shaman."
+				},
+				"build_well_roof_clay": {
+					"display_name": "Upgrade to Clay",
+					"description": "Upgrade using a crafted Firefly Jewel into a fancy clay well to make your citizens happier and your water always fresh!"
+				}
+			},
 			"weather_stone":{
 				"charge":{
 					"display_name":"Charge the Stone",
@@ -276,9 +286,9 @@
 											"text": "Select a Bonesmith (Level 3+) to help Clan Amberstone."
 										},
 										"borrow_quest_earthmaster": {
-											"title": "Send an Earthmaster",
-											"dialog_title": "Send an Earthmaster",
-											"text": "Select an Earthmaster (Level 3+) to help Clan Amberstone."
+											"title": "Send an Earthshaper",
+											"dialog_title": "Send an Earthshaper",
+											"text": "Select an Earthshaper (Level 3+) to help Clan Amberstone."
 										},
 										"borrow_quest_shaman": {
 											"title": "Send a Shaman",
@@ -323,7 +333,7 @@
 												"dialog_nodes": {
 													"accept": {
 														"bulletin_message": {
-															"00": "\"Splendid! I think even a novice Bonesmith and Earthmaster would work just fine, so long as they're receptive to teaching. It shouldn't take more than two days.\""
+															"00": "\"Splendid! I think even a novice Bonesmith and Earthshaper would work just fine, so long as they're receptive to teaching. It shouldn't take more than two days.\""
 														}
 													},
 													"reject2": {
@@ -333,28 +343,28 @@
 													},
 													"msg1": {
 														"bulletin_message": {
-															"00": "\"Kind greetings, goblin friends! I was struck by an idea after watching your crafters at work - how would you like to send a Bonesmith and an Earthmaster down to our warren for a few days, to learn our various crafting recipes and techniques?\""
+															"00": "\"Kind greetings, goblin friends! I was struck by an idea after watching your crafters at work - how would you like to send a Bonesmith and an Earthshaper down to our warren for a few days, to learn our various crafting recipes and techniques?\""
 														}
 													}
 												}
 											}
 										},
 										"40_recipe_sharing_quest": {
-											"text": "Select a Bonesmith and Earthmaster (Levels 1+) to go learn Amberstone recipes"
+											"text": "Select a Bonesmith and Earthshaper (Levels 1+) to go learn Amberstone recipes"
 										},
 										"40_recipe_sharing_outro": {
 											"dialog_tree_info": {
 												"dialog_nodes": {
 													"msg1": {
 														"bulletin_message": {
-															"00": "Your venturing Bonesmith and Earthmaster have returned, with knowledge of all sorts of Rabbit recipes!<br><br>\"I must say, your citizens shared tales of swamp mushroom recipes with us. I simply must try it sometime...\""
+															"00": "Your venturing Bonesmith and Earthshaper have returned, with knowledge of all sorts of Rabbit recipes!<br><br>\"I must say, your citizens shared tales of swamp mushroom recipes with us. I simply must try it sometime...\""
 														}
 													}
 												}
 											}
 										},
 										"40_grant_recipes_earthmaster": {
-											"bulletin_title": "Amberstone Earthmaster recipes unlocked!"
+											"bulletin_title": "Amberstone Earthshaper recipes unlocked!"
 										},
 										"40_grant_recipes_bonesmith": {
 											"bulletin_title": "Amberstone Bonesmith recipes unlocked!"
@@ -376,14 +386,14 @@
 													},
 													"favor2": {
 														"bulletin_message": {
-															"00": "\"First, I will need to borrow some of your citizens: One experienced Earthmaster to double-check our work and help with reinforcement, plus three other citizens of your choosing to... help reach the tall parts.\"<br><br>\"With that complete, we will return with the weapon, and once you have prepared, we will use it to summon, attack, and destroy the Titan. The attack may take some significant time, so you should prepare for a siege.\"<br><br>\"I should say... this evil is of no <i>immediate</i> threat to you. This is a task to benefit your people's children, and mine.\""
+															"00": "\"First, I will need to borrow some of your citizens: One experienced Earthshaper to double-check our work and help with reinforcement, plus three other citizens of your choosing to... help reach the tall parts.\"<br><br>\"With that complete, we will return with the weapon, and once you have prepared, we will use it to summon, attack, and destroy the Titan. The attack may take some significant time, so you should prepare for a siege.\"<br><br>\"I should say... this evil is of no <i>immediate</i> threat to you. This is a task to benefit your people's children, and mine.\""
 														}
 													}
 												}
 											}
 										},
 										"50_titan_weapon_quest": {
-											"text": "Choose an Earthmaster (level 4+), plus any three other citizens to help Clan Amberstone"
+											"text": "Choose an Earthshaper (level 4+), plus any three other citizens to help Clan Amberstone"
 										}
 									},
 									"titan_already_killed_dialog": {
@@ -534,7 +544,7 @@
 						},
 						"materials_hint":{
 							"title":"Hint",
-							"message":"We heard something about one of your crafters, I think you called it Earthmaster, being good at burning wood items to make coal, is that true? That can be useful for our quest."
+							"message":"We heard something about one of your crafters, I think you called it Earthshaper, being good at burning wood items to make coal, is that true? That can be useful for our quest."
 						},
 						"notice_human_hearth":{
 							"title":"Step up",
@@ -589,10 +599,10 @@
 							"message3_no":"Ok, a quick recap.<br>Orcs, with kobolds and ogres, use a color system to measure each other ranks. Green, blue, red and then purple."
 						},
 						"recipes":{
-							"unlock_gong_green_recipe":"The Earthmaster has unlocked the Green Gong recipe!",
-							"unlock_gong_blue_recipe":"The Earthmaster has unlocked the Blue Gong recipe!",
-							"unlock_gong_red_recipe":"The Earthmaster has unlocked the Red Gong recipe!",
-							"unlock_gong_purple_recipe":"The Earthmaster has unlocked the Purple Gong recipe!"
+							"unlock_gong_green_recipe":"The Earthshaper has unlocked the Green Gong recipe!",
+							"unlock_gong_blue_recipe":"The Earthshaper has unlocked the Blue Gong recipe!",
+							"unlock_gong_red_recipe":"The Earthshaper has unlocked the Red Gong recipe!",
+							"unlock_gong_purple_recipe":"The Earthshaper has unlocked the Purple Gong recipe!"
 						},
 						"challenge_accepted":"Challenge accepted",
 						"green_tier_end_dialog":{
@@ -657,7 +667,7 @@
 			"nature": {
 				"display_name": "Nature Synergy",
 				"description": "Balancing yourself with nature can be hard sometimes, this should help.",
-				"tooltip": "Basic materials from the start, should you need them all."
+				"tooltip": "A safe option for new players. Basic materials from the start, should you need them all."
 			}
 		},
 		"happiness": {
@@ -744,8 +754,8 @@
 				"snack_bar2": "💜 Snack Bar (Tier 2)",
 				"bonesmith_workshop": "💜 Bonesmith Workshop",
 				"bonesmith_workshop2": "💜 Bonesmith Workshop (Tier 2)",
-				"earthmaster_workshop": "💜 Earthmaster Workshop",
-				"earthmaster_workshop2": "💜 Earthmaster Workshop (Tier 2)",
+				"earthmaster_workshop": "💜 Earthshaper Workshop",
+				"earthmaster_workshop2": "💜 Earthshaper Workshop (Tier 2)",
 				"shaman_center": "💜 Shaman Center",
 				"shaman_center2": "💜 Shaman Center (Tier 2)",
 				"spirit_walker_sanctuary": "💜 Spirit Walker Sanctuary",
@@ -758,7 +768,8 @@
 		},
 		"traits": {
 			"party_goblin": {
-				"display_name": "Party Goblin"
+				"display_name": "Party Goblin",
+				"description": "[name(i18n_data.entity)] loves to tell jokes and wear funny hats. Are they good? It's tough to say, but they frequently seem to leave others with a smile."
 			},
 			"firefly_chaser": {
 				"display_name": "Firefly Chaser",
@@ -1602,7 +1613,7 @@
 					"perk_000_name": "Journeyman's Knowledge",
 					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item.",
 					"perk_001_name": "Job Opportunities",
-					"perk_001_description": "Different materials are suddenly more interesting. This Bonesmith can be promoted to a Earthmaster."
+					"perk_001_description": "Different materials are suddenly more interesting. This Bonesmith can be promoted to a Earthshaper."
 				},
 				"level_5_data": {
 					"perk_000_name": "Master's Insight",
@@ -1634,7 +1645,7 @@
 		},
 		"earthmaster": {
 			"earthmaster_description": {
-				"display_name": "Earthmaster",
+				"display_name": "Earthshaper",
 				"description": "Craft advance items and decorations using hard materials like stone and clay",
 				"requirements": "Crafted by Shaman",
 				"level_1_data": {
@@ -1647,21 +1658,21 @@
 				},
 				"level_3_data": {
 					"perk_000_name": "Journeyman's Knowledge",
-					"perk_000_description": "When inspiration strikes, the Earthmaster may now craft an especially Fine quality of item.",
+					"perk_000_description": "When inspiration strikes, the Earthshaper may now craft an especially Fine quality of item.",
 					"perk_001_name": "Magma Smithing",
 					"perk_001_description": "What about rocks and metals as soft as clay? Liquid fire as some call it."
 				},
 				"level_5_data": {
 					"perk_000_name": "Master's Insight",
-					"perk_000_description": "The Earthmaster can now create items of Excellent quality, and will make Fine quality items more often."
+					"perk_000_description": "The Earthshaper can now create items of Excellent quality, and will make Fine quality items more often."
 				}
 			},
 			"earthmaster_chisel": {
-				"display_name": "Earthmaster Chisel",
+				"display_name": "Earthshaper Chisel",
 				"earthmaster_chisel_talisman": {
-					"display_name": "Earthmaster Chisel",
+					"display_name": "Earthshaper Chisel",
 					"description": "To sculpt hard materials",
-					"flavor": "Promotes a goblin to Earthmaster"
+					"flavor": "Promotes a goblin to Earthshaper"
 				},
 				"description": "To sculpt hard materials"
 			},
@@ -1980,7 +1991,7 @@
 							"display_name":"Jobs",
 							"beast_tamer":"Beast Tamer",
 							"bonesmith":"Bonesmith",
-							"earthmaster":"Earthmaster",
+							"earthmaster":"Earthshaper",
 							"shaman":"Shaman",
 							"spirit_walker":"Spirit Walker",
 							"trapper":"Trapper",
@@ -2066,7 +2077,7 @@
 							},
 							"topic2":{
 								"title":"Jobs:",
-								"desc1":"Can be promoted to Warrior, Shaman, Spirit Walker, Trapper, Beast Tamer, Bonesmith and Earthmaster.",
+								"desc1":"Can be promoted to Warrior, Shaman, Spirit Walker, Trapper, Beast Tamer, Bonesmith and Earthshaper.",
 								"desc2":"(With mods, some other jobs may be possible too)"
 							},
 							"topic3":{
@@ -2107,11 +2118,11 @@
 							},
 							"topic3":{
 								"title":"Promotion:",
-								"desc1":"Bonesmith can later be promoted into Earthmaster, an advanced high level crafter class."
+								"desc1":"Bonesmith can later be promoted into Earthshaper, an advanced high level crafter class."
 							}
 						},
 						"earthmaster":{
-							"title":"Earthmaster",
+							"title":"Earthshaper",
 							"description1":"High level, complex materials crafter",
 							"topic1":{
 								"title":"Description:",
@@ -2124,7 +2135,7 @@
 							},
 							"topic3":{
 								"title":"Beyond crafting:",
-								"desc1":"Earthmaster can recycle items made from wood, stone and clay, or burn wood items to make coal",
+								"desc1":"Earthshaper can recycle items made from wood, stone and clay, or burn wood items to make coal",
 								"desc2":"The class can also repair most items, like door, turrets and other breakable gizmos"
 							}
 						},
@@ -2323,9 +2334,9 @@
 							"required_job_text": "Requires a Bonesmith"
 						},
 						"earthmaster": {
-							"display_name": "Earthmaster Craft Menu",
+							"display_name": "Earthshaper Craft Menu",
 							"description": "Stone and clay crafting.",
-							"required_job_text": "Requires a Earthmaster"
+							"required_job_text": "Requires a Earthshaper"
 						},
 						"shaman": {
 							"display_name": "Shaman Craft Menu",

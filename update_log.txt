@@ -1,21 +1,17 @@
 Additions:
-Swamp Zillas, high level enemy random spawn
 
 Changes:
-Workers will not hunt critters anymore. The cons outweighted the pros, confusing newbies and annoying old players
-Beast Tamer critters will not drop items when defeated
-Party Goblin trait makes them more chatty
-Max level military (Warriors, Spirit Walkers and Beast Tamers) will increase the town "military score" (you can see it in the town menu, shortcut "T")
-In the swamp, varanus have a higher chance of being picked for random enemies spawnings
+Earthmaster renamed to Earthshaper (to avoid things like "Master Earthmaster")
+Rebalanced some items gold values (less exploitable trades)
+Replaced Flower Helmet and Spear from "Goblin Toys" loadout with Upgraded Worker Outfit and Strong Healing Tonic
+Replaced herb, fiber and wood resources from "Nature Synergy" loadout with actual plantable swamp mushrooms, flowers and cattail plants (useful for kickstarting on a different biome)
 
 Changes for ACE:
-Swamp Trees can be replanted when using the "Gather & Replant" harvest command (except dead trees)
-With Firefly, ace friendly visitors tutorials are delayed to after the human camp quest is completed (for lore and mechanics reasons)
-Custom foraging loot for the swamp
+Goblin crafters added into new output filter options
+Reworked water wells to match ace system (i.e. place a simple well, then upgrade it)
 
 Fixes:
-Empty job perk icon on Earthmaster
-Error [attempt to index local 'role_data' (a nil value)] when an enemy varanus spawned
 
 Fixes for ACE:
-Shamans can finally work with bees again
+Goblins can be promoted into Trappers again
+Fixed foraging tool in the biome not having tree seeds as possible loot

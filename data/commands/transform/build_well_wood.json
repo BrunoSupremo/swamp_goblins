@@ -1,0 +1,15 @@
+{
+	"type": "command",
+	"name": "firefly_build_well_wood",
+	"group": "construction_choice",
+	"display_name": "i18n(swamp_goblins:data.commands.transform.build_well_wood.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.transform.build_well_wood.description)",
+	"default_enabled": true,
+	"ordinal": 101,
+	"icon": "/swamp_goblins/entities/construction/wooden_water_well/wooden_water_well.png",
+	"action": "call",
+	"function": "stonehearth_ace:transform_command",
+	"args": [
+		"firefly"
+	]
+}

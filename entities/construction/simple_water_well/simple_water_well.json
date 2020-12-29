@@ -1,0 +1,27 @@
+{
+	"entity_data": {
+		"stonehearth_ace:transform_data": {
+			"progress_text": "stonehearth_ace:ui.game.unit_frame.transform.progress.building",
+			"transform_options": {
+				"firefly": {
+					"transform_uri": "swamp_goblins:construction:wooden_water_well",
+					"command": "swamp_goblins:commands:transform:build_well_wood",
+					"request_action": "stonehearth_ace:transform",
+					"request_action_overlay_effect": "stonehearth_ace:effects:transform_worker_upgrade_overlay_effect",
+					"transform_ingredient_uri": "swamp_goblins:resources:firefly_essense",
+					"transform_ingredient_auto_craft": true,
+					"transforming_worker_effect": "work",
+					"transforming_worker_effect_times": 6,
+					"transform_effect": "stonehearth:effects:poof_effect",
+					"worker_required_job": {
+						"stonehearth:jobs:worker": true,
+						"stonehearth:jobs:carpenter": true,
+						"stonehearth:jobs:potter": true,
+						"swamp_goblins:jobs:bonesmith": true,
+						"swamp_goblins:jobs:earthmaster": true
+					}
+				}
+			}
+		}
+	}
+}

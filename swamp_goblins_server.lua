@@ -1,15 +1,12 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.12.9")
+print("Swamp Goblins Mod version 20.12.29")
 
 --[[
-
-window box stuff from ace
 
 warrior rework:
 	max level at 3
 	two job promotions after:
 		light/fast combat and heavy/strong combat
-
 
 
 reversed porticulis stone gate
@@ -23,7 +20,7 @@ trapper fancy boots upgrade
 ace stuff:
 	add ace tools and tools upgrades
 	fuel system (Wait gobbos can't chop wood?)
-	herb planters
+	herb planters, window box
 	wounds and tonics
 
 orc quest
@@ -105,7 +102,11 @@ redo:
 	travel stall
 fisher:
 	swamp fish colors, eels, blowfish
+
 Bugs:
+Ulrich Humsk:
+the new mushrooms can't be autoharvested --seems to work fine
+
 ]]
 
 function swamp_goblins:_on_services_init()
