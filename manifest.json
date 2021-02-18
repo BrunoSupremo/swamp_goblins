@@ -405,6 +405,32 @@
 		"music:bongo":		"file(entities/music/bongo)",
 		"music:xylophone":	"file(entities/music/xylophone)",
 
+		"music:tier_1:day:allada":		"file(data/music/day_music/allada.ogg)",
+		"music:tier_1:day:night-cave":	"file(data/music/day_music/night-cave.ogg)",
+		"music:tier_1:day:silver-flame":"file(data/music/day_music/silver-flame.ogg)",
+		"music:tier_1:day:zanzibar":	"file(data/music/day_music/zanzibar.ogg)",
+		"music:tier_2:day:infados":				"file(data/music/day_music/infados.ogg)",
+		"music:tier_2:day:nightdreams":			"file(data/music/day_music/nightdreams.ogg)",
+		"music:tier_2:day:river-fire":			"file(data/music/day_music/river-fire.ogg)",
+		"music:tier_2:day:truth-in-the-stones":	"file(data/music/day_music/truth-in-the-stones.ogg)",
+		"music:tier_3:day:anglozulu":		"file(data/music/day_music/anglozulu.ogg)",
+		"music:tier_3:day:dubakupado":		"file(data/music/day_music/dubakupado.ogg)",
+		"music:tier_3:day:rite-of-passage":	"file(data/music/day_music/rite-of-passage.ogg)",
+		"music:tier_3:day:slow-heat":		"file(data/music/day_music/slow-heat.ogg)",
+
+		"music:tier_1:night:accralate":	"file(data/music/night_music/accralate.ogg)",
+		"music:tier_1:night:artifact":	"file(data/music/night_music/artifact.ogg)",
+		"music:tier_1:night:kumasi":	"file(data/music/night_music/kumasi.ogg)",
+		"music:tier_1:night:whimsy":	"file(data/music/night_music/whimsy.ogg)",
+		"music:tier_2:night:adding-the-sun":"file(data/music/night_music/adding-the-sun.ogg)",
+		"music:tier_2:night:at-the-shore":	"file(data/music/night_music/at-the-shore.ogg)",
+		"music:tier_2:night:birch-run":		"file(data/music/night_music/birch-run.ogg)",
+		"music:tier_2:night:stompdance":	"file(data/music/night_music/stompdance.ogg)",
+		"music:tier_3:night:bumba-crossing":"file(data/music/night_music/bumba-crossing.ogg)",
+		"music:tier_3:night:digya":			"file(data/music/night_music/digya.ogg)",
+		"music:tier_3:night:energizing":	"file(data/music/night_music/energizing.ogg)",
+		"music:tier_3:night:lotus":			"file(data/music/night_music/lotus.ogg)",
+
 		"plants:cattail":		"file(entities/plants/cattail)",
 		"plants:cattail:seed":	"file(entities/plants/cattail/seed)",
 		"plants:cattail:sprout":"file(entities/plants/cattail/sprout)",
@@ -778,6 +804,12 @@
 		"stonehearth:monsters:avian:ostrich":	"file(entities/monsters/avian/nerf.json)",
 
 		"stonehearth:personal_logs:dreams": "file(data/personality/dreams.json)",
+
+		"swamp_goblins:plants:cattail":			"autoharvest_mod/mixins/autoharvest_off.json",
+		"swamp_goblins:plants:giant_flower":	"autoharvest_mod/mixins/autoharvest_off.json",
+		"swamp_goblins:plants:small_mushroom":	"autoharvest_mod/mixins/autoharvest_off.json",
+		"swamp_goblins:plants:mushroom":		"autoharvest_mod/mixins/autoharvest_off.json",
+		"swamp_goblins:plants:tall_mushroom":	"autoharvest_mod/mixins/autoharvest_off.json",
 
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
 

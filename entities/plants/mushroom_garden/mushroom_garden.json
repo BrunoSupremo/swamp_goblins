@@ -10,6 +10,7 @@
 			}
 		},
 		"stonehearth:renewable_resource_node": {
+			"auto_harvest": false,
 			"category": "harvest",
 			"harvest_overlay_effect": "stonehearth:effects:harvest_plant_overlay_effect",
 			"unripe_description": "i18n(swamp_goblins:entities.plants.mushroom_garden.unripe_description)",

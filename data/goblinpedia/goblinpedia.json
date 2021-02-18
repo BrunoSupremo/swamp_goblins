@@ -76,6 +76,19 @@
 							"open_page_id":"fauna_varanus"
 						}
 					}
+				},
+				"others":{
+					"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.swamp.others.display_name)",
+					"items":{
+						"water":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.swamp.others.water)",
+							"open_page_id":"others_water"
+						},
+						"weather":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.swamp.others.weather)",
+							"open_page_id":"others_weather"
+						}
+					}
 				}
 			}
 		}
@@ -446,6 +459,50 @@
 					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.topic3.title)",
 					"descriptions":{
 						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.fauna.varanus.topic3.desc1)"
+					}
+				}
+			}
+		},
+		"others_water":{
+			"page_id":"others_water",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.water.title)",
+			"image":"/swamp_goblins/data/goblinpedia/water.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.water.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.water.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.water.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.water.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.water.topic2.desc1)"
+					}
+				}
+			}
+		},
+		"others_weather":{
+			"page_id":"others_weather",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.weather.title)",
+			"image":"/stonehearth/data/weather/foggy/foggy.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.weather.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.weather.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.weather.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.weather.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.weather.topic2.desc1)"
 					}
 				}
 			}

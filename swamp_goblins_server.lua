@@ -1,7 +1,16 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 20.12.29")
+print("Swamp Goblins Mod version 21.1.25")
 
 --[[
+
+giant bag for storage
+
+goblinpedia:
+	vegetables substitute
+	templates
+	party goblin
+
+speed up crafting with bonus from nearby items
 
 warrior rework:
 	max level at 3
@@ -37,7 +46,7 @@ your town is way better than it looks, you should display it somehow
 --tier 3 reached, new templates, etc...
 
 
-move default market stall to earthmaster
+move default market stall to earthshaper
 
 non blue skin trait
 
@@ -55,7 +64,7 @@ old shepherd_outfit as a new goblin outfit? (looks good at least)
 spirit world has inverted colors?
 
 mobs:
-	slimes, swamp zilla, mosquito
+	slimes, mosquito
 
 party goblin:
 	different tattoo color?
@@ -84,8 +93,7 @@ furniture:
 	bed, chair, table, bench
 templates:
 	combat houses (n.a. inspired roofs?)
-earthmaster:
-	change name to earthshaper?
+earthshaper:
 	dart traps, smoke traps
 	upgraded workbenches
 gizmos:
@@ -104,8 +112,7 @@ fisher:
 	swamp fish colors, eels, blowfish
 
 Bugs:
-Ulrich Humsk:
-the new mushrooms can't be autoharvested --seems to work fine
+
 
 ]]
 

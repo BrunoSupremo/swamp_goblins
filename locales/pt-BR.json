@@ -2011,6 +2011,11 @@
 							"giple": "Flor Giple",
 							"mushroom": "Cogumelo do Pântano",
 							"tree": "Árvores"
+						},
+						"others": {
+							"display_name": "Outros",
+							"water": "Água",
+							"weather": "Clima"
 						}
 					}
 				},
@@ -2319,6 +2324,32 @@
 							"topic3": {
 								"title": "Interação:",
 								"desc1": "When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight with them."
+							}
+						}
+					},
+					"others": {
+						"water": {
+							"title": "Água",
+							"description1": "Cobre a maioria das áreas baixas",
+							"topic1": {
+								"title": "Descrição:",
+								"desc1": "Água parada, rasa e de cor escura."
+							},
+							"topic2": {
+								"title": "Interação:",
+								"desc1": "É difícil mover-se nesta água. O solo de lama abaixo dela certamente tornará todos mais lentos ao cruzá-lo, e provavelmente infelizes também."
+							}
+						},
+						"weather": {
+							"title": "Clima",
+							"description1": "Principalmente nebuloso. Nesta região existem apenas duas temporadas",
+							"topic1": {
+								"title": "Estação seca:",
+								"desc1": "Maior chance de dissipar o nevoeiro e ter céu claro com altas temperaturas. Raramente chove."
+							},
+							"topic2": {
+								"title": "Estação chuvosa:",
+								"desc1": "Principalmente chuva ou chuva fraca."
 							}
 						}
 					}

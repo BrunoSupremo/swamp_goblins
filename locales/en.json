@@ -2012,6 +2012,11 @@
 							"giple":"Giple Flower",
 							"mushroom":"Swamp Mushroom",
 							"tree":"Trees"
+						},
+						"others":{
+							"display_name":"Others",
+							"water":"Water",
+							"weather":"Weather"
 						}
 					}
 				},
@@ -2320,6 +2325,32 @@
 							"topic3":{
 								"title":"Interaction:",
 								"desc1":"When in the wild they are hostile, but a beast tamer can summon tamed varanus to fight with them."
+							}
+						}
+					},
+					"others":{
+						"water":{
+							"title":"Water",
+							"description1":"Covers most of the low areas",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Still water, shallow and dark in color."
+							},
+							"topic2":{
+								"title":"Interaction:",
+								"desc1":"Moving in this water is hard. The mud soil below it will surely make everyone slower while crossing it, and probably unhappy too."
+							}
+						},
+						"weather":{
+							"title":"Weather",
+							"description1":"Mostly foggy. In this region there are only two seasons",
+							"topic1":{
+								"title":"Dry season:",
+								"desc1":"Higher chance of dissipating the fog and having clear sky with hot temperatures. Rarely rains."
+							},
+							"topic2":{
+								"title":"Wet season:",
+								"desc1":"Mostly rain or light rain."
 							}
 						}
 					}

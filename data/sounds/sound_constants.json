@@ -5,70 +5,140 @@
 			"swamp_goblins:kingdoms:firefly_clan": {
 				"tier_to_day_music_track": {
 					"idle_day_music_tier_1": {
-						"track"  : [
-							"stonehearth:music:lvlmusic_ray_spring_1_day",
-							"stonehearth:music:lvlmusic_ray_autumn_1_day",
-							"stonehearth:music:lvlmusic_ray_summer_1_day",
-							"stonehearth:music:lvlmusic_ray_spring_2_day",
-							"stonehearth:music:lvlmusic_ray_summer_2_day"
+						"track" : [
+							"swamp_goblins:music:tier_1:day:allada",
+							"swamp_goblins:music:tier_1:day:night-cave",
+							"swamp_goblins:music:tier_1:day:silver-flame",
+							"swamp_goblins:music:tier_1:day:zanzibar"
 						],
-						"loop"   : false,
+						"loop" : false,
 						"fade_in": 2000,
 						"volume" : 40
 					},
 					"idle_day_music_tier_2": {
-						"track"  : [
-							"stonehearth:music:lvlmusic_ray_spring_2_day",
-							"stonehearth:music:lvlmusic_ray_summer_2_day",
-							"stonehearth:music:lvlmusic_ray_spring_3_day",
-							"stonehearth:music:lvlmusic_ray_winter_2_day"
+						"track" : [
+							"swamp_goblins:music:tier_1:day:allada",
+							"swamp_goblins:music:tier_1:day:night-cave",
+							"swamp_goblins:music:tier_1:day:silver-flame",
+							"swamp_goblins:music:tier_1:day:zanzibar",
+
+							"swamp_goblins:music:tier_2:day:infados",
+							"swamp_goblins:music:tier_2:day:nightdreams",
+							"swamp_goblins:music:tier_2:day:river-fire",
+							"swamp_goblins:music:tier_2:day:truth-in-the-stones",
+
+							"swamp_goblins:music:tier_2:day:infados",
+							"swamp_goblins:music:tier_2:day:nightdreams",
+							"swamp_goblins:music:tier_2:day:river-fire",
+							"swamp_goblins:music:tier_2:day:truth-in-the-stones"
 						],
-						"loop"   : false,
+						"loop" : false,
 						"fade_in": 2000,
 						"volume" : 40
 					},
 					"idle_day_music_tier_3": {
-						"track"  : [
-							"stonehearth:music:lvlmusic_ray_spring_3_day",
-							"stonehearth:music:lvlmusic_ray_summer_3_day",
-							"stonehearth:music:lvlmusic_ray_winter_3_day"
+						"track" : [
+							"swamp_goblins:music:tier_1:day:allada",
+							"swamp_goblins:music:tier_1:day:night-cave",
+							"swamp_goblins:music:tier_1:day:silver-flame",
+							"swamp_goblins:music:tier_1:day:zanzibar",
+
+							"swamp_goblins:music:tier_2:day:infados",
+							"swamp_goblins:music:tier_2:day:nightdreams",
+							"swamp_goblins:music:tier_2:day:river-fire",
+							"swamp_goblins:music:tier_2:day:truth-in-the-stones",
+
+							"swamp_goblins:music:tier_3:day:anglozulu",
+							"swamp_goblins:music:tier_3:day:dubakupado",
+							"swamp_goblins:music:tier_3:day:rite-of-passage",
+							"swamp_goblins:music:tier_3:day:slow-heat",
+
+							"swamp_goblins:music:tier_3:day:anglozulu",
+							"swamp_goblins:music:tier_3:day:dubakupado",
+							"swamp_goblins:music:tier_3:day:rite-of-passage",
+							"swamp_goblins:music:tier_3:day:slow-heat",
+
+							"swamp_goblins:music:tier_3:day:anglozulu",
+							"swamp_goblins:music:tier_3:day:dubakupado",
+							"swamp_goblins:music:tier_3:day:rite-of-passage",
+							"swamp_goblins:music:tier_3:day:slow-heat",
+
+							"swamp_goblins:music:tier_3:day:anglozulu",
+							"swamp_goblins:music:tier_3:day:dubakupado",
+							"swamp_goblins:music:tier_3:day:rite-of-passage",
+							"swamp_goblins:music:tier_3:day:slow-heat"
 						],
-						"loop"   : false,
+						"loop" : false,
 						"fade_in": 2000,
 						"volume" : 40
 					}
 				},
 				"tier_to_night_music_track": {
 					"idle_night_music_tier_1": {
-						"track"  : [
-							"stonehearth:music:lvlmusic_ray_spring_1_night",
-							"stonehearth:music:lvlmusic_ray_autumn_1_night",
-							"stonehearth:music:lvlmusic_ray_winter_1_night",
-							"stonehearth:music:lvlmusic_ray_summer_2_night"
+						"track" : [
+							"swamp_goblins:music:tier_1:night:accralate",
+							"swamp_goblins:music:tier_1:night:artifact",
+							"swamp_goblins:music:tier_1:night:kumasi",
+							"swamp_goblins:music:tier_1:night:whimsy"
 						],
-						"loop"   : false,
+						"loop" : false,
 						"fade_in": 2000,
 						"volume" : 40
 					},
 					"idle_night_music_tier_2": {
-						"track"  : [
-							"stonehearth:music:lvlmusic_ray_spring_2_night",
-							"stonehearth:music:lvlmusic_ray_autumn_2_night",
-							"stonehearth:music:lvlmusic_ray_summer_2_night",
-							"stonehearth:music:lvlmusic_ray_winter_2_night"
+						"track" : [
+							"swamp_goblins:music:tier_1:night:accralate",
+							"swamp_goblins:music:tier_1:night:artifact",
+							"swamp_goblins:music:tier_1:night:kumasi",
+							"swamp_goblins:music:tier_1:night:whimsy",
+							
+							"swamp_goblins:music:tier_2:night:adding-the-sun",
+							"swamp_goblins:music:tier_2:night:at-the-shore",
+							"swamp_goblins:music:tier_2:night:birch-run",
+							"swamp_goblins:music:tier_2:night:stompdance",
+							
+							"swamp_goblins:music:tier_2:night:adding-the-sun",
+							"swamp_goblins:music:tier_2:night:at-the-shore",
+							"swamp_goblins:music:tier_2:night:birch-run",
+							"swamp_goblins:music:tier_2:night:stompdance"
 						],
-						"loop"   : false,
+						"loop" : false,
 						"fade_in": 2000,
 						"volume" : 40
 					},
 					"idle_night_music_tier_3": {
-						"track"  : [
-							"stonehearth:music:lvlmusic_ray_spring_3_night",
-							"stonehearth:music:lvlmusic_ray_autumn_3_night",
-							"stonehearth:music:lvlmusic_ray_summer_2_night",
-							"stonehearth:music:lvlmusic_ray_winter_3_night"
+						"track" : [
+							"swamp_goblins:music:tier_1:night:accralate",
+							"swamp_goblins:music:tier_1:night:artifact",
+							"swamp_goblins:music:tier_1:night:kumasi",
+							"swamp_goblins:music:tier_1:night:whimsy",
+							
+							"swamp_goblins:music:tier_2:night:adding-the-sun",
+							"swamp_goblins:music:tier_2:night:at-the-shore",
+							"swamp_goblins:music:tier_2:night:birch-run",
+							"swamp_goblins:music:tier_2:night:stompdance",
+
+							"swamp_goblins:music:tier_3:night:bumba-crossing",
+							"swamp_goblins:music:tier_3:night:digya",
+							"swamp_goblins:music:tier_3:night:energizing",
+							"swamp_goblins:music:tier_3:night:lotus",
+
+							"swamp_goblins:music:tier_3:night:bumba-crossing",
+							"swamp_goblins:music:tier_3:night:digya",
+							"swamp_goblins:music:tier_3:night:energizing",
+							"swamp_goblins:music:tier_3:night:lotus",
+
+							"swamp_goblins:music:tier_3:night:bumba-crossing",
+							"swamp_goblins:music:tier_3:night:digya",
+							"swamp_goblins:music:tier_3:night:energizing",
+							"swamp_goblins:music:tier_3:night:lotus",
+
+							"swamp_goblins:music:tier_3:night:bumba-crossing",
+							"swamp_goblins:music:tier_3:night:digya",
+							"swamp_goblins:music:tier_3:night:energizing",
+							"swamp_goblins:music:tier_3:night:lotus"
 						],
-						"loop"   : false,
+						"loop" : false,
 						"fade_in": 2000,
 						"volume" : 40
 					}
