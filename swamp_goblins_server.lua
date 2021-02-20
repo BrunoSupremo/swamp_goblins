@@ -1,9 +1,7 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 21.1.25")
+print("Swamp Goblins Mod version 21.2.20")
 
 --[[
-
-giant bag for storage
 
 goblinpedia:
 	vegetables substitute

@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 77,
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.containers.giant_bag.display_name)",
+	"description": "i18n(swamp_goblins:entities.containers.giant_bag.description)",
+	"flavor": "i18n(swamp_goblins:entities.containers.giant_bag.flavor)",
+	"portrait": "/swamp_goblins/entities/containers/giant_bag/giant_bag.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"level_requirement": 6,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 10
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:containers:giant_bag"
+		}
+	]
+}
