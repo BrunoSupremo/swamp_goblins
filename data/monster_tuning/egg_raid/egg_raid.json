@@ -1,0 +1,218 @@
+{
+	"doodles": {
+		"bulletin":"i18n(swamp_goblins:ui.data.egg_raid.doodles)",
+		"weight": 10,
+		"at_population": {
+			"min":0,
+			"max":15
+		},
+		"monster_spawn_ratio_per_citizen":1,
+		"monsters_kingdom":"forest",
+		"monsters": {
+			"doodles": {
+				"uri": "swamp_goblins:monsters:doodles_egg_raider",
+				"weight": 10
+			}
+		}
+	},
+	"doodles_giant": {
+		"bulletin":"i18n(swamp_goblins:ui.data.egg_raid.doodles_giant)",
+		"weight": 999,
+		"at_population": {
+			"min":10,
+			"max":10
+		},
+		"monster_spawn_ratio_per_citizen":0.1,
+		"monsters_kingdom":"forest",
+		"monsters": {
+			"doodles_giant": {
+				"uri": "swamp_goblins:monsters:doodles_giant_egg_raider",
+				"weight": 10,
+				"add_door_break_ability":true
+			}
+		}
+	},
+	"entling": {
+		"bulletin":"i18n(swamp_goblins:ui.data.egg_raid.entling)",
+		"weight": 10,
+		"at_population": {
+			"min":10,
+			"max":20
+		},
+		"monster_spawn_ratio_per_citizen":0.75,
+		"monsters_kingdom":"forest",
+		"monsters": {
+			"entling": {
+				"uri": "stonehearth:monsters:forest:entling",
+				"weight": 15
+			},
+			"entling_door_breaker": {
+				"uri": "stonehearth:monsters:forest:entling",
+				"weight": 5,
+				"add_door_break_ability":true
+			}
+		}
+	},
+	"entling_army": {
+		"bulletin":"i18n(swamp_goblins:ui.data.egg_raid.entling_army)",
+		"weight": 999,
+		"at_population": {
+			"min":15,
+			"max":15
+		},
+		"monster_spawn_ratio_per_citizen":1.5,
+		"monsters_kingdom":"forest",
+		"monsters": {
+			"entling": {
+				"uri": "stonehearth:monsters:forest:entling",
+				"weight": 10
+			},
+			"entling_door_breaker": {
+				"uri": "stonehearth:monsters:forest:entling",
+				"weight": 5,
+				"add_door_break_ability":true
+			}
+		}
+	},
+	"varanus": {
+		"bulletin":"i18n(swamp_goblins:ui.data.egg_raid.varanus)",
+		"weight": 10,
+		"at_population": {
+			"min":15,
+			"max":25
+		},
+		"monster_spawn_ratio_per_citizen":0.5,
+		"monsters_kingdom":"forest",
+		"monsters": {
+			"varanus": {
+				"uri": "stonehearth:monsters:forest:alligator",
+				"weight": 20
+			},
+			"varanus_door_breaker": {
+				"uri": "stonehearth:monsters:forest:alligator",
+				"weight": 5,
+				"add_door_break_ability":true,
+				"health_per_citizen":15
+			}
+		}
+	},
+	"zilla": {
+		"bulletin":"i18n(swamp_goblins:ui.data.egg_raid.zilla)",
+		"weight": 10,
+		"at_population": {
+			"min":20,
+			"max":30000
+		},
+		"monster_spawn_ratio_per_citizen":0.1,
+		"monsters_kingdom":"forest",
+		"monsters": {
+			"zilla": {
+				"uri": "stonehearth:monsters:forest:zilla",
+				"weight": 10,
+				"add_door_break_ability":true,
+				"health_per_citizen":30
+			}
+		}
+	},
+	"undead": {
+		"bulletin":"i18n(swamp_goblins:ui.data.egg_raid.undead)",
+		"weight": 10,
+		"at_population": {
+			"min":25000,
+			"max":99000
+		},
+		"monster_spawn_ratio_per_citizen":0.5,
+		"monsters_kingdom":"undead",
+		"monsters": {
+			"undead1": {
+				"uri": "stonehearth:monsters:undead:skeleton",
+				"weight": 10
+			},
+			"undead2": {
+				"uri": "stonehearth:monsters:undead:skeleton_female",
+				"weight": 10
+			},
+			"undead3": {
+				"uri": "stonehearth:monsters:undead:zombie",
+				"weight": 10
+			},
+			"undead4": {
+				"uri": "stonehearth:monsters:undead:zombie_female",
+				"weight": 10
+			},
+			"giant1": {
+				"uri": "stonehearth:monsters:undead:skeleton:giant_female",
+				"weight": 2,
+				"add_door_break_ability":true
+			},
+			"giant2": {
+				"uri": "stonehearth:monsters:undead:skeleton:giant_male",
+				"weight": 2,
+				"add_door_break_ability":true
+			},
+			"giant3": {
+				"uri": "stonehearth:monsters:undead:zombie:giant_female",
+				"weight": 2,
+				"add_door_break_ability":true
+			},
+			"giant4": {
+				"uri": "stonehearth:monsters:undead:zombie:giant_male",
+				"weight": 2,
+				"add_door_break_ability":true
+			}
+		}
+	},
+	"undead_army": {
+		"bulletin":"i18n(swamp_goblins:ui.data.egg_raid.undead_army)",
+		"weight": 999,
+		"at_population": {
+			"min":30000,
+			"max":30000
+		},
+		"monster_spawn_ratio_per_citizen":1,
+		"monsters_kingdom":"undead",
+		"monsters": {
+			"necro": {
+				"uri": "stonehearth:monsters:undead:necromancer",
+				"weight": 5,
+				"add_door_break_ability":true
+			},
+			"undead1": {
+				"uri": "stonehearth:monsters:undead:skeleton",
+				"weight": 10
+			},
+			"undead2": {
+				"uri": "stonehearth:monsters:undead:skeleton_female",
+				"weight": 10
+			},
+			"undead3": {
+				"uri": "stonehearth:monsters:undead:zombie",
+				"weight": 10
+			},
+			"undead4": {
+				"uri": "stonehearth:monsters:undead:zombie_female",
+				"weight": 10
+			},
+			"giant1": {
+				"uri": "stonehearth:monsters:undead:skeleton:giant_female",
+				"weight": 2,
+				"add_door_break_ability":true
+			},
+			"giant2": {
+				"uri": "stonehearth:monsters:undead:skeleton:giant_male",
+				"weight": 2,
+				"add_door_break_ability":true
+			},
+			"giant3": {
+				"uri": "stonehearth:monsters:undead:zombie:giant_female",
+				"weight": 2,
+				"add_door_break_ability":true
+			},
+			"giant4": {
+				"uri": "stonehearth:monsters:undead:zombie:giant_male",
+				"weight": 2,
+				"add_door_break_ability":true
+			}
+		}
+	}
+}

@@ -1,0 +1,85 @@
+{
+	"type" : "entity",
+	"mixins": "swamp_goblins:summons:doodles",
+	"components": {
+		"mixintypes": {
+			"stonehearth:loot_drops": "remove"
+		},
+		"render_info": {
+			"scale":0.5
+		},
+		"stonehearth:attributes": {
+			"speed": {
+				"type": "basic",
+				"value": 90
+			},
+			"muscle": {
+				"type": "basic",
+				"value": 100
+			},
+			"menace": {
+				"type": "basic",
+				"value": 300
+			},
+			"courage": {
+				"type": "basic",
+				"value": 300
+			},
+			"exp_reward": {
+				"type": "basic",
+				"value": 200
+			},
+			"additive_dmg_modifier": {
+				"type": "basic",
+				"value": 10
+			},
+			"multiplicative_dmg_modifier": {
+				"type": "basic",
+				"value": 10
+			},
+			"additive_armor_modifier": {
+				"type": "basic",
+				"value": 10
+			},
+			"multiplicative_armor_modifier": {
+				"type": "basic",
+				"value": 10
+			},
+			"multiplicative_target_armor_modifier": {
+				"type": "basic",
+				"value": 10
+			},
+			"additive_target_armor_modifier": {
+				"type": "basic",
+				"value": 10
+			},
+			"additive_weapon_range_modifier": {
+				"type": "basic",
+				"value": 10
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:entity_radius": 2.5,
+		"stonehearth:entity_reach": 2.0,
+		"stonehearth:catalog": {
+			"description": "i18n(swamp_goblins:entities.monsters.doodles_egg_raider.description)"
+		},
+		"mixintypes": {
+			"stonehearth:ai_packs": "override"
+		},
+		"stonehearth:ai_packs": {
+			"packs": [
+				"stonehearth:ai_pack:critter",
+				"stonehearth:ai_pack:death",
+				"stonehearth:ai_pack:patrolling",
+				"stonehearth:ai_pack:combat_control",
+				"stonehearth:ai_pack:human",
+				"stonehearth:ai_pack:combat",
+				"stonehearth:ai_pack:idle",
+				"stonehearth:ai_pack:idle:bored:idle_effects",
+				"stonehearth:ai_pack:idle:bored:wander"
+			]
+		}
+	}
+}

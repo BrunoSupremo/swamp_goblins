@@ -1,7 +1,9 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 21.2.20")
+print("Swamp Goblins Mod version 21.3.24")
 
 --[[
+
+drying rack
 
 goblinpedia:
 	vegetables substitute
@@ -57,7 +59,7 @@ import hearthlings/goblins to the other kingdom
 banner shred
 animals haulers requiring food and care
 varanus/mobs repelent
-bug nests to attack eggs, rebalance, new egg enemies
+bug nests or other mob structures for egg raiders
 old shepherd_outfit as a new goblin outfit? (looks good at least)
 spirit world has inverted colors?
 

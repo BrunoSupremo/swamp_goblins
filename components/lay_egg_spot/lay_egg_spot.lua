@@ -12,6 +12,7 @@ function LayEgg_spot:initialize()
 end
 
 function LayEgg_spot:post_activate()
+	self.egg_raid_json = radiant.resources.load_json("swamp_goblins:monster_tuning:egg_raid", true, false)
 	self.player_id = self._entity:get_player_id()
 
 	self:update_commands()
@@ -198,30 +199,71 @@ function LayEgg_spot:_spawn()
 	end
 	local max_y = radiant.terrain.get_terrain_component():get_bounds().max.y
 
-	for i=1, stonehearth.population:get_population_size(self.player_id) do
-		enemy = radiant.entities.create_entity('swamp_goblins:monsters:doodles_egg_raider', {owner = "forest"})
+	local pop_amount = stonehearth.population:get_population_size(self.player_id)
+	local raid = self:_pick_a_raid(pop_amount)
+	local monsters_keys = self:_pick_monsters(raid, pop_amount)
+	for key, quantity in pairs(monsters_keys) do
+		for i=1, quantity do
+			enemy = radiant.entities.create_entity(raid.monsters[key].uri, {owner = raid.monsters_kingdom})
+			if raid.monsters[key].add_door_break_ability then
+				radiant.entities.equip_item(enemy, "stonehearth:abilities:door_breaker_abilities")
+			end
+			if raid.monsters[key].health_per_citizen then
+				radiant.entities.set_attribute(enemy, "max_health", raid.monsters[key].health_per_citizen *pop_amount)
+			end
+			local location = self:find_spawning_point(valid_cubes, pedestal_location, max_y)
+			radiant.terrain.place_entity_at_exact_location(enemy, location)
 
-		local location = self:find_spawning_point(valid_cubes, pedestal_location, max_y)
-		radiant.terrain.place_entity_at_exact_location(enemy, location)
+			radiant.entities.add_buff(enemy, 'stonehearth:buffs:despawn:after_day')
 
-		radiant.entities.add_buff(enemy, 'stonehearth:buffs:despawn:after_day')
-
-		enemy:get_component('stonehearth:ai')
-		:get_task_group('stonehearth:task_groups:solo:combat_unit_control')
-		:create_task('stonehearth:goto_location_ignoring_threats', {
-			location = radiant.entities.get_world_grid_location(self._entity),
-			reason = "go direct to the egg first, then attack it and/or around it"
-			})
-		:once()
-		:start()
+			enemy:get_component('stonehearth:ai')
+			:get_task_group('stonehearth:task_groups:solo:combat_unit_control')
+			:create_task('stonehearth:goto_location_ignoring_threats', {
+				location = radiant.entities.get_world_grid_location(self._entity),
+				reason = "go direct to the egg first, then attack it and/or around it"
+				})
+			:once()
+			:start()
+		end
 	end
 
 	stonehearth.bulletin_board:post_bulletin(self.player_id)
 	:set_type('alert')
 	:set_data({
 		zoom_to_entity = enemy,
-		title = "i18n(swamp_goblins:ui.data.raid_egg)"
+		title = raid.bulletin
 	})
+end
+
+
+function LayEgg_spot:_pick_a_raid(population)
+	local weighted_set = WeightedSet(rng)
+	for raid, info in pairs(self.egg_raid_json) do
+		local min = info.at_population and info.at_population.min or 0
+		local max = info.at_population and info.at_population.max or 9999
+		if population >= min and population <= max then
+			weighted_set:add(info, info.weight or 1)
+		end
+	end
+	return weighted_set:choose_random()
+end
+
+function LayEgg_spot:_pick_monsters(raid, population)
+	local weighted_set = WeightedSet(rng)
+	for key, value in pairs(raid.monsters) do
+		weighted_set:add(key, value.weight or 1)
+	end
+	local monsters = {}
+	local amount = math.ceil(population * raid.monster_spawn_ratio_per_citizen)
+	for i=1, amount do
+		local chosen = weighted_set:choose_random()
+		if monsters[chosen] then
+			monsters[chosen] = monsters[chosen]+1
+		else
+			monsters[chosen] = 1
+		end
+	end
+	return monsters
 end
 
 function LayEgg_spot:destroy()

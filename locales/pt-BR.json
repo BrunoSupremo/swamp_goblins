@@ -964,10 +964,10 @@
 				"display_name": "Baú de Argila",
 				"description": "Armazena até 64 itens"
 			},
-			"giant_bag":{
+			"giant_bag": {
 				"display_name": "Saco Gigante",
 				"description": "Armazena até 96 itens",
-				"flavor":"Pico da organização bem aqui, basta jogar tudo dentro e se preocupar com isso mais tarde."
+				"flavor": "Pico da organização bem aqui, basta jogar tudo dentro e se preocupar com isso mais tarde."
 			},
 			"small_bag": {
 				"display_name": "Saco Pequeno",
@@ -1968,7 +1968,16 @@
 				"wood_portal_door": "Qualquer porta de madeira",
 				"wood_portal_window": "Qualquer janela de madeira"
 			},
-			"raid_egg": "Cuidado! Alguns insetos estão atrás de nossos ovos!",
+			"egg_raid": {
+				"doodles": "Cuidado! Alguns insetos estão atrás de nossos ovos!",
+				"doodles_giant": "Algo grande está chegando",
+				"entling": "Alguém está tentando roubar o ovo!",
+				"entling_army": "Esses caras receberam alguns reforços",
+				"varanus": "Eles parecem famintos",
+				"zilla": "Atenção! Lagarto gigante está atrás de nossos ovos!",
+				"undead": "Mortos-vivos estão tentando destruir os ovos",
+				"undead_army": "Eles querem a energia vital de nossos ovos!"
+			},
 			"new_goblin_baby": "Um ovo chocou",
 			"new_goblin_citizen": "Um bebê não mais. Bem-vindo [str(i18n_data.adult_name)]"
 		},

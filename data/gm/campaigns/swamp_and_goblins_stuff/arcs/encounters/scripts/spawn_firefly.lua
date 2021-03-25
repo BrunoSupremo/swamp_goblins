@@ -68,9 +68,10 @@ function SpawnFirefly:spawn_fireflies()
 		local firefly_critter = radiant.entities.create_entity('swamp_goblins:critters:firefly')
 
 		local cube = valid_cubes:choose_random()
-		local location = radiant.terrain.get_point_on_terrain(Point3(rng:get_int(cube.min.x, cube.max.x), max_y, rng:get_int(cube.min.y, cube.max.y)))
-		radiant.terrain.place_entity_at_exact_location(firefly_critter, location)
-
+		if cube then
+			local location = radiant.terrain.get_point_on_terrain(Point3(rng:get_int(cube.min.x, cube.max.x), max_y, rng:get_int(cube.min.y, cube.max.y)))
+			radiant.terrain.place_entity_at_exact_location(firefly_critter, location)
+		end
 		radiant.entities.add_buff(firefly_critter, 'stonehearth:buffs:despawn:after_day')
 
 		table.insert(self._sv.firefly_list, firefly_critter)
