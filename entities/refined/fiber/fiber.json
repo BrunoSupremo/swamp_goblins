@@ -1,0 +1,39 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(fiber.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.05, "y": 0, "z": 0.05 }
+		},
+		"stonehearth:stacks": {
+			"max_stacks": 60
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 2,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.refined.fiber.display_name)",
+			"description": "i18n(swamp_goblins:entities.refined.fiber.description)",
+			"icon": "file(fiber.png)",
+			"is_item": true,
+			"category": "refined",
+			"material_tags": ["firefly_made", "buildable_fiber", "refined", "stockpile_refined_weaver"]
+		}
+	}
+}

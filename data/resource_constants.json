@@ -1,11 +1,15 @@
 {
 	"resources": {
-		"fiber resource": {
+		"buildable_fiber": {
+			"name": "i18n(swamp_goblins:entities.refined.fiber.display_name)",
+			"icon": "/swamp_goblins/entities/refined/fiber/fiber.png",
 			"stacks": 60,
-			"builder_icon": "/swamp_goblins/entities/resources/fiber/builder_fiber.png",
-			"builder_icon_hover": "/swamp_goblins/entities/resources/fiber/builder_fiber.png",
+			"default_resource": "swamp_goblins:refined:fiber",
+			"auto_queue_crafter_job": "swamp_goblins:jobs:bonesmith",
+			"builder_icon": "/swamp_goblins/entities/refined/fiber/builder_fiber.png",
+			"builder_icon_hover": "/swamp_goblins/entities/refined/fiber/builder_fiber_hover.png",
 			"builder_sound_uri": "stonehearth:sounds:building_wall_wood",
-			"tooltip": "swamp_goblins:ui.game.build_mode2.tooltips.fiber_resource"
+			"tooltip": "swamp_goblins:entities.refined.fiber.display_name"
 		},
 		"chitin resource": {
 			"name": "i18n(swamp_goblins:ui.data.constants.chitin_resource)",

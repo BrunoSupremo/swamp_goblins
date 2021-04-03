@@ -22,8 +22,32 @@
 	}
 	img{
 		object-fit: contain;
-		margin-top: 1em;
-		margin-bottom: 1em;
+		margin: 8px;
+	}
+	div.border, div.borderless{
+		text-align: center;
+		position: relative;
+		width: fit-content;
+		margin: 0 auto;
+	}
+	div.border::after{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-image:
+		url(images/border_top_left.png),
+		url(images/border_top_right.png),
+		url(images/border_bottom_right.png),
+		url(images/border_bottom_left.png);
+		background-position:
+		top left,
+		top right,
+		bottom right,
+		bottom left;
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	}
 	p{
 		margin-top: 0;

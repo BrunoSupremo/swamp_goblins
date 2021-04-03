@@ -28,7 +28,9 @@
 			{{#each pages_div in view.pages}}
 			<div {{bind-attr id=pages_div.page_id}} class="page">
 				<h1>{{i18n_key pages_div.title}}</h1>
-				<img {{bind-attr src=pages_div.image}}>
+				<div {{bind-attr class=pages_div.image_border:border:borderless}}>
+					<img {{bind-attr src=pages_div.image}}>
+				</div>
 				{{#each descriptions in pages_div.descriptions}}
 				<p>{{i18n_key descriptions}}</p>
 				{{/each}}

@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 55,
+	"work_units": 12,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wall_lamp.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wall_lamp.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.wall_lamp.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/wall_lamp/wall_lamp.png",
+	"workshop": "swamp_goblins:earthmaster:potter_kiln",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:refined:jewel",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:wall_lamp"
+		}
+	]
+}

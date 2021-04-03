@@ -295,7 +295,8 @@
 		"jobs_shaman":{
 			"page_id":"jobs_shaman",
 			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.shaman.title)",
-			"image":"/swamp_goblins/jobs/shaman/images/icon.png",
+			"image":"/swamp_goblins/data/goblinpedia/shaman.png",
+			"image_border":true,
 			"descriptions":{
 				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.shaman.description1)"
 			},
@@ -467,6 +468,7 @@
 			"page_id":"others_water",
 			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.water.title)",
 			"image":"/swamp_goblins/data/goblinpedia/water.png",
+			"image_border":true,
 			"descriptions":{
 				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.others.water.description1)"
 			},

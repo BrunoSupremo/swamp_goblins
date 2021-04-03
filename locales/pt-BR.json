@@ -987,6 +987,28 @@
 			}
 		},
 		"crops": {
+			"cattail_crop": {
+				"display_name": "Taboa",
+				"description": "Planta de fibra aquática",
+				"growth_stage": {
+					"000": {
+						"name": "Mudas de Taboa",
+						"description": "Ainda crescendo!"
+					},
+					"001": {
+						"name": "Couves de Taboa",
+						"description": "Só preciso de algum tempo e cuidado."
+					},
+					"002": {
+						"name": "Botões de Taboa",
+						"description": "Está quase lá! Olha, tem botões!"
+					},
+					"003": {
+						"name": "Taboa",
+						"description": "Pode ser usado como fibras"
+					}
+				}
+			},
 			"mushroom_crop": {
 				"display_name": "Cogumelos do Pântano",
 				"description": "Crescimento lento para um cogumelo e bastante insípido por si só.",
@@ -1136,6 +1158,11 @@
 			"travel_stall": {
 				"display_name": "Tenda de Viagem Vaga-lume",
 				"description": "Envie goblins para reembarques"
+			},
+			"wall_lamp": {
+				"display_name": "Lâmpada de Parede Vaga-lume",
+				"description": "Luz decorativa para pendurar na parede",
+				"flavor": "Lâmpada extravagante de alto status"
 			},
 			"wall_mask": {
 				"display_name": "Máscara de Parede",
@@ -1374,6 +1401,7 @@
 		"plants": {
 			"cattail": {
 				"display_name": "Taboa",
+				"recipe_name": "Sementes de Taboa (x3)",
 				"description": "A fibra desta planta pode ser transformada em fios.",
 				"unripe_description": "Esta planta foi colhida e ainda não cresceu novamente",
 				"seed": {
@@ -1387,6 +1415,7 @@
 			},
 			"giant_flower": {
 				"display_name": "Flor Giple",
+				"recipe_name": "Sementes de Giple (x3)",
 				"description": "Pode ser colhido para ervas curativas",
 				"unripe_description": "Esta planta foi colhida e ainda não cresceu novamente",
 				"seed": {
@@ -1418,6 +1447,11 @@
 			}
 		},
 		"refined": {
+			"fiber": {
+				"display_name": "Fibra Refinada",
+				"description": "Fibra preparada para ser usada em construções",
+				"flavor": "Fibras comuns não seriam suficientes para a tarefa"
+			},
 			"jewel": {
 				"display_name": "Joias Vaga-lume",
 				"description": "Brilhantes, bolinhas luminosas",
@@ -1982,11 +2016,6 @@
 			"new_goblin_citizen": "Um bebê não mais. Bem-vindo [str(i18n_data.adult_name)]"
 		},
 		"game": {
-			"build_mode2": {
-				"tooltips": {
-					"fiber_resource": "Fibra"
-				}
-			},
 			"goblinpedia": {
 				"title": "Goblinpedia ",
 				"menu": {

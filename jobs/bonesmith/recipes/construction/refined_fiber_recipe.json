@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 5,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.refined.fiber.display_name)",
+	"description": "i18n(swamp_goblins:entities.refined.fiber.description)",
+	"flavor": "i18n(swamp_goblins:entities.refined.fiber.flavor)",
+	"portrait": "/swamp_goblins/entities/refined/fiber/fiber.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"work_effect": "fiddle",
+	"level_requirement": 0,
+	"ingredients": [
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:refined:fiber"
+		}
+	]
+}

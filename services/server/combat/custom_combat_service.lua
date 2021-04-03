@@ -1,4 +1,5 @@
 CustomCombatService = class()
+local rng = _radiant.math.get_default_rng()
 
 function CustomCombatService:_calculate_dart_damage(attacker, target, attack_info)
 	local weapon = radiant.entities.get_equipped_item(attacker, 'darts_slot')

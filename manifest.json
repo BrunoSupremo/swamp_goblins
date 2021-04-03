@@ -14,6 +14,8 @@
 	"client_init_script" : "file(swamp_goblins_client)",
 	"server_init_script" : "file(swamp_goblins_server)",
 	"aliases":{
+		"actions:get_food_from_storage":"file(ai/actions/eat/get_food_from_storage.lua)",
+		"actions:get_food_on_ground":	"file(ai/actions/eat/get_food_on_ground_action.lua)",
 		"actions:memorialize_death":	"file(ai/actions/memorialize_death_action.lua)",
 		"actions:health:rest_when_injured":	"file(ai/actions/health/rest_when_injured_action.lua)",
 		"actions:play_music":		"file(ai/actions/music/play_music.lua)",
@@ -60,6 +62,8 @@
 
 		"armor:mask_shield":	"file(entities/armor/mask_shield)",
 		"armor:mushroom_shield":"file(entities/armor/mushroom_shield)",
+
+		"armor:ruler_outfit":"file(jobs/ruler/outfit)",
 
 		"beast_tamer:claw": "file(jobs/beast_tamer/beast_tamer_claw)",
 		"beast_tamer:talisman": "file(jobs/beast_tamer/beast_tamer_flute)",
@@ -186,8 +190,9 @@
 		"critters:firefly":	"file(entities/critters/firefly)",
 		"critters:frog":	"file(entities/critters/frog)",
 
-		"crops:mushroom_crop": "file(entities/crops/mushroom_crop)",
-		"crops:violet_crop": "file(entities/crops/violet_crop)",
+		"crops:cattail_crop":	"file(entities/crops/cattail_crop)",
+		"crops:mushroom_crop":	"file(entities/crops/mushroom_crop)",
+		"crops:violet_crop":	"file(entities/crops/violet_crop)",
 
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
@@ -245,6 +250,7 @@
 		"decoration:brazier_large":			"file(entities/decoration/brazier_large)",
 		"decoration:tombstone":				"file(entities/decoration/tombstone)",
 		"decoration:travel_stall":			"file(entities/decoration/travel_stall)",
+		"decoration:wall_lamp":				"file(entities/decoration/wall_lamp)",
 		"decoration:wall_mask":				"file(entities/decoration/wall_mask)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
 		"decoration:window_box:wood":			"file(entities/decoration/window_box_wood)",
@@ -264,6 +270,7 @@
 		"effects:green_fire:tower_brazier":		"file(data/effects/green_fire/tower_brazier)",
 		"effects:green_fire:brazier_firepit":	"file(data/effects/green_fire/brazier_firepit)",
 		"effects:hourglass":	"file(data/effects/hourglass)",
+		"effects:lamp":"file(data/effects/lamp)",
 		"effects:mini_fountain":"file(data/effects/mini_fountain)",
 		"effects:music:bongo_2":	"file(data/effects/music/bongo_2.json)",
 		"effects:music:bongo_3":	"file(data/effects/music/bongo_3.json)",
@@ -293,6 +300,7 @@
 		"earthmaster:potter_workbench": "file(jobs/earthmaster/potter_workbench)",
 		"earthmaster:potter_kiln": "file(jobs/earthmaster/potter_kiln)",
 
+		"food:edible_for_goblins":	"file(entities/food/edible_for_goblins.json)",
 		"food:fake_vegetables":			"file(entities/food/fake_vegetables)",
 		"food:fake_vegetables_serving":	"file(entities/food/fake_vegetables_serving)",
 		"food:frog_jerky":	"file(entities/food/frog_jerky)",
@@ -461,6 +469,7 @@
 		"portals:wooden_window_frame_wide":	"file(entities/construction/wooden_window_frame_wide)",
 		"portals:wooden_window_frame_tall":	"file(entities/construction/wooden_window_frame_tall)",
 
+		"refined:fiber":"file(entities/refined/fiber)",
 		"refined:jewel":"file(entities/refined/jewel)",
 
 		"resources:bear_pelt":		"file(entities/resources/pelt/bear_pelt)",
@@ -546,6 +555,7 @@
 
 		"terrain:water_negative_pathfind":"file(entities/terrain/water_negative_pathfind)",
 
+		"trait_replacer": "file(data/traits/trait_replacer.json)",
 		"traits_index": "file(data/traits/traits_index.json)",
 		"traits:firefly_chaser":	"file(data/traits/firefly_chaser)",
 		"traits:frog_companion":	"file(data/traits/frog_companion)",
@@ -747,6 +757,29 @@
 		"stonehearth:farmer:initial_crops":	"file(services/server/farming/data/initial_crops.json)",
 		"stonehearth:farmer:all_crops":		"file(services/server/farming/data/all_crops.json)",
 
+		"archipelago_biome:food:big_fish":		"swamp_goblins:food:edible_for_goblins",
+		"archipelago_biome:food:crab":			"swamp_goblins:food:edible_for_goblins",
+		"archipelago_biome:food:fish":			"swamp_goblins:food:edible_for_goblins",
+		"archipelago_biome:food:nemo":			"swamp_goblins:food:edible_for_goblins",
+		"archipelago_biome:food:tropical_fish":	"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:egg":				"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:egg_large":		"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:mutton":			"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:pork":			"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:poultry_large":	"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:poyo_meat":		"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:sausage":			"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:varanus_meat":	"swamp_goblins:food:edible_for_goblins",
+		"stonehearth:food:venison":			"swamp_goblins:food:edible_for_goblins",
+		"stonehearth_ace:food:duck_meat":			"swamp_goblins:food:edible_for_goblins",
+		"stonehearth_ace:food:egg:duck":			"swamp_goblins:food:edible_for_goblins",
+		"stonehearth_ace:food:fish_meat":			"swamp_goblins:food:edible_for_goblins",
+		"stonehearth_ace:food:fish_meat:carp":		"swamp_goblins:food:edible_for_goblins",
+		"stonehearth_ace:food:fish_meat:catfish":	"swamp_goblins:food:edible_for_goblins",
+		"stonehearth_ace:food:fish_meat:salmon":	"swamp_goblins:food:edible_for_goblins",
+		"stonehearth_ace:food:fish_meat:trout":		"swamp_goblins:food:edible_for_goblins",
+		"stonehearth_ace:food:steak":				"swamp_goblins:food:edible_for_goblins",
+
 		"stonehearth_ace:gizmos:brass_training_dummy":	"file(entities/gizmos/training_dummy)",
 		"stonehearth_ace:gizmos:clay_training_dummy":	"file(entities/gizmos/training_dummy)",
 		"stonehearth_ace:gizmos:stone_training_dummy":	"file(entities/gizmos/training_dummy)",
@@ -762,6 +795,7 @@
 		"swamp_goblins:jobs:shaman":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 		"swamp_goblins:jobs:worker":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 		"stonehearth:jobs:trapper":	"file(jobs/trapper/trapper_description.json)",
+		"nordlingmod:jobs:ruler_firefly": "file(jobs/ruler/ruler_description_firefly.json)",
 
 		"swamp_goblins/jobs/bonesmith/bonesmith_abilities/bonesmith_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/earthmaster/earthmaster_abilities/earthmaster_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
@@ -773,6 +807,7 @@
 		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/herbalist/recipes/recipes.json":			"file(jobs/herbalist/recipes)",
 		"stonehearth/jobs/geomancer/recipes/geomancer_recipes.json":"file(jobs/geomancer/recipes)",
+		"stonehearth/jobs/weaver/recipes/recipes.json":				"file(jobs/weaver/recipes)",
 
 		"swamp_goblins/jobs/bonesmith/recipes/recipes.json":"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
 		"swamp_goblins/jobs/shaman/recipes/recipes.json":	"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
@@ -815,12 +850,6 @@
 		"swamp_goblins:plants:tall_mushroom":	"autoharvest_mod/mixins/autoharvest_off.json",
 
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
-
-		"stonehearth:resources:fiber:coarse_fiber_bundle":	"file(entities/resources/fiber/more_fiber.json)",
-		"stonehearth:resources:fiber:heirbloom_bundle":		"file(entities/resources/fiber/more_fiber.json)",
-		"stonehearth:resources:fiber:silkweed_bundle":		"file(entities/resources/fiber/more_fiber.json)",
-		"stonehearth:resources:fiber:wintermoss_bundle":	"file(entities/resources/fiber/more_fiber.json)",
-		"stonehearth:resources:fiber:wool_bundle":			"file(entities/resources/fiber/more_fiber.json)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
 		"stonehearth/scenarios/static/beetle_nest/beetle_nest.json":"file(scenarios/static/add_to_swamp_too.json)",

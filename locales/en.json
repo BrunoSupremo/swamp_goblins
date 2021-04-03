@@ -988,6 +988,28 @@
 			}
 		},
 		"crops":{
+			"cattail_crop": {
+				"display_name": "Cattail",
+				"description": "Aquatic fiber plant",
+				"growth_stage": {
+					"000": {
+						"name": "Cattail Seedlings",
+						"description": "Still growing!"
+					},
+					"001": {
+						"name": "Cattail Sprouts",
+						"description": "Just need some time and care."
+					},
+					"002": {
+						"name": "Cattail Buds",
+						"description": "It's almost there! Look, it has buds!"
+					},
+					"003": {
+						"name": "Cattail",
+						"description": "Can be harvested for fiber"
+					}
+				}
+			},
 			"mushroom_crop": {
 				"display_name": "Swamp Mushrooms",
 				"description": "Slow grow for a mushroom, and pretty bland on its own.",
@@ -1024,7 +1046,7 @@
 					},
 					"002": {
 						"name": "Violet Buds",
-						"description": "It's almost there!  Look, it has buds!"
+						"description": "It's almost there! Look, it has buds!"
 					},
 					"003": {
 						"name": "Violets",
@@ -1137,6 +1159,11 @@
 			"travel_stall": {
 				"display_name": "Firefly Travel Stall",
 				"description": "Send goblins into reembarkations"
+			},
+			"wall_lamp": {
+				"display_name": "Firefly Wall Lamp",
+				"description": "Wall hanging decorative lamp",
+				"flavor": "Fancy, high status lamp"
 			},
 			"wall_mask": {
 				"display_name": "Wall Mask",
@@ -1375,6 +1402,7 @@
 		"plants": {
 			"cattail": {
 				"display_name": "Cattail",
+				"recipe_name": "Cattail Seeds (x3)",
 				"description": "This plant's fiber can be spun into thread.",
 				"unripe_description": "This plant has been harvested and has not grown back yet",
 				"seed":{
@@ -1388,6 +1416,7 @@
 			},
 			"giant_flower": {
 				"display_name": "Giple Flower",
+				"recipe_name": "Giple Seeds (x3)",
 				"description": "Can be harvested for healing herbs",
 				"unripe_description": "This plant has been harvested and has not grown back yet",
 				"seed":{
@@ -1419,6 +1448,11 @@
 			}
 		},
 		"refined": {
+			"fiber": {
+				"display_name": "Refined Fiber",
+				"description": "Fiber prepared to be used on buildings",
+				"flavor": "Common fibers would not be enough for the task"
+			},
 			"jewel": {
 				"display_name": "Firefly Jewel",
 				"description": "Bright, glowing marbles",
@@ -1983,11 +2017,6 @@
 			"new_goblin_citizen":"A baby no more. Welcome [str(i18n_data.adult_name)]"
 		},
 		"game": {
-			"build_mode2": {
-				"tooltips": {
-					"fiber_resource": "Fiber"
-				}
-			},
 			"goblinpedia":{
 				"title":"Goblinpedia",
 				"menu":{

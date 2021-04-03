@@ -40,6 +40,8 @@
 	"entity_data": {
 		"stonehearth:ai_packs": {
 			"actions": [
+				"swamp_goblins:actions:get_food_from_storage",
+				"swamp_goblins:actions:get_food_on_ground",
 				"swamp_goblins:actions:health:rest_when_injured",
 				"swamp_goblins:actions:memorialize_death"
 			]

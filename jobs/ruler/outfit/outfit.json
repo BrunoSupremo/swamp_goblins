@@ -1,0 +1,35 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:item_properties",
+	"components": {
+		"render_info": {},
+		"model_variants": {
+			"default": {
+				"layer": "clothing",
+				"models": [
+					"file(outfit.qb)"
+				]
+			}
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(iconic.json)"
+		},
+		"stonehearth:equipment_piece": {
+			"render_type": "merge_with_model",
+			"slot": "torso",
+			"ilevel": 10,
+			"no_drop": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:combat:armor_data": {
+			"base_damage_reduction": 2
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(nordlingmod:jobs.ruler.ruler_outfit_na.display_name)",
+			"description": "i18n(nordlingmod:jobs.ruler.ruler_outfit_na.description)",
+			"icon": "file(outfit.png)",
+			"material_tags": ["firefly_made", "cloth", "stmpnk"]
+		}
+	}
+}
