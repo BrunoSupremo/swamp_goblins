@@ -1,0 +1,35 @@
+{
+	"type": "job",
+	"alias": "stonehearth:jobs:npc:worker",
+	"is_npc_job": true,
+	"display_name": "i18n(stonehearth:jobs.npc_jobs.npc_harvester.npc_harvester_description.display_name)",
+	"controller": "stonehearth:class:worker",
+	"description": "i18n(stonehearth:jobs.npc_jobs.npc_harvester.npc_harvester_description.description)",
+	"requirements": "i18n(stonehearth:jobs.npc_jobs.npc_harvester.npc_harvester_description.requirements)",
+	"default_stance": "defensive",
+	"abilities": "file(abilities.json)",
+	"equipment": {
+		"helmet": [
+			"swamp_goblins:monsters:golems:firefly_golem:effect"
+		],
+		"mainhand": [
+			"stonehearth:mining_pick",
+			"stonehearth:farmer:hoe",
+			"stonehearth:worker_hammer"
+		]
+	},
+	"task_groups": [
+		"stonehearth:task_groups:restock",
+		"stonehearth:task_groups:clear_item",
+		"stonehearth:task_groups:mining",
+		"stonehearth:task_groups:common_tasks",
+		"stonehearth:task_groups:farming_harvest"
+	],
+	"roles": ["worker_job"],
+	"icon": "/stonehearth/jobs/worker/images/icon.png",
+	"level_data": {
+		"1": {
+			"title": "i18n(stonehearth:jobs.npc_jobs.npc_harvester.npc_harvester_description.level_1_data.title)"
+		}
+	}
+}

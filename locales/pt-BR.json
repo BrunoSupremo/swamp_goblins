@@ -438,6 +438,9 @@
 						}
 					}
 				},
+				"swamp_and_goblins": {
+					"started_without_goblins":"Ei! Espere por mim!.. Um clã goblin precisa de goblins!"
+				},
 				"trader": {
 					"arcs": {
 						"encounters": {
@@ -1009,6 +1012,50 @@
 					}
 				}
 			},
+			"giple_crop": {
+				"display_name": "Flor Giple",
+				"description": "Pode ser usado como erva curativa",
+				"growth_stage": {
+					"000": {
+						"name": "Mudas de Flor Giple",
+						"description": "Ainda crescendo!"
+					},
+					"001": {
+						"name": "Couves de Flor Giple",
+						"description": "Só preciso de algum tempo e cuidado."
+					},
+					"002": {
+						"name": "Botões de Flor Giple",
+						"description": "Está quase lá! Olha, tem botões!"
+					},
+					"003": {
+						"name": "Flor Giple",
+						"description": "Pode ser usado como erva curativa"
+					}
+				}
+			},
+			"mangrove_crop": {
+				"display_name": "Mudas de mangue",
+				"description": "Sem árvores? Prepare-se para participar do reflorestamento.",
+				"growth_stage": {
+					"000": {
+						"name": "Vagem da Semente",
+						"description": "Até mesmo uma árvore poderosa tem origens humildes."
+					},
+					"001": {
+						"name": "Mudas de Mangue",
+						"description": "Está apenas começando."
+					},
+					"002": {
+						"name": "Manguezal Broto",
+						"description": "Alcance o sol"
+					},
+					"003": {
+						"name": "Mudas de mangue",
+						"description": "Pronto para ser transferido para um terreno maior."
+					}
+				}
+			},
 			"mushroom_crop": {
 				"display_name": "Cogumelos do Pântano",
 				"description": "Crescimento lento para um cogumelo e bastante insípido por si só.",
@@ -1376,6 +1423,13 @@
 			"doodles_egg_raider": {
 				"description": "Sentiu um ovo de goblin nutritivo"
 			},
+			"golems": {
+				"firefly_golem":{
+					"display_name": "Golem Vaga-lume",
+					"description": "Construído em pedra e dotado de conhecimentos ancestrais.",
+					"flavor": "Poderes combinados."
+				}
+			},
 			"varanus_nest": {
 				"display_name": "Ninho de Varanus",
 				"description": "Gera mais varanus com o tempo"
@@ -1543,6 +1597,26 @@
 				},
 				"stem": {
 					"display_name": "Pé de Cipreste",
+					"description": "Crescendo"
+				}
+			},
+			"mangrove": {
+				"display_name": "Árvore de Mangue",
+				"description": "Raízes longas",
+				"bud": {
+					"display_name": "Botão Mangue",
+					"description": "Crescendo"
+				},
+				"seed": {
+					"display_name": "Semente Mangue",
+					"description": "Plantável para crescer uma árvore mangue"
+				},
+				"sprout": {
+					"display_name": "Broto Mangue",
+					"description": "Crescendo"
+				},
+				"stem": {
+					"display_name": "Pé de Mangue",
 					"description": "Crescendo"
 				}
 			},
@@ -2038,6 +2112,11 @@
 							"spirit_walker": "Guia Espiritual",
 							"trapper": "Caçador",
 							"warrior": "Guerreiro"
+						},
+						"goods":{
+							"display_name":"Items",
+							"vegetables_substitute":"Substituto de Vegetais",
+							"refined_fiber":"Fibra Refinada"
 						}
 					},
 					"swamp": {
@@ -2088,7 +2167,7 @@
 							"description3": "A hipótese mais aceitável dos goblins é que não era nenhuma das duas coisas. Foi um empate.",
 							"topic1": {
 								"title": "Como conseguir:",
-								"desc1": "Um pedestal de ovo é necessário primeiro, para um goblin botar seu ovo."
+								"desc1": "Um pedestal de ovo é necessário primeiro, para um goblin trabalhador botar seu ovo."
 							},
 							"topic2": {
 								"title": "Chocando:",
@@ -2251,6 +2330,48 @@
 								"title": "Habilidades:",
 								"desc1": "Pode aprender novas habilidades à medida que progridem.",
 								"desc2": "Pode atingir vários inimigos ao mesmo tempo, usar dardos envenenados à distância e ainda obter estatísticas mais fortes."
+							}
+						},
+						"worker":{
+							"description1":"Um tijolo na parede. A base da pirâmide.",
+							"topic1":{
+								"title": "Descrição:",
+								"desc1":"Um começo humilde. Um futuro brilhante pela frente, talvez."
+							},
+							"topic2":{
+								"title": "O que faz:",
+								"desc1":"Semelhante a outras culturas, eles cuidarão de todas as tarefas básicas, como transporte de itens ou construção.",
+								"desc2":"No entanto, os goblins também são bons em lutas e terão habilidades básicas de combate, sendo capazes de defender ou atacar como unidades militares."
+							},
+							"topic3":{
+								"title":"Paternidade:",
+								"desc1":"Trabalhadores são os únicos que podem botar ovos."
+							}
+						}
+					},
+					"goods":{
+						"vegetables_substitute":{
+							"title":"Substituto de Vegetais",
+							"description1":"Os goblins não gostam muito de vegetais, então os xamãs tiveram que ser criativos para manter uma dieta saudável.",
+							"topic1":{
+								"title": "Descrição:",
+								"desc1":"Uma velha receita usada pelos xamãs para manter uma dieta melhor para o clã."
+							},
+							"topic2":{
+								"title": "Interação:",
+								"desc1":"Este alimento conta como um vegetal para todas as outras receitas."
+							}
+						},
+						"refined_fiber":{
+							"title":"Fibra Refinada",
+							"description1":"Seção 2 do código de construção dos goblins",
+							"topic1":{
+								"title": "Descrição:",
+								"desc1":"Fibra preparada para uso em edificações. Fibras comuns não seriam suficientes para a tarefa."
+							},
+							"topic2":{
+								"title": "Interação:",
+								"desc1":"Outra opção de edificações. É usado como qualquer outro bloco de construção comum."
 							}
 						}
 					},

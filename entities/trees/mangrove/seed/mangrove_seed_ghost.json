@@ -1,0 +1,31 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 1
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(../mangrove.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.5, "y": 0, "z": 0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.trees.mangrove.seed.display_name)",
+			"description": "i18n(swamp_goblins:entities.trees.mangrove.seed.description)",
+			"icon": "file(mangrove_seed.png)",
+			"material_tags": [
+				"plant"
+			],
+			"category": "seed"
+		}
+	}
+}

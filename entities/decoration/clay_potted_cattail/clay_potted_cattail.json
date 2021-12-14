@@ -2,6 +2,45 @@
 	"type": "entity",
 	"mixins": "file(potted_cattail_ghost.json)",
 	"components": {
+		"stonehearth:storage": {
+			"public":false,
+			"is_hidden": true,
+			"ignore_restock": true,
+			"allow_default": false,
+			"capacity": 1,
+			"filter_list": "stonehearth_ace:ui:hidden_storage:filters",
+			"default_filter": []
+		},
+		"stonehearth_ace:input": {
+			"require_matching_filter": false
+		},
+		"stonehearth_ace:output": {},
+		"stonehearth_ace:herbalist_planter": {
+			"allowed_crops": "swamp_default",
+			"default_crop": "cattail",
+			"num_products": 1,
+			"harvest_enabled": false,
+			"start_planted": true,
+			"scale_multiplier": 1,
+			"plant_locations": [
+				{
+					"offset": { "x": 0.5, "y": 1.2, "z": 0.5 }
+				}
+			]
+		},
+		"stonehearth:expendable_resources": {
+			"resources": {
+				"tend_quality": {
+					"min": {
+						"value": 0
+					},
+					"max": {
+						"value": 5
+					},
+					"initial_value": "min_value"
+				}
+			}
+		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(potted_cattail_iconic.json)",
 			"ghost_form": "file(potted_cattail_ghost.json)",

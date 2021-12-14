@@ -1,12 +1,20 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 21.4.2")
+print("Swamp Goblins Mod version 21.12.13")
 
 --[[
 
+replace rabbit statues
+
+high bed
+bed of hot embers (firewalking)
 drying rack
 
+instead of recipes to break items (chair -> wood), have a container with input filters (crusher?)
+	detects itens inside, delete them and spill out the resources
+		worked a little on this, will need custom ui
+			⚠️ui:crusher:filter
+
 goblinpedia:
-	vegetables substitute
 	templates
 	party goblin
 
@@ -18,7 +26,7 @@ warrior rework:
 		light/fast combat and heavy/strong combat
 
 
-reversed porticulis stone gate
+reversed porticulis stone gate (opens going down instead of up)
 wolf reward? (i can't remember this one lol [orc campaign?])
 
 jobs side quests for new stuff
@@ -29,7 +37,6 @@ trapper fancy boots upgrade
 ace stuff:
 	add ace tools and tools upgrades
 	fuel system (Wait gobbos can't chop wood?)
-	herb planters, window box
 	wounds and tonics
 
 orc quest
@@ -50,7 +57,7 @@ move default market stall to earthshaper
 
 non blue skin trait
 
-waves:
+combat hearth waves:
 	boss, bunnies, orcs, kobolds, ogres
 
 import hearthlings/goblins to the other kingdom
@@ -111,9 +118,6 @@ redo:
 fisher:
 	swamp fish colors, eels, blowfish
 
-Bugs:
-
-
 ]]
 
 function swamp_goblins:_on_services_init()
@@ -126,6 +130,10 @@ function swamp_goblins:_on_services_init()
 end
 
 function swamp_goblins:_on_required_loaded()
+	local custom_ladder_builder = require('services.server.build.custom_ladder_builder')
+	local ladder_builder = radiant.mods.require('stonehearth.services.server.build.ladder_builder')
+	radiant.mixin(ladder_builder, custom_ladder_builder)
+
 	local custom_combat_service = require('services.server.combat.custom_combat_service')
 	local combat_service = radiant.mods.require('stonehearth.services.server.combat.combat_service')
 	radiant.mixin(combat_service, custom_combat_service)

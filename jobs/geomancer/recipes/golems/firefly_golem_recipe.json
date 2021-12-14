@@ -1,0 +1,37 @@
+{
+	"type": "recipe",
+	"work_units": 80,
+	"recipe_name": "i18n(swamp_goblins:entities.monsters.golems.firefly_golem.display_name)",
+	"description": "i18n(swamp_goblins:entities.monsters.golems.firefly_golem.description)",
+	"flavor": "i18n(swamp_goblins:entities.monsters.golems.firefly_golem.flavor)",
+	"portrait": "/swamp_goblins/entities/monsters/golems/firefly_golem/firefly_golem.png",
+	"level_requirement": 3,
+	"workshop": "stonehearth:geomancer:golem_workbench",
+	"ingredients": [
+		{
+			"material": "earth_essence resource",
+			"count": 2
+		},
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 2
+		},
+		{
+			"material": "stone resource",
+			"count": 12
+		},
+		{
+			"material": "fiber resource",
+			"count": 6
+		},
+		{
+			"uri": "swamp_goblins:consumables:body_potion",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:monsters:golems:firefly_golem"
+		}
+	]
+}

@@ -1,0 +1,203 @@
+{
+	"crops": {
+		"cattail": {
+			"seed_uri": "swamp_goblins:plants:cattail:seed",
+			"product_uri": "swamp_goblins:resources:cattail",
+			"harvester_effect": "fiddle",
+			"render_scale": 0.1,
+			"tending_multiplier": 0.3,
+			"level": 1,
+			"growth_time": "22h+4h",
+			"bonus_product_growth_time": "32h",
+			"growth_levels": [
+				{
+					"model": "swamp_goblins/entities/crops/cattail_crop/cattail_1.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/cattail_crop/cattail_2.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/cattail_crop/cattail_3.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/cattail_crop/cattail_4.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				}
+			],
+			"display_name": "i18n(swamp_goblins:entities.crops.cattail_crop.display_name)",
+			"description": "i18n(swamp_goblins:entities.crops.cattail_crop.description)",
+			"icon": "/swamp_goblins/entities/plants/cattail/cattail.png"
+		},
+		"giple": {
+			"seed_uri": "swamp_goblins:plants:giant_flower:seed",
+			"product_uri": "swamp_goblins:resources:giant_flower",
+			"additional_products": {
+				"entries": {
+					"extra": {
+						"num_rolls": {
+							"min": 0,
+							"max": 2
+						},
+						"items": {
+							"fibers": {
+								"uri": "swamp_goblins:resources:giant_flower",
+							}
+						}
+					}
+				}
+			},
+			"harvester_effect": "fiddle",
+			"render_scale": 0.2,
+			"tending_multiplier": 0.1,
+			"level": 1,
+			"growth_time": "20h+4h",
+			"growth_levels": [
+				{
+					"model": "swamp_goblins/entities/crops/giple_crop/giple_1.qb",
+					"offset": { "x": 2.5, "y": 0, "z": 2.5 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/giple_crop/giple_2.qb",
+					"offset": { "x": 2.5, "y": 0, "z": 2.5 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/giple_crop/giple_3.qb",
+					"offset": { "x": 4, "y": 0, "z": 4 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/giple_crop/giple_4.qb",
+					"offset": { "x": 4, "y": 0, "z": 4 }
+				}
+			],
+			"display_name": "i18n(swamp_goblins:entities.crops.giple_crop.display_name)",
+			"description": "i18n(swamp_goblins:entities.crops.giple_crop.description)",
+			"icon": "/swamp_goblins/entities/plants/giant_flower/giant_flower.png"
+		},
+		"mangrove": {
+			"seed_uri": "swamp_goblins:trees:mangrove:seed",
+			"product_uri": "swamp_goblins:trees:mangrove:seed",
+			"harvester_effect": "fiddle",
+			"render_scale": 0.1,
+			"tending_multiplier": 0.05,
+			"level": 1,
+			"growth_time": "21h+4h",
+			"growth_levels": [
+				{
+					"model": "swamp_goblins/entities/crops/mangrove_crop/mangrove_1.qb",
+					"offset": { "x": 6.5, "y": 0, "z": 6.5 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mangrove_crop/mangrove_2.qb",
+					"offset": { "x": 6.5, "y": 0, "z": 6.5 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mangrove_crop/mangrove_3.qb",
+					"offset": { "x": 6.5, "y": 0, "z": 6.5 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mangrove_crop/mangrove_4.qb",
+					"offset": { "x": 6.5, "y": 0, "z": 6.5 }
+				}
+			],
+			"display_name": "i18n(swamp_goblins:entities.crops.mangrove_crop.display_name)",
+			"description": "i18n(swamp_goblins:entities.crops.mangrove_crop.description)",
+			"icon": "/swamp_goblins/entities/trees/mangrove/mangrove.png"
+		},
+		"mangrove_halfsize": {
+			"seed_uri": "swamp_goblins:trees:mangrove:seed",
+			"product_uri": "swamp_goblins:trees:mangrove:seed",
+			"harvester_effect": "fiddle",
+			"render_scale": 0.1,
+			"tending_multiplier": 0.05,
+			"level": 1,
+			"growth_time": "21h+4h",
+			"growth_levels": [
+				{
+					"model": "swamp_goblins/entities/crops/mangrove_halfsize_crop/mangrove_halfsize_1.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mangrove_halfsize_crop/mangrove_halfsize_2.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mangrove_halfsize_crop/mangrove_halfsize_3.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mangrove_halfsize_crop/mangrove_halfsize_4.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				}
+			],
+			"display_name": "i18n(swamp_goblins:entities.crops.mangrove_crop.display_name)",
+			"description": "i18n(swamp_goblins:entities.crops.mangrove_crop.description)",
+			"icon": "/swamp_goblins/entities/trees/mangrove/mangrove.png"
+		},
+		"swamp_mushroom": {
+			"seed_uri": "swamp_goblins:food:mushroom",
+			"product_uri": "swamp_goblins:food:mushroom",
+			"harvester_effect": "fiddle",
+			"render_scale": 0.1,
+			"tending_multiplier": 0.25,
+			"level": 1,
+			"growth_time": "16h+2h",
+			"growth_levels": [
+				{
+					"model": "swamp_goblins/entities/crops/mushroom_crop/mushroom_1.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mushroom_crop/mushroom_2.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mushroom_crop/mushroom_3.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"model": "swamp_goblins/entities/crops/mushroom_crop/mushroom_4.qb",
+					"offset": { "x": 0, "y": 0, "z": 0 }
+				}
+			],
+			"display_name": "i18n(swamp_goblins:entities.crops.mushroom_crop.display_name)",
+			"description": "i18n(swamp_goblins:entities.crops.mushroom_crop.description)",
+			"icon": "/swamp_goblins/entities/plants/small_mushroom/small_mushroom.png"
+		},
+		"swamp_violet": {
+			"seed_uri": "stonehearth:plants:violet:seed",
+			"product_uri": "stonehearth:resources:herb:violet",
+			"harvester_effect": "fiddle",
+			"render_scale": 0.1,
+			"tending_multiplier": 0.5,
+			"level": 2,
+			"growth_time": "16h+2h",
+			"bonus_product_growth_time": "32h",
+			"post_harvest_growth_level": 2,
+			"growth_levels": [
+				{
+					"model": "stonehearth_ace/data/herbalist_planters/crops/planter/violet/violet_1.qb",
+					"offset": { "x": -1, "y": 0, "z": -1 }
+				},
+				{
+					"model": "stonehearth_ace/data/herbalist_planters/crops/planter/violet/violet_2.qb",
+					"offset": { "x": -1, "y": 0, "z": -1 }
+				},
+				{
+					"model": "stonehearth_ace/data/herbalist_planters/crops/planter/violet/violet_3.qb",
+					"offset": { "x": -1, "y": 0, "z": -1 }
+				},
+				{
+					"model": "stonehearth_ace/data/herbalist_planters/crops/planter/violet/violet_4.qb",
+					"offset": { "x": -1, "y": 0, "z": -1 }
+				}
+			],
+			"display_name": "i18n(stonehearth_ace:herbalist_crops.violet.display_name)",
+			"description": "i18n(stonehearth_ace:herbalist_crops.violet.description)",
+			"harvest_status_text": "i18n(stonehearth_ace:herbalist_crops.violet.harvest_text)",
+			"icon": "/stonehearth_ace/data/herbalist_planters/crops/planter/violet/violet.png"
+		}
+	}
+}

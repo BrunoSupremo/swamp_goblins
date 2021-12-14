@@ -138,7 +138,8 @@ function FireflyGoblin:add_goblin_worker_abilities()
 	if not curr_party then
 		--get the red party
 		curr_party = population:get_party_by_name('party_4')
-		if curr_party then -- npcs might not have party
+		-- npcs might not have party
+		if curr_party then
 			local party_component = curr_party:get_component('stonehearth:party')
 			if party_component then
 				party_component:add_member(self._entity)

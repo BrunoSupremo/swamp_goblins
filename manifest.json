@@ -124,6 +124,8 @@
 		"build:brushes:roof:purple_stripes":	"file(data/build/brushes/roof/purple_stripes.qb)",
 		"build:brushes:roof:white_stripes":		"file(data/build/brushes/roof/white_stripes.qb)",
 
+		"build:prototypes:ladder": "file(data/build/prototypes/ladder/ladder.json)",
+
 		"camp_hearth":	"file(entities/decoration/firepit_skulls)",
 		"camp_standard":	"file(entities/gizmos/camp_standard)",
 		"goblin_camp_standard":	"file(entities/gizmos/goblin_camp_standard)",
@@ -192,6 +194,7 @@
 
 		"crops:cattail_crop":	"file(entities/crops/cattail_crop)",
 		"crops:mushroom_crop":	"file(entities/crops/mushroom_crop)",
+		"crops:mangrove_crop":	"file(entities/crops/mangrove_halfsize_crop)",
 		"crops:violet_crop":	"file(entities/crops/violet_crop)",
 
 		"data:gm_index": "file(data/gm/gm_index.json)",
@@ -259,6 +262,7 @@
 		"effects:egg_pedestal":	"file(data/effects/egg_pedestal)",
 		"effects:firefly_effect":			"file(data/effects/firefly_effect)",
 		"effects:firefly_essense_effect":	"file(data/effects/firefly_effect/firefly_essense_effect.json)",
+		"effects:firefly_golem_head":		"file(data/effects/firefly_effect/firefly_golem_head.json)",
 		"effects:big_firefly_essense":		"file(data/effects/firefly_effect/big_firefly_essense.json)",
 		"effects:buff:firefly_confusion":	"file(data/effects/firefly_effect/firefly_confusion.json)",
 		"effects:firefly_shield":"file(data/effects/firefly_shield)",
@@ -346,7 +350,8 @@
 		"jobs:spirit_walker":	"file(jobs/spirit_walker/spirit_walker_description.json)",
 		"jobs:warrior":			"file(jobs/warrior/warrior_description.json)",
 		"jobs:worker":			"file(jobs/worker/worker_description.json)",
-		"jobs:npc:baby":"file(jobs/npc_baby/npc_baby_description.json)",
+		"jobs:npc:baby":			"file(jobs/npc_baby/npc_baby_description.json)",
+		"jobs:npc:firefly_golem":	"file(jobs/npc_firefly_golem/npc_firefly_golem_description.json)",
 
 		"kingdoms:firefly_clan": "file(data/firefly_clan_population.json)",
 		"kingdoms:firefly_human_encounter": "file(services/server/population/data/firefly_human_encounter.json)",
@@ -373,10 +378,12 @@
 		"mixins:sign:stone_recipe":	"file(mixins/sign/stone_recipe.json)",
 
 		"monsters:bear":					"file(entities/monsters/bear)",
-		"monsters:doodles_egg_raider":		"file(entities/monsters/doodles_egg_raider)",
-		"monsters:doodles_giant_egg_raider":"file(entities/monsters/doodles_egg_raider/giant.json)",
 		"monsters:bear:teeth_weapon":		"file(entities/monsters/bear/bear_teeth.json)",
 		"monsters:bear:weak_teeth_weapon":	"file(entities/monsters/bear/weak_bear_teeth.json)",
+		"monsters:doodles_egg_raider":		"file(entities/monsters/doodles_egg_raider)",
+		"monsters:doodles_giant_egg_raider":"file(entities/monsters/doodles_egg_raider/giant.json)",
+		"monsters:golems:firefly_golem":	"file(entities/monsters/golems/firefly_golem)",
+		"monsters:golems:firefly_golem:effect":	"file(entities/monsters/golems/firefly_golem/effect.json)",
 		"monsters:mosquito_cloud":			"file(entities/monsters/mosquito_cloud)",
 		"monsters:swamp_zilla":				"file(entities/monsters/swamp_zilla)",
 		"monsters:varanus":					"file(entities/monsters/varanus_nest/varanus.json)",
@@ -567,21 +574,12 @@
 		"traits:passion_spirit_walker":	"file(data/traits/passion_spirit_walker)",
 		"traits:passion_warrior":		"file(data/traits/passion_warrior)",
 
-		"trees:dead:small":			"file(entities/trees/dead)",
-		"trees:dead:small:stump":	"file(entities/trees/dead/dead_stump.json)",
-		"trees:dead:medium":		"file(entities/trees/dead/dead_medium.json)",
-		"trees:dead:medium:stump":	"file(entities/trees/dead/dead_medium_stump.json)",
-		"trees:dead:large":			"file(entities/trees/dead/dead_large.json)",
-		"trees:dead:large:stump":	"file(entities/trees/dead/dead_large_stump.json)",
 		"trees:bogger:small":		"file(entities/trees/bogger)",
 		"trees:bogger:small:stump":	"file(entities/trees/bogger/stump.json)",
 		"trees:bogger:bud":			"file(entities/trees/bogger/bud/bogger_plant_bud.json)",
 		"trees:bogger:seed":		"file(entities/trees/bogger/seed/bogger_seed.json)",
 		"trees:bogger:sprout":		"file(entities/trees/bogger/sprout/bogger_sprout.json)",
 		"trees:bogger:stem":		"file(entities/trees/bogger/stem/bogger_plant_stem.json)",
-		"trees:swirl:small":	"file(entities/trees/swirl)",
-		"trees:swirl:medium":	"file(entities/trees/swirl/swirl_medium.json)",
-		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)",
 		"trees:cypress:small":			"file(entities/trees/cypress)",
 		"trees:cypress:medium":			"file(entities/trees/cypress/cypress_medium.json)",
 		"trees:cypress:medium:stump":	"file(entities/trees/cypress/cypress_medium_stump.json)",
@@ -591,6 +589,23 @@
 		"trees:cypress:seed":			"file(entities/trees/cypress/seed/cypress_seed.json)",
 		"trees:cypress:sprout":			"file(entities/trees/cypress/sprout/cypress_sprout.json)",
 		"trees:cypress:stem":			"file(entities/trees/cypress/stem/cypress_plant_stem.json)",
+		"trees:dead:small":			"file(entities/trees/dead)",
+		"trees:dead:small:stump":	"file(entities/trees/dead/dead_stump.json)",
+		"trees:dead:medium":		"file(entities/trees/dead/dead_medium.json)",
+		"trees:dead:medium:stump":	"file(entities/trees/dead/dead_medium_stump.json)",
+		"trees:dead:large":			"file(entities/trees/dead/dead_large.json)",
+		"trees:dead:large:stump":	"file(entities/trees/dead/dead_large_stump.json)",
+		"trees:mangrove:small":			"file(entities/trees/mangrove)",
+		"trees:mangrove:small:stump":	"file(entities/trees/mangrove/stump.json)",
+		"trees:mangrove:bud":			"file(entities/trees/mangrove/bud/mangrove_plant_bud.json)",
+		"trees:mangrove:seed":			"file(entities/trees/mangrove/seed/mangrove_seed.json)",
+		"trees:mangrove:sprout":		"file(entities/trees/mangrove/sprout/mangrove_sprout.json)",
+		"trees:mangrove:stem":			"file(entities/trees/mangrove/stem/mangrove_plant_stem.json)",
+		"trees:swirl:small":	"file(entities/trees/swirl)",
+		"trees:swirl:medium":	"file(entities/trees/swirl/swirl_medium.json)",
+		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)",
+
+		"ui:crusher:filters": "file(ui/data/crusher_filters.json)",
 
 		"warrior:talisman": "file(jobs/warrior/warrior_horn/warrior_horn_talisman.json)",
 		"warrior:abilities:multiple_targets":	"file(jobs/warrior/warrior_abilities/multiple_targets.json)",
@@ -678,12 +693,16 @@
 		"stonehearth:build:brushes" : "file(data/build/building_brushes.json)",
 
 		"stonehearth:building_templates:index":	"file(data/saved_objects/building_templates_index.json)",
+		"archipelago_biome/data/saved_objects/building_templates_index.json":"file(data/saved_objects/fisher_templates.json)",
 		"trapper_plus:building_templates:index":"file(data/saved_objects/trapper_plus_templates.json)",
 
 		"stonehearth_ace:construction:simple:water_well": "file(entities/construction/simple_water_well)",
 
 		"stonehearth:data:constants": "file(data/constants.json)",
 		"extra_map_options:data:extra_map_options":"file(data/extra_map_options.json)",
+
+		"stonehearth_ace:data:herbalist_planter:allowed_crops": "file(data/herbalist_planters/allowed_crops.json)",
+		"stonehearth_ace:data:herbalist_planter:crops": "file(data/herbalist_planters/crops.json)",
 
 		"stonehearth:data:gm_index": "swamp_goblins:data:gm_index",
 		"stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/discovery_arc.json":"file(data/gm/campaigns/amberstone/arcs/trigger/discovery/discovery_arc.json)",
@@ -789,19 +808,27 @@
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
 
-		"swamp_goblins:jobs:earthmaster":"stonehearth_ace/swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json",
-		"swamp_goblins:jobs:bonesmith":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
-		"swamp_goblins:jobs:earthmaster":	"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
-		"swamp_goblins:jobs:shaman":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
-		"swamp_goblins:jobs:worker":		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+		"swamp_goblins:jobs:bonesmith":	"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+		"swamp_goblins:jobs:earthmaster":[
+			"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+			"stonehearth_ace/swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json"
+		],
+		"swamp_goblins:jobs:shaman":[
+			"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
+			"stonehearth_ace/swamp_goblins/jobs/shaman/ace_shaman_description.json"
+		],
+		"swamp_goblins:jobs:worker":	"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 		"stonehearth:jobs:trapper":	"file(jobs/trapper/trapper_description.json)",
 		"nordlingmod:jobs:ruler_firefly": "file(jobs/ruler/ruler_description_firefly.json)",
 
-		"swamp_goblins/jobs/bonesmith/bonesmith_abilities/bonesmith_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/bonesmith/bonesmith_abilities/bonesmith_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/earthmaster/earthmaster_abilities/earthmaster_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/scavenger/scavenger_abilities/scavenger_abilities.json":		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/shaman/shaman_abilities/shaman_abilities.json":					"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/worker/goblin_worker_abilities.json":							"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/scavenger/scavenger_abilities/scavenger_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+		"swamp_goblins/jobs/shaman/shaman_abilities/shaman_abilities.json":[
+			"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
+			"stonehearth_ace/swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json"
+		],
+		"swamp_goblins/jobs/worker/goblin_worker_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/warrior/warrior_abilities/warrior_abilities.json":"stonehearth_ace/jobs/footman/footman_abilities/footman_abilities.json",
 
 		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
@@ -991,7 +1018,9 @@
 		"stonehearth_ace/swamp_goblins/entities/plants/lilypad/ace_lilypad.json":"swamp_goblins/entities/plants/lilypad/ace_lilypad.json",
 
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
-		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":	"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
+		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":		"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
+		"stonehearth_ace/swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json":"swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json",
+		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_shaman_description.json":		"swamp_goblins/jobs/shaman/ace_shaman_description.json",
 		"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json":	"swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json":		"swamp_goblins/jobs/common/ace_abilities.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json":	"swamp_goblins/jobs/common/ace_description.json",
@@ -1021,7 +1050,7 @@
 			"appearance":[
 				"_on_try_dispatch",
 				"_on_abandon"
-			],
+			]
 		},
 		"market":[
 			"_on_opened",

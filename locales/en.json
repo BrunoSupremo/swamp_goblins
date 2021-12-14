@@ -438,6 +438,9 @@
 						}
 					}
 				},
+				"swamp_and_goblins": {
+					"started_without_goblins":"Hey! Wait for me!.. A goblin clan needs goblins!"
+				},
 				"trader": {
 					"arcs": {
 						"encounters": {
@@ -1010,6 +1013,50 @@
 					}
 				}
 			},
+			"giple_crop": {
+				"display_name": "Giple Flower",
+				"description": "Can be used as a healing herb",
+				"growth_stage": {
+					"000": {
+						"name": "Giple Flower Seedlings",
+						"description": "Still growing!"
+					},
+					"001": {
+						"name": "Giple Flower Sprouts",
+						"description": "Just need some time and care."
+					},
+					"002": {
+						"name": "Giple Flower Buds",
+						"description": "It's almost there! Look, it has buds!"
+					},
+					"003": {
+						"name": "Giple Flower",
+						"description": "Can be harvested for herbs"
+					}
+				}
+			},
+			"mangrove_crop": {
+				"display_name": "Mangrove Sapling",
+				"description": "Out of trees? Get ready to participate in reforestation.",
+				"growth_stage": {
+					"000": {
+						"name": "Seed Pod",
+						"description": "Even a mighty tree has humble beginnings."
+					},
+					"001": {
+						"name": "Mangrove Seedling",
+						"description": "It's just getting started."
+					},
+					"002": {
+						"name": "Mangrove Sprout",
+						"description": "Reach for the sun"
+					},
+					"003": {
+						"name": "Mangrove Sapling",
+						"description": "Ready to be transferred to a bigger plot."
+					}
+				}
+			},
 			"mushroom_crop": {
 				"display_name": "Swamp Mushrooms",
 				"description": "Slow grow for a mushroom, and pretty bland on its own.",
@@ -1226,7 +1273,7 @@
 			"fake_vegetables": {
 				"display_name": "Vegetables Substitute",
 				"description": "Goblins are not too fond of vegetables, so Shamans had to get creative to keep a healthy diet.",
-				"flavor": "This food item counts as vegetable for all other recipes"
+				"flavor": "This food item counts as a vegetable for all other recipes"
 			},
 			"frog_jerky": {
 				"display_name": "Frog Jerky"
@@ -1376,6 +1423,13 @@
 			},
 			"doodles_egg_raider": {
 				"description": "Sensed a nutritious goblin egg"
+			},
+			"golems": {
+				"firefly_golem":{
+					"display_name": "Firefly Golem",
+					"description": "Constructed of stone and empowered by ancient knowledge.",
+					"flavor": "Powers combined."
+				}
 			},
 			"varanus_nest": {
 				"display_name": "Varanus Nest",
@@ -1544,6 +1598,26 @@
 				},
 				"stem": {
 					"display_name": "Cypress stem",
+					"description": "Growing"
+				}
+			},
+			"mangrove": {
+				"display_name": "Mangrove Tree",
+				"description": "Long roots",
+				"bud": {
+					"display_name": "Mangrove bud",
+					"description": "Growing"
+				},
+				"seed": {
+					"display_name": "Mangrove seed",
+					"description": "Plantable to grow a Mangrove tree"
+				},
+				"sprout": {
+					"display_name": "Mangrove sprout",
+					"description": "Growing"
+				},
+				"stem": {
+					"display_name": "Mangrove stem",
 					"description": "Growing"
 				}
 			},
@@ -2039,6 +2113,11 @@
 							"spirit_walker":"Spirit Walker",
 							"trapper":"Trapper",
 							"warrior":"Warrior"
+						},
+						"goods":{
+							"display_name":"Goods",
+							"vegetables_substitute":"Vegetables Substitute",
+							"refined_fiber":"Refined Fiber"
 						}
 					},
 					"swamp":{
@@ -2089,7 +2168,7 @@
 							"description3":"The goblins current most acceptable hypothesys is that it was neither. It was a tie.",
 							"topic1":{
 								"title":"How to get:",
-								"desc1":"An egg pedestal is needed first, for a goblin to lay his egg."
+								"desc1":"An egg pedestal is needed first, for a goblin worker to lay his egg."
 							},
 							"topic2":{
 								"title":"Hatching:",
@@ -2252,6 +2331,48 @@
 								"title":"Skills:",
 								"desc1":"Can learn new abilities as they progress.",
 								"desc2":"Can hit multiple enemies at once, use ranged poison darts, and even gets stronger stats."
+							}
+						},
+						"worker":{
+							"description1":"A brick in the wall. The base of the pyramid.",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"A humble start. Bright future ahead, maybe."
+							},
+							"topic2":{
+								"title":"What it does:",
+								"desc1":"Similar to other cultures, they will take care of all basic tasks like hauling or building.",
+								"desc2":"However, goblins are also good at fighting and will have basic fighting skills, being able to defend or attack as combat units."
+							},
+							"topic3":{
+								"title":"Parenting:",
+								"desc1":"Workers are the only ones that can lay eggs."
+							}
+						}
+					},
+					"goods":{
+						"vegetables_substitute":{
+							"title":"Vegetables Substitute",
+							"description1":"Goblins are not too fond of vegetables, so Shamans had to get creative to keep a healthy diet.",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"An older recipe used by shamans to keep a better diet for the clan."
+							},
+							"topic2":{
+								"title":"Interaction:",
+								"desc1":"This food item counts as a vegetable for all other recipes."
+							}
+						},
+						"refined_fiber":{
+							"title":"Refined Fiber",
+							"description1":"Section 2 of the goblins building code",
+							"topic1":{
+								"title":"Description:",
+								"desc1":"Fiber prepared to be used on buildings. Common fibers would not be enough for the task"
+							},
+							"topic2":{
+								"title":"Interaction:",
+								"desc1":"Another option for buildings. It is used like any other common building block."
 							}
 						}
 					},

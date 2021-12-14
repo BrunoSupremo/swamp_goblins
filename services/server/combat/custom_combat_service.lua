@@ -72,6 +72,10 @@ function CustomCombatService:start_cooldown(entity, action_info)
 	end
 	combat_state:start_cooldown(action_info.name, action_info.cooldown)
 
+	if action_info.shared_cooldown_name then
+		combat_state:start_cooldown(action_info.shared_cooldown_name, action_info.shared_cooldown)
+	end
+
 	if action_info.image then
 		self:thought_bubble(entity, action_info.image)
 	end

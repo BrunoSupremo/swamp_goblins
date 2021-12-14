@@ -14,6 +14,14 @@
 			"crop_type": "swamp_goblins:crops:violet_crop",
 			"ordinal": 9.5,
 			"level_requirement": 3
+		},
+		"mangrove_halfsize": {
+			"crop_type": "swamp_goblins:crops:mangrove_crop",
+			"ordinal": 12.9,
+			"level_requirement": 5,
+			"field_types": {
+				"treefarm": true
+			}
 		}
 	}
 }

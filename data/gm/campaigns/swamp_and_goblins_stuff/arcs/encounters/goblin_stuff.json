@@ -5,7 +5,8 @@
 	"out_edge": {
 		"type": "trigger_many",
 		"out_edges": [
-			"wait_travel"
+			"wait_travel",
+			"started_without_goblins"
 		]
 	},
 	"can_start": {

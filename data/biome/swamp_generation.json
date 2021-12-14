@@ -198,6 +198,10 @@
 				"placement_type": "single",
 				"parameters": { "ground_radius": 2, "exclusion_radius": 3 }
 			},
+			"swamp_goblins:trees:mangrove:small": {
+				"placement_type": "single",
+				"parameters": {"ground_radius": 3, "exclusion_radius": 5 }
+			},
 			"stonehearth:plants:violet": {
 				"placement_type": "dense",
 				"parameters": {
@@ -448,6 +452,7 @@
 					"swamp_goblins:plants:cattail":4.9,
 					"swamp_goblins:plants:log":1.5,
 					"swamp_goblins:plants:giant_flower":1.25,
+					"swamp_goblins:trees:mangrove:small":0.25,
 					"swamp_goblins:trees:cypress:small":1,
 					"swamp_goblins:trees:cypress:medium":1,
 					"swamp_goblins:trees:dead:small":0.5,
@@ -461,6 +466,7 @@
 				},
 				"water_2":{
 					"none":1.5,
+					"swamp_goblins:trees:mangrove:small":3,
 					"swamp_goblins:trees:bogger:small":1,
 					"swamp_goblins:trees:cypress:medium":1,
 					"swamp_goblins:trees:cypress:large":1,

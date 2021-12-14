@@ -1,18 +1,19 @@
 Additions:
-Custom outfit for goblins with Ruler job (from nordlings mod). Model by Stmpnk
-Firefly Wall Lamp crafted with Earthshaper
-Refined Fiber, crafted with Bonesmith, to be used in buildings
+New goblinpedia articles (goblin workers, vegetables substitute and refined fiber)
+Firefly Golem, same as default vanilla geomancers golems, but adapted for the clan
+Mangrove Tree, spawning mostly in deep swamp water
 
 Changes:
-Goblins can now eat raw food, like raw meat or eggs.
-Easier for modders to edit goblin traits
-The new refined fiber is now the material used for fiber blocks in templates
+Some goblins will imediatelly join your town if you start without goblins (e.g. a reembarked party)
+Ladders (from the ladder tool or buildings scaffolds) will have the goblin ladder visual style
 
 Changes for ACE:
+Window boxes and pots now work as planters (you can pick what to grow on it)
+Shamans will tend planters like herbalists do
 
 Fixes:
-Error about random values in dart attack calculator
-Misaligned wooden wall shelf
-Fiber crops (silkweed and others) affected by goblins changes, had too low yields
+(Firefly) Fisher Hut template appearing without the fisher mod and would cause errors when placed (thanks uǝʇʇᴉʞ for the report)
+Swamp Zillas appearing in other biomes
 
 Fixes for ACE:
+Worker outfits were not being stocked

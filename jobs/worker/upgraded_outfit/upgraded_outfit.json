@@ -40,7 +40,13 @@
 		},
 		"stonehearth:catalog": {
 			"icon": "file(upgraded_outfit.png)",
-			"material_tags":["worker_outfit", "cloth", "firefly_made", "stockpile_equipment"],
+			"material_tags":[
+				"civillian_equipment",
+				"worker_outfit",
+				"cloth",
+				"firefly_made",
+				"stockpile_equipment"
+			],
 			"display_name": "i18n(stonehearth:jobs.worker.worker_outfit_2.display_name)",
 			"description": "i18n(swamp_goblins:jobs.worker.upgraded_outfit.description)",
 			"is_item": true,

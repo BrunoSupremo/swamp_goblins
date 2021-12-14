@@ -1,0 +1,30 @@
+{
+	"type": "entity",
+	"components" : {
+		"stonehearth:equipment_piece" : {
+			"injected_ai" : {
+				"actions" : [
+					"stonehearth:actions:clear_item",
+					"stonehearth:actions:clear_item_adjacent",
+					"stonehearth:actions:dispatcher:human_simple_labor",
+					"stonehearth:actions:dispatcher:human_work",
+					"stonehearth:actions:harvest_resource_node_action",
+					"stonehearth:actions:harvest_resource_node_adjacent_action",
+					"stonehearth:actions:harvest_renewable_resource",
+					"stonehearth:actions:harvest_renewable_resource_adjacent",
+					"stonehearth:actions:clear_carrying_drop_now"
+				],
+				"ai_packs": [
+					"stonehearth:ai_pack:restocking",
+					"stonehearth:ai_pack:backpack",
+					"stonehearth:ai_pack:mining",
+					"stonehearth:ai_pack:ladders",
+					"stonehearth:ai_pack:farming"
+				]
+			}
+		}
+	},
+	"entity_data" : {
+		"stonehearth:panic_threshold" : 0.75
+	}
+}

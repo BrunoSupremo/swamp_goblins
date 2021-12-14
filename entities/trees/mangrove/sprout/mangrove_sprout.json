@@ -1,0 +1,52 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"render_info": {
+			"scale": 0.25
+		},
+		"stonehearth:evolve": {},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(mangrove_sprout.qb)"
+				]
+			}
+		},
+		"destination": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": {"x": 0, "y": 0, "z": 0 },
+					"max": {"x": 1, "y": 2, "z": 1 }
+				}
+			]
+		},
+		"mob": {
+			"model_origin": {"x": 0, "y": 0, "z": 0 },
+			"region_origin": {"x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:evolve_data": {
+			"next_stage": "swamp_goblins:trees:mangrove:stem",
+			"evolve_time": "14h+2h"
+		},
+		"stonehearth:catalog": {
+			"material_tags": ["firefly_made", "stockpile_plant"],
+			"display_name": "i18n(swamp_goblins:entities.trees.mangrove.sprout.display_name)",
+			"description": "i18n(swamp_goblins:entities.trees.mangrove.sprout.description)",
+			"category": "plants"
+		},
+		"stonehearth:appeal": {
+			"appeal": 1
+		}
+	}
+}

@@ -1,0 +1,162 @@
+{
+	"type": "entity",
+	"mixins": [
+		"stonehearth:mixins:monster",
+		"file(firefly_golem_ghost.json)"
+	],
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(firefly_golem_iconic.json)",
+			"ghost_form": "file(firefly_golem_ghost.json)",
+			"placeable_on_ground": true,
+			"must_parent_to_terrain": true,
+			"hide_move_ui": true,
+			"hide_undeploy_ui": true
+		},
+		"stonehearth:commands": {
+			"commands": [
+				"stonehearth:commands:undeploy_golem"
+			]
+		},
+		"stonehearth:siege_weapon": {
+			"max_uses": 0
+		},
+		"stonehearth:ai": {},
+		"render_info": {
+			"animation_table": "stonehearth/data/rigs/entities/golems/golem_ogre/golem_ogre.json",
+			"color_map": "stonehearth:color_map:mob",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/mob_material_map.json"
+			]
+		},
+		"stonehearth:job": {
+			"initial_job": "swamp_goblins:jobs:npc:firefly_golem"
+		},
+		"stonehearth:posture": {
+			"priorities": {
+				"stonehearth:climb_ladder_up": 1100,
+				"stonehearth:climb_ladder_down": 1100,
+				"stonehearth:sitting": 900,
+				"stonehearth:carrying": 800,
+				"stonehearth:panic": 100
+			}
+		},
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 100
+			},
+			"muscle": {
+				"type": "basic",
+				"value": 1
+			},
+			"menace": {
+				"type": "basic",
+				"value": 1
+			},
+			"courage": {
+				"type": "basic",
+				"value": 0
+			},
+			"speed": {
+				"type": "basic",
+				"value": 100
+			},
+			"exp_reward": {
+				"type": "basic",
+				"value": 0
+			}
+		},
+		"stonehearth:carry_block": {},
+		"stonehearth:storage": {
+			"type": "backpack",
+			"public": false,
+			"capacity": 3
+		},
+		"sensor_list": {
+			"sensors": {
+				"sight": {
+					"radius": 16
+				}
+			}
+		},
+		"stonehearth:loot_drops": {
+			"entries": {
+				"default": {
+					"roll_type": "each_of",
+					"items": {
+						"earth_essence": {
+							"uri": "stonehearth:resources:earth_essence",
+							"num_rolls": 1
+						},
+						"firefly_essence": {
+							"uri": "swamp_goblins:resources:firefly_essense",
+							"num_rolls": 1
+						},
+						"golem_parts": {
+							"uri": "stonehearth:refined:golem_parts",
+							"num_rolls": 1
+						}
+					}
+				}
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 100,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true
+			}
+		},
+		"stonehearth:drop_distance": 1,
+		"stonehearth:renderer": {
+			"can_visualize_paths": true
+		},
+		"stonehearth:camera": {
+			"is_followable": true
+		},
+		"stonehearth:entity_radius": 1,
+		"stonehearth:entity_reach": 1,
+		"stonehearth:ai_packs": {
+			"mixintypes": {
+				"packs": "override"
+			},
+			"packs": [
+				"stonehearth:ai_pack:idle",
+				"stonehearth:ai_pack:idle:bored:idle_effects",
+				"stonehearth:ai_pack:idle:bored:wander",
+				"stonehearth:ai_pack:death"
+			]
+		},
+		"stonehearth:observers:avoid_threatening_entities": {
+			"min_avoidance_distance": 16,
+			"max_avoidance_distance": 16
+		},
+		"stonehearth:portrait": {
+			"portrait_types": {
+				"headshot": {
+					"camera": {
+						"pos": [
+							20.4,
+							2.4,
+							-32.4
+						],
+						"look_at": [
+							0,
+							2.1,
+							0
+						],
+						"fov": 64
+					}
+				}
+			}
+		},
+		"stonehearth:item_placement_limit": {
+			"tag": "golem",
+			"default": 0
+		}
+	}
+}

@@ -51,6 +51,23 @@
 						"warrior":{
 							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.jobs.warrior)",
 							"open_page_id":"jobs_warrior"
+						},
+						"worker":{
+							"display_name":"i18n(stonehearth:jobs.worker.worker_description.display_name)",
+							"open_page_id":"jobs_worker"
+						}
+					}
+				},
+				"goods":{
+					"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.goods.display_name)",
+					"items":{
+						"vegetables_substitute":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.goods.vegetables_substitute)",
+							"open_page_id":"goods_vegetables_substitute"
+						},
+						"refined_fiber":{
+							"display_name":"i18n(swamp_goblins:ui.game.goblinpedia.menu.goblins.goods.refined_fiber)",
+							"open_page_id":"goods_refined_fiber"
 						}
 					}
 				}
@@ -376,6 +393,79 @@
 					"descriptions":{
 						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic3.desc1)",
 						"desc2":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.warrior.topic3.desc2)"
+					}
+				}
+			}
+		},
+		"jobs_worker":{
+			"page_id":"jobs_worker",
+			"title":"i18n(stonehearth:jobs.worker.worker_description.display_name)",
+			"image":"/stonehearth/jobs/worker/images/icon.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.worker.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.worker.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.worker.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.worker.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.worker.topic2.desc1)",
+						"desc2":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.worker.topic2.desc2)"
+					}
+				},
+				"topic3":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.worker.topic3.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.jobs.worker.topic3.desc1)"
+					}
+				}
+			}
+		},
+		"goods_vegetables_substitute":{
+			"page_id":"goods_vegetables_substitute",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.vegetables_substitute.title)",
+			"image":"/swamp_goblins/entities/food/fake_vegetables/fake_vegetables.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.vegetables_substitute.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.vegetables_substitute.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.vegetables_substitute.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.vegetables_substitute.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.vegetables_substitute.topic2.desc1)"
+					}
+				}
+			}
+		},
+		"goods_refined_fiber":{
+			"page_id":"goods_refined_fiber",
+			"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.refined_fiber.title)",
+			"image":"/swamp_goblins/entities/refined/fiber/fiber.png",
+			"descriptions":{
+				"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.refined_fiber.description1)"
+			},
+			"topics":{
+				"topic1":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.refined_fiber.topic1.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.refined_fiber.topic1.desc1)"
+					}
+				},
+				"topic2":{
+					"title":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.refined_fiber.topic2.title)",
+					"descriptions":{
+						"desc1":"i18n(swamp_goblins:ui.game.goblinpedia.pages.goods.refined_fiber.topic2.desc1)"
 					}
 				}
 			}

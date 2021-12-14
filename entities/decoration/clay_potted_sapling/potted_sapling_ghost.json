@@ -4,12 +4,12 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					{
-						"type": "one_of",
-						"items": [
-							"file(potted_sapling.qb)"
-						]
-					}
+					"file(potted_sapling.qb)"
+				]
+			},
+			"ace_planter": {
+				"models": [
+					"file(ace_planter.qb)"
 				]
 			}
 		},
@@ -24,7 +24,13 @@
 			"description": "i18n(swamp_goblins:entities.decoration.potted_sapling.description)",
 			"icon": "file(clay_potted_sapling.png)",
 			"category": "decoration",
-			"material_tags": ["firefly_made", "clay", "decoration", "stockpile_decoration"]
+			"material_tags": [
+				"firefly_made",
+				"clay",
+				"decoration",
+				"stockpile_decoration",
+				"herbalist_planter"
+			]
 		}
 	}
 }
