@@ -3,7 +3,8 @@
 	"mixins": "swamp_goblins:mixins:base_goblin", 
 	"components": {
 		"render_info" : {
-			"animation_table": "swamp_goblins:skeletons:humanoid:baby"
+			"animation_table": "swamp_goblins:skeletons:humanoid:baby",
+			"scale":0.08
 		},
 		"model_variants": {
 			"default": {

@@ -125,6 +125,10 @@
 				"description":"Opens a trading window",
 				"disabled_description":"Waiting a new trader"
 			},
+			"swap_entity":{
+				"display_name":"Toggle Entity",
+				"description":"Change this entity state"
+			},
 			"music":{
 				"display_name":"Play Music",
 				"description":"It will call someone to play this instrument",
@@ -1173,6 +1177,15 @@
 			"goblin_market_stall": {
 				"display_name": "Trading Stall"
 			},
+			"landmarker": {
+				"display_name": "Landmarker",
+				"description": "Marks the land",
+				"flavor": "- Goblins were here"
+			},
+			"old_landmarker": {
+				"display_name": "Old Landmarker",
+				"description": "Remains from past settlements"
+			},
 			"mini_fountain": {
 				"display_name": "Mini Fountain",
 				"description": "Water starts at the top and flow down going through all pieces",
@@ -1356,6 +1369,10 @@
 			"firefly_shield": {
 				"display_name": "Firefly force shield",
 				"description": "Enemies can't go through it"
+			},
+			"firefly_shield_off": {
+				"display_name": "Firefly force shield (off)",
+				"description": "Deactivated"
 			},
 			"goblin_camp_standard": {
 				"display_name": "Banner of Goblins",

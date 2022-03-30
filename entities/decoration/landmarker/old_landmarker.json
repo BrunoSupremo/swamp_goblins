@@ -1,0 +1,44 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"scale": 0.175
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(old_landmarker.qb)"
+				]
+			}
+		},
+		"stonehearth:lamp" : {
+			"light_effect" : "swamp_goblins:effects:firefly_effect"
+		},
+		"stonehearth:resource_node": {
+			"resource": "stonehearth:resources:stone:hunk_of_stone",
+			"harvest_overlay_effect": "stonehearth:effects:mine_overlay_effect",
+			"harvester_effect": "mine",
+			"description": "mine_boulder",
+			"durability": 2
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 3, "z": 1 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.old_landmarker.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.old_landmarker.description)"
+		}
+	}
+}

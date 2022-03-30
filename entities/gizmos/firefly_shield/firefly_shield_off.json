@@ -1,0 +1,54 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(firefly_shield_off.qb)"
+				]
+			}
+		},
+		"effect_list": {
+			"default": "swamp_goblins:effects:green_fire:small_candle"
+		},
+		"render_info":{
+			"scale": 0.13,
+			"color_map": "stonehearth:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/magic_material_map.json"
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 2, "z": 1 }
+				}
+			]
+		},
+		"swamp_goblins:swap_entity": {
+			"swap_to":"swamp_goblins:gizmos:firefly_shield"
+		}
+	},
+	"entity_data": {
+		"stonehearth:town_patrol": {
+			"auto_patrol": true,
+			"patrol_pattern": "perimeter"
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.gizmos.firefly_shield_off.display_name)",
+			"description": "i18n(swamp_goblins:entities.gizmos.firefly_shield_off.description)",
+			"icon": "file(firefly_shield_off.png)",
+			"category": "defense",
+			"material_tags": ["firefly_made", "stone", "crafted", "defense", "stockpile_defense"]
+		},
+		"stonehearth:appeal": {
+			"appeal": 5
+		}
+	}
+}

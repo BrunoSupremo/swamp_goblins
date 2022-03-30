@@ -1,0 +1,32 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(safety_standard.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": 0, "z": 0 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth:entities.gizmos.safety_standard.display_name)",
+			"description": "i18n(stonehearth:entities.gizmos.safety_standard.description)",
+			"icon": "file(safety_standard.png)",
+			"category": "decoration",
+			"material_tags": [
+				"firefly_made",
+				"stone",
+				"cloth",
+				"decoration",
+				"stockpile_decoration"
+			]
+		}
+	}
+}

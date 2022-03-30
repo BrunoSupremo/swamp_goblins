@@ -125,6 +125,10 @@
 				"description": "Abre uma janela de negociação",
 				"disabled_description": "Esperando um novo comerciante"
 			},
+			"swap_entity":{
+				"display_name":"Alternar Entidade",
+				"description":"Alterar o estado da entidade"
+			},
 			"music": {
 				"display_name": "Tocar Música",
 				"description": "Vai chamar alguém para tocar este instrumento",
@@ -1172,6 +1176,15 @@
 			"goblin_market_stall": {
 				"display_name": "Tenda de negociação"
 			},
+			"landmarker": {
+				"display_name": "Marcador",
+				"description": "Marca a região",
+				"flavor": "- Goblins estiveram aqui"
+			},
+			"old_landmarker": {
+				"display_name": "Marcador Antigo",
+				"description": "Restos de assentamentos anteriores"
+			},
 			"mini_fountain": {
 				"display_name": "Mini Fonte",
 				"description": "A água começa no topo e desce passando por todas as peças",
@@ -1355,6 +1368,10 @@
 			"firefly_shield": {
 				"display_name": "Escudo de força Vaga-lume",
 				"description": "Os inimigos não podem passar por isso"
+			},
+			"firefly_shield_off": {
+				"display_name": "Escudo de força Vaga-lume (desligado)",
+				"description": "Desativado"
 			},
 			"goblin_camp_standard": {
 				"display_name": "Banner de Goblins",

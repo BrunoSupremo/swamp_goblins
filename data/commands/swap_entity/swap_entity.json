@@ -1,0 +1,11 @@
+{
+	"type": "command",
+	"name": "swap_entity",
+	"display_name": "i18n(swamp_goblins:data.commands.swap_entity.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.swap_entity.description)",
+	"icon": "file(swap_entity.png)",
+	"ordinal": 9,
+	"action": "call",
+	"function": "swamp_goblins:swap_entity",
+	"args": []
+}

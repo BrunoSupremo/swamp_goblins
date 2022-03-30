@@ -1,0 +1,16 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["swamp_goblins:biome:swamp"],
+	"name": "old_landmarker",
+	"category": "terrain",
+	"size": {
+		"width": 16,
+		"length": 16
+	},
+	"habitat_types": ["plains","foothills"],
+	"weight": 1,
+	"data": {
+		"brush" : "/swamp_goblins/data/models/landmark/16x_old_landmarker.qb",
+		"landmark_block_types": "swamp_goblins:landmark_blocks"
+	}
+}

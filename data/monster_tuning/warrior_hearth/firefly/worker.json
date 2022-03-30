@@ -1,47 +1,10 @@
 {
+	"mixins": "file(default.json)",
 	"type": "monster_tuning",
 	"job": "stonehearth:jobs:worker",
-	"attributes": {
-		"exp_reward": 5
-	},
 	"equipment": {
 		"mainhand": [
 			"swamp_goblins:weapons:crude_wooden_club"
 		]
-	},
-	"loot_drops": {
-		"entries": {
-			"default": {
-				"items": {
-					"none": {
-						"weight": 4
-					},
-					"cattail": {
-						"uri": "swamp_goblins:plants:cattail:seed",
-						"weight": 3
-					},
-					"violet": {
-						"uri": "stonehearth:plants:violet:seed",
-						"weight": 3
-					},
-					"giant_flower": {
-						"uri": "swamp_goblins:plants:giant_flower:seed",
-						"weight": 3
-					},
-					"mushroom": {
-						"uri": "swamp_goblins:plants:mushroom",
-						"weight": 1
-					},
-					"bogger": {
-						"uri": "swamp_goblins:trees:bogger:seed",
-						"weight": 2
-					},
-					"cypress": {
-						"uri": "swamp_goblins:trees:cypress:seed",
-						"weight": 2
-					}
-				}
-			}
-		}
 	}
 }

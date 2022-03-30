@@ -142,6 +142,7 @@
 		"commands:market":		"file(data/commands/market)",
 		"commands:travel":			"file(data/commands/travel)",
 		"commands:music":			"file(data/commands/music)",
+		"commands:swap_entity":	"file(data/commands/swap_entity)",
 		"commands:transform:build_well_roof_clay":	"file(data/commands/transform/build_well_roof_clay.json)",
 		"commands:transform:build_well_wood":		"file(data/commands/transform/build_well_wood.json)",
 
@@ -218,6 +219,8 @@
 		"decoration:hourglass":				"file(entities/decoration/hourglass)",
 		"decoration:hearth:nature":			"file(entities/decoration/nature_hearth)",
 		"decoration:hearth:warrior":		"file(entities/decoration/warrior_hearth)",
+		"decoration:landmarker":			"file(entities/decoration/landmarker)",
+		"decoration:landmarker:old":		"file(entities/decoration/landmarker/old_landmarker.json)",
 		"decoration:lamppost":				"file(entities/decoration/lamppost)",
 		"decoration:large_candle":			"file(entities/decoration/large_candle)",
 		"decoration:mini_fountain":			"file(entities/decoration/mini_fountain)",
@@ -328,7 +331,11 @@
 		"furniture:wood_bench":		"file(entities/furniture/wood_bench)",
 		"furniture:wood_throne":	"file(entities/furniture/wood_throne)",
 
-		"gizmos:firefly_shield":"file(entities/gizmos/firefly_shield)",
+		"gizmos:firefly_shield":	"file(entities/gizmos/firefly_shield)",
+		"gizmos:firefly_shield:off":"file(entities/gizmos/firefly_shield/firefly_shield_off.json)",
+		"gizmos:safety_standard:wood":	"file(entities/gizmos/safety_standard_wood)",
+		"gizmos:safety_standard:stone":	"file(entities/gizmos/safety_standard_stone)",
+		"gizmos:safety_standard:clay":	"file(entities/gizmos/safety_standard_clay)",
 
 		"goblins:egg":		"file(entities/goblins/egg)",
 		"goblins:baby":		"file(entities/goblins/baby)",
@@ -624,6 +631,10 @@
 		"weapons:stick":			"file(entities/weapons/stick)",
 		"weapons:magma_sword":		"file(entities/weapons/magma_sword)",
 
+		"weapons:paladin:bronze_mace":	"file(entities/weapons/paladin/bronze_mace.json)",
+		"weapons:paladin:iron_mace":	"file(entities/weapons/paladin/iron_mace.json)",
+		"weapons:paladin:stone_maul":	"file(entities/weapons/paladin/stone_maul.json)",
+
 		"weather_stone":"file(entities/manipulation/weather_stone)",
 
 		"weather:foggy": "file(data/weather/foggy)",
@@ -692,9 +703,9 @@
 
 		"stonehearth:build:brushes" : "file(data/build/building_brushes.json)",
 
-		"stonehearth:building_templates:index":	"file(data/saved_objects/building_templates_index.json)",
-		"archipelago_biome/data/saved_objects/building_templates_index.json":"file(data/saved_objects/fisher_templates.json)",
-		"trapper_plus:building_templates:index":"file(data/saved_objects/trapper_plus_templates.json)",
+		"stonehearth:building_templates:index":			"file(data/saved_objects/building_templates_index.json)",
+		"archipelago_biome:building_templates:index":	"file(data/saved_objects/fisher_templates.json)",
+		"trapper_plus:building_templates:index":		"file(data/saved_objects/trapper_plus_templates.json)",
 
 		"stonehearth_ace:construction:simple:water_well": "file(entities/construction/simple_water_well)",
 
@@ -907,10 +918,6 @@
 		"stonehearth_ace:ui:output_box:filters": "file(ui/data/output_box_filters.json)",
 		"stonehearth_ace/ui/data/season_icons.json":"file(ui/data/season_icons.json)",
 
-		"stonehearth:weapons:bronze_mace":	"file(data/monster_tuning/warrior_hearth/hearthling/paladin_add_to_weapons.json)",
-		"stonehearth:weapons:iron_mace":	"file(data/monster_tuning/warrior_hearth/hearthling/paladin_add_to_weapons.json)",
-		"stonehearth:weapons:stone_maul":	"file(data/monster_tuning/warrior_hearth/hearthling/paladin_add_to_weapons.json)",
-
 		"tower_defense/manifest.json":	"file(tower_defense/manifest.json)",
 
 		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
@@ -984,6 +991,10 @@
 		"market": {
 			"controller": "file(call_handlers/firefly_stuff.lua)",
 			"endpoint": "server"
+		},
+		"swap_entity": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
 		}
 	},
 	"components": {
@@ -996,6 +1007,7 @@
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
 		"music":					"file(components/music/music.lua)",
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)",
+		"swap_entity":				"file(components/swap_entity/swap_entity.lua)",
 		"warrior_hearth":			"file(components/warrior_hearth/warrior_hearth.lua)",
 		"weather_stone":			"file(components/weather_stone/weather_stone.lua)"
 	},

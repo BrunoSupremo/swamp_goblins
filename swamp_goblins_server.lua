@@ -1,7 +1,10 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 21.12.13")
+print("Swamp Goblins Mod version 22.03.13")
 
 --[[
+
+stop babies evolving in beds
+	change timers to counter
 
 replace rabbit statues
 
@@ -13,6 +16,8 @@ instead of recipes to break items (chair -> wood), have a container with input f
 	detects itens inside, delete them and spill out the resources
 		worked a little on this, will need custom ui
 			⚠️ui:crusher:filter
+
+remove stick water debuff with some item or trait
 
 goblinpedia:
 	templates
@@ -38,6 +43,8 @@ ace stuff:
 	add ace tools and tools upgrades
 	fuel system (Wait gobbos can't chop wood?)
 	wounds and tonics
+
+folklore
 
 orc quest
 	food arc
@@ -93,7 +100,7 @@ decorations:
 	painting/tapestry, banner wall, awning
 	aroma candles, incenses
 	weapon/armor decorations
-	wall planter, pots, violets versions
+	wall planter, pots
 furniture:
 	themes:
 		mushroom, fiber, wood, fancy/clothed wood, stone, clay

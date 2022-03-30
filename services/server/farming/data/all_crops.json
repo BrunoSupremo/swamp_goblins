@@ -3,17 +3,26 @@
 		"swamp_mushroom": {
 			"crop_type": "swamp_goblins:crops:mushroom_crop",
 			"ordinal": 1.4,
-			"level_requirement": 1
+			"level_requirement": 1,
+			"field_types": {
+				"farm": true
+			}
 		},
 		"cattail": {
 			"crop_type": "swamp_goblins:crops:cattail_crop",
 			"ordinal": 8.6,
-			"level_requirement": 2
+			"level_requirement": 2,
+			"field_types": {
+				"farm": true
+			}
 		},
 		"violet": {
 			"crop_type": "swamp_goblins:crops:violet_crop",
 			"ordinal": 9.5,
-			"level_requirement": 3
+			"level_requirement": 3,
+			"field_types": {
+				"farm": true
+			}
 		},
 		"mangrove_halfsize": {
 			"crop_type": "swamp_goblins:crops:mangrove_crop",

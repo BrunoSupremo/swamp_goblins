@@ -1,48 +1,11 @@
 {
+	"mixins": "file(default.json)",
 	"type": "monster_tuning",
 	"job": "stonehearth:jobs:knight",
-	"attributes": {
-		"exp_reward": 5
-	},
 	"equipment": {
 		"torso": "/stonehearth/jobs/knight/knight_outfit/knight_outfit.json",
 		"helmet": "/stonehearth/jobs/knight/knight_helm/knight_helm.json",
 		"offhand": "stonehearth:armor:knights_shield",
 		"mainhand": "stonehearth:weapons:bronze_sword"
-	},
-	"loot_drops": {
-		"entries": {
-			"default": {
-				"items": {
-					"none": {
-						"weight": 4
-					},
-					"silkweed": {
-						"uri": "stonehearth:plants:silkweed:seed",
-						"weight": 3
-					},
-					"frostsnap": {
-						"uri": "stonehearth:plants:frostsnap:seed",
-						"weight": 3
-					},
-					"brightbell": {
-						"uri": "stonehearth:plants:brightbell:seed",
-						"weight": 3
-					},
-					"berry_bush": {
-						"uri": "stonehearth:plants:berry_bush:seed",
-						"weight": 1
-					},
-					"oak": {
-						"uri": "stonehearth:trees:oak:seed",
-						"weight": 2
-					},
-					"pine": {
-						"uri": "stonehearth:trees:pine:seed",
-						"weight": 2
-					}
-				}
-			}
-		}
 	}
 }

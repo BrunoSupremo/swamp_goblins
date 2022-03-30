@@ -91,4 +91,11 @@ function FireflyCallHandler:market(session, response, source_entity)
 	return false
 end
 
+function FireflyCallHandler:swap_entity(session, response, entity)
+	validator.expect_argument_types({'Entity'}, entity)
+	validator.expect.matching_player_id(session.player_id, entity)
+
+	entity:get_component("swamp_goblins:swap_entity"):swap()
+end
+
 return FireflyCallHandler
