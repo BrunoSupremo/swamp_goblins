@@ -1,10 +1,18 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 22.03.13")
+print("Swamp Goblins Mod version 22.6.14")
 
 --[[
 
-stop babies evolving in beds
-	change timers to counter
+Babies boosters:
+	toy:
+		better social
+		lvl2 increase mind
+	baby bottle:
+		decrease food consumption
+		lvl2 increase body
+	blanket:
+		decrease sleep time
+		lvl2 increase spirit
 
 replace rabbit statues
 
@@ -78,7 +86,13 @@ old shepherd_outfit as a new goblin outfit? (looks good at least)
 spirit world has inverted colors?
 
 mobs:
-	slimes, mosquito
+	slimes:
+		cube shape
+		animation:
+			cube roll walking, particle effect trail
+			size inflation for attack
+			squish up/down idle
+	mosquito
 
 party goblin:
 	different tattoo color?

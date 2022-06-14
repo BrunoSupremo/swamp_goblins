@@ -57,6 +57,7 @@ function FireflyGoblin:add_goblin_race_abilities()
 	self:fix_traits()
 	if swamp_goblins.ace_is_here then
 		radiant.entities.add_buff(self._entity, "swamp_goblins:buffs:poison:resist")
+		radiant.entities.add_buff(self._entity, "swamp_goblins:buffs:wounds:resist")
 	end
 end
 

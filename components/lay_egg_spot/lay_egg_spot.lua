@@ -7,13 +7,26 @@ local rng = _radiant.math.get_default_rng()
 function LayEgg_spot:initialize()
 	self._sv._use_state = "off" --off, waiting, has_egg
 	self._sv._current_egg = nil
-	self._sv._current_baby = nil
 	self._sv._task_effect = nil
 end
 
 function LayEgg_spot:post_activate()
-	self.egg_raid_json = radiant.resources.load_json("swamp_goblins:monster_tuning:egg_raid", true, false)
 	self.player_id = self._entity:get_player_id()
+	self.egg_raid_json = radiant.resources.load_json("swamp_goblins:monster_tuning:egg_raid", true, false)
+	self.component_json = radiant.entities.get_json(self)
+	if self.component_json.start_with_egg and not (self._sv._use_state == "has_egg") then
+		if not self._added_to_world_listener then
+			self._added_to_world_listener = radiant.events.listen(self._entity, 'stonehearth:on_added_to_world', function()
+				local delayed_function = function ()
+					--delayed_function because location is not imediately set
+					self:create_egg()
+					self.stupid_delay:destroy()
+					self.stupid_delay = nil
+				end
+				self.stupid_delay = stonehearth.calendar:set_persistent_timer("LayEgg_spot delay", 0, delayed_function)
+			end)
+		end
+	end
 
 	self:update_commands()
 	if self._sv._use_state == "waiting" then
@@ -32,11 +45,6 @@ function LayEgg_spot:post_activate()
 			self._kill_listener = nil
 		end)
 	end
-	if self._sv._current_baby then
-		self._baby_listener = radiant.events.listen_once(self._sv._current_baby, 'stonehearth:on_evolved', function(e)
-			self:grow_into_adult(e.evolved_form)
-		end)
-	end
 end
 
 function LayEgg_spot:update_commands()
@@ -53,7 +61,8 @@ function LayEgg_spot:update_commands()
 
 		if self._sv._use_state == "waiting" then
 			commands_component:add_command("swamp_goblins:commands:cancel_egg_spot")
-		else --"has_egg"
+		else 
+			--"has_egg"
 			commands_component:remove_command("swamp_goblins:commands:cancel_egg_spot")
 		end
 	end
@@ -73,12 +82,15 @@ function LayEgg_spot:now_waiting()
 end
 
 function LayEgg_spot:create_egg()
+	local location = radiant.entities.get_world_grid_location(self._entity)
+	if not location then
+		return
+	end
 	self._sv._use_state = "has_egg"
 	self:update_commands()
 	local egg = radiant.entities.create_entity("swamp_goblins:goblins:egg", {owner = self.player_id})
-	local location = radiant.entities.get_world_grid_location(self._entity)
 	radiant.entities.turn_to(egg, rng:get_int(0,3)*90)
-	radiant.terrain.place_entity_at_exact_location(egg, location +Point3.unit_y)
+	radiant.terrain.place_entity(egg, location)
 
 	local inventory = stonehearth.inventory:get_inventory(self.player_id)
 	if inventory then
@@ -113,15 +125,6 @@ function LayEgg_spot:egg_hatched(baby)
 	self:reset_pedestal()
 	radiant.effects.run_effect(baby, "stonehearth:effects:buff_tonic_energy_added")
 
-	-- local pop = stonehearth.population:get_population(self.player_id)
-	-- pop:set_baby(baby)
-	-- if we end up showing it on character list, players "can" change its job...
-
-	self._sv._current_baby = baby
-	self._baby_listener = radiant.events.listen_once(baby, 'stonehearth:on_evolved', function(e)
-		self:grow_into_adult(e.evolved_form)
-	end)
-
 	local inventory = stonehearth.inventory:get_inventory(self.player_id)
 	if inventory then
 		inventory:add_item_if_not_full(baby)
@@ -134,21 +137,6 @@ function LayEgg_spot:egg_hatched(baby)
 	})
 end
 
-function LayEgg_spot:grow_into_adult(adult)
-	local pop = stonehearth.population:get_population(self.player_id)
-	pop:create_new_goblin_citizen_from_role_data(adult)
-	local job_component = adult:add_component('stonehearth:job')
-	job_component:promote_to("stonehearth:jobs:worker", { skip_visual_effects = true })
-	self._sv._current_baby = nil
-	self._baby_listener = nil
-	stonehearth.bulletin_board:post_bulletin(self.player_id)
-	:set_data({
-		zoom_to_entity = adult,
-		title = "i18n(swamp_goblins:ui.data.new_goblin_citizen)"
-	})
-	:add_i18n_data('adult_name', radiant.entities.get_custom_name(adult))
-end
-
 function LayEgg_spot:reset_pedestal()
 	self._sv._use_state = "off"
 	if self._sv._task_effect then
@@ -158,6 +146,10 @@ function LayEgg_spot:reset_pedestal()
 	self:update_commands()
 
 	stonehearth.ai:reconsider_entity(self._entity)
+
+	if self.component_json.destroy_after_hatch then
+		radiant.entities.destroy_entity(self._entity)
+	end
 end
 
 function LayEgg_spot:current_stage()
@@ -270,6 +262,10 @@ function LayEgg_spot:destroy()
 	if self._sv._task_effect then
 		self._sv._task_effect:stop()
 		self._sv._task_effect = nil
+	end
+	if self._added_to_world_listener then
+		self._added_to_world_listener:destroy()
+		self._added_to_world_listener = nil
 	end
 end
 

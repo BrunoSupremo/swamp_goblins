@@ -161,6 +161,11 @@
 				}
 			}
 		},
+		"fishing":{
+			"egg_basket":{
+				"message":"We could place it somewhere safe and wait to see if it hatches."
+			}
+		},
 		"gm":{
 			"human":"Unknown human",
 			"nina":"Nina",
@@ -1388,6 +1393,11 @@
 				"display_name": "Goblinpedia",
 				"description": "About goblins and swamps",
 				"flavor":"Use this item to open an actual encyclopedia with all the necessary information about the Firefly Clan and the Swamp Biome. Can also be used as just a nice decoration"
+			},
+			"safety_standard":{
+				"stone":{
+					"display_name":"Stone Safety Standard"
+				}
 			}
 		},
 		"humans":{
@@ -1507,6 +1517,7 @@
 			"mushroom_garden": {
 				"display_name": "Swamp Mushroom Garden",
 				"description": "Harvestable for new plantable mushrooms",
+				"flavor": "Important distinction: It does not yield food mushrooms, only the plantable mushroom, that once planted can later can be harvested for food",
 				"unripe_description": "The mushroom in this garden has not fully grown yet"
 			},
 			"log": {
@@ -2209,7 +2220,7 @@
 							},
 							"topic3":{
 								"title":"Grow:",
-								"desc1":"One more day and they grow into adult goblins."
+								"desc1":"Once they've eaten enough (and well), they'll turn into adult goblins."
 							}
 						},
 						"goblin":{

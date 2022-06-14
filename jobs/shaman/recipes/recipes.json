@@ -178,9 +178,6 @@
 				},
 				"giple": {
 					"recipe": "file(seeds/giple_recipe.json)"
-				},
-				"mushroom_garden": {
-					"recipe": "file(seeds/mushroom_garden_recipe.json)"
 				}
 			}
 		},
@@ -202,6 +199,9 @@
 				},
 				"potted_sapling": {
 					"recipe": "file(decorations/potted_sapling_recipe.json)"
+				},
+				"mushroom_garden": {
+					"recipe": "file(decorations/mushroom_garden_recipe.json)"
 				}
 			}
 		}

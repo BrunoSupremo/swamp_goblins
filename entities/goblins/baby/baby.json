@@ -2,6 +2,7 @@
 	"type" : "entity",
 	"mixins": "swamp_goblins:mixins:base_goblin", 
 	"components": {
+		"swamp_goblins:baby" : {},
 		"render_info" : {
 			"animation_table": "swamp_goblins:skeletons:humanoid:baby",
 			"scale":0.08
@@ -53,16 +54,9 @@
 		},
 		"stonehearth:combat_state": {
 			"stance": "passive"
-		},
-		"stonehearth:evolve": {}
+		}
 	},
 	"entity_data": {
-		"stonehearth:evolve_data": {
-			"current_stage": "baby",
-			"next_stage": "swamp_goblins:goblins:goblin",
-			"evolve_time": "1d",
-			"evolve_effect": "stonehearth:effects:fursplosion_effect"
-		},
 		"stonehearth:catalog": {
 			"icon": "file(baby.png)",
 			"mixintypes": {

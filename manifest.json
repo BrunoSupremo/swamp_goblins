@@ -95,6 +95,7 @@
 		"buffs:despawn":			"file(data/buffs/despawn)",
 		"buffs:despawn:in_2h":		"file(data/buffs/despawn/despawn_in_2h.json)",
 		"buffs:firefly_confusion":	"file(data/buffs/firefly_confusion)",
+		"buffs:pause_hungry":		"file(data/buffs/pause_hungry)",
 		"buffs:poison":			"file(data/buffs/poison)",
 		"buffs:poison:add":		"file(data/buffs/poison/poison_add.json)",
 		"buffs:poison:resist":	"file(data/buffs/poison/resist.json)",
@@ -104,6 +105,7 @@
 		"buffs:slow_dart":			"file(data/buffs/slow_dart)",
 		"buffs:sticky_water":		"file(data/buffs/sticky_water)",
 		"buffs:trapped":			"file(data/buffs/trapped)",
+		"buffs:wounds:resist":		"file(data/buffs/wounds/resist.json)",
 
 		"buffs:potions:body":	"file(data/buffs/potions/body)",
 		"buffs:potions:mind":	"file(data/buffs/potions/mind)",
@@ -331,6 +333,7 @@
 		"furniture:wood_bench":		"file(entities/furniture/wood_bench)",
 		"furniture:wood_throne":	"file(entities/furniture/wood_throne)",
 
+		"gizmos:egg_basket":	"file(entities/gizmos/egg_basket)",
 		"gizmos:firefly_shield":	"file(entities/gizmos/firefly_shield)",
 		"gizmos:firefly_shield:off":"file(entities/gizmos/firefly_shield/firefly_shield_off.json)",
 		"gizmos:safety_standard:wood":	"file(entities/gizmos/safety_standard_wood)",
@@ -712,6 +715,8 @@
 		"stonehearth:data:constants": "file(data/constants.json)",
 		"extra_map_options:data:extra_map_options":"file(data/extra_map_options.json)",
 
+		"archipelago_biome:data:fishing": "file(data/fishing)",
+
 		"stonehearth_ace:data:herbalist_planter:allowed_crops": "file(data/herbalist_planters/allowed_crops.json)",
 		"stonehearth_ace:data:herbalist_planter:crops": "file(data/herbalist_planters/crops.json)",
 
@@ -881,12 +886,6 @@
 
 		"stonehearth:personal_logs:dreams": "file(data/personality/dreams.json)",
 
-		"swamp_goblins:plants:cattail":			"autoharvest_mod/mixins/autoharvest_off.json",
-		"swamp_goblins:plants:giant_flower":	"autoharvest_mod/mixins/autoharvest_off.json",
-		"swamp_goblins:plants:small_mushroom":	"autoharvest_mod/mixins/autoharvest_off.json",
-		"swamp_goblins:plants:mushroom":		"autoharvest_mod/mixins/autoharvest_off.json",
-		"swamp_goblins:plants:tall_mushroom":	"autoharvest_mod/mixins/autoharvest_off.json",
-
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
@@ -998,6 +997,7 @@
 		}
 	},
 	"components": {
+		"baby":						"file(components/baby/baby.lua)",
 		"deprecated":				"file(components/deprecated/deprecated.lua)",
 		"enemy_barrier":			"file(components/enemy_barrier/enemy_barrier.lua)",
 		"firefly_goblin":			"file(components/firefly_goblin/firefly_goblin.lua)",

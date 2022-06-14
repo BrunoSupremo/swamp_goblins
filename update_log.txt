@@ -2,19 +2,22 @@ Additions:
 Landmarker, craftable stone decoration
 Ancient Landmarker decorations found on Swamp
 Safety Standard (wood and stone versions, citizens gather around it when in town alert)
-
+(Fisher mod) Goblin Egg in a basket can be fished, with any kingdom
 
 Changes:
 New baby model
+Babies hungry levels will not increase while sleeping
+Babies now grow after eating a certain amount/quality of food, instead of just waiting a day
 Updated stone table model (it was too small before)
 Firefly force shield can be turned off (also deactivates visual effects)
-
+Moved shaman's mushroom garden from seeds to decorations category on their craft recipes
+Added info on mushroom garden crafting that they will yield ploppable mushrooms, not food
 
 Changes for ACE:
-
+ACE tags for the swamp herbs (so they are recognized for herbalist stuff)
 
 Fixes:
 
-
 Fixes for ACE:
 Fixed weapons code to avoid soldiers only staring at trainging dummies instead of actually training.
+Fixed bug with seed crafting while ACE auto craft is on.

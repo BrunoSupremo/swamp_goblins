@@ -161,6 +161,11 @@
 				}
 			}
 		},
+		"fishing":{
+			"egg_basket":{
+				"message":"Podemos colocá-lo em algum lugar seguro e esperar para ver se choca."
+			}
+		},
 		"gm": {
 			"human": "Humano desconhecido",
 			"nina": "Nina ",
@@ -1387,6 +1392,11 @@
 				"display_name": "Goblinpedia ",
 				"description": "Sobre goblins e pântanos",
 				"flavor": "Use este item para abrir uma enciclopédia real com todas as informações necessárias sobre o Clã Vaga-lume e o Bioma Pântano. Também pode ser usado apenas como uma decoração agradável"
+			},
+			"safety_standard":{
+				"stone":{
+					"display_name":"Padrão de Segurança de Pedra"
+				}
 			}
 		},
 		"humans": {
@@ -1506,6 +1516,7 @@
 			"mushroom_garden": {
 				"display_name": "Jardim de Cogumelo do Pântano",
 				"description": "Colhíveis para novos cogumelos plantáveis",
+				"flavor": "Distinção importante: Não produz cogumelos alimentares, apenas o cogumelo plantável, que uma vez plantado pode mais tarde ser colhido para alimentação",
 				"unripe_description": "O cogumelo neste jardim ainda não cresceu totalmente"
 			},
 			"log": {
@@ -2208,7 +2219,7 @@
 							},
 							"topic3": {
 								"title": "Crescer:",
-								"desc1": "Mais um dia e eles se transformarão em goblins adultos."
+								"desc1": "Uma vez que tenham comido o suficiente (e bem), eles se transformarão em goblins adultos."
 							}
 						},
 						"goblin": {
