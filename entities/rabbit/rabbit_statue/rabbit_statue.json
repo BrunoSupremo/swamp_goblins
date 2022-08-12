@@ -1,5 +1,17 @@
 {
+	"type": "entity",
+	"mixins": "stonehearth:rabbit:statue",
 	"components": {
+		"model_variants": {
+			"mixintypes": {
+				"default": "override"
+			},
+			"default": {
+				"models": [
+					"file(rabbit_statue.qb)"
+				]
+			}
+		},
 		"stonehearth:resource_node": {
 			"resource_loot_table": {
 				"entries": {

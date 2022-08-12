@@ -75,10 +75,24 @@ end
 
 function LayEgg_spot:now_waiting()
 	self._sv._use_state = "waiting" --someone to lay an egg
+	self:is_someone_able_to_lay_the_egg()
 	self:update_commands()
 	self._sv._task_effect = radiant.effects.run_effect(self._entity, "swamp_goblins:effects:egg_pedestal", nil, nil, { playerColor = stonehearth.presence:get_color_integer(self.player_id) })
 
 	stonehearth.ai:reconsider_entity(self._entity)
+end
+
+function LayEgg_spot:is_someone_able_to_lay_the_egg()
+	local job = stonehearth.job:get_job_info(self.player_id, "stonehearth:jobs:worker")
+	if job:has_members() then
+		return
+	end
+
+	stonehearth.bulletin_board:post_bulletin(self.player_id)
+	:set_data({
+		zoom_to_entity = self._entity,
+		title = "i18n(swamp_goblins:ui.data.no_workers)"
+	})
 end
 
 function LayEgg_spot:create_egg()

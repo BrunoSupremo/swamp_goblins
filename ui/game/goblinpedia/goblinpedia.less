@@ -2,18 +2,26 @@
 	position: absolute;
 	left: 100px;
 	top: 100px;
+
 	.window{
+		position: relative;
 		width: 800px;
 		height: 730px;
 	}
+	nav,.page{
+		position: absolute;
+		bottom: 0;
+		height: 680px;
+	}
 	nav{
 		width: 200px;
-		float: left;
-		button{
-			width: 100%;
-		}
-		button + div{display: none; }
+		button{width: 100%; }
+		.category{display: none; }
 		div{padding-left: 1em; }
+		.sub_category{
+			display: flex;
+			flex-direction: column;
+		}
 		a{color: #DDD; }
 		a:hover{color: #FFF; }
 	}
@@ -28,6 +36,7 @@
 		text-align: center;
 		position: relative;
 		width: fit-content;
+		padding: 0;
 		margin: 0 auto;
 	}
 	div.border::after{
@@ -52,10 +61,14 @@
 	p{
 		margin-top: 0;
 	}
+	#cover{
+		padding-left: 20px;
+	}
 	.page{
+		left: 210px;
+		width: 585px;
 		display: flex;
 		flex-direction: column;
-		padding-left: 20px;
 	}
 	.page:not(.current_page){
 		display: none;

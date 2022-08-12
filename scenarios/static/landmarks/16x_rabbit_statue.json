@@ -1,0 +1,16 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["swamp_goblins:biome:swamp"],
+	"name": "swamp_rabbit_statue",
+	"category": "ruins",
+	"size" : {
+		"width" : 15,
+		"length" : 15
+	},
+	"weight" : 1,
+	"habitat_types" : ["plains","foothills","forest"],
+	"data": {
+		"brush" : "/swamp_goblins/data/models/landmark/16x_rabbit_statue.qb",
+		"landmark_block_types": "swamp_goblins:landmark_blocks"
+	}
+}

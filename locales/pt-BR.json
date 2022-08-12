@@ -1370,6 +1370,10 @@
 				"display_name": "Banner do Acampamento",
 				"description": "Como você sabe que voltou para casa"
 			},
+			"egg_basket": {
+				"display_name": "Cesta de Ovos",
+				"description": "Tem espaço para um ovo grande"
+			},
 			"firefly_shield": {
 				"display_name": "Escudo de força Vaga-lume",
 				"description": "Os inimigos não podem passar por isso"
@@ -1950,7 +1954,8 @@
 			},
 			"egg_pedestal": {
 				"display_name": "Pedestal de Ovo",
-				"description": "É usado para botar ovos e cuidar deles"
+				"description": "É usado para botar ovos e cuidar deles",
+				"flavor": "\"Ovo ou Goblin?\""
 			},
 			"recipes": {
 				"potions": "Poções",
@@ -2114,68 +2119,24 @@
 				"undead": "Mortos-vivos estão tentando destruir os ovos",
 				"undead_army": "Eles querem a energia vital de nossos ovos!"
 			},
+			"no_workers":"Você precisa de trabalhadores para usar o pedestal",
 			"new_goblin_baby": "Um ovo chocou",
 			"new_goblin_citizen": "Um bebê não mais. Bem-vindo [str(i18n_data.adult_name)]"
 		},
 		"game": {
 			"goblinpedia": {
 				"title": "Goblinpedia ",
-				"menu": {
-					"display_name": "Menu ",
-					"goblins": {
-						"display_name": "Clã Vaga-lume",
-						"growth": {
-							"display_name": "Crescimento do clã",
-							"pedestal": "Pedestal ",
-							"egg": "Ovo",
-							"baby": "Bebê",
-							"goblin": "Goblin "
-						},
-						"jobs": {
-							"display_name": "Classes",
-							"beast_tamer": "Domador de Feras",
-							"bonesmith": "Ferreiro de Ossos",
-							"earthmaster": "Mestre Terra",
-							"shaman": "Xamã",
-							"spirit_walker": "Guia Espiritual",
-							"trapper": "Caçador",
-							"warrior": "Guerreiro"
-						},
-						"goods":{
-							"display_name":"Items",
-							"vegetables_substitute":"Substituto de Vegetais",
-							"refined_fiber":"Fibra Refinada"
-						}
-					},
-					"swamp": {
-						"display_name": "Bioma Pântano",
-						"fauna": {
-							"display_name": "Fauna ",
-							"firefly": "Vaga-lume",
-							"frog": "Sapo",
-							"varanus": "Varanus "
-						},
-						"flora": {
-							"display_name": "Flora ",
-							"cattail": "Taboa",
-							"giple": "Flor Giple",
-							"mushroom": "Cogumelo do Pântano",
-							"tree": "Árvores"
-						},
-						"others": {
-							"display_name": "Outros",
-							"water": "Água",
-							"weather": "Clima"
-						}
-					}
+				"menu": "Menu ",
+				"cover":{
+					"title": "Sobre goblins e pântanos",
+					"text": "* Escolha o tópico desejado no menu lateral para ler"
 				},
-				"pages": {
-					"cover": {
-						"title": "Sobre goblins e pântanos",
-						"text": "* Escolha o tópico desejado no menu lateral para ler"
-					},
+				"goblins": {
+					"display_name": "Clã Vaga-lume",
 					"growth": {
+						"display_name": "Crescimento do clã",
 						"pedestal": {
+							"menu_link": "Pedestal ",
 							"title": "Pedestal de Ovo",
 							"description1": "Uma bela mesa cerimonial para uma ocasião importante",
 							"topic1": {
@@ -2189,6 +2150,7 @@
 							}
 						},
 						"egg": {
+							"menu_link": "Ovo",
 							"title": "Ovo de Goblin",
 							"description1": "Quem veio primeiro, o ovo ou o goblin?",
 							"description2": "Muitos goblins se perguntam sobre isso desde que se lembram, mas ninguém sabe ao certo.",
@@ -2207,6 +2169,7 @@
 							}
 						},
 						"baby": {
+							"menu_link": "Bebê",
 							"title": "Bebê Goblin",
 							"description1": "Diabinhos",
 							"topic1": {
@@ -2223,6 +2186,7 @@
 							}
 						},
 						"goblin": {
+							"menu_link": "Goblin ",
 							"title": "Goblin ",
 							"description1": "Vaga-lume Goblin",
 							"topic1": {
@@ -2241,7 +2205,9 @@
 						}
 					},
 					"jobs": {
+						"display_name": "Classes",
 						"beast_tamer": {
+							"menu_link": "Domador de Feras",
 							"title": "Domador de Feras",
 							"description1": "Sinergia com os animais",
 							"topic1": {
@@ -2259,6 +2225,7 @@
 							}
 						},
 						"bonesmith": {
+							"menu_link": "Ferreiro de Ossos",
 							"title": "Ferreiro de Ossos",
 							"description1": "Criador de materiais básicos de baixo nível",
 							"topic1": {
@@ -2276,6 +2243,7 @@
 							}
 						},
 						"earthmaster": {
+							"menu_link": "Mestre Terra",
 							"title": "Mestre Terra",
 							"description1": "Criador de materiais complexos de alto nível",
 							"topic1": {
@@ -2294,6 +2262,7 @@
 							}
 						},
 						"shaman": {
+							"menu_link": "Xamã",
 							"title": "Xamã",
 							"description1": "A classe inicial do clã",
 							"topic1": {
@@ -2311,6 +2280,7 @@
 							}
 						},
 						"spirit_walker": {
+							"menu_link": "Guia Espiritual",
 							"title": "Guia Espiritual",
 							"description1": "Conecta goblins com seu passado",
 							"topic1": {
@@ -2328,6 +2298,7 @@
 							}
 						},
 						"trapper": {
+							"menu_link": "Caçador",
 							"title": "Caçador",
 							"description1": "Produtor de alimentos básicos",
 							"topic1": {
@@ -2344,6 +2315,7 @@
 							}
 						},
 						"warrior": {
+							"menu_link": "Guerreiro",
 							"title": "Guerreiro",
 							"description1": "Lutador de linha de frente",
 							"topic1": {
@@ -2378,7 +2350,9 @@
 						}
 					},
 					"goods":{
+						"display_name":"Items",
 						"vegetables_substitute":{
+							"menu_link":"Substituto de Vegetais",
 							"title":"Substituto de Vegetais",
 							"description1":"Os goblins não gostam muito de vegetais, então os xamãs tiveram que ser criativos para manter uma dieta saudável.",
 							"topic1":{
@@ -2391,6 +2365,7 @@
 							}
 						},
 						"refined_fiber":{
+							"menu_link":"Fibra Refinada",
 							"title":"Fibra Refinada",
 							"description1":"Seção 2 do código de construção dos goblins",
 							"topic1":{
@@ -2402,9 +2377,14 @@
 								"desc1":"Outra opção de edificações. É usado como qualquer outro bloco de construção comum."
 							}
 						}
-					},
+					}
+				},
+				"swamp": {
+					"display_name": "Bioma Pântano",
 					"fauna": {
+						"display_name": "Fauna ",
 						"firefly": {
+							"menu_link": "Vaga-lume",
 							"title": "Vaga-lume",
 							"description1": "Luzes da noite",
 							"topic1": {
@@ -2421,6 +2401,7 @@
 							}
 						},
 						"frog": {
+							"menu_link": "Sapo",
 							"title": "Sapo",
 							"description1": "Pequeno e escorregadio",
 							"topic1": {
@@ -2437,6 +2418,7 @@
 							}
 						},
 						"varanus": {
+							"menu_link": "Varanus ",
 							"title": "Varanus ",
 							"description1": "Sempre assistindo",
 							"topic1": {
@@ -2454,7 +2436,9 @@
 						}
 					},
 					"flora": {
+						"display_name": "Flora ",
 						"cattail": {
+							"menu_link": "Taboa",
 							"title": "Firefly",
 							"description1": "Lights in the night",
 							"topic1": {
@@ -2471,6 +2455,7 @@
 							}
 						},
 						"giple": {
+							"menu_link": "Flor Giple",
 							"title": "Frog",
 							"description1": "Small and slippy",
 							"topic1": {
@@ -2487,6 +2472,7 @@
 							}
 						},
 						"mushroom": {
+							"menu_link": "Cogumelo do Pântano",
 							"title": "Varanus",
 							"description1": "Always watching",
 							"topic1": {
@@ -2503,6 +2489,7 @@
 							}
 						},
 						"tree": {
+							"menu_link": "Árvores",
 							"title": "Varanus",
 							"description1": "Always watching",
 							"topic1": {
@@ -2520,7 +2507,9 @@
 						}
 					},
 					"others": {
+						"display_name": "Outros",
 						"water": {
+							"menu_link": "Água",
 							"title": "Água",
 							"description1": "Cobre a maioria das áreas baixas",
 							"topic1": {
@@ -2533,6 +2522,7 @@
 							}
 						},
 						"weather": {
+							"menu_link": "Clima",
 							"title": "Clima",
 							"description1": "Principalmente nebuloso. Nesta região existem apenas duas temporadas",
 							"topic1": {

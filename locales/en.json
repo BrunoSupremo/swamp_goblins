@@ -1371,6 +1371,10 @@
 				"display_name": "Camp Banner",
 				"description": "How you know you've come home"
 			},
+			"egg_basket": {
+				"display_name": "Egg Basket",
+				"description": "It has space for one big egg"
+			},
 			"firefly_shield": {
 				"display_name": "Firefly force shield",
 				"description": "Enemies can't go through it"
@@ -1936,6 +1940,10 @@
 				"display_name": "Shaman Workbench",
 				"description": "Shamans will use to craft their stuff"
 			},
+			"brewing_stand": {
+				"display_name": "Brewing Stand",
+				"description": "Shamans will use to craft potions"
+			},
 			"shaman_firefly_token": {
 				"display_name": "Shaman Firefly Altar",
 				"description": "Shamans will use this to extract firefly essences"
@@ -1951,7 +1959,8 @@
 			},
 			"egg_pedestal": {
 				"display_name": "Egg Pedestal",
-				"description": "It is used to lay eggs and take care of them"
+				"description": "It is used to lay eggs and take care of them",
+				"flavor": "\"Goblin or the egg?\""
 			},
 			"recipes": {
 				"potions": "Potions",
@@ -2115,68 +2124,24 @@
 				"undead":"Undeads are trying to destroy the eggs",
 				"undead_army":"They want the life energy of our eggs!"
 			},
+			"no_workers":"You need workers to use the pedestal",
 			"new_goblin_baby":"An egg has hatched",
 			"new_goblin_citizen":"A baby no more. Welcome [str(i18n_data.adult_name)]"
 		},
 		"game": {
 			"goblinpedia":{
 				"title":"Goblinpedia",
-				"menu":{
-					"display_name":"Menu",
-					"goblins":{
-						"display_name":"Firefly Clan",
-						"growth":{
-							"display_name":"Clan Growth",
-							"pedestal":"Pedestal",
-							"egg":"Egg",
-							"baby":"Baby",
-							"goblin":"Goblin"
-						},
-						"jobs":{
-							"display_name":"Jobs",
-							"beast_tamer":"Beast Tamer",
-							"bonesmith":"Bonesmith",
-							"earthmaster":"Earthshaper",
-							"shaman":"Shaman",
-							"spirit_walker":"Spirit Walker",
-							"trapper":"Trapper",
-							"warrior":"Warrior"
-						},
-						"goods":{
-							"display_name":"Goods",
-							"vegetables_substitute":"Vegetables Substitute",
-							"refined_fiber":"Refined Fiber"
-						}
-					},
-					"swamp":{
-						"display_name":"Swamp Biome",
-						"fauna":{
-							"display_name":"Fauna",
-							"firefly":"Firefly",
-							"frog":"Frog",
-							"varanus":"Varanus"
-						},
-						"flora":{
-							"display_name":"Flora",
-							"cattail":"Cattail",
-							"giple":"Giple Flower",
-							"mushroom":"Swamp Mushroom",
-							"tree":"Trees"
-						},
-						"others":{
-							"display_name":"Others",
-							"water":"Water",
-							"weather":"Weather"
-						}
-					}
+				"menu":"Menu",
+				"cover":{
+					"title":"About goblins and swamps",
+					"text":"* Pick the desired topic to read from the side menu"
 				},
-				"pages":{
-					"cover":{
-						"title":"About goblins and swamps",
-						"text":"* Pick the desired topic to read from the side menu"
-					},
+				"goblins":{
+					"display_name":"Firefly Clan",
 					"growth":{
+						"display_name":"Clan Growth",
 						"pedestal":{
+							"menu_link":"Pedestal",
 							"title":"Egg Pedestal",
 							"description1":"A nice ceremonial table for an important occasion",
 							"topic1":{
@@ -2190,6 +2155,7 @@
 							}
 						},
 						"egg":{
+							"menu_link":"Egg",
 							"title":"Goblin Egg",
 							"description1":"Who came first, the egg or the goblin?",
 							"description2":"Many goblins wondered about it for as long as they remember, but no one knows for sure.",
@@ -2208,6 +2174,7 @@
 							}
 						},
 						"baby":{
+							"menu_link":"Baby",
 							"title":"Baby Goblin",
 							"description1":"Little devils",
 							"topic1":{
@@ -2224,6 +2191,7 @@
 							}
 						},
 						"goblin":{
+							"menu_link":"Goblin",
 							"title":"Goblin",
 							"description1":"Firefly Goblin",
 							"topic1":{
@@ -2242,7 +2210,9 @@
 						}
 					},
 					"jobs":{
+						"display_name":"Jobs",
 						"beast_tamer":{
+							"menu_link":"Beast Tamer",
 							"title":"Beast Tamer",
 							"description1":"Synergy with the animals",
 							"topic1":{
@@ -2260,6 +2230,7 @@
 							}
 						},
 						"bonesmith":{
+							"menu_link":"Bonesmith",
 							"title":"Bonesmith",
 							"description1":"Low level, basic materials crafter",
 							"topic1":{
@@ -2277,6 +2248,7 @@
 							}
 						},
 						"earthmaster":{
+							"menu_link":"Earthshaper",
 							"title":"Earthshaper",
 							"description1":"High level, complex materials crafter",
 							"topic1":{
@@ -2295,6 +2267,7 @@
 							}
 						},
 						"shaman":{
+							"menu_link":"Shaman",
 							"title":"Shaman",
 							"description1":"The clan starter class",
 							"topic1":{
@@ -2312,6 +2285,7 @@
 							}
 						},
 						"spirit_walker":{
+							"menu_link":"Spirit Walker",
 							"title":"Spirit Walker",
 							"description1":"Connects goblins with their past",
 							"topic1":{
@@ -2329,6 +2303,7 @@
 							}
 						},
 						"trapper":{
+							"menu_link":"Trapper",
 							"title":"Trapper",
 							"description1":"Basic food producer",
 							"topic1":{
@@ -2345,6 +2320,7 @@
 							}
 						},
 						"warrior":{
+							"menu_link":"Warrior",
 							"title":"Warrior",
 							"description1":"Front line fighter",
 							"topic1":{
@@ -2379,7 +2355,9 @@
 						}
 					},
 					"goods":{
+						"display_name":"Goods",
 						"vegetables_substitute":{
+							"menu_link":"Vegetables Substitute",
 							"title":"Vegetables Substitute",
 							"description1":"Goblins are not too fond of vegetables, so Shamans had to get creative to keep a healthy diet.",
 							"topic1":{
@@ -2392,6 +2370,7 @@
 							}
 						},
 						"refined_fiber":{
+							"menu_link":"Refined Fiber",
 							"title":"Refined Fiber",
 							"description1":"Section 2 of the goblins building code",
 							"topic1":{
@@ -2403,9 +2382,14 @@
 								"desc1":"Another option for buildings. It is used like any other common building block."
 							}
 						}
-					},
+					}
+				},
+				"swamp":{
+					"display_name":"Swamp Biome",
 					"fauna":{
+						"display_name":"Fauna",
 						"firefly":{
+							"menu_link":"Firefly",
 							"title":"Firefly",
 							"description1":"Lights in the night",
 							"topic1":{
@@ -2422,6 +2406,7 @@
 							}
 						},
 						"frog":{
+							"menu_link":"Frog",
 							"title":"Frog",
 							"description1":"Small and slippy",
 							"topic1":{
@@ -2438,6 +2423,7 @@
 							}
 						},
 						"varanus":{
+							"menu_link":"Varanus",
 							"title":"Varanus",
 							"description1":"Always watching",
 							"topic1":{
@@ -2455,7 +2441,9 @@
 						}
 					},
 					"flora":{
+						"display_name":"Flora",
 						"cattail":{
+							"menu_link":"Cattail",
 							"title":"Firefly",
 							"description1":"Lights in the night",
 							"topic1":{
@@ -2472,6 +2460,7 @@
 							}
 						},
 						"giple":{
+							"menu_link":"Giple Flower",
 							"title":"Frog",
 							"description1":"Small and slippy",
 							"topic1":{
@@ -2488,6 +2477,7 @@
 							}
 						},
 						"mushroom":{
+							"menu_link":"Swamp Mushroom",
 							"title":"Varanus",
 							"description1":"Always watching",
 							"topic1":{
@@ -2504,6 +2494,7 @@
 							}
 						},
 						"tree":{
+							"menu_link":"Trees",
 							"title":"Varanus",
 							"description1":"Always watching",
 							"topic1":{
@@ -2521,7 +2512,9 @@
 						}
 					},
 					"others":{
+						"display_name":"Others",
 						"water":{
+							"menu_link":"Water",
 							"title":"Water",
 							"description1":"Covers most of the low areas",
 							"topic1":{
@@ -2534,6 +2527,7 @@
 							}
 						},
 						"weather":{
+							"menu_link":"Weather",
 							"title":"Weather",
 							"description1":"Mostly foggy. In this region there are only two seasons",
 							"topic1":{

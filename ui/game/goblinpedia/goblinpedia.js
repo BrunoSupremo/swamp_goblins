@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$(top).on('swamp_goblins:goblinpedia', function (_, e) {
-		var view = App.gameView.addView(App.GoblinpediaView);
+		if (!App.stonehearth.GoblinpediaView) {
+			App.stonehearth.GoblinpediaView = App.gameView.addView(App.GoblinpediaView);
+		}
 	});
 });
 
@@ -14,76 +16,78 @@ App.GoblinpediaView = App.View.extend({
 
 		$.get('/swamp_goblins/data/goblinpedia/goblinpedia.json')
 		.done(function (result) {
-			self.set('menu', self.convert_menu_to_array(result.menu));
-			self.set('pages', self.convert_pages_to_array(result.pages));
+			self.set('categories', self.change_some_levels_to_arrays_so_ember_foreach_can_loop_it(result.categories));
 		});
 
 		self.$().draggable();
 	},
 
-	convert_menu_to_array: function(menu){
-		let array = [];
-		Object.keys(menu).forEach(function (menu_key) {
-			let menu_value = menu[menu_key];
-			let array2 = [];
-			Object.keys(menu_value.items).forEach(function (growth_key) {
-				let growth_value = menu_value.items[growth_key];
-				let array3 = [];
-				Object.keys(growth_value.items).forEach(function (pedestal_key) {
-					let pedestal_value = growth_value.items[pedestal_key];
+	change_some_levels_to_arrays_so_ember_foreach_can_loop_it: function(categories){
+		//ember´s {{#each}} loop only works with arrays...
+		// the idea here is to keep the whole original structure as seem on json,
+		// but the parts where the html has to loop are then converted to arrays
+		let categories_array = [];
+		Object.keys(categories).forEach(function (category_key) {
+			let category_value = categories[category_key];
+			let sub_categories_array = [];
+			Object.keys(category_value.sub_categories).forEach(function (sub_category_key) {
+				let sub_category_value = category_value.sub_categories[sub_category_key];
+				let articles_array = [];
+				Object.keys(sub_category_value.articles).forEach(function (article_key) {
+					let article_value = sub_category_value.articles[article_key];
+					let descriptions_array = [];
+					Object.keys(article_value.descriptions).forEach(function (description_key) {
+						let description_value = article_value.descriptions[description_key];
 
-					array3.push(pedestal_value);
+						descriptions_array.push(description_value);
+					});
+					article_value.descriptions = descriptions_array;
+					let topics_array = [];
+					Object.keys(article_value.topics).forEach(function (topic_key) {
+						let topic_value = article_value.topics[topic_key];
+						let descriptions_array = [];
+						Object.keys(topic_value.descriptions).forEach(function (description_key) {
+							let description_value = topic_value.descriptions[description_key];
+
+							descriptions_array.push(description_value);
+						});
+						topic_value.descriptions = descriptions_array;
+						topics_array.push(topic_value);
+					});
+					article_value.id = category_key+"_"+sub_category_key+"_"+article_key;
+					article_value.ordinal = article_value.ordinal || 999;
+					article_value.topics = topics_array;
+					articles_array.push(article_value);
 				});
-				growth_value.items = array3;
-				array2.push(growth_value);
+				sub_category_value.articles = articles_array;
+				sub_categories_array.push(sub_category_value);
 			});
-			menu_value.items = array2;
-			array.push(menu_value);
+			category_value.id = category_key;
+			category_value.sub_categories = sub_categories_array;
+			categories_array.push(category_value);
 		});
-		return array;
+		return categories_array;
 	},
 
-	convert_pages_to_array: function(pages){
-		let array = [];
-		Object.keys(pages).forEach(function (pages_key) {
-			let pages_value = pages[pages_key];
-			let array_descriptions = [];
-			Object.keys(pages_value.descriptions).forEach(function (descriptions_key) {
-				let descriptions_value = pages_value.descriptions[descriptions_key];
+	destroy: function() {
+		App.stonehearth.GoblinpediaView = null;
 
-				array_descriptions.push(descriptions_value);
-			});
-			pages_value.descriptions = array_descriptions;
-
-			let array_topics = [];
-			Object.keys(pages_value.topics).forEach(function (topic_key) {
-				let topic_value = pages_value.topics[topic_key];
-				let array_topic_descriptions = [];
-				Object.keys(topic_value.descriptions).forEach(function (descriptions_key) {
-					let descriptions_value = topic_value.descriptions[descriptions_key];
-
-					array_topic_descriptions.push(descriptions_value);
-				});
-				topic_value.descriptions = array_topic_descriptions;
-				array_topics.push(topic_value);
-			});
-			pages_value.topics = array_topics;
-			array.push(pages_value);
-		});
-		return array;
+		this._super();
 	},
 
 	actions:{
-		menu_button: function(button_id) {
-			let divs = document.querySelectorAll("#goblinpedia button + div");
+		menu_button: function(category_id) {
+			let goblinpedia_dom = document.querySelector("#goblinpedia");
+			let divs = goblinpedia_dom.querySelectorAll(".category");
 			for (let i = divs.length - 1; i >= 0; i--) {
 				divs[i].style.display = "none";
 			}
-			document.querySelector("#"+button_id+" + div").style.display = "block";
+			goblinpedia_dom.querySelector("#"+category_id).style.display = "block";
 		},
-		open_page: function(page){
-			document.querySelector(".current_page").classList.remove("current_page");
-			document.querySelector("#"+page).classList.add("current_page");
+		open_page: function(article_id){
+			let goblinpedia_dom = document.querySelector("#goblinpedia");
+			goblinpedia_dom.querySelector(".current_page").classList.remove("current_page");
+			goblinpedia_dom.querySelector("#"+article_id).classList.add("current_page");
 		}
 	}
 });

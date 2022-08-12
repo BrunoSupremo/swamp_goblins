@@ -3,16 +3,33 @@
 		<div class="window">
 			<div class="title">{{i18n swamp_goblins:ui.game.goblinpedia.title}} <div class="closeButton"></div></div>
 			<nav>
-				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.menu.display_name}}</h1>
-				{{#each menu_section in view.menu}}
+				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.menu}}</h1>
+				{{#each category in view.categories}}
 				<section class="section">
-					<button {{bind-attr id=menu_section.id}} {{action "menu_button" menu_section.id target=view}}>{{i18n_key menu_section.display_name}}</button>
-					<div>
-						{{#each section_div in menu_section.items}}
-						<h2>{{i18n_key section_div.display_name}}</h2>
-						<div>
-							{{#each div_link in section_div.items}}
-							<a href="#" {{action "open_page" div_link.open_page_id target=view}}>{{i18n_key div_link.display_name}}</a><br>
+					<button {{action "menu_button" category.id target=view}}>{{i18n_key category.display_name}}</button>
+					<div {{bind-attr id=category.id}} class="category">
+						{{#each sub_category in category.sub_categories}}
+						<h2>{{i18n_key sub_category.display_name}}</h2>
+						<div class="sub_category">
+							{{#each article in sub_category.articles}}
+							<a style="order:{{unbound article.ordinal}}" href="#" {{action "open_page" article.id target=view}}>{{i18n_key article.menu_link}}</a>
+
+							<div {{bind-attr id=article.id}} class="page">
+								<h1>{{i18n_key article.title}}</h1>
+								<div {{bind-attr class=article.image_border:border:borderless}}>
+									<img {{bind-attr src=article.image}}>
+								</div>
+								{{#each description in article.descriptions}}
+								<p>{{i18n_key description}}</p>
+								{{/each}}
+								{{#each topic in article.topics}}
+								<h2>{{i18n_key topic.title}}</h2>
+								{{#each description in topic.descriptions}}
+								<p>{{i18n_key description}}</p>
+								{{/each}}
+								{{/each}}
+							</div>
+
 							{{/each}}
 						</div>
 						{{/each}}
@@ -21,27 +38,10 @@
 				{{/each}}
 			</nav>
 			<div id="cover" class="page current_page">
-				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.pages.cover.title}}</h1>
+				<h1>{{i18n swamp_goblins:ui.game.goblinpedia.cover.title}}</h1>
 				<img src="/swamp_goblins/ui/game/goblinpedia/images/cover.jpg">
-				<p>{{i18n swamp_goblins:ui.game.goblinpedia.pages.cover.text}}</p>
+				<p>{{i18n swamp_goblins:ui.game.goblinpedia.cover.text}}</p>
 			</div>
-			{{#each pages_div in view.pages}}
-			<div {{bind-attr id=pages_div.page_id}} class="page">
-				<h1>{{i18n_key pages_div.title}}</h1>
-				<div {{bind-attr class=pages_div.image_border:border:borderless}}>
-					<img {{bind-attr src=pages_div.image}}>
-				</div>
-				{{#each descriptions in pages_div.descriptions}}
-				<p>{{i18n_key descriptions}}</p>
-				{{/each}}
-				{{#each topics in pages_div.topics}}
-				<h2>{{i18n_key topics.title}}</h2>
-				{{#each descriptions in topics.descriptions}}
-				<p>{{i18n_key descriptions}}</p>
-				{{/each}}
-				{{/each}}
-			</div>
-			{{/each}}
 		</div>
 	</div>
 </script>

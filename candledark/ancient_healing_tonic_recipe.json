@@ -1,0 +1,20 @@
+{
+	"type": "recipe",
+	"work_units": 2,
+	"recipe_name": "i18n(candledark:jobs.herbalist.recipes.ancient_healing_tonic_recipe.recipe_name)",
+	"description": "i18n(candledark:jobs.herbalist.recipes.ancient_healing_tonic_recipe.description)",
+	"flavor": "i18n(candledark:jobs.herbalist.recipes.ancient_healing_tonic_recipe.flavor)",
+	"portrait": "/candledark/entities/consumables/ancient_healing_tonic/ancient_healing_tonic_recipe.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"ingredients": [
+		{
+			"material" : "herb resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "candledark:consumable:ancient_healing_tonic"
+		}
+	]
+}

@@ -1,7 +1,11 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 22.6.14")
+print("Swamp Goblins Mod version 22.8.12")
 
 --[[
+
+Giant rug, or wall hanging rug.
+Varanus roasting on a stick
+armors/equips for beasttamer summons
 
 Babies boosters:
 	toy:
@@ -13,8 +17,6 @@ Babies boosters:
 	blanket:
 		decrease sleep time
 		lvl2 increase spirit
-
-replace rabbit statues
 
 high bed
 bed of hot embers (firewalking)
@@ -37,6 +39,7 @@ warrior rework:
 	max level at 3
 	two job promotions after:
 		light/fast combat and heavy/strong combat
+		varanus rider?
 
 
 reversed porticulis stone gate (opens going down instead of up)
@@ -76,7 +79,7 @@ combat hearth waves:
 	boss, bunnies, orcs, kobolds, ogres
 
 import hearthlings/goblins to the other kingdom
-	(traveler campaign)
+	(traveler campaign, someone lost appears into the camp)
 
 banner shred
 animals haulers requiring food and care
