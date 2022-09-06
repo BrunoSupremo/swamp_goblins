@@ -110,8 +110,6 @@ end
 function FireflyGoblin:add_goblin_worker_abilities()
 	local equipment = "swamp_goblins:worker:abilities:goblin"
 	radiant.entities.equip_item(self._entity, equipment)
-	equipment = "/swamp_goblins/jobs/worker/worker_outfit/goblin_worker_outfit.json"
-	radiant.entities.equip_item(self._entity, equipment)
 	equipment = "swamp_goblins:weapons:crude_wooden_club"
 	radiant.entities.equip_item(self._entity, equipment)
 

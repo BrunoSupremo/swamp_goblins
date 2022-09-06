@@ -876,9 +876,7 @@
 		"stonehearth:geomancer:outfit":	"file(jobs/geomancer/geomancer_outfit)",
 		"stonehearth_ace/jobs/geomancer/geomancer_outfit/geomancer_outfit_hat/geomancer_outfit_hat.json":"file(jobs/geomancer/geomancer_outfit/geomancer_outfit_hat.json)",
 		"stonehearth:trapper:outfit":	"file(jobs/trapper/trapper_outfit)",
-		"stonehearth:worker:outfit":		"file(jobs/worker/worker_outfit)",
-		"rayyas_children:worker:outfit":	"file(jobs/worker/worker_outfit)",
-		"northern_alliance:worker:outfit":	"file(jobs/worker/worker_outfit)",
+		"stonehearth:mixins:worker_outfit":	"file(jobs/worker/worker_outfit/mixin_worker_outfit.json)",
 		"swamp_goblins:worker:upgraded_outfit":"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
 
 		"stonehearth:blacksmith:forge":			"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
