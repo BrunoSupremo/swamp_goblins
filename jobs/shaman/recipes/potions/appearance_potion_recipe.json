@@ -2,10 +2,10 @@
 	"type": "recipe",
 	"effort":42,
 	"work_units": 16,
-	"recipe_name": "i18n(swamp_goblins:entities.consumables.appearance_potion.display_name)",
-	"description": "i18n(swamp_goblins:entities.consumables.appearance_potion.description)",
-	"flavor": "i18n(swamp_goblins:entities.consumables.appearance_potion.flavor)",
-	"portrait": "/swamp_goblins/entities/consumables/appearance_potion/appearance_potion.png",
+	"recipe_name": "i18n(swamp_goblins:entities.consumables.potions.appearance.display_name)",
+	"description": "i18n(swamp_goblins:entities.consumables.potions.appearance.description)",
+	"flavor": "i18n(swamp_goblins:entities.consumables.potions.appearance.flavor)",
+	"portrait": "/swamp_goblins/entities/consumables/potions/appearance/appearance.png",
 	"workshop": "swamp_goblins:shaman:brewing_stand",
 	"level_requirement": 4,
 	"ingredients": [
@@ -24,7 +24,7 @@
 	],
 	"produces": [
 		{
-			"item": "swamp_goblins:consumables:appearance_potion"
+			"item": "swamp_goblins:consumables:potions:appearance"
 		}
 	]
 }

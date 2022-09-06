@@ -161,21 +161,25 @@
 		"construction:clay_water_well":	"file(entities/construction/clay_water_well)",
 		"construction:wooden_water_well":	"file(entities/construction/wooden_water_well)",
 
-		"consumables:appearance_potion":"file(entities/consumables/appearance_potion)",
-		"consumables:body_potion":		"file(entities/consumables/body_potion)",
-		"consumables:mind_potion":		"file(entities/consumables/mind_potion)",
-		"consumables:spirit_potion":	"file(entities/consumables/spirit_potion)",
-		"consumables:happy_potion":		"file(entities/consumables/happy_potion)",
-		"consumables:memory_potion":	"file(entities/consumables/memory_potion)",
-		"consumables:small_healing":	"file(entities/consumables/small_healing)",
-		"consumables:large_healing":	"file(entities/consumables/large_healing)",
-		"consumables:speed_potion":		"file(entities/consumables/speed_potion)",
-		"consumables:teleport_potion":	"file(entities/consumables/teleport_potion)",
+		"consumables:potions:small_healing":"file(entities/consumables/potions/small_healing)",
+		"consumables:potions:large_healing":"file(entities/consumables/potions/large_healing)",
+		"consumables:potions:appearance":	"file(entities/consumables/potions/appearance)",
+		"consumables:potions:body":			"file(entities/consumables/potions/body)",
+		"consumables:potions:mind":			"file(entities/consumables/potions/mind)",
+		"consumables:potions:spirit":		"file(entities/consumables/potions/spirit)",
+		"consumables:potions:happy":		"file(entities/consumables/potions/happy)",
+		"consumables:potions:memory":		"file(entities/consumables/potions/memory)",
+		"consumables:potions:speed":		"file(entities/consumables/potions/speed)",
+		"consumables:potions:teleport":		"file(entities/consumables/potions/teleport)",
 
 		"consumables:scripts:appearance":	"file(entities/consumables/scripts/appearance.lua)",
 		"consumables:scripts:happy":		"file(entities/consumables/scripts/happy.lua)",
 		"consumables:scripts:memory":		"file(entities/consumables/scripts/memory.lua)",
 		"consumables:scripts:teleport":		"file(entities/consumables/scripts/teleport.lua)",
+
+		"consumables:seeds:cattail":			"file(entities/consumables/seeds/cattail)",
+		"consumables:seeds:mangrove_halfsize":	"file(entities/consumables/seeds/mangrove_halfsize)",
+		"consumables:seeds:swamp_mushroom":		"file(entities/consumables/seeds/swamp_mushroom)",
 
 		"containers:chest":						"file(entities/containers/chest)",
 		"containers:clay_chest":				"file(entities/containers/clay_chest)",
@@ -259,6 +263,8 @@
 		"decoration:tombstone":				"file(entities/decoration/tombstone)",
 		"decoration:travel_stall":			"file(entities/decoration/travel_stall)",
 		"decoration:wall_lamp":				"file(entities/decoration/wall_lamp)",
+		"decoration:wall_fountain:clay":	"file(entities/decoration/clay_wall_fountain)",
+		"decoration:wall_fountain:stone":	"file(entities/decoration/stone_wall_fountain)",
 		"decoration:wall_mask":				"file(entities/decoration/wall_mask)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
 		"decoration:window_box:wood":			"file(entities/decoration/window_box_wood)",
@@ -282,7 +288,6 @@
 		"effects:green_fire:brazier_firepit":	"file(data/effects/green_fire/brazier_firepit)",
 		"effects:hourglass":	"file(data/effects/hourglass)",
 		"effects:lamp":"file(data/effects/lamp)",
-		"effects:mini_fountain":"file(data/effects/mini_fountain)",
 		"effects:music:bongo_2":	"file(data/effects/music/bongo_2.json)",
 		"effects:music:bongo_3":	"file(data/effects/music/bongo_3.json)",
 		"effects:music:bongo_4":	"file(data/effects/music/bongo_4.json)",
@@ -301,15 +306,19 @@
 		"effects:poison_spiral":"file(data/effects/poison_spiral)",
 		"effects:hearth":"file(data/effects/hearth)",
 		"effects:hearth_human":"file(data/effects/hearth/hearth_human.json)",
+		"effects:water:mini_fountain":"file(data/effects/water/mini_fountain.json)",
+		"effects:water:wall_fountain":"file(data/effects/water/wall_fountain.json)",
 		"effects:weather_stone:charging":	"file(data/effects/weather_stone/charging.json)",
 		"effects:weather_stone:waiting":	"file(data/effects/weather_stone/waiting.json)",
 
 		"earthmaster:chisel": "file(jobs/earthmaster/earthmaster_chisel)",
 		"earthmaster:talisman": "file(jobs/earthmaster/earthmaster_chisel/earthmaster_chisel_talisman.json)",
 		"earthmaster:workbench": "file(jobs/earthmaster/mason_pedestal)",
+		"earthmaster:crusher": "file(jobs/earthmaster/crusher)",
 		"earthmaster:magmasmith_workbench": "file(jobs/earthmaster/magmasmith_workbench)",
 		"earthmaster:potter_workbench": "file(jobs/earthmaster/potter_workbench)",
 		"earthmaster:potter_kiln": "file(jobs/earthmaster/potter_kiln)",
+		"earthmaster:upgraded_outfit":"file(jobs/earthmaster/upgraded_outfit)",
 
 		"food:edible_for_goblins":	"file(entities/food/edible_for_goblins.json)",
 		"food:fake_vegetables":			"file(entities/food/fake_vegetables)",
@@ -618,8 +627,6 @@
 		"trees:swirl:medium":	"file(entities/trees/swirl/swirl_medium.json)",
 		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)",
 
-		"ui:crusher:filters": "file(ui/data/crusher_filters.json)",
-
 		"warrior:talisman": "file(jobs/warrior/warrior_horn/warrior_horn_talisman.json)",
 		"warrior:abilities:multiple_targets":	"file(jobs/warrior/warrior_abilities/multiple_targets.json)",
 		"warrior:abilities:poison_darts":		"file(jobs/warrior/warrior_abilities/poison_darts.json)",
@@ -682,21 +689,16 @@
 		"towers:worker:weapon_utility":			"file(tower_defense/towers/worker/weapon_utility.json)"
 	},
 	"deprecated_aliases":{
-		"traits:passion_scavenger":	"stonehearth/data/traits/passion_trapper/passion_trapper_trait.json",
-
-		"furniture:simple_chair":	"file(entities/gizmos/deprecated)",
-		"furniture:simple_table":	"file(entities/gizmos/deprecated)",
-		"furniture:mush_chair":		"file(entities/gizmos/deprecated)",
-		"furniture:mush_table":		"file(entities/gizmos/deprecated)",
-		"furniture:checkers_table":	"file(entities/gizmos/deprecated)",
-		"furniture:clay_bed":		"file(entities/gizmos/deprecated)",
-		"furniture:stone_bench":	"file(entities/gizmos/deprecated)",
-		"furniture:stone_chair":	"file(entities/gizmos/deprecated)",
-		"furniture:stone_table":	"file(entities/gizmos/deprecated)",
-		"furniture:stone_throne":	"file(entities/gizmos/deprecated)",
-
-		"kingdoms:battle_royal_team_1": "file(services/server/population/data/firefly_human_encounter.json)",
-		"kingdoms:battle_royal_team_2": "file(services/server/population/data/firefly_human_encounter.json)"
+		"consumables:appearance_potion":"file(entities/gizmos/deprecated)",
+		"consumables:body_potion":		"file(entities/gizmos/deprecated)",
+		"consumables:mind_potion":		"file(entities/gizmos/deprecated)",
+		"consumables:spirit_potion":	"file(entities/gizmos/deprecated)",
+		"consumables:happy_potion":		"file(entities/gizmos/deprecated)",
+		"consumables:memory_potion":	"file(entities/gizmos/deprecated)",
+		"consumables:small_healing":	"file(entities/gizmos/deprecated)",
+		"consumables:large_healing":	"file(entities/gizmos/deprecated)",
+		"consumables:speed_potion":		"file(entities/gizmos/deprecated)",
+		"consumables:teleport_potion":	"file(entities/gizmos/deprecated)"
 	},
 	"mixintos" :  {
 		"stonehearth:ai_pack:free_time": "file(ai/packs/free_time_ai_pack.json)",
@@ -775,6 +777,9 @@
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/tier_1_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_1_shops)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_2_shops/tier_2_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_2_shops)",
 		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/tier_3_shops/tier_3_shops.json": "file(data/gm/campaigns/trader/arcs/encounters/tier_3_shops)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":	"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
+		"rayyas_children/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json":"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
+		"stonehearth/data/gm/campaigns/trader/arcs/encounters/na_returning_crop_trader_encounter.json":	"file(data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json)",
 
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_raider_camp.json":"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/goblin_thief_camp.json":	"file(data/gm/campaigns/remove_firefly_clan.json)",
@@ -854,6 +859,7 @@
 		"swamp_goblins/jobs/warrior/warrior_abilities/warrior_abilities.json":"stonehearth_ace/jobs/footman/footman_abilities/footman_abilities.json",
 
 		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
+		"stonehearth/jobs/engineer/recipes/recipes.json":			"file(jobs/engineer/recipes)",
 		"stonehearth/jobs/herbalist/recipes/recipes.json":			"file(jobs/herbalist/recipes)",
 		"stonehearth/jobs/geomancer/recipes/geomancer_recipes.json":"file(jobs/geomancer/recipes)",
 		"stonehearth/jobs/weaver/recipes/recipes.json":				"file(jobs/weaver/recipes)",
@@ -887,8 +893,6 @@
 		"stonehearth:potter:workbench":			"file(jobs/earthmaster/potter_workbench/equivalents.json)",
 		"stonehearth:weaver:workbench":			"file(jobs/bonesmith/weaving_table/equivalents.json)",
 		"stonehearth_ace:mason:workbench_bone":	"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
-
-		"stonehearth/locales/en.json":"file(locales/mixintos_en.json)",
 
 		"stonehearth:monsters:avian:duckduck":	"file(entities/monsters/avian/nerf.json)",
 		"stonehearth:monsters:avian:ostrich":	"file(entities/monsters/avian/nerf.json)",
@@ -999,6 +1003,7 @@
 	},
 	"components": {
 		"baby":						"file(components/baby/baby.lua)",
+		"crusher":					"file(components/crusher/crusher.lua)",
 		"deprecated":				"file(components/deprecated/deprecated.lua)",
 		"enemy_barrier":			"file(components/enemy_barrier/enemy_barrier.lua)",
 		"firefly_goblin":			"file(components/firefly_goblin/firefly_goblin.lua)",
@@ -1013,6 +1018,8 @@
 		"weather_stone":			"file(components/weather_stone/weather_stone.lua)"
 	},
 	"overrides": {
+		"stonehearth:actions:drop_carrying_in_storage_adjacent": "file(ai/actions/drop_carrying_in_storage_adjacent_action.lua)",
+		"stonehearth_ace/monkey_patches/ace_drop_carrying_in_storage_adjacent_action.lua": "file(ai/actions/ace_drop_carrying_in_storage_adjacent_action.lua)",
 		"stonehearth:actions:material_to_filter_fn": "file(ai/actions/fixed_material_to_filter_fn_action.lua)",
 
 		"candledark/data/buffs/plagued/plagued.lua":"file(candledark/plagued.lua)",
@@ -1051,6 +1058,8 @@
 		"class:warrior":		"file(jobs/warrior/warrior.lua)",
 		"class:worker":			"stonehearth/jobs/worker/worker.lua",
 
+		"crushable_item_tracker": "file(services/server/crusher/crushable_item_tracker.lua)",
+
 		"game_master:spawn_firefly":"file(data/gm/campaigns/swamp_and_goblins_stuff/arcs/encounters/scripts/spawn_firefly.lua)",
 
 		"potion:appearance":"file(entities/consumables/scripts/appearance_controller.lua)",
@@ -1078,11 +1087,14 @@
 	"ui":{
 		"html":[
 			"file(ui/game/bulletin/warrior_hearth_dialog/warrior_hearth_dialog.html)",
+			"file(ui/game/crusher/crusher.html)",
 			"file(ui/game/goblinpedia/goblinpedia.html)"
 		],
 		"js":[
 			"file(ui/game/bulletin/warrior_hearth_dialog/warrior_hearth_dialog.js)",
+			"file(ui/game/crusher/crusher.js)",
 			"file(ui/game/goblinpedia/goblinpedia.js)",
+			"file(ui/game/modes/zones_mode/zones_mode.js)",
 			"file(ui/game/start_menu/stonehearth_menu.js)"
 		],
 		"less": [
@@ -1091,6 +1103,7 @@
 			"file(jobs/earthmaster/skin/workshop.less)",
 
 			"file(ui/game/bulletin/warrior_hearth_dialog/warrior_hearth_dialog.less)",
+			"file(ui/game/crusher/crusher.less)",
 			"file(ui/game/goblinpedia/goblinpedia.less)",
 			"file(ui/game/show_workshop/mod_icon.less)",
 			"file(ui/game/start_menu/start_menu.less)",

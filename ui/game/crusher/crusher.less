@@ -1,0 +1,94 @@
+#crusherDialog {
+	position: absolute;
+	left: 20px;
+	top: 200px;
+
+	.category[category="brewing_ingredient"],
+	.category[category="cooking_ingredient"],
+	.category[category="drink"],
+	.category[category="food"],
+	.category[category="plants"],
+	.category[category="resources"],
+	.category[category="seed"]{
+		display: none;
+	}
+
+	.window {
+		width: 590px;
+		height: 515px;
+		overflow: hidden;
+	}
+
+	.tabPage {
+		display: none;
+		height: 380px;
+		margin-bottom: 4px;
+		margin-top: 10px;
+	}
+
+	#marketTab {
+		p {
+			margin-top: 0;
+		}
+		.inventory {
+			overflow-y: auto;
+			overflow-x: hidden;
+			height: 330px;
+		}
+	}
+
+	.footer {
+		text-align: right;
+
+		.selectedFilter {
+			display: inline-block;
+			float: left;
+			max-width: 300px;
+			max-height: 80px;
+			overflow: hidden;
+
+			.icon {
+				height: 55px;
+				min-width: 55px;
+				border: 3px #FFC000 solid;
+				border-radius: 5px;
+				padding: 4px;
+				margin-left: 2px;
+				vertical-align: bottom;
+				display: inline-block;
+			}
+
+			.label {
+				font-family: "GroboldRegular";
+				font-size: 22px;
+				padding-left: 11px;
+				padding-right: 11px;
+				padding-bottom: 16px;
+				max-width: 200px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-align: left;
+				text-overflow: ellipsis;
+				display: inline-block;
+			}
+		}
+
+		.warn {
+			float: left;
+		}
+
+		.clear {
+			margin-right: 2px;
+		}
+
+		.remainingSpaces {
+			color: #fedb17;
+			font-family: @controlFontFamily;
+			font-size: 22px;
+			display: inline-block;
+			max-width: 170px;
+			padding-right: 15px;
+			line-height: 64px;
+		}
+	}
+}

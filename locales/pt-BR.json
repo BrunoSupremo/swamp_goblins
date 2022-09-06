@@ -556,7 +556,7 @@
 						},
 						"materials_hint": {
 							"title": "Dica",
-							"message": "Ouvimos algo sobre um de seus artesãos, acho que você o chamou de Earthmaster, sendo bom em queimar itens de madeira para fazer carvão, é verdade? Isso pode ser útil para nossa missão."
+							"message": "Ouvimos algo sobre um de seus artesãos, acho que você o chamou de Mestre Terra, sendo bom em queimar madeira para fazer carvão, é verdade? Isso pode ser útil para nossa missão."
 						},
 						"notice_human_hearth": {
 							"title": "Um passo adiante",
@@ -914,57 +914,73 @@
 			}
 		},
 		"consumables": {
-			"common": {
-				"flavor": "O efeito é temporário, para toda a cidade."
-			},
-			"appearance_potion": {
-				"display_name": "Poção de Aparência",
-				"description": "Altera aleatoriamente a aparência de alguém",
-				"flavor": "Depois de usar a poção, uma lista de todos os cidadãos aparecerá na tela, onde você poderá selecionar quem será afetado.",
-				"ui": {
-					"title": "Poção de Aparência",
-					"dialog_title": "Usando uma poção de aparência",
-					"text": "Escolha alguém para aplicar o efeito:"
+			"potions":{
+				"common": {
+					"flavor": "O efeito é temporário, para toda a cidade."
+				},
+				"appearance": {
+					"display_name": "Poção de Aparência",
+					"description": "Altera aleatoriamente a aparência de alguém",
+					"flavor": "Depois de usar a poção, uma lista de todos os cidadãos aparecerá na tela, onde você poderá selecionar quem será afetado.",
+					"ui": {
+						"title": "Poção de Aparência",
+						"dialog_title": "Usando uma poção de aparência",
+						"text": "Escolha alguém para aplicar o efeito:"
+					}
+				},
+				"body": {
+					"display_name": "Poção de Corpo",
+					"description": "Aumenta os atributos do corpo, mas diminui a mente e o espírito."
+				},
+				"happy": {
+					"display_name": "Poção Feliz",
+					"description": "Pensamentos felizes, mas te deixam com fome",
+					"flavor": "O efeito é para toda a cidade."
+				},
+				"large_healing": {
+					"display_name": "Tônico de Cura Forte",
+					"description": "Cura muito mais do que as versões pequenas",
+					"flavor": "Os xamãs podem usá-lo manualmente para curar alguém ferido na cama."
+				},
+				"memory": {
+					"display_name": "Poção da Memória",
+					"description": "Apaga todos os pensamentos atuais",
+					"flavor": "O efeito é para toda a cidade."
+				},
+				"mind": {
+					"display_name": "Poção da Mente",
+					"description": "Aumenta o atributo da mente, mas diminui o corpo e o espírito."
+				},
+				"small_healing": {
+					"flavor": "Os xamãs podem usá-lo manualmente para curar alguém ferido na cama."
+				},
+				"speed": {
+					"display_name": "Poção de Velocidade",
+					"description": "Aumenta a velocidade, mas diminui a saúde."
+				},
+				"spirit": {
+					"display_name": "Poção de Espirito",
+					"description": "Aumenta o atributo espiritual, mas diminui a mente e o corpo."
+				},
+				"teleport": {
+					"display_name": "Poção de Teletransporte",
+					"description": "Teleporte-se de volta ao banner, mas todos ficam cansados e com sono",
+					"flavor": "O efeito é para toda a cidade."
 				}
 			},
-			"body_potion": {
-				"display_name": "Poção de Corpo",
-				"description": "Aumenta os atributos do corpo, mas diminui a mente e o espírito."
-			},
-			"happy_potion": {
-				"display_name": "Poção Feliz",
-				"description": "Pensamentos felizes, mas te deixam com fome",
-				"flavor": "O efeito é para toda a cidade."
-			},
-			"large_healing": {
-				"display_name": "Tônico de Cura Forte",
-				"description": "Cura muito mais do que as versões pequenas",
-				"flavor": "Os xamãs podem usá-lo manualmente para curar alguém ferido na cama."
-			},
-			"memory_potion": {
-				"display_name": "Poção da Memória",
-				"description": "Apaga todos os pensamentos atuais",
-				"flavor": "O efeito é para toda a cidade."
-			},
-			"mind_potion": {
-				"display_name": "Poção da Mente",
-				"description": "Aumenta o atributo da mente, mas diminui o corpo e o espírito."
-			},
-			"small_healing": {
-				"flavor": "Os xamãs podem usá-lo manualmente para curar alguém ferido na cama."
-			},
-			"speed_potion": {
-				"display_name": "Poção de Velocidade",
-				"description": "Aumenta a velocidade, mas diminui a saúde."
-			},
-			"spirit_potion": {
-				"display_name": "Poção de Espirito",
-				"description": "Aumenta o atributo espiritual, mas diminui a mente e o corpo."
-			},
-			"teleport_potion": {
-				"display_name": "Poção de Teletransporte",
-				"description": "Teleporte-se de volta ao banner, mas todos ficam cansados e com sono",
-				"flavor": "O efeito é para toda a cidade."
+			"seeds":{
+				"cattail": {
+					"display_name": "Sementes de Taboa",
+					"description": "Aprenda a cultivar Taboa."
+				},
+				"mangrove_halfsize": {
+					"display_name": "Sementes do mangue",
+					"description": "Aprenda a cultivar mangue."
+				},
+				"swamp_mushroom": {
+					"display_name": "Sementes de Cogumelo",
+					"description": "Aprenda a cultivar Cogumelo."
+				}
 			}
 		},
 		"containers": {
@@ -1195,6 +1211,16 @@
 				"description": "A água começa no topo e desce passando por todas as peças",
 				"flavor": "4 deles podem ser colocados juntos para criar uma fonte maior"
 			},
+			"stone_wall_fountain": {
+				"display_name": "Fonte de Pedra na Parede",
+				"description": "Mini cachoeira",
+				"flavor": "~ Lave suas mãos"
+			},
+			"clay_wall_fountain": {
+				"display_name": "Fonte de Argila na Parede",
+				"description": "Mini cachoeira",
+				"flavor": "~ Lave suas mãos"
+			},
 			"mushroom_target": {
 				"display_name": "Alvo de Cogumelo",
 				"description": "Prática de alvo suave para iniciantes",
@@ -1324,6 +1350,12 @@
 				}
 			},
 			"stone": {
+				"chair": {
+					"display_name": "(Vaga-lume) Cadeira de Pedra"
+				},
+				"table": {
+					"display_name": "(Vaga-lume) Mesa de Pedra"
+				},
 				"throne": {
 					"display_name": "Trono de Pedra",
 					"description": "Cadeira grande e chique para goblins especiais",
@@ -1332,11 +1364,11 @@
 			},
 			"wood": {
 				"chair": {
-					"display_name": "Cadeira Simples",
+					"display_name": "(Vaga-lume) Cadeira Simples",
 					"description": "Você pode sentar nela"
 				},
 				"table": {
-					"display_name": "Mesa Simples",
+					"display_name": "(Vaga-lume) Mesa Simples",
 					"description": "Uma mesa, para coisas de mesa"
 				}
 			},
@@ -1824,6 +1856,10 @@
 				"display_name": "Bancada de Magma",
 				"description": "A lava flui de dentro"
 			},
+			"crusher": {
+				"display_name": "Triturador",
+				"description": "Quebra itens em recursos brutos"
+			},
 			"mason_pedestal": {
 				"display_name": "Pedestal de Alvenaria",
 				"description": "Crie em um espaço bem iluminado."
@@ -1836,50 +1872,23 @@
 				"display_name": "Roda de Cerâmica",
 				"description": "Para fazer produtos de argila simétricos"
 			},
+			"upgraded_outfit": {
+				"display_name": "Roupa de Mestre Terra Atualizada",
+				"description": "Roupa atualizada",
+				"flavor": ""
+			},
 			"recipes": {
 				"amberstone": "Itens de Amberstone",
 				"gizmos": "Engenhocas",
-				"reclaim": "Recuperar",
-				"burn": {
-					"description": "Queime o objeto em carvão",
-					"flavor": "Nem tudo pode ser salvo",
-					"decoration": "Queime Decoração de Madeira",
-					"fence": "Queime Defesa de Madeira",
-					"furniture": "Queime Móvel de Madeira",
-					"portal": "Queime Porta de Madeira",
-					"window": "Queime Janela de Madeira"
-				},
-				"wood": {
-					"description": "Quebre o objeto de volta para um pedaço de madeira",
-					"flavor": "Nem tudo pode ser salvo",
-					"decoration": "Quebrar Decoração de Madeira",
-					"fence": "Quebrar Defesa de Madeira",
-					"furniture": "Quebrar Móvel de Madeira",
-					"portal": "Quebrar Porta de Madeira",
-					"window": "Quebrar Janela de Madeira"
-				},
-				"stone": {
-					"description": "Quebre o objeto de volta para um pedaço de pedra",
-					"flavor": "Nem tudo pode ser salvo",
-					"decoration": "Quebrar Decoração de Pedra",
-					"fence": "Quebrar Defesa de Pedra",
-					"furniture": "Quebrar Móvel de Pedra",
-					"portal": "Quebrar Porta de Pedra",
-					"window": "Quebrar Janela de Pedra"
-				},
-				"clay": {
-					"description": "Quebre o objeto de volta para um pedaço de argila",
-					"flavor": "Nem tudo pode ser salvo",
-					"decoration": "Quebrar Decoração de Argila",
-					"fence": "Quebrar Defesa de Argila",
-					"furniture": "Quebrar Móvel de Argila",
-					"portal": "Quebrar Porta de Argila",
-					"window": "Quebrar Janela de Argila"
-				},
 				"raw_stone": {
 					"display_name": "Pedra Bruta (x3)",
 					"description": "Uma mistura de argila e pó de quitina aquecida até ficar dura como uma rocha",
 					"flavor": ""
+				},
+				"burn_wood":{
+					"display_name":"Carvão",
+					"description":"Queime um pouco de madeira até virar carvão",
+					"flavor":""
 				}
 			}
 		},
@@ -2092,22 +2101,7 @@
 	"ui": {
 		"data": {
 			"constants": {
-				"chitin_resource": "Qualquer quitina",
-				"clay_decoration": "Qualquer decoração de argila",
-				"clay_fence": "Qualquer cerca de argila",
-				"clay_furniture": "Qualquer mobília de barro",
-				"clay_portal_door": "Qualquer porta de barro",
-				"clay_portal_window": "Qualquer janela de argila",
-				"stone_decoration": "Qualquer decoração de pedra",
-				"stone_fence": "Qualquer cerca de pedra",
-				"stone_furniture": "Qualquer mobília de pedra",
-				"stone_portal_door": "Qualquer porta de pedra",
-				"stone_portal_window": "Qualquer janela de pedra",
-				"wood_decoration": "Qualquer decoração de madeira",
-				"wood_fence": "Qualquer cerca de madeira",
-				"wood_furniture": "Qualquer mobília de madeira",
-				"wood_portal_door": "Qualquer porta de madeira",
-				"wood_portal_window": "Qualquer janela de madeira"
+				"chitin_resource": "Qualquer quitina"
 			},
 			"egg_raid": {
 				"doodles": "Cuidado! Alguns insetos estão atrás de nossos ovos!",
@@ -2257,7 +2251,7 @@
 							},
 							"topic3": {
 								"title": "Além da construção:",
-								"desc1": "Mestre Terra pode reciclar itens feitos de madeira, pedra e argila ou queimar itens de madeira para fazer carvão",
+								"desc1": "Mestre Terra pode criar trituradores, contêineres que transformam itens em recursos básicos",
 								"desc2": "A classe também pode consertar a maioria dos itens, como portas, torres e outros dispositivos quebráveis"
 							}
 						},

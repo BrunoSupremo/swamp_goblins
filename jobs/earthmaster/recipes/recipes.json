@@ -15,6 +15,9 @@
 				},
 				"magmasmith_workbench": {
 					"recipe": "file(workbenches/magmasmith_workbench_recipe.json)"
+				},
+				"crusher": {
+					"recipe": "file(workbenches/crusher_recipe.json)"
 				}
 			}
 		},
@@ -30,6 +33,9 @@
 				},
 				"upgraded_staff": {
 					"recipe": "file(equipments/upgraded_staff_recipe.json)"
+				},
+				"upgraded_earthmaster_outfit": {
+					"recipe": "file(equipments/upgraded_earthmaster_outfit_recipe.json)"
 				}
 			}
 		},
@@ -192,6 +198,15 @@
 				},
 				"safety_standard": {
 					"recipe": "file(decorations/safety_standard_recipe.json)"
+				},
+				"clay_safety_standard": {
+					"recipe": "file(decorations/clay_safety_standard_recipe.json)"
+				},
+				"stone_wall_fountain": {
+					"recipe": "file(decorations/stone_wall_fountain_recipe.json)"
+				},
+				"clay_wall_fountain": {
+					"recipe": "file(decorations/clay_wall_fountain_recipe.json)"
 				}
 			}
 		},
@@ -243,72 +258,9 @@
 				},
 				"jewel": {
 					"recipe": "file(refined/jewel_recipe.json)"
-				}
-			}
-		},
-		"reclaim": {
-			"ordinal": 100,
-			"name": "i18n(swamp_goblins:jobs.earthmaster.recipes.reclaim)",
-			"recipes": {
-				"wood_portal": {
-					"recipe": "file(reclaim/wood/portal_recipe.json)"
 				},
-				"wood_window": {
-					"recipe": "file(reclaim/wood/window_recipe.json)"
-				},
-				"wood_furniture": {
-					"recipe": "file(reclaim/wood/furniture_recipe.json)"
-				},
-				"wood_decoration": {
-					"recipe": "file(reclaim/wood/decoration_recipe.json)"
-				},
-				"wood_fence": {
-					"recipe": "file(reclaim/wood/fence_recipe.json)"
-				},
-				"burn_wood_portal": {
-					"recipe": "file(reclaim/burn/portal_recipe.json)"
-				},
-				"burn_wood_window": {
-					"recipe": "file(reclaim/burn/window_recipe.json)"
-				},
-				"burn_wood_furniture": {
-					"recipe": "file(reclaim/burn/furniture_recipe.json)"
-				},
-				"burn_wood_decoration": {
-					"recipe": "file(reclaim/burn/decoration_recipe.json)"
-				},
-				"burn_wood_fence": {
-					"recipe": "file(reclaim/burn/fence_recipe.json)"
-				},
-				"stone_portal": {
-					"recipe": "file(reclaim/stone/portal_recipe.json)"
-				},
-				"stone_window": {
-					"recipe": "file(reclaim/stone/window_recipe.json)"
-				},
-				"stone_furniture": {
-					"recipe": "file(reclaim/stone/furniture_recipe.json)"
-				},
-				"stone_decoration": {
-					"recipe": "file(reclaim/stone/decoration_recipe.json)"
-				},
-				"stone_fence": {
-					"recipe": "file(reclaim/stone/fence_recipe.json)"
-				},
-				"clay_portal": {
-					"recipe": "file(reclaim/clay/portal_recipe.json)"
-				},
-				"clay_window": {
-					"recipe": "file(reclaim/clay/window_recipe.json)"
-				},
-				"clay_furniture": {
-					"recipe": "file(reclaim/clay/furniture_recipe.json)"
-				},
-				"clay_decoration": {
-					"recipe": "file(reclaim/clay/decoration_recipe.json)"
-				},
-				"clay_fence": {
-					"recipe": "file(reclaim/clay/fence_recipe.json)"
+				"burn_wood": {
+					"recipe": "file(refined/burn_wood_recipe.json)"
 				}
 			}
 		},

@@ -2,10 +2,10 @@
 	"type": "recipe",
 	"effort":42,
 	"work_units": 16,
-	"recipe_name": "i18n(swamp_goblins:entities.consumables.mind_potion.display_name)",
-	"description": "i18n(swamp_goblins:entities.consumables.mind_potion.description)",
-	"flavor": "i18n(swamp_goblins:entities.consumables.common.flavor)",
-	"portrait": "/swamp_goblins/entities/consumables/mind_potion/mind_potion.png",
+	"recipe_name": "i18n(swamp_goblins:entities.consumables.potions.mind.display_name)",
+	"description": "i18n(swamp_goblins:entities.consumables.potions.mind.description)",
+	"flavor": "i18n(swamp_goblins:entities.consumables.potions.common.flavor)",
+	"portrait": "/swamp_goblins/entities/consumables/potions/mind/mind.png",
 	"workshop": "swamp_goblins:shaman:brewing_stand",
 	"level_requirement": 5,
 	"ingredients": [
@@ -28,7 +28,7 @@
 	],
 	"produces": [
 		{
-			"item": "swamp_goblins:consumables:mind_potion"
+			"item": "swamp_goblins:consumables:potions:mind"
 		}
 	]
 }

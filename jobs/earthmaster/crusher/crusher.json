@@ -1,0 +1,59 @@
+{
+	"type": "entity",
+	"mixins": "file(crusher_ghost.json)",
+	"components": {
+		"swamp_goblins:crusher": {},
+		"stonehearth:storage": {
+			"type": "input_crate",
+			"capacity": 1,
+			"render_contents": true,
+			"filter_list": "stonehearth:ui:stockpile:filters",
+			"is_single_filter": true
+		},
+		"destination": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			],
+			"adjacency_flags": [
+				"front",
+				"back"
+			]
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 2, "z": 1 }
+				}
+			]
+		},
+		"stonehearth:entity_forms": {
+			"ghost_form": "file(crusher_ghost.json)",
+			"iconic_form": "file(crusher_iconic.json)",
+			"placeable_on_ground": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:table": {
+			"drop_effect": "carry_putdown_high"
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 11,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": false,
+				"sellable": true,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 5
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

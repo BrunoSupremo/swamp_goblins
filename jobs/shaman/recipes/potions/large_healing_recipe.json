@@ -2,10 +2,10 @@
 	"type": "recipe",
 	"effort":42,
 	"work_units": 16,
-	"recipe_name": "i18n(swamp_goblins:entities.consumables.large_healing.display_name)",
-	"description": "i18n(swamp_goblins:entities.consumables.large_healing.description)",
-	"flavor": "i18n(swamp_goblins:entities.consumables.large_healing.flavor)",
-	"portrait": "/swamp_goblins/entities/consumables/large_healing/large_healing.png",
+	"recipe_name": "i18n(swamp_goblins:entities.consumables.potions.large_healing.display_name)",
+	"description": "i18n(swamp_goblins:entities.consumables.potions.large_healing.description)",
+	"flavor": "i18n(swamp_goblins:entities.consumables.potions.large_healing.flavor)",
+	"portrait": "/swamp_goblins/entities/consumables/potions/large_healing/large_healing.png",
 	"workshop": "swamp_goblins:shaman:brewing_stand",
 	"level_requirement": 3,
 	"ingredients": [
@@ -28,7 +28,7 @@
 	],
 	"produces": [
 		{
-			"item": "swamp_goblins:consumables:large_healing"
+			"item": "swamp_goblins:consumables:potions:large_healing"
 		}
 	]
 }

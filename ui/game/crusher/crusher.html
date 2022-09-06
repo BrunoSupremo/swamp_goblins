@@ -1,0 +1,30 @@
+<script type="text/x-handlebars" data-template-name="crusherDialog">
+	<div id="crusherDialog" class="gui">
+		<div class="window">
+			<div class="title">
+				{{ view.unit_name }} ({{ view.selected_filter_label }})
+				<div class="closeButton"></div>
+			</div>
+
+			{{partial 'crusher_marketTab'}}
+
+			<div class="footer">
+
+				<div class="selectedFilter">
+					<img class="icon" />
+					<span class="label"></span>
+				</div>
+				<button class="clear">{{i18n stonehearth:ui.game.zones_mode.stockpile.clear}}</button>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/x-handlebars" data-template-name="crusher_marketTab">
+	<div id="marketTab" class="tabPage">
+		<p>{{i18n stonehearth:ui.game.zones_mode.stockpile.help_player_market_stall}}</p>
+		<div class="inventory">
+			<div id="sellable" class="inventoryList sellables"></div>
+		</div>
+	</div>
+</script>

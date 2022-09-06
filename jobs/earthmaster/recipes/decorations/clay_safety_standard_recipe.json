@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 3,
+	"recipe_name": "i18n(stonehearth:entities.gizmos.safety_standard.clay_safety_standard.display_name)",
+	"description": "i18n(stonehearth:jobs.carpenter.recipes.safety_standard_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.clay_safety_standard_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/gizmos/safety_standard_clay/safety_standard.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:gizmos:safety_standard:clay"
+		}
+	]
+}

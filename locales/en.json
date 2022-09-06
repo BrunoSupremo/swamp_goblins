@@ -556,7 +556,7 @@
 						},
 						"materials_hint":{
 							"title":"Hint",
-							"message":"We heard something about one of your crafters, I think you called it Earthshaper, being good at burning wood items to make coal, is that true? That can be useful for our quest."
+							"message":"We heard something about one of your crafters, I think you called it Earthshaper, being good at burning wood to make coal, is that true? That can be useful for our quest."
 						},
 						"notice_human_hearth":{
 							"title":"Step up",
@@ -915,57 +915,73 @@
 			}
 		},
 		"consumables": {
-			"common":{
-				"flavor":"The effect is temporary, for the whole town."
-			},
-			"appearance_potion": {
-				"display_name": "Appearance Potion",
-				"description":"Randomly changes someone appearance",
-				"flavor":"After using the potion, a list of all citizens will appear on the screen, there you can then select who will be affected.",
-				"ui":{
-					"title":"Appearance Potion",
-					"dialog_title":"Using an appearance potion",
-					"text":"Pick someone to have the effect applied to:"
+			"potions":{
+				"common":{
+					"flavor":"The effect is temporary, for the whole town."
+				},
+				"appearance": {
+					"display_name": "Appearance Potion",
+					"description":"Randomly changes someone appearance",
+					"flavor":"After using the potion, a list of all citizens will appear on the screen, there you can then select who will be affected.",
+					"ui":{
+						"title":"Appearance Potion",
+						"dialog_title":"Using an appearance potion",
+						"text":"Pick someone to have the effect applied to:"
+					}
+				},
+				"body": {
+					"display_name": "Body Potion",
+					"description":"Increases body attribute, but decreases mind and spirit."
+				},
+				"happy": {
+					"display_name": "Happy Potion",
+					"description":"Happy thoughts but makes you hungry",
+					"flavor":"The effect is for the whole town."
+				},
+				"large_healing": {
+					"display_name": "Strong Healing Tonic",
+					"description":"Heals a lot more than the small versions",
+					"flavor":"Shamans can manually use it to heal someone injured in bed."
+				},
+				"memory": {
+					"display_name": "Memory Potion",
+					"description":"Erases all current thoughts",
+					"flavor":"The effect is for the whole town."
+				},
+				"mind": {
+					"display_name": "Mind Potion",
+					"description":"Increases mind attribute, but decreases body and spirit."
+				},
+				"small_healing": {
+					"flavor":"Shamans can manually use it to heal someone injured in bed."
+				},
+				"speed": {
+					"display_name": "Speed Potion",
+					"description":"Increase speed, but decreases health."
+				},
+				"spirit": {
+					"display_name": "Spirit Potion",
+					"description":"Increases spirit attribute, but decreases mind and body."
+				},
+				"teleport": {
+					"display_name": "Teleport Potion",
+					"description":"Teleport back to the banner, but everyone gets tired and sleepy",
+					"flavor":"The effect is for the whole town."
 				}
 			},
-			"body_potion": {
-				"display_name": "Body Potion",
-				"description":"Increases body attribute, but decreases mind and spirit."
-			},
-			"happy_potion": {
-				"display_name": "Happy Potion",
-				"description":"Happy thoughts but makes you hungry",
-				"flavor":"The effect is for the whole town."
-			},
-			"large_healing": {
-				"display_name": "Strong Healing Tonic",
-				"description":"Heals a lot more than the small versions",
-				"flavor":"Shamans can manually use it to heal someone injured in bed."
-			},
-			"memory_potion": {
-				"display_name": "Memory Potion",
-				"description":"Erases all current thoughts",
-				"flavor":"The effect is for the whole town."
-			},
-			"mind_potion": {
-				"display_name": "Mind Potion",
-				"description":"Increases mind attribute, but decreases body and spirit."
-			},
-			"small_healing": {
-				"flavor":"Shamans can manually use it to heal someone injured in bed."
-			},
-			"speed_potion": {
-				"display_name": "Speed Potion",
-				"description":"Increase speed, but decreases health."
-			},
-			"spirit_potion": {
-				"display_name": "Spirit Potion",
-				"description":"Increases spirit attribute, but decreases mind and body."
-			},
-			"teleport_potion": {
-				"display_name": "Teleport Potion",
-				"description":"Teleport back to the banner, but everyone gets tired and sleepy",
-				"flavor":"The effect is for the whole town."
+			"seeds":{
+				"cattail": {
+					"display_name": "Cattail seeds",
+					"description": "Learn to grow cattail plants."
+				},
+				"mangrove_halfsize": {
+					"display_name": "Mangrove seeds",
+					"description": "Learn to grow mangrove trees."
+				},
+				"swamp_mushroom": {
+					"display_name": "Mushroom seeds",
+					"description": "Learn to grow mushrooms."
+				}
 			}
 		},
 		"containers":{
@@ -1196,6 +1212,16 @@
 				"description": "Water starts at the top and flow down going through all pieces",
 				"flavor": "4 of these can be placed together to create a larger fountain"
 			},
+			"stone_wall_fountain": {
+				"display_name": "Stone Wall Fountain",
+				"description": "Mini waterfall",
+				"flavor": "~ Wash your hands"
+			},
+			"clay_wall_fountain": {
+				"display_name": "Clay Wall Fountain",
+				"description": "Mini waterfall",
+				"flavor": "~ Wash your hands"
+			},
 			"mushroom_target": {
 				"display_name": "Mushroom Target",
 				"description": "Soft target practice for beginners",
@@ -1325,6 +1351,12 @@
 				}
 			},
 			"stone": {
+				"chair": {
+					"display_name": "(Firefly) Stone Chair"
+				},
+				"table": {
+					"display_name": "(Firefly) Stone Table"
+				},
 				"throne": {
 					"display_name": "Stone Throne",
 					"description": "Large and fancy chair for special goblins",
@@ -1333,11 +1365,11 @@
 			},
 			"wood":{
 				"chair": {
-					"display_name": "Simple Chair",
+					"display_name": "(Firefly) Simple Chair",
 					"description": "You can sit on it"
 				},
 				"table": {
-					"display_name": "Simple Table",
+					"display_name": "(Firefly) Simple Table",
 					"description": "A table, for table things"
 				}
 			},
@@ -1825,6 +1857,10 @@
 				"display_name": "Magma Workbench",
 				"description": "Lava flows from within"
 			},
+			"crusher": {
+				"display_name": "Crusher",
+				"description": "Breaks items into raw resources"
+			},
 			"mason_pedestal": {
 				"display_name": "Masonry Pedestal",
 				"description": "Craft in a well-lit space."
@@ -1837,49 +1873,22 @@
 				"display_name": "Pottery Wheel",
 				"description": "For making symmetrical clay goods"
 			},
+			"upgraded_outfit": {
+				"display_name": "Earthshaper Upgraded Outfit",
+				"description": "Upgraded outfit",
+				"flavor": ""
+			},
 			"recipes":{
 				"amberstone":"Amberstone Items",
 				"gizmos":"Gizmos",
-				"reclaim":"Reclaim",
-				"burn":{
-					"description":"Burn the object into coal",
-					"flavor":"Not much can be saved",
-					"decoration":"Burn Wood Decoration",
-					"fence":"Burn Wood Defense",
-					"furniture":"Burn Wood Furniture",
-					"portal":"Burn Wood Door",
-					"window":"Burn Wood Window"
-				},
-				"wood":{
-					"description":"Break the object back into a wood piece",
-					"flavor":"Not much can be saved",
-					"decoration":"Break Wood Decoration",
-					"fence":"Break Wood Defense",
-					"furniture":"Break Wood Furniture",
-					"portal":"Break Wood Door",
-					"window":"Break Wood Window"
-				},
-				"stone":{
-					"description":"Break the object back into a stone piece",
-					"flavor":"Not much can be saved",
-					"decoration":"Break Stone Decoration",
-					"fence":"Break Stone Defense",
-					"furniture":"Break Stone Furniture",
-					"portal":"Break Stone Door",
-					"window":"Break Stone Window"
-				},
-				"clay":{
-					"description":"Break the object back into a clay piece",
-					"flavor":"Not much can be saved",
-					"decoration":"Break Clay Decoration",
-					"fence":	"Break Clay Defense",
-					"furniture":"Break Clay Furniture",
-					"portal":	"Break Clay Door",
-					"window":	"Break Clay Window"
-				},
 				"raw_stone":{
 					"display_name":"Raw Stone (x3)",
 					"description":"A mix of clay and chitin powder heated up to rock hard",
+					"flavor":""
+				},
+				"burn_wood":{
+					"display_name":"Coal",
+					"description":"Burn some wood until it turns to charcoal",
 					"flavor":""
 				}
 			}
@@ -2097,22 +2106,7 @@
 	"ui": {
 		"data":{
 			"constants":{
-				"chitin_resource":"Any Chitin",
-				"clay_decoration":"Any Clay Decoration",
-				"clay_fence":"Any Clay Fence",
-				"clay_furniture":"Any Clay Furniture",
-				"clay_portal_door":"Any Clay Door",
-				"clay_portal_window":"Any Clay Window",
-				"stone_decoration":"Any Stone Decoration",
-				"stone_fence":"Any Stone Fence",
-				"stone_furniture":"Any Stone Furniture",
-				"stone_portal_door":"Any Stone Door",
-				"stone_portal_window":"Any Stone Window",
-				"wood_decoration":"Any Wood Decoration",
-				"wood_fence":"Any Wood Fence",
-				"wood_furniture":"Any Wood Furniture",
-				"wood_portal_door":"Any Wood Door",
-				"wood_portal_window":"Any Wood Window"
+				"chitin_resource":"Any Chitin"
 			},
 			"egg_raid":{
 				"doodles":"Watch out! Some bugs are after our eggs!",
@@ -2262,7 +2256,7 @@
 							},
 							"topic3":{
 								"title":"Beyond crafting:",
-								"desc1":"Earthshaper can recycle items made from wood, stone and clay, or burn wood items to make coal",
+								"desc1":"Earthshaper can craft crushers, containers that break items back into basic resources",
 								"desc2":"The class can also repair most items, like door, turrets and other breakable gizmos"
 							}
 						},

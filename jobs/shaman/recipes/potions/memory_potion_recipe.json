@@ -2,10 +2,10 @@
 	"type": "recipe",
 	"effort":42,
 	"work_units": 16,
-	"recipe_name": "i18n(swamp_goblins:entities.consumables.memory_potion.display_name)",
-	"description": "i18n(swamp_goblins:entities.consumables.memory_potion.description)",
-	"flavor": "i18n(swamp_goblins:entities.consumables.memory_potion.flavor)",
-	"portrait": "/swamp_goblins/entities/consumables/memory_potion/memory_potion.png",
+	"recipe_name": "i18n(swamp_goblins:entities.consumables.potions.memory.display_name)",
+	"description": "i18n(swamp_goblins:entities.consumables.potions.memory.description)",
+	"flavor": "i18n(swamp_goblins:entities.consumables.potions.memory.flavor)",
+	"portrait": "/swamp_goblins/entities/consumables/potions/memory/memory.png",
 	"workshop": "swamp_goblins:shaman:brewing_stand",
 	"level_requirement": 4,
 	"ingredients": [
@@ -28,7 +28,7 @@
 	],
 	"produces": [
 		{
-			"item": "swamp_goblins:consumables:memory_potion"
+			"item": "swamp_goblins:consumables:potions:memory"
 		}
 	]
 }

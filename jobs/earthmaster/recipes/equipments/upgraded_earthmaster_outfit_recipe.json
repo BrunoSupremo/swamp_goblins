@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.upgraded_outfit.display_name)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.upgraded_outfit.description)",
+	"flavor": "i18n(swamp_goblins:jobs.earthmaster.upgraded_outfit.flavor)",
+	"portrait": "/swamp_goblins/jobs/earthmaster/upgraded_outfit/upgraded_outfit.png",
+	"workshop": "swamp_goblins:earthmaster:magmasmith_workbench",
+	"work_effect": "fiddle",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:earthmaster:talisman",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:refined:jewel",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:earthmaster:upgraded_outfit"
+		}
+	]
+}

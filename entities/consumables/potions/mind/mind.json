@@ -1,0 +1,35 @@
+{
+	"mixins": "file(mind_ghost.json)",
+	"type": "entity",
+	"components": {
+		"stonehearth:commands": {
+			"commands": [
+				"stonehearth:commands:use_consumable"
+			]
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(mind_iconic.json)",
+			"ghost_form": "file(mind_ghost.json)",
+			"placeable_on_ground": true
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 36,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 3,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:consumable": {
+			"script": "stonehearth:consumables:scripts:buff_town",
+			"buff": "swamp_goblins:buffs:potions:mind"
+		},
+		"stonehearth:catalog": {
+			"material_tags": ["firefly_made", "mind", "consumable", "stockpile_consumable"]
+		}
+	}
+}

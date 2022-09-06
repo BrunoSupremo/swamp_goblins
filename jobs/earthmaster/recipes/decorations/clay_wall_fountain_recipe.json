@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 55,
+	"work_units": 12,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.clay_wall_fountain.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.clay_wall_fountain.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.clay_wall_fountain.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/clay_wall_fountain/clay_wall_fountain.png",
+	"workshop": "swamp_goblins:earthmaster:potter_kiln",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:wall_fountain:clay"
+		}
+	]
+}

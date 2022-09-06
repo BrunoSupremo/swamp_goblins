@@ -5,9 +5,9 @@ end
 
 function AppearancePotionController:create(player_id)
 	local info = {}
-	info.title = "i18n(swamp_goblins:entities.consumables.appearance_potion.ui.title)"
-	info.dialog_title = "i18n(swamp_goblins:entities.consumables.appearance_potion.ui.dialog_title)"
-	info.text = "i18n(swamp_goblins:entities.consumables.appearance_potion.ui.text)"
+	info.title = "i18n(swamp_goblins:entities.consumables.potions.appearance.ui.title)"
+	info.dialog_title = "i18n(swamp_goblins:entities.consumables.potions.appearance.ui.dialog_title)"
+	info.text = "i18n(swamp_goblins:entities.consumables.potions.appearance.ui.text)"
 	info.requirements = { { } }
 
 	local bulletin_data = info

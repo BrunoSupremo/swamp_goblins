@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 55,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.earthmaster.crusher.display_name)",
+	"description": "i18n(swamp_goblins:jobs.earthmaster.crusher.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/jobs/earthmaster/crusher/crusher.png",
+	"work_effect": "work",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 2
+		},
+		{
+			"material": "ore resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:earthmaster:crusher"
+		}
+	]
+}

@@ -14,11 +14,15 @@ function WeatherStone:post_activate()
 	self._sv._task_effect = nil
 	if self._sv._use_state == "off" then
 		self:enable_commands(true)
-	else
-		self:enable_commands(false)
-		if self._sv._use_state == "ready" then
-			self:switch_command()
-		end
+	end
+	if self._sv._use_state == "charging" then
+		self:now_charging()
+	end
+	if self._sv._use_state == "ready" then
+		self:ready()
+	end
+	if self._sv._use_state == "waiting" then
+		self:now_waiting()
 	end
 end
 

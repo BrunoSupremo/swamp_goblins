@@ -1,7 +1,10 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 22.8.12")
+print("Swamp Goblins Mod version 22.9.6")
 
 --[[
+
+goblinfied vanilla_lampposts
+fancy outfit (tier3)
 
 Giant rug, or wall hanging rug.
 Varanus roasting on a stick
@@ -21,11 +24,6 @@ Babies boosters:
 high bed
 bed of hot embers (firewalking)
 drying rack
-
-instead of recipes to break items (chair -> wood), have a container with input filters (crusher?)
-	detects itens inside, delete them and spill out the resources
-		worked a little on this, will need custom ui
-			⚠️ui:crusher:filter
 
 remove stick water debuff with some item or trait
 
@@ -48,12 +46,14 @@ wolf reward? (i can't remember this one lol [orc campaign?])
 jobs side quests for new stuff
 	shaman lvl 6: travel to learn cook recipes || eating contest?
 
-trapper fancy boots upgrade
+upgrades:
+	trapper fancy boots
 
 ace stuff:
 	add ace tools and tools upgrades
 	fuel system (Wait gobbos can't chop wood?)
 	wounds and tonics
+	composting
 
 folklore
 
