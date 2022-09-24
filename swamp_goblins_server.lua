@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 22.9.6")
+print("Swamp Goblins Mod version 22.9.23")
 
 --[[
 
@@ -10,19 +10,10 @@ Giant rug, or wall hanging rug.
 Varanus roasting on a stick
 armors/equips for beasttamer summons
 
-Babies boosters:
-	toy:
-		better social
-		lvl2 increase mind
-	baby bottle:
-		decrease food consumption
-		lvl2 increase body
-	blanket:
-		decrease sleep time
-		lvl2 increase spirit
-
-high bed
+bed:
+	high/fancy bed
 bed of hot embers (firewalking)
+	magmasword texture/effects
 drying rack
 
 remove stick water debuff with some item or trait
@@ -95,7 +86,9 @@ mobs:
 			cube roll walking, particle effect trail
 			size inflation for attack
 			squish up/down idle
-	mosquito
+
+green tooth:
+	farmer+shepherd?
 
 party goblin:
 	different tattoo color?
@@ -137,7 +130,6 @@ equipments:
 	ranged attack for beast tamer, bow?
 redo:
 	hourglass effects
-	checkers table
 	travel stall
 fisher:
 	swamp fish colors, eels, blowfish

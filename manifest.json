@@ -65,6 +65,13 @@
 
 		"armor:ruler_outfit":"file(jobs/ruler/outfit)",
 
+		"baby:bottle":	"file(entities/baby/bottle)",
+		"baby:bottle2":	"file(entities/baby/bottle2)",
+		"baby:blanket":	"file(entities/baby/blanket)",
+		"baby:blanket2":"file(entities/baby/blanket2)",
+		"baby:toy":		"file(entities/baby/toy)",
+		"baby:toy2":	"file(entities/baby/toy2)",
+
 		"beast_tamer:claw": "file(jobs/beast_tamer/beast_tamer_claw)",
 		"beast_tamer:talisman": "file(jobs/beast_tamer/beast_tamer_flute)",
 		"beast_tamer:abilities:summon_poyos":		"file(jobs/beast_tamer/beast_tamer_abilities/summon_poyos.json)",
@@ -106,6 +113,10 @@
 		"buffs:sticky_water":		"file(data/buffs/sticky_water)",
 		"buffs:trapped":			"file(data/buffs/trapped)",
 		"buffs:wounds:resist":		"file(data/buffs/wounds/resist.json)",
+
+		"buffs:baby:blanket":	"file(data/buffs/baby/blanket.json)",
+		"buffs:baby:bottle":	"file(data/buffs/baby/bottle.json)",
+		"buffs:baby:toy":		"file(data/buffs/baby/toy.json)",
 
 		"buffs:potions:body":	"file(data/buffs/potions/body)",
 		"buffs:potions:mind":	"file(data/buffs/potions/mind)",
@@ -178,6 +189,7 @@
 		"consumables:scripts:teleport":		"file(entities/consumables/scripts/teleport.lua)",
 
 		"consumables:seeds:cattail":			"file(entities/consumables/seeds/cattail)",
+		"consumables:seeds:giple":				"file(entities/consumables/seeds/giple)",
 		"consumables:seeds:mangrove_halfsize":	"file(entities/consumables/seeds/mangrove_halfsize)",
 		"consumables:seeds:swamp_mushroom":		"file(entities/consumables/seeds/swamp_mushroom)",
 
@@ -196,13 +208,15 @@
 		"color_map:goblin":"file(data/materials/color_maps/goblin_color_map.json)",
 		"color_map:magic":"file(data/materials/color_maps/magic.json)",
 
-		"critters:firefly":	"file(entities/critters/firefly)",
-		"critters:frog":	"file(entities/critters/frog)",
+		"critters:dragonfly":	"file(entities/critters/dragonfly)",
+		"critters:firefly":		"file(entities/critters/firefly)",
+		"critters:frog":		"file(entities/critters/frog)",
 
 		"crops:cattail_crop":	"file(entities/crops/cattail_crop)",
 		"crops:mushroom_crop":	"file(entities/crops/mushroom_crop)",
 		"crops:mangrove_crop":	"file(entities/crops/mangrove_halfsize_crop)",
 		"crops:violet_crop":	"file(entities/crops/violet_crop)",
+		"crops:giple_crop":		"file(entities/crops/giple_crop)",
 
 		"data:gm_index": "file(data/gm/gm_index.json)",
 
@@ -294,7 +308,6 @@
 		"effects:music:bongo_5":	"file(data/effects/music/bongo_5.json)",
 		"effects:music:xylophone_1":"file(data/effects/music/xylophone_1.json)",
 		"effects:music:xylophone_4":"file(data/effects/music/xylophone_4.json)",
-		"effects:mosquito_cloud":"file(data/effects/mosquito_cloud)",
 		"effects:shaman_workbench_effect":"file(data/effects/shaman_workbench_effect)",
 		"effects:upgraded_staff":"file(data/effects/spirit_walker/upgraded_staff.json)",
 		"effects:spirit:armor":			"file(data/effects/spirit/armor.json)",
@@ -332,6 +345,7 @@
 		"furniture:clay:table":	"file(entities/furniture/clay/table)",
 		"furniture:mushroom:chair":	"file(entities/furniture/mushroom/chair)",
 		"furniture:mushroom:table":	"file(entities/furniture/mushroom/table)",
+		"furniture:stone:bed":		"file(entities/furniture/stone/bed)",
 		"furniture:stone:bench":	"file(entities/furniture/stone/bench)",
 		"furniture:stone:chair":	"file(entities/furniture/stone/chair)",
 		"furniture:stone:table":	"file(entities/furniture/stone/table)",
@@ -405,7 +419,6 @@
 		"monsters:doodles_giant_egg_raider":"file(entities/monsters/doodles_egg_raider/giant.json)",
 		"monsters:golems:firefly_golem":	"file(entities/monsters/golems/firefly_golem)",
 		"monsters:golems:firefly_golem:effect":	"file(entities/monsters/golems/firefly_golem/effect.json)",
-		"monsters:mosquito_cloud":			"file(entities/monsters/mosquito_cloud)",
 		"monsters:swamp_zilla":				"file(entities/monsters/swamp_zilla)",
 		"monsters:varanus":					"file(entities/monsters/varanus_nest/varanus.json)",
 		"monsters:varanus_nest":			"file(entities/monsters/varanus_nest)",

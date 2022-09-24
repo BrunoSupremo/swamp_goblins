@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 1,
+	"work_units": 1,
+	"recipe_name": "i18n(swamp_goblins:deprecated)",
+	"description": "i18n(swamp_goblins:deprecated)",
+	"flavor": "i18n(swamp_goblins:deprecated)",
+	"portrait": "/swamp_goblins/ui/game/show_workshop/mod_icon.png",
+	"work_effect": "work",
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "stonehearth:object:transient"
+		}
+	]
+}

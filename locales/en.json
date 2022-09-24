@@ -1,5 +1,6 @@
 {
 	"wip":"Work in Progress",
+	"deprecated":"Deprecated",
 	"ai": {
 		"actions": {
 			"status_text": {
@@ -665,7 +666,6 @@
 						"purple_tier_end_dialog":{
 							"message":"Us.. too weak.. Put out xxx Gong if you dares.."
 						}
-
 					}
 				}
 			}
@@ -684,6 +684,22 @@
 		},
 		"happiness": {
 			"thoughts": {
+				"baby":{
+					"values": {
+						"mind_booster": {
+							"display_name": "Mind Bonus",
+							"tooltip": "Mind attribute boosted from Baby Toy"
+						},
+						"body_booster": {
+							"display_name": "Body Bonus",
+							"tooltip": "Body attribute boosted from Baby Bottle"
+						},
+						"spirit_booster": {
+							"display_name": "Spirit Bonus",
+							"tooltip": "Spirit attribute boosted from Baby Blanket"
+						}
+					}
+				},
 				"social":{
 					"values": {
 						"happy_potion": {
@@ -839,6 +855,38 @@
 				"description": "Scary and smelly"
 			}
 		},
+		"baby":{
+			"blanket": {
+				"display_name": "Baby Blanket",
+				"description": "To help with a better sleep",
+				"flavor":"The baby will require less time sleeping"
+			},
+			"blanket2": {
+				"display_name": "Baby Comfy Blanket",
+				"description": "Super comfy, can't leave",
+				"flavor":"The baby will require less time sleeping and can grow with higher spirit stat"
+			},
+			"bottle": {
+				"display_name": "Baby Bottle",
+				"description": "Complementing the diet",
+				"flavor":"The baby will require less food"
+			},
+			"bottle2": {
+				"display_name": "Baby Healthy Bottle",
+				"description": "Super healthy, to grow strong",
+				"flavor":"The baby will require less food and can grow with higher body stat"
+			},
+			"toy": {
+				"display_name": "Baby Toy",
+				"description": "A world of fantasy in our hands",
+				"flavor":"The baby will require less conversations and move faster"
+			},
+			"toy2": {
+				"display_name": "Baby Advanced Toy",
+				"description": "Fancy doll, accessories not included",
+				"flavor":"The baby will require less conversations, move faster and can grow with higher mind stat"
+			}
+		},
 		"construction": {
 			"brick_fence": {
 				"display_name": "Brick Fence",
@@ -974,6 +1022,10 @@
 					"display_name": "Cattail seeds",
 					"description": "Learn to grow cattail plants."
 				},
+				"giple": {
+					"display_name": "Giple seeds",
+					"description": "Learn to grow giple plants."
+				},
 				"mangrove_halfsize": {
 					"display_name": "Mangrove seeds",
 					"description": "Learn to grow mangrove trees."
@@ -1009,6 +1061,11 @@
 			}
 		},
 		"critters": {
+			"dragonfly": {
+				"species": "dragonfly",
+				"display_name": "Dragonfly",
+				"description": "Flying insect"
+			},
 			"frog": {
 				"species": "frog",
 				"display_name": "Frog",
@@ -1334,10 +1391,14 @@
 		},
 		"furniture": {
 			"clay": {
+				"bed": {
+					"display_name": "(Firefly) Clay Bed"
+				},
+				"chair": {
+					"display_name": "(Firefly) Clay Chair"
+				},
 				"table": {
-					"display_name": "Checkers Table",
-					"description": "A table with a checkerboard",
-					"flavor": "No, you already played with the green pieces last time, it is my turn now"
+					"display_name": "(Firefly) Clay Table"
 				}
 			},
 			"mushroom": {
@@ -1351,6 +1412,9 @@
 				}
 			},
 			"stone": {
+				"bed": {
+					"display_name": "(Firefly) Stone Bed"
+				},
 				"chair": {
 					"display_name": "(Firefly) Stone Chair"
 				},
@@ -1972,6 +2036,7 @@
 				"flavor": "\"Goblin or the egg?\""
 			},
 			"recipes": {
+				"baby_care": "Baby Care",
 				"potions": "Potions",
 				"talismans": "Talismans"
 			}

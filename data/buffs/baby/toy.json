@@ -1,0 +1,15 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"display_name": "i18n(swamp_goblins:entities.baby.toy.display_name)",
+	"description": "i18n(swamp_goblins:entities.baby.toy.flavor)",
+	"icon": "/stonehearth/ui/game/images/mind_stat.png",
+	"modifiers" : {
+		"social_loss_amount": {
+			"multiply": 0.5
+		},
+		"speed": {
+			"multiply": 1.11
+		}
+	}
+}

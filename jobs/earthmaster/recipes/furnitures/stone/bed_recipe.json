@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.furniture.stone.bed.display_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.stone_bed_recipe.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/furniture/stone/bed/bed.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:furniture:stone:bed"
+		}
+	]
+}

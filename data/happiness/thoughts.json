@@ -1,6 +1,34 @@
 {
 	"type": "index",
 	"thoughts": {
+		"baby": {
+			"values": {
+				"mind_booster": {
+					"display_name": "i18n(swamp_goblins:data.happiness.thoughts.baby.values.mind_booster.display_name)",
+					"tooltip": "i18n(swamp_goblins:data.happiness.thoughts.baby.values.mind_booster.tooltip)",
+					"happiness_delta": 1,
+					"duration": "1d",
+					"stackable": true,
+					"max_stacks": 10
+				},
+				"body_booster": {
+					"display_name": "i18n(swamp_goblins:data.happiness.thoughts.baby.values.body_booster.display_name)",
+					"tooltip": "i18n(swamp_goblins:data.happiness.thoughts.baby.values.body_booster.tooltip)",
+					"happiness_delta": 1,
+					"duration": "1d",
+					"stackable": true,
+					"max_stacks": 10
+				},
+				"spirit_booster": {
+					"display_name": "i18n(swamp_goblins:data.happiness.thoughts.baby.values.spirit_booster.display_name)",
+					"tooltip": "i18n(swamp_goblins:data.happiness.thoughts.baby.values.spirit_booster.tooltip)",
+					"happiness_delta": 1,
+					"duration": "1d",
+					"stackable": true,
+					"max_stacks": 10
+				}
+			}
+		},
 		"water":{
 			"mutually_exclusive": false,
 			"values":{

@@ -1,5 +1,6 @@
 {
 	"wip": "Não Finalizado",
+	"deprecated":"Descontinuado",
 	"ai": {
 		"actions": {
 			"status_text": {
@@ -683,6 +684,22 @@
 		},
 		"happiness": {
 			"thoughts": {
+				"baby":{
+					"values": {
+						"mind_booster": {
+							"display_name": "Bônus de Mente",
+							"tooltip": "Atributo da mente impulsionado pelo Brinquedo de Bebê"
+						},
+						"body_booster": {
+							"display_name": "Bônus de Corpo",
+							"tooltip": "Atributo do corpo impulsionado pela Mamadeira de Bebê"
+						},
+						"spirit_booster": {
+							"display_name": "Bônus de Espírito",
+							"tooltip": "Atributo do espírito impulsionado pelo Cobertor de Bebê"
+						}
+					}
+				},
 				"social": {
 					"values": {
 						"happy_potion": {
@@ -838,6 +855,38 @@
 				"description": "Assustador e fedido"
 			}
 		},
+		"baby":{
+			"blanket": {
+				"display_name": "Cobertor de bebê",
+				"description": "Para ajudar a dormir melhor",
+				"flavor":"O bebê vai precisar de menos tempo para dormir"
+			},
+			"blanket2": {
+				"display_name": "Cobertor de bebê confortável",
+				"description": "Super confortável, não pode sair",
+				"flavor":"O bebê vai precisar de menos tempo para dormir e pode crescer com um status de espírito mais alto"
+			},
+			"bottle": {
+				"display_name": "Mamadeira",
+				"description": "Complementando a dieta",
+				"flavor":"O bebê vai precisar de menos comida"
+			},
+			"bottle2": {
+				"display_name": "Mamadeira Saudável para Bebês",
+				"description": "Super saudável, para crescer forte",
+				"flavor":"O bebê vai precisar de menos comida e pode crescer com maior status corporal"
+			},
+			"toy": {
+				"display_name": "Brinquedo de bebê",
+				"description": "Um mundo de fantasia em nossas mãos",
+				"flavor":"O bebê vai precisar de menos conversas"
+			},
+			"toy2": {
+				"display_name": "Brinquedo Avançado para Bebês",
+				"description": "Boneca extravagante, acessórios não incluídos",
+				"flavor":"O bebê vai precisar de menos conversas e pode crescer com um status mental mais alto"
+			}
+		},
 		"construction": {
 			"brick_fence": {
 				"display_name": "Cerca de Pedra",
@@ -973,6 +1022,10 @@
 					"display_name": "Sementes de Taboa",
 					"description": "Aprenda a cultivar Taboa."
 				},
+				"giple": {
+					"display_name": "Sementes de Flor Giple",
+					"description": "Aprenda a cultivar Giple."
+				},
 				"mangrove_halfsize": {
 					"display_name": "Sementes do mangue",
 					"description": "Aprenda a cultivar mangue."
@@ -1008,6 +1061,11 @@
 			}
 		},
 		"critters": {
+			"dragonfly": {
+				"species": "libélula",
+				"display_name": "Libélula",
+				"description": "Inseto voador"
+			},
 			"frog": {
 				"species": "sapo",
 				"display_name": "Sapo",
@@ -1333,10 +1391,14 @@
 		},
 		"furniture": {
 			"clay": {
+				"bed": {
+					"display_name": "(Vaga-lume) Cama de Argila"
+				},
+				"chair": {
+					"display_name": "(Vaga-lume) Cadeira de Argila"
+				},
 				"table": {
-					"display_name": "Mesa de Damas",
-					"description": "Uma mesa com um tabuleiro",
-					"flavor": "Não, você já jogou com as peças verdes da última vez, agora é a minha vez"
+					"display_name": "(Vaga-lume) Mesa de Argila"
 				}
 			},
 			"mushroom": {
@@ -1350,6 +1412,9 @@
 				}
 			},
 			"stone": {
+				"bed": {
+					"display_name": "(Vaga-lume) Cama de Pedra"
+				},
 				"chair": {
 					"display_name": "(Vaga-lume) Cadeira de Pedra"
 				},
@@ -1967,6 +2032,7 @@
 				"flavor": "\"Ovo ou Goblin?\""
 			},
 			"recipes": {
+				"baby_care": "Cuidados de Bebê",
 				"potions": "Poções",
 				"talismans": "Talismãs"
 			}

@@ -1,0 +1,154 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:critter",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(dragonfly.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0, "y": -2, "z": 0 }
+		},
+		"stonehearth:resource_node": {
+			"category": "herding",
+			"harvest_overlay_effect": "stonehearth:effects:chop_overlay_effect",
+			"harvester_effect": "fiddle",
+			"description": "harvest_animal",
+			"resource": "stonehearth:food:poyo_meat",
+			"harvestable_by_harvest_tool": false,
+			"check_owner": true,
+			"resource_loot_table": {
+				"entries": {
+					"pelt": {
+						"items": {
+							"none": {
+								"uri": "",
+								"weight": 1
+							},
+							"pelt": {
+								"uri": "stonehearth:resources:feathers:poyo_feathers",
+								"weight": 1
+							}
+						}
+					}
+				}
+			}
+		},
+		"stonehearth:renewable_resource_node": {
+			"category": "herding",
+			"resource": "stonehearth:food:egg",
+			"renewal_time": "40h+12h",
+			"resource_spawn_effect": "stonehearth:effects:fursplosion_effect",
+			"start_unharvestable": true,
+			"spawn_resource_immediately": true,
+			"check_owner": true,
+			"resource_loot_table": {
+				"entries": {
+					"pelt": {
+						"roll_type": "some_of",
+						"num_rolls": {
+							"min": 0,
+							"max": 1
+						},
+						"items": {
+							"none": {
+								"uri": "",
+								"weight": 5
+							},
+							"fertilized egg": {
+								"uri": "stonehearth:poyo:egg",
+								"weight": 1
+							}
+						}
+					}
+				}
+			}
+		},
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 20
+			},
+			"min_calories": {
+				"type": "basic",
+				"value": -30
+			},
+			"max_calories": {
+				"type": "basic",
+				"value": 30
+			},
+			"speed": {
+				"type": "basic",
+				"value": 40
+			},
+			"reproduction_rate_multiplier": {
+				"type": "basic",
+				"value": 1
+			},
+			"renewable_resource_rate_multiplier": {
+				"type": "basic",
+				"value": 1
+			},
+			"max_social_satisfaction": {
+				"type": "basic",
+				"value": 72
+			}
+		},
+		"render_info": {
+			"animation_table": "stonehearth/data/rigs/entities/critters/poyo/poyo.json",
+			"scale": 0.14
+		}
+	},
+	"entity_data": {
+		"stonehearth:entity_radius": 1,
+		"stonehearth:species": {
+			"id": "dragonfly",
+			"display_name": "i18n(swamp_goblins:entities.critters.dragonfly.species)"
+		},
+		"stonehearth:idle_effects": {
+			"effects": [
+				{
+					"name": "idle_breathe",
+					"weight": 6
+				},
+				{
+					"name": "idle_look_around",
+					"weight": 3
+				},
+				{
+					"name": "idle_peck",
+					"weight": 6
+				}
+			]
+		},
+		"stonehearth:pasture_animal": {
+			"added_equipment": [
+				"stonehearth:pasture_equipment:adult_animal_collar"
+			],
+			"food_material": "poyo_feed_edible",
+			"type": "stonehearth:poyo"
+		},
+		"stonehearth:calories": {
+			"hungry_threshold": 0,
+			"famished_threshold": 0,
+			"malnourished_threshold": -10,
+			"hourly_calorie_loss": 0.5
+		},
+		"stonehearth:net_worth": {
+			"value_in_gold": 8,
+			"shop_info": {
+				"buyable": false,
+				"sellable": false
+			}
+		},
+		"stonehearth:catalog": {
+			"player_id": "animals",
+			"display_name": "i18n(swamp_goblins:entities.critters.dragonfly.display_name)",
+			"description": "i18n(swamp_goblins:entities.critters.dragonfly.description)",
+			"icon": "file(dragonfly.png)"
+		}
+	}
+}

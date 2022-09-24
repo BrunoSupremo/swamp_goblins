@@ -4,38 +4,43 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(giple_1.qb)"
+					"file(waterfarm_giple_1.qb)"
 				]
 			},
 			"giple_1": {
 				"models": [
-					"file(giple_1.qb)"
+					"file(waterfarm_giple_1.qb)"
 				]
 			},
 			"giple_2": {
 				"models": [
-					"file(giple_2.qb)"
+					"file(waterfarm_giple_2.qb)"
 				]
 			},
 			"giple_3": {
 				"models": [
-					"file(giple_3.qb)"
+					"file(waterfarm_giple_3.qb)"
 				]
 			},
 			"giple_4": {
 				"models": [
-					"file(giple_4.qb)"
+					"file(waterfarm_giple_4.qb)"
 				]
 			}
 		},
 		"render_info": {
-			"scale": 0.1
+			"color_map": "stonehearth:color_map:water",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/water_material_map.json"
+			],
+			"scale": 0.0715
 		},
 		"mob": {
-			"model_origin": { "x": -0.05, "y": 0, "z": -0.05 },
+			"model_origin": { "x": 0, "y": -0.015, "z": 0 },
 			"mob_collision_type": "clutter"
 		},
 		"stonehearth:crop": {
+			"post_harvest_stage":1,
 			"resource_pairings": {
 				"giple_4": "swamp_goblins:resources:giant_flower"
 			},
@@ -96,14 +101,14 @@
 		"stonehearth:catalog": {
 			"display_name": "i18n(swamp_goblins:entities.crops.giple_crop.display_name)",
 			"description": "i18n(swamp_goblins:entities.crops.giple_crop.description)",
-			"icon": "/swamp_goblins/entities/plants/giple/giple.png",
+			"icon": "/swamp_goblins/entities/plants/giant_flower/giant_flower.png",
 			"material_tags": [
 				"crop",
 				"giple"
 			]
 		},
 		"stonehearth:appeal": {
-			"appeal": 1
+			"appeal": 2
 		}
 	}
 }

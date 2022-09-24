@@ -115,6 +115,9 @@
 			"ordinal": 40,
 			"name": "i18n(stonehearth:jobs.carpenter.recipes.furniture_name)",
 			"recipes":{
+				"stone_bed": {
+					"recipe": "file(furnitures/stone/bed_recipe.json)"
+				},
 				"stone_chair": {
 					"recipe": "file(furnitures/stone/chair_recipe.json)"
 				},

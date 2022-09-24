@@ -25,7 +25,7 @@
 					"recipe": "file(workbenches/firefly_token_recipe.json)"
 				},
 				"egg_pedestal": {
-					"recipe": "file(workbenches/egg_pedestal_recipe.json)"
+					"recipe": "file(deprecated.json)"
 				},
 				"goblinpedia": {
 					"recipe": "file(workbenches/goblinpedia_recipe.json)"
@@ -68,6 +68,33 @@
 				},
 				"shaman_talisman": {
 					"recipe": "file(tools/shaman_talisman_recipe.json)"
+				}
+			}
+		},
+		"baby_care": {
+			"ordinal": 25,
+			"name": "i18n(swamp_goblins:jobs.shaman.recipes.baby_care)",
+			"recipes": {
+				"egg_pedestal": {
+					"recipe": "file(baby_care/egg_pedestal_recipe.json)"
+				},
+				"bottle": {
+					"recipe": "file(baby_care/bottle_recipe.json)"
+				},
+				"bottle2": {
+					"recipe": "file(baby_care/bottle2_recipe.json)"
+				},
+				"blanket": {
+					"recipe": "file(baby_care/blanket_recipe.json)"
+				},
+				"blanket2": {
+					"recipe": "file(baby_care/blanket2_recipe.json)"
+				},
+				"toy": {
+					"recipe": "file(baby_care/toy_recipe.json)"
+				},
+				"toy2": {
+					"recipe": "file(baby_care/toy2_recipe.json)"
 				}
 			}
 		},

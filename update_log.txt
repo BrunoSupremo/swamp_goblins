@@ -1,22 +1,16 @@
 Additions:
-Crusher. Earthshaper (and Engineer) workstation that breaks items put on it back into raw resources.
-Wall fountains. Stone and clay versions.
-Earthshaper Upgraded Outfit.
-Farmer Seed boxes for swamp crops (cattail, mushroom and mangrove), at traders.
-Clay Safety Standard, same as the wooden and stone versions
+Simple baby boosters: Toy, Baby Bottle and Blanket. Helps with the growth requirements (for social, food and sleep scores), making it easier and faster.
+Advanced Toy, Baby Bottle and Blanket. Same as before, but each will also boost one of the stats (mind, body and spirit) when they grow.
+Stone beds.
+Dragonfly ambient mobs spawning in the swamp (like frogs)
+Farmer Seed box for giple flowers, at traders.
 
 Changes:
-Buffed the mind/body/spirit potions, from +1 to +2 temporary stat boost
-Raised priority on Weather Stones to avoid A.I. switching tasks middleway
-Prefixed with "(Firefly)" chairs and tables names to avoid duplicate names with vanilla
-
-Changes for ACE:
-
+Redesign of clay chair, clay table and clay bed
+Babies growth requirements increased, i.e. a little slower to grow.
+But if using the baby items, their growth is actually faster and easier.
+Talking with babies grants extra happiness (positive thought)
+After growing, goblins gains thought happiness based on how much its stats were boosted by their baby items
 
 Fixes:
-Hitbox of brewing stand. May push it out of near wall once you load the first time.
-Weather Stone could get stuck after save reload.
-Upgraded worker outfits disappearing on reload
-
-Fixes for ACE:
-Cattail fiber was being used as thatch for building and blocking them from completing
+Loadout item missing text

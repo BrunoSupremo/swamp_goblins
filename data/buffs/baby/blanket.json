@@ -1,0 +1,12 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"display_name": "i18n(swamp_goblins:entities.baby.blanket.display_name)",
+	"description": "i18n(swamp_goblins:entities.baby.blanket.flavor)",
+	"icon": "/stonehearth/ui/game/images/spirit_stat.png",
+	"modifiers" : {
+		"sleep_duration": {
+			"multiply": 0.5
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(blanket2_iconic.json)"
+		},
+		"stonehearth:equipment_piece": {
+			"render_type": "merge_with_model",
+			"slot": "baby_blanket",
+			"ilevel": 2,
+			"roles":["npc_baby"],
+			"equip_effect": "stonehearth:effects:weapon_level_up",
+			"no_drop": true,
+			"injected_buffs": [
+				"swamp_goblins:buffs:baby:blanket"
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 39,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 3,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.baby.blanket2.display_name)",
+			"description": "i18n(swamp_goblins:entities.baby.blanket2.description)",
+			"icon": "file(blanket2.png)",
+			"category": "tools",
+			"material_tags": ["firefly_made", "stockpile_tool"]
+		}
+	}
+}

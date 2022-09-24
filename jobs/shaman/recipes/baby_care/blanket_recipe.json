@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.baby.blanket.display_name)",
+	"description": "i18n(swamp_goblins:entities.baby.blanket.description)",
+	"flavor": "i18n(swamp_goblins:entities.baby.blanket.flavor)",
+	"portrait": "/swamp_goblins/entities/baby/blanket/blanket.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"work_effect": "fiddle",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:baby:blanket"
+		}
+	]
+}
