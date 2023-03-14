@@ -1,16 +1,24 @@
 Additions:
-Simple baby boosters: Toy, Baby Bottle and Blanket. Helps with the growth requirements (for social, food and sleep scores), making it easier and faster.
-Advanced Toy, Baby Bottle and Blanket. Same as before, but each will also boost one of the stats (mind, body and spirit) when they grow.
-Stone beds.
-Dragonfly ambient mobs spawning in the swamp (like frogs)
-Farmer Seed box for giple flowers, at traders.
+Clay Lamp
+Clay Signs
+Clay Window Box (with sapling or mushroom)
+Clay Urns (small and large)
+Mushroom Bed
+Subtle skin color variations (default, darker, lighter, greyed)
+
 
 Changes:
-Redesign of clay chair, clay table and clay bed
-Babies growth requirements increased, i.e. a little slower to grow.
-But if using the baby items, their growth is actually faster and easier.
-Talking with babies grants extra happiness (positive thought)
-After growing, goblins gains thought happiness based on how much its stats were boosted by their baby items
+Revised Hearths models, from clay to stone visual
+All old clay models revamped to a new visual standard, white with cyan stripes and dots. (Clay Well, Clay Chest, Clay Input Bin, Clay Market Shelf, Clay Pots [with cattail, sapling and giple], Clay Mushroom Garden, Potter Kiln) 
+Potter Wheel visually revised, from clay to wood. Recipe uses wood to craft it instead of clay
+
 
 Fixes:
-Loadout item missing text
+Pop up of "Glory level X achieved" displayed +1 higher than the correct value
+Goblins on other kingdoms would bug if sent to train as geomancer with the bunnies
+Summons should not attract citizens to talk with while in combat
+
+
+Fixes for ACE:
+Cattail fiber is spinnable (for weaver) again
+Fixed food items not being recognized as edible food

@@ -1,0 +1,83 @@
+{
+	"type": "entity",
+	"mixins": "file(window_box_clay_ghost.json)",
+	"components": {
+		"stonehearth:storage": {
+			"public":false,
+			"is_hidden": true,
+			"ignore_restock": true,
+			"allow_default": false,
+			"capacity": 2,
+			"filter_list": "stonehearth_ace:ui:hidden_storage:filters",
+			"default_filter": []
+		},
+		"stonehearth_ace:input": {
+			"require_matching_filter": false
+		},
+		"stonehearth_ace:output": {},
+		"stonehearth_ace:herbalist_planter": {
+			"allowed_crops": "swamp_default",
+			"allowed_crops_mod": {
+				"giple": false,
+				"mangrove": false,
+				"mangrove_halfsize": true
+			},
+			"default_crop": "mangrove_halfsize",
+			"num_products": 2,
+			"harvest_enabled": false,
+			"start_planted": true,
+			"plant_locations": [
+				{
+					"offset": { "x": 0.45, "y": 0.39, "z": 0.45 }
+				},
+				{
+					"offset": { "x": 1.45, "y": 0.39, "z": 0.45 }
+				}
+			]
+		},
+		"stonehearth:expendable_resources": {
+			"resources": {
+				"tend_quality": {
+					"min": {
+						"value": 0
+					},
+					"max": {
+						"value": 5
+					},
+					"initial_value": "min_value"
+				}
+			}
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(window_box_clay_iconic.json)",
+			"ghost_form": "file(window_box_clay_ghost.json)",
+			"placeable_on_walls": true
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": -1, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 3,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 1,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 6
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

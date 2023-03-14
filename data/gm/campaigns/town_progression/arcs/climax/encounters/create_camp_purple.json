@@ -6,6 +6,7 @@
 	"out_edge": {
 		"type": "trigger_many",
 		"out_edges": [
+			"challenge_accepted_purple",
 			"purple_orc_raid_11",
 			"wait_for_purple_camp_boss_killed"
 		]
@@ -69,8 +70,8 @@
 			"orcs": {
 				"from_population": {
 					"role": "orc",
-					"min": 1,
-					"max": 1,
+					"min": 2,
+					"max": 2,
 					"location": {
 						"x": 0,
 						"z": 0

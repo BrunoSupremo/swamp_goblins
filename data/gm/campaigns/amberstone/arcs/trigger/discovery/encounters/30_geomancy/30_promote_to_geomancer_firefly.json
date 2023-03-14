@@ -1,8 +1,5 @@
 {
 	"mixins": "/stonehearth/data/gm/campaigns/amberstone/arcs/trigger/discovery/encounters/30_geomancy/30_promote_to_geomancer.json",
 	"in_edge": "30_promote_to_geomancer_firefly",
-	"out_edge": "30_geomancy_outro_firefly",
-	"script_info": {
-		"script": "file(promote_unit_to_class.lua)"
-	}
+	"out_edge": "30_geomancy_outro_firefly"
 }

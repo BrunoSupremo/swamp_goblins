@@ -203,13 +203,13 @@ function WarriorHearth:_on_wave_member_died(entity)
 	if self._sv.current_wave and not next(self._sv.current_wave) then
 		-- Everyone defeated! Go to next level.
 		if not self.current_wave_abandoned then
-			self._sv.glory_level = self._sv.glory_level + 1
-
 			stonehearth.bulletin_board:post_bulletin(radiant.entities.get_player_id(self._entity))
 			:set_data({title = "i18n(stonehearth:data.commands.spawn_glory_wave.glory_level_achieved_bulletin)"})
 			:add_i18n_data("glory_level", self._sv.glory_level)
 			:set_close_on_handle(true)
 			:set_active_duration("2h")
+			
+			self._sv.glory_level = self._sv.glory_level + 1
 		end
 		self._sv.current_wave = nil
 		self:toggle_command_buttons(true)

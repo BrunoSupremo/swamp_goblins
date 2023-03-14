@@ -1,0 +1,40 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(book.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.6, "y": 0, "z": 0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"allow_vertical_adjacent": true
+		},
+		"render_info": {
+			"scale": 0.2,
+			"color_map": "stonehearth:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/magic_material_map.json"
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.shrine.book.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.shrine.book.description)",
+			"icon": "file(book.png)",
+			"category": "decoration",
+			"material_tags":[
+				"firefly_made",
+				"clay",
+				"crafted",
+				"shrine",
+				"decoration",
+				"stockpile_decoration"
+			]
+		}
+	}
+}

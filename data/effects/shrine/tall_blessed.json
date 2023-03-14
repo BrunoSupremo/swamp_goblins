@@ -1,0 +1,114 @@
+{
+	"type": "effect",
+	"tracks": {
+		"corner1": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":-2.3,
+				"y":2,
+				"z":-2.1,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"corner2": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":2.1,
+				"y":2,
+				"z":-2.1,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"corner3": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":-2.3,
+				"y":2,
+				"z":2.3,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"corner4": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":2.1,
+				"y":2,
+				"z":2.3,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"smoke": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/tall/smoke.json",
+			"loop": true,
+			"transforms": { "x": 0, "y": 10.3, "z": 0,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"smoke_accent": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/tall/smoke_accent.json",
+			"loop": true,
+			"transforms": { "x": 0, "y": 10.3, "z": 0,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"smoke_sparkles": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/tall/smoke_sparkles.json",
+			"loop": true,
+			"transforms": { "x": 0, "y": 10.3, "z": 0,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"light_main": {
+			"type": "light",
+			"light": "/stonehearth/data/horde/animatedlights/shrine/shrine.valor.soft.animatedlight.json",
+			"transforms": { "x": -0.1, "y": 9, "z": 0.1 },
+			"shadows": true
+		},
+		"light_small1": {
+			"type": "light",
+			"light": "/stonehearth/data/horde/animatedlights/shrine/shrine.valor.soft.small.animatedlight.json",
+			"transforms": { "x": -0.1, "y": 10.5, "z": 0.1 },
+			"shadows": false
+		},
+		"light_small2": {
+			"type": "light",
+			"light": "/stonehearth/data/horde/animatedlights/shrine/shrine.valor.soft.small.animatedlight.json",
+			"transforms": { "x": -0.1, "y": 2.5, "z": 0.1 },
+			"shadows": false
+		},
+		"sound": {
+			"type": "sound_effect",
+			"loop": true,
+			"start_time": 400,
+			"min_distance": 35,
+			"falloff": 2,
+			"volume": 65,
+			"track": "stonehearth:sounds:firepit_blessed"
+		}
+	}
+}

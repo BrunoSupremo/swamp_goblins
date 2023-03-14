@@ -1,0 +1,19 @@
+{
+	"mixins": "swamp_goblins:mixins:sign:clay_ghost",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(varanus.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.wood_sign.varanus.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.wood_sign.varanus.description)",
+			"icon": "file(varanus.png)"
+		}
+	}
+}

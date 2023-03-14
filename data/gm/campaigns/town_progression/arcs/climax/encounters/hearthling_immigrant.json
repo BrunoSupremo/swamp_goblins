@@ -1,0 +1,42 @@
+{
+	"type": "encounter",
+	"encounter_type": "add_citizen_with_traits",
+	"mod_root": "swamp_goblins",
+	"in_edge": "hearthling_immigrant",
+	"out_edge": "wait_after_immigrants",
+	"add_citizen_with_traits_info": {
+		"population": "stonehearth:kingdoms:ascendancy",
+		"role": "default",
+		"gender": "female",
+		"job": "stonehearth:jobs:worker",
+		"equipment": [
+			"stonehearth:worker:outfit:2"
+		],
+		"traits": {
+			"stonehearth:traits:optimistic": true,
+			"stonehearth:traits:gregarious": true,
+			"stonehearth:traits:charismatic": true
+		},
+		"attribute_distribution_override": {
+			"allocated_points": {
+				"min": 10,
+				"max": 10
+			},
+			"point_limits": {
+				"mind": {
+					"min": 2,
+					"max": 6
+				},
+				"body": {
+					"min": 1,
+					"max": 6
+				},
+				"spirit": {
+					"min": 1,
+					"max": 6
+				}
+			}
+		},
+		"notification_title": "i18n(stonehearth:data.gm.campaigns.encounters.daily_report_encounter.success_title)"
+	}
+}

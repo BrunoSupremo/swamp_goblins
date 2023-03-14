@@ -94,10 +94,10 @@
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.message6)",
 					"choices": {
 						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_guess": {
-							"out_edge": "food_quest"
+							"out_edge": "wait_human_help"
 						},
 						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_sure": {
-							"out_edge": "food_quest"
+							"out_edge": "wait_human_help"
 						}
 					}
 				}

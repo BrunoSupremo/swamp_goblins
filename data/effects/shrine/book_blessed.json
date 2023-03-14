@@ -1,0 +1,77 @@
+{
+	"type": "effect",
+	"tracks": {
+		"glowing_letters": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/book/glowing_letters.json",
+			"loop": true,
+			"transforms": { "x": 0.6, "y": 3.16, "z": 1.4,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"glowing_letters2": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/book/glowing_letters.json",
+			"loop": true,
+			"transforms": { "x": -0.8, "y": 3.16, "z": 1.4,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"dust": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/book/dust.json",
+			"loop": true,
+			"transforms": { "x": 0, "y": 3, "z": 1.25,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"ball": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/book/ball.json",
+			"loop": true,
+			"transforms": { "x": 0, "y": 0, "z": 1,
+				"rx": 0,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"ball2": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/book/ball.json",
+			"loop": true,
+			"start_time":2000,
+			"transforms": { "x": 0, "y": 0, "z": 1,
+				"rx": 0,
+				"ry": 0,
+				"rz": 0
+			}
+		},
+		"light_main": {
+			"type": "light",
+			"light": "/rayyas_children/data/horde/animatedlights/shrine/shrine.exotic_trade.soft.large.animatedlight.json",
+			"transforms": { "x": 0, "y": 8, "z": 1 },
+			"shadows": true
+		},
+		"light_small1": {
+			"type": "light",
+			"light": "/rayyas_children/data/horde/animatedlights/shrine/shrine.exotic_trade.soft.small.animatedlight.json",
+			"transforms": { "x": 0, "y": 2, "z": 1},
+			"shadows": false
+		},
+		"sound": {
+			"type": "sound_effect",
+			"loop": true,
+			"start_time": 400,
+			"min_distance": 35,
+			"falloff": 2,
+			"volume": 65,
+			"track": "stonehearth:sounds:firepit_blessed"
+		}
+	}
+}

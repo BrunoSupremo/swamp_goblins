@@ -1,0 +1,47 @@
+{
+	"type": "recipe",
+	"effort": 60,
+	"work_units": 9,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.shrine.tall.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.shrine.tall.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/shrine/tall/tall.png",
+	"workshop": "swamp_goblins:earthmaster:potter_kiln",
+	"level_requirement": 4,
+	"manual_unlock": true,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:decoration:certificate",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:shaman:talisman",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "stone resource",
+			"count": 4
+		},
+		{
+			"uri": "swamp_goblins:refined:jewel",
+			"count": 1
+		},
+		{
+			"material": "clay resource",
+			"count": 10
+		},
+		{
+			"material": "herb resource",
+			"count": 6
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:shrine:tall"
+		}
+	]
+}

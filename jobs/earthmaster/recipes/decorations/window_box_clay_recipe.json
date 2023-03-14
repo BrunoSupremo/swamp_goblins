@@ -1,0 +1,21 @@
+{
+	"type": "recipe",
+	"effort": 12,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.window_box_clay.display_name)",
+	"description": "i18n(stonehearth:entities.decoration.golden_clay_wall_planter.golden_clay_wall_planter_ghost.description)",
+	"portrait": "/swamp_goblins/entities/decoration/window_box_clay/window_box_clay.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:window_box:clay"
+		}
+	]
+}

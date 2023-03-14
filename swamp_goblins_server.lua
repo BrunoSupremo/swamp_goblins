@@ -1,7 +1,19 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 22.9.23")
+print("Swamp Goblins Mod version 23.3.14")
 
 --[[
+pick name of skin trait and the greentooth job
+
+non blue skin trait
+
+ace new markets
+
+shrines powers
+
+eggpedestal poor version and clay version
+change lord armor back into a warrior armor
+
+dark army, small black smoke blobs with glowing eyes, from majoras mask
 
 goblinfied vanilla_lampposts
 fancy outfit (tier3)
@@ -32,7 +44,6 @@ warrior rework:
 
 
 reversed porticulis stone gate (opens going down instead of up)
-wolf reward? (i can't remember this one lol [orc campaign?])
 
 jobs side quests for new stuff
 	shaman lvl 6: travel to learn cook recipes || eating contest?
@@ -45,32 +56,29 @@ ace stuff:
 	fuel system (Wait gobbos can't chop wood?)
 	wounds and tonics
 	composting
+	fix raw food (meat and eggs) not being edible on ace
 
 folklore
 
 orc quest
-	food arc
-
-humans:
-oh, so what about we get a farmer to help with your quest, and in return you convince them to not bother us anymore?
-*ok
---fulfill quest
---finish fighting the last rank
---rewarded with orc footman that liked your town and warriors
-your town is way better than it looks, you should display it somehow
---shrine options
---tier 3 reached, new templates, etc...
+	your town is way better than it looks, you should display it somehow
+	shrine options
+	tier 3 reached, new templates, etc...
+	path for peaceful mode
 
 
 move default market stall to earthshaper
 
-non blue skin trait
-
 combat hearth waves:
 	boss, bunnies, orcs, kobolds, ogres
 
-import hearthlings/goblins to the other kingdom
-	(traveler campaign, someone lost appears into the camp)
+import hearthlings
+	traveler campaign, someone lost appears into the camp
+import goblins
+	someone finds a goblin egg basket
+		after tier 2, some random amount of days (+jobs to make sure it can be defended)
+		images with the dialogs, describe the finding, decide to keep or refuse the egg
+
 
 banner shred
 animals haulers requiring food and care
@@ -146,6 +154,10 @@ function swamp_goblins:_on_services_init()
 end
 
 function swamp_goblins:_on_required_loaded()
+	local custom_promote_unit_to_class_script = require('data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.30_geomancy.custom_promote_unit_to_class_script')
+	local promote_unit_to_class_script = radiant.mods.require('stonehearth.data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.30_geomancy.promote_unit_to_class_script')
+	radiant.mixin(promote_unit_to_class_script, custom_promote_unit_to_class_script)
+
 	local custom_ladder_builder = require('services.server.build.custom_ladder_builder')
 	local ladder_builder = radiant.mods.require('stonehearth.services.server.build.ladder_builder')
 	radiant.mixin(ladder_builder, custom_ladder_builder)

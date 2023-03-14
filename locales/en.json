@@ -645,26 +645,63 @@
 							"choice_yuck":"Yuck",
 							"choice_veggies":"Veggies?",
 							"message5":"For such a challenge, we usually set at around 100 vegetables. But we are so far away from our farmers, and traders have almost nothing on them. We don't know how we will reach this amount soon.",
-							"choice_100":"100?",
+							"choice_100":"Just 100?",
 							"choice_100_2":"100?!?",
 							"message6":"Can you help us?",
 							"choice_guess":"I guess...",
-							"choice_sure":"Sure..."
+							"choice_sure":"Sure."
+						},
+						"human_help_offer":{
+							"title":"Another helping hand",
+							"message":"We recognize that you have a lot of influence in this area.<br>Can you help us with the orcs? They are causing problems here with us, we would like your help to set some kind of deal or truce maybe.",
+							"travel_to_orcs":"<strong>Check on Erdene</strong>",
+							"travel_to_humans":"<strong>Check on Nina</strong>",
+							"message2":"Hey! Welcome?<br>We are not ready yet for the challenge, sorry!",
+							"tell_about_humans":"[Mention Nina request]",
+							"message3":"I mean, she has a pretty nice fort, and that is so inviting for a fight...<br>But as you know with our little food problem, they will be fine for a while.<br>Uhm, how about this? They help you with our food request, and we will set that truce with them.",
+							"deal":"Deal",
+							"message4":"Welcome back! How was it?",
+							"explain":"[Explain the deal]",
+							"message5":"Uhm, we just started a carrot farm, to help the Amberstone. Have you heard about them yet? Sorry, that is for another time.<br>Back to the carrot farm. Yes, we can help with the food.<br>How about 25 carrots daily?",
+							"message6":"Ok then! Tomorrow around this time we will be at your banner with those carrots."
+						},
+						"carrot_deliver_1":{
+							"title":"Carrot Delivery",
+							"message":"Hi!<br>First delivery, 25 carrots.<br>See you tomorrow<br><br><font size=-1>The food will be dropped at your banner</font>"
+						},
+						"carrot_deliver_2":{
+							"title":"Carrot Delivery",
+							"message":"Hi!<br>Second delivery, 25 carrots, for a total of 50 carrots.<br>See you tomorrow<br><br><font size=-1>The food will be dropped at your banner</font>"
+						},
+						"carrot_deliver_3":{
+							"title":"Carrot Delivery",
+							"message":"Hi!<br>Third delivery, 25 carrots, for a total of 75 carrots.<br>See you tomorrow<br><br><font size=-1>The food will be dropped at your banner</font>"
+						},
+						"carrot_deliver_4":{
+							"title":"Carrot Delivery",
+							"message":"Hi!<br>Last delivery, 25 carrots, for a total of 100 carrots.<br>See you later<br><br><font size=-1>The food will be dropped at your banner</font>"
 						},
 						"food_quest":{
 							"title":"Veggies Quest",
 							"dialog_title":"Veggies Quest"
 						},
-						"food_quest_abandon":{
-							"title":"Veggies Quest",
-							"message":"Oh no. We were counting with those materials...<br>Don't worry. We will change a few things here, maybe it ends up just with a longer delay."
-						},
 						"food_quest_done":{
-							"title":"Quest Completed",
-							"message":"Thanks, this will help us a lot!<br>Here, we have prepared some food as a thank you gift.<br><br><font size=-1>The food will be dropped at your banner</font>"
+							"title":"Food Quest Completed",
+							"message":"You guys did it! A little teamwork seems to pay off.<br>We will honor both our deals, so consider the truce with Nina done!<br>We just need a bit of time to settle everything then, and we will soon resume our challenge, ok? In two days we will be back.",
+							"more_time":"Wait 3 days",
+							"message2":"Wait 3 days?<br>What are you guys planning? Ok, we will be here in 3 days then!"
 						},
 						"purple_tier_end_dialog":{
-							"message":"Us.. too weak.. Put out xxx Gong if you dares.."
+							"message3":"Congratulations! I'm impressed!<br>You have conquered all tiers!<br>After all these challenges, I believe we both grown even stronger. I can safely say that it was an honor.",
+							"message4":"Please accept this gift. It represents your achievement and our bonds.<br><br><font size=-1>'Gong of Orc Respect' will be dropped at your banner</font>"
+						},
+						"orc_immigrant_dialog":{
+							"message":"The gong is looking good!<br>One of ours even wants to join your clan! He is a skilled fighter and is interested in learning more from you.",
+							"decline":"Oh, he was looking for it... Maybe another time then."
+						},
+						"hearthling_immigrant_dialog":{
+							"message":"Hi! I'm glad that it all worked well in the end with the orcs.<br>Through these last days, the girl responsible for the carrots and the deliveries end up making a lot of new friends with your clan.<br>We talked about it and she wants to join your group!",
+							"decline":"I guess she can visit sometimes."
 						}
 					}
 				}
@@ -1255,6 +1292,11 @@
 			"goblin_market_stall": {
 				"display_name": "Trading Stall"
 			},
+			"clay_lamp": {
+				"display_name": "Clay Lamp",
+				"description": "Small flames brings a glow at night",
+				"flavor": "- Did you put your name in the goblet of fire?"
+			},
 			"landmarker": {
 				"display_name": "Landmarker",
 				"description": "Marks the land",
@@ -1304,6 +1346,16 @@
 				"description": "Natural from the swamp biome, now for your home",
 				"flavor": "Hey, can you water my plants while I'm away?"
 			},
+			"shrine": {
+				"tall": {
+					"display_name": "Posterity Obelisk",
+					"description": "A monument for the future, of safety and friendship"
+				},
+				"book": {
+					"display_name": "Immemorial Tome",
+					"description": "Chronicles of our people, honor in our past"
+				}
+			},
 			"travel_stall": {
 				"display_name": "Firefly Travel Stall",
 				"description": "Send goblins into reembarkations"
@@ -1323,9 +1375,15 @@
 				"description": "Soothing happy notes",
 				"flavor": "A different melody plays as the wind changes"
 			},
+			"window_box_clay": {
+				"display_name": "Clay Window Box"
+			},
 			"window_box_wood": {
 				"display_name": "Window Box",
 				"description": "A tidy home for the plant."
+			},
+			"window_mushroom_box_clay": {
+				"display_name": "Clay Window Mushroom Box"
 			},
 			"window_mushroom_box_wood": {
 				"display_name": "Window Mushroom Box",
@@ -1402,6 +1460,9 @@
 				}
 			},
 			"mushroom": {
+				"bed": {
+					"display_name": "Mushroom Bed"
+				},
 				"chair": {
 					"display_name": "Mushroom Chair",
 					"description": "You can sit on it. Very soft."

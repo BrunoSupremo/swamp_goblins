@@ -1,0 +1,10 @@
+{
+	"type" : "encounter",
+	"encounter_type" : "wait",
+
+	"in_edge"  : "wait_nina",
+	"out_edge" : "hearthling_immigrant_dialog",
+	"wait_info" :  {
+		"duration" : "12h"
+	}
+}

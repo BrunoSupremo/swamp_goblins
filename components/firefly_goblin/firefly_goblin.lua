@@ -148,10 +148,6 @@ function FireflyGoblin:add_goblin_worker_abilities()
 end
 
 function FireflyGoblin:_remove_goblin_listeners()
-	if self.waiting_for_combat_listener then
-		self.waiting_for_combat_listener:destroy()
-		self.waiting_for_combat_listener = nil
-	end
 	if self.job_has_changed then
 		self.job_has_changed:destroy()
 		self.job_has_changed = nil

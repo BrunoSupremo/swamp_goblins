@@ -9,12 +9,28 @@
 			"msg1": {
 				"bulletin": {
 					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done.title)",
-					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
-					"portrait": "file(images/nina.png)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done.message)",
 					"choices": {
-						"swamp_goblins:data.gm.campaigns.town_progression.climax.nina_introduction.thanks": {
-							"out_edge": ""
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done.more_time": {
+							"next_node": "msg2"
+						},
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "wait_2_purple_camp"
+						}
+					}
+				}
+			},
+			"msg2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done.message2)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "wait_3_purple_camp"
 						}
 					}
 				}

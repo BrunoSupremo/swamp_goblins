@@ -179,7 +179,7 @@ function BeastTamerClass:create_animal(url, has_attributes)
 
 	radiant.effects.run_effect(animal, "stonehearth:effects:spawn_entity")
 
-	radiant.entities.add_buff(animal, "swamp_goblins:buffs:despawn:in_2h")
+	animal:add_component('swamp_goblins:summon')
 end
 
 function BeastTamerClass:copy_menace(animal)

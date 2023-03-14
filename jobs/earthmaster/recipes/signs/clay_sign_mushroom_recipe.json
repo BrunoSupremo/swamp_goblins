@@ -1,0 +1,13 @@
+{
+	"mixins": "swamp_goblins:mixins:sign:clay_recipe",
+	"type": "recipe",
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wood_sign.mushroom.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wood_sign.mushroom.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/clay_sign/mushroom/mushroom.png",
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:clay_sign:mushroom"
+		}
+	]
+}

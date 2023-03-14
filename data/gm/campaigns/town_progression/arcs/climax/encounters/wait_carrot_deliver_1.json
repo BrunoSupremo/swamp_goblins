@@ -1,0 +1,10 @@
+{
+	"type" : "encounter",
+	"encounter_type" : "wait",
+
+	"in_edge"  : "wait_carrot_deliver_1",
+	"out_edge" : "carrot_deliver_1",
+	"wait_info" :  {
+		"duration" : "1d"
+	}
+}

@@ -36,7 +36,12 @@
 			"description": "i18n(swamp_goblins:entities.food.fake_vegetables.description)",
 			"is_item": true,
 			"category": "food",
-			"material_tags": ["food", "vegetarian"],
+			"material_tags": [
+				"food",
+				"vegetarian",
+				"hearty",
+				"leafy"
+			],
 			"subject_override": "swamp_goblins:food:fake_vegetables"
 		}
 	}

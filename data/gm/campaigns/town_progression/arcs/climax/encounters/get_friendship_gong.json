@@ -1,0 +1,19 @@
+{
+	"type": "encounter",
+	"encounter_type": "donation",
+	"in_edge": "get_friendship_gong",
+	"out_edge": "wait_for_orc_friendship_gong_placed",
+	"donation_info": {
+		"loot_table": {
+			"entries": {
+				"titan_summoner": {
+					"items": {
+						"titan_summoner": {
+							"uri": "stonehearth:corrupt:titanstorm:orc_friendship_gong"
+						}
+					}
+				}
+			}
+		}
+	}
+}

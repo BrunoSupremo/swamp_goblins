@@ -1,0 +1,21 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.furniture.mushroom.bed.display_name)",
+	"description": "i18n(stonehearth:jobs.mason.recipes.stone_bed_recipe.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/furniture/mushroom/bed/bed.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:food:mushroom",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:furniture:mushroom:bed"
+		}
+	]
+}

@@ -1,0 +1,46 @@
+{
+	"type": "encounter",
+	"encounter_type": "add_citizen_with_traits",
+	"mod_root": "swamp_goblins",
+	"in_edge": "orc_immigrant",
+	"out_edge": "wait_nina",
+	"add_citizen_with_traits_info": {
+		"population": "stonehearth:kingdoms:orcs",
+		"role": "orc",
+		"gender": "male",
+		"job": "stonehearth:jobs:footman",
+		"level": 5,
+		"equipment": [
+			"stonehearth:weapons:giant_bone_axe"
+		],
+		"allowed_jobs": [
+			"stonehearth:jobs:worker",
+			"stonehearth:jobs:footman",
+			"swamp_goblins:jobs:beast_tamer"
+		],
+		"traits": {
+			"swamp_goblins:traits:wolf_companion":true
+		},
+		"attribute_distribution_override": {
+			"allocated_points": {
+				"min": 0,
+				"max": 0
+			},
+			"point_limits": {
+				"mind": {
+					"min": 3,
+					"max": 3
+				},
+				"body": {
+					"min": 8,
+					"max": 8
+				},
+				"spirit": {
+					"min": 6,
+					"max": 6
+				}
+			}
+		},
+		"notification_title": "i18n(stonehearth:data.gm.campaigns.orc_war.arcs.trigger.old_khan.encounters.grant_orc_citizen.notification_title)"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(../pot.qb)",
+					"file(cattail.qb)"
+				]
+			},
+			"ace_planter": {
+				"models": [
+					"file(../pot.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.potted_cattail.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.potted_cattail.description)",
+			"icon": "file(cattail.png)",
+			"category": "decoration",
+			"material_tags": [
+				"firefly_made",
+				"clay",
+				"decoration",
+				"stockpile_decoration",
+				"herbalist_planter"
+			]
+		}
+	}
+}

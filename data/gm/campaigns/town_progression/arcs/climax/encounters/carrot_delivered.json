@@ -1,0 +1,23 @@
+{
+	"type": "encounter",
+	"encounter_type": "donation",
+	"in_edge": "carrot_delivered",
+	"donation_info": {
+		"loot_table": {
+			"entries": {
+				"default": {
+					"num_rolls": {
+						"min": 25,
+						"max": 25
+					},
+					"items": {
+						"carrot": {
+							"uri": "stonehearth:food:carrot:carrot_basket",
+							"weight": 1
+						}
+					}
+				}
+			}
+		}
+	}
+}

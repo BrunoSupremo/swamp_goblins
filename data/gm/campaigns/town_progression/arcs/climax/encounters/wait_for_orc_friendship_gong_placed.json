@@ -1,0 +1,16 @@
+{
+	"type": "encounter",
+	"encounter_type": "wait_for_requirements_met",
+	"in_edge": "wait_for_orc_friendship_gong_placed",
+	"out_edge": "orc_immigrant_dialog",
+	"wait_for_requirements_met_info": {
+		"requirements": {
+			"item_placed_requirement": {
+				"item": "exists_in_world",
+				"uri": "stonehearth:corrupt:titanstorm:orc_friendship_gong",
+				"type": "deny_if_not",
+				"value": true
+			}
+		}
+	}
+}

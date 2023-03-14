@@ -1,0 +1,11 @@
+{
+	"mixins": "stonehearth:traits:animal_companion",
+	"data": {
+		"mixintypes": {
+			"possible_companions": "override"
+		},
+		"possible_companions": [
+			"swamp_goblins:critters:kobold_wolf"
+		]
+	}
+}

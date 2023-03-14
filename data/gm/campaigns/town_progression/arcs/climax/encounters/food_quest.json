@@ -12,20 +12,8 @@
 				"material": "food_container raw_food vegetable",
 				"count": 100,
 				"keep_items": false
-			},
-			{
-				"type": "give_material",
-				"material": "wood resource",
-				"count": 2,
-				"keep_items": false
-			},
-			{
-				"type": "give_item",
-				"uri": "stonehearth:resources:coal:lump_of_coal",
-				"count": 1,
-				"keep_items": false
 			}
 		],
-		"abandon_out_edge": "food_quest_abandon"
+		"abandon_out_edge": "food_quest_done"
 	}
 }

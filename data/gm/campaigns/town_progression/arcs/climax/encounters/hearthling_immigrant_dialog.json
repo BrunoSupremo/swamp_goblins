@@ -1,0 +1,40 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "hearthling_immigrant_dialog",
+	"dialog_tree_info": {
+		"start_node": "message1",
+		"nodes": {
+			"message1": {
+				"bulletin": {
+					"title": "i18n(stonehearth:data.gm.campaigns.encounters.daily_report_encounter.conclusion_positive)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.hearthling_immigrant_dialog.message)",
+					"choices": {
+						"stonehearth:ui.game.common.accept": {
+							"out_edge": "hearthling_immigrant"
+						},
+						"stonehearth:ui.game.common.decline": {
+							"next_node": "msg2"
+						}
+					}
+				}
+			},
+			"msg2": {
+				"bulletin": {
+					"title": "i18n(stonehearth:data.gm.campaigns.encounters.daily_report_encounter.conclusion_positive)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.hearthling_immigrant_dialog.decline)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "wait_after_immigrants"
+						}
+					}
+				}
+			}
+		}
+	}
+}

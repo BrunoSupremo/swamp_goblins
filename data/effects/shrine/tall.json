@@ -1,0 +1,57 @@
+{
+	"type": "effect",
+	"tracks": {
+		"corner1": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":-2.3,
+				"y":2,
+				"z":-2.1,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"corner2": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":2.1,
+				"y":2,
+				"z":-2.1,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"corner3": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":-2.3,
+				"y":2,
+				"z":2.3,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"corner4": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":2.1,
+				"y":2,
+				"z":2.3,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		}
+	}
+}

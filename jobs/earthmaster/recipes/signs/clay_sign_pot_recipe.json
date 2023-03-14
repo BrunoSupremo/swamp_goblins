@@ -1,0 +1,13 @@
+{
+	"mixins": "swamp_goblins:mixins:sign:clay_recipe",
+	"type": "recipe",
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wood_sign.pot.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wood_sign.pot.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/decoration/clay_sign/pot/pot.png",
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:clay_sign:pot"
+		}
+	]
+}

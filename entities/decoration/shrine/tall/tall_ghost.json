@@ -1,0 +1,36 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(tall.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.1, "y": 0, "z": 0.1 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"allow_vertical_adjacent": true
+		},
+		"render_info": {
+			"scale": 0.2
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.shrine.tall.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.shrine.tall.description)",
+			"icon": "file(tall.png)",
+			"category": "decoration",
+			"material_tags":[
+				"firefly_made",
+				"clay",
+				"crafted",
+				"shrine",
+				"decoration",
+				"stockpile_decoration"
+			]
+		}
+	}
+}

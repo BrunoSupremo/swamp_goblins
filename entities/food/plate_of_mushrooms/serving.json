@@ -1,0 +1,35 @@
+{
+	"mixins": "stonehearth:mixins:item_properties",
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(plate_of_mushrooms.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food",
+			"destroy_on_uncarry": true
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 40
+			},
+			"default": {
+				"satisfaction": 25
+			},
+			"quality": 4
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.food.plate_of_mushrooms.display_name)",
+			"description": "i18n(swamp_goblins:entities.food.plate_of_mushrooms.description)",
+			"icon": "file(plate_of_mushrooms.png)",
+			"material_tags":["food", "fungi", "vegetarian"],
+			"subject_override": "swamp_goblins:food:plate_of_mushrooms"
+		}
+	}
+}

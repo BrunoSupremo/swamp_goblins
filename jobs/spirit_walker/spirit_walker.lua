@@ -155,7 +155,7 @@ function SpiritWalkerClass:create_spirit(url, attributes)
 			sentiment = 1
 		})
 	end
-	radiant.entities.add_buff(spirit, "swamp_goblins:buffs:despawn:in_2h")
+	spirit:add_component('swamp_goblins:summon')
 end
 
 function SpiritWalkerClass:copy_attributes(spirit)

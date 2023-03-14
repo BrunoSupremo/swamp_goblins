@@ -19,10 +19,10 @@ function CustomSwimmingService:_swamp_goblins_is_swimming(entity, location)
 
 	if not location then
 		location = radiant.entities.get_world_grid_location(entity)
-	end
-
-	if not location then
-		return false
+		if not location then
+			--probably out of town?
+			return false
+		end
 	end
 
 	local id = entity:get_id()

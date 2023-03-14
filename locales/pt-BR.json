@@ -1255,6 +1255,11 @@
 			"goblin_market_stall": {
 				"display_name": "Tenda de negociação"
 			},
+			"clay_lamp": {
+				"display_name": "Lâmpada de Barro",
+				"description": "Pequenas chamas trazem brilho à noite",
+				"flavor": "- Você colocou seu nome no cálice de fogo?"
+			},
 			"landmarker": {
 				"display_name": "Marcador",
 				"description": "Marca a região",
@@ -1304,6 +1309,16 @@
 				"description": "Natural do bioma pântano, agora para sua casa",
 				"flavor": "Ei, você pode regar minhas plantas enquanto estou fora?"
 			},
+			"shrine": {
+				"tall": {
+					"display_name": "Obelisco da Posteridade",
+					"description": "Um monumento para o futuro, de segurança e amizade"
+				},
+				"book": {
+					"display_name": "Tomo Imemorial",
+					"description": "Crônicas de nosso povo, honra em nosso passado"
+				}
+			},
 			"travel_stall": {
 				"display_name": "Tenda de Viagem Vaga-lume",
 				"description": "Envie goblins para reembarques"
@@ -1323,9 +1338,15 @@
 				"description": "Notas alegres calmantes",
 				"flavor": "Uma melodia diferente toca conforme o vento muda"
 			},
+			"window_box_clay": {
+				"display_name": "Vaso de Janela"
+			},
 			"window_box_wood": {
 				"display_name": "Vaso de Janela",
 				"description": "Uma casinha arrumada para a planta."
+			},
+			"window_mushroom_box_clay": {
+				"display_name": "Vaso de Cogumelo na Janela"
 			},
 			"window_mushroom_box_wood": {
 				"display_name": "Vaso de Cogumelo na Janela",
@@ -1402,6 +1423,9 @@
 				}
 			},
 			"mushroom": {
+				"bed": {
+					"display_name": "Cama Cogumelo"
+				},
 				"chair": {
 					"display_name": "Cadeira Cogumelo",
 					"description": "Você pode sentar-se nela. Muito macio."

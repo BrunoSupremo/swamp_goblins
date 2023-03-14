@@ -1,0 +1,121 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "human_help_offer",
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.message)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "travel1"
+						}
+					}
+				}
+			},
+			"travel1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.title)",
+					"dialog_title": "",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.travel_to_orcs)",
+					"choices": {
+						"stonehearth:ui.game.common.continue": {
+							"next_node": "msg2"
+						}
+					}
+				}
+			},
+			"msg2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.message2)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.tell_about_humans":{
+							"next_node": "msg3"
+						}
+					}
+				}
+			},
+			"msg3": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.message3)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.deal":{
+							"next_node": "travel2"
+						}
+					}
+				}
+			},
+			"travel2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.title)",
+					"dialog_title": "",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.travel_to_humans)",
+					"choices": {
+						"stonehearth:ui.game.common.continue": {
+							"next_node": "msg4"
+						}
+					}
+				}
+			},
+			"msg4": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.message4)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.explain":{
+							"next_node": "msg5"
+						}
+					}
+				}
+			},
+			"msg5": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.message5)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.deal":{
+							"next_node": "msg6"
+						}
+					}
+				}
+			},
+			"msg6": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.human_help_offer.message6)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": {
+								"type": "trigger_many",
+								"out_edges": [
+									"wait_carrot_deliver_1",
+									"wait_carrot_deliver_2",
+									"wait_carrot_deliver_3",
+									"wait_carrot_deliver_4"
+								]
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

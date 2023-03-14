@@ -2,10 +2,21 @@
 	"mixins": "stonehearth:mixins:resources:jerky",
 	"type": "entity",
 	"entity_data": {
+		"mixintypes": {
+			"stonehearth:food": "remove"
+		},
+		"stonehearth:food_container": {
+			"effect": "carry_pickup",
+			"stacks_per_serving": 3,
+			"food": "swamp_goblins:food:frog_jerky_serving",
+			"require_reservation": true
+		},
 		"stonehearth:catalog": {
 			"display_name": "i18n(swamp_goblins:entities.food.frog_jerky.display_name)",
 			"material_tags": [
-				"firefly_made"
+				"firefly_made",
+				"meat_ingredient",
+				"food_container"
 			]
 		},
 		"stonehearth:net_worth": {

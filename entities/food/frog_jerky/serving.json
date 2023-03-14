@@ -1,0 +1,31 @@
+{
+	"mixins": "stonehearth:mixins:resources:jerky",
+	"type": "entity",
+	"entity_data": {
+		"stonehearth:item": {
+			"category": "food",
+			"destroy_on_uncarry": true
+		},
+		"stonehearth:food": {
+			"stonehearth:sitting_on_chair": {
+				"satisfaction": 44
+			},
+			"default": {
+				"satisfaction": 40
+			},
+			"quality": 2
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.food.frog_jerky.display_name)",
+			"material_tags": [
+				"firefly_made",
+				"food",
+				"jerky_serving",
+				"meat",
+				"lunch_time",
+				"dinner_time"
+			],
+			"subject_override": "swamp_goblins:food:frog_jerky"
+		}
+	}
+}

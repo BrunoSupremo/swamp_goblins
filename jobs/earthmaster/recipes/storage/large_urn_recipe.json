@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 15,
+	"work_units": 2,
+	"recipe_name": "i18n(stonehearth:jobs.potter.recipes.large_urn_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.potter.recipes.large_urn_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.large_urn_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/containers/large_urn/large_urn.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:containers:large_urn"
+		}
+	]
+}

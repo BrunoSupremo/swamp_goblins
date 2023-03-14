@@ -3,7 +3,7 @@
 	"categories": {
 		"head_hair": ["hair"],
 		"face_hair": ["accessories"],
-		"skin_color": ["[none]"],
+		"skin_color": ["skin_color"],
 		"hair_color": ["hair_color"],
 		"tattoos": ["tattoos"]
 	},
@@ -28,6 +28,23 @@
 				},
 				"platinum":{
 					"file":"/swamp_goblins/data/materials/material_maps/hair_platinum_material_map.json"
+				}
+			}
+		},
+		"skin_color": {
+			"type": "material_map",
+			"values": {
+				"default": {
+					"file": "/swamp_goblins/data/materials/material_maps/skin_default_material_map.json"
+				},
+				"lighter": {
+					"file": "/swamp_goblins/data/materials/material_maps/skin_lighter_material_map.json"
+				},
+				"darker": {
+					"file": "/swamp_goblins/data/materials/material_maps/skin_darker_material_map.json"
+				},
+				"greyer": {
+					"file": "/swamp_goblins/data/materials/material_maps/skin_greyer_material_map.json"
 				}
 			}
 		},
