@@ -1,0 +1,23 @@
+{
+	"type": "recipe",
+	"effort": 35,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.construction.clay_door.display_name)",
+	"description": "i18n(swamp_goblins:entities.construction.clay_door.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/construction/clay_door/clay_door.png",
+	"workshop": "swamp_goblins:earthmaster:potter_kiln",
+	"work_effect": "work",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 2
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:portals:clay_door"
+		}
+	]
+}

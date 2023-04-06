@@ -1,6 +1,8 @@
 {
 	"type": "entity",
-	"mixins": "file(goblin_market_stall_ghost.json)",
+	"mixins": [
+		"file(goblin_market_stall_ghost.json)"
+	],
 	"components": {
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(goblin_market_stall_iconic.json)",

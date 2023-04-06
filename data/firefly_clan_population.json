@@ -18,6 +18,7 @@
 	"inventory_capacity_equation": "math.max(num_citizens * 150, 1200)",
 	"trappable_animals": "swamp_goblins:data:trapping:all_trappable_animals",
 	"default_material": "fiber resource",
+	"starting_items_container": "swamp_goblins:containers:embark_wagon",
 	"amenity_to": {
 		"human_npcs": "neutral",
 		"orc_npcs": "neutral",
@@ -153,7 +154,20 @@
 					"Haaki",
 					"Erde",
 					"Arvee",
-					"Bayan"
+					"Bayan",
+					"Zog",
+					"Snik",
+					"Gruk",
+					"Nix",
+					"Rix",
+					"Zix",
+					"Krix",
+					"Flix",
+					"Dags",
+					"Zruibs",
+					"Stormird",
+					"Glot",
+					"Ranis"
 				]
 			},
 			"surnames": [
@@ -212,7 +226,9 @@
 				"the Expiditer",
 				"Thornpants",
 				"Deathfist",
-				"the Grandiose"
+				"the Grandiose",
+				"Mintybreath",
+				"Trinketmake"
 			],
 			"attribute_distribution": {
 				"allocated_points": {

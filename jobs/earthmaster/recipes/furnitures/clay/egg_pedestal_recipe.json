@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.shaman.egg_pedestal.display_name)",
+	"description": "i18n(swamp_goblins:jobs.shaman.egg_pedestal.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/gizmos/egg_pedestal_clay/egg_pedestal.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "clay resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:gizmos:egg_pedestal_clay"
+		}
+	]
+}

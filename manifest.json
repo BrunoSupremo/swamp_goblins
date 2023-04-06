@@ -195,6 +195,7 @@
 
 		"containers:chest":						"file(entities/containers/chest)",
 		"containers:clay_chest":				"file(entities/containers/clay_chest)",
+		"containers:embark_wagon":				"file(entities/containers/embark_wagon)",
 		"containers:giant_bag":					"file(entities/containers/giant_bag)",
 		"containers:input_bin:clay":			"file(entities/containers/input_bin_clay)",
 		"containers:input_bin:wood":			"file(entities/containers/input_bin_wood)",
@@ -387,6 +388,8 @@
 		"furniture:wood_throne":	"file(entities/furniture/wood_throne)",
 
 		"gizmos:egg_basket":	"file(entities/gizmos/egg_basket)",
+		"gizmos:egg_pedestal_stone":	"file(entities/gizmos/egg_pedestal_stone)",
+		"gizmos:egg_pedestal_clay":		"file(entities/gizmos/egg_pedestal_clay)",
 		"gizmos:firefly_shield":	"file(entities/gizmos/firefly_shield)",
 		"gizmos:firefly_shield:off":"file(entities/gizmos/firefly_shield/firefly_shield_off.json)",
 		"gizmos:safety_standard:wood":	"file(entities/gizmos/safety_standard_wood)",
@@ -396,6 +399,7 @@
 		"goblins:egg":		"file(entities/goblins/egg)",
 		"goblins:baby":		"file(entities/goblins/baby)",
 		"goblins:goblin":	"file(entities/goblins/goblin.json)",
+		"goblins:goblin_npc":	"file(entities/goblins/goblin_npc.json)",
 		"goblins:goblin:customizations":"file(entities/goblins/customizations.json)",
 
 		"humans:nina":"file(entities/humans/nina)",
@@ -432,6 +436,7 @@
 		"loot_bag:swamp:tree_random": "file(data/loot_bag/tree_random.json)",
 
 		"mixins:base_goblin":"file(mixins/base_goblin)",
+		"mixins:base_goblin_npc":"file(mixins/base_goblin_npc)",
 		"mixins:encounter:bear_raid":"file(mixins/encounter/mixin_bear_raid.json)",
 		"mixins:sign:wood":			"file(mixins/sign/wood.json)",
 		"mixins:sign:wood_ghost":	"file(mixins/sign/wood_ghost.json)",
@@ -514,6 +519,8 @@
 		"music:tier_3:night:energizing":	"file(data/music/night_music/energizing.ogg)",
 		"music:tier_3:night:lotus":			"file(data/music/night_music/lotus.ogg)",
 
+		"npc:merchants:firefly":"file(entities/npc/merchants/firefly.json)",
+
 		"plants:cattail":		"file(entities/plants/cattail)",
 		"plants:cattail:seed":	"file(entities/plants/cattail/seed)",
 		"plants:cattail:sprout":"file(entities/plants/cattail/sprout)",
@@ -532,9 +539,11 @@
 		"plants:stone_mushroom_garden":	"file(entities/plants/stone_mushroom_garden)",
 		"plants:clay_mushroom_garden":	"file(entities/plants/clay_mushroom_garden)",
 
+		"portals:clay_door":			"file(entities/construction/clay_door)",
 		"portals:stone_door":			"file(entities/construction/stone_door)",
 		"portals:stone_window":			"file(entities/construction/stone_window)",
 		"portals:wooden_door":			"file(entities/construction/wooden_door)",
+		"portals:wooden_door_frame":	"file(entities/construction/wooden_door_frame)",
 		"portals:wooden_double_door":	"file(entities/construction/wooden_double_door)",
 		"portals:curtains_door":		"file(entities/construction/curtains_door)",
 		"portals:wooden_window_frame":		"file(entities/construction/wooden_window_frame)",
@@ -630,6 +639,7 @@
 
 		"trait_replacer": "file(data/traits/trait_replacer.json)",
 		"traits_index": "file(data/traits/traits_index.json)",
+		"traits:deviant_pigment":	"file(data/traits/deviant_pigment)",
 		"traits:firefly_chaser":	"file(data/traits/firefly_chaser)",
 		"traits:frog_companion":	"file(data/traits/frog_companion)",
 		"traits:wolf_companion":	"file(data/traits/wolf_companion)",
@@ -760,6 +770,7 @@
 		"archipelago_biome:building_templates:index":	"file(data/saved_objects/fisher_templates.json)",
 		"trapper_plus:building_templates:index":		"file(data/saved_objects/trapper_plus_templates.json)",
 
+		"stonehearth_ace:beekeeping_hat:simple": "file(jobs/common/simple_beekeeping_hat)",
 		"stonehearth_ace:combat:outfit:freezing": "file(jobs/common/freezing_combat_outfit)",
 		"stonehearth_ace:field_work:outfit:freezing": "file(jobs/common/freezing_field_work_outfit)",
 
@@ -835,6 +846,8 @@
 		"stonehearth_ace:mixins:encounter:goblin_raid":																	"file(data/gm/campaigns/remove_firefly_clan.json)",
 		"stonehearth_ace/data/gm/campaigns/bonecarving/bonecarving_campaign.json":										"file(data/gm/campaigns/remove_firefly_clan.json)",
 
+		"stonehearth_ace:data:merchants:exotic_goods": "file(data/mercantile/merchants/exotic_goods.json)",
+
 		"stonehearth:data:npc_index": "file(data/npc_index.json)",
 
 		"stonehearth:data:resource_constants": "file(data/resource_constants.json)",
@@ -877,6 +890,7 @@
 		"stonehearth_ace:gizmos:training_dummy":		"file(entities/gizmos/training_dummy)",
 
 		"stonehearth:kingdoms:forest": "file(services/server/population/data/forest_population.json)",
+		"stonehearth:kingdoms:human_npcs": "file(services/server/population/data/human_npc_population.json)",
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
 
@@ -940,6 +954,10 @@
 		"stonehearth:monsters:avian:duckduck":	"file(entities/monsters/avian/nerf.json)",
 		"stonehearth:monsters:avian:ostrich":	"file(entities/monsters/avian/nerf.json)",
 
+		"stonehearth_ace:mixins:market_stall:tier_1": "file(mixins/market_stall/market_stall_tier_1.json)",
+		"stonehearth_ace:mixins:market_stall:tier_2": "file(mixins/market_stall/market_stall_tier_2.json)",
+		"stonehearth_ace:mixins:market_stall:tier_3": "file(mixins/market_stall/market_stall_tier_3.json)",
+
 		"stonehearth:personal_logs:dreams": "file(data/personality/dreams.json)",
 
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
@@ -978,6 +996,11 @@
 		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/entities/plants/lilypad/lilypad.json":	"stonehearth_ace/swamp_goblins/entities/plants/lilypad/ace_lilypad.json",
+
+		"swamp_goblins/entities/decoration/goblin_market_stall/goblin_market_stall.json":		"stonehearth_ace/swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall.json",
+		"swamp_goblins/entities/decoration/goblin_market_stall/goblin_market_stall_ghost.json":	"stonehearth_ace/swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall_ghost.json",
+
+		"swamp_goblins/entities/containers/embark_wagon/embark_wagon_ghost.json":"stonehearth_ace/swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json",
 
 		"swamp_goblins:armor:flower_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
 		"swamp_goblins:armor:log_armor":			"stonehearth_ace:mixins:armor:light_armor_torso",
@@ -1082,6 +1105,11 @@
 		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"stonehearth_ace/swamp_goblins/entities/plants/lilypad/ace_lilypad.json":"swamp_goblins/entities/plants/lilypad/ace_lilypad.json",
 
+		"stonehearth_ace/swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall.json":		"swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall.json",
+		"stonehearth_ace/swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall_ghost.json":"swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall_ghost.json",
+
+		"stonehearth_ace/swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json":"swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json",
+
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":		"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json":"swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json",
@@ -1109,6 +1137,7 @@
 
 		"potion:appearance":"file(entities/consumables/scripts/appearance_controller.lua)",
 
+		"trait_scripts:deviant_pigment":"file(data/traits/deviant_pigment/deviant_pigment_script.lua)",
 		"trait_scripts:party_goblin":"file(data/traits/party_goblin/party_goblin_script.lua)",
 
 		"weather_scripts:foggy": "file(data/weather/foggy/foggy.lua)"

@@ -1,0 +1,114 @@
+{
+	"mixins": "swamp_goblins:mixins:base_goblin_npc",
+	"type": "entity",
+	"components": {
+		"render_info": {
+			"animation_table": "stonehearth:skeletons:humanoid:female"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(goblin.qb)"
+				]
+			}
+		},
+		"stonehearth:customization": {}
+	},
+	"entity_data": {
+		"stonehearth:customization_variants": {
+			"customization_options": "swamp_goblins:goblins:goblin:customizations",
+			"root": {
+				"hair_and_skin_color": {
+					"weights": {
+						"hair_and_skin_color": 1
+					}
+				},
+				"head_accessories": {
+					"weights": {
+						"head_accessories": 1
+					}
+				},
+				"tattoos" : {
+					"weights": {
+						"tattoos": 1
+					}               
+				}
+			},
+			"packages": {
+				"hair_and_skin_color": {
+					"hair_color": {
+						"weights": {
+							"black": 1,
+							"brown": 2,
+							"red": 1,
+							"sandy": 2,
+							"blonde": 2,
+							"platinum": 1.5
+						}
+					},
+					"skin_color": {
+						"weights": {
+							"default": 1,
+							"lighter": 1,
+							"darker": 1,
+							"greyer": 1
+						}
+					},
+					"eye_color": {
+						"weights": {
+							"aqua": 1,
+							"black": 1,
+							"blue": 1,
+							"blurple": 1,
+							"brown": 1,
+							"green": 1,
+							"hazel": 1,
+							"magenta": 1,
+							"red": 1,
+							"yellow": 1
+						}
+					}
+				},
+				"head_accessories": {
+					"accessories": {
+						"weights": {
+							"[none]": 10,
+							"eyepatch": 1,
+							"eyepatch2": 1
+						}
+					},
+					"hair": {
+						"weights": {
+							"[none]": 1,
+							"hair_1": 1,
+							"hair_2": 1,
+							"hair_3": 1,
+							"hair_4": 1,
+							"hair_5": 1,
+							"hair_6": 1,
+							"hair_7": 1,
+							"hair_8": 1,
+							"hair_9": 1,
+							"hair_10": 1
+						}
+					}
+				},
+				"tattoos": {
+					"tattoos": {
+						"weights": {
+							"[none]": 8,
+							"tattoos_1": 1,
+							"tattoos_2": 1,
+							"tattoos_3": 1,
+							"tattoos_4": 1,
+							"tattoos_5": 1,
+							"tattoos_6": 1,
+							"tattoos_7": 1,
+							"tattoos_8": 1
+						}
+					}
+				} 
+			}
+		}
+	}
+}

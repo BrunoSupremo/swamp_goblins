@@ -157,6 +157,18 @@ function LayEgg_spot:reset_pedestal()
 		self._sv._task_effect:stop()
 		self._sv._task_effect = nil
 	end
+	if self.timer then
+		self.timer:destroy()
+		self.timer = nil
+	end
+	if self.timer2 then
+		self.timer2:destroy()
+		self.timer2 = nil
+	end
+	if self.timer3 then
+		self.timer3:destroy()
+		self.timer3 = nil
+	end
 	self:update_commands()
 
 	stonehearth.ai:reconsider_entity(self._entity)

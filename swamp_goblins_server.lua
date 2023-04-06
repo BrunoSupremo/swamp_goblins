@@ -1,16 +1,13 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 23.3.14")
+print("Swamp Goblins Mod version 23.4.5")
 
 --[[
-pick name of skin trait and the greentooth job
+ace dragon quest texts
 
-non blue skin trait
-
-ace new markets
+elderstone reference
 
 shrines powers
 
-eggpedestal poor version and clay version
 change lord armor back into a warrior armor
 
 dark army, small black smoke blobs with glowing eyes, from majoras mask
@@ -66,9 +63,6 @@ orc quest
 	tier 3 reached, new templates, etc...
 	path for peaceful mode
 
-
-move default market stall to earthshaper
-
 combat hearth waves:
 	boss, bunnies, orcs, kobolds, ogres
 
@@ -95,8 +89,8 @@ mobs:
 			size inflation for attack
 			squish up/down idle
 
-green tooth:
-	farmer+shepherd?
+grazer:
+	farmer+shepherd
 
 party goblin:
 	different tattoo color?

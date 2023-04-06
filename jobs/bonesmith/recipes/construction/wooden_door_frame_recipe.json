@@ -1,0 +1,21 @@
+{
+	"type": "recipe",
+	"effort": 22,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.construction.wooden_door_frame.display_name)",
+	"description": "i18n(swamp_goblins:entities.construction.wooden_door_frame.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/construction/wooden_door_frame/wooden_door_frame.png",
+	"workshop": "swamp_goblins:bonesmith:workbench",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:portals:wooden_door_frame"
+		}
+	]
+}

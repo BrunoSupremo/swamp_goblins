@@ -832,9 +832,9 @@
 			}
 		},
 		"traits": {
-			"party_goblin": {
-				"display_name": "Party Goblin",
-				"description": "[name(i18n_data.entity)] loves to tell jokes and wear funny hats. Are they good? It's tough to say, but they frequently seem to leave others with a smile."
+			"deviant_pigment": {
+				"display_name": "Deviant Pigment",
+				"description": "[name(i18n_data.entity)] skin color is a mark of distinction. Unlike most, this one has a unique hue that sets it apart from the rest."
 			},
 			"firefly_chaser": {
 				"display_name": "Firefly Chaser",
@@ -844,6 +844,10 @@
 				"display_name": "Frog Companion",
 				"description": "Ever since [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)] saved their [str(i18n_data.savee_species)], [name(i18n_data.savee)], from mortal danger, they've been inseparable.",
 				"default_species": "companion"
+			},
+			"party_goblin": {
+				"display_name": "Party Goblin",
+				"description": "[name(i18n_data.entity)] loves to tell jokes and wear funny hats. Are they good? It's tough to say, but they frequently seem to leave others with a smile."
 			}
 		}
 	},
@@ -978,12 +982,20 @@
 				"description": "Blocks the way, sometimes",
 				"flavor":"Rudimentary fence gate"
 			},
+			"clay_door": {
+				"display_name": "Clay Door",
+				"description": "A clay door with blue stripes. Good for entering, exiting and blocking intruders."
+			},
 			"curtains_door": {
 				"display_name": "Curtains Door",
 				"description": "A larger door. It makes quite an impression."
 			},
 			"wooden_door": {
 				"display_name": "Wooden Door",
+				"description": "To go in and out"
+			},
+			"wooden_door_frame": {
+				"display_name": "Wooden Door Frame",
 				"description": "To go in and out"
 			},
 			"wooden_window_frame": {

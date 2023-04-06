@@ -1,0 +1,28 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(embark_wagon.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(stonehearth_ace:entities.containers.embark_wagon.display_name)",
+			"description": "i18n(stonehearth_ace:entities.containers.embark_wagon.description)",
+			"icon": "file(embark_wagon.png)",
+			"category": "storage",
+			"material_tags": [
+				"firefly_made",
+				"wood"
+			]
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"type": "entity",
+	"mixins": [
+		"stonehearth:mixins:portals:single_door:ghost",
+		"stonehearth:mixins:placed_object"
+	],
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(clay_door.qb)"
+				]
+			}
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.construction.clay_door.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.clay_door.description)",
+			"icon": "file(clay_door.png)",
+			"category": "door",
+			"material_tags": [
+				"firefly_made",
+				"clay",
+				"portal",
+				"crafted",
+				"door",
+				"stockpile_portal"
+			]
+		}
+	}
+}

@@ -2,6 +2,12 @@
 	"type" : "entity",
 	"mixins": "swamp_goblins:summons:doodles",
 	"components": {
+		"stonehearth:attributes": {
+			"exp_reward": {
+				"type": "basic",
+				"value": 20
+			}
+		},
 		"mixintypes": {
 			"stonehearth:loot_drops": "remove"
 		}

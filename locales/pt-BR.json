@@ -795,9 +795,9 @@
 			}
 		},
 		"traits": {
-			"party_goblin": {
-				"display_name": "Goblin Festeiro",
-				"description": "[name(i18n_data.entity)] adora contar piadas e usar chapéus engraçados. Eles são bons? É difícil dizer, mas frequentemente parecem deixar os outros com um sorriso."
+			"deviant_pigment": {
+				"display_name": "Pigmento Desviante",
+				"description": "A cor da pele de [name(i18n_data.entity)] é uma marca de distinção. Ao contrário da maioria, este tem uma tonalidade única que o diferencia do resto."
 			},
 			"firefly_chaser": {
 				"display_name": "Observador de Vaga-lumes",
@@ -807,6 +807,10 @@
 				"display_name": "Sapo Companheiro",
 				"description": "Desde que [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)] salvou seu [str(i18n_data.savee_species)], [name(i18n_data.savee)], de perigo mortal, eles são inseparáveis.",
 				"default_species": "companheiro"
+			},
+			"party_goblin": {
+				"display_name": "Goblin Festeiro",
+				"description": "[name(i18n_data.entity)] adora contar piadas e usar chapéus engraçados. Eles são bons? É difícil dizer, mas frequentemente parecem deixar os outros com um sorriso."
 			}
 		}
 	},
@@ -941,12 +945,20 @@
 				"description": "Bloqueia o caminho, às vezes",
 				"flavor": "Portão de cerca rudimentar"
 			},
+			"clay_door": {
+				"display_name": "Porta de Argila",
+				"description": "Uma porta de barro com listras azuis. Bom para entrar, sair e bloquear intrusos."
+			},
 			"curtains_door": {
 				"display_name": "Porta de Cortinas",
 				"description": "Uma porta maior. Isso causa uma boa impressão."
 			},
 			"wooden_door": {
 				"display_name": "Porta de Madeira",
+				"description": "Para entrar e sair"
+			},
+			"wooden_door_frame": {
+				"display_name": "Moldura da Porta de Madeira",
 				"description": "Para entrar e sair"
 			},
 			"wooden_window_frame": {

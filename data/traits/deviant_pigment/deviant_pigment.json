@@ -1,0 +1,14 @@
+{
+	"type": "trait",
+	"display_name": "i18n(swamp_goblins:data.traits.deviant_pigment.display_name)",
+	"description": "i18n(swamp_goblins:data.traits.deviant_pigment.description)",
+	"icon": "file(deviant_pigment.png)",
+	"script_controller": "swamp_goblins:trait_scripts:deviant_pigment",
+	"data": {
+		"color_options":[
+			"/swamp_goblins/data/materials/material_maps/deviant_pigment/green_material_map.json",
+			"/swamp_goblins/data/materials/material_maps/deviant_pigment/yellow_material_map.json",
+			"/swamp_goblins/data/materials/material_maps/deviant_pigment/red_material_map.json"
+		]
+	}
+}

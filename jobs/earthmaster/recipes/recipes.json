@@ -91,6 +91,9 @@
 				"stone_door": {
 					"recipe": "file(construction/stone_door_recipe.json)"
 				},
+				"clay_door": {
+					"recipe": "file(construction/clay_door_recipe.json)"
+				},
 				"stone_window": {
 					"recipe": "file(construction/stone_window_recipe.json)"
 				},
@@ -121,6 +124,9 @@
 			"ordinal": 40,
 			"name": "i18n(stonehearth:jobs.carpenter.recipes.furniture_name)",
 			"recipes":{
+				"egg_pedestal_stone": {
+					"recipe": "file(furnitures/stone/egg_pedestal_recipe.json)"
+				},
 				"stone_bed": {
 					"recipe": "file(furnitures/stone/bed_recipe.json)"
 				},
@@ -141,6 +147,9 @@
 				},
 				"clay_bed": {
 					"recipe": "file(furnitures/clay/bed_recipe.json)"
+				},
+				"egg_pedestal_clay": {
+					"recipe": "file(furnitures/clay/egg_pedestal_recipe.json)"
 				},
 				"clay_chair": {
 					"recipe": "file(furnitures/clay/chair_recipe.json)"

@@ -1,0 +1,43 @@
+{
+	"components": {
+		"stonehearth_ace:market_stall": {
+			"stall_models": {
+				"exotic_firefly_shop": {
+					"model_data": {
+						"model": "file(shop/tier_1/exotic_firefly_shop.qb)",
+						"matrix": "Shop",
+						"scale": 0.1,
+						"offset": { "x": 23, "y": -4, "z": 18 }
+					},
+					"entity_points": [
+						{
+							"bone_name": "goodsShelf3"
+						},
+						{
+							"bone_name": "goodsShelf4"
+						},
+						{
+							"bone_name": "goodsShelf5"
+						},
+						{
+							"bone_name": "goodsFrontRow3",
+							"min_rarity": "uncommon"
+						},
+						{
+							"bone_name": "goodsFrontRow4"
+						},
+						{
+							"bone_name": "goodsFrontRow5"
+						},
+						{
+							"bone_name": "goodsMidRow4"
+						},
+						{
+							"bone_name": "goodsMidRow5"
+						}
+					]
+				}
+			}
+		}
+	}
+}
