@@ -1,0 +1,33 @@
+{
+	"type": "kingdom",
+	"kingdom_name": "Celebration NPCs",
+	"kingdom_id": "celebration_npcs",
+	"amenity_to_strangers": "neutral",
+	"roles": {
+		"erdene": {
+			"female": {
+				"uri": [
+					"stonehearth:npc:herald:erdene"
+				]
+			}
+		},
+		"big_g": {
+			"male": {
+				"uri": [
+					"swamp_goblins:summons:big_g"
+				],
+				"given_names": [
+					"i18n(swamp_goblins:entities.summons.big_g.display_name)"
+				]
+			}
+		},
+		"nina":{
+			"female":{
+				"uri": [
+					"swamp_goblins:humans:nina"
+				]
+			}
+		}
+	},
+	"task_groups": "stonehearth:data:humanoid_task_groups"
+}

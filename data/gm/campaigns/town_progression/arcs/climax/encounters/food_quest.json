@@ -1,19 +1,16 @@
 {
-	"type": "encounter",
-	"encounter_type": "delivery_quest",
-	"in_edge": "food_quest",
-	"out_edge": "food_quest_done",
-	"delivery_quest_info": {
-		"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest.title)",
-		"dialog_title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest.dialog_title)",
-		"requirements": [
-			{
-				"type": "give_material",
-				"material": "food_container raw_food vegetable",
-				"count": 100,
-				"keep_items": false
-			}
-		],
-		"abandon_out_edge": "food_quest_done"
+	"type" : "encounter",
+	"encounter_type" : "wait",
+
+	"in_edge"  : "food_quest",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"food_quest_done",
+			"food_quest_done_peaceful"
+		]
+	},
+	"wait_info" :  {
+		"duration" : "2h"
 	}
 }

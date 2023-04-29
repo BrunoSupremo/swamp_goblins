@@ -1,0 +1,51 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "leave_dialog",
+	"dialog_tree_info": {
+		"script": "file(campaign_cleanup.lua)",
+		"start_node": "message1",
+		"nodes": {
+			"message1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.leave_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.leave_dialog.message)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.leave_dialog.choice_fast": {
+							"next_node": "message2"
+						}
+					}
+				}
+			},
+			"message2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.leave_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.leave_dialog.message2)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message3"
+						}
+					}
+				}
+			},
+			"message3": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.leave_dialog.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.nina)",
+					"portrait": "file(images/nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.leave_dialog.message3)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.leave_dialog.choice_bye": {
+							"out_edge": "arc:finish"
+						}
+					}
+				}
+			}
+		}
+	}
+}

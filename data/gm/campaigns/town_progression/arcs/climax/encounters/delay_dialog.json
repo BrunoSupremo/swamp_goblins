@@ -3,7 +3,13 @@
 	"encounter_type" : "wait",
 
 	"in_edge"  : "delay_dialog",
-	"out_edge" : "erdene_intro_dialog",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"erdene_intro_dialog",
+			"erdene_intro_dialog_peaceful"
+		]
+	},
 	"wait_info" :  {
 		"duration" : "1d+1d"
 	}

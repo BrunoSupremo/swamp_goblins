@@ -1,9 +1,8 @@
 {
 	"type" : "encounter",
 	"encounter_type" : "wait",
-
-	"in_edge"  : "wait_3_purple_camp",
-	"out_edge" : "create_camp_purple",
+	"in_edge"  : "wait_to_leave",
+	"out_edge" : "leave_dialog",
 	"wait_info" :  {
 		"duration" : "3d"
 	}

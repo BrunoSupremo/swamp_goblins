@@ -20,15 +20,15 @@
 				"stonehearth:patrol",
 				"stonehearth:have_shield"
 			],
-			"required_job_level": 2,
-			"ilevel": 3,
+			"required_job_level": 1,
+			"ilevel": 1,
 			"roles": ["goblin_warrior_job"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
 	},
 	"entity_data": {
 		"stonehearth:combat:armor_data": {
-			"base_damage_reduction": 3
+			"base_damage_reduction": 1
 		},
 		"stonehearth:combat:melee_defenses": [
 			{
@@ -37,15 +37,15 @@
 				"active_frame": 4,
 				"cooldown": 10000,
 				"priority": 0,
-				"chance_of_success": 0.15
+				"chance_of_success": 0.1
 			}
 		],
 		"stonehearth:net_worth": {
-			"value_in_gold": 10,
+			"value_in_gold": 4,
 			"rarity": "common",
 			"shop_info": {
-				"buyable": false,
-				"sellable": false,
+				"buyable": true,
+				"sellable": true,
 				"shopkeeper_level": 2,
 				"shopkeeper_type": "caravan"
 			}

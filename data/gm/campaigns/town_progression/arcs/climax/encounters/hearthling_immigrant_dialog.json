@@ -29,9 +29,7 @@
 					"portrait": "file(images/nina.png)",
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.hearthling_immigrant_dialog.decline)",
 					"choices": {
-						"stonehearth:ui.game.common.ok": {
-							"out_edge": "wait_after_immigrants"
-						}
+						"stonehearth:ui.game.common.ok": {}
 					}
 				}
 			}

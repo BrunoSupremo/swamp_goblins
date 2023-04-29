@@ -1,0 +1,44 @@
+{
+	"fighters": {
+		"hearthling": {
+			"weight":4,
+			"population": "stonehearth:kingdoms:ascendancy",
+			"jobs": {
+				"stonehearth:jobs:footman":true,
+				"stonehearth:jobs:knight":true,
+				"stonehearth:jobs:archer":true,
+				"stonehearth:jobs:cleric":true
+			}
+		},
+		"amberstone": {
+			"weight":1,
+			"population": "stonehearth:kingdoms:amberstone",
+			"jobs": {
+				"stonehearth:jobs:archer":true
+			}
+		},
+		"orcs": {
+			"weight":1,
+			"population": "stonehearth:kingdoms:orcs",
+			"role": "orc",
+			"jobs": {
+				"stonehearth:jobs:footman":true
+			}
+		}
+	},
+	"workers": {
+		"hearthling": {
+			"weight":1,
+			"population": "stonehearth:kingdoms:ascendancy"
+		},
+		"amberstone": {
+			"weight":1,
+			"population": "stonehearth:kingdoms:amberstone"
+		},
+		"orcs": {
+			"weight":1,
+			"population": "stonehearth:kingdoms:orcs",
+			"role": "orc"
+		}
+	}
+}

@@ -20,13 +20,13 @@
 						"item": "highest_job_level",
 						"job_alias": "swamp_goblins:jobs:spirit_walker",
 						"type": "deny_if_less_than",
-						"value": 6
+						"value": 3
 					},
 					"beast_level": {
 						"item": "highest_job_level",
 						"job_alias": "swamp_goblins:jobs:beast_tamer",
 						"type": "deny_if_less_than",
-						"value": 6
+						"value": 3
 					},
 					"game_mode_check": {
 						"type": "deny_if_not",

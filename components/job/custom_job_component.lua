@@ -46,6 +46,22 @@ function SwampGoblinsJobComponent:promote_to(job_uri, options)
 	else
 		self:_goblin_promote_to(job_uri, options)
 	end
+
+	self:apply_town_bonus()
+end
+
+function SwampGoblinsJobComponent:apply_town_bonus()
+	local town = stonehearth.town:get_town(self._entity:get_player_id())
+	if town and town:get_town_bonus('swamp_goblins:town_bonus:book') then
+		local more_levels = 3 - self:get_current_job_level()
+		for i = 1, more_levels do
+			if not self:is_max_level() then
+				--max_level check just to skip workers
+				local skip_notification = i<more_levels
+				self:level_up(skip_notification)
+			end
+		end
+	end
 end
 
 return SwampGoblinsJobComponent

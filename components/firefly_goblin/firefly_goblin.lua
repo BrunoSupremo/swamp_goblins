@@ -130,21 +130,6 @@ function FireflyGoblin:add_goblin_worker_abilities()
 	job_info._sv.is_combat_job = true
 	job_info._sv.roles["combat"] = true
 	job_info.__saved_variables:mark_changed()
-
-	local player_id = radiant.entities.get_player_id(self._entity)
-	local population = stonehearth.population:get_population(player_id)
-	local curr_party = stonehearth.unit_control:get_party_for_entity_command({}, {}, self._entity)
-	if not curr_party then
-		--get the red party
-		curr_party = population:get_party_by_name('party_4')
-		-- npcs might not have party
-		if curr_party then
-			local party_component = curr_party:get_component('stonehearth:party')
-			if party_component then
-				party_component:add_member(self._entity)
-			end
-		end
-	end
 end
 
 function FireflyGoblin:_remove_goblin_listeners()

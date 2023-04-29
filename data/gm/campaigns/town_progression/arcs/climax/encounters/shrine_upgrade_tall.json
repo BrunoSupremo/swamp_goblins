@@ -1,0 +1,75 @@
+{
+	"type": "encounter",
+	"encounter_type": "town_upgrade",
+	"in_edge": "shrine_upgrade_tall",
+	"town_upgrade_info": {
+		"old_facility_uri": "swamp_goblins:decoration:shrine:tall",
+		"new_facility_uri": "swamp_goblins:decoration:shrine:tall:blessed",
+		"facility_upgrade_effect": "stonehearth:effects:level_up:monument",
+		"town_bonus": "swamp_goblins:town_bonus:tall",
+		"tier_achieved": 3,
+		"conversation_subjects": [
+			"stonehearth:subjects:town_status",
+			"stonehearth:food:cake",
+			"swamp_goblins:decoration:shrine:tall"
+		],
+		"thought": "stonehearth:thoughts:town:progression:town",
+		"celebration_duration": "2h30m+10m",
+		"has_fireworks": true,
+		"dialog": {
+			"title": "i18n(stonehearth:data.gm.campaigns.trader.valor_tier_2_reached.title)",
+			"dialog_title": "i18n(stonehearth:data.gm.campaigns.trader.valor_tier_2_reached.dialog_title)",
+			"tier_title": "i18n(stonehearth:data.gm.campaigns.trader.valor_tier_2_reached.tier_title)",
+			"reward_message": "i18n(northern_alliance:data.gm.campaigns.town_progression.shrine_upgrade.reward_message)",
+			"reward_message_ctd": "i18n(northern_alliance:data.gm.campaigns.town_progression.shrine_upgrade.reward_message_ctd)",
+			"achievements": [
+				{
+					"id": "curiosity",
+					"name": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.shrine_upgrade_tall.curiosity)",
+					"icon": "/stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_3.png",
+					"track": "stonehearth:sounds:ui:immigration_menu:immigration_pass"
+				},
+				{
+					"id": "helper_allies",
+					"name": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.shrine_upgrade_tall.helper_allies)",
+					"icon": "/stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_3.png",
+					"track": "stonehearth:sounds:ui:immigration_menu:immigration_pass"
+				},
+				{
+					"id": "tier_3_templates",
+					"name": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.shrine_upgrade_tall.tier_3_templates)",
+					"icon": "/stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_3.png",
+					"track": "stonehearth:sounds:ui:immigration_menu:immigration_pass"
+				},
+				{
+					"id": "tier_3_bgm",
+					"name": "i18n(stonehearth:data.gm.campaigns.town_progression.arcs.trigger.town_progression.encounters.shrine_upgrade_valor.achievements.004)",
+					"icon": "/stonehearth/ui/game/bulletin/bulletin_dialog/city_tier_success_dialog/images/ribbon_3.png",
+					"track": "stonehearth:sounds:ui:immigration_menu:immigration_pass"
+				}
+			]
+		},
+		"npcs": [
+			{
+				"faction": "celebration_npcs",
+				"role": "big_g",
+				"gender": "male"
+			},
+			{
+				"faction": "human_npcs",
+				"role": "party_goblin",
+				"gender": "male"
+			},
+			{
+				"faction": "celebration_npcs",
+				"role": "nina",
+				"gender": "female"
+			},
+			{
+				"faction": "celebration_npcs",
+				"role": "erdene",
+				"gender": "female"
+			}
+		]
+	}
+}

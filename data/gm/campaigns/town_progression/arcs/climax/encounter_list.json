@@ -5,6 +5,7 @@
 		"start": "file(encounters/start.json)",
 		"delay_dialog": "file(encounters/delay_dialog.json)",
 		"erdene_intro_dialog": "file(encounters/erdene_intro_dialog.json)",
+		"erdene_intro_dialog_peaceful": "file(encounters/erdene_intro_dialog_peaceful.json)",
 		"wait_rookies": "file(encounters/wait_rookies.json)",
 		"wait_rookies_dialog": "file(encounters/wait_rookies_dialog.json)",
 		"spawn_rookies": "file(encounters/spawn_rookies.json)",
@@ -44,6 +45,7 @@
 		"unlock_gong_purple_recipe": "file(encounters/unlock_gong_purple_recipe.json)",
 		"wait_for_first_gong_purple": "file(encounters/wait_for_first_gong_purple.json)",
 		"no_food": "file(encounters/no_food.json)",
+		"no_food_peaceful": "file(encounters/no_food_peaceful.json)",
 
 		"wait_human_help": "file(encounters/wait_human_help.json)",
 		"human_help_offer": "file(encounters/human_help_offer.json)",
@@ -55,12 +57,12 @@
 		"carrot_deliver_2": "file(encounters/carrot_deliver_2.json)",
 		"carrot_deliver_3": "file(encounters/carrot_deliver_3.json)",
 		"carrot_deliver_4": "file(encounters/carrot_deliver_4.json)",
-		"carrot_delivered": "file(encounters/carrot_delivered.json)",
 		"food_quest": "file(encounters/food_quest.json)",
 		"food_quest_done": "file(encounters/food_quest_done.json)",
+		"food_quest_done_peaceful": "file(encounters/food_quest_done_peaceful.json)",
 
 		"wait_2_purple_camp": "file(encounters/wait_2_purple_camp.json)",
-		"wait_3_purple_camp": "file(encounters/wait_3_purple_camp.json)",
+		"wait_4_purple_camp": "file(encounters/wait_4_purple_camp.json)",
 		"create_camp_purple": "file(encounters/create_camp_purple.json)",
 		"challenge_accepted_purple": "file(encounters/challenge_accepted_purple.json)",
 		"purple_orc_raid_11": "file(encounters/purple_orc_raid_11.json)",
@@ -68,6 +70,7 @@
 		"destroy_purple_stockpiles": "file(encounters/destroy_purple_stockpiles.json)",
 		"purple_tier_end_dialog": "file(encounters/purple_tier_end_dialog.json)",
 
+		"before_friendship_gong": "file(encounters/before_friendship_gong.json)",
 		"get_friendship_gong": "file(encounters/get_friendship_gong.json)",
 		"wait_for_orc_friendship_gong_placed": "file(encounters/wait_for_orc_friendship_gong_placed.json)",
 		"orc_immigrant_dialog": "file(encounters/orc_immigrant_dialog.json)",
@@ -78,5 +81,23 @@
 		"hearthling_immigrant": "file(encounters/hearthling_immigrant.json)",
 		
 		"wait_after_immigrants": "file(encounters/wait_after_immigrants.json)",
+		"erdene_nina_visit": "file(encounters/erdene_nina_visit.json)",
+		"unlock_shrine_recipes": "file(encounters/unlock_shrine_recipes.json)",
+		"shrine_choice_generator": "file(encounters/shrine_choice_generator.json)",
+		"shrine_choice": "file(encounters/shrine_choice.json)",
+		"shrine_quest_book": "file(encounters/shrine_quest_book.json)",
+		"shrine_quest_tall": "file(encounters/shrine_quest_tall.json)",
+		"shrine_abandon": "file(encounters/shrine_abandon.json)",
+		"shrine_upgrade_book": "file(encounters/shrine_upgrade_book.json)",
+		"shrine_upgrade_tall": "file(encounters/shrine_upgrade_tall.json)",
+		"book_dialog_wait": "file(encounters/book_dialog_wait.json)",
+		"tall_dialog_wait": "file(encounters/tall_dialog_wait.json)",
+		"book_dialog_1": "file(encounters/book_dialog_1.json)",
+		"tall_dialog_1": "file(encounters/tall_dialog_1.json)",
+		"post_shrine_dialog_delay": "file(encounters/post_shrine_dialog_delay.json)",
+		"post_shrine_dialog": "file(encounters/post_shrine_dialog.json)",
+
+		"wait_to_leave": "file(encounters/wait_to_leave.json)",
+		"leave_dialog": "file(encounters/leave_dialog.json)"
 	}
 }

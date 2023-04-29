@@ -17,18 +17,18 @@
 		"stonehearth:equipment_piece": {
 			"render_type": "merge_with_model",
 			"slot": "helmet",
-			"ilevel": 5,
-			"required_job_level": 5,
+			"ilevel": 4,
+			"required_job_level": 4,
 			"roles":["goblin_warrior_job"],
 			"equip_effect": "stonehearth:effects:weapon_level_up"
 		}
 	},
 	"entity_data": {
 		"stonehearth:combat:armor_data": {
-			"base_damage_reduction": 5
+			"base_damage_reduction": 4
 		},
 		"stonehearth:net_worth": {
-			"value_in_gold": 30,
+			"value_in_gold": 11,
 			"rarity": "common",
 			"shop_info": {
 				"buyable": true,

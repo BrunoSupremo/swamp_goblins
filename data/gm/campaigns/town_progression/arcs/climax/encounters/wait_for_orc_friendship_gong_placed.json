@@ -2,7 +2,14 @@
 	"type": "encounter",
 	"encounter_type": "wait_for_requirements_met",
 	"in_edge": "wait_for_orc_friendship_gong_placed",
-	"out_edge": "orc_immigrant_dialog",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"orc_immigrant_dialog",
+			"wait_nina",
+			"wait_after_immigrants"
+		]
+	},
 	"wait_for_requirements_met_info": {
 		"requirements": {
 			"item_placed_requirement": {

@@ -76,6 +76,16 @@
 				"display_name": "Lentidão",
 				"description": "Mais lento com o dardo venenoso"
 			},
+			"town_bonus": {
+				"book": {
+					"display_name": "Bênção do Tomo",
+					"description": "Espírito aumentado em 1."
+				},
+				"tall": {
+					"display_name": "Bênção do Obelisco",
+					"description": "Curiosidade dobrada."
+				}
+			},
 			"trapped": {
 				"display_name": "Preso",
 				"description": "Preso pelo Domador de Feras"
@@ -135,6 +145,18 @@
 				"description": "Vai chamar alguém para tocar este instrumento",
 				"disabled_description": "Esperando que alguém o toque, ou já em uso."
 			},
+			"shrine":{
+				"summon_allied_fighters":{
+					"display_name":"Convocar combatentes aliados",
+					"description":"4 lutadores aparecerão e ajudarão a defender sua cidade",
+					"disabled_description":"O cooldown dura 12 horas, pode ser chamado novamente mais tarde"
+				},
+				"summon_allied_workers":{
+					"display_name":"Convocar trabalhadores aliados",
+					"description":"4 trabalhadores aparecerão e ajudarão nas tarefas da sua cidade",
+					"disabled_description":"O cooldown dura 12 horas, pode ser chamado novamente mais tarde"
+				}
+			},
 			"travel": {
 				"display_name": "Viajar",
 				"description": "Escolha quais goblins irão reembarcar"
@@ -170,6 +192,7 @@
 		"gm": {
 			"human": "Humano desconhecido",
 			"nina": "Nina ",
+			"erdene_nina":"Erdene e Nina",
 			"erdene": "Erdene, Oradora do Forno Vermelho",
 			"campaigns": {
 				"amberstone": {
@@ -599,6 +622,10 @@
 							"message4_accept": "Então fique atento, pois eles chegarão ao seu acampamento em breve",
 							"message4_wait": "Bem. Vamos dar-lhe mais um dia."
 						},
+						"erdene_intro_dialog_peaceful":{
+							"message":"Saudações, pequeninos. Sou Erdene, Oradora do Forno Vermelho.<br>Fico feliz em ver alguns vizinhos amigáveis aqui!",
+							"message2":"Estamos apenas começando na área, então este é um alô rápido. Pode contar conosco!"
+						},
 						"wait_rookies_dialog": {
 							"title": "Orc novatos",
 							"message": "Espero que você esteja pronto agora, pois eles chegarão ao seu acampamento em breve"
@@ -615,56 +642,153 @@
 							"unlock_gong_green_recipe": "O Mestre Terra desbloqueou a receita Gongo Verde!",
 							"unlock_gong_blue_recipe": "O Mestre Terra desbloqueou a receita Gongo Azul!",
 							"unlock_gong_red_recipe": "O Mestre Terra desbloqueou a receita Gongo Vermelho!",
-							"unlock_gong_purple_recipe": "O Mestre Terra desbloqueou a receita Gongo Roxo!"
+							"unlock_gong_purple_recipe": "O Mestre Terra desbloqueou a receita Gongo Roxo!",
+							"unlock_shrine_recipes":"O Mestre Terra desbloqueou as receitas de Santuários!"
 						},
 						"challenge_accepted": "Desafio aceito",
 						"green_tier_end_dialog": {
-							"message": "Us.. too weak.. Put out Blue Gong if you dares..",
-							"message2": "Seems like the green rank was not a hard challenge for you.<br>Here, the recipe for Blue Gong so you can challenge the next rank."
+							"message": "Nós .. muito fracos .. Coloque Gongo Azul se você ousar ..",
+							"message2": "Parece que o nível verde não foi um desafio difícil para você.<br>Aqui, a receita do Gongo Azul para que você possa desafiar o próximo nível."
 						},
 						"blue_tier_end_dialog": {
-							"message": "Ok, ok... You won. If only we had some ogres like in the red ranks...<br>Put out Red Gong if you dares..",
-							"message2": "Still easy, uh? Interesting.<br>Here, the next Gong recipe."
+							"message": "Ok, ok... Você venceu. Se ao menos tivéssemos alguns ogros como nos níveis vermelhos...<br>Coloque Gongo Vermelho se você ousar..",
+							"message2": "Ainda fácil, uh? Interessante.<br>Aqui, a próxima receita de Gongo."
 						},
 						"red_tier_end_dialog": {
-							"message": "You are way stronger than what we imagined, but don't get too confident! Next rank, if you take their challenge, will be way harder. They even have clerics!",
-							"message2": "So you guy are really this strong?<br>As usual, I'm here to give you the next Gong recipe. Good luck."
+							"message": "Você é muito mais forte do que imaginávamos, mas não fique muito confiante! O próximo nível, se você aceitar o desafio, será muito mais difícil. Eles até têm clérigos!",
+							"message2": "Então vocês são tão fortes assim?<br>Como sempre, estou aqui para dar a vocês a próxima receita de Gongo. Boa sorte."
 						},
 						"no_food": {
 							"title": "Erdene?...",
-							"message": "Sorry guys, we are having some technical difficulties...<br>Our higher ranks are not ready yet.",
-							"choice_difficulties": "Difficulties?",
-							"choice_what": "What happened?",
-							"message2": "Some miscommunications happened, and long story short, we sent our resources to the wrong place. And now we can't set camp here and answer your challenge anymore...",
-							"choice_resources": "You need resources?",
-							"choice_camp": "Isn't a camp easy to build?",
-							"message3": "Building the camp is easy, it is very modular and we can use local resources for it.<br>The problem is their diet...",
-							"choice_who": "Whose diet?",
-							"choice_what_diet": "What diet?",
-							"message4": "Those in purple ranks say a healthy diet is the key for their strength.<br>We have the meat. But no vegetables...",
-							"choice_yuck": "Yuck",
-							"choice_veggies": "Veggies?",
-							"message5": "For such a challenge, we usually set at around 100 vegetables. But we are so far away from our farmers, and traders have almost nothing on them. We don't know how we will reach this amount soon.",
-							"choice_100": "100?",
+							"message": "Desculpe pessoal, estamos tendo algumas dificuldades técnicas...<br>Nossos níveis mais altos ainda não estão prontos.",
+							"choice_difficulties": "Dificuldades?",
+							"choice_what": "O que aconteceu?",
+							"message2": "Algumas falhas de comunicação aconteceram e, para encurtar a história, enviamos nossos recursos para o lugar errado. E agora não podemos mais acampar aqui e responder ao seu desafio...",
+							"choice_resources": "Você precisa de recursos?",
+							"choice_camp": "Um acampamento não é fácil de construir?",
+							"message3": "Construir o acampamento é fácil, é muito modular e podemos usar os recursos locais para isso.<br>O problema é a dieta deles...",
+							"choice_who": "Dieta de quem?",
+							"choice_what_diet": "Que dieta?",
+							"message4": "Aqueles nos níveis roxos dizem que uma dieta saudável é a chave para sua força.<br>Nós temos a carne. Mas sem vegetais...",
+							"choice_yuck": "Eca",
+							"choice_veggies": "Vegetais?",
+							"message5": "Para tal desafio, geralmente definimos cerca de 100 vegetais. Mas estamos tão longe de nossos agricultores e os comerciantes não têm quase nada com eles. Não sabemos como chegaremos a esse valor em breve.",
+							"choice_100": "Apenas 100?",
 							"choice_100_2": "100?!?",
-							"message6": "Can you help us?",
-							"choice_guess": "I guess...",
-							"choice_sure": "Sure..."
+							"message6": "Você pode nos ajudar?",
+							"choice_guess": "Eu acho...",
+							"choice_sure": "Claro."
 						},
-						"food_quest": {
-							"title": "Veggies Quest",
-							"dialog_title": "Veggies Quest"
+						"no_food_peaceful":{
+							"message2":"Algumas falhas de comunicação aconteceram e, para encurtar a história, enviamos nossos recursos para o lugar errado. E agora não podemos montar acampamento aqui",
+							"message5":"Para tal acampamento, geralmente estabelecemos cerca de 100 vegetais. Mas estamos tão longe de nossos agricultores e os comerciantes não têm quase nada com eles. Não sabemos como chegaremos a esse valor em breve."
 						},
-						"food_quest_abandon": {
-							"title": "Veggies Quest",
-							"message": "Oh no. We were counting with those materials...<br>Don't worry. We will change a few things here, maybe it ends up just with a longer delay."
+						"human_help_offer":{
+							"title":"Outra mão amiga",
+							"message":"Reconhecemos que você tem muita influência nesta área.<br>Você pode nos ajudar com os orcs? Eles estão causando problemas aqui conosco, gostaríamos de sua ajuda para estabelecer algum tipo de acordo ou trégua talvez.",
+							"travel_to_orcs":"<strong>Verifique Erdene</strong>",
+							"travel_to_humans":"<strong>Verifique a Nina</strong>",
+							"message2":"Ei! Bem-vindo?<br>Ainda não estamos prontos para o desafio, desculpe!",
+							"tell_about_humans":"[Menciona o pedido da Nina]",
+							"message3":"Quero dizer, ela tem um forte muito bom, e isso é tão convidativo para uma luta...<br>Mas, como você sabe, com nosso probleminha de comida, eles vão ficar bem por um tempo.<br>Uhm, que tal isso? Eles ajudam você com nosso pedido de comida, e vamos estabelecer essa trégua com eles.",
+							"deal":"Feito",
+							"message4":"Bem vindo de volta! Como foi?",
+							"explain":"[Explique o acordo]",
+							"message5":"Uhm, acabamos de começar uma fazenda de cenoura, para ajudar o Amberstone. Você já ouviu falar sobre eles? Desculpe, isso é para outra hora.<br>Voltando a fazenda de cenouras. Sim, podemos ajudar com a comida.<br>Que tal 25 cenouras por dia?",
+							"message6":"OK então! Amanhã, a esta hora, estaremos em seu estandarte com essas cenouras."
 						},
-						"food_quest_done": {
-							"title": "Quest Completed",
-							"message": "Thanks, this will help us a lot!<br>Here, we have prepared some food as a thank you gift.<br><br><font size=-1>The food will be dropped at your banner</font>"
+						"carrot_deliver_1":{
+							"title":"Entrega de Cenouras",
+							"message":"Olá!<br>Primeira entrega, 25 cenouras.<br>Até amanhã"
 						},
-						"purple_tier_end_dialog": {
-							"message": "Us.. too weak.. Put out xxx Gong if you dares.."
+						"carrot_deliver_2":{
+							"title":"Entrega de Cenouras",
+							"message":"Olá, de novo!<br>Segunda entrega, 25 cenouras, totalizando 50 cenouras.<br>Até amanhã"
+						},
+						"carrot_deliver_3":{
+							"title":"Entrega de Cenouras",
+							"message":"Ei!<br>Terceira entrega, 25 cenouras, totalizando 75 cenouras.<br>Até amanhã"
+						},
+						"carrot_deliver_4":{
+							"title":"Entrega de Cenouras",
+							"message":"'Oi!' A entregadora acena para todos.<br>Última entrega, 25 cenouras, totalizando 100 cenouras.<br>Até logo."
+						},
+						"food_quest_done":{
+							"title":"Missão de Comida Concluída",
+							"message":"Vocês conseguiram! Um pouco de trabalho em equipe parece valer a pena.<br>Honraremos nossos acordos, então considere a trégua com Nina concluída!<br>Só precisamos de um pouco de tempo para resolver tudo então, e em breve retomaremos nosso desafio, ok ? Em dois dias estaremos de volta, e se preparem, porque vai ser muito mais difícil do que você pensa.",
+							"more_time":"Espere 4 dias",
+							"message2":"Esperar 4 dias?<br>O que vocês estão planejando? Ok, estaremos aqui em 4 dias então!"
+						},
+						"food_quest_done_peaceful":{
+							"message":"Vocês conseguiram! Um pouco de trabalho em equipe parece valer a pena.<br>Vamos honrar nossos acordos, então considere a trégua com Nina concluída!<br>Só precisamos de um pouco de tempo para resolver tudo então."
+						},
+						"purple_tier_end_dialog":{
+							"message3":"Parabéns! Estou impressionada!<br>Você conquistou todos os níveis!<br>Depois de todos esses desafios, acredito que nós dois ficamos ainda mais fortes. Posso dizer com segurança que foi uma honra.",
+							"message4":"Por favor, aceite este presente. Ele representa sua conquista e nossos laços.<br><br><font size=-1>'Gongo de Respeito Orc' será deixado em seu estandarte</font>"
+						},
+						"orc_immigrant_dialog":{
+							"message":"O gongo parece bom!<br>Um dos nossos quer se juntar ao seu clã! Ele é um lutador habilidoso e está interessado em aprender mais com você.",
+							"decline":"Oh, ele estava ancioso por isso... Talvez outra hora então."
+						},
+						"hearthling_immigrant_dialog":{
+							"message":"Oi! Fico feliz que no final deu tudo certo com os orcs.<br>Ao longo desses últimos dias, a garota responsável pelas cenouras e pelas entregas acabou fazendo muitas novas amizades com seu clã.<br>Nós conversamos sobre isso e ela quer se juntar ao seu grupo!",
+							"decline":"Eu acho que ela pode visitar às vezes."
+						},
+						"erdene_nina_visit":{
+							"title":"Visita de Erdene e Nina",
+							"message":"<strong>Nina: </strong> ...e então eu dei um soco nele! Haha<br>Ah, já chegamos! Olá amigos!<br><strong>Erdene: </strong> Olá, pequeninos!",
+							"choice_friends":"Oi... amigas?",
+							"message2":"<strong>Erdene: </strong> Ah, certo. A trégua ainda está de pé, se você quer saber<br><strong>Nina: </strong> Sim, Erdene e eu temos algumas coisas em comum.",
+							"choice_really":"Sério?",
+							"message3":"<strong>Nina: </strong> A razão para esta visita é uma.<br><strong>Erdene: </strong> Parece que nós dois subestimamos você de uma forma ou de outra. Nós pensamos que você era mais fraco em nossos primeiros encontros<br><font size=-1><strong>Nina: </strong> Ei, não diga a eles que eu disse isso!</font>",
+							"message4":"<strong>Erdene: </strong> Nós pensamos que talvez você pudesse ter algum tipo de grande santuário.<br><strong>Nina: </strong> Sim, algo que represente sua cidade e não deixe dúvidas sobre seu status",
+							"choice_shrines":"Santuários?",
+							"message5":"<strong>Nina: </strong> Sim, meu pessoal faz isso nas cidades maiores. Eles constroem um monumento e depois faz uma grande cerimônia com ele, e o monumento fica encantado.<br><strong>Erdene: </strong> Fazemos algo parecido também.",
+							"message6":"<strong>Erdene: </strong> Você poderia representar sua cultura em um desses monumentos, você poderia honrar as conquistas do passado e seria um bem valioso em sua cidade<br><strong>Nina: </strong> Acho que não sou tão criativa assim, para mim uma grande torre serviria. Pode ser um sinal visto de longe, inspirando irmandade.",
+							"message7":"<strong>Nina: </strong> Vamos deixar você pensar sobre isso. Por enquanto, estamos indo para o acampamento dela, quero aprender mais sobre ele<br><strong>Erdene: </strong> Um acordo justo, era a única maneira que ela me permitiria verificar seu forte mais tarde<br> <strong>Nina: </strong> Tchau!",
+							"choice_bye":"Divirtam-se vocês duas"
+						},
+						"shrine_choice":{
+							"book_description":"<i>Este município deve honrar o legado e a sabedoria de seus ancestrais em seus ofícios e artes.</i><ul><li>Abençoa todos os cidadãos com +1 de Espírito</li><li>Classes já começam no nível 3</li></ul>",
+							"tall_description":"<i>Este município deve acolher e valorizar a companhia de seus aliados.</i><ul><li>Estatística de curiosidade dobrada</li><li>Convoca aliados para ajudar no trabalho ou nas lutas.</li></ul>"
+						},
+						"shrine_quest_book":{
+							"title":"Missão da Cidade: Tomo Imemorial",
+							"dialog_title":"Missão da Cidade: Tomo Imemorial"
+						},
+						"shrine_quest_tall":{
+							"title":"Missão da Cidade: Obelisco da Posteridade",
+							"dialog_title":"Missão da Cidade: Obelisco da Posteridade"
+						},
+						"shrine_upgrade_book":{
+							"spirit":"Espírito +1",
+							"leveled_jobs":"Classes começam no nível 3",
+							"tier_3_templates":"Modelos de Construção de Nível 3"
+						},
+						"shrine_upgrade_tall":{
+							"curiosity":"Estatística de curiosidade dobrada",
+							"helper_allies":"Aliados ajudantes",
+							"tier_3_templates":"Modelos de Construção de Nível 3"
+						},
+						"book_and_tall_dialog":{
+							"title":"Impressões de Erdene e Nina",
+							"message":"Que monumento inspirador você construiu! Podemos sentir seu poder e sabedoria de longe. Isso nos enche de admiração e reverência.",
+							"thank":"Obrigado!",
+							"message2":"Sua presença é palpável mesmo à distância. Isso mexe com nossos corações e mentes com admiração e curiosidade.<br>Estou feliz que você aceitou minha sugestão."
+						},
+						"post_shrine_dialog":{
+							"title":"Erdene e Nina novamente",
+							"message":"Que cerimônia esplêndida. Ainda posso sentir a magia fluindo pelo santuário.<br>Estou impressionada com suas habilidades e devoção.",
+							"thank":"Obrigado!",
+							"message2":"Assim como eu. O santuário é uma prova do espírito e resiliência do clã.<br>Você pode construir o outro se quiser, mas será apenas uma decoração normal. De aparência chique, mas nenhuma tão mágica."
+						},
+						"leave_dialog":{
+							"title":"Despedida da Nina",
+							"message":"Meu humilde dever aqui está cumprido. Partiremos em breve.",
+							"choice_fast":"Tão rápido?",
+							"message2":"Talvez você não tenha notado, mas já preparamos nossos pertences. Se desejar, pode assumir o comando de nossa modesta fortaleza.",
+							"message3":"Alguns incidentes curiosos foram relatados perto daqui, onde o chão pegou fogo, então pretendemos explorar isso também. Deseje-nos sorte!<br>Adeus!",
+							"choice_bye":"Boa sorte! Tchau tchau!"
 						}
 					}
 				}
@@ -736,6 +860,9 @@
 					"description": "Cuidado com o Urso"
 				}
 			},
+			"shrine":{
+				"ally":"Ajudante Aliado"
+			},
 			"warrior_hearth": {
 				"challenger": {
 					"display_name": "Desafiador",
@@ -766,6 +893,7 @@
 		},
 		"saved_objects": {
 			"building_templates": {
+				"wip": "💜 Recompensas Nível 3 ainda não feitas 🚧",
 				"barrack": "💜 Barraca",
 				"firefly_house1": "💜 Casa 1",
 				"firefly_house2": "💜 Casa 2",
@@ -816,9 +944,29 @@
 	},
 	"entities": {
 		"armor": {
+			"clan_armor": {
+				"display_name": "(Vaga-lume) Armadura do Clã",
+				"description": "Traje tradicional de Guerreiro Vaga-lume"
+			},
+			"clan_banner": {
+				"display_name": "(Vaga-lume) Estandarte do Clã",
+				"description": "Traje tradicional de Guerreiro Vaga-lume"
+			},
+			"clan_helmet": {
+				"display_name": "(Vaga-lume) Capacete do Clã",
+				"description": "Traje tradicional de Guerreiro Vaga-lume"
+			},
 			"flower_helmet": {
 				"display_name": "(Vaga-lume) Chapéu de FLor",
 				"description": "Mais moda do que proteção"
+			},
+			"fiber_armor": {
+				"display_name": "(Vaga-lume) Armadura de Fibras",
+				"description": "Coceira"
+			},
+			"mushroom_shield": {
+				"display_name": "(Vaga-lume) Escudo de Cogumelo",
+				"description": "Permitido até em guerra de almofadas"
 			},
 			"horn_helmet": {
 				"display_name": "(Vaga-lume) Capacete de Chifres",
@@ -829,6 +977,10 @@
 			},
 			"leather_helmet": {
 				"display_name": "(Vaga-lume) Capacete de Couro"
+			},
+			"leather_shield": {
+				"display_name": "(Vaga-lume) Escudo de Couro",
+				"description": "Forte e macio"
 			},
 			"full_leather_helmet": {
 				"display_name": "(Vaga-lume) Capacete de Couro Completo",
@@ -841,6 +993,10 @@
 			"log_helmet": {
 				"display_name": "(Vaga-lume) Capacete de Madeira",
 				"description": "Pesado, mas protege a cabeça"
+			},
+			"mask_shield": {
+				"display_name": "(Vaga-lume) Escudo de Máscara",
+				"description": "A máscara geralmente é semelhante ao seu dono"
 			},
 			"party_goblin_hat": {
 				"display_name": "Chapéu de Goblin Festeiro",
@@ -857,6 +1013,10 @@
 			"varanus_helmet": {
 				"display_name": "(Vaga-lume) Capacete de Varanus",
 				"description": "Assustador e fedido"
+			},
+			"varanus_shield": {
+				"display_name": "(Vaga-lume) Escudo de Varanus",
+				"description": "Forte e duro"
 			}
 		},
 		"baby":{
@@ -2049,6 +2209,10 @@
 				"display_name": "Bancada do Xamã",
 				"description": "Os xamãs usarão para criar suas coisas"
 			},
+			"brewing_stand": {
+				"display_name": "Bancada de Fermentação",
+				"description": "Os xamãs usarão para criar poções"
+			},
 			"shaman_firefly_token": {
 				"display_name": "Altar de Vaga-lume do Xamã",
 				"description": "Os xamãs usarão isso para extrair essências de vaga-lumes"
@@ -2154,9 +2318,9 @@
 				}
 			},
 			"warrior_horn": {
-				"display_name": "Trompa de Guerra Guerreiro",
+				"display_name": "Trompa de Guerra",
 				"warrior_horn_talisman": {
-					"display_name": "Trompa de Guerra Guerreiro",
+					"display_name": "Trompa de Guerra",
 					"description": "Ferramenta de comunicação útil em batalhas",
 					"flavor": "Promove um goblin a Guerreiro"
 				}

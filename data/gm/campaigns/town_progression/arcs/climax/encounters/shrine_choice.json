@@ -1,0 +1,34 @@
+{
+	"type": "encounter",
+	"encounter_type": "town_upgrade_choice",
+	"in_edge": "shrine_choice",
+	"can_start": {
+		"all_tests": {
+			"unique": {
+				"type": "deny_if_greater_than",
+				"item": "number_active",
+				"end_node": "shrine_abandon",
+				"start_node": "shrine_choice",
+				"value": 0
+			}
+		}
+	},
+	"town_upgrade_choice_info": {
+		"choices": {
+			"book": {
+				"name": "i18n(swamp_goblins:entities.decoration.shrine.book.display_name)",
+				"description": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.shrine_choice.book_description)",
+				"icon": "/swamp_goblins/entities/decoration/shrine/book/book.png",
+				"sort_order": 1,
+				"out_edge": "shrine_quest_book"
+			},
+			"tall": {
+				"name": "i18n(swamp_goblins:entities.decoration.shrine.tall.display_name)",
+				"description": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.shrine_choice.tall_description)",
+				"icon": "/swamp_goblins/entities/decoration/shrine/tall/tall.png",
+				"sort_order": 2,
+				"out_edge": "shrine_quest_tall"
+			}
+		}
+	}
+}

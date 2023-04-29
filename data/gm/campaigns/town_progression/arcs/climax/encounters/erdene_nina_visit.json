@@ -1,0 +1,108 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "erdene_nina_visit",
+	"dialog_tree_info": {
+		"start_node": "message1",
+		"nodes": {
+			"message1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene_nina)",
+					"portrait": "file(images/erdene_nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.message)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.choice_friends": {
+							"next_node": "message2"
+						}
+					}
+				}
+			},
+			"message2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene_nina)",
+					"portrait": "file(images/erdene_nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.message2)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.choice_really": {
+							"next_node": "message3"
+						}
+					}
+				}
+			},
+			"message3": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene_nina)",
+					"portrait": "file(images/erdene_nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.message3)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message4"
+						}
+					}
+				}
+			},
+			"message4": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene_nina)",
+					"portrait": "file(images/erdene_nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.message4)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.choice_shrines": {
+							"next_node": "message5"
+						}
+					}
+				}
+			},
+			"message5": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene_nina)",
+					"portrait": "file(images/erdene_nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.message5)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message6"
+						}
+					}
+				}
+			},
+			"message6": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene_nina)",
+					"portrait": "file(images/erdene_nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.message6)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"next_node": "message7"
+						}
+					}
+				}
+			},
+			"message7": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene_nina)",
+					"portrait": "file(images/erdene_nina.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.message7)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.erdene_nina_visit.choice_bye": {
+							"out_edge": {
+								"type": "trigger_many",
+								"out_edges": [
+									"unlock_shrine_recipes",
+									"shrine_choice_generator"
+								]
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

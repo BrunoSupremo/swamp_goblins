@@ -76,6 +76,16 @@
 				"display_name": "Slowness",
 				"description": "Slower from the poison dart"
 			},
+			"town_bonus": {
+				"book": {
+					"display_name": "Tome Blessing",
+					"description": "Spirit increased by 1."
+				},
+				"tall": {
+					"display_name": "Obelisk Blessing",
+					"description": "Curiosity doubled."
+				}
+			},
 			"trapped": {
 				"display_name": "Trapped",
 				"description": "Trapped by the Beast Tamer"
@@ -135,6 +145,18 @@
 				"description":"It will call someone to play this instrument",
 				"disabled_description":"Waiting for someone to play it, or in use already."
 			},
+			"shrine":{
+				"summon_allied_fighters":{
+					"display_name":"Summon allied fighters",
+					"description":"4 fighters will spawn and help defend your town",
+					"disabled_description":"The cooldown lasts for 12 hours, it can be called again later"
+				},
+				"summon_allied_workers":{
+					"display_name":"Summon allied workers",
+					"description":"4 workers will spawn and help doing tasks in your town",
+					"disabled_description":"The cooldown lasts for 12 hours, it can be called again later"
+				}
+			},
 			"travel":{
 				"display_name":"Travel",
 				"description":"Choose which goblins will reembark"
@@ -170,6 +192,7 @@
 		"gm":{
 			"human":"Unknown human",
 			"nina":"Nina",
+			"erdene_nina":"Erdene and Nina",
 			"erdene":"Erdene, Speaker of the Red Kiln",
 			"campaigns":{
 				"amberstone":{
@@ -599,6 +622,10 @@
 							"message4_accept":"Then watchout, as they will reach your camp soon",
 							"message4_wait":"Fine. We will give you one more day."
 						},
+						"erdene_intro_dialog_peaceful":{
+							"message":"Greetings, little ones. I'm Erdene, Speaker of the Red Kiln.<br>Glad to see some friendly neighbors here!",
+							"message2":"We are just starting in the area, so this is a quick hello. You can count with us!"
+						},
 						"wait_rookies_dialog":{
 							"title":"Orc rookies",
 							"message":"I hope you are ready now, as they will reach your camp soon"
@@ -615,7 +642,8 @@
 							"unlock_gong_green_recipe":"The Earthshaper has unlocked the Green Gong recipe!",
 							"unlock_gong_blue_recipe":"The Earthshaper has unlocked the Blue Gong recipe!",
 							"unlock_gong_red_recipe":"The Earthshaper has unlocked the Red Gong recipe!",
-							"unlock_gong_purple_recipe":"The Earthshaper has unlocked the Purple Gong recipe!"
+							"unlock_gong_purple_recipe":"The Earthshaper has unlocked the Purple Gong recipe!",
+							"unlock_shrine_recipes":"The Earthshaper has unlocked Shrines recipes!"
 						},
 						"challenge_accepted":"Challenge accepted",
 						"green_tier_end_dialog":{
@@ -651,6 +679,10 @@
 							"choice_guess":"I guess...",
 							"choice_sure":"Sure."
 						},
+						"no_food_peaceful":{
+							"message2":"Some miscommunications happened, and long story short, we sent our resources to the wrong place. And now we can't properly set camp here",
+							"message5":"For such a camp, we usually set at around 100 vegetables. But we are so far away from our farmers, and traders have almost nothing on them. We don't know how we will reach this amount soon."
+						},
 						"human_help_offer":{
 							"title":"Another helping hand",
 							"message":"We recognize that you have a lot of influence in this area.<br>Can you help us with the orcs? They are causing problems here with us, we would like your help to set some kind of deal or truce maybe.",
@@ -667,29 +699,28 @@
 						},
 						"carrot_deliver_1":{
 							"title":"Carrot Delivery",
-							"message":"Hi!<br>First delivery, 25 carrots.<br>See you tomorrow<br><br><font size=-1>The food will be dropped at your banner</font>"
+							"message":"Hi!<br>First delivery, 25 carrots.<br>See you tomorrow"
 						},
 						"carrot_deliver_2":{
 							"title":"Carrot Delivery",
-							"message":"Hi!<br>Second delivery, 25 carrots, for a total of 50 carrots.<br>See you tomorrow<br><br><font size=-1>The food will be dropped at your banner</font>"
+							"message":"Hi, again!<br>Second delivery, 25 carrots, for a total of 50 carrots.<br>See you tomorrow"
 						},
 						"carrot_deliver_3":{
 							"title":"Carrot Delivery",
-							"message":"Hi!<br>Third delivery, 25 carrots, for a total of 75 carrots.<br>See you tomorrow<br><br><font size=-1>The food will be dropped at your banner</font>"
+							"message":"Hey!<br>Third delivery, 25 carrots, for a total of 75 carrots.<br>See you tomorrow"
 						},
 						"carrot_deliver_4":{
 							"title":"Carrot Delivery",
-							"message":"Hi!<br>Last delivery, 25 carrots, for a total of 100 carrots.<br>See you later<br><br><font size=-1>The food will be dropped at your banner</font>"
-						},
-						"food_quest":{
-							"title":"Veggies Quest",
-							"dialog_title":"Veggies Quest"
+							"message":"'Hi!' The delivery girl waves to everyone.<br>Last delivery, 25 carrots, for a total of 100 carrots.<br>See you later"
 						},
 						"food_quest_done":{
 							"title":"Food Quest Completed",
-							"message":"You guys did it! A little teamwork seems to pay off.<br>We will honor both our deals, so consider the truce with Nina done!<br>We just need a bit of time to settle everything then, and we will soon resume our challenge, ok? In two days we will be back.",
-							"more_time":"Wait 3 days",
-							"message2":"Wait 3 days?<br>What are you guys planning? Ok, we will be here in 3 days then!"
+							"message":"You guys did it! A little teamwork seems to pay off.<br>We will honor both our deals, so consider the truce with Nina done!<br>We just need a bit of time to settle everything then, and we will soon resume our challenge, ok? In two days we'll be back, and get ready, because it's going to be much harder than you think.",
+							"more_time":"Wait 4 days",
+							"message2":"Wait 4 days?<br>What are you guys planning? Ok, we will be here in 4 days then!"
+						},
+						"food_quest_done_peaceful":{
+							"message":"You guys did it! A little teamwork seems to pay off.<br>We will honor both our deals, so consider the truce with Nina done!<br>We just need a bit of time to settle everything then."
 						},
 						"purple_tier_end_dialog":{
 							"message3":"Congratulations! I'm impressed!<br>You have conquered all tiers!<br>After all these challenges, I believe we both grown even stronger. I can safely say that it was an honor.",
@@ -702,6 +733,62 @@
 						"hearthling_immigrant_dialog":{
 							"message":"Hi! I'm glad that it all worked well in the end with the orcs.<br>Through these last days, the girl responsible for the carrots and the deliveries end up making a lot of new friends with your clan.<br>We talked about it and she wants to join your group!",
 							"decline":"I guess she can visit sometimes."
+						},
+						"erdene_nina_visit":{
+							"title":"Erdene and Nina visit",
+							"message":"<strong>Nina: </strong> ...and then I punched him! Haha<br>Oh, we arrived already! Hi friends!<br><strong>Erdene: </strong> Hey, little ones!",
+							"choice_friends":"Hi... Friends?",
+							"message2":"<strong>Erdene: </strong> Oh, right. The truce is still up if you wonder<br><strong>Nina: </strong> Yes, Erdene and I have a few things in common.",
+							"choice_really":"Really?",
+							"message3":"<strong>Nina: </strong> The reason for this visit is one.<br><strong>Erdene: </strong> It seems we both underestimate you one way or another. We thought you were weaker on our first encounters<br><font size=-1><strong>Nina: </strong> Hey, don't tell them I said that!</font>",
+							"message4":"<strong>Erdene: </strong> We thought maybe you could have some kind of big shrine.<br><strong>Nina: </strong> Yes, something that represents your town and leaves no doubt about your status",
+							"choice_shrines":"Shrines?",
+							"message5":"<strong>Nina: </strong> Yes, my people do this on the bigger towns. They build a monument and then there is a big ceremony with it, and the monument ends up enchanted.<br><strong>Erdene: </strong> We do something similar too.",
+							"message6":"<strong>Erdene: </strong> You could represent your culture on one of these monuments, you could honor past achievements and it would be a valuable asset in your town<br><strong>Nina: </strong> I guess I'm not that creative, for me a big tower would do. It can be a beacon seen from afar, inspiring kinship.",
+							"message7":"<strong>Nina: </strong> We will let you think about it. For now, we are heading to her camp, I want to learn more about it<br><strong>Erdene: </strong> A fair deal, it was the only way she would allow me to check her fort later<br><strong>Nina: </strong> Bye!",
+							"choice_bye":"Have fun, you two"
+						},
+						"shrine_choice":{
+							"book_description":"<i>This Township shall honor the legacy and wisdom of its ancestors in its crafts and arts.</i><ul><li>Blesses all citizens with +1 to Spirit</li><li>Jobs start already at level 3</li></ul>",
+							"tall_description":"<i>This Township shall welcome and cherish the companionship of its allies.</i><ul><li>Curiosity stat doubled</li><li>Summons allies to assist with work or fights.</li></ul>"
+						},
+						"shrine_quest_book":{
+							"title":"Township Quest: Immemorial Tome",
+							"dialog_title":"Township Quest: Immemorial Tome"
+						},
+						"shrine_quest_tall":{
+							"title":"Township Quest: Posterity Obelisk",
+							"dialog_title":"Township Quest: Posterity Obelisk"
+						},
+						"shrine_upgrade_book":{
+							"spirit":"Spirit +1",
+							"leveled_jobs":"Jobs start at level 3",
+							"tier_3_templates":"Tier 3 Building Templates"
+						},
+						"shrine_upgrade_tall":{
+							"curiosity":"Curiosity stat doubled",
+							"helper_allies":"Helper allies",
+							"tier_3_templates":"Tier 3 Building Templates"
+						},
+						"book_and_tall_dialog":{
+							"title":"Erdene and Nina impressions",
+							"message":"What an inspiring monument you’ve built! We can sense its power and wisdom from afar. It fills us with awe and reverence.",
+							"thank":"Thanks!",
+							"message2":"Its presence is palpable even from a distance. It stirs our hearts and minds with wonder and curiosity.<br>I'm happy that you accepted my suggestion."
+						},
+						"post_shrine_dialog":{
+							"title":"Erdene and Nina again",
+							"message":"What a splendid ceremony. I can still feel the magic coursing through the shrine.<br>I am impressed by your skills and devotion.",
+							"thank":"Thanks!",
+							"message2":"As am I. The shrine is a testament to the clan’s spirit and resilience.<br>You can build the other if you like, but it'll just be a regular decoration. Fancy-looking, but none quite so magical."
+						},
+						"leave_dialog":{
+							"title":"Nina's goodbye",
+							"message":"My humble duty here is fulfilled. We shall depart shortly.",
+							"choice_fast":"So fast?",
+							"message2":"Perhaps you did not notice, but we have already prepared our belongings. If you wish, you may assume command of our modest stronghold.",
+							"message3":"Some curious incidents have been reported close to here, where the ground caught fire, so we aim to explore that also. Wish us luck!<br>Farewell!",
+							"choice_bye":"Good luck! Bye-bye!"
 						}
 					}
 				}
@@ -773,6 +860,9 @@
 					"description":"Beware the Bear"
 				}
 			},
+			"shrine":{
+				"ally":"Allied Helper"
+			},
 			"warrior_hearth":{
 				"challenger":{
 					"display_name":"Challenger",
@@ -803,6 +893,7 @@
 		},
 		"saved_objects": {
 			"building_templates": {
+				"wip": "💜 Tier 3 Rewards not done yet 🚧",
 				"barrack": "💜 Barrack",
 				"firefly_house1": "💜 House 1",
 				"firefly_house2": "💜 House 2",
@@ -853,9 +944,29 @@
 	},
 	"entities": {
 		"armor": {
+			"clan_armor": {
+				"display_name": "(Firefly) Clan Armor",
+				"description": "Traditional Firefly Warrior outfit"
+			},
+			"clan_banner": {
+				"display_name": "(Firefly) Clan Banner",
+				"description": "Traditional Firefly Warrior outfit"
+			},
+			"clan_helmet": {
+				"display_name": "(Firefly) Clan Helmet",
+				"description": "Traditional Firefly Warrior outfit"
+			},
 			"flower_helmet": {
 				"display_name": "(Firefly) Flower Hat",
 				"description": "More about fashion than protection"
+			},
+			"fiber_armor": {
+				"display_name": "(Firefly) Fiber Armor",
+				"description": "Itchy"
+			},
+			"mushroom_shield": {
+				"display_name": "(Firefly) Mushroom Shield",
+				"description": "Allowed even in pillow fights"
 			},
 			"horn_helmet": {
 				"display_name": "(Firefly) Horn Helmet",
@@ -866,6 +977,10 @@
 			},
 			"leather_helmet": {
 				"display_name": "(Firefly) Leather Helmet"
+			},
+			"leather_shield": {
+				"display_name": "(Firefly) Leather Shield",
+				"description": "Strong and soft"
 			},
 			"full_leather_helmet": {
 				"display_name": "(Firefly) Full Leather Helmet",
@@ -878,6 +993,10 @@
 			"log_helmet": {
 				"display_name": "(Firefly) Log Helmet",
 				"description": "Heavy, but protects your head"
+			},
+			"mask_shield": {
+				"display_name": "(Firefly) Mask Shield",
+				"description": "The mask is usually similar to its owner"
 			},
 			"party_goblin_hat": {
 				"display_name": "Party Goblin Hat",
@@ -894,6 +1013,10 @@
 			"varanus_helmet": {
 				"display_name": "(Firefly) Varanus Helmet",
 				"description": "Scary and smelly"
+			},
+			"varanus_shield": {
+				"display_name": "(Firefly) Varanus Shield",
+				"description": "Strong and hard"
 			}
 		},
 		"baby":{

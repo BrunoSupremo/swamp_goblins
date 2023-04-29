@@ -2,7 +2,14 @@
 	"type": "encounter",
 	"encounter_type": "unlock_recipe",
 	"in_edge": "unlock_gong_green_recipe",
-	"out_edge": "wait_for_first_gong_green",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"wait_for_first_gong_green",
+			"wait_for_first_gong_blue",
+			"wait_for_first_gong_red"
+		]
+	},
 	"unlock_recipe_info": {
 		"job": "swamp_goblins:jobs:earthmaster",
 		"recipe_key": "goblin_decorations:green_gong",

@@ -1,0 +1,107 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "no_food_peaceful",
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.message)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_difficulties": {
+							"next_node": "msg2"
+						},
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_what": {
+							"next_node": "msg2"
+						}
+					}
+				}
+			},
+			"msg2": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food_peaceful.message2)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_resources": {
+							"next_node": "msg3"
+						},
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_camp": {
+							"next_node": "msg3"
+						}
+					}
+				}
+			},
+			"msg3": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.message3)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_who": {
+							"next_node": "msg4"
+						},
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_what_diet": {
+							"next_node": "msg4"
+						}
+					}
+				}
+			},
+			"msg4": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.message4)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_yuck": {
+							"next_node": "msg5"
+						},
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_veggies": {
+							"next_node": "msg5"
+						}
+					}
+				}
+			},
+			"msg5": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food_peaceful.message5)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_100": {
+							"next_node": "msg6"
+						},
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_100_2": {
+							"next_node": "msg6"
+						}
+					}
+				}
+			},
+			"msg6": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.message6)",
+					"choices": {
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_guess": {
+							"out_edge": "wait_human_help"
+						},
+						"swamp_goblins:data.gm.campaigns.town_progression.climax.no_food.choice_sure": {
+							"out_edge": "wait_human_help"
+						}
+					}
+				}
+			}
+		}
+	}
+}

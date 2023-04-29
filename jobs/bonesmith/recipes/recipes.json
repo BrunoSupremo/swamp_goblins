@@ -67,17 +67,28 @@
 			}
 		},
 		"goblin_clothing_armor": {
+			"_comment": "arbitrarily: equips have themed trios of helmet+armor+shield",
+			"_comment2": "equips crafted at level X, have defense X, and are wearable at level X",
 			"ordinal": 25,
 			"name": "i18n(stonehearth:jobs.blacksmith.recipes.armor_name)",
 			"recipes": {
 				"flower_helmet": {
 					"recipe": "file(clothing_armor/flower_helmet_recipe.json)"
 				},
+				"fiber_armor": {
+					"recipe": "file(clothing_armor/fiber_armor_recipe.json)"
+				},
+				"mushroom_shield": {
+					"recipe": "file(clothing_armor/mushroom_shield_recipe.json)"
+				},
 				"log_armor": {
 					"recipe": "file(clothing_armor/log_armor_recipe.json)"
 				},
 				"log_helmet": {
 					"recipe": "file(clothing_armor/log_helmet_recipe.json)"
+				},
+				"mask_shield": {
+					"recipe": "file(clothing_armor/mask_shield_recipe.json)"
 				},
 				"leather_armor": {
 					"recipe": "file(clothing_armor/leather_armor_recipe.json)"
@@ -86,7 +97,9 @@
 					"recipe": "file(clothing_armor/leather_helmet_recipe.json)"
 				},
 				"full_leather_helmet": {
-					"recipe": "file(clothing_armor/full_leather_helmet_recipe.json)"
+					"_comment":"the full_leather_helmet is not used anymore, it is replaced with the leather shield",
+					"_comment2":"i kept the same name to avoid bug, repurposed it for the new item",
+					"recipe": "file(clothing_armor/leather_shield_recipe.json)"
 				},
 				"varanus_armor": {
 					"recipe": "file(clothing_armor/varanus_armor_recipe.json)"
@@ -94,8 +107,19 @@
 				"varanus_helmet": {
 					"recipe": "file(clothing_armor/varanus_helmet_recipe.json)"
 				},
+				"varanus_shield": {
+					"recipe": "file(clothing_armor/varanus_shield_recipe.json)"
+				},
+				"clan_armor": {
+					"recipe": "file(clothing_armor/clan_armor_recipe.json)"
+				},
+				"clan_banner": {
+					"recipe": "file(clothing_armor/clan_banner_recipe.json)"
+				},
 				"horn_helmet": {
-					"recipe": "file(clothing_armor/horn_helmet_recipe.json)"
+					"_comment":"the horn_helmet is not used anymore, it is replaced with the clan helmet",
+					"_comment2":"i kept the same name to avoid bug, repurposed it for the new item",
+					"recipe": "file(clothing_armor/clan_helmet_recipe.json)"
 				}
 			}
 		},

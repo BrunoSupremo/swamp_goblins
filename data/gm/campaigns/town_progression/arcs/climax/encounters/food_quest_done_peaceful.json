@@ -1,0 +1,39 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "food_quest_done_peaceful",
+	"can_start": {
+		"test_1": {
+			"unique": {
+				"type": "deny_if_greater_than",
+				"item": "number_spawned",
+				"node_name": "food_quest_done_peaceful",
+				"value": 0
+			},
+			"game_mode_check": {
+				"type": "deny_if_not",
+				"item": "game_mode",
+				"value": "stonehearth:game_mode:peaceful"
+			}
+		}
+	},
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done.title)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.food_quest_done_peaceful.message)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "before_friendship_gong"
+						}
+					}
+				}
+			}
+		}
+	}
+}

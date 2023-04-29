@@ -48,20 +48,26 @@
 		"task_groups:lay_egg":			"file(ai/task_groups/lay_egg.lua)",
 		"task_groups:music":			"file(ai/task_groups/music.lua)",
 
+		"armor:fiber_armor":	"file(entities/armor/fiber_armor)",
 		"armor:flower_helmet":	"file(entities/armor/flower_helmet)",
-		"armor:full_leather_helmet":"file(entities/armor/full_leather_helmet)",
-		"armor:horn_helmet":	"file(entities/armor/horn_helmet)",
+		"armor:mushroom_shield":"file(entities/armor/mushroom_shield)",
+		"armor:log_armor":		"file(entities/armor/log_armor)",
+		"armor:log_helmet":		"file(entities/armor/log_helmet)",
+		"armor:mask_shield":	"file(entities/armor/mask_shield)",
 		"armor:leather_armor":	"file(entities/armor/leather_armor)",
 		"armor:leather_helmet":	"file(entities/armor/leather_helmet)",
-		"armor:log_armor":	"file(entities/armor/log_armor)",
-		"armor:log_helmet":	"file(entities/armor/log_helmet)",
-		"armor:party_goblin_hat":"file(entities/armor/party_goblin_hat)",
-		"armor:spirit_armor":"file(entities/armor/spirit_armor)",
+		"armor:leather_shield":	"file(entities/armor/leather_shield)",
 		"armor:varanus_armor":	"file(entities/armor/varanus_armor)",
 		"armor:varanus_helmet":	"file(entities/armor/varanus_helmet)",
+		"armor:varanus_shield":	"file(entities/armor/varanus_shield)",
+		"armor:clan_armor":		"file(entities/armor/clan_armor)",
+		"armor:clan_banner":	"file(entities/armor/clan_banner)",
+		"armor:clan_helmet":	"file(entities/armor/clan_helmet)",
+		"armor:party_goblin_hat":"file(entities/armor/party_goblin_hat)",
+		"armor:spirit_armor":"file(entities/armor/spirit_armor)",
 
-		"armor:mask_shield":	"file(entities/armor/mask_shield)",
-		"armor:mushroom_shield":"file(entities/armor/mushroom_shield)",
+		"armor:full_leather_helmet":"file(entities/armor/full_leather_helmet)",
+		"armor:horn_helmet":	"file(entities/armor/horn_helmet)",
 
 		"armor:ruler_outfit":"file(jobs/ruler/outfit)",
 
@@ -111,6 +117,8 @@
 		"buffs:self_aid":			"file(data/buffs/self_aid)",
 		"buffs:slow_dart":			"file(data/buffs/slow_dart)",
 		"buffs:sticky_water":		"file(data/buffs/sticky_water)",
+		"buffs:town_bonus:book":"file(data/buffs/town_bonus/book.json)",
+		"buffs:town_bonus:tall":"file(data/buffs/town_bonus/tall.json)",
 		"buffs:trapped":			"file(data/buffs/trapped)",
 		"buffs:wounds:resist":		"file(data/buffs/wounds/resist.json)",
 
@@ -155,6 +163,8 @@
 		"commands:market":		"file(data/commands/market)",
 		"commands:travel":			"file(data/commands/travel)",
 		"commands:music":			"file(data/commands/music)",
+		"commands:shrine:summon_allied_fighters":	"file(data/commands/shrine/summon_allied_fighters.json)",
+		"commands:shrine:summon_allied_workers":	"file(data/commands/shrine/summon_allied_workers.json)",
 		"commands:swap_entity":	"file(data/commands/swap_entity)",
 		"commands:transform:build_well_roof_clay":	"file(data/commands/transform/build_well_roof_clay.json)",
 		"commands:transform:build_well_wood":		"file(data/commands/transform/build_well_wood.json)",
@@ -420,6 +430,7 @@
 		"jobs:npc:baby":			"file(jobs/npc_baby/npc_baby_description.json)",
 		"jobs:npc:firefly_golem":	"file(jobs/npc_firefly_golem/npc_firefly_golem_description.json)",
 
+		"kingdoms:celebration_npcs": "file(services/server/population/data/celebration_npcs.json)",
 		"kingdoms:firefly_clan": "file(data/firefly_clan_population.json)",
 		"kingdoms:firefly_human_encounter": "file(services/server/population/data/firefly_human_encounter.json)",
 		"kingdoms:warrior_hearth": "file(services/server/population/data/warrior_hearth.json)",
@@ -469,6 +480,8 @@
 		"monster_tuning:firefly_human_encounter:footman":	"file(data/monster_tuning/firefly_human_encounter/footman.json)",
 		"monster_tuning:firefly_human_encounter:knight":	"file(data/monster_tuning/firefly_human_encounter/knight.json)",
 		"monster_tuning:firefly_human_encounter:nina":		"file(data/monster_tuning/firefly_human_encounter/nina.json)",
+		"monster_tuning:orcs:easy_footman":	"file(data/monster_tuning/orcs/easy_footman.json)",
+		"monster_tuning:shrine:summon_allies":	"file(data/monster_tuning/shrine/summon_allies.json)",
 		"monster_tuning:warrior_hearth:waves":	"file(data/monster_tuning/warrior_hearth/waves.json)",
 		"monster_tuning:warrior_hearth:firefly:worker":			"file(data/monster_tuning/warrior_hearth/firefly/worker.json)",
 		"monster_tuning:warrior_hearth:firefly:warrior":		"file(data/monster_tuning/warrior_hearth/firefly/warrior.json)",
@@ -1002,17 +1015,20 @@
 
 		"swamp_goblins/entities/containers/embark_wagon/embark_wagon_ghost.json":"stonehearth_ace/swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json",
 
-		"swamp_goblins:armor:flower_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
-		"swamp_goblins:armor:log_armor":			"stonehearth_ace:mixins:armor:light_armor_torso",
-		"swamp_goblins:armor:log_helmet":			"stonehearth_ace:mixins:armor:light_armor_helmet",
-		"swamp_goblins:armor:leather_armor":		"stonehearth_ace:mixins:armor:light_armor_torso",
-		"swamp_goblins:armor:leather_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
-		"swamp_goblins:armor:full_leather_helmet":	"stonehearth_ace:mixins:armor:light_armor_helmet",
-		"swamp_goblins:armor:varanus_armor":		"stonehearth_ace:mixins:armor:heavy_armor_torso",
-		"swamp_goblins:armor:varanus_helmet":		"stonehearth_ace:mixins:armor:heavy_armor_helmet",
-		"swamp_goblins:armor:horn_helmet":			"stonehearth_ace:mixins:armor:heavy_armor_helmet",
-		"swamp_goblins:armor:mask_shield":		"stonehearth_ace:mixins:armor:light_shield",
+		"swamp_goblins:armor:fiber_armor":		"stonehearth_ace:mixins:armor:light_armor_torso",
+		"swamp_goblins:armor:flower_helmet":	"stonehearth_ace:mixins:armor:light_armor_helmet",
+		"swamp_goblins:armor:log_armor":		"stonehearth_ace:mixins:armor:light_armor_torso",
+		"swamp_goblins:armor:log_helmet":		"stonehearth_ace:mixins:armor:light_armor_helmet",
+		"swamp_goblins:armor:leather_armor":	"stonehearth_ace:mixins:armor:light_armor_torso",
+		"swamp_goblins:armor:leather_helmet":	"stonehearth_ace:mixins:armor:light_armor_helmet",
+		"swamp_goblins:armor:varanus_armor":	"stonehearth_ace:mixins:armor:medium_armor_torso",
+		"swamp_goblins:armor:varanus_helmet":	"stonehearth_ace:mixins:armor:medium_armor_helmet",
+		"swamp_goblins:armor:clan_armor":		"stonehearth_ace:mixins:armor:heavy_armor_torso",
+		"swamp_goblins:armor:clan_helmet":		"stonehearth_ace:mixins:armor:heavy_armor_helmet",
 		"swamp_goblins:armor:mushroom_shield":	"stonehearth_ace:mixins:armor:light_shield",
+		"swamp_goblins:armor:mask_shield":		"stonehearth_ace:mixins:armor:light_shield",
+		"swamp_goblins:armor:leather_shield":	"stonehearth_ace:mixins:armor:medium_shield",
+		"swamp_goblins:armor:varanus_shield":	"stonehearth_ace:mixins:armor:medium_shield",
 
 		"swamp_goblins:weapons:spear":			"stonehearth_ace:mixins:weapons:twohanded_shaken_minor",
 		"swamp_goblins:weapons:crude_axe":		"stonehearth_ace:mixins:weapons:mainhand_hacking",
@@ -1065,6 +1081,14 @@
 		"swap_entity": {
 			"controller": "file(call_handlers/firefly_stuff.lua)",
 			"endpoint": "server"
+		},
+		"summon_allied_fighters": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
+		},
+		"summon_allied_workers": {
+			"controller": "file(call_handlers/firefly_stuff.lua)",
+			"endpoint": "server"
 		}
 	},
 	"components": {
@@ -1079,6 +1103,8 @@
 		"monster_spawner":			"file(components/monster_spawner/monster_spawner_component.lua)",
 		"music":					"file(components/music/music.lua)",
 		"replace_with_on_world_gen":"file(components/replace_with_on_world_gen/replace_with_on_world_gen.lua)",
+		"shrine:book":				"file(components/shrine/book.lua)",
+		"shrine:tall":				"file(components/shrine/tall.lua)",
 		"summon":					"file(components/summon/summon.lua)",
 		"swap_entity":				"file(components/swap_entity/swap_entity.lua)",
 		"warrior_hearth":			"file(components/warrior_hearth/warrior_hearth.lua)",
@@ -1136,6 +1162,9 @@
 		"game_master:spawn_firefly":"file(data/gm/campaigns/swamp_and_goblins_stuff/arcs/encounters/scripts/spawn_firefly.lua)",
 
 		"potion:appearance":"file(entities/consumables/scripts/appearance_controller.lua)",
+
+		"town_bonus:book":"file(data/town_bonuses/book_town_bonus.lua)",
+		"town_bonus:tall":"file(data/town_bonuses/tall_town_bonus.lua)",
 
 		"trait_scripts:deviant_pigment":"file(data/traits/deviant_pigment/deviant_pigment_script.lua)",
 		"trait_scripts:party_goblin":"file(data/traits/party_goblin/party_goblin_script.lua)",

@@ -13,13 +13,7 @@
 					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.carrot_deliver_4.message)",
 					"choices": {
 						"stonehearth:ui.game.common.ok": {
-							"out_edge": {
-								"type": "trigger_many",
-								"out_edges": [
-									"carrot_delivered",
-									"food_quest"
-								]
-							}
+							"out_edge": "food_quest"
 						}
 					}
 				}

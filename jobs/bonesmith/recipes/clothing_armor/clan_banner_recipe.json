@@ -1,0 +1,31 @@
+{
+	"type": "recipe",
+	"effort": 66,
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.armor.clan_banner.display_name)",
+	"description": "i18n(swamp_goblins:entities.armor.clan_banner.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/armor/clan_banner/clan_banner.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"work_effect": "fiddle",
+	"level_requirement": 5,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 2
+		},
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 5
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:armor:clan_banner"
+		}
+	]
+}

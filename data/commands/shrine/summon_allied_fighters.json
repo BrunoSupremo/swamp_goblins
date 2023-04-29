@@ -1,0 +1,12 @@
+{
+	"type": "command",
+	"name": "summon_allied_fighters",
+	"display_name": "i18n(swamp_goblins:data.commands.shrine.summon_allied_fighters.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.shrine.summon_allied_fighters.description)",
+	"disabled_description": "i18n(swamp_goblins:data.commands.shrine.summon_allied_fighters.disabled_description)",
+	"icon": "/stonehearth/jobs/footman/images/icon.png",
+	"ordinal": 10,
+	"action": "call",
+	"function": "swamp_goblins:summon_allied_fighters",
+	"args": []
+}

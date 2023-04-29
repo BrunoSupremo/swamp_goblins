@@ -1,0 +1,21 @@
+{
+	"type": "monster_tuning",
+	"mixins": "stonehearth:monster_tuning:orcs:default",
+	"estimated_difficulty": 3,
+	"job": "stonehearth:jobs:npc:footman",
+	"attributes": {
+		"max_health": 720,
+		"muscle": 18,
+		"menace": 72,
+		"courage": 225,
+		"speed": 90,
+		"additive_armor_modifier": 2,
+		"exp_reward": 120
+	},
+	"equipment": {
+		"weapon": [
+			"stonehearth:weapons:crude_metal_axe",
+			"stonehearth:weapons:short_sword"
+		]
+	}
+}

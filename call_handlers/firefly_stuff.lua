@@ -65,4 +65,18 @@ function FireflyCallHandler:swap_entity(session, response, entity)
 	entity:get_component("swamp_goblins:swap_entity"):swap()
 end
 
+function FireflyCallHandler:summon_allied_fighters(session, response, entity)
+	validator.expect_argument_types({'Entity'}, entity)
+	validator.expect.matching_player_id(session.player_id, entity)
+
+	entity:get_component("swamp_goblins:shrine:tall"):summon_allied_fighters()
+end
+
+function FireflyCallHandler:summon_allied_workers(session, response, entity)
+	validator.expect_argument_types({'Entity'}, entity)
+	validator.expect.matching_player_id(session.player_id, entity)
+
+	entity:get_component("swamp_goblins:shrine:tall"):summon_allied_workers()
+end
+
 return FireflyCallHandler

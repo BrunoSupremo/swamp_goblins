@@ -1,0 +1,15 @@
+{
+	"type": "encounter",
+	"encounter_type": "destroy_entity",
+	"in_edge": "campaign_cleanup",
+	"out_edge": "arc:finish",
+	"destroy_entity_info": {
+		"script": "file(campaign_cleanup.lua)",
+		"destroy_all_registered_entities": true,
+		"random_delay": {
+			"min": 10,
+			"max": 200
+		},
+		"continue_always": true
+	}
+}

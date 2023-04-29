@@ -1,8 +1,23 @@
 {
 	"mixins": "file(book.json)",
 	"components": {
+		"swamp_goblins:shrine:book": {},
 		"effect_list": {
 			"default": "swamp_goblins:effects:shrine:book:blessed"
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"mixintypes": {
+				"material_tags": "override"
+			},
+			"material_tags":[
+				"clay",
+				"crafted",
+				"shrine",
+				"decoration",
+				"stockpile_decoration"
+			]
 		}
 	}
 }

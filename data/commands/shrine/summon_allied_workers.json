@@ -1,0 +1,12 @@
+{
+	"type": "command",
+	"name": "summon_allied_workers",
+	"display_name": "i18n(swamp_goblins:data.commands.shrine.summon_allied_workers.display_name)",
+	"description": "i18n(swamp_goblins:data.commands.shrine.summon_allied_workers.description)",
+	"disabled_description": "i18n(swamp_goblins:data.commands.shrine.summon_allied_workers.disabled_description)",
+	"icon": "/stonehearth/jobs/worker/images/icon.png",
+	"ordinal": 10,
+	"action": "call",
+	"function": "swamp_goblins:summon_allied_workers",
+	"args": []
+}

@@ -1,52 +1,54 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 23.4.5")
+print("Swamp Goblins Mod version 23.4.29")
 
 --[[
-ace dragon quest texts
 
 elderstone reference
 
-shrines powers
+equips:
+	fancy outfit (tier3)
+	armors/equips for beasttamer summons
+	upgrades:
+		trapper fancy boots
+		ranged attack for beast tamer, bow?
+	replace weapon placeholders, improve overall models
+	old shepherd_outfit as a new goblin outfit? (looks good at least)
+	6? warrior tiers:
+		plants
+		wood
+		leather
+		varanus
+		clan
+		6th?
 
-change lord armor back into a warrior armor
-
-dark army, small black smoke blobs with glowing eyes, from majoras mask
-
-goblinfied vanilla_lampposts
-fancy outfit (tier3)
-
-Giant rug, or wall hanging rug.
-Varanus roasting on a stick
-armors/equips for beasttamer summons
-
-bed:
-	high/fancy bed
-bed of hot embers (firewalking)
-	magmasword texture/effects
-drying rack
-
-remove stick water debuff with some item or trait
+items with effects:
+	remove stick water debuff with some item or trait
+	speed up crafting with bonus from nearby items
+	banner shred
+	animals haulers requiring food and care
+	varanus/mobs repelent
+	bug nests or other mob structures for egg raiders
 
 goblinpedia:
 	templates
 	party goblin
 
-speed up crafting with bonus from nearby items
-
-warrior rework:
-	max level at 3
-	two job promotions after:
-		light/fast combat and heavy/strong combat
-		varanus rider?
-
-
-reversed porticulis stone gate (opens going down instead of up)
-
-jobs side quests for new stuff
-	shaman lvl 6: travel to learn cook recipes || eating contest?
-
-upgrades:
-	trapper fancy boots
+quests:
+	make new orc/kobold gongs
+	jobs side quests:
+		shaman lvl 6: travel to learn cook recipes || eating contest?
+	combat hearth waves:
+		boss, bunnies, orcs, kobolds, ogres
+	import hearthlings:
+		traveler campaign, someone lost appears into the camp
+	import goblins:
+		someone finds a goblin egg basket
+			after tier 2, some random amount of days (+jobs to make sure it can be defended)
+			images with the dialogs, describe the finding, decide to keep or refuse the egg
+	Maybe have a way for us to have ogres?
+		orc+kobold+ogre group fleeing from undeads
+	undeads:
+		spirit world has inverted colors?
 
 ace stuff:
 	add ace tools and tools upgrades
@@ -54,32 +56,7 @@ ace stuff:
 	wounds and tonics
 	composting
 	fix raw food (meat and eggs) not being edible on ace
-
-folklore
-
-orc quest
-	your town is way better than it looks, you should display it somehow
-	shrine options
-	tier 3 reached, new templates, etc...
-	path for peaceful mode
-
-combat hearth waves:
-	boss, bunnies, orcs, kobolds, ogres
-
-import hearthlings
-	traveler campaign, someone lost appears into the camp
-import goblins
-	someone finds a goblin egg basket
-		after tier 2, some random amount of days (+jobs to make sure it can be defended)
-		images with the dialogs, describe the finding, decide to keep or refuse the egg
-
-
-banner shred
-animals haulers requiring food and care
-varanus/mobs repelent
-bug nests or other mob structures for egg raiders
-old shepherd_outfit as a new goblin outfit? (looks good at least)
-spirit world has inverted colors?
+	ace dragon quest texts
 
 mobs:
 	slimes:
@@ -88,53 +65,61 @@ mobs:
 			cube roll walking, particle effect trail
 			size inflation for attack
 			squish up/down idle
+	black boe:
+		from majoras mask
+		army, small black smoke blobs with glowing eyes,
 
-grazer:
-	farmer+shepherd
+jobs:
+	warrior rework:
+		max level at 3
+		two job promotions after:
+			light/fast combat and heavy/strong combat
+			varanus rider?
 
-party goblin:
-	different tattoo color?
-	chatty
-	combat skills:
-		smoke bomb: aoe, halfs enemy attack (blindness)
-		fireworks: calls enemys attention
-		frog escape: changes into a frog and jump out of battle
+	steam maker:
+		cook(+ace_brewer)
 
-contruction:
-	door, double door
-	windows 2x2, 2x3, 3x2
-	fence, fence door
-containers:
-	piles, crate/urn, chest, vault
-	input_bin, input_corner, input_shelf_ground, input_shelf_wall, input_table, output_box
+	grazer:
+		farmer+shepherd
+
+	party goblin:
+		different tattoo color?
+		chatty
+		combat skills:
+			smoke bomb: aoe, halfs enemy attack (blindness)
+			fireworks: calls enemys attention
+			frog escape: changes into a frog and jump out of battle
+
+	earthshaper:
+		dart traps, smoke traps
+		upgraded workbenches
+
+	fisher:
+		swamp fish colors, eels, blowfish
+
 decorations:
+	Giant rug, or wall hanging rug.
+	Varanus roasting on a stick
+	goblinfied vanilla_lampposts
 	lamp post, lamp/lantern, mat/rug/mosaic, statue
 	painting/tapestry, banner wall, awning
 	aroma candles, incenses
 	weapon/armor decorations
-	wall planter, pots
-furniture:
-	themes:
-		mushroom, fiber, wood, fancy/clothed wood, stone, clay
-	bed, chair, table, bench
+	high/fancy bed
+	bed of hot embers (firewalking)
+		magmasword texture/effects
+	reversed porticulis stone gate (opens going down instead of up)
+	drying rack
+
 templates:
 	combat houses (n.a. inspired roofs?)
-earthshaper:
-	dart traps, smoke traps
-	upgraded workbenches
-gizmos:
-	goblinpedia
+
 music:
 	bongo, drum, flute, gong, triangulo
-equipments:
-	replace weapon placeholders, improve overall models
-	shields? worker outfit?
-	ranged attack for beast tamer, bow?
+
 redo:
 	hourglass effects
 	travel stall
-fisher:
-	swamp fish colors, eels, blowfish
 
 ]]
 

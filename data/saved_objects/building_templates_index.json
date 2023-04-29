@@ -86,6 +86,14 @@
 							"file": "file(building_templates/spirit_walker_sanctuary2.json)"
 						}
 					}
+				},
+				"goblin_town": {
+					"display_name": "i18n(swamp_goblins:data.saved_objects.building_templates_index.template_tabs.firefly_clan.categories.town)",
+					"ordinal": 3,
+					"required_city_tier": 3,
+					"templates": {
+						"wip":	"file(building_templates/wip.json)"
+					}
 				}
 			}
 		}

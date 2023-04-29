@@ -55,6 +55,10 @@ function GoblinMarketComponent:create_shop()
 end
 
 function GoblinMarketComponent:destroy()
+	if self._sv._restock_timer then
+		self._sv._restock_timer:destroy()
+		self._sv._restock_timer = nil
+	end
 	if self.shop then
 		stonehearth.shop:destroy_shop(self.shop)
 		self.shop = nil

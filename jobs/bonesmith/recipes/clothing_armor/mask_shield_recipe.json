@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 10,
+	"recipe_name": "i18n(swamp_goblins:entities.armor.mask_shield.display_name)",
+	"description": "i18n(swamp_goblins:entities.armor.mask_shield.description)",
+	"flavor": "",
+	"portrait": "/swamp_goblins/entities/armor/mask_shield/mask_shield.png",
+	"workshop": "swamp_goblins:bonesmith:weaving_table",
+	"work_effect": "fiddle",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:decoration:wall_mask",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:armor:mask_shield"
+		}
+	]
+}

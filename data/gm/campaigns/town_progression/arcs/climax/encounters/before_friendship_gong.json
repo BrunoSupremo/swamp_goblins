@@ -1,0 +1,24 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "before_friendship_gong",
+	"dialog_tree_info": {
+		"start_node": "msg1",
+		"nodes": {
+			"msg1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.erdene)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.purple_tier_end_dialog.message4)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {
+							"out_edge": "get_friendship_gong"
+						}
+					}
+				}
+			}
+		}
+	}
+}
