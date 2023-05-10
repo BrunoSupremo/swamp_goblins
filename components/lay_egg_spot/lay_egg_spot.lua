@@ -8,6 +8,7 @@ function LayEgg_spot:initialize()
 	self._sv._use_state = "off" --off, waiting, has_egg
 	self._sv._current_egg = nil
 	self._sv._task_effect = nil
+	self._sv._times_killed = 0
 end
 
 function LayEgg_spot:post_activate()
@@ -34,16 +35,7 @@ function LayEgg_spot:post_activate()
 	end
 
 	if self._sv._current_egg then
-		self._egg_listener = radiant.events.listen_once(self._sv._current_egg, 'stonehearth:on_evolved', function(e)
-			self:egg_hatched(e.evolved_form)
-			self._sv._current_egg = nil
-			self._egg_listener = nil
-		end)
-		self._kill_listener = radiant.events.listen_once(self._sv._current_egg, 'stonehearth:kill_event', function(e)
-			self:reset_pedestal()
-			self._sv._current_egg = nil
-			self._kill_listener = nil
-		end)
+		self:create_egg_listeners()
 	end
 end
 
@@ -119,16 +111,7 @@ function LayEgg_spot:create_egg()
 	end
 
 	self._sv._current_egg = egg
-	self._egg_listener = radiant.events.listen_once(egg, 'stonehearth:on_evolved', function(e)
-		self:egg_hatched(e.evolved_form)
-		self._sv._current_egg = nil
-		self._egg_listener = nil
-	end)
-	self._kill_listener = radiant.events.listen_once(egg, 'stonehearth:kill_event', function(e)
-		self:reset_pedestal()
-		self._sv._current_egg = nil
-		self._kill_listener = nil
-	end)
+	self:create_egg_listeners()
 
 	stonehearth.ai:reconsider_entity(self._entity)
 
@@ -293,6 +276,47 @@ function LayEgg_spot:destroy()
 		self._added_to_world_listener:destroy()
 		self._added_to_world_listener = nil
 	end
+
+	if self._egg_listener then
+		self._egg_listener:destroy()
+		self._egg_listener = nil
+	end
+	if self._kill_listener then
+		self._kill_listener:destroy()
+		self._kill_listener = nil
+	end
+end
+
+function LayEgg_spot:create_egg_listeners()
+	self._egg_listener = radiant.events.listen_once(self._sv._current_egg, 'stonehearth:on_evolved', function(e)
+		self:egg_hatched(e.evolved_form)
+		self._sv._current_egg = nil
+		self._egg_listener = nil
+	end)
+	self._kill_listener = radiant.events.listen_once(self._sv._current_egg, 'stonehearth:kill_event', function(e)
+		self:reset_pedestal()
+		self._sv._current_egg = nil
+		self._kill_listener = nil
+		self._sv._times_killed = self._sv._times_killed +1
+
+		if self._sv._times_killed > 0.2 and (self._entity and self._entity:is_valid()) then
+			local message_tip = "i18n(swamp_goblins:ui.data.egg_needs_protection.message)"
+			if self._sv._times_killed > 1 then
+				message_tip = "i18n(swamp_goblins:ui.data.egg_needs_protection.message2)"
+			end
+			stonehearth.bulletin_board:post_bulletin(self.player_id)
+			:set_ui_view('StonehearthGenericBulletinDialog')
+			:set_data({
+				zoom_to_entity = self._entity,
+				title = "i18n(swamp_goblins:ui.data.egg_needs_protection.title)",
+				message = message_tip,
+				ok_callback = "_ok_callback"
+			})
+		end
+	end)
+end
+
+function LayEgg_spot:_ok_callback()
 end
 
 function LayEgg_spot:find_spawning_point(valid_cubes, target_location, max_y)

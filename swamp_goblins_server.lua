@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 23.4.29")
+print("Swamp Goblins Mod version 23.5.9")
 
 --[[
 
@@ -22,7 +22,6 @@ equips:
 		6th?
 
 items with effects:
-	remove stick water debuff with some item or trait
 	speed up crafting with bonus from nearby items
 	banner shred
 	animals haulers requiring food and care

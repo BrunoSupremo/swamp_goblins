@@ -11,11 +11,30 @@
 	},
 	"wait_for_requirements_met_info": {
 		"requirements": {
-			"highest_job_level": {
-				"item": "highest_job_level",
-				"job_alias": "swamp_goblins:jobs:bonesmith",
-				"type": "deny_if_less_than",
-				"value": 1
+			"or":{
+				"item": "or",
+				"type":"deny_if_not",
+				"value": true,
+				"tests": {
+					"shaman_level": {
+						"item": "highest_job_level",
+						"job_alias": "swamp_goblins:jobs:shaman",
+						"type": "deny_if_less_than",
+						"value": 3
+					},
+					"bonesmith_level": {
+						"item": "highest_job_level",
+						"job_alias": "swamp_goblins:jobs:bonesmith",
+						"type": "deny_if_less_than",
+						"value": 1
+					},
+					"earthshaper_level": {
+						"item": "highest_job_level",
+						"job_alias": "swamp_goblins:jobs:earthmaster",
+						"type": "deny_if_less_than",
+						"value": 1
+					}
+				}
 			}
 		}
 	}

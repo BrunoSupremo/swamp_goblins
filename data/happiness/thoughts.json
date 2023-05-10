@@ -35,9 +35,10 @@
 				"sticky_water": {
 					"display_name": "i18n(swamp_goblins:data.happiness.thoughts.water.values.sticky_water.display_name)",
 					"tooltip": "i18n(swamp_goblins:data.happiness.thoughts.water.values.sticky_water.tooltip)",
-					"happiness_delta": -10,
-					"duration": "3h",
-					"stackable": false
+					"happiness_delta": -1,
+					"duration": "1h",
+					"stackable": true,
+					"max_stacks": 30
 				}
 			}
 		},

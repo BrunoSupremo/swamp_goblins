@@ -503,7 +503,7 @@
 						"before_chosing_banner": {
 							"title": "Está na hora",
 							"dialog_title": "Está na hora",
-							"message": "Não há necessidade de esperar mais, o xamã está pronto e está tudo pronto. <br> Vamos escolher nosso banner."
+							"message": "Chegou o momento, o xamã preparou o ritual e estamos prontos para começar nossa aventura.<br>Mas primeiro, devemos escolher nosso estandarte. Será nossa marca de honra e união nos tempos desafiadores que virão."
 						},
 						"explain_egg": {
 							"title": "Relatório Diário?",
@@ -726,6 +726,7 @@
 							"message3":"Parabéns! Estou impressionada!<br>Você conquistou todos os níveis!<br>Depois de todos esses desafios, acredito que nós dois ficamos ainda mais fortes. Posso dizer com segurança que foi uma honra.",
 							"message4":"Por favor, aceite este presente. Ele representa sua conquista e nossos laços.<br><br><font size=-1>'Gongo de Respeito Orc' será deixado em seu estandarte</font>"
 						},
+						"remember_gong":"Mal posso esperar para ver como ficará o gongo na sua cidade. Basta colocá-lo onde achar melhor.",
 						"orc_immigrant_dialog":{
 							"message":"O gongo parece bom!<br>Um dos nossos quer se juntar ao seu clã! Ele é um lutador habilidoso e está interessado em aprender mais com você.",
 							"decline":"Oh, ele estava ancioso por isso... Talvez outra hora então."
@@ -2378,6 +2379,11 @@
 				"zilla": "Atenção! Lagarto gigante está atrás de nossos ovos!",
 				"undead": "Mortos-vivos estão tentando destruir os ovos",
 				"undead_army": "Eles querem a energia vital de nossos ovos!"
+			},
+			"egg_needs_protection":{
+				"title":"Mais um ovo caído...",
+				"message":"Já perdemos muitos<br>Precisamos encontrar uma maneira de protegê-los.",
+				"message2":"Talvez tenhamos que realocar os ovos para um lugar mais seguro onde o inimigo não possa alcançá-los."
 			},
 			"no_workers":"Você precisa de trabalhadores para usar o pedestal",
 			"new_goblin_baby": "Um ovo chocou",

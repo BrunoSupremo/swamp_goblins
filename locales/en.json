@@ -503,7 +503,7 @@
 						"before_chosing_banner":{
 							"title":"It is time",
 							"dialog_title":"It is time",
-							"message":"No need to wait any longer, the shaman is ready, and we are all set.<br>Let's pick our banner."
+							"message":"The moment has come, the shaman has prepared the ritual, and we are ready to begin our adventure.<br>But first, we must choose our banner. It will be our mark of honor and unity in the challenging times ahead."
 						},
 						"explain_egg":{
 							"title":"Daily Report?",
@@ -726,6 +726,7 @@
 							"message3":"Congratulations! I'm impressed!<br>You have conquered all tiers!<br>After all these challenges, I believe we both grown even stronger. I can safely say that it was an honor.",
 							"message4":"Please accept this gift. It represents your achievement and our bonds.<br><br><font size=-1>'Gong of Orc Respect' will be dropped at your banner</font>"
 						},
+						"remember_gong":"I can't wait to see how the gong will look in your town. Just place it where you find it best.",
 						"orc_immigrant_dialog":{
 							"message":"The gong is looking good!<br>One of ours even wants to join your clan! He is a skilled fighter and is interested in learning more from you.",
 							"decline":"Oh, he was looking for it... Maybe another time then."
@@ -2378,6 +2379,11 @@
 				"zilla":"Watch out! Giant lizard is after our eggs!",
 				"undead":"Undeads are trying to destroy the eggs",
 				"undead_army":"They want the life energy of our eggs!"
+			},
+			"egg_needs_protection":{
+				"title":"Another egg down...",
+				"message":"We lost quite a few already<br>We need to find a way to protect them.",
+				"message2":"Maybe we have to relocate the eggs to a more secure place where the enemy can't get to them."
 			},
 			"no_workers":"You need workers to use the pedestal",
 			"new_goblin_baby":"An egg has hatched",

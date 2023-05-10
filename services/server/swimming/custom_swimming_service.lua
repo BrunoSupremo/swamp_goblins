@@ -32,13 +32,10 @@ function CustomSwimmingService:_swamp_goblins_is_swimming(entity, location)
 	local intersected_entities = radiant.terrain.get_entities_in_cube(cube)
 	local swimming = false
 
-	local hearthling = entity
-	radiant.entities.remove_buff(hearthling, 'swamp_goblins:buffs:sticky_water')
-	for id, entity in pairs(intersected_entities) do
-		local water_component = entity:get_component('stonehearth:water')
+	for id, maybe_water_entity in pairs(intersected_entities) do
+		local water_component = maybe_water_entity:get_component('stonehearth:water')
 		if water_component then
-			radiant.entities.add_thought(hearthling, 'stonehearth:thoughts:water:sticky_water')
-			radiant.entities.add_buff(hearthling, 'swamp_goblins:buffs:sticky_water')
+			radiant.entities.add_thought(entity, 'stonehearth:thoughts:water:sticky_water')
 			local entity_height = mob_shape.max.y
 			local water_level = water_component:get_water_level()
 			local swim_level = location.y + entity_height * 0.5

@@ -1,0 +1,32 @@
+{
+	"type": "encounter",
+	"encounter_type": "dialog_tree",
+	"rarity": "common",
+	"in_edge": "remember_gong",
+	"can_start": {
+		"test_1": {
+			"item_placed_requirement": {
+				"item": "exists_in_world",
+				"uri": "stonehearth:corrupt:titanstorm:orc_friendship_gong",
+				"type": "deny_if",
+				"value": true
+			}
+		}
+	},
+	"dialog_tree_info": {
+		"start_node": "message1",
+		"nodes": {
+			"message1": {
+				"bulletin": {
+					"title": "i18n(swamp_goblins:data.gm.erdene)",
+					"dialog_title": "i18n(swamp_goblins:data.gm.erdene)",
+					"portrait": "file(images/erdene.png)",
+					"message": "i18n(swamp_goblins:data.gm.campaigns.town_progression.climax.remember_gong)",
+					"choices": {
+						"stonehearth:ui.game.common.ok": {}
+					}
+				}
+			}
+		}
+	}
+}

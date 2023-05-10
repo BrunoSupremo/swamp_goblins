@@ -2,7 +2,13 @@
 	"type": "encounter",
 	"encounter_type": "donation",
 	"in_edge": "get_friendship_gong",
-	"out_edge": "wait_for_orc_friendship_gong_placed",
+	"out_edge": {
+		"type": "trigger_many",
+		"out_edges": [
+			"wait_for_orc_friendship_gong_placed",
+			"wait_remember_gong"
+		]
+	},
 	"donation_info": {
 		"loot_table": {
 			"entries": {
