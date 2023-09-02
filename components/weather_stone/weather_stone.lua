@@ -90,11 +90,16 @@ function WeatherStone:change_weather()
 
 	local weighted_set = WeightedSet(rng)
 	for _, entry in ipairs(current_season.weather) do
-		weighted_set:add(entry.uri, entry.weight)
+		if radiant.util.is_table(entry.weight) then
+			weighted_set:add(entry.uri, entry.weight[1])
+		else
+			weighted_set:add(entry.uri, entry.weight)
+		end
 	end
 	--titan weather is blocked
 	local current_weather = stonehearth.weather:get_current_weather()
-	if current_weather:get_uri() == 'stonehearth:weather:titanstorm' then
+	local current_weather_uri = current_weather:get_uri()
+	if current_weather_uri == 'stonehearth:weather:titanstorm' or current_weather_uri == "titans_fury:weather:doomstorm" then
 		radiant.effects.run_effect(self._entity, "stonehearth:effects:death")
 		radiant.effects.run_effect(self._entity, "stonehearth:effects:titan_summoning:gong")
 		self:full_reset()
