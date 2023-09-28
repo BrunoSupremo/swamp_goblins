@@ -121,11 +121,11 @@
 		"commands":{
 			"enable_egg_spot":{
 				"display_name":"Lay Egg",
-				"description":"Calls a goblin to lay an egg"
+				"description":"Calls a goblin worker to lay an egg"
 			},
 			"cancel_egg_spot":{
 				"display_name":"Cancel Lay Egg",
-				"description":"Cancel a goblin order to lay an egg"
+				"description":"Cancel the order to lay an egg"
 			},
 			"goblinpedia":{
 				"display_name":"Open the Goblinpedia",
@@ -895,7 +895,7 @@
 		"saved_objects": {
 			"building_templates": {
 				"wip": "💜 Tier 3 Rewards not done yet 🚧",
-				"barrack": "💜 Barrack",
+				"barrack": "💜 Shack",
 				"firefly_house1": "💜 House 1",
 				"firefly_house2": "💜 House 2",
 				"firefly_house3": "💜 House 3",
@@ -1024,32 +1024,32 @@
 			"blanket": {
 				"display_name": "Baby Blanket",
 				"description": "To help with a better sleep",
-				"flavor":"The baby will require less time sleeping"
+				"flavor":"(Baby Equip) The baby will require less time sleeping"
 			},
 			"blanket2": {
 				"display_name": "Baby Comfy Blanket",
 				"description": "Super comfy, can't leave",
-				"flavor":"The baby will require less time sleeping and can grow with higher spirit stat"
+				"flavor":"(Baby Equip) The baby will require less time sleeping and can grow with higher spirit stat"
 			},
 			"bottle": {
 				"display_name": "Baby Bottle",
 				"description": "Complementing the diet",
-				"flavor":"The baby will require less food"
+				"flavor":"(Baby Equip) The baby will require less food"
 			},
 			"bottle2": {
 				"display_name": "Baby Healthy Bottle",
 				"description": "Super healthy, to grow strong",
-				"flavor":"The baby will require less food and can grow with higher body stat"
+				"flavor":"(Baby Equip) The baby will require less food and can grow with higher body stat"
 			},
 			"toy": {
 				"display_name": "Baby Toy",
 				"description": "A world of fantasy in our hands",
-				"flavor":"The baby will require less conversations and move faster"
+				"flavor":"(Baby Equip) The baby will require less conversations and move faster"
 			},
 			"toy2": {
 				"display_name": "Baby Advanced Toy",
 				"description": "Fancy doll, accessories not included",
-				"flavor":"The baby will require less conversations, move faster and can grow with higher mind stat"
+				"flavor":"(Baby Equip) The baby will require less conversations, move faster and can grow with higher mind stat"
 			}
 		},
 		"construction": {
@@ -2185,7 +2185,7 @@
 				},
 				"level_2_data": {
 					"perk_000_name": "Cycle of Life",
-					"perk_000_description": "With an egg pedestal, goblins can do their most important ritual."
+					"perk_000_description": "With an egg pedestal, goblins (workers) can do their most important ritual."
 				},
 				"level_3_data": {
 					"perk_000_name": "Journeyman's Knowledge",
@@ -2407,7 +2407,7 @@
 							"description1":"A nice ceremonial table for an important occasion",
 							"topic1":{
 								"title":"Crafting:",
-								"desc1":"The egg pedestal is crafted by the shaman of your clan"
+								"desc1":"The egg pedestal is crafted by the shaman of your clan, and workers can use it"
 							},
 							"topic2":{
 								"title":"How to use:",

@@ -121,11 +121,11 @@
 		"commands": {
 			"enable_egg_spot": {
 				"display_name": "Botar Ovo",
-				"description": "Chama um goblin para botar um ovo"
+				"description": "Chama um trabalhador goblin para botar um ovo"
 			},
 			"cancel_egg_spot": {
 				"display_name": "Cancelar Ovo",
-				"description": "Cancelar a ordem de um goblin para botar um ovo"
+				"description": "Cancelar a ordem para botar um ovo"
 			},
 			"goblinpedia": {
 				"display_name": "Abre a Goblinpedia",
@@ -1024,32 +1024,32 @@
 			"blanket": {
 				"display_name": "Cobertor de bebê",
 				"description": "Para ajudar a dormir melhor",
-				"flavor":"O bebê vai precisar de menos tempo para dormir"
+				"flavor":"(Equipamento de bebê) O bebê vai precisar de menos tempo para dormir"
 			},
 			"blanket2": {
 				"display_name": "Cobertor de bebê confortável",
 				"description": "Super confortável, não pode sair",
-				"flavor":"O bebê vai precisar de menos tempo para dormir e pode crescer com um status de espírito mais alto"
+				"flavor":"(Equipamento de bebê) O bebê vai precisar de menos tempo para dormir e pode crescer com um status de espírito mais alto"
 			},
 			"bottle": {
 				"display_name": "Mamadeira",
 				"description": "Complementando a dieta",
-				"flavor":"O bebê vai precisar de menos comida"
+				"flavor":"(Equipamento de bebê) O bebê vai precisar de menos comida"
 			},
 			"bottle2": {
 				"display_name": "Mamadeira Saudável para Bebês",
 				"description": "Super saudável, para crescer forte",
-				"flavor":"O bebê vai precisar de menos comida e pode crescer com maior status corporal"
+				"flavor":"(Equipamento de bebê) O bebê vai precisar de menos comida e pode crescer com maior status corporal"
 			},
 			"toy": {
 				"display_name": "Brinquedo de bebê",
 				"description": "Um mundo de fantasia em nossas mãos",
-				"flavor":"O bebê vai precisar de menos conversas"
+				"flavor":"(Equipamento de bebê) O bebê vai precisar de menos conversas"
 			},
 			"toy2": {
 				"display_name": "Brinquedo Avançado para Bebês",
 				"description": "Boneca extravagante, acessórios não incluídos",
-				"flavor":"O bebê vai precisar de menos conversas e pode crescer com um status mental mais alto"
+				"flavor":"(Equipamento de bebê) O bebê vai precisar de menos conversas e pode crescer com um status mental mais alto"
 			}
 		},
 		"construction": {
@@ -2185,7 +2185,7 @@
 				},
 				"level_2_data": {
 					"perk_000_name": "Ciclo da Vida",
-					"perk_000_description": "Com um pedestal de ovo, os goblins podem realizar seu ritual mais importante."
+					"perk_000_description": "Com um pedestal de ovo, os goblins (trabalhadores) podem realizar seu ritual mais importante."
 				},
 				"level_3_data": {
 					"perk_000_name": "Conhecimento do Jornaleiro",
@@ -2407,7 +2407,7 @@
 							"description1": "Uma bela mesa cerimonial para uma ocasião importante",
 							"topic1": {
 								"title": "Construindo:",
-								"desc1": "O pedestal do ovo é feito pelo xamã do seu clã"
+								"desc1": "O pedestal do ovo é feito pelo xamã do seu clã e usado pelos trabalhadores"
 							},
 							"topic2": {
 								"title": "Como usar:",
