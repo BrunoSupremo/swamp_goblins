@@ -167,7 +167,7 @@ function WarriorHearth:_spawn_wave()
 			end
 
 			radiant.entities.set_entity_name(member, {description="i18n(swamp_goblins:data.monster_tuning.warrior_hearth.challenger.description)"})
-			radiant.entities.add_buff(member, "stonehearth:buffs:combat_basics")
+			radiant.entities.add_buff(member, "swamp_goblins:buffs:combat_basics")
 			radiant.effects.run_effect(member, 'stonehearth:effects:spawn_entity')
 
 			self._sv.current_wave[member:get_id()] = member

@@ -14,6 +14,15 @@
 						"nursery":	"file(building_templates/nursery.json)",
 						"snack_bar":"file(building_templates/snack_bar.json)",
 						"firefly_inn":"file(building_templates/firefly_inn.json)",
+						"walkway_straight":"file(building_templates/walkway_straight.json)",
+						"walkway_corner":"file(building_templates/walkway_corner.json)",
+						"beast_tamer_den": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:beast_tamer"
+							},
+							"file": "file(building_templates/beast_tamer_den.json)"
+						},
 						"bonesmith_workshop": {
 							"unlock_requirement": {
 								"type": "has_job",
@@ -41,6 +50,13 @@
 								"value": "swamp_goblins:jobs:spirit_walker"
 							},
 							"file": "file(building_templates/spirit_walker_sanctuary.json)"
+						},
+						"warrior_ring": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:warrior"
+							},
+							"file": "file(building_templates/warrior_ring.json)"
 						}
 					}
 				},
@@ -57,6 +73,13 @@
 						"garden":	"file(building_templates/garden.json)",
 						"snack_bar2":"file(building_templates/snack_bar2.json)",
 						"firefly_inn2":"file(building_templates/firefly_inn2.json)",
+						"beast_tamer_den2": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:beast_tamer"
+							},
+							"file": "file(building_templates/beast_tamer_den2.json)"
+						},
 						"bonesmith_workshop2": {
 							"unlock_requirement": {
 								"type": "has_job",
@@ -84,6 +107,13 @@
 								"value": "swamp_goblins:jobs:spirit_walker"
 							},
 							"file": "file(building_templates/spirit_walker_sanctuary2.json)"
+						},
+						"warrior_ring2": {
+							"unlock_requirement": {
+								"type": "has_job",
+								"value": "swamp_goblins:jobs:warrior"
+							},
+							"file": "file(building_templates/warrior_ring2.json)"
 						}
 					}
 				},

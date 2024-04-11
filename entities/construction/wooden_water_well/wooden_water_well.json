@@ -58,6 +58,8 @@
 			"effect": "work_water_well",
 			"container_effect": "work",
 			"drink": "stonehearth_ace:drink:water_serving:cool",
+			"subcontainer": "stonehearth_ace:drink:water_well:water:cool",
+			"require_reservation": true,
 			"stacks_per_serving": 0
 		},
 		"stonehearth:net_worth": {

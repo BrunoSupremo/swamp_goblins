@@ -105,6 +105,7 @@
 
 		"buffs:body_up":			"file(data/buffs/body_up)",
 		"buffs:chatty":				"file(data/buffs/chatty)",
+		"buffs:combat_basics":		"file(data/buffs/combat_basics)",
 		"buffs:despawn":			"file(data/buffs/despawn)",
 		"buffs:despawn:in_2h":		"file(data/buffs/despawn/despawn_in_2h.json)",
 		"buffs:firefly_confusion":	"file(data/buffs/firefly_confusion)",
@@ -172,6 +173,7 @@
 		"construction:brick_fence":		"file(entities/construction/brick_fence)",
 		"construction:brick_fence_half":"file(entities/construction/brick_fence_half)",
 		"construction:brick_fence_end":	"file(entities/construction/brick_fence_end)",
+		"construction:brick_fence_gate":"file(entities/construction/brick_fence_gate)",
 		"construction:clay_fence":		"file(entities/construction/clay_fence)",
 		"construction:clay_fence_half":	"file(entities/construction/clay_fence_half)",
 		"construction:clay_fence_end":	"file(entities/construction/clay_fence_end)",
@@ -306,6 +308,7 @@
 		"decoration:wall_lamp":				"file(entities/decoration/wall_lamp)",
 		"decoration:wall_fountain:clay":	"file(entities/decoration/clay_wall_fountain)",
 		"decoration:wall_fountain:stone":	"file(entities/decoration/stone_wall_fountain)",
+		"decoration:wall_fountain:wood":	"file(entities/decoration/wood_wall_fountain)",
 		"decoration:wall_mask":				"file(entities/decoration/wall_mask)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
 		"decoration:window_box:clay":			"file(entities/decoration/window_box_clay)",
@@ -927,7 +930,7 @@
 			"stonehearth_ace/swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json"
 		],
 		"swamp_goblins/jobs/worker/goblin_worker_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
-		"swamp_goblins/jobs/warrior/warrior_abilities/warrior_abilities.json":"stonehearth_ace/jobs/footman/footman_abilities/footman_abilities.json",
+		"swamp_goblins/jobs/warrior/warrior_abilities/warrior_abilities.json":"stonehearth_ace/swamp_goblins/jobs/footman/ace_footman_abilities.json",
 
 		"stonehearth/jobs/carpenter/recipes/recipes.json":			"file(jobs/carpenter/recipes)",
 		"stonehearth/jobs/engineer/recipes/recipes.json":			"file(jobs/engineer/recipes)",
@@ -1136,14 +1139,15 @@
 		"stonehearth_ace/swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json":"swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json",
 
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
-		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":		"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
-		"stonehearth_ace/swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json":"swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json",
-		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_shaman_description.json":		"swamp_goblins/jobs/shaman/ace_shaman_description.json",
-		"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json":	"swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json":		"swamp_goblins/jobs/common/ace_abilities.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json":	"swamp_goblins/jobs/common/ace_description.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_manual_unlock.json":	"swamp_goblins/jobs/common/ace_manual_unlock.json",
-		"stonehearth_ace/swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json":	"swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json"
+		"stonehearth_ace/swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json":	"swamp_goblins/jobs/earthmaster/ace_earthmaster_description.json",
+		"stonehearth_ace/swamp_goblins/jobs/footman/ace_footman_abilities.json":	"swamp_goblins/jobs/footman/ace_footman_abilities.json",
+		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json":		"swamp_goblins/jobs/shaman/ace_recipes/ace_recipes.json",
+		"stonehearth_ace/swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json":"swamp_goblins/jobs/shaman/shaman_abilities/ace_abilities.json",
+		"stonehearth_ace/swamp_goblins/jobs/shaman/ace_shaman_description.json":		"swamp_goblins/jobs/shaman/ace_shaman_description.json",
+		"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json":	"swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json"
 	},
 	"controllers": {
 		"class:beast_tamer":	"file(jobs/beast_tamer/beast_tamer.lua)",

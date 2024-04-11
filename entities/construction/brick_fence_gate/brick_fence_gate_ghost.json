@@ -1,0 +1,48 @@
+{
+	"type": "entity",
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"mob": {
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		},
+		"render_info": {
+			"animation_table": "swamp_goblins/data/rigs/entities/construction/retractable_door/retractable_door.json"
+		},
+		"effect_list": {
+			"default": "swamp_goblins/data/rigs/entities/construction/retractable_door/effects/closed.json",
+			"initial_pose_animation": "closed.json"
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(brick_fence_gate.qb)"
+				]
+			}
+		},
+		"stonehearth:fixture": {
+			"valign": "bottom",
+			"cursor": "stonehearth:cursors:create_door",
+			"bounds": {
+				"min": { "x": -1, "y": 0 },
+				"max": { "x": 2, "y": 3 }
+			}
+		},
+		"stonehearth:portal": {
+			"cutter": [
+				{
+					"min": { "x": -1, "y": 0 },
+					"max": { "x": 2, "y": 3 }
+				}
+			]
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.construction.brick_fence_gate.display_name)",
+			"description": "i18n(swamp_goblins:entities.construction.brick_fence_gate.description)",
+			"icon": "file(brick_fence_gate.png)",
+			"category": "door",
+			"material_tags": ["firefly_made", "stone", "defense", "crafted", "portal", "gate", "stockpile_defense"]
+		}
+	}
+}

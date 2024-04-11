@@ -1,0 +1,19 @@
+{
+	"type": "buff",
+	"axis": "buff",
+	"display_name": "i18n(stonehearth:data.buffs.combat_basics.display_name)",
+	"description": "i18n(stonehearth:data.buffs.combat_basics.description)",
+	"icon": "/stonehearth/data/buffs/combat_basics/combat_basics_buff.png",
+	"modifiers": {
+		"courage": {
+			"add": 100
+		},
+		"menace": {
+			"add": 50
+		}, 
+		"stamina": {
+			"add": 50
+		}
+	},
+	"ace_comment":"ace messed with the original, so i recreated it to use instead"
+}

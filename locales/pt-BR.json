@@ -909,6 +909,8 @@
 				"firefly_inn2": "💜 Pousada Vaga-lume (Nível 2)",
 				"snack_bar": "💜 Lanchonete",
 				"snack_bar2": "💜 Lanchonete (Nível 2)",
+				"beast_tamer_den": "💜 Covil do Domador de Feras",
+				"beast_tamer_den2": "💜 Covil do Domador de Feras (Nível 2)",
 				"bonesmith_workshop": "💜 Oficina do Ferreiro de Ossos",
 				"bonesmith_workshop2": "💜 Oficina do Ferreiro de Ossos (Nível 2)",
 				"earthmaster_workshop": "💜 Oficina do Mestre Terra",
@@ -920,7 +922,11 @@
 				"fisher_hut": "💜 Cabana do Pescador",
 				"fisher_hut2": "💜 Cabana do Pescador (Nível 2)",
 				"trapper_hut": "💜 Oficina do Caçador",
-				"trapper_hut2": "💜 Oficina do Caçador (Nível 2)"
+				"trapper_hut2": "💜 Oficina do Caçador (Nível 2)",
+				"warrior_ring": "💜 Arena do Guerreiro",
+				"warrior_ring2": "💜 Arena do Guerreiro (Nível 2)",
+				"walkway_straight": "💜 Passarela (Reta)",
+				"walkway_corner": "💜 Passarela (Canto)"
 			}
 		},
 		"traits": {
@@ -1067,6 +1073,11 @@
 				"display_name": "Cerca de Pedra Alta",
 				"description": "Bloqueia o caminho",
 				"flavor": "Uma peça de cada vez"
+			},
+			"brick_fence_gate": {
+				"display_name": "Portão de Pedra",
+				"description": "Bloqueia o caminho, às vezes",
+				"flavor": "Portão de pedra rudimentar"
 			},
 			"clay_fence": {
 				"display_name": "Cerca de Argila",
@@ -1446,6 +1457,11 @@
 				"display_name": "Mini Fonte",
 				"description": "A água começa no topo e desce passando por todas as peças",
 				"flavor": "4 deles podem ser colocados juntos para criar uma fonte maior"
+			},
+			"wood_wall_fountain": {
+				"display_name": "Fonte de Madeira na Parede",
+				"description": "Mini cachoeira",
+				"flavor": "~ Lave suas mãos"
 			},
 			"stone_wall_fountain": {
 				"display_name": "Fonte de Pedra na Parede",

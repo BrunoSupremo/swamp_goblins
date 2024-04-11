@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 1,
+	"recipe_name": "i18n(swamp_goblins:entities.construction.brick_fence_gate.display_name)",
+	"description": "i18n(swamp_goblins:entities.construction.brick_fence_gate.description)",
+	"flavor": "i18n(swamp_goblins:entities.construction.brick_fence_gate.flavor)",
+	"portrait": "/swamp_goblins/entities/construction/brick_fence_gate/brick_fence_gate.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:construction:brick_fence_gate"
+		}
+	]
+}

@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 23.9.28")
+print("Swamp Goblins Mod version 24.4.11")
 
 --[[
 
@@ -107,11 +107,12 @@ decorations:
 	high/fancy bed
 	bed of hot embers (firewalking)
 		magmasword texture/effects
-	reversed porticulis stone gate (opens going down instead of up)
 	drying rack
 
 templates:
-	combat houses (n.a. inspired roofs?)
+	tier 3 templates
+	stairs
+	tier 2 walkways/bridges
 
 music:
 	bongo, drum, flute, gong, triangulo

@@ -909,6 +909,8 @@
 				"firefly_inn2": "💜 Firefly Inn (Tier 2)",
 				"snack_bar": "💜 Snack Bar",
 				"snack_bar2": "💜 Snack Bar (Tier 2)",
+				"beast_tamer_den": "💜 Beast Tamer Den",
+				"beast_tamer_den2": "💜 Beast Tamer Den (Tier 2)",
 				"bonesmith_workshop": "💜 Bonesmith Workshop",
 				"bonesmith_workshop2": "💜 Bonesmith Workshop (Tier 2)",
 				"earthmaster_workshop": "💜 Earthshaper Workshop",
@@ -920,7 +922,11 @@
 				"fisher_hut": "💜 Fisher Hut",
 				"fisher_hut2": "💜 Fisher Hut (Tier 2)",
 				"trapper_hut": "💜 Trapper Workshop",
-				"trapper_hut2": "💜 Trapper Workshop (Tier 2)"
+				"trapper_hut2": "💜 Trapper Workshop (Tier 2)",
+				"warrior_ring": "💜 Warrior Ring",
+				"warrior_ring2": "💜 Warrior Ring (Tier 2)",
+				"walkway_straight": "💜 Walkway (Straight)",
+				"walkway_corner": "💜 Walkway (Corner)"
 			}
 		},
 		"traits": {
@@ -1067,6 +1073,11 @@
 				"display_name": "Brick Fence End",
 				"description": "Blocks the way",
 				"flavor":"One piece at a time"
+			},
+			"brick_fence_gate": {
+				"display_name": "Brick Fence Gate",
+				"description": "Blocks the way, sometimes",
+				"flavor":"Rudimentary fence gate"
 			},
 			"clay_fence": {
 				"display_name": "Clay Fence",
@@ -1446,6 +1457,11 @@
 				"display_name": "Mini Fountain",
 				"description": "Water starts at the top and flow down going through all pieces",
 				"flavor": "4 of these can be placed together to create a larger fountain"
+			},
+			"wood_wall_fountain": {
+				"display_name": "Wood Wall Fountain",
+				"description": "Mini waterfall",
+				"flavor": "~ Wash your hands"
 			},
 			"stone_wall_fountain": {
 				"display_name": "Stone Wall Fountain",
