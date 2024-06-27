@@ -32,7 +32,7 @@ function FireflyBossDeathScript:start(ctx)
 		radiant.entities.set_attribute(nina, "spirit", 10)
 		local equips = nina:add_component('stonehearth:equipment')
 		equips:equip_item("stonehearth:geomancer:staff")
-		equips:equip_item("/stonehearth/jobs/cleric/cleric_abilities/cleric_abilities.json")
+		radiant.entities.add_buff(nina, "swamp_goblins:buffs:heal_aura")
 		radiant.terrain.place_entity(nina, ctx["firefly_human_encounter"].boss_location)
 		game_master_lib.register_entities(ctx, 'firefly_human_encounter', { boss = nina })
 

@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 24.4.11")
+print("Swamp Goblins Mod version 24.6.27")
 
 --[[
 
@@ -56,6 +56,7 @@ ace stuff:
 	composting
 	fix raw food (meat and eggs) not being edible on ace
 	ace dragon quest texts
+	we need the terrain recipes form ACE on the Shaman @Bruno Or the earthmaster
 
 mobs:
 	slimes:
@@ -65,8 +66,8 @@ mobs:
 			size inflation for attack
 			squish up/down idle
 	black boe:
-		from majoras mask
-		army, small black smoke blobs with glowing eyes,
+		probably for undead campaign
+		small black smoke blobs with glowing eyes
 
 jobs:
 	warrior rework:
@@ -84,7 +85,7 @@ jobs:
 	party goblin:
 		different tattoo color?
 		chatty
-		combat skills:
+		trickster job, combat skills:
 			smoke bomb: aoe, halfs enemy attack (blindness)
 			fireworks: calls enemys attention
 			frog escape: changes into a frog and jump out of battle

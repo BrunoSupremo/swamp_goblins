@@ -48,6 +48,7 @@
 		"task_groups:lay_egg":			"file(ai/task_groups/lay_egg.lua)",
 		"task_groups:music":			"file(ai/task_groups/music.lua)",
 
+		"armor:boots_overrider":"file(entities/armor/boots_overrider)",
 		"armor:fiber_armor":	"file(entities/armor/fiber_armor)",
 		"armor:flower_helmet":	"file(entities/armor/flower_helmet)",
 		"armor:mushroom_shield":"file(entities/armor/mushroom_shield)",
@@ -109,6 +110,7 @@
 		"buffs:despawn":			"file(data/buffs/despawn)",
 		"buffs:despawn:in_2h":		"file(data/buffs/despawn/despawn_in_2h.json)",
 		"buffs:firefly_confusion":	"file(data/buffs/firefly_confusion)",
+		"buffs:heal_aura":			"file(data/buffs/heal_aura)",
 		"buffs:pause_hungry":		"file(data/buffs/pause_hungry)",
 		"buffs:poison":			"file(data/buffs/poison)",
 		"buffs:poison:add":		"file(data/buffs/poison/poison_add.json)",
@@ -310,6 +312,7 @@
 		"decoration:wall_fountain:stone":	"file(entities/decoration/stone_wall_fountain)",
 		"decoration:wall_fountain:wood":	"file(entities/decoration/wood_wall_fountain)",
 		"decoration:wall_mask":				"file(entities/decoration/wall_mask)",
+		"decoration:wall_ring":				"file(entities/decoration/wall_ring)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
 		"decoration:window_box:clay":			"file(entities/decoration/window_box_clay)",
 		"decoration:window_box:wood":			"file(entities/decoration/window_box_wood)",
@@ -555,6 +558,8 @@
 		"plants:clay_mushroom_garden":	"file(entities/plants/clay_mushroom_garden)",
 
 		"portals:clay_door":			"file(entities/construction/clay_door)",
+		"portals:clay_window_frame":		"file(entities/construction/clay_window_frame)",
+		"portals:clay_window_frame_wide":	"file(entities/construction/clay_window_frame_wide)",
 		"portals:stone_door":			"file(entities/construction/stone_door)",
 		"portals:stone_window":			"file(entities/construction/stone_window)",
 		"portals:wooden_door":			"file(entities/construction/wooden_door)",

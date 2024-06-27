@@ -15,6 +15,10 @@ function FireflyGoblin:fixup_post_load(old_save_data)
 	end
 end
 
+function FireflyGoblin:activate()
+	self:_remove_goblin_listeners()
+end
+
 function FireflyGoblin:post_activate()
 	self.trait_replacer_json = radiant.resources.load_json("swamp_goblins:trait_replacer", true, false)
 
@@ -23,7 +27,6 @@ function FireflyGoblin:post_activate()
 		if not radiant.entities.exists(self._entity) then
 			return
 		end
-		self:update_job_list()
 		self:add_goblin_race_abilities()
 		self:add_goblin_jobs_abilities()
 
@@ -32,25 +35,6 @@ function FireflyGoblin:post_activate()
 			self.paused_goblin = nil
 		end
 	end)
-end
-
-function FireflyGoblin:update_job_list()
-	local player_id = radiant.entities.get_player_id(self._entity)
-	local job_index = stonehearth.player:get_jobs(player_id)
-	local job_list = {}
-	for alias,data in pairs(job_index) do
-		if data.firefly_job then
-			job_list[alias] = true
-		end
-	end
-	local job_comp = self._entity:get_component("stonehearth:job")
-	local allowed_jobs = job_comp:get_allowed_jobs()
-	if allowed_jobs then
-		for alias,value in pairs(allowed_jobs) do
-			job_list[alias] = value
-		end
-	end
-	job_comp:set_allowed_jobs(job_list)
 end
 
 function FireflyGoblin:add_goblin_race_abilities()
@@ -96,15 +80,43 @@ function FireflyGoblin:fix_traits()
 end
 
 function FireflyGoblin:add_goblin_jobs_abilities()
-	self:_remove_goblin_listeners()
-
 	local job_comp = self._entity:get_component("stonehearth:job")
 	local job = job_comp:get_job_uri()
 	if job == "stonehearth:jobs:worker" then
 		self:add_goblin_worker_abilities()
 	end
 
+	self._equipment_changed_listener = radiant.events.listen(self._entity, 'stonehearth:equipment_changed', self, self._on_equipment_changed)
+	self:_on_equipment_changed()
 	self.job_has_changed = radiant.events.listen_once(self._entity, 'stonehearth:job_changed', self, self.add_goblin_jobs_abilities)
+end
+
+function FireflyGoblin:_on_equipment_changed()
+	local job_comp = self._entity:get_component("stonehearth:job")
+	local job_uri = job_comp:get_job_uri()
+	local player_id = radiant.entities.get_player_id(self._entity)
+	local job_index = stonehearth.player:get_jobs(player_id)
+	if job_index[job_uri].firefly_job then
+		return
+	end
+
+	if not self._equip_change_state  then
+		self._equip_change_state = "waiting_events_end"
+
+		self._delay_start_timer = radiant.on_game_loop_once('FireflyGoblin _on_equipment_changed', function()
+			self._equip_change_state = "boot_equipped"
+
+			local equipment = "swamp_goblins:armor:boots_overrider"
+			radiant.entities.equip_item(self._entity, equipment)
+		end)
+	end
+	if self._equip_change_state == "boot_equipped" then
+		self._equip_change_state = "waiting_events_end_with_boots"
+
+		self._delay_start_timer = radiant.on_game_loop_once('FireflyGoblin _on_equipment_changed_with_boots', function()
+			self._equip_change_state = nil
+		end)
+	end
 end
 
 function FireflyGoblin:add_goblin_worker_abilities()
@@ -136,6 +148,10 @@ function FireflyGoblin:_remove_goblin_listeners()
 	if self.job_has_changed then
 		self.job_has_changed:destroy()
 		self.job_has_changed = nil
+	end
+	if self._equipment_changed_listener then
+		self._equipment_changed_listener:destroy()
+		self._equipment_changed_listener = nil
 	end
 end
 

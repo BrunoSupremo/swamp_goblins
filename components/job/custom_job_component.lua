@@ -16,31 +16,10 @@ function SwampGoblinsJobComponent:promote_to(job_uri, options)
 			end
 		end
 	end
-	local render_info = self._entity:add_component('render_info')
-	local model = render_info:get_model_variant()
-	if not self:get_allowed_jobs() and not is_npc then
-		local player_id = radiant.entities.get_player_id(self._entity)
-		local job_index = stonehearth.player:get_jobs(player_id)
-		local firefly_job_list = {}
-		local hearthling_job_list = {}
-		for alias,data in pairs(job_index) do
-			if not data.firefly_job then
-				hearthling_job_list[alias] = true
-			else
-				if data.firefly_job == "exclusive" then
-					firefly_job_list[alias] = true
-				else
-					firefly_job_list[alias] = true
-					hearthling_job_list[alias] = true
-				end
-			end
-		end
-		if model == "firefly_goblin" then
-			self:set_allowed_jobs(firefly_job_list)
-		else
-			self:set_allowed_jobs(hearthling_job_list)
-		end
+	if not is_npc then
+		self:update_job_list()
 	end
+	
 	if ACEJobComponent then
 		self:_goblin_ace_promote_to(job_uri, options)
 	else
@@ -48,6 +27,34 @@ function SwampGoblinsJobComponent:promote_to(job_uri, options)
 	end
 
 	self:apply_town_bonus()
+end
+
+function SwampGoblinsJobComponent:update_job_list()
+	local render_info = self._entity:add_component('render_info')
+	local model = render_info:get_model_variant()
+	local player_id = radiant.entities.get_player_id(self._entity)
+	local job_index = stonehearth.player:get_jobs(player_id)
+	local allowed_job_list = {}
+	if model == "firefly_goblin" then
+		for alias,data in pairs(job_index) do
+			if data.firefly_job ~= "disabled" then
+				allowed_job_list[alias] = true
+			end
+		end
+	else
+		for alias,data in pairs(job_index) do
+			if data.firefly_job ~= "exclusive" then
+				allowed_job_list[alias] = true
+			end
+		end
+	end
+	local previous_allowed_jobs = self:get_allowed_jobs()
+	if previous_allowed_jobs then
+		for alias,value in pairs(previous_allowed_jobs) do
+			allowed_job_list[alias] = value
+		end
+	end
+	self:set_allowed_jobs(allowed_job_list)
 end
 
 function SwampGoblinsJobComponent:apply_town_bonus()

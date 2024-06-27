@@ -186,7 +186,7 @@
 		},
 		"fishing":{
 			"egg_basket":{
-				"message":"Podemos colocá-lo em algum lugar seguro e esperar para ver se choca."
+				"message":"Há uma nota nele:<br>Para quem o encontrou, proteja-o.<br><font size=-1><i>Coloque-o em algum lugar seguro</i></font>"
 			}
 		},
 		"gm": {
@@ -895,6 +895,7 @@
 		"saved_objects": {
 			"building_templates": {
 				"wip": "💜 Recompensas Nível 3 ainda não feitas 🚧",
+				"firefly_t3_house1": "💜 Casa Chique 1",
 				"barrack": "💜 Barraca",
 				"firefly_house1": "💜 Casa 1",
 				"firefly_house2": "💜 Casa 2",
@@ -1097,6 +1098,14 @@
 			"clay_water_well": {
 				"display_name": "Poço de Argila",
 				"description": "Um mecanismo engenhoso para recuperar água subterrânea."
+			},
+			"clay_window_frame": {
+				"display_name": "Moldura de Janela de Argila",
+				"description": "Deixe a luz entrar"
+			},
+			"clay_window_frame_wide": {
+				"display_name": "Moldura de Janela Larga de Argila",
+				"description": "Deixe mais luz entrar"
 			},
 			"wooden_water_well": {
 				"display_name": "Poço de Madeira",
@@ -1521,6 +1530,11 @@
 				"display_name": "Máscara de Parede",
 				"description": "Máscara decorativa pendurada na parede",
 				"flavor": "Cada máscara conta uma história diferente"
+			},
+			"wall_ring": {
+				"display_name": "Anel de Parede",
+				"description": "Anel decorativo para pendurar na parede",
+				"flavor": "Pouca luz, alto conforto"
 			},
 			"windchime": {
 				"display_name": "Sino de Vento",

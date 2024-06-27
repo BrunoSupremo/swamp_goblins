@@ -1,0 +1,44 @@
+{
+	"type": "entity",
+	"mixins": "file(wall_ring_ghost.json)",
+	"components": {
+		"render_info": {
+			"color_map": "stonehearth:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/magic_material_map.json"
+			]
+		},
+		"stonehearth:entity_forms": {
+			"iconic_form": "file(wall_ring_iconic.json)",
+			"ghost_form": "file(wall_ring_ghost.json)",
+			"placeable_on_walls": true
+		},
+		"region_collision_shape": {
+			"region": [
+				{
+					"min": { "x": 0, "y": 0, "z": 0 },
+					"max": { "x": 1, "y": 1, "z": 1 }
+				}
+			]
+		},
+		"stonehearth:traveler_attraction": {}
+	},
+	"entity_data": {
+		"stonehearth:net_worth": {
+			"value_in_gold": 23,
+			"rarity": "common",
+			"shop_info": {
+				"buyable": true,
+				"sellable": true,
+				"shopkeeper_level": 2,
+				"shopkeeper_type": "caravan"
+			}
+		},
+		"stonehearth:appeal": {
+			"appeal": 13
+		},
+		"stonehearth:item_quality": {
+			"variable_quality": true
+		}
+	}
+}

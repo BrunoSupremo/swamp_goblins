@@ -186,7 +186,7 @@
 		},
 		"fishing":{
 			"egg_basket":{
-				"message":"We could place it somewhere safe and wait to see if it hatches."
+				"message":"There is a note on it:<br>To whoever found it, please protect it.<br><font size=-1><i>Place it somewhere safe</i></font>"
 			}
 		},
 		"gm":{
@@ -895,6 +895,7 @@
 		"saved_objects": {
 			"building_templates": {
 				"wip": "💜 Tier 3 Rewards not done yet 🚧",
+				"firefly_t3_house1": "💜 WIP Fancy House 1",
 				"barrack": "💜 Shack",
 				"firefly_house1": "💜 House 1",
 				"firefly_house2": "💜 House 2",
@@ -1097,6 +1098,14 @@
 			"clay_water_well": {
 				"display_name": "Clay Water Well",
 				"description": "An ingenious mechanism for retrieving underground water."
+			},
+			"clay_window_frame": {
+				"display_name": "Clay Window Frame",
+				"description": "Let the light come in"
+			},
+			"clay_window_frame_wide": {
+				"display_name": "Wide Clay Window Frame",
+				"description": "Let more light come in"
 			},
 			"wooden_water_well": {
 				"display_name": "Wooden Water Well",
@@ -1521,6 +1530,11 @@
 				"display_name": "Wall Mask",
 				"description": "Wall hanging decorative mask",
 				"flavor": "Each mask tells a different story"
+			},
+			"wall_ring": {
+				"display_name": "Wall Ring",
+				"description": "Wall hanging decorative ring",
+				"flavor": "Low light, high confort"
 			},
 			"windchime": {
 				"display_name": "Windchime",

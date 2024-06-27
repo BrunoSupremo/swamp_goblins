@@ -1,0 +1,18 @@
+{
+	"type": "entity",
+	"components": {
+		"model_variants": {
+			"default": {
+				"layer": "cloak",
+				"transparent": "false",
+				"models": [
+					"file(boots_overrider.qb)"
+				]
+			}
+		},
+		"stonehearth:equipment_piece": {
+			"slot": "legs",
+			"render_type": "merge_with_model"
+		}
+	}
+}

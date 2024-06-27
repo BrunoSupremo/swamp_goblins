@@ -1,0 +1,27 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.wall_ring.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.wall_ring.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.wall_ring.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/wall_ring/wall_ring.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 3,
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"uri": "swamp_goblins:refined:jewel",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:wall_ring"
+		}
+	]
+}

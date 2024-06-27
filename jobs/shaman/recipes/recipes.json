@@ -1,19 +1,10 @@
 {
-	"mixins": "/stonehearth/jobs/cook/recipes/recipes.json",
+	"_about_mixin":"it will grab a few handfull recipe categories from cook and herbalist",
+	"mixins": [
+		"file(import_cook.json)",
+		"file(import_herbalist.json)"
+	],
 	"craftable_recipes": {
-		"mixintypes": {
-			"workbenches": "remove",
-			"ingredients": "remove",
-			"chefs_specials": "remove",
-			"chefs_desserts": "remove",
-			"animal_feed": "remove",
-			"decoration": "remove",
-			"tropical_recipes": "remove",
-			"legendary": "remove",
-			"food_preparation": "remove",
-			"brewing_ingredients": "remove",
-			"drinks": "remove"
-		},
 		"goblin_workbenches": {
 			"ordinal": 1,
 			"name": "i18n(stonehearth:jobs.herbalist.recipes.workbenches_name)",
@@ -145,69 +136,6 @@
 				},
 				"plate_of_mushrooms": {
 					"recipe": "file(food/plate_of_mushrooms_recipe.json)"
-				}
-			}
-		},
-		"goblin_seeds": {
-			"ordinal": 70,
-			"name": "i18n(stonehearth:jobs.herbalist.recipes.refined_name)",
-			"recipes": {
-				"brightbell_herbalist": {
-					"recipe": "file(seeds/brightbell_transmute_recipe.json)"
-				},
-				"frostsnap_herbalist": {
-					"recipe": "file(seeds/frostsnap_transmute_recipe.json)"
-				},
-				"cactus_herbalist": {
-					"recipe": "file(seeds/cactus_transmute_recipe.json)"
-				},
-				"berry_bush_transmute": {
-					"recipe": "file(seeds/berry_bush_transmute_recipe.json)"
-				},
-				"cactus_tulip_blue_transmute": {
-					"recipe": "file(seeds/cactus_tulip_blue_transmute_recipe.json)"
-				},
-				"cactus_tulip_red_transmute": {
-					"recipe": "file(seeds/cactus_tulip_red_transmute_recipe.json)"
-				},
-				"cactus_tulip_yellow_transmute": {
-					"recipe": "file(seeds/cactus_tulip_yellow_transmute_recipe.json)"
-				},
-				"wax_plant_green_transmute": {
-					"recipe": "file(seeds/wax_plant_green_transmute_recipe.json)"
-				},
-				"wax_plant_purple_transmute": {
-					"recipe": "file(seeds/wax_plant_purple_transmute_recipe.json)"
-				},
-				"sunflower_transmute": {
-					"recipe": "file(seeds/sunflower_transmute_recipe.json)"
-				},
-				"foxlily_transmute": {
-					"recipe": "file(seeds/foxlily_transmute_recipe.json)"
-				},
-				"pear_cactus": {
-					"recipe": "file(seeds/pear_cactus_recipe.json)"
-				},
-				"snow_poppy_transmute": {
-					"recipe": "file(seeds/snow_poppy_transmute_recipe.json)"
-				},
-				"wintermoss_transmute": {
-					"recipe": "file(seeds/wintermoss_transmute_recipe.json)"
-				},
-				"tumbleweed_transmute": {
-					"recipe": "file(seeds/tumbleweed_transmute_recipe.json)"
-				},
-				"sweet_potato_transmute": {
-					"recipe": "file(seeds/sweet_potato_transmute_recipe.json)"
-				},
-				"violet_transmute": {
-					"recipe": "file(seeds/violet_transmute_recipe.json)"
-				},
-				"cattail": {
-					"recipe": "file(seeds/cattail_recipe.json)"
-				},
-				"giple": {
-					"recipe": "file(seeds/giple_recipe.json)"
 				}
 			}
 		},

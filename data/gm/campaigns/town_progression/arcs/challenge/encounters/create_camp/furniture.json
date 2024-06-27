@@ -1,6 +1,16 @@
 {
 	"type": "camp_piece",
 	"entities": {
+		"plushie": {
+			"uri": "stonehearth:toys:plushie_toy_rabbit",
+			"force_iconic": true,
+			"rotation": 270,
+			"location": {
+				"x": -5,
+				"y": 0,
+				"z": 4
+			}
+		},
 		"portculis": {
 			"uri": "stonehearth:portals:bronze_portcullis",
 			"force_iconic": false,

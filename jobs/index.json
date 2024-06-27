@@ -1,14 +1,66 @@
 {
+	"how_to_1":"firefly_job field can be 'disabled', 'exclusive' or 'shared'",
+	"how_to_2":"disabled will hide it for goblins, and shown to others",
+	"how_to_3":"exclusive will only show it for goblins, and hidden for others",
+	"how_to_4":"if shared, it will be availble to any and all",
 	"jobs": {
-		"stonehearth:jobs:worker": {
-			"firefly_job":"shared"
+		"stonehearth:jobs:archer": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:blacksmith": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:engineer": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:carpenter": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:cleric": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:cook": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:magmasmith": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:farmer": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:footman": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:geomancer": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:herbalist": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:knight": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:mason": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:potter": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:shepherd": {
+			"firefly_job": "disabled"
 		},
 		"stonehearth:jobs:trapper": {
-			"firefly_job":"shared"
+			"firefly_job": "shared"
+		},
+		"stonehearth:jobs:weaver": {
+			"firefly_job": "disabled"
+		},
+		"stonehearth:jobs:worker": {
+			"firefly_job": "shared"
 		},
 		"swamp_goblins:jobs:beast_tamer": {
 			"description": "swamp_goblins:jobs:beast_tamer",
-			"firefly_job":"shared"
+			"firefly_job": "shared"
 		},
 		"swamp_goblins:jobs:bonesmith": {
 			"description": "swamp_goblins:jobs:bonesmith",
@@ -31,7 +83,8 @@
 			"firefly_job":"exclusive"
 		},
 		"swamp_goblins:jobs:npc:baby": {
-			"description": "swamp_goblins:jobs:npc:baby"
+			"description": "swamp_goblins:jobs:npc:baby",
+			"firefly_job":"exclusive"
 		}
 	}
 }
