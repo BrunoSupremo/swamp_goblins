@@ -1,4 +1,5 @@
 local AppearancePotionController = class()
+local rng = _radiant.math.get_default_rng()
 
 function AppearancePotionController:initialize()
 end
@@ -28,8 +29,14 @@ end
 function AppearancePotionController:_on_try_dispatch(session, request, citizens)
 	for _, entity in pairs(citizens) do
 		local cc = entity:get_component('stonehearth:customization')
-		cc:_remove_all_styles()
-		cc:generate_custom_appearance()
+		cc:regenerate_appearance()
+
+		local trait_comp = entity:get_component("stonehearth:traits")
+		trait_comp:remove_trait("swamp_goblins:traits:deviant_pigment")
+		if rng:get_int(1,2) == 1 then
+			trait_comp:add_trait("swamp_goblins:traits:deviant_pigment")
+		end
+
 		radiant.effects.run_effect(entity, "stonehearth:effects:spawn_entity")
 	end
 
