@@ -157,6 +157,11 @@
 					"disabled_description":"O cooldown dura 12 horas, pode ser chamado novamente mais tarde"
 				}
 			},
+			"spirit_fountain": {
+				"display_name": "Fonte Espiritual",
+				"description": "Uma fonte mística cheia de águas etéreas, acalmando e inspirando todos que a contemplam.",
+				"flavor": "Dizem que as águas da Fonte Espiritual têm o poder de acalmar almas e despertar a criatividade."
+			},
 			"travel": {
 				"display_name": "Viajar",
 				"description": "Escolha quais goblins irão reembarcar"
@@ -1243,6 +1248,11 @@
 				"description": "Armazena até 96 itens",
 				"flavor": "Pico da organização bem aqui, basta jogar tudo dentro e se preocupar com isso mais tarde."
 			},
+			"pet_food_bowl": {
+				"display_name": "Tigela de ração Firefly",
+				"description": "Goblins podem colocar ração nesta tigela para seus animais de estimação comerem.",
+				"flavor": "Espero que eles não façam muita bagunça..."
+			},
 			"small_bag": {
 				"display_name": "Saco Pequeno",
 				"description": "Armazena até 8 itens",
@@ -1595,6 +1605,11 @@
 			}
 		},
 		"food": {
+			"baby_food": {
+				"display_name": "Comida Mística para Bebês",
+				"description": "Uma mistura especial criada para os goblins mais jovens, garantindo que eles cresçam fortes e saudáveis.",
+				"flavor": "Suave e fácil de digerir, apreciada pelos goblins bebês."
+			},
 			"fake_vegetables": {
 				"display_name": "Substituto de Vegetais",
 				"description": "Os goblins não gostam muito de vegetais, então os xamãs tiveram que ser criativos para manter uma dieta saudável.",

@@ -1,0 +1,33 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(pet_food_bowl.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.containers.pet_food_bowl.display_name)",
+			"description": "i18n(swamp_goblins:entities.containers.pet_food_bowl.description)",
+			"icon": "file(pet_food_bowl.png)",
+			"category": "storage",
+			"material_tags": [
+				"firefly_made",
+				"wood",
+				"containers",
+				"crafted",
+				"pet_food_bowl",
+				"furniture",
+				"stockpile_furniture"
+			]
+		}
+	}
+}

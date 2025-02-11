@@ -1,0 +1,21 @@
+{
+	"type": "recipe",
+	"effort": 11,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.containers.pet_food_bowl.display_name)",
+	"description": "i18n(swamp_goblins:entities.containers.pet_food_bowl.description)",
+	"flavor": "i18n(swamp_goblins:entities.containers.pet_food_bowl.flavor)",
+	"portrait": "/swamp_goblins/entities/containers/pet_food_bowl/pet_food_bowl.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:containers:pet_food_bowl"
+		}
+	]
+}

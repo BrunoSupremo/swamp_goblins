@@ -189,6 +189,16 @@ function LayEgg_spot:_spawn()
 		return
 	end
 
+	local game_mode_buff = nil
+	local monster_tuning_overrides = stonehearth.game_creation:get_game_mode_json().monster_tuning_overrides
+	if monster_tuning_overrides and monster_tuning_overrides.default.add_buffs then
+		for _, buff_uri in pairs(monster_tuning_overrides.default.add_buffs) do
+			if buff_uri and buff_uri ~= "" then
+				game_mode_buff = buff_uri
+			end
+		end
+	end
+
 	local enemy
 	local territory = self.player_id and stonehearth.terrain:get_territory(self.player_id) or stonehearth.terrain:get_total_territory()
 	local territory_region = territory:get_region()
@@ -216,6 +226,9 @@ function LayEgg_spot:_spawn()
 			radiant.terrain.place_entity_at_exact_location(enemy, location)
 
 			radiant.entities.add_buff(enemy, 'stonehearth:buffs:despawn:after_day')
+			if game_mode_buff then
+				radiant.entities.add_buff(enemy, game_mode_buff)
+			end
 
 			enemy:get_component('stonehearth:ai')
 			:get_task_group('stonehearth:task_groups:solo:combat_unit_control')

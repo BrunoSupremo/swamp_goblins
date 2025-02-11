@@ -1,0 +1,30 @@
+{
+	"type": "index",
+	"stockpile": {
+		"food_and_drink": {
+			"display_name": "i18n(stonehearth:ui.game.zones_mode.stockpile.filters.food_and_drink)",
+			"filter": "food_and_drink",
+			"ordinal": 4,
+			"categories": {
+				"raw_food": {
+					"ordinal": 1,
+					"display_name": "i18n(stonehearth:ui.game.zones_mode.stockpile.filters.tooltip_raw_food)",
+					"icon": "/stonehearth/ui/game/modes/zones_mode/stockpile/images/taxonomy/fruit.png",
+					"filter": "stockpile_raw_food"
+				},
+				"prepared_food": {
+					"ordinal": 2,
+					"display_name": "i18n(stonehearth:ui.game.zones_mode.stockpile.filters.tooltip_prepared_food)",
+					"icon": "/stonehearth/ui/game/modes/zones_mode/stockpile/images/taxonomy/baked.png",
+					"filter": "stockpile_prepared_food"
+				},
+				"cooking_ingredient": {
+					"ordinal": 3,
+					"display_name": "i18n(stonehearth:ui.game.zones_mode.stockpile.filters.tooltip_cooking_ingredients)",
+					"icon": "/stonehearth/ui/game/modes/zones_mode/stockpile/images/taxonomy/meat.png",
+					"filter": "stockpile_cooking_ingredient"
+				}
+			}
+		}
+	}
+}

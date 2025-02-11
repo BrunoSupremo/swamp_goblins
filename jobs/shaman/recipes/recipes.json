@@ -131,6 +131,9 @@
 		"food": {
 			"ordinal": 40,
 			"recipes": {
+				"baby_food": {
+					"recipe": "file(food/baby_food_recipe.json)"
+				},
 				"fake_vegetables": {
 					"recipe": "file(food/fake_vegetables_recipe.json)"
 				},
@@ -160,6 +163,9 @@
 				},
 				"mushroom_garden": {
 					"recipe": "file(decorations/mushroom_garden_recipe.json)"
+				},
+				"pet_food_bowl": {
+					"recipe": "file(decorations/pet_food_bowl_recipe.json)"
 				}
 			}
 		}

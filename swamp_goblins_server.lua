@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 24.9.13")
+print("Swamp Goblins Mod version 25.2.10")
 
 --[[
 
@@ -54,7 +54,6 @@ ace stuff:
 	fuel system (Wait gobbos can't chop wood?)
 	wounds and tonics
 	composting
-	fix raw food (meat and eggs) not being edible on ace
 	ace dragon quest texts
 	we need the terrain recipes form ACE on the Shaman @Bruno Or the earthmaster
 

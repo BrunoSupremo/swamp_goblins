@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 27,
+	"work_units": 2,
+	"recipe_name": "i18n(swamp_goblins:entities.food.baby_food.display_name)",
+	"description": "i18n(swamp_goblins:entities.food.baby_food.description)",
+	"flavor": "i18n(swamp_goblins:entities.food.baby_food.flavor)",
+	"portrait": "/swamp_goblins/entities/food/baby_food/baby_food.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": -0.1,
+	"ingredients": [
+		{
+			"material": "food_container raw_food vegetable",
+			"count": 1
+		},
+		{
+			"material": "food bug_meat raw",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:food:baby_food"
+		}
+	]
+}

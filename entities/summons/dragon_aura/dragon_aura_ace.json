@@ -1,0 +1,169 @@
+{
+	"type" : "entity",
+	"mixins": "stonehearth:pets:dragon_whelp_fire",
+	"mixintypes": {
+		"player_id": "remove"
+	},
+	"components": {
+		"mixintypes": {
+			"stonehearth:pet": "remove",
+			"model_variants": "override"
+		},
+		"effect_list": {
+			"effects": [
+				"swamp_goblins:effects:spirit:summon"
+			]
+		},
+		"model_variants": {
+			"default": {
+				"models": [
+					"stonehearth_ace/entities/pets/dragon_whelp_fire/dragon_fire.qb"
+				]
+			}
+		},
+		"render_info":{
+			"scale":0.29,
+			"animation_table": "/stonehearth_ace/data/rigs/entities/monster/dragon",
+			"material": "/swamp_goblins/data/horde/materials/ghostly.json"
+		},
+		"stonehearth:equipment": {
+			"items": [
+				"file(weapon_ace.json)"
+			]
+		},
+		"sensor_list": {
+			"sensors": {
+				"sight": {
+					"radius": 64
+				}
+			}
+		},
+		"stonehearth:combat_state": {
+			"stance": "aggressive"
+		},
+		"stonehearth:attributes": {
+			"max_health": {
+				"type": "basic",
+				"value": 2500
+			},
+			"speed": {
+				"type": "basic",
+				"value": 140
+			},
+			"muscle": {
+				"type": "basic",
+				"value": 150
+			},
+			"menace": {
+				"type": "basic",
+				"value": 200
+			},
+			"courage": {
+				"type": "basic",
+				"value": 999
+			},
+			"exp_reward": {
+				"type": "basic",
+				"value": 250
+			},
+			"additive_dmg_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"multiplicative_dmg_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_armor_modifier": {
+				"type": "basic",
+				"value": 10
+			},
+			"multiplicative_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"multiplicative_target_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_target_armor_modifier": {
+				"type": "basic",
+				"value": 1
+			},
+			"additive_weapon_range_modifier": {
+				"type": "basic",
+				"value": 1
+			}
+		},
+		"stonehearth:expendable_resources": {
+			"resources": {
+				"social_satisfaction": {
+					"min": {
+						"value": 0
+					},
+					"max": {
+						"value": 72
+					}
+				}
+			}
+		},
+		"stonehearth:posture": {
+			"priorities": {
+				"stonehearth:climb_ladder_up": 1100,
+				"stonehearth:climb_ladder_down": 1100,
+				"stonehearth:sitting_on_chair": 1000,
+				"stonehearth:sitting": 900,
+				"stonehearth:carrying": 800,
+				"stonehearth:panic": 100,
+				"stonehearth:combat": 50,
+				"stonehearth:swimming": 40,
+				"stonehearth:patrol": 30,
+				"stonehearth:injured": 20,
+				"stonehearth:have_shield": 10
+			}
+		},
+		"stonehearth:social": {},
+		"stonehearth:conversation": {},
+		"stonehearth:subject_matter": {}
+	},
+	"entity_data": {
+		"stonehearth:buffs": {
+			"only_affected_by":{
+				"swamp_goblins:buffs:despawn:in_2h":true,
+				"swamp_goblins:buffs:despawn":true
+			}
+		},
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.summons.dragon_aura.display_name)",
+			"description": "i18n(swamp_goblins:entities.summons.dragon_aura.description)",
+			"category": "beast_tamer_summon"
+		},
+		"mixintypes": {
+			"stonehearth:observers:avoid_threatening_entities": "remove"
+		},
+		"stonehearth:healable": {
+			"healable_by_anyone": false,
+			"target_type": "beast_tamer_summon"
+		},
+		"stonehearth:entity_radius": 2.5,
+		"stonehearth:entity_reach": 1.0,
+		"stonehearth:ai_packs": {
+			"mixintypes": {
+				"packs": "override"
+			},
+			"packs": [
+				"stonehearth:ai_pack:critter",
+				"stonehearth:ai_pack:death",
+				"stonehearth:ai_pack:patrolling",
+				"stonehearth:ai_pack:combat_control",
+				"stonehearth:ai_pack:human",
+				"stonehearth:ai_pack:combat",
+				"stonehearth:ai_pack:conversation",
+				"stonehearth:ai_pack:idle",
+				"stonehearth:ai_pack:idle:bored:idle_effects",
+				"stonehearth:ai_pack:idle:bored:wander"
+			]
+		},
+		"stonehearth:panic_threshold": 0.1
+	}
+}

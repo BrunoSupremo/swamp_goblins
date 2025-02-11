@@ -17,6 +17,7 @@ end
 
 function FireflyGoblin:activate()
 	self:_remove_goblin_listeners()
+	self._entity:get_component('stonehearth:ai'):remove_action("stonehearth:actions:eat")
 end
 
 function FireflyGoblin:post_activate()
@@ -96,7 +97,7 @@ function FireflyGoblin:_on_equipment_changed()
 	local job_uri = job_comp:get_job_uri()
 	local player_id = radiant.entities.get_player_id(self._entity)
 	local job_index = stonehearth.player:get_jobs(player_id)
-	if job_index[job_uri].firefly_job then
+	if (not job_index[job_uri]) or job_index[job_uri].firefly_job then
 		return
 	end
 

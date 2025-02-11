@@ -1,0 +1,18 @@
+{
+	"type": "effect",
+	"tracks": {
+		"ghost_aura": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/spirit/summon.json",
+			"start_time": 0,
+			"loop": true,
+			"transforms": { "x": 0, "y": 0, "z": 0, "rx": 90, "ry": 0, "rz": 0 }
+		},
+		"light_main": {
+			"type": "light",
+			"light": "/swamp_goblins/data/horde/animatedlights/spirit/spirit.json",
+			"transforms": { "x": 0, "y": 0.5, "z": 0 },
+			"shadows": false
+		}
+	}
+}

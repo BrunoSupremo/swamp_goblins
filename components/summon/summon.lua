@@ -4,6 +4,11 @@ function SummonComponent:post_activate()
 	radiant.entities.add_buff(self._entity, "swamp_goblins:buffs:despawn:in_2h")
 
 	self._combat_battery_listener = radiant.events.listen(self._entity, 'stonehearth:combat:in_combat_changed', self, self._in_combat_changed)
+
+	local custom_comp = self._entity:get_component('stonehearth:customization')
+	if custom_comp then
+		custom_comp:generate_custom_appearance()
+	end
 end
 
 function SummonComponent:_in_combat_changed(context)
@@ -15,12 +20,10 @@ function SummonComponent:_in_combat_changed(context)
 			self._conversation_timer:destroy()
 			self._conversation_timer = nil
 		end
-		self._entity:get_component('stonehearth:expendable_resources'):
-		set_value('social_satisfaction', 99)
+		radiant.entities.set_resource(self._entity, 'social_satisfaction', 99)
 	else
 		local delayed_function = function ()
-			self._entity:get_component('stonehearth:expendable_resources'):
-			set_value('social_satisfaction', 0)
+			radiant.entities.set_resource(self._entity, 'social_satisfaction', 0)
 		end
 		self._conversation_timer = stonehearth.calendar:set_timer("SummonComponent delay adding conversation_component", "1m+4m", delayed_function)
 	end

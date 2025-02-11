@@ -4,6 +4,15 @@
 	"rarity": "common",
 	"in_edge": "footman_death_dialog",
 	"unique": true,
+	"can_start": {
+		"test_1": {
+			"hostile_check": {
+				"item": "hostility",
+				"type": "deny_if",
+				"value": false
+			}
+		}
+	},
 	"dialog_tree_info": {
 		"start_node": "msg1",
 		"source_entity" : "firefly_human_encounter.boss",

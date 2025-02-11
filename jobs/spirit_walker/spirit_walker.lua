@@ -9,10 +9,12 @@ local conversation_subjects = {
 	"stonehearth:subjects:cult",
 	"stonehearth:subjects:darkness",
 	"stonehearth:subjects:death",
-	"stonehearth:cleric:talisman",
-	"stonehearth:loot:dusty_tome",
 	"stonehearth:npc:herald:untz",
 	"stonehearth:monsters:forest:alligator",
+	"swamp_goblins:goblinpedia",
+	"swamp_goblins:critters:frog",
+	"swamp_goblins:music:subject",
+	"swamp_goblins:goblins:egg",
 	"swamp_goblins:beast_tamer:talisman",
 	"swamp_goblins:bonesmith:talisman",
 	"swamp_goblins:earthmaster:talisman",
@@ -82,7 +84,12 @@ function SpiritWalkerClass:ball_attack(spirit_ball, enemies)
 	end
 	local target = still_existing_enemies[rng:get_int(1,#still_existing_enemies)]
 	if not target or not target:is_valid() then
-		radiant.entities.destroy_entity(spirit_ball)
+		local effect = radiant.effects.run_effect(spirit_ball, "swamp_goblins:effects:spirit:poof")
+		effect:set_finished_cb(function()
+			radiant.entities.destroy_entity(spirit_ball)
+			effect:set_finished_cb(nil)
+			effect = nil
+		end)
 		return
 	end
 

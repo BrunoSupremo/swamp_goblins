@@ -2,15 +2,21 @@
 	"type" : "entity",
 	"mixins": "swamp_goblins:summons:goblin_spirit",
 	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"/swamp_goblins/entities/armor/clan_armor/clan_armor.qb"
+				]
+			}
+		},
 		"stonehearth:equipment": {
 			"items": [
 				"stonehearth:abilities:ogre_attack_abilities",
-				"file(weapon.json)",
-				"file(effect.json)"
+				"file(weapon.json)"
 			]
 		},
 		"render_info" : {
-			"scale":0.18,
+			"scale":0.15,
 		},
 		"stonehearth:attributes": {
 			"additive_dmg_modifier": {
@@ -36,6 +42,9 @@
 		}
 	},
 	"entity_data": {
+		"mixintypes": {
+			"stonehearth:customization_variants" : "remove"
+		},
 		"stonehearth:entity_radius": 1,
 		"stonehearth:entity_reach": 2,
 		"stonehearth:catalog": {

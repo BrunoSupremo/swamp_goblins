@@ -14,6 +14,8 @@
 	"client_init_script" : "file(swamp_goblins_client)",
 	"server_init_script" : "file(swamp_goblins_server)",
 	"aliases":{
+		"actions:baby_eat_on_ground":	"file(ai/actions/eat/baby_eat_on_ground.lua)",
+		"actions:eat":					"file(ai/actions/eat/eat_action.lua)",
 		"actions:get_food_from_storage":"file(ai/actions/eat/get_food_from_storage.lua)",
 		"actions:get_food_on_ground":	"file(ai/actions/eat/get_food_on_ground_action.lua)",
 		"actions:memorialize_death":	"file(ai/actions/memorialize_death_action.lua)",
@@ -216,6 +218,7 @@
 		"containers:input_shelf:wall:wood":		"file(entities/containers/input_shelf_wall_wood)",
 		"containers:market_shelf:clay":			"file(entities/containers/market_shelf_clay)",
 		"containers:output_box:wood":			"file(entities/containers/output_box_wood)",
+		"containers:pet_food_bowl":				"file(entities/containers/pet_food_bowl)",
 		"containers:small_bag":					"file(entities/containers/small_bag)",
 		"containers:stone_chest":				"file(entities/containers/stone_chest)",
 		"containers:small_urn":					"file(entities/containers/small_urn)",
@@ -262,6 +265,7 @@
 		"decoration:lamppost":				"file(entities/decoration/lamppost)",
 		"decoration:large_candle":			"file(entities/decoration/large_candle)",
 		"decoration:mini_fountain":			"file(entities/decoration/mini_fountain)",
+		"decoration:spirit_fountain":		"file(entities/decoration/spirit_fountain)",
 		"decoration:mushroom_target":		"file(entities/decoration/mushroom_target)",
 		"decoration:small_candle":			"file(entities/decoration/small_candle)",
 		"decoration:wall_candle":			"file(entities/decoration/wall_candle)",
@@ -353,14 +357,13 @@
 		"effects:spirit:armor":			"file(data/effects/spirit/armor.json)",
 		"effects:spirit:ball":			"file(data/effects/spirit/ball.json)",
 		"effects:spirit:poof":			"file(data/effects/spirit/poof.json)",
-		"effects:spirit:big_g":			"file(data/effects/spirit/big_g.json)",
-		"effects:spirit:dragon_aura":	"file(data/effects/spirit/dragon_aura.json)",
-		"effects:spirit:goblin_spirit":	"file(data/effects/spirit/goblin_spirit.json)",
+		"effects:spirit:summon":		"file(data/effects/spirit/summon.json)",
 		"effects:poison_spiral":"file(data/effects/poison_spiral)",
 		"effects:hearth":"file(data/effects/hearth)",
 		"effects:hearth_human":"file(data/effects/hearth/hearth_human.json)",
-		"effects:water:mini_fountain":"file(data/effects/water/mini_fountain.json)",
-		"effects:water:wall_fountain":"file(data/effects/water/wall_fountain.json)",
+		"effects:water:mini_fountain":	"file(data/effects/water/mini_fountain.json)",
+		"effects:water:spirit_fountain":"file(data/effects/water/spirit_fountain.json)",
+		"effects:water:wall_fountain":	"file(data/effects/water/wall_fountain.json)",
 		"effects:weather_stone:charging":	"file(data/effects/weather_stone/charging.json)",
 		"effects:weather_stone:waiting":	"file(data/effects/weather_stone/waiting.json)",
 
@@ -374,6 +377,8 @@
 		"earthmaster:upgraded_outfit":"file(jobs/earthmaster/upgraded_outfit)",
 
 		"food:edible_for_goblins":	"file(entities/food/edible_for_goblins.json)",
+		"food:baby_food":			"file(entities/food/baby_food)",
+		"food:baby_food_serving":	"file(entities/food/baby_food/serving.json)",
 		"food:fake_vegetables":			"file(entities/food/fake_vegetables)",
 		"food:fake_vegetables_serving":	"file(entities/food/fake_vegetables_serving)",
 		"food:frog_jerky":			"file(entities/food/frog_jerky)",
@@ -510,6 +515,7 @@
 		"music:audience":	"file(entities/music/audience)",
 		"music:bongo":		"file(entities/music/bongo)",
 		"music:xylophone":	"file(entities/music/xylophone)",
+		"music:subject":	"file(entities/music/music_subject.json)",
 
 		"music:tier_1:day:allada":		"file(data/music/day_music/allada.ogg)",
 		"music:tier_1:day:night-cave":	"file(data/music/day_music/night-cave.ogg)",
@@ -652,6 +658,7 @@
 		"summons:squirrel":		"file(entities/summons/critters/squirrel.json)",
 		"summons:varanus":		"file(entities/summons/varanus)",
 		"summons:dragon_aura":	"file(entities/summons/dragon_aura)",
+		"summons:dragon_aura_ace":	"file(entities/summons/dragon_aura/dragon_aura_ace.json)",
 		"summons:big_wolf":		"file(entities/summons/big_wolf)",
 		"summons:trap":			"file(entities/summons/trap)",
 
@@ -701,6 +708,8 @@
 		"trees:swirl:small":	"file(entities/trees/swirl)",
 		"trees:swirl:medium":	"file(entities/trees/swirl/swirl_medium.json)",
 		"trees:swirl:large":	"file(entities/trees/swirl/swirl_large.json)",
+
+		"ui:stockpile:food_filters":	"file(ui/data/stockpile_food_filters.json)",
 
 		"warrior:talisman": "file(jobs/warrior/warrior_horn/warrior_horn_talisman.json)",
 		"warrior:abilities:multiple_targets":	"file(jobs/warrior/warrior_abilities/multiple_targets.json)",
@@ -928,6 +937,8 @@
 		"nordlingmod:jobs:ruler_firefly": "file(jobs/ruler/ruler_description_firefly.json)",
 		"swamp_goblins:jobs:npc:firefly_golem": "stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 
+		"swamp_goblins:beast_tamer:summons":"stonehearth_ace/swamp_goblins/jobs/beast_tamer/summons_ace.json",
+
 		"swamp_goblins/jobs/bonesmith/bonesmith_abilities/bonesmith_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/earthmaster/earthmaster_abilities/earthmaster_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
 		"swamp_goblins/jobs/scavenger/scavenger_abilities/scavenger_abilities.json":	"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json",
@@ -1022,6 +1033,11 @@
 		"swamp_goblins/entities/decoration/goblin_market_stall/goblin_market_stall_ghost.json":	"stonehearth_ace/swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall_ghost.json",
 
 		"swamp_goblins/entities/containers/embark_wagon/embark_wagon_ghost.json":"stonehearth_ace/swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json",
+		"swamp_goblins/entities/containers/pet_food_bowl/pet_food_bowl_ghost.json":"stonehearth_ace/swamp_goblins/entities/containers/pet_food_bowl/with_ace.json",
+		"swamp_goblins:containers:input_bin:clay":			"stonehearth_ace/swamp_goblins/entities/containers/ace_input.json",
+		"swamp_goblins:containers:input_bin:wood":			"stonehearth_ace/swamp_goblins/entities/containers/ace_input.json",
+		"swamp_goblins:containers:input_shelf:ground:wood":	"stonehearth_ace/swamp_goblins/entities/containers/ace_input.json",
+		"swamp_goblins:containers:input_shelf:wall:wood":	"stonehearth_ace/swamp_goblins/entities/containers/ace_input.json",
 
 		"swamp_goblins:armor:fiber_armor":		"stonehearth_ace:mixins:armor:light_armor_torso",
 		"swamp_goblins:armor:flower_helmet":	"stonehearth_ace:mixins:armor:light_armor_helmet",
@@ -1143,7 +1159,10 @@
 		"stonehearth_ace/swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall_ghost.json":"swamp_goblins/entities/decoration/goblin_market_stall/ace_market_stall_ghost.json",
 
 		"stonehearth_ace/swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json":"swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json",
+		"stonehearth_ace/swamp_goblins/entities/containers/pet_food_bowl/with_ace.json":"swamp_goblins/entities/containers/pet_food_bowl/with_ace.json",
+		"stonehearth_ace/swamp_goblins/entities/containers/ace_input.json":"swamp_goblins/entities/containers/ace_input.json",
 
+		"stonehearth_ace/swamp_goblins/jobs/beast_tamer/summons_ace.json":"swamp_goblins/jobs/beast_tamer/summons_ace.json",
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_abilities.json":		"swamp_goblins/jobs/common/ace_abilities.json",
 		"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json":	"swamp_goblins/jobs/common/ace_description.json",
