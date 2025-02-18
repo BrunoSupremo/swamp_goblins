@@ -2,9 +2,6 @@
 	"mixins": "stonehearth:mixins:resources:jerky",
 	"type": "entity",
 	"entity_data": {
-		"mixintypes": {
-			"stonehearth:food": "remove"
-		},
 		"stonehearth:food_container": {
 			"effect": "carry_pickup",
 			"stacks_per_serving": 3,

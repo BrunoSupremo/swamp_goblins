@@ -74,16 +74,9 @@ function BeastTamerClass:summon_firefly(delay, target)
 	local location = radiant.entities.get_world_grid_location(target)
 	if not location then return end
 
-	local cube = Cube3(location):inflated(Point3(11, 6, 11))
-	local all_entities = radiant.terrain.get_entities_in_cube(cube)
-	local enemies = self:get_menacing_enemy_list_ascending(all_entities)
-	local limit = radiant.entities.get_attribute(self._sv._entity, "mind") *2
+	local enemies = self:get_closeby_enemies(location)
 	for _, entity in pairs(enemies) do
 		radiant.entities.add_buff(entity, "swamp_goblins:buffs:firefly_confusion")
-		limit = limit -1
-		if limit <1 then
-			break
-		end
 	end
 end
 
@@ -92,27 +85,34 @@ function BeastTamerClass:summon_varanus(delay)
 	self:summon_animals(delay, uris, amount)
 end
 
-function BeastTamerClass:get_menacing_enemy_list_ascending(all_entities)
-	--return a list of enemies in order of low to high menace
+function BeastTamerClass:get_closeby_enemies(location)
+	--return a list of enemies, limited by beast_t mind
+	local cube = Cube3(location):inflated(Point3(11, 6, 11))
+	local all_entities = radiant.terrain.get_entities_in_cube(cube)
 	local enemies = {}
 	local not_menacing = {}
+	local limit = radiant.entities.get_attribute(self._sv._entity, "mind")
 	for _, enemy in pairs(all_entities) do
 		local is_hostile = stonehearth.player:are_entities_hostile(enemy, self._sv._entity)
 		if is_hostile and radiant.entities.has_free_will(enemy) then
 			if radiant.entities.get_attribute(enemy, "menace")>1 then
 				table.insert(enemies, enemy)
+				limit = limit -1
+				if limit <1 then
+					break
+				end
 			else
+				-- avoid targeting enemies that are already "paralized" somehow
+				-- keep them in this backup list instead
 				table.insert(not_menacing, enemy)
 			end
 		end
 	end
-	table.sort(enemies, function(a, b)
-		return radiant.entities.get_attribute(a, "menace") < radiant.entities.get_attribute(b, "menace")
-	end)
 	if #enemies < 1 then
-		--no menacing enemies? ok, grab the rest
-		enemies = not_menacing
+		--no menacing enemies? ok, then grab the backup
+		return not_menacing
 	end
+
 	return enemies
 end
 
@@ -121,16 +121,17 @@ function BeastTamerClass:summon_traps(delay, target)
 	local location = radiant.entities.get_world_grid_location(target)
 	if not location then return end
 
-	local cube = Cube3(location):inflated(Point3(11, 6, 11))
-	local all_entities = radiant.terrain.get_entities_in_cube(cube)
-	local enemies = self:get_menacing_enemy_list_ascending(all_entities)
-	local limit = radiant.entities.get_attribute(self._sv._entity, "mind")
-	for _, entity in ipairs(enemies) do
+	local enemies = self:get_closeby_enemies(location)
+	for i, entity in ipairs(enemies) do
 		radiant.entities.add_buff(entity, "swamp_goblins:buffs:trapped")
-		limit = limit -1
-		if limit <1 then
-			break
-		end
+		local hp_timer = radiant.entities.get_attribute(entity, "max_health")
+		hp_timer = math.ceil( math.max(50 - math.sqrt(hp_timer)/2, 5) ) .. "m+5m"
+		-- some example ranges:
+		-- 100hp = 45m, 200hp = 42m, 500hp = 38m
+		-- 1000hp = 34m, 2000hp = 27m, 5000hp = 15m
+		stonehearth.calendar:set_timer("summon trap on enemy "..i, hp_timer, function()
+			radiant.entities.remove_buff(entity, "swamp_goblins:buffs:trapped")
+		end)
 	end
 end
 

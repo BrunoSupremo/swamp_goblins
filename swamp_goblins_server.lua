@@ -1,7 +1,9 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 25.2.10")
+print("Swamp Goblins Mod version 25.2.18")
 
 --[[
+
+add "cyan stripes" patterns to wall decorations like rayya wall tiles
 
 elderstone reference
 
