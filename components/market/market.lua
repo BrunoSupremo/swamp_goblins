@@ -40,6 +40,7 @@ function GoblinMarketComponent:create_shop()
 	local bulletin = stonehearth.bulletin_board:post_bulletin(player_id)
 	:set_ui_view('StonehearthShopBulletinDialog')
 	:set_callback_instance(self)
+	:set_type('shop')
 	:set_sticky(true)
 	:set_data({
 		shop = shop,

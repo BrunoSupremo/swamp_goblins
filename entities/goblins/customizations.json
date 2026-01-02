@@ -5,6 +5,7 @@
 		"face_hair": ["accessories"],
 		"skin_color": ["skin_color"],
 		"hair_color": ["hair_color"],
+		"eye_color": ["eye_color"],
 		"tattoos": ["tattoos"]
 	},
 	"styles": {
@@ -45,6 +46,15 @@
 				},
 				"greyer": {
 					"file": "/swamp_goblins/data/materials/material_maps/skin_greyer_material_map.json"
+				},
+				"green": {
+					"file": "/swamp_goblins/data/materials/material_maps/skin_green_material_map.json"
+				},
+				"yellow": {
+					"file": "/swamp_goblins/data/materials/material_maps/skin_yellow_material_map.json"
+				},
+				"red": {
+					"file": "/swamp_goblins/data/materials/material_maps/skin_red_material_map.json"
 				}
 			}
 		},

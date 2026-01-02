@@ -7,17 +7,23 @@
 			"loop": true,
 			"transforms": { "x": -1, "y": 2.8, "z": 0.55, "rx": 90, "ry": 0, "rz": 0 }
 		},
-		"water2": {
+		"splash1": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/water/dropping.json",
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash_small.json",
 			"loop": true,
-			"transforms": { "x": -0.5, "y": 1.8, "z": 0, "rx": 90, "ry": 0, "rz": 0 }
+			"transforms": { "x": -1, "y": 1.9, "z": 0.5, "rx": 90, "ry": 0, "rz": 0 }
 		},
-		"water3": {
+		"splash2": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/water/dropping.json",
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash_small.json",
 			"loop": true,
-			"transforms": { "x": 0, "y": 1.7, "z": 0.5, "rx": 90, "ry": 0, "rz": 0 }
+			"transforms": { "x": -0.55, "y": 1.775, "z": 0, "rx": 90, "ry": 0, "rz": 0 }
+		},
+		"splash3": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash_small.json",
+			"loop": true,
+			"transforms": { "x": 0, "y": 1.675, "z": 0.45, "rx": 90, "ry": 0, "rz": 0 }
 		},
 		"water4": {
 			"type": "cubemitter",
@@ -25,29 +31,35 @@
 			"loop": true,
 			"transforms": { "x": 0.45, "y": 1.6, "z": 1, "rx": 90, "ry": 0, "rz": 0 }
 		},
-		"water5": {
+		"splash4": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/water/dropping.json",
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash_small.json",
 			"loop": true,
-			"transforms": { "x": 1, "y": 0.8, "z": 0.5, "rx": 90, "ry": 0, "rz": 0 }
+			"transforms": { "x": 0.5, "y": 0.9, "z": 1, "rx": 90, "ry": 0, "rz": 0 }
 		},
-		"water6": {
+		"splash5": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/water/dropping.json",
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash_small.json",
 			"loop": true,
-			"transforms": { "x": 1, "y": 0.7, "z": -0.5, "rx": 90, "ry": 0, "rz": 0 }
+			"transforms": { "x": 1, "y": 0.775, "z": 0.55, "rx": 90, "ry": 0, "rz": 0 }
 		},
-		"water7": {
+		"splash6": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/water/dropping.json",
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash_small.json",
 			"loop": true,
-			"transforms": { "x": 0.5, "y": 0.6, "z": -1, "rx": 90, "ry": 0, "rz": 0 }
+			"transforms": { "x": 1, "y": 0.675, "z": -0.45, "rx": 90, "ry": 0, "rz": 0 }
 		},
-		"water8": {
+		"splash7": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/water/dropping.json",
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash_small.json",
 			"loop": true,
-			"transforms": { "x": -0.5, "y": 0.5, "z": -1, "rx": 90, "ry": 0, "rz": 0 }
+			"transforms": { "x": 0.55, "y": 0.575, "z": -1, "rx": 90, "ry": 0, "rz": 0 }
+		},
+		"splash8": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash_small.json",
+			"loop": true,
+			"transforms": { "x": -0.45, "y": 0.475, "z": -1, "rx": 90, "ry": 0, "rz": 0 }
 		}
 	}
 }

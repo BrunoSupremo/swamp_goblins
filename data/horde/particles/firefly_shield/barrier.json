@@ -1,12 +1,12 @@
 {
 	"name": "barrier",
 	"duration": 1000,
-	"material": "materials/cubemitter_bloom.material.json",
+	"material": "materials/cubemitter_add_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [10]
+			"values": [5]
 		},
 		"angle": {
 			"kind": "CONSTANT",
@@ -21,7 +21,7 @@
 		"lifetime": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [1000]
+				"values": [2000]
 			}
 		},
 		"speed": {
@@ -38,7 +38,7 @@
 			"over_lifetime": {
 				"kind": "CURVE",
 				"values": [
-					[0, 1],
+					[0, 0],
 					[0.5, 1],
 					[1, 0]
 				]

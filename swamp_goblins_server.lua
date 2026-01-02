@@ -1,9 +1,11 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 25.2.27")
+print("Swamp Goblins Mod version 26.1.1")
 
 --[[
 
-add "cyan stripes" patterns to wall decorations like rayya wall tiles
+add that big snake model from stmpnk
+
+add new workbench to shaman to avoid crafting stuff on cook pots
 
 elderstone reference
 
@@ -71,6 +73,8 @@ mobs:
 		small black smoke blobs with glowing eyes
 
 jobs:
+	alchemist?
+	
 	warrior rework:
 		max level at 3
 		two job promotions after:
@@ -90,6 +94,7 @@ jobs:
 			smoke bomb: aoe, halfs enemy attack (blindness)
 			fireworks: calls enemys attention
 			frog escape: changes into a frog and jump out of battle
+			convert/confuse enemies into goblin team
 
 	earthshaper:
 		dart traps, smoke traps
@@ -100,11 +105,9 @@ jobs:
 
 decorations:
 	Giant rug, or wall hanging rug.
-	Varanus roasting on a stick
 	goblinfied vanilla_lampposts
 	lamp post, lamp/lantern, mat/rug/mosaic, statue
 	painting/tapestry, banner wall, awning
-	aroma candles, incenses
 	weapon/armor decorations
 	high/fancy bed
 	bed of hot embers (firewalking)
@@ -120,8 +123,64 @@ music:
 	bongo, drum, flute, gong, triangulo
 
 redo:
-	hourglass effects
 	travel stall
+
+
+----
+
+Sure. The frog rider is a combat job that requires a high body and mind stat. They can evolve from the trapper or the warrior class. They need a frog saddle and a frog whip to ride a giant frog.
+
+The frog rider has these abilities:
+
+Leap: The frog rider can make their frog jump over a large distance, landing on an enemy or an empty tile. This deals damage and knocks back enemies in the landing area.
+Tongue Lash: The frog rider can make their frog use its tongue to grab and pull an enemy or an item towards them. This can be used to disarm enemies or steal items.
+Croak: The frog rider can make their frog emit a loud croak that lowers the morale and defense of nearby enemies. This also attracts other frogs to join the battle.
+Sticky Spit: The frog rider can make their frog spit a sticky substance that slows down and damages enemies in a cone area.
+The frog rider also has some passive perks:
+
+Amphibious: The frog rider can move faster and breathe underwater.
+Camouflage: The frog rider can blend in with the swamp environment, making them harder to detect by enemies.
+Frog Bond: The frog rider has a strong bond with their frog, increasing their health and damage.
+The frog rider is a versatile and mobile combat job that can deal damage, control enemies and support allies with their giant frog companion.
+
+-----
+
+The mud slinger is a combat job that requires a high mind and spirit stat. They can evolve from the trapper or the herbalist class. They need a mud sling and a mud pouch to throw mud balls.
+
+The mud slinger has these abilities:
+
+Mud Ball: The mud slinger can throw a mud ball at an enemy or an item, dealing damage and applying a debuff that reduces speed and accuracy.
+Mud Trap: The mud slinger can place a mud trap on the ground that activates when an enemy steps on it, immobilizing them and dealing damage over time.
+Mud Wall: The mud slinger can create a wall of mud that blocks enemies and projectiles. The wall can be destroyed by attacks or by the mud slinger’s own abilities.
+Mud Slide: The mud slinger can cause a landslide of mud that sweeps away enemies and items in a line area, dealing damage and knocking them back.
+The mud slinger also has some passive perks:
+
+Dirty Tricks: The mud slinger can use their mud balls to sabotage enemy equipment and structures, causing them to malfunction or collapse.
+Mud Sense: The mud slinger can sense vibrations in the ground, making them aware of hidden enemies and traps.
+Mud Bath: The mud slinger can heal themselves and allies by covering them with healing mud.
+The mud slinger is a cunning and versatile combat job that can deal damage, control enemies and support allies with their mastery of mud.
+
+-----
+
+make your Beast Tamer both formidable and unique:
+
+Whip of Command: A magical whip that not only deals damage but also enhances the abilities of your tamed beasts.
+
+Beastmaster's Bow: A bow that fires arrows infused with beastly energy, summoning spectral animals to aid in battle.
+
+Claw Gauntlets: Gauntlets with retractable claws, allowing for close combat and the ability to channel the power of your beasts.
+
+Totem Staff: A staff adorned with totems representing different beasts, each granting unique buffs or abilities.
+
+Beast Bond Blade: A sword that strengthens the bond between the tamer and their beasts, increasing their combat effectiveness.
+
+Nature's Fang: A dagger made from the fang of a legendary beast, with poison or elemental effects.
+
+Beastcaller Horn: A horn that can summon beasts to your side or unleash powerful sonic attacks.
+
+-----
+
+
 
 ]]
 

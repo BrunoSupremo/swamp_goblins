@@ -6,9 +6,22 @@
 			"cubemitter": "/swamp_goblins/data/horde/particles/shaman_workbench/fire.cubemitter.json",
 			"loop": true,
 			"transforms": {
-				"x":-0.2,
+				"x":-0.25,
 				"y":0,
-				"z":-0.1,
+				"z":0.05,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"smoke": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/smoke/thin.json",
+			"loop": true,
+			"transforms": {
+				"x":-0.25,
+				"y":0.25,
+				"z":0.15,
 				"rx":90,
 				"ry":0,
 				"rz":0

@@ -1,0 +1,18 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["swamp_goblins:biome:swamp"],
+	"name": "bridge",
+	"category": "swamp_water_landmark",
+	"size": {
+		"width": 16,
+		"length": 16
+	},
+	"habitat_types": ["water"],
+	"weight": 1.5,
+	"data": {
+		"brush" : "/swamp_goblins/data/models/landmark/16x_bridge.qb",
+		"brush_mask" : "/swamp_goblins/data/models/landmark/16x_bridge_mask.qb",
+		"translation":{"x":1, "y":0, "z":1 },
+		"landmark_block_types": "swamp_goblins:landmark_blocks"
+	}
+}

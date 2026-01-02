@@ -4,6 +4,8 @@
 			"file(static/dragonfly_nest)",
 			"file(static/frog_nest)",
 
+			"file(static/landmarks/16x_bridge.json)",
+			"file(static/landmarks/16x_hut.json)",
 			"file(static/landmarks/16x_rabbit_statue.json)",
 			"file(static/landmarks/16x_old_landmarker.json)",
 
@@ -14,6 +16,7 @@
 			"file(static/landmarks/32x_firefly_nest.json)",
 			"file(static/landmarks/32x_mushroom.json)",
 			"file(static/landmarks/32x_mushroom_spiral.json)",
+			"file(static/landmarks/32x_ring.json)",
 			"file(static/landmarks/32x_varanus_nest.json)",
 
 			"file(static/landmarks/64x_king_stone.json)",
@@ -34,6 +37,12 @@
 			},
 			"swamp_mountain_landmark" : {
 				"density" : 15,
+				"priority" : 0,
+				"location_type" : "surface",
+				"activation_type" : "immediate"
+			},
+			"swamp_water_landmark" : {
+				"density" : 1.1,
 				"priority" : 0,
 				"location_type" : "surface",
 				"activation_type" : "immediate"

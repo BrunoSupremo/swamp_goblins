@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 39,
+	"work_units": 12,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.water_garden_clay.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.water_garden.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.water_garden.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/water_garden_clay/water_garden_clay.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:water_garden:clay"
+		}
+	]
+}

@@ -5,6 +5,11 @@
 		"file(firefly_golem_ghost.json)"
 	],
 	"components": {
+		"effect_list": {
+			"effects": [
+				"swamp_goblins:effects:firefly_golem_head"
+			]
+		},
 		"stonehearth:entity_forms": {
 			"iconic_form": "file(firefly_golem_iconic.json)",
 			"ghost_form": "file(firefly_golem_ghost.json)",

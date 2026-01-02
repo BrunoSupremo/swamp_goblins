@@ -1,12 +1,12 @@
 {
 	"name": "firefly_token",
 	"duration": 6000,
-	"material": "materials/cubemitter_bloom.material.json",
+	"material": "materials/cubemitter_add_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [5]
+			"values": [2]
 		},
 		"angle": {
 			"kind": "RANDOM_BETWEEN",
@@ -14,14 +14,14 @@
 		},
 		"origin": {
 			"surface": "SPHERE",
-			"values": [3, 0, 360]
+			"values": [5, 1, 360]
 		}
 	},
 	"particle": {
 		"lifetime": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [3000]
+				"values": [5000]
 			}
 		},
 		"speed": {
@@ -44,8 +44,11 @@
 			"over_lifetime": {
 				"kind": "CURVE",
 				"values": [
-					[0, 3],
+					[0, 0],
 					[0.2, 1],
+					[0.35, 1],
+					[0.4, 0],
+					[0.45, 1],
 					[0.8, 1],
 					[1, 0]
 				]
@@ -64,6 +67,9 @@
 				"values": [
 					[0, 0],
 					[0.2, 1],
+					[0.35, 1],
+					[0.4, 0],
+					[0.45, 1],
 					[0.8, 1],
 					[1, 0]
 				]

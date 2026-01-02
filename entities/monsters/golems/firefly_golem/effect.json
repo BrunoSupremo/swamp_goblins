@@ -1,13 +1,3 @@
 {
-	"type": "entity",
-	"mixins": "stonehearth:mixins:item_properties",
-	"components": {
-		"effect_list": {
-			"default": "swamp_goblins:effects:firefly_golem_head"
-		},
-		"stonehearth:equipment_piece": {
-			"slot": "bodyPosition",
-			"render_type": "attach_to_bone"
-		}
-	}
+	"mixins": "swamp_goblins/entities/gizmos/deprecated/deprecated.json",
 }

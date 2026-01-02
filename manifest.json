@@ -259,6 +259,8 @@
 		"decoration:hourglass":				"file(entities/decoration/hourglass)",
 		"decoration:hearth:nature":			"file(entities/decoration/hearth/nature)",
 		"decoration:hearth:warrior":		"file(entities/decoration/hearth/warrior)",
+		"decoration:incense":				"file(entities/decoration/incense)",
+		"decoration:incense:clay":			"file(entities/decoration/clay_incense)",
 		"decoration:landmarker":			"file(entities/decoration/landmarker)",
 		"decoration:landmarker:old":		"file(entities/decoration/landmarker/old_landmarker.json)",
 		"decoration:lamp:clay":				"file(entities/decoration/clay_lamp)",
@@ -275,6 +277,7 @@
 		"decoration:clay_potted_cattail":	"file(entities/decoration/clay_potted/cattail)",
 		"decoration:clay_potted_giple":		"file(entities/decoration/clay_potted/giple)",
 		"decoration:clay_potted_sapling":	"file(entities/decoration/clay_potted/sapling)",
+		"decoration:roast":					"file(entities/decoration/roast)",
 		"decoration:shrine:book":			"file(entities/decoration/shrine/book)",
 		"decoration:shrine:book:blessed":	"file(entities/decoration/shrine/book/blessed.json)",
 		"decoration:shrine:tall":			"file(entities/decoration/shrine/tall)",
@@ -309,6 +312,8 @@
 		"decoration:stone_brazier":			"file(entities/decoration/stone_brazier)",
 		"decoration:tower_brazier":			"file(entities/decoration/tower_brazier)",
 		"decoration:brazier_large":			"file(entities/decoration/brazier_large)",
+		"decoration:tile_floor_mosaic":		"file(entities/decoration/tile_floor_mosaic)",
+		"decoration:tile_wall_mosaic":		"file(entities/decoration/tile_wall_mosaic)",
 		"decoration:tombstone":				"file(entities/decoration/tombstone)",
 		"decoration:travel_stall":			"file(entities/decoration/travel_stall)",
 		"decoration:wall_lamp":				"file(entities/decoration/wall_lamp)",
@@ -317,6 +322,8 @@
 		"decoration:wall_fountain:wood":	"file(entities/decoration/wood_wall_fountain)",
 		"decoration:wall_mask":				"file(entities/decoration/wall_mask)",
 		"decoration:wall_ring":				"file(entities/decoration/wall_ring)",
+		"decoration:water_garden":			"file(entities/decoration/water_garden)",
+		"decoration:water_garden:clay":		"file(entities/decoration/water_garden_clay)",
 		"decoration:windchime":				"file(entities/decoration/windchime)",
 		"decoration:window_box:clay":			"file(entities/decoration/window_box_clay)",
 		"decoration:window_box:wood":			"file(entities/decoration/window_box_wood)",
@@ -354,6 +361,8 @@
 		"effects:shrine:book:blessed":	"file(data/effects/shrine/book_blessed.json)",
 		"effects:shrine:tall":			"file(data/effects/shrine/tall.json)",
 		"effects:shrine:tall:blessed":	"file(data/effects/shrine/tall_blessed.json)",
+		"effects:smoke:roast":	"file(data/effects/smoke/roast.json)",
+		"effects:smoke:thin":	"file(data/effects/smoke/thin.json)",
 		"effects:spirit:armor":			"file(data/effects/spirit/armor.json)",
 		"effects:spirit:ball":			"file(data/effects/spirit/ball.json)",
 		"effects:spirit:poof":			"file(data/effects/spirit/poof.json)",
@@ -437,7 +446,7 @@
 		"jobs:spirit_walker":	"file(jobs/spirit_walker/spirit_walker_description.json)",
 		"jobs:warrior":			"file(jobs/warrior/warrior_description.json)",
 		"jobs:worker":			"file(jobs/worker/worker_description.json)",
-		"jobs:npc:baby":			"file(jobs/npc_baby/npc_baby_description.json)",
+		"jobs:baby":			"file(jobs/baby/baby_description.json)",
 		"jobs:npc:firefly_golem":	"file(jobs/npc_firefly_golem/npc_firefly_golem_description.json)",
 
 		"kingdoms:celebration_npcs": "file(services/server/population/data/celebration_npcs.json)",
@@ -459,6 +468,7 @@
 		"mixins:base_goblin":"file(mixins/base_goblin)",
 		"mixins:base_goblin_npc":"file(mixins/base_goblin_npc)",
 		"mixins:encounter:bear_raid":"file(mixins/encounter/mixin_bear_raid.json)",
+		"mixins:foreign_tree":"file(mixins/foreign_tree)",
 		"mixins:sign:wood":			"file(mixins/sign/wood.json)",
 		"mixins:sign:wood_ghost":	"file(mixins/sign/wood_ghost.json)",
 		"mixins:sign:wood_recipe":	"file(mixins/sign/wood_recipe.json)",
@@ -475,7 +485,6 @@
 		"monsters:doodles_egg_raider":		"file(entities/monsters/doodles_egg_raider)",
 		"monsters:doodles_giant_egg_raider":"file(entities/monsters/doodles_egg_raider/giant.json)",
 		"monsters:golems:firefly_golem":	"file(entities/monsters/golems/firefly_golem)",
-		"monsters:golems:firefly_golem:effect":	"file(entities/monsters/golems/firefly_golem/effect.json)",
 		"monsters:swamp_zilla":				"file(entities/monsters/swamp_zilla)",
 		"monsters:varanus":					"file(entities/monsters/varanus_nest/varanus.json)",
 		"monsters:varanus_nest":			"file(entities/monsters/varanus_nest)",
@@ -666,7 +675,6 @@
 
 		"trait_replacer": "file(data/traits/trait_replacer.json)",
 		"traits_index": "file(data/traits/traits_index.json)",
-		"traits:deviant_pigment":	"file(data/traits/deviant_pigment)",
 		"traits:firefly_chaser":	"file(data/traits/firefly_chaser)",
 		"traits:frog_companion":	"file(data/traits/frog_companion)",
 		"traits:wolf_companion":	"file(data/traits/wolf_companion)",
@@ -733,6 +741,7 @@
 		"weapons:paladin:stone_maul":	"file(entities/weapons/paladin/stone_maul.json)",
 
 		"weather_stone":"file(entities/manipulation/weather_stone)",
+		"locked_weathers": "file(data/weather/weather_stone/locked.json)",
 
 		"weather:foggy": "file(data/weather/foggy)",
 		"sky_settings:foggy": "file(data/weather/foggy/foggy_sky_settings.json)",
@@ -773,16 +782,9 @@
 		"towers:worker:weapon_utility":			"file(tower_defense/towers/worker/weapon_utility.json)"
 	},
 	"deprecated_aliases":{
-		"consumables:appearance_potion":"file(entities/gizmos/deprecated)",
-		"consumables:body_potion":		"file(entities/gizmos/deprecated)",
-		"consumables:mind_potion":		"file(entities/gizmos/deprecated)",
-		"consumables:spirit_potion":	"file(entities/gizmos/deprecated)",
-		"consumables:happy_potion":		"file(entities/gizmos/deprecated)",
-		"consumables:memory_potion":	"file(entities/gizmos/deprecated)",
-		"consumables:small_healing":	"file(entities/gizmos/deprecated)",
-		"consumables:large_healing":	"file(entities/gizmos/deprecated)",
-		"consumables:speed_potion":		"file(entities/gizmos/deprecated)",
-		"consumables:teleport_potion":	"file(entities/gizmos/deprecated)"
+		"monsters:golems:firefly_golem:effect":	"file(entities/gizmos/deprecated)",
+		"traits:deviant_pigment":	"file(data/traits/deviant_pigment)",
+		"jobs:npc:baby":	"file(jobs/baby/deprecated_baby_description.json)"
 	},
 	"mixintos" :  {
 		"stonehearth:ai_pack:free_time": "file(ai/packs/free_time_ai_pack.json)",
@@ -902,7 +904,6 @@
 		"stonehearth:food:poultry_large":	"swamp_goblins:food:edible_for_goblins",
 		"stonehearth:food:poyo_meat":		"swamp_goblins:food:edible_for_goblins",
 		"stonehearth:food:sausage":			"swamp_goblins:food:edible_for_goblins",
-		"stonehearth:food:varanus_meat":	"swamp_goblins:food:edible_for_goblins",
 		"stonehearth:food:venison":			"swamp_goblins:food:edible_for_goblins",
 		"stonehearth_ace:food:duck_meat":			"swamp_goblins:food:edible_for_goblins",
 		"stonehearth_ace:food:egg:duck":			"swamp_goblins:food:edible_for_goblins",
@@ -912,6 +913,9 @@
 		"stonehearth_ace:food:fish_meat:salmon":	"swamp_goblins:food:edible_for_goblins",
 		"stonehearth_ace:food:fish_meat:trout":		"swamp_goblins:food:edible_for_goblins",
 		"stonehearth_ace:food:steak":				"swamp_goblins:food:edible_for_goblins",
+
+		"stonehearth:food:varanus_meat":	"file(entities/food/varanus_meat)",
+		"stonehearth:food:roast_varanus":	"file(entities/food/roast_varanus/roast_varanus)",
 
 		"stonehearth_ace:gizmos:brass_training_dummy":	"file(entities/gizmos/training_dummy)",
 		"stonehearth_ace:gizmos:clay_training_dummy":	"file(entities/gizmos/training_dummy)",
@@ -998,6 +1002,8 @@
 		"stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)",
 
 		"stonehearth:scenarios:scenario_index": "file(scenarios/scenario_index.json)",
+		"stonehearth_ace:scenarios:scenario_index": "file(scenarios/insert_into_ace.json)",
+		
 		"stonehearth/scenarios/static/beetle_nest/beetle_nest.json":"file(scenarios/static/add_to_swamp_too.json)",
 		"stonehearth/scenarios/static/doodles_nest/doodles_nest.json":"file(scenarios/static/add_to_swamp_too.json)",
 		"stonehearth/scenarios/static/duckduck_nest/duckduck_nest.json":"file(scenarios/static/add_to_swamp_too.json)",
@@ -1020,6 +1026,31 @@
 		"stonehearth/scenarios/static/landmarks/128x_stone_collection_2.json":"file(scenarios/static/add_to_swamp_too.json)",
 		"stonehearth/scenarios/static/landmarks/128x_stone_collection_3.json":"file(scenarios/static/add_to_swamp_too.json)",
 
+		"stonehearth_ace/scenarios/static/bitsy_spider_nest/bitsy_spider_nest.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/ladybug_beetle_nest/ladybug_beetle_nest.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/sheep_nest/sheep_nest.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/moomoo_nest/moomoo_nest.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/poyo_nest/poyo_nest.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/forest_temperate/forest_temperate.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		
+		"stonehearth_ace/scenarios/static/landmarks/16x_duck_pond.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/32x_bear_den.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/32x_cougar_den.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/32x_wolf_den.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/32x_poyo_land.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/32x_sheep_herd.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/16x_meteor_iron.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/32x_meteor_iron.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/64x_meteor_iron.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/128x_meteor_iron.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/32x_ruin_pillars.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/64x_ruin_pillars.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/64x_ruin_tower.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/64x_ruin_tower_2.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/96x_peatland_1.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/96x_peatland_2.json":	"file(scenarios/static/add_to_swamp_too.json)",
+		"stonehearth_ace/scenarios/static/landmarks/96x_peatland_3.json":	"file(scenarios/static/add_to_swamp_too.json)",
+
 		"stonehearth:traits_index":"file(data/traits/traits_index_to_merge.json)",
 
 		"stonehearth:ui:input_box:filters": "file(ui/data/input_box_filters.json)",
@@ -1027,6 +1058,8 @@
 		"stonehearth_ace/ui/data/season_icons.json":"file(ui/data/season_icons.json)",
 
 		"tower_defense/manifest.json":	"file(tower_defense/manifest.json)",
+
+		"swamp_goblins/data/biome/swamp_generation.json":"stonehearth_ace/swamp_goblins/data/biome/ace_swamp_generation.json",
 
 		"swamp_goblins/entities/construction/clay_water_well/clay_water_well_ghost.json":		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"swamp_goblins/entities/construction/wooden_water_well/wooden_water_well_ghost.json":	"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json",
@@ -1119,7 +1152,6 @@
 		}
 	},
 	"components": {
-		"baby":						"file(components/baby/baby.lua)",
 		"crusher":					"file(components/crusher/crusher.lua)",
 		"deprecated":				"file(components/deprecated/deprecated.lua)",
 		"enemy_barrier":			"file(components/enemy_barrier/enemy_barrier.lua)",
@@ -1155,6 +1187,8 @@
 		"stonehearth/data/rigs/entities/humans/effects/loopable_idle_warm_hands.json":	"file(data/rigs/entities/humans/effects/loopable_idle_warm_hands.json)",
 		"stonehearth/data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json":"file(data/rigs/entities/pets/dragon_whelp_fire/effects/combat_1h_backhand.json)",
 
+		"stonehearth_ace/swamp_goblins/data/biome/ace_swamp_generation.json":"swamp_goblins/data/biome/ace_swamp_generation.json",
+
 		"stonehearth_ace/swamp_goblins/entities/construction/ace_water_well_ghost.json":"swamp_goblins/entities/construction/ace_water_well_ghost.json",
 		"stonehearth_ace/swamp_goblins/entities/plants/lilypad/ace_lilypad.json":"swamp_goblins/entities/plants/lilypad/ace_lilypad.json",
 
@@ -1178,6 +1212,7 @@
 		"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json":	"swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json"
 	},
 	"controllers": {
+		"class:baby":			"file(jobs/baby/baby.lua)",
 		"class:beast_tamer":	"file(jobs/beast_tamer/beast_tamer.lua)",
 		"class:bonesmith":		"file(jobs/bonesmith/bonesmith.lua)",
 		"class:earthmaster":	"file(jobs/earthmaster/earthmaster.lua)",
@@ -1185,7 +1220,6 @@
 		"class:shaman":			"file(jobs/shaman/shaman.lua)",
 		"class:spirit_walker":	"file(jobs/spirit_walker/spirit_walker.lua)",
 		"class:warrior":		"file(jobs/warrior/warrior.lua)",
-		"class:worker":			"stonehearth/jobs/worker/worker.lua",
 
 		"crushable_item_tracker": "file(services/server/crusher/crushable_item_tracker.lua)",
 
@@ -1237,6 +1271,7 @@
 			"file(jobs/earthmaster/skin/workshop.less)",
 
 			"file(ui/game/bulletin/warrior_hearth_dialog/warrior_hearth_dialog.less)",
+			"file(ui/game/citizens/citizens.less)",
 			"file(ui/game/crusher/crusher.less)",
 			"file(ui/game/goblinpedia/goblinpedia.less)",
 			"file(ui/game/show_workshop/mod_icon.less)",

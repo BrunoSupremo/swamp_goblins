@@ -1,7 +1,7 @@
 {
 	"name": "firefly_token",
 	"duration": 6000,
-	"material": "materials/cubemitter_bloom.material.json",
+	"material": "materials/cubemitter_add_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
@@ -43,7 +43,7 @@
 					[0.25, 0],
 					[0.7, 0],
 					[0.75, 1],
-					[1, -10]
+					[1, -7]
 				]
 			}
 		},

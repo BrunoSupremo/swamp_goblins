@@ -31,12 +31,6 @@ function AppearancePotionController:_on_try_dispatch(session, request, citizens)
 		local cc = entity:get_component('stonehearth:customization')
 		cc:regenerate_appearance()
 
-		local trait_comp = entity:get_component("stonehearth:traits")
-		trait_comp:remove_trait("swamp_goblins:traits:deviant_pigment")
-		if rng:get_int(1,2) == 1 then
-			trait_comp:add_trait("swamp_goblins:traits:deviant_pigment")
-		end
-
 		radiant.effects.run_effect(entity, "stonehearth:effects:spawn_entity")
 	end
 

@@ -2,7 +2,6 @@
 	"type" : "entity",
 	"mixins": "swamp_goblins:mixins:base_goblin", 
 	"components": {
-		"swamp_goblins:baby" : {},
 		"render_info" : {
 			"animation_table": "swamp_goblins:skeletons:humanoid:baby",
 			"scale":0.08
@@ -20,7 +19,7 @@
 			}
 		},
 		"stonehearth:job": {
-			"initial_job": "swamp_goblins:jobs:npc:baby"
+			"initial_job": "swamp_goblins:jobs:baby"
 		},
 		"stonehearth:attributes": {
 			"body": {

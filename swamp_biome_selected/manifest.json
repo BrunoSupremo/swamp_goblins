@@ -6,6 +6,11 @@
 	},
 	"default_locale": "en",
 	"mixintos":{
+		"archipelago_biome:data:fishing": [
+			"file(data/fishing/fishing_swamp.json)",
+			"stonehearth_ace/swamp_goblins/swamp_biome_selected/data/fishing/fishing_swamp_with_ace.json"
+		],
+
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/alligator_entling_raid_5.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/trash_mobs/alligator_entling_raid_5.json)",
 		"stonehearth/data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/pack_of_wolves.json":"file(data/gm/campaigns/ambient_threats/arcs/trigger/ambient_threats/encounters/pack_of_wolves.json)",
 
@@ -16,6 +21,7 @@
 		"stonehearth:landmark_blocks": "file(data/terrain/landmark_blocks.json)",
 
 		"stonehearth:mixins:encounter:wolf_raid": "file(mixins/encounter/mixin_wolf_raid.json)",
+		"stonehearth:mixins:tree": "swamp_goblins:mixins:foreign_tree",
 
 		"stonehearth:monsters:forest:entling": "file(entities/monsters/forest/entling)",
 
@@ -37,6 +43,8 @@
 		"stonehearth:trapper:trapping_grounds": "file(data/swamp_trapping_grounds.json)"
 	},
 	"overrides": {
+		"stonehearth_ace/swamp_goblins/swamp_biome_selected/data/fishing/fishing_swamp_with_ace.json":"file(data/fishing/fishing_swamp_with_ace.json)",
+
 		"/archipelago_biome/entities/critters/crab/crab.qb": "file(entities/critters/crab/crab.qb)",
 		"stonehearth/entities/critters/doodles/doodles.qb":	"file(entities/critters/doodles/doodles.qb)",
 		"stonehearth/entities/critters/poyo/poyo.qb":		"/stonehearth/data/biome/desert/sandy_poyo/sandy_poyo_tan.qb",

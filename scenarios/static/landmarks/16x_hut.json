@@ -1,0 +1,18 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["swamp_goblins:biome:swamp"],
+	"name": "hut",
+	"category": "swamp_water_landmark",
+	"size": {
+		"width": 16,
+		"length": 16
+	},
+	"habitat_types": ["water"],
+	"weight": 0.666,
+	"data": {
+		"brush" : "/swamp_goblins/data/models/landmark/16x_hut.qb",
+		"brush_mask" : "/swamp_goblins/data/models/landmark/16x_hut_mask.qb",
+		"translation":{"x":1, "y":0, "z":1 },
+		"landmark_block_types": "swamp_goblins:landmark_blocks"
+	}
+}

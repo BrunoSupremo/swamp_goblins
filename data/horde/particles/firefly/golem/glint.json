@@ -1,48 +1,51 @@
 {
-	"name": "splash",
-	"duration": 1000,
-	"material": "materials/cubemitter.material.json",
+	"name": "golemglint",
+	"duration": 2000,
+	"material": "materials/cubemitter_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
-			"kind": "CONSTANT",
-			"values": [50]
+			"kind": "RANDOM_BETWEEN",
+			"values": [-0.5, 1]
 		},
 		"angle": {
 			"kind": "CONSTANT",
-			"values": [90]
+			"values": [0]
 		},
 		"origin": {
-			"surface": "POINT",
-			"values": {
-				"surface": "POINT"
-			}
+			"surface": "CUBOID",
+			"values": [0.5, 0.5, 0.5, 0.25, 0.25, 0.25]
 		}
 	},
 	"particle": {
 		"lifetime": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values": [500, 1000]
+				"values": [1000, 1500]
 			}
 		},
 		"speed": {
 			"start": {
-				"kind": "RANDOM_BETWEEN",
-				"values": [0, 2]
+				"kind": "CONSTANT",
+				"values": [0]
 			}
 		},
-		"acceleration": {
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[1, 360]
+				]
+			},
 			"over_lifetime_y": {
 				"kind": "CURVE",
 				"values": [
 					[0, 0],
-					[1, 10]
+					[1, 360]
 				]
-			}
-		},
-		"rotation": {
-			"over_lifetime_y": {
+			},
+			"over_lifetime_z": {
 				"kind": "CURVE",
 				"values": [
 					[0, 0],
@@ -53,13 +56,18 @@
 		"scale": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [1]
+				"values": [0.175]
 			},
 			"over_lifetime": {
 				"kind": "CURVE",
 				"values": [
-					[0, 0.2],
-					[1, 0.05]
+					[0, 0],
+					[0.3, 0.2],
+					[0.4, 0.6],
+					[0.44, 1],
+					[0.48, 0.6],
+					[0.5, 0.2],
+					[0.6, 0]
 				]
 			}
 		},
@@ -67,15 +75,15 @@
 			"start": {
 				"kind": "RANDOM_BETWEEN",
 				"values": [
-					[0.4, 0.8, 0.9, 1],
-					[0.5, 0.9, 1, 1]
+					[0.6, 0.95, 0.9, 1],
+					[0.9, 1, 1, 1]
 				]
 			},
 			"over_lifetime_a": {
 				"kind": "CURVE",
 				"values": [
-					[0, 0.3],
-					[0.6, 0.05],
+					[0, 0],
+					[0.5, 1],
 					[1, 0]
 				]
 			}

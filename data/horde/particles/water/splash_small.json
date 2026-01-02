@@ -1,0 +1,79 @@
+{
+	"name": "splash",
+	"duration": 1000,
+	"material": "materials/cubemitter_add_bloom.material.json",
+	"loops": true,
+	"emission": {
+		"rate": {
+			"kind": "CONSTANT",
+			"values": [3]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [170]
+		},
+		"origin": {
+			"surface": "POINT",
+			"values": {
+				"surface": "POINT"
+			}
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [1000, 1500]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0.05]
+			}
+		},
+		"rotation": {
+			"over_lifetime_y": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0,90]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [1]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0.1],
+					[1, 0.4]
+				]
+			},
+			"over_lifetime_y": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0.5],
+					[1, 0.1]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [
+					[0.4, 0.8, 0.9, 1],
+					[0.5, 0.9, 1, 1]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.25, 0.5],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

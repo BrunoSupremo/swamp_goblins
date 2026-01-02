@@ -896,6 +896,7 @@
 			"building_templates": {
 				"wip": "💜 Recompensas Nível 3 ainda não feitas 🚧",
 				"firefly_t3_house1": "💜 Casa Chique 1",
+				"firefly_t3_house2": "💜 Casa Chique 2",
 				"barrack": "💜 Barraca",
 				"firefly_house1": "💜 Casa 1",
 				"firefly_house2": "💜 Casa 2",
@@ -903,6 +904,7 @@
 				"hut": "💜 Cabana",
 				"temple": "💜 Templo",
 				"tent": "💜 Tenda",
+				"big_tent": "💜 Grande Tenda",
 				"nursery": "💜 Berçário",
 				"treasure_storage": "💜 Armazém de Tesouros",
 				"garden": "💜 Jardim",
@@ -931,10 +933,6 @@
 			}
 		},
 		"traits": {
-			"deviant_pigment": {
-				"display_name": "Pigmento Desviante",
-				"description": "A cor da pele de [name(i18n_data.entity)] é uma marca de distinção. Ao contrário da maioria, este tem uma tonalidade única que o diferencia do resto."
-			},
 			"firefly_chaser": {
 				"display_name": "Observador de Vaga-lumes",
 				"description": "À noite, [name(i18n_data.entity)] vagará em busca de vaga-lumes para admirar."
@@ -1416,6 +1414,14 @@
 				"description": "Um copo de formato engraçado com areia dentro, escorrendo de uma ponta a outra",
 				"flavor": "Não é minha vez de virar!"
 			},
+			"incense": {
+				"display_name": "Incenso de Vaga-lume",
+				"description": "Um incenso fino que libera fumaça perfumada quando aceso.",
+				"flavor": "Usado para mascarar o cheiro de ensopado de goblin ou invocar paz interior — depende do dia."
+			},
+			"clay_incense": {
+				"display_name": "Incenso de Vaga-lume de Argila"
+			},
 			"nature_hearth": {
 				"display_name": "Lareira da Natureza",
 				"description": "Fornece calor, luz, conforto e buffs diários aleatórios"
@@ -1511,6 +1517,11 @@
 				"display_name": "Vaso de Muda",
 				"description": "Natural do bioma pântano, agora para sua casa",
 				"flavor": "Ei, você pode regar minhas plantas enquanto estou fora?"
+			},
+			"roast": {
+				"display_name": "Assador no Espeto",
+				"description": "Uma estrutura de madeira feita para assar carne em fogo aberto, perfeita para banquetes ao redor da fogueira.",
+				"flavor": "Dizem as lendas que o aroma da carne assada atrai espíritos errantes — e goblins famintos — a quilômetros de distância."
 			},
 			"shrine": {
 				"tall": {
@@ -2057,7 +2068,7 @@
 				},
 				"level_3_data": {
 					"perk_000_name": "Armadilhas",
-					"perk_000_description": "Imobilize os inimigos usando armadilhas, a quantidade baseada na estatística da mente desse goblin"
+					"perk_000_description": "Imobilize os inimigos usando armadilhas, a quantidade baseada na estatística da Mente"
 				},
 				"level_4_data": {
 					"perk_000_name": "Varanus ",

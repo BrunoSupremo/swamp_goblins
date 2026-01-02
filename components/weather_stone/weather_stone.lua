@@ -24,6 +24,8 @@ function WeatherStone:post_activate()
 	if self._sv._use_state == "waiting" then
 		self:now_waiting()
 	end
+
+	self.locked_weathers = radiant.resources.load_json("swamp_goblins:locked_weathers", true, false)
 end
 
 function WeatherStone:enable_commands(enable)
@@ -86,24 +88,27 @@ function WeatherStone:now_waiting()
 end
 
 function WeatherStone:change_weather()
-	local current_season = stonehearth.seasons:get_current_season()
+	--titan-like weather is blocked
+	local current_weather = stonehearth.weather:get_current_weather():get_uri()
+	if self.locked_weathers[current_weather] then
+		self:fail()
+		return
+	end
 
+	local current_season = stonehearth.seasons:get_current_season()
 	local weighted_set = WeightedSet(rng)
 	for _, entry in ipairs(current_season.weather) do
 		if radiant.util.is_table(entry.weight) then
-			weighted_set:add(entry.uri, entry.weight[1])
+			local biggest_weight = 0
+			for _, weight in ipairs(entry.weight) do
+				if biggest_weight < weight then
+					biggest_weight = weight
+				end
+			end
+			weighted_set:add(entry.uri, biggest_weight)
 		else
 			weighted_set:add(entry.uri, entry.weight)
 		end
-	end
-	--titan weather is blocked
-	local current_weather = stonehearth.weather:get_current_weather()
-	local current_weather_uri = current_weather:get_uri()
-	if current_weather_uri == 'stonehearth:weather:titanstorm' or current_weather_uri == "titans_fury:weather:doomstorm" then
-		radiant.effects.run_effect(self._entity, "stonehearth:effects:death")
-		radiant.effects.run_effect(self._entity, "stonehearth:effects:titan_summoning:gong")
-		self:full_reset()
-		return
 	end
 
 	--avoid picking the same weather by removing it out of the set
@@ -126,6 +131,25 @@ function WeatherStone:full_reset()
 	self:remove_effect()
 
 	stonehearth.ai:reconsider_entity(self._entity)
+end
+
+function WeatherStone:fail()
+	radiant.effects.run_effect(self._entity, "stonehearth:effects:death")
+	radiant.effects.run_effect(self._entity, "stonehearth:effects:titan_summoning:gong")
+	self:full_reset()
+
+	local location = radiant.entities.get_world_grid_location(self._entity)
+	for i=1,3 do
+		local jewel = radiant.entities.create_entity("swamp_goblins:refined:jewel", { owner = self.player_id })
+
+		local spawn_location = radiant.terrain.find_placement_point(location, 1, 2)
+		radiant.terrain.place_entity(jewel, spawn_location)
+
+		local inventory = stonehearth.inventory:get_inventory(self.player_id)
+		if inventory then
+			inventory:add_item_if_not_full(jewel)
+		end
+	end
 end
 
 function WeatherStone:current_stage()

@@ -12,7 +12,13 @@
 		"model_variants": {
 			"default": {
 				"models": [
-					"file(cattail.qb)"
+					{
+						"type": "one_of",
+						"items": [
+							"file(cattail.qb)",
+							"file(cattail2.qb)"
+						]
+					}
 				]
 			}
 		}

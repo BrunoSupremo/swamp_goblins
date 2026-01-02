@@ -1,0 +1,18 @@
+{
+	"mixins": "/stonehearth/scenarios/static/landmarks/qb_to_terrain.json",
+	"biomes": ["swamp_goblins:biome:swamp"],
+	"name": "ring",
+	"category": "swamp_landmark",
+	"unique" : true,
+	"size": {
+		"width": 32,
+		"length": 32
+	},
+	"overwrite_occupied_size": 6,
+	"habitat_types": ["foothills","forest"],
+	"weight": 5,
+	"data": {
+		"brush" : "/swamp_goblins/data/models/landmark/32x_ring.qb",
+		"landmark_block_types": "swamp_goblins:landmark_blocks"
+	}
+}

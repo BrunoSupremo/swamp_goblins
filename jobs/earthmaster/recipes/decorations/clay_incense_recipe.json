@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 39,
+	"work_units": 12,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.clay_incense.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.incense.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.incense.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/clay_incense/clay_incense.png",
+	"workshop": "swamp_goblins:earthmaster:potter_workbench",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		},
+		{
+			"uri": "swamp_goblins:resources:firefly_essense",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:incense:clay"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.water_garden.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.water_garden.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.water_garden.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/water_garden/water_garden.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "herb resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:water_garden"
+		}
+	]
+}

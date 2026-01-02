@@ -1,0 +1,77 @@
+{
+	"landscape": {
+		"placement_table": {
+			"stonehearth_ace:trees:willow:small": {
+				"placement_type": "single",
+				"parameters": {"ground_radius": 3, "exclusion_radius": 5 }
+			},
+			"stonehearth_ace:trees:willow:medium": {
+				"placement_type": "single",
+				"parameters": {"ground_radius": 3, "exclusion_radius": 5 }
+			},
+			"stonehearth_ace:trees:willow:large": {
+				"placement_type": "single",
+				"parameters": {"ground_radius": 3, "exclusion_radius": 5 }
+			},
+			"stonehearth_ace:plants:chives": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 5,
+					"item_density": 0.2,
+					"exclusion_radius": 0
+				}
+			},
+			"stonehearth_ace:plants:nightshade": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 5,
+					"item_density": 0.2,
+					"exclusion_radius": 0
+				}
+			},
+			"stonehearth_ace:plants:sage": {
+				"placement_type": "dense",
+				"parameters": {
+					"grid_multiple": 5,
+					"item_density": 0.2,
+					"exclusion_radius": 0
+				}
+			}
+		},
+		"scattered": {
+			"plants": {
+				"weights": {
+					"plains": {
+						"1": {
+							"stonehearth_ace:trees:willow:small":1,
+							"stonehearth_ace:trees:willow:medium":1,
+							"stonehearth_ace:trees:willow:large":1,
+							"stonehearth_ace:plants:chives":1,
+							"stonehearth_ace:plants:nightshade":1,
+							"stonehearth_ace:plants:sage":1
+						}
+					},
+					"foothills": {
+						"1": {
+							"stonehearth_ace:trees:willow:small":0.5,
+							"stonehearth_ace:trees:willow:medium":0.5,
+							"stonehearth_ace:trees:willow:large":0.5,
+							"stonehearth_ace:plants:chives":0.75,
+							"stonehearth_ace:plants:nightshade":0.75,
+							"stonehearth_ace:plants:sage":0.75
+						}
+					}
+				}
+			}
+		},
+		"water": {
+			"spawn_objects":{
+				"water_1":{
+					"stonehearth_ace:trees:willow:small":0.5,
+					"stonehearth_ace:trees:willow:medium":0.5,
+					"stonehearth_ace:trees:willow:large":0.5
+				}
+			}
+		}
+	}
+}

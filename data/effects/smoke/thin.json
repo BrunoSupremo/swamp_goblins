@@ -1,0 +1,15 @@
+{
+	"type": "effect",
+	"tracks": {
+		"smoke": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/smoke/thin.json",
+			"loop": true,
+			"transforms": { "x": -0.045, "y": 2, "z": 0.045,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			}
+		}
+	}
+}

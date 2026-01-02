@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 13,
+	"work_units": 2,
+	"recipe_name": "i18n(stonehearth:jobs.potter.recipes.tile_wall_mosaic_recipe.recipe_name)",
+	"description": "i18n(stonehearth:jobs.potter.recipes.tile_wall_mosaic_recipe.description)",
+	"flavor": "i18n(stonehearth:jobs.potter.recipes.tile_wall_mosaic_recipe.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/tile_wall_mosaic/tile_wall_mosaic.png",
+	"workshop": "swamp_goblins:earthmaster:potter_kiln",
+	"level_requirement": 3,
+	"ingredients": [
+		{
+			"material": "clay resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:tile_wall_mosaic"
+		}
+	]
+}

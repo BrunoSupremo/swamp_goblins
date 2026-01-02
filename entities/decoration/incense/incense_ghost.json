@@ -1,0 +1,40 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(incense.qb)"
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": -0.045, "y": 0, "z": 0.045 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"allow_vertical_adjacent": true
+		},
+		"render_info": {
+			"color_map": "swamp_goblins:color_map:magic",
+			"material_maps": [
+				"/stonehearth/data/materials/material_maps/mob_material_map.json"
+			],
+			"scale": 0.08
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.incense.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.incense.description)",
+			"icon": "file(incense.png)",
+			"category": "decoration",
+			"material_tags": [
+				"firefly_made",
+				"wood",
+				"decoration",
+				"comfy",
+				"stockpile_decoration",
+				"incense"
+			]
+		}
+	}
+}

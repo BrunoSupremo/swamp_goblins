@@ -1,0 +1,34 @@
+{
+	"mixins": "stonehearth:mixins:placed_object",
+	"components": {
+		"model_variants": {
+			"default": {
+				"models": [
+					"file(water_garden.qb)",
+					{
+						"type": "one_of",
+						"items": [
+							"file(water_garden_pink.qb)",
+							"file(water_garden_purple.qb)",
+							"file(water_garden_white.qb)",
+							"file(water_garden_yellow.qb)"
+						]
+					}
+				]
+			}
+		},
+		"mob": {
+			"model_origin": { "x": 0.45, "y": 0, "z": 0.55 },
+			"region_origin": { "x": 0.5, "y": 0, "z": 0.5 }
+		}
+	},
+	"entity_data": {
+		"stonehearth:catalog": {
+			"display_name": "i18n(swamp_goblins:entities.decoration.water_garden.display_name)",
+			"description": "i18n(swamp_goblins:entities.decoration.water_garden.description)",
+			"icon": "file(water_garden.png)",
+			"category": "decoration",
+			"material_tags": ["firefly_made", "wood", "decoration", "stockpile_decoration"]
+		}
+	}
+}

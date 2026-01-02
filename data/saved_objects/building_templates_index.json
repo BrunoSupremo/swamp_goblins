@@ -16,6 +16,7 @@
 						"firefly_inn":"file(building_templates/firefly_inn.json)",
 						"walkway_straight":"file(building_templates/walkway_straight.json)",
 						"walkway_corner":"file(building_templates/walkway_corner.json)",
+						"big_tent":"file(building_templates/big_tent.json)",
 						"beast_tamer_den": {
 							"unlock_requirement": {
 								"type": "has_job",
@@ -123,6 +124,7 @@
 					"required_city_tier": 3,
 					"templates": {
 						"firefly_t3_house1":	"file(building_templates/firefly_t3_house1.json)",
+						"firefly_t3_house2":	"file(building_templates/firefly_t3_house2.json)",
 						"wip":	"file(building_templates/wip.json)"
 					}
 				}

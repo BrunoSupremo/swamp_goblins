@@ -1,12 +1,12 @@
 {
 	"name": "firefly_dust",
 	"duration": 6000,
-	"material": "materials/cubemitter.material.json",
+	"material": "materials/cubemitter_add_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [5]
+			"values": [3]
 		},
 		"angle": {
 			"kind": "RANDOM_BETWEEN",
@@ -14,14 +14,14 @@
 		},
 		"origin": {
 			"surface": "SPHERE",
-			"values": [3, 0, 360]
+			"values": [4, 0, 360]
 		}
 	},
 	"particle": {
 		"lifetime": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [3000]
+				"values": [4000]
 			}
 		},
 		"speed": {
@@ -61,7 +61,7 @@
 		"scale": {
 			"start": {
 				"kind": "RANDOM_BETWEEN",
-				"values": [2, 3]
+				"values": [3, 4]
 			}
 		},
 		"color": {
@@ -70,6 +70,14 @@
 				"values": [
 					[0, 0.6, 0.2, 0.01],
 					[0, 0.7, 0.6, 0.01]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.5, 0.005],
+					[1, 0]
 				]
 			}
 		}

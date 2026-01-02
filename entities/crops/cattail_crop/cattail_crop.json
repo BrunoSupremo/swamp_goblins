@@ -24,7 +24,13 @@
 			},
 			"cattail_4": {
 				"models": [
-					"file(cattail_4.qb)"
+					{
+						"type": "one_of",
+						"items": [
+							"file(cattail_4.qb)",
+							"file(cattail_42.qb)"
+						]
+					}
 				]
 			}
 		},

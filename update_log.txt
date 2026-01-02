@@ -1,14 +1,35 @@
 Additions:
+Bridge landmark on the swamp water.
+Old Hut landmark on the swamp water.
+Tile Wall Mosaic and Tile Floor Mosaic decorations, crafted by Earthshaper.
+Incense decoration (wood and clay versions), crafted by Shaman and Earthshaper.
+Water Garden decoration (wood and clay versions), crafted by Shaman and Earthshaper.
+Spit Roaster decoration, crafted by Shaman.
+Big Tent, tier 1 template.
+Fancy House 1 and Fancy House 2, both tier 3 template.
 
 
 Changes:
+Babies are now listed in the citizens list, and counted as one.
+Updated some UI elements (bonesmith icons and traits, bottom bar, citizens icon)
+Updated biome landmarks models and placement
+Weather Stone will drop its jewels when it fails or is blocked (e.g. during titan storm)
+Removed trait Deviant Color that gave goblins new skin colors (green, red, yellow)
+Those uncommon skin colors are now available at the roster creation, and still have a small chance to appear on new citizens (~11%)
+Reduced file sizes
+Updated many particle effects, their visuals and performance
 
 
 Changes for ACE:
+Incorporated trees (willow) and plants (chive, nightshade and sage) from ace into the biome.
+Added ace landmarks to the biome.
+Monkeys can spawn as ambient mobs
 
 
 Fixes:
-Crafting error on baby food recipe
+Babies should also be removed along with other citizens when the player disconnects in multiplayer
+Beast Tamers should not drop the outfit in the floor (e.g. on demote)
 
 
 Fixes for ACE:
+Fixed eye color selector on roster creation not working.

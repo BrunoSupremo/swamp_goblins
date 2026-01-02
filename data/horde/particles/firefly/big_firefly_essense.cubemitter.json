@@ -1,12 +1,12 @@
 {
 	"name": "firefly_essense",
 	"duration": 1000,
-	"material": "materials/cubemitter_bloom.material.json",
+	"material": "materials/cubemitter_add_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
 			"kind": "CONSTANT",
-			"values": [20]
+			"values": [15]
 		},
 		"angle": {
 			"kind": "CONSTANT",
@@ -45,9 +45,8 @@
 			"over_lifetime_y": {
 				"kind": "CURVE",
 				"values": [
-					[0, -1],
-					[0.5, 1],
-					[1, -1]
+					[0, 0],
+					[1, 1]
 				]
 			},
 		},

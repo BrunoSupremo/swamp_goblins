@@ -3,13 +3,47 @@
 	"tracks": {
 		"firefly": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/firefly/firefly_essense.cubemitter.json",
+			"cubemitter": "/swamp_goblins/data/horde/particles/firefly/golem/flame.json",
 			"loop": true,
-			"transforms": {"x":0, "y":1.6, "z":0.1,
+			"transforms": {"x":0, "y":0.15, "z":0.3,
 				"rx":90,
 				"ry":0,
 				"rz":0
-			}
+			},
+			"bone": "head"
+		},
+		"cubemitter_sparkles": {
+			"type": "cubemitter",
+			"loop": true,
+			"cubemitter": "/swamp_goblins/data/horde/particles/firefly/golem/sparkles.json",
+			"transforms": { "x": 0, "y": 0.15, "z": 0.3,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			},
+			"bone": "head"
+		},
+		"cubemitter_smoke": {
+			"type": "cubemitter",
+			"loop": true,
+			"cubemitter": "/swamp_goblins/data/horde/particles/firefly/golem/smoke.json",
+			"transforms": { "x": 0, "y": 0.15, "z": 0.3,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			},
+			"bone": "head"
+		},
+		"cubemitter_glint": {
+			"type": "cubemitter",
+			"loop": true,
+			"cubemitter": "/swamp_goblins/data/horde/particles/firefly/golem/glint.json",
+			"transforms": { "x": 0, "y": 0.15, "z": 0.3,
+				"rx": 90,
+				"ry": 0,
+				"rz": 0
+			},
+			"bone": "head"
 		}
 	}
 }

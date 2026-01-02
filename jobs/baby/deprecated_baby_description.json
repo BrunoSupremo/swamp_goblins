@@ -1,0 +1,22 @@
+{
+	"type": "job",
+	"alias": "swamp_goblins:jobs:npc:baby",
+	"display_name": "",
+	"controller": "swamp_goblins:class:baby",
+	"description": "",
+	"requirements": "",
+	"default_stance": "passive",
+	"abilities": "swamp_goblins/entities/gizmos/deprecated/deprecated.json",
+	"task_groups": [
+		"stonehearth:task_groups:town_alert"
+	],
+	"roles": ["goblin_baby_job"],
+	"icon": "file(images/icon.png)",
+	"parent_job": "stonehearth:jobs:worker",
+	"max_level": 2,
+	"level_data": {
+		"1": {
+			"title": ""
+		}
+	}
+}

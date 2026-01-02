@@ -895,7 +895,8 @@
 		"saved_objects": {
 			"building_templates": {
 				"wip": "💜 Tier 3 Rewards not done yet 🚧",
-				"firefly_t3_house1": "💜 WIP Fancy House 1",
+				"firefly_t3_house1": "💜 Fancy House 1",
+				"firefly_t3_house2": "💜 Fancy House 2",
 				"barrack": "💜 Shack",
 				"firefly_house1": "💜 House 1",
 				"firefly_house2": "💜 House 2",
@@ -903,6 +904,7 @@
 				"hut": "💜 Hut",
 				"temple": "💜 Temple",
 				"tent": "💜 Tent",
+				"big_tent": "💜 Big Tent",
 				"nursery": "💜 Nursery",
 				"treasure_storage": "💜 Treasure Storage",
 				"garden": "💜 Garden",
@@ -931,10 +933,6 @@
 			}
 		},
 		"traits": {
-			"deviant_pigment": {
-				"display_name": "Deviant Pigment",
-				"description": "[name(i18n_data.entity)] skin color is a mark of distinction. Unlike most, this one has a unique hue that sets it apart from the rest."
-			},
 			"firefly_chaser": {
 				"display_name": "Firefly Chaser",
 				"description": "At night, [name(i18n_data.entity)] will wander around looking for fireflies to admire."
@@ -1416,6 +1414,14 @@
 				"description": "A funny shaped glass with sand inside, draining from one end to the other",
 				"flavor": "It is not my turn to flip it!"
 			},
+			"incense": {
+				"display_name": "Firefly Incense Stick",
+				"description": "A slender stick that releases fragrant smoke when lit.",
+				"flavor": "Used to mask goblin stew smell or summon inner peace — depends on the day."
+			},
+			"clay_incense": {
+				"display_name": "Firefly Clay Incense"
+			},
 			"nature_hearth": {
 				"display_name": "Nature Hearth",
 				"description": "Provides warmth, light, comfort, and random daily buffs"
@@ -1512,6 +1518,11 @@
 				"description": "Natural from the swamp biome, now for your home",
 				"flavor": "Hey, can you water my plants while I'm away?"
 			},
+			"roast": {
+				"display_name": "Spit Roaster",
+				"description": "A wooden frame built for roasting meat over open flame, perfect for campfire feasts.",
+				"flavor": "Legends say the scent of roasting meat lures wandering spirits—and hungry goblins—from miles away."
+			},
 			"shrine": {
 				"tall": {
 					"display_name": "Posterity Obelisk",
@@ -1545,6 +1556,14 @@
 				"display_name": "Wall Ring",
 				"description": "Wall hanging decorative ring",
 				"flavor": "Low light, high confort"
+			},
+			"water_garden": {
+				"display_name": "Water Garden",
+				"description": "A shallow bowl filled with water and floating flora. Decorative and calming.",
+				"flavor": "Some say the flowers rearrange themselves when no one's looking."
+			},
+			"water_garden_clay": {
+				"display_name": "Clay Water Garden"
 			},
 			"windchime": {
 				"display_name": "Windchime",
@@ -2057,7 +2076,7 @@
 				},
 				"level_3_data": {
 					"perk_000_name": "Traps",
-					"perk_000_description": "Immobilize enemies using traps, the amount based on this goblin mind stat"
+					"perk_000_description": "Immobilize enemies using traps, the amount based on the Mind stat"
 				},
 				"level_4_data": {
 					"perk_000_name": "Varanus",

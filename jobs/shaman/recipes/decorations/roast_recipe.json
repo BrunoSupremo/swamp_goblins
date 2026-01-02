@@ -1,0 +1,30 @@
+{
+	"type": "recipe",
+	"effort": 44,
+	"work_units": 3,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.roast.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.roast.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.roast.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/roast/roast.png",
+	"workshop": "swamp_goblins:shaman:workbench",
+	"level_requirement": 4,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		},
+		{
+			"uri": "stonehearth:food:varanus_meat",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:roast"
+		}
+	]
+}

@@ -5,7 +5,13 @@
 			"default": {
 				"models": [
 					"file(../pot.qb)",
-					"file(cattail.qb)"
+					{
+						"type": "one_of",
+						"items": [
+							"file(cattail.qb)",
+							"file(cattail2.qb)"
+						]
+					}
 				]
 			},
 			"ace_planter": {

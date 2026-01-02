@@ -35,7 +35,7 @@
 			"type": "cubemitter",
 			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/book/ball.json",
 			"loop": true,
-			"transforms": { "x": 0, "y": 0, "z": 1,
+			"transforms": { "x": 0, "y": 0, "z": 1.5,
 				"rx": 0,
 				"ry": 0,
 				"rz": 0
@@ -45,10 +45,9 @@
 			"type": "cubemitter",
 			"cubemitter": "/swamp_goblins/data/horde/particles/shrine/book/ball.json",
 			"loop": true,
-			"start_time":2000,
-			"transforms": { "x": 0, "y": 0, "z": 1,
+			"transforms": { "x": 0, "y": 0, "z": 1.5,
 				"rx": 0,
-				"ry": 0,
+				"ry": 180,
 				"rz": 0
 			}
 		},

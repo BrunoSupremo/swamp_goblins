@@ -201,8 +201,8 @@
 			"stonehearth:plants:violet": {
 				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 4,
-					"item_density": 0.21,
+					"grid_multiple": 5,
+					"item_density": 0.14,
 					"exclusion_radius": 0
 				}
 			},
@@ -225,8 +225,8 @@
 			"swamp_goblins:plants:cattail": {
 				"placement_type": "dense",
 				"parameters": {
-					"grid_multiple": 3,
-					"item_density": 0.14,
+					"grid_multiple": 4,
+					"item_density": 0.079,
 					"exclusion_radius": 1
 				}
 			},
@@ -422,8 +422,8 @@
 						},
 						"foothills": {
 							"1": {
-								"probability": 0.7,
-								"density": 0.7
+								"probability": 0.69,
+								"density": 0.69
 							}
 						},
 						"mountains": {
@@ -435,7 +435,7 @@
 					}
 				},
 				"cutoffs": {
-					"small": 0.075,
+					"small": 0.05,
 					"medium": 0.4
 				}
 			}
@@ -445,7 +445,7 @@
 				"water_1":{
 					"none":2.5,
 					"swamp_goblins:plants:lilypad":2.3,
-					"swamp_goblins:plants:cattail":4.9,
+					"swamp_goblins:plants:cattail":5.1,
 					"swamp_goblins:plants:log":1.5,
 					"swamp_goblins:plants:giant_flower":1.25,
 					"swamp_goblins:trees:mangrove:small":0.25,

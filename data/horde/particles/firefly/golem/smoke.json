@@ -1,0 +1,111 @@
+{
+	"name": "golemsmoke",
+	"duration": 2000,
+	"material": "materials/cubemitter_add_bloom.material.json",
+	"loops": true,
+	"emission": {
+		"rate": {
+			"kind": "CONSTANT",
+			"values": [10]
+		},
+		"angle": {
+			"kind": "CONSTANT",
+			"values": [0]
+		},
+		"origin": {
+			"surface": "CUBOID",
+			"values": [0.2, 0.2, 0.2]
+		}
+	},
+	"particle": {
+		"lifetime": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [250, 450]
+			}
+		},
+		"speed": {
+			"start": {
+				"kind": "CONSTANT",
+				"values": [0]
+			}
+		},
+		"rotation": {
+			"over_lifetime_x": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, -90]
+					],
+					[
+						[0, 0],
+						[1, 90]
+					]
+				]
+			},
+			"over_lifetime_y": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, -90]
+					],
+					[
+						[0, 0],
+						[1, 90]
+					]
+				]
+			},
+			"over_lifetime_z": {
+				"kind": "RANDOM_BETWEEN_CURVES",
+				"values": [
+					[
+						[0, 0],
+						[1, -90]
+					],
+					[
+						[0, 0],
+						[1, 90]
+					]
+				]
+			}
+		},
+		"acceleration": {
+			"over_lifetime_y": {
+				"kind": "CONSTANT",
+				"values": [1]
+			}
+		},
+		"scale": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [0.15, 0.2]
+			},
+			"over_lifetime": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[1, 2]
+				]
+			}
+		},
+		"color": {
+			"start": {
+				"kind": "RANDOM_BETWEEN",
+				"values": [
+					[0.174, 0.948, 0.436, 1],
+					[0.219, 0.868, 0.179, 1]
+				]
+			},
+			"over_lifetime_a": {
+				"kind": "CURVE",
+				"values": [
+					[0, 0],
+					[0.5, 0.1],
+					[1, 0]
+				]
+			}
+		}
+	}
+}

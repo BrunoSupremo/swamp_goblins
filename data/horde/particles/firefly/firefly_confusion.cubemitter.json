@@ -1,7 +1,7 @@
 {
 	"name": "firefly_confusion",
 	"duration": 6000,
-	"material": "materials/cubemitter.material.json",
+	"material": "materials/cubemitter_add_bloom.material.json",
 	"loops": true,
 	"emission": {
 		"rate": {
@@ -14,7 +14,7 @@
 		},
 		"origin": {
 			"surface": "SPHERE",
-			"values": [2, 0, 360]
+			"values": [2, 1, 360]
 		}
 	},
 	"particle": {
@@ -27,7 +27,7 @@
 		"speed": {
 			"start": {
 				"kind": "CONSTANT",
-				"values": [0.5]
+				"values": [1]
 			}
 		},
 		"rotation": {
@@ -44,8 +44,11 @@
 			"over_lifetime": {
 				"kind": "CURVE",
 				"values": [
-					[0, 3],
+					[0, 0],
 					[0.2, 1],
+					[0.35, 1],
+					[0.4, 0],
+					[0.45, 1],
 					[0.8, 1],
 					[1, 0]
 				]
@@ -64,6 +67,9 @@
 				"values": [
 					[0, 0],
 					[0.2, 1],
+					[0.35, 1],
+					[0.4, 0],
+					[0.45, 1],
 					[0.8, 1],
 					[1, 0]
 				]

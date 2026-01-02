@@ -125,10 +125,10 @@ function BeastTamerClass:summon_traps(delay, target)
 	for i, entity in ipairs(enemies) do
 		radiant.entities.add_buff(entity, "swamp_goblins:buffs:trapped")
 		local hp_timer = radiant.entities.get_attribute(entity, "max_health")
-		hp_timer = math.ceil( math.max(50 - math.sqrt(hp_timer)/2, 5) ) .. "m+5m"
+		hp_timer = math.ceil( math.max(60 - math.pow(hp_timer, 1/3) *3.2, 1) ) .. "m+5m"
 		-- some example ranges:
-		-- 100hp = 45m, 200hp = 42m, 500hp = 38m
-		-- 1000hp = 34m, 2000hp = 27m, 5000hp = 15m
+		-- 100hp = 45m, 200hp = 41m, 500hp = 34m
+		-- 1000hp = 28m, 2000hp = 19m, 5000hp = 5m
 		stonehearth.calendar:set_timer("summon trap on enemy "..i, hp_timer, function()
 			radiant.entities.remove_buff(entity, "swamp_goblins:buffs:trapped")
 		end)
@@ -177,8 +177,9 @@ function BeastTamerClass:create_animal(url, has_attributes)
 	end
 	local location = radiant.terrain.find_placement_point(entity_location, 3, 5, self._sv._entity, nil, true)
 	radiant.terrain.place_entity_at_exact_location(animal, location)
+	radiant.entities.turn_to(animal, radiant.entities.get_facing(self._sv._entity) )
 
-	radiant.effects.run_effect(animal, "stonehearth:effects:spawn_entity")
+	radiant.effects.run_effect(animal, "swamp_goblins:effects:spirit:poof")
 
 	animal:add_component('swamp_goblins:summon')
 end

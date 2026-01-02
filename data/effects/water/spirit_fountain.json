@@ -9,15 +9,13 @@
 		},
 		"splash": {
 			"type": "cubemitter",
-			"cubemitter": "/swamp_goblins/data/horde/particles/spirit/fountain/splash.json",
-			"start_time": 0,
+			"cubemitter": "/swamp_goblins/data/horde/particles/water/splash.json",
 			"loop": true,
-			"transforms": { "x": 0, "y": 0.7, "z": 0.65, "rx": 90, "ry": 0, "rz": 0 }
+			"transforms": { "x": 0, "y": 0.65, "z": 0.65, "rx": 90, "ry": 0, "rz": 0 }
 		},
 		"surface": {
 			"type": "cubemitter",
 			"cubemitter": "/swamp_goblins/data/horde/particles/spirit/fountain/surface.json",
-			"start_time": 0,
 			"loop": true,
 			"transforms": { "x": 0, "y": 0.5, "z": 0, "rx": 90, "ry": 0, "rz": 0 }
 		},
@@ -30,7 +28,6 @@
 		"glow": {
 			"type": "cubemitter",
 			"cubemitter": "/swamp_goblins/data/horde/particles/spirit/fountain/glow.json",
-			"start_time": 0,
 			"loop": true,
 			"transforms": { "x": 0, "y": 1.5, "z": 0, "rx": 90, "ry": 0, "rz": 0 }
 		},
