@@ -1,12 +1,9 @@
 [[FX]]
 
-float4 alpha = { 0, 0, 0, 0.5 };
-
 [[VS]]
 #include "shaders/utilityLib/vertCommon.glsl"
 
 uniform mat4 viewProjMat;
-uniform vec4 alpha;
 
 attribute vec3 vertPos;
 attribute vec4 color;
@@ -16,7 +13,8 @@ varying vec4 outColor;
 varying vec3 tsbNormal;
 
 void main() {
-   outColor = vec4(color.rgb + vec3(0.5), alpha.a);
+   // Hardcoded alpha = 0.5
+   outColor = vec4(color.rgb + vec3(0.5), 0.5);
    tsbNormal = calcWorldVec(normal);
    gl_Position = viewProjMat * calcWorldPos(vec4(vertPos, 1.0));
 }
@@ -25,7 +23,6 @@ void main() {
 #include "shaders/utilityLib/desaturate.glsl"
 
 varying vec4 outColor;
-
 varying vec3 tsbNormal;
 
 const vec3 lightDir = vec3(-0.3, -0.5, 0.8);
