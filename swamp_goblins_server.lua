@@ -1,7 +1,14 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 26.1.16")
+print("Swamp Goblins Mod version 26.5.28")
 
 --[[
+
+I think the goblin warrior hearth should inherit the no gathering for warmth that the normal glory hearth ace has, because if I spawn in a hearth for challengers sometimes hearthlings or merchants will go to it for warmth lol and I usually put it out away from my settlement
+
+add a countdown timer to the hearth challenges, particles or billboards, displaying the number above the hearth
+maybe unary counter
+
+check if better to create a second clay brick item (like the multiple log types) to avoid the auto craft recipes bugging
 
 add that big snake model from stmpnk
 
@@ -54,6 +61,7 @@ quests:
 		spirit world has inverted colors?
 
 ace stuff:
+	add ace new traps
 	add ace tools and tools upgrades
 	fuel system (Wait gobbos can't chop wood?)
 	wounds and tonics
@@ -68,6 +76,7 @@ mobs:
 			cube roll walking, particle effect trail
 			size inflation for attack
 			squish up/down idle
+		maybe use ent_mage for animations
 	black boe:
 		probably for undead campaign
 		small black smoke blobs with glowing eyes

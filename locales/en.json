@@ -7,9 +7,7 @@
 				"charging_weather_stone": "Charging Weather Stone",
 				"using_weather_stone": "Using Weather Stone",
 				"summoning": "Summoning",
-				"lay_egg": "Laying an egg",
-				"play_music": "Playing music",
-				"enjoy_music": "Enjoying music"
+				"lay_egg": "Laying an egg"
 			}
 		}
 	},
@@ -142,8 +140,8 @@
 			},
 			"music":{
 				"display_name":"Play Music",
-				"description":"It will call someone to play this instrument",
-				"disabled_description":"Waiting for someone to play it, or in use already."
+				"description":"Gather everyone into a party",
+				"disabled_description":"In use already."
 			},
 			"shrine":{
 				"summon_allied_fighters":{
@@ -1401,6 +1399,11 @@
 				"description": "A blend of fibers are woven tightly by hand, for whatever foot traffic comes its way.",
 				"flavor": "Easy to clean later."
 			},
+			"frog_pond": {
+				"display_name": "Frog Pond",
+				"description": "A shallow pond teeming with frogs, reeds, and buzzing insects. Decorative and lively.",
+				"flavor": "The goblins say each frog croak is a blessing — or a warning, depending on the night."
+			},
 			"gong": {
 				"green_name": "Green Gong",
 				"blue_name": "Blue Gong",
@@ -1828,12 +1831,17 @@
 			"bongo":{
 				"display_name":"Bongo",
 				"description":"A percussion instrument consisting of a pair of small drums of different sizes.",
-				"flavor":"Click on it and press the play button, someone will come to play it"
+				"flavor":"Click on it and press the play button, and a party will start"
+			},
+			"drum":{
+				"display_name":"Oversized Drum",
+				"description":"A large percussion instrument with a deep, resonant sound, used to set the rhythm and add dramatic emphasis.",
+				"flavor":"Click on it and press the play button, and a party will start"
 			},
 			"xylophone":{
 				"display_name":"Xylophone",
 				"description":"A musical instrument in the percussion family that consists of wooden bars struck by mallets.",
-				"flavor":"Click on it and press the play button, someone will come to play it"
+				"flavor":"Click on it and press the play button, and a party will start"
 			}
 		},
 		"peoples": {

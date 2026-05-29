@@ -3,18 +3,7 @@
 	"mixins": "file(xylophone_ghost.json)",
 	"components": {
 		"swamp_goblins:music": {
-			"instrument_sounds":{
-				"swamp_goblins:effects:music:xylophone_1":2,
-				"swamp_goblins:effects:music:xylophone_4":1
-			},
-			"player_animations":{
-				"idle_warm_hands":40,
-				"emote_confetti":1,
-				"emote_dance_handsup":1,
-				"emote_dance_shuffle":1,
-				"emote_dance_themonkey":1,
-				"emote_applaud":1
-			}
+			"effect_height":0.7
 		},
 		"stonehearth:commands": {
 			"commands": [

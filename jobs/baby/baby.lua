@@ -49,6 +49,9 @@ function BabyClass:post_activate()
 		end
 	end)
 
+	-- remove vanilla :eat to avoid race conditions with one cancelling the other when pathing to food
+	self._sv._entity:get_component('stonehearth:ai'):remove_action("stonehearth:actions:eat")
+
 	self._conversation_listener = radiant.events.listen(self._sv._entity, 'stonehearth:conversation:results_produced', function(e)
 		local target = stonehearth.conversation:get_target(self._sv._entity)
 		if not (target and target:is_valid()) then

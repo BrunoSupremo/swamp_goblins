@@ -7,9 +7,7 @@
 				"charging_weather_stone": "Carregando Pedra do Tempo",
 				"using_weather_stone": "Usando Pedra do Tempo",
 				"summoning": "Invocando",
-				"lay_egg": "Pondo um ovo",
-				"play_music": "Ouvindo música",
-				"enjoy_music": "Curtindo música"
+				"lay_egg": "Pondo um ovo"
 			}
 		}
 	},
@@ -142,8 +140,8 @@
 			},
 			"music": {
 				"display_name": "Tocar Música",
-				"description": "Vai chamar alguém para tocar este instrumento",
-				"disabled_description": "Esperando que alguém o toque, ou já em uso."
+				"description": "Reúna todos em uma festa.",
+				"disabled_description": "Já em uso."
 			},
 			"shrine":{
 				"summon_allied_fighters":{
@@ -1401,6 +1399,11 @@
 				"description": "Uma mistura de fibras é tecida firmemente à mão, para qualquer quantidade de pés que surja.",
 				"flavor": "Fácil de limpar mais tarde."
 			},
+			"frog_pond": {
+				"display_name": "Lagoa dos Sapos",
+				"description": "Uma lagoa rasa repleta de sapos, juncos e insetos zumbindo. Decorativa e vibrante.",
+				"flavor": "Os goblins dizem que cada coaxar de sapo é uma bênção — ou um aviso, dependendo da noite."
+			},
 			"gong": {
 				"green_name": "Gongo Verde",
 				"blue_name": "Gongo Azul",
@@ -1820,12 +1823,17 @@
 			"bongo": {
 				"display_name": "Bongo ",
 				"description": "Um instrumento de percussão composto por um par de pequenos tambores de diferentes tamanhos.",
-				"flavor": "Clique nele e aperte o botão play, alguém virá tocar"
+				"flavor": "Clique nele e aperte o botão play, e a festa começará."
 			},
+			"drum":{
+				"display_name":"Tambor Gigante",
+				"description":"Um instrumento de percussão grande com um som profundo e ressonante, usado para marcar o ritmo e dar ênfase dramática.",
+				"flavor": "Clique nele e aperte o botão play, e a festa começará."
+			},			
 			"xylophone": {
 				"display_name": "Xilofone",
 				"description": "Instrumento musical da família da percussão que consiste em barras de madeira atingidas por marretas.",
-				"flavor": "Clique nele e aperte o botão play, alguém virá tocar"
+				"flavor": "Clique nele e aperte o botão play, e a festa começará."
 			}
 		},
 		"peoples": {

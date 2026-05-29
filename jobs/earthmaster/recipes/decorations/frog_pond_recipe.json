@@ -1,0 +1,22 @@
+{
+	"type": "recipe",
+	"effort": 32,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:entities.decoration.frog_pond.display_name)",
+	"description": "i18n(swamp_goblins:entities.decoration.frog_pond.description)",
+	"flavor": "i18n(swamp_goblins:entities.decoration.frog_pond.flavor)",
+	"portrait": "/swamp_goblins/entities/decoration/frog_pond/frog_pond.png",
+	"workshop": "swamp_goblins:earthmaster:workbench",
+	"level_requirement": 1,
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 3
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:decoration:frog_pond"
+		}
+	]
+}

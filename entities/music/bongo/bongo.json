@@ -3,20 +3,7 @@
 	"mixins": "file(bongo_ghost.json)",
 	"components": {
 		"swamp_goblins:music": {
-			"instrument_sounds":{
-				"swamp_goblins:effects:music:bongo_2":2.5,
-				"swamp_goblins:effects:music:bongo_3":2,
-				"swamp_goblins:effects:music:bongo_4":1.5,
-				"swamp_goblins:effects:music:bongo_5":1
-			},
-			"player_animations":{
-				"idle_warm_hands":40,
-				"emote_confetti":1,
-				"emote_dance_handsup":1,
-				"emote_dance_shuffle":1,
-				"emote_dance_themonkey":1,
-				"emote_applaud":1
-			}
+			"effect_height":1
 		},
 		"stonehearth:commands": {
 			"commands": [

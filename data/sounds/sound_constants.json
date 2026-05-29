@@ -1,6 +1,16 @@
 {
 	"type": "index",
 	"music": {
+		"goblin_party": {
+			"track": [
+				"swamp_goblins:music:goblin_party",
+				"swamp_goblins:music:goblin_party_2",
+				"swamp_goblins:music:goblin_party_3",
+				"swamp_goblins:music:goblin_party_4"
+			],
+			"loop": false,
+			"priority": 100
+		},
 		"kingdoms": {
 			"swamp_goblins:kingdoms:firefly_clan": {
 				"tier_to_day_music_track": {
