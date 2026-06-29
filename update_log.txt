@@ -1,16 +1,25 @@
 Additions:
-Oversized Drum, music instrument crafted by bonesmith
-Frog Pond, decoration crafted by Earthshaper
+Added new Shaman Workbench.
 
 
 Changes:
+Adapted ingredients for Trapper (Trapper+ mod) workstation recipes.
+Reduced from 5 to 3 wide the size of Shaman Cauldron with a new model.
+Improved Shaman workstations crafting effects
+Updated Shaman building templates
 
 
 Changes for ACE:
+Properly set Brewer job for goblins. Correct outfit, adapted recipes, craftable talisman, etc...
 
 
 Fixes:
-Fixed a serious issue where babies would keep switching between eating and pathing to a new food, starving in the process.
+Goblin Egg now goes into "Trophy" category instead of a bugged undefined one.
+Prevented a bug that could happen when a baby with some buffs grows into a citizen.
+Prevented babies leveling up from unintended methods (e.g. professor trait)
+Fixed Shaman Brewing Stand icon model missing.
+Spirit Walker 5th level perk will now only buff defense from warriors of that player (not of allies or enemies!)
+Same for Beast Tamer, they should only receive the Dragon Summon skill from Spirit Walkers of the same player.
 
 
 Fixes for ACE:

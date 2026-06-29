@@ -2,7 +2,7 @@
 	"mixins": "stonehearth:jobs:trapper",
 	"display_order": 3,
 	"controller": "swamp_goblins:class:scavenger",
-	"requirements": "i18n(swamp_goblins:jobs.scavenger.scavenger_description.requirements)",
+	"requirements": "i18n(swamp_goblins:jobs.common.common_description.requirements)",
 	"mixintypes": {
 		"equipment": "override",
 		"roles": "override"

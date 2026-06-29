@@ -1,0 +1,35 @@
+{
+	"type": "recipe",
+	"effort": 40,
+	"work_units": 10,
+	"recipe_name": "i18n(trapper_plus:trapper.smokehouse_simple.display_name)",
+	"description": "i18n(trapper_plus:trapper.smokehouse_simple.recipe_description)",
+	"flavor": "i18n(trapper_plus:trapper.smokehouse_simple.flavor)",
+	"portrait": "/trapper_plus/jobs/trapper/smokehouse_simple/smokehouse_simple.png",
+	"level_requirement": 2,
+	"proficiency_gain": 1.5,
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 4
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		},
+		{
+			"material": "ore resource",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "trapper_plus:trapper:smokehouse_simple"
+		}
+	]
+}

@@ -12,6 +12,9 @@
 				"shaman_workbench": {
 					"recipe": "file(workbenches/shaman_workbench_recipe.json)"
 				},
+				"shaman_cauldron": {
+					"recipe": "file(workbenches/shaman_cauldron_recipe.json)"
+				},
 				"firefly_token": {
 					"recipe": "file(workbenches/firefly_token_recipe.json)"
 				},
@@ -25,7 +28,7 @@
 					"recipe": "file(workbenches/brewing_stand_recipe.json)"
 				},
 				"cook_workbench": {
-					"recipe": "file(workbenches/cook_workbench_recipe.json)"
+					"recipe": "file(deprecated.json)"
 				},
 				"cook_mill": {
 					"recipe": "file(workbenches/cook_mill_recipe.json)"

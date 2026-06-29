@@ -1,9 +1,20 @@
 {
+	"mixins": "/trapper_plus/jobs/trapper/recipes/recipes.json",
 	"craftable_recipes": {
+		"workbenches": {
+			"recipes": {
+				"trapper_campfire_pot": {
+					"recipe": "file(trapper_campfire_pot_recipe.json)"
+				}
+			}
+		},
 		"processors": {
 			"recipes": {
 				"firefly_smokehouse": {
 					"recipe": "file(firefly_smokehouse_recipe.json)"
+				},
+				"smokehouse_simple": {
+					"recipe": "file(smokehouse_simple_recipe.json)"
 				}
 			}
 		}

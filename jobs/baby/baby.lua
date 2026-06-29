@@ -89,6 +89,7 @@ function BabyClass:grow()
 	local body_booster = equipment_component:has_item_type("swamp_goblins:baby:bottle2")
 	local spirit_booster = equipment_component:has_item_type("swamp_goblins:baby:blanket2")
 
+	self._sv._entity:remove_component("stonehearth:buffs")
 	radiant.entities.destroy_entity(self._sv._entity)
 
 	local adult = radiant.entities.create_entity("swamp_goblins:goblins:goblin", {owner = self.player_id} )
@@ -160,6 +161,11 @@ function BabyClass:destroy()
 		self._conversation_listener = nil
 	end
 	BaseJob.destroy(self)
+end
+
+function BabyClass:can_level_up_()
+	-- prevents level up when they gain exp not from food (e.g. professor trait)
+	return false
 end
 
 return BabyClass

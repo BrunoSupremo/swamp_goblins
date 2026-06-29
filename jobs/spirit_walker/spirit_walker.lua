@@ -182,11 +182,15 @@ function SpiritWalkerClass:double_attributes(spirit)
 end
 
 function SpiritWalkerClass:spirit_armor(args)
-	radiant.events.trigger_async(stonehearth.job, 'swamp_goblins:spirit_armor')
+	radiant.events.trigger_async(stonehearth.job, 'swamp_goblins:spirit_armor', {
+		player_id = radiant.entities.get_player_id(self._sv._entity)
+	})
 end
 
 function SpiritWalkerClass:dragon_aura(args)
-	radiant.events.trigger_async(stonehearth.job, 'swamp_goblins:spirit_walker_dragon_aura')
+	radiant.events.trigger_async(stonehearth.job, 'swamp_goblins:spirit_walker_dragon_aura', {
+		player_id = radiant.entities.get_player_id(self._sv._entity)
+	})
 end
 
 return SpiritWalkerClass

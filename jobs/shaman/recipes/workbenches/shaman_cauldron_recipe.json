@@ -1,0 +1,26 @@
+{
+	"type": "recipe",
+	"effort": 33,
+	"work_units": 5,
+	"recipe_name": "i18n(swamp_goblins:jobs.shaman.shaman_cauldron.display_name)",
+	"description": "i18n(swamp_goblins:jobs.shaman.shaman_cauldron.description)",
+	"flavor": "i18n(swamp_goblins:jobs.shaman.shaman_cauldron.flavor)",
+	"portrait": "/swamp_goblins/jobs/shaman/shaman_cauldron/shaman_cauldron.png",
+	"work_effect": "work",
+	"level_requirement": 2,
+	"ingredients": [
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "stone resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "swamp_goblins:shaman:cauldron"
+		}
+	]
+}

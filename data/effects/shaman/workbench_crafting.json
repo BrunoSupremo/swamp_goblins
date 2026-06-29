@@ -1,0 +1,19 @@
+{
+	"mixins": "file(workbench.json)",
+	"type" : "effect",
+	"tracks": {
+		"skull": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/shaman/workbench/skull.json",
+			"loop": true,
+			"transforms": {
+				"x":0,
+				"y":1.3,
+				"z":0.55,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		}
+	}
+}

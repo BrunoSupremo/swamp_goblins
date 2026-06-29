@@ -344,7 +344,10 @@
 		"effects:hourglass":	"file(data/effects/hourglass)",
 		"effects:lamp":"file(data/effects/lamp)",
 		"effects:music:notes":	"file(data/effects/music/notes.json)",
-		"effects:shaman_workbench_effect":"file(data/effects/shaman_workbench_effect)",
+		"effects:shaman:cauldron":			"file(data/effects/shaman/cauldron.json)",
+		"effects:shaman:cauldron_crafting":	"file(data/effects/shaman/cauldron_crafting.json)",
+		"effects:shaman:workbench":			"file(data/effects/shaman/workbench.json)",
+		"effects:shaman:workbench_crafting":"file(data/effects/shaman/workbench_crafting.json)",
 		"effects:upgraded_staff":"file(data/effects/spirit_walker/upgraded_staff.json)",
 		"effects:shrine:book":			"file(data/effects/shrine/book.json)",
 		"effects:shrine:book:blessed":	"file(data/effects/shrine/book_blessed.json)",
@@ -589,12 +592,13 @@
 
 		"scavenger:talisman": "file(jobs/scavenger/scavenger_backpack/scavenger_backpack_talisman.json)",
 
-		"shaman:dreamcatcher": "file(jobs/shaman/dreamcatcher)",
-		"shaman:talisman": "file(jobs/shaman/dreamcatcher/dreamcatcher_talisman.json)",
-		"shaman:workbench": "file(jobs/shaman/shaman_workbench)",
-		"shaman:firefly_token": "file(jobs/shaman/shaman_firefly_token)",
+		"shaman:dreamcatcher":	"file(jobs/shaman/dreamcatcher)",
+		"shaman:talisman":	"file(jobs/shaman/dreamcatcher/dreamcatcher_talisman.json)",
+		"shaman:cauldron":	"file(jobs/shaman/shaman_cauldron)",
+		"shaman:workbench":	"file(jobs/shaman/shaman_workbench)",
+		"shaman:firefly_token":	"file(jobs/shaman/shaman_firefly_token)",
 		"shaman:egg_pedestal":	"file(jobs/shaman/egg_pedestal)",
-		"shaman:brewing_stand": "file(jobs/shaman/brewing_stand)",
+		"shaman:brewing_stand":	"file(jobs/shaman/brewing_stand)",
 
 		"skeletons:humanoid:baby":"file(data/rigs/entities/humans/skeletons/baby.json)",
 
@@ -733,9 +737,6 @@
 		"towers:worker:weapon_utility":			"file(tower_defense/towers/worker/weapon_utility.json)"
 	},
 	"deprecated_aliases":{
-		"monsters:golems:firefly_golem:effect":	"file(entities/gizmos/deprecated)",
-		"traits:deviant_pigment":	"file(data/traits/deviant_pigment)",
-		"jobs:npc:baby":	"file(jobs/baby/deprecated_baby_description.json)"
 	},
 	"mixintos" :  {
 		"stonehearth_ace:beehive": "file(entities/critters/beehive/beehive.json)",
@@ -875,6 +876,9 @@
 		"stonehearth:kingdoms:human_npcs": "file(services/server/population/data/human_npc_population.json)",
 
 		"stonehearth:jobs:index": "file(jobs/index.json)",
+		"swamp_goblins:jobs:index":"stonehearth_ace/swamp_goblins/jobs/goblin_ace_index.json",
+
+		"stonehearth_ace/jobs/brewer/brewer_outfit/brewer_outfit_hat/brewer_outfit_hat.json":	"file(jobs/brewer/brewer_outfit/brewer_outfit_hat)",
 
 		"swamp_goblins:jobs:bonesmith":	"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 		"swamp_goblins:jobs:earthmaster":[
@@ -885,6 +889,7 @@
 			"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 			"stonehearth_ace/swamp_goblins/jobs/shaman/ace_shaman_description.json"
 		],
+		"swamp_goblins/jobs/scavenger/scavenger_description.json":"trapper_plus/swamp_goblins/jobs/scavenger/trapper_plus_description.json",
 		"swamp_goblins:jobs:worker":	"stonehearth_ace/swamp_goblins/jobs/common/ace_description.json",
 		"stonehearth:jobs:trapper":	"file(jobs/trapper/trapper_description.json)",
 		"nordlingmod:jobs:ruler_firefly": "file(jobs/ruler/ruler_description_firefly.json)",
@@ -924,14 +929,13 @@
 		"swamp_goblins:worker:upgraded_outfit":"stonehearth_ace/swamp_goblins/jobs/worker/upgraded_outfit/ace_buffs.json",
 
 		"trapper_plus:jobs:trapper:helper_recipes":"file(jobs/trapper/trapper_helper_recipes.json)",
-		"trapper_plus/jobs/trapper/recipes/recipes.json":"file(jobs/trapper/recipes/trapper_plus_recipes.json)",
 
 		"stonehearth:blacksmith:forge":			"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
 		"stonehearth:blacksmith:workbench":		"file(jobs/earthmaster/magmasmith_workbench/equivalents.json)",
 		"stonehearth:carpenter:toolbench":		"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
 		"stonehearth:carpenter:workbench":		"file(jobs/bonesmith/bonesmith_workbench/equivalents.json)",
-		"stonehearth:cook:workbench":			"file(jobs/shaman/shaman_workbench/equivalents.json)",
-		"stonehearth:herbalist:workbench":		"file(jobs/shaman/shaman_workbench/equivalents.json)",
+		"stonehearth:cook:workbench":			"file(jobs/shaman/shaman_cauldron/equivalents.json)",
+		"stonehearth:herbalist:workbench":		"file(jobs/shaman/shaman_cauldron/equivalents.json)",
 		"stonehearth:mason:pedestal":			"file(jobs/earthmaster/mason_pedestal/equivalents.json)",
 		"stonehearth:mason:workbench":			"file(jobs/earthmaster/mason_pedestal/equivalents.json)",
 		"stonehearth:potter:kiln":				"file(jobs/earthmaster/potter_kiln/equivalents.json)",
@@ -1147,6 +1151,10 @@
 		"stonehearth_ace/swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json":"swamp_goblins/entities/containers/embark_wagon/ace_embark_wagon_ghost.json",
 		"stonehearth_ace/swamp_goblins/entities/containers/pet_food_bowl/with_ace.json":"swamp_goblins/entities/containers/pet_food_bowl/with_ace.json",
 		"stonehearth_ace/swamp_goblins/entities/containers/ace_input.json":"swamp_goblins/entities/containers/ace_input.json",
+
+		"trapper_plus/swamp_goblins/jobs/scavenger/trapper_plus_description.json":"swamp_goblins/jobs/scavenger/trapper_plus_description.json",
+
+		"stonehearth_ace/swamp_goblins/jobs/goblin_ace_index.json":"swamp_goblins/jobs/goblin_ace_index.json",
 
 		"stonehearth_ace/swamp_goblins/jobs/beast_tamer/summons_ace.json":"swamp_goblins/jobs/beast_tamer/summons_ace.json",
 		"stonehearth_ace/swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json":"swamp_goblins/jobs/bonesmith/ace_recipes/ace_recipes.json",

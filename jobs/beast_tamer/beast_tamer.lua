@@ -14,9 +14,11 @@ function BeastTamerClass:dragon_aura_equip()
 	local player_id = radiant.entities.get_player_id(self._sv._entity)
 	local job = stonehearth.job:get_job_info(player_id, "swamp_goblins:jobs:spirit_walker")
 	if job:get_highest_level() >=6 then
-		self:spirit_walker_dragon_aura()
+		self:spirit_walker_dragon_aura({
+			player_id = radiant.entities.get_player_id(self._sv._entity)
+		})
 	else
-		self.spirit_listener = radiant.events.listen_once(stonehearth.job, 'swamp_goblins:spirit_walker_dragon_aura', self, self.spirit_walker_dragon_aura)
+		self.spirit_listener = radiant.events.listen(stonehearth.job, 'swamp_goblins:spirit_walker_dragon_aura', self, self.spirit_walker_dragon_aura)
 	end
 end
 
@@ -38,7 +40,10 @@ function BeastTamerClass:_create_listeners()
 	self.summons = radiant.resources.load_json(self._job_json.summons)
 end
 
-function BeastTamerClass:spirit_walker_dragon_aura()
+function BeastTamerClass:spirit_walker_dragon_aura(event)
+	if not (event.player_id == radiant.entities.get_player_id(self._sv._entity)) then
+		return
+	end
 	local equipment_component = self._sv._entity:get_component("stonehearth:equipment")
 	if not equipment_component:has_item_type("swamp_goblins:beast_tamer:abilities:summon_dragon_aura") then
 		local equipment = radiant.entities.create_entity("swamp_goblins:beast_tamer:abilities:summon_dragon_aura")

@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 26.5.28")
+print("Swamp Goblins Mod version 26.6.24")
 
 --[[
 
@@ -11,8 +11,6 @@ maybe unary counter
 check if better to create a second clay brick item (like the multiple log types) to avoid the auto craft recipes bugging
 
 add that big snake model from stmpnk
-
-add new workbench to shaman to avoid crafting stuff on cook pots
 
 elderstone reference
 
@@ -47,6 +45,7 @@ quests:
 	make new orc/kobold gongs
 	jobs side quests:
 		shaman lvl 6: travel to learn cook recipes || eating contest?
+			nah, if i should add all food, it should be properly through a cook job
 	combat hearth waves:
 		boss, bunnies, orcs, kobolds, ogres
 	import hearthlings:
@@ -82,6 +81,10 @@ mobs:
 		small black smoke blobs with glowing eyes
 
 jobs:
+	shiny maker
+		blacksmith like job
+		focused on upgrades
+
 	alchemist?
 	
 	warrior rework:

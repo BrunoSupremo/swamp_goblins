@@ -1,0 +1,54 @@
+{
+	"type" : "effect",
+	"tracks": {
+		"fire": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/super_tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":-0.9,
+				"y":1.425,
+				"z":0.5,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"fire2": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/super_tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":-1.1,
+				"y":1.325,
+				"z":0.3,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"fire3": {
+			"type": "cubemitter",
+			"cubemitter": "/swamp_goblins/data/horde/particles/green_fire/super_tiny.json",
+			"loop": true,
+			"transforms": {
+				"x":-0.8,
+				"y":1.125,
+				"z":0.2,
+				"rx":90,
+				"ry":0,
+				"rz":0
+			}
+		},
+		"light": {
+			"type": "light",
+			"light": "/swamp_goblins/data/horde/animatedlights/green_fire/tiny.json",
+			"transforms": {
+				"x":-1,
+				"y":1.45,
+				"z":0.35
+			},
+			"shadows": false
+		}
+	}
+}

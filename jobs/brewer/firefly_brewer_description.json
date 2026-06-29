@@ -1,0 +1,13 @@
+{
+	"mixins": "stonehearth_ace:jobs:brewer",
+	"requirements": "i18n(swamp_goblins:jobs.common.common_description.requirements)",
+	"equipment": {
+		"mixintypes": {
+			"boots": "remove"
+		}
+	},
+	"crafter": {
+		"recipe_list": "file(recipes)"
+	},
+	"parent_job": "swamp_goblins:jobs:shaman"
+}

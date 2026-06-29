@@ -1,0 +1,34 @@
+{
+	"type": "recipe",
+	"effort": 45,
+	"work_units": 5,
+	"recipe_name": "i18n(trapper_plus:trapper.campfire_pot.recipe_display_name)",
+	"description": "i18n(trapper_plus:trapper.campfire_pot.recipe_description)",
+	"flavor": "i18n(trapper_plus:trapper.campfire_pot.flavor)",
+	"portrait": "/trapper_plus/jobs/trapper/trapper_campfire_pot/trapper_campfire_pot.png",
+	"level_requirement": 3,
+	"work_effect": "work",
+	"ingredients": [
+		{
+			"material": "stone resource",
+			"count": 1
+		},
+		{
+			"material": "wood resource",
+			"count": 1
+		},
+		{
+			"material": "fiber resource",
+			"count": 1
+		},
+		{
+			"material": "ore resource",
+			"count": 1
+		}
+	],
+	"produces": [
+		{
+			"item": "trapper_plus:trapper:campfire_pot"
+		}
+	]
+}

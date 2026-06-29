@@ -2068,6 +2068,11 @@
 		}
 	},
 	"jobs": {
+		"common":{
+			"common_description":{
+				"requirements": "Crafted by Shaman"
+			}
+		},
 		"beast_tamer": {
 			"beast_tamer_description": {
 				"display_name": "Beast Tamer",
@@ -2118,7 +2123,6 @@
 			"bonesmith_description": {
 				"display_name": "Bonesmith",
 				"description": "Crafts basic items with materials like wood and fiber",
-				"requirements": "Crafted by Shaman",
 				"level_3_data": {
 					"perk_000_name": "Journeyman's Knowledge",
 					"perk_000_description": "When inspiration strikes, the Bonesmith may now craft an especially Fine quality of item.",
@@ -2157,7 +2161,6 @@
 			"earthmaster_description": {
 				"display_name": "Earthshaper",
 				"description": "Craft advance items and decorations using hard materials like stone and clay",
-				"requirements": "Crafted by Shaman",
 				"level_1_data": {
 					"perk_000_name": "Stone Crafting",
 					"perk_000_description": "From the advanced materials, stone is the most basic one. Still, quite a leap compared to the usual wood and fiber stuff."
@@ -2234,9 +2237,6 @@
 			}
 		},
 		"scavenger": {
-			"scavenger_description": {
-				"requirements": "Crafted by Shaman"
-			},
 			"scavenger_backpack": {
 				"display_name": "Trapper Backpack",
 				"scavenger_backpack_talisman": {
@@ -2280,11 +2280,18 @@
 			},
 			"shaman_workbench": {
 				"display_name": "Shaman Workbench",
-				"description": "Shamans will use to craft their stuff"
+				"description": "Shamans will use this to craft their tools and trinkets",
+				"flavor":"\"Every spell begins with a tool\""
+			},
+			"shaman_cauldron": {
+				"display_name": "Shaman Cauldron",
+				"description": "Shamans will use this when dealing with edibles.",
+				"flavor":"\"Double, double, toil and trouble...\""
 			},
 			"brewing_stand": {
 				"display_name": "Brewing Stand",
-				"description": "Shamans will use to craft potions"
+				"description": "Shamans will use to craft potions",
+				"flavor": "\"A pinch of mystery in every brew\""
 			},
 			"shaman_firefly_token": {
 				"display_name": "Shaman Firefly Altar",
@@ -2314,7 +2321,6 @@
 			"spirit_walker_description": {
 				"display_name": "Spirit Walker",
 				"description": "Healer, summons spirits to help in fights",
-				"requirements": "Crafted by Shaman",
 				"level_1_data": {
 					"perk_000_name": "Healing",
 					"perk_000_description": "Can heal in small amounts the health of allies"
@@ -2363,7 +2369,6 @@
 		"warrior": {
 			"warrior_description": {
 				"display_name": "Warrior",
-				"requirements": "Crafted by Shaman",
 				"description": "Pride in fighting. Warriors are the ones to use heavy weapons and wear armor.",
 				"level_1_data": {
 					"perk_000_name": "The Basics",

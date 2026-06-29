@@ -11,13 +11,18 @@ function WarriorClass:_create_listeners()
 		return
 	end
 	if job:get_highest_level() >=5 then
-		self:spirit_armor()
+		self:spirit_armor({
+			player_id = radiant.entities.get_player_id(self._sv._entity)
+		})
 	else
-		self.spirit_listener = radiant.events.listen_once(stonehearth.job, 'swamp_goblins:spirit_armor', self, self.spirit_armor)
+		self.spirit_listener = radiant.events.listen(stonehearth.job, 'swamp_goblins:spirit_armor', self, self.spirit_armor)
 	end
 end
 
-function WarriorClass:spirit_armor()
+function WarriorClass:spirit_armor(event)
+	if not (event.player_id == radiant.entities.get_player_id(self._sv._entity)) then
+		return
+	end
 	local equipment_component = self._sv._entity:get_component("stonehearth:equipment")
 	local spirit_armor = "swamp_goblins:armor:spirit_armor"
 	if not equipment_component:has_item_type(spirit_armor) then

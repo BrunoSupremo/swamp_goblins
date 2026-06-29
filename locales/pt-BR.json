@@ -2060,6 +2060,11 @@
 		}
 	},
 	"jobs": {
+		"common":{
+			"common_description":{
+				"requirements": "Feito pelo Xamã"
+			}
+		},
 		"beast_tamer": {
 			"beast_tamer_description": {
 				"display_name": "Domador de Feras",
@@ -2110,7 +2115,6 @@
 			"bonesmith_description": {
 				"display_name": "Ferreiro de Ossos",
 				"description": "Fabrica itens básicos com materiais como madeira e fibra",
-				"requirements": "Feito por Xamã",
 				"level_3_data": {
 					"perk_000_name": "Conhecimento do Jornaleiro",
 					"perk_000_description": "Quando a inspiração bate, o Ferreiro de Ossos pode agora criar um item de qualidade especialmente fina.",
@@ -2149,7 +2153,6 @@
 			"earthmaster_description": {
 				"display_name": "Mestre Terra",
 				"description": "Crie itens e decorações avançadas usando materiais duros como pedra e argila",
-				"requirements": "Feito por Xamã",
 				"level_1_data": {
 					"perk_000_name": "Fabricação com Pedras",
 					"perk_000_description": "Dos materiais avançados, a pedra é o mais básico. Ainda assim, um grande salto comparando-se a madeira e fibra."
@@ -2226,9 +2229,6 @@
 			}
 		},
 		"scavenger": {
-			"scavenger_description": {
-				"requirements": "Feito por Xamã"
-			},
 			"scavenger_backpack": {
 				"display_name": "Mochila do Caçador",
 				"scavenger_backpack_talisman": {
@@ -2272,11 +2272,18 @@
 			},
 			"shaman_workbench": {
 				"display_name": "Bancada do Xamã",
-				"description": "Os xamãs usarão para criar suas coisas"
+				"description": "Xamãs a utilizarão para suas ferramentas e amuletos",
+				"flavor":"\"Todo feitiço começa com uma ferramenta\""
+			},
+			"shaman_cauldron": {
+				"display_name": "Caldeirão do Xamã",
+				"description": "Xamãs o utilizarão ao preparar alimentos.",
+				"flavor":"\"Ferve e borbulha, trabalho e confusão...\""
 			},
 			"brewing_stand": {
-				"display_name": "Bancada de Fermentação",
-				"description": "Os xamãs usarão para criar poções"
+				"display_name": "Suporte de Poções",
+				"description": "Xamãs o utilizarão para fabricar poções",
+				"flavor": "\"Uma pitada de mistério em cada poção\""
 			},
 			"shaman_firefly_token": {
 				"display_name": "Altar de Vaga-lume do Xamã",
@@ -2306,7 +2313,6 @@
 			"spirit_walker_description": {
 				"display_name": "Guia Espiritual",
 				"description": "Curandeiro, convoca espíritos para ajudar nas lutas",
-				"requirements": "Feito por Xamã",
 				"level_1_data": {
 					"perk_000_name": "Curando",
 					"perk_000_description": "Pode curar em pequenas quantidades a saúde de aliados"
@@ -2355,7 +2361,6 @@
 		"warrior": {
 			"warrior_description": {
 				"display_name": "Guerreiro",
-				"requirements": "Feito por Xamã",
 				"description": "Orgulho de lutar. Guerreiros são aqueles que usam armas pesadas e usam armaduras.",
 				"level_1_data": {
 					"perk_000_name": "O básico",
