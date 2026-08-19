@@ -132,6 +132,10 @@ function LayEgg_spot:egg_hatched(baby)
 		zoom_to_entity = baby,
 		title = "i18n(swamp_goblins:ui.data.new_goblin_baby)"
 	})
+
+	if self.component_json.call_goblin_trader then
+		baby:get_component('stonehearth:job'):get_curr_job_controller():set_helper_trader()
+	end
 end
 
 function LayEgg_spot:reset_pedestal()

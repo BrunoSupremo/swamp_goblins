@@ -111,8 +111,10 @@ function CrusherComponent:make_recipe_list()
 					for recipe_short_key, recipe_data in pairs(category_data.recipes) do
 						if recipe_data.recipe and recipe_data.recipe.recipe_key then
 							if (not recipe_data.recipe.produces[2])
+								and (not recipe_data.recipe.ace_smart_crafter_ignore)
 								and (not stonehearth.catalog:is_category(recipe_data.recipe.product_uri, "resources")) then
 								--"produces[2]" recipes gives multiple items, don't accept those
+								--"ace_smart_crafter_ignore" is to avoid infinite recursions
 								--"resources" should be the end of the line, no more decomposing (e.g. coal into wood)
 								self.recipes_list[recipe_data.recipe.product_uri] = recipe_data.recipe.ingredients
 							end

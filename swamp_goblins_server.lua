@@ -1,5 +1,5 @@
 swamp_goblins = {}
-print("Swamp Goblins Mod version 26.6.24")
+print("Swamp Goblins Mod version 26.8.19")
 
 --[[
 

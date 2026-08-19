@@ -13,7 +13,7 @@ function ShamanClass:get_cook_recipes()
 	local player_id = radiant.entities.get_player_id(self._sv._entity)
 	local job_info = stonehearth.job:get_job_info(player_id, "swamp_goblins:jobs:shaman")
 
-	local cook_recipes = radiant.deep_copy(radiant.resources.load_json("/swamp_goblins/jobs/shaman/recipes/cook_recipes.json").craftable_recipes)
+	local cook_recipes = radiant.resources.load_json("/swamp_goblins/jobs/shaman/recipes/cook_recipes.json").craftable_recipes
 
 	for category, category_data in pairs(cook_recipes) do
 		if category_data.recipes then

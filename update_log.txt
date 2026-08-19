@@ -1,25 +1,22 @@
 Additions:
-Added new Shaman Workbench.
+
 
 
 Changes:
-Adapted ingredients for Trapper (Trapper+ mod) workstation recipes.
-Reduced from 5 to 3 wide the size of Shaman Cauldron with a new model.
-Improved Shaman workstations crafting effects
-Updated Shaman building templates
+A goblin trader is guarantee to appear when growing a first goblin citizen on a foreign kingdom.
+Goblin traders will always have Dreamcatchers (shaman talisman) at stock. These should make progressing with goblins on foreign kingdoms easier if wanted.
 
 
 Changes for ACE:
-Properly set Brewer job for goblins. Correct outfit, adapted recipes, craftable talisman, etc...
+
 
 
 Fixes:
-Goblin Egg now goes into "Trophy" category instead of a bugged undefined one.
-Prevented a bug that could happen when a baby with some buffs grows into a citizen.
-Prevented babies leveling up from unintended methods (e.g. professor trait)
-Fixed Shaman Brewing Stand icon model missing.
-Spirit Walker 5th level perk will now only buff defense from warriors of that player (not of allies or enemies!)
-Same for Beast Tamer, they should only receive the Dragon Summon skill from Spirit Walkers of the same player.
+Fixed an infinite loop bug (a > b > c > a) on the crusher.
+Fixed crusher UI being recycled from market stalls (saying items are for trade instead of crushing)
+Last update this fix "Prevented babies leveling up from unintended methods (e.g. professor trait)" was not actually active. Now it is.
+Fixed a compatibility bug on a level 6 Shaman that would happen when using "Chef Goblin Ramsay" mod.
 
 
 Fixes for ACE:
+Fixed some invalid item categories from appearing on the crusher (raw resources and food)

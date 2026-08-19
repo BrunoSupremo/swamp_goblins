@@ -4,7 +4,8 @@
 	"components" : {
 		"swamp_goblins:lay_egg_spot": {
 			"start_with_egg": true,
-			"destroy_after_hatch": true
+			"destroy_after_hatch": true,
+			"call_goblin_trader": true
 		},
 		"stonehearth:entity_forms" : {
 			"iconic_form" : "file(egg_basket_iconic.json)",

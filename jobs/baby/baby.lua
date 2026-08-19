@@ -6,6 +6,7 @@ radiant.mixin(BabyClass, BaseJob)
 function BabyClass:initialize()
 	BaseJob.initialize(self)
 	self._sv._calories_consumed = 0
+	self._sv._call_helper_trader = false
 end
 
 function BabyClass:create(entity)
@@ -110,6 +111,10 @@ function BabyClass:grow()
 	:add_i18n_data('adult_name', radiant.entities.get_custom_name(adult))
 
 	self:reroll_stats(adult, mind_booster,body_booster,spirit_booster)
+
+	if self._sv._call_helper_trader then
+		self:call_helper_trader()
+	end
 end
 
 function BabyClass:reroll_stats(adult, mind_booster,body_booster,spirit_booster)
@@ -163,9 +168,28 @@ function BabyClass:destroy()
 	BaseJob.destroy(self)
 end
 
-function BabyClass:can_level_up_()
+function BabyClass:can_level_up()
 	-- prevents level up when they gain exp not from food (e.g. professor trait)
 	return false
+end
+
+function BabyClass:set_helper_trader()
+	self._sv._call_helper_trader = true
+end
+
+function BabyClass:call_helper_trader()
+	local population = stonehearth.population:get_population(self.player_id)
+	local city_tier = population:get_city_tier() or 0
+	if city_tier < 1 then
+		city_tier = 1
+	end
+	stonehearth.calendar:set_timer('helper goblin trader', "1d", function()
+		stonehearth.game_master:get_game_master(self.player_id):debug_trigger_campaign_encounter({
+			campaign_name = 'trader',
+			encounter_name = 'firefly_shop_'.. city_tier,
+			arc = 'trigger'
+		})
+	end)
 end
 
 return BabyClass
